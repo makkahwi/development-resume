@@ -52,6 +52,7 @@ const EducationSection = async ({ page }: props) => {
       title="Education"
       subtitle="Where All of This Started"
       color="secondary"
+      id="education"
     >
       {skills.map(({ logo, name, school, website, desc, cert }, i) => (
         <Row className="my-5" key={i}>

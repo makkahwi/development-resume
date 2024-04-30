@@ -259,6 +259,7 @@ const SkillsSection = async ({ page }: props) => {
       title="Technical Skills"
       subtitle="Earned By Jobs & For Jobs"
       color="light"
+      id="skills"
     >
       <Row className="my-5">
         {skills.map(({ icon, name, color, website, subskills }, i) => (

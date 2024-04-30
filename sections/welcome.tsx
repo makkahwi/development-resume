@@ -14,7 +14,7 @@ const WelcomeSection = () => {
   ];
 
   return (
-    <PageSection color="dark" NoBg>
+    <PageSection color="dark" NoBg id="home">
       <Row
         style={{ minHeight: "70vh" }}
         className="text-white justify-content-between"

@@ -8,7 +8,7 @@ import { Fragment } from "react";
 export default async function Home() {
   const WorksSection = dynamic(() => import("@/sections/works/works"));
   const WelcomeSection = dynamic(() => import("@/sections/welcome"));
-  const CareerSection = dynamic(() => import("@/sections/career"));
+  const CareerSection = dynamic(() => import("@/sections/experiences"));
   const BlogSection = dynamic(() => import("@/sections/blog/blog"));
   const SkillsSection = dynamic(() => import("@/sections/skills"));
   const AboutSection = dynamic(() => import("@/sections/about/about"));

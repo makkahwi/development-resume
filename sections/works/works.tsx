@@ -22,6 +22,7 @@ const WorksSection = async () => {
       title="Works"
       subtitle="Most Significant Projects"
       color="white"
+      id="works"
     >
       <Row>
         {works

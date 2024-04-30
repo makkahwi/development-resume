@@ -54,7 +54,12 @@ const CareerSection = async () => {
   );
 
   return (
-    <PageSection title="Experiences" subtitle="Navigating Career" color="info">
+    <PageSection
+      title="Experiences"
+      subtitle="Navigating Career"
+      color="info"
+      id="experiences"
+    >
       {careers
         .filter(({ title }) => title === "Web Development")
         .map((career, i) => (
