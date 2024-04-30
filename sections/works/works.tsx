@@ -23,6 +23,7 @@ const WorksSection = async () => {
       subtitle="Most Significant Projects"
       color="white"
       id="works"
+      bg2
     >
       <Row>
         {works

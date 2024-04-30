@@ -5,7 +5,7 @@ import StatisticsSection from "./statistics";
 
 const AboutSection = () => {
   return (
-    <PageSection id="about">
+    <PageSection id="about" bg2>
       <Row>
         <Col md={12} className="my-auto">
           <Typography size={5} justify="center" className="p-5 lh-lg">

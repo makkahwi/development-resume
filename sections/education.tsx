@@ -73,6 +73,7 @@ const EducationSection = async ({ page }: props) => {
       subtitle="Where All of This Started"
       color="dark"
       id="education"
+      bg2
     >
       {skills.map(
         ({ logo, name, school, website, desc, cert, downloads }, i) => (
