@@ -1,16 +1,17 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Typography from "@/components/typography";
-import { Button, ButtonToolbar, Navbar, NavbarText } from "react-bootstrap";
 import { socialLinksList } from "@/consts/data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Button, ButtonToolbar, Navbar, NavbarText } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <Navbar className="py-4 px-4 my-0" bg="light">
-      <hr className="bg-dark" />
+    <Navbar className="py-2 px-4 my-0" bg="transparent">
       <NavbarText className="text-center w-100">
-        <img src="/images/LogoC.png" width="400px" className="mt-5" />
+        <hr className="bg-dark border-dark px-5 mx-5" />
 
-        <h1 className="text-dark mb-5 text-uppercase">Suhaib Ahmad</h1>
+        <img src="/images/LogoC.png" width="300px" className="mt-5 mb-0" />
+
+        <h2 className="text-dark mt-0 mb-5 text-uppercase">Suhaib Ahmad</h2>
 
         <Typography color="dark" justify="center">
           All Rights Reserved © 2018 - {new Date().getFullYear()}
