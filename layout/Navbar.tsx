@@ -90,7 +90,7 @@ const NavbarComp = () => {
 
           <NavItem>
             <a
-              href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-WD-Resume-Sheet.pdf?alt=media&token=2402492b-55ba-452f-b3f5-b206000d6f1d"
+              href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-WD-Resume-Sheet.pdf?alt=media"
               target="_blank"
             >
               <Button variant="light" className="text-info ms-1">

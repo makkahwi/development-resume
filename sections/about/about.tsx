@@ -1,6 +1,7 @@
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
 import { Button, ButtonGroup, Col, Row } from "react-bootstrap";
+
 import StatisticsSection from "./statistics";
 
 const AboutSection = () => {
@@ -21,7 +22,7 @@ const AboutSection = () => {
           <ButtonGroup>
             <Button variant="info" className="text-white">
               <a
-                href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-WD-Resume-Sheet.pdf?alt=media&token=2402492b-55ba-452f-b3f5-b206000d6f1d"
+                href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-WD-Resume-Sheet.pdf?alt=media"
                 target="_blank"
               >
                 Download Resume Sheet
@@ -30,7 +31,7 @@ const AboutSection = () => {
 
             <Button variant="info" className="text-white">
               <a
-                href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib%20Ahmad%20Psychometric.pdf?alt=media&token=bd3e0d43-ad05-4761-8e1b-d112e1aee206"
+                href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib%20Ahmad%20Psychometric.pdf?alt=media"
                 target="_blank"
               >
                 Download Psychometric Test

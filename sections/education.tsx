@@ -30,12 +30,12 @@ const EducationSection = async ({ page }: props) => {
 
   const skills = [
     {
-      logo: "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/LTUC.png?alt=media&token=0861e72f-6869-4a5d-998a-76da75acb347",
+      logo: "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/LTUC.png?alt=media",
       name: "6-Month Training Camp",
       school: "ASAC of LTUC College (Jordan)",
       website: "https://www.ltuc.com/",
       desc: "Python Based Web Dev (Code Fellows Curriculum)",
-      cert: "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media&token=b2c8e784-f491-4852-b732-e9ba2a2eeb02",
+      cert: "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
       downloads: [
         {
           label: "Individual Works",
@@ -52,12 +52,12 @@ const EducationSection = async ({ page }: props) => {
       ],
     },
     {
-      logo: "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/IIUM.png?alt=media&token=cd8fc1bb-7a2a-42f0-ab69-160f39b41168",
+      logo: "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/IIUM.png?alt=media",
       name: "Bachelor of Computer Science",
       school: "International Islamic University Malaysia",
       website: "https://www.iium.edu.my/",
       desc: "Specialized in Data Science and Computational Intelligence",
-      cert: "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media&token=b2c8e784-f491-4852-b732-e9ba2a2eeb02",
+      cert: "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
       downloads: [
         {
           label: "FYP Project",
