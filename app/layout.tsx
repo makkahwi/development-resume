@@ -1,6 +1,6 @@
 import { appDesc, appTitle } from "@/consts/data";
 import Footer from "@/layout/Footer";
-import CtaSection from "@/sections/home/cta";
+import CtaSection from "@/sections/cta";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
