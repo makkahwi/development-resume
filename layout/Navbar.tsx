@@ -71,20 +71,18 @@ const NavbarComp = () => {
         <Nav>
           {links.map(({ title, link, icon }, i) => (
             <NavItem key={i}>
-              <a
+              <NavLink
                 href={"#" + link}
                 className="text-white fw-bold text-decoration-none"
               >
-                <NavLink>
-                  <FontAwesomeIcon
-                    icon={icon}
-                    className="me-1 text-white fw-bold"
-                  />
-                  <span className="text-white fw-bold d-inline d-lg-none d-xl-inline">
-                    {title}
-                  </span>
-                </NavLink>
-              </a>
+                <FontAwesomeIcon
+                  icon={icon}
+                  className="me-1 text-white fw-bold"
+                />
+                <span className="text-white fw-bold d-inline d-lg-none d-xl-inline">
+                  {title}
+                </span>
+              </NavLink>
             </NavItem>
           ))}
 
