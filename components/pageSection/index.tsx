@@ -7,9 +7,9 @@ interface props {
   subtitle?: string;
   children: React.ReactNode;
   color?: string;
-  rounded?: boolean;
   card?: boolean;
   NoBg?: boolean;
+  bg2?: boolean;
   id?: string;
 }
 
@@ -18,15 +18,44 @@ const PageSection = ({
   subtitle,
   children,
   color = "white",
-  rounded = false,
+  bg2 = false,
   card = false,
   NoBg = false,
   id = "",
   ...rest
 }: props) => {
+  const Bg1Color = () => {
+    switch (color) {
+      case "light":
+      case "white":
+        return "BGPattern1C";
+      default:
+        return "BGPattern1W";
+    }
+  };
+
+  const Bg2Color = () => {
+    switch (color) {
+      case "light":
+      case "white":
+        return "BGPattern2C";
+      default:
+        return "BGPattern2W";
+    }
+  };
+
+  const BgPicker = () => {
+    switch (bg2) {
+      case true:
+        return Bg2Color();
+      default:
+        return Bg1Color();
+    }
+  };
+
   const Content = () => (
     <div
-      className={`bg-${color} ${rounded && "rounded"}`}
+      className={`bg-${color}`}
       style={
         NoBg
           ? {
@@ -35,11 +64,9 @@ const PageSection = ({
           : {
               padding: "17.5vh 0",
               minHeight: "70vh",
-              background: `url('/images/${
-                color === "white" ? "BGPatternC" : "BGPatternW"
-              }.png')`,
-              backgroundPositionY: "107.5%",
-              backgroundPositionX: "-12.5%",
+              background: `url('/images/${BgPicker()}.png')`,
+              backgroundPositionY: "102.5%",
+              backgroundPositionX: "-2.5%",
               backgroundSize: "350px auto",
               backgroundRepeat: "no-repeat",
             }

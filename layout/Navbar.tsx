@@ -1,74 +1,65 @@
+"use client";
+
 import {
   faBriefcase,
+  faDownload,
+  faGraduationCap,
   faHome,
+  faImages,
   faMobile,
   faNewspaper,
-  faUser,
+  faPaintBrush,
+  faPerson,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
-import { Fragment } from "react";
 import {
+  Button,
   Nav,
+  NavItem,
+  NavLink,
   Navbar,
   NavbarBrand,
   NavbarCollapse,
   NavbarToggle,
-  NavItem,
-  NavLink,
 } from "react-bootstrap";
+// import { Link } from "react-scroll";
 
 const NavbarComp = () => {
   const links = [
     {
       title: "Home",
-      link: "/",
+      link: "home",
       icon: faHome,
     },
     {
-      title: "Career",
-      link: "career",
-      icon: faUser,
+      title: "About",
+      link: "about",
+      icon: faPerson,
     },
-    { title: "Projects", link: "projects", icon: faBriefcase },
+    {
+      title: "Experiences",
+      link: "experiences",
+      icon: faBriefcase,
+    },
+    { title: "Works", link: "works", icon: faImages },
+    { title: "Skills", link: "skills", icon: faPaintBrush },
+    { title: "Education", link: "education", icon: faGraduationCap },
     { title: "Blog", link: "blog", icon: faNewspaper },
-    { title: "Contact", link: "contact", icon: faMobile, scroll: true },
-    // {
-    //   icon: faContactBook,
-    //   links: socialLinksList.map(({ icon, link, label, name, color }) => ({
-    //     title: (
-    //       <Fragment>
-    //         <FontAwesomeIcon icon={icon} />
-    //         <span className="d-none d-lg-inline"> {label}</span>
-    //         <span className="d-inline d-lg-none"> {name}</span>
-    //       </Fragment>
-    //     ),
-    //     link,
-    //     color,
-    //     target: "_blank",
-    //   })),
-    // },
+    { title: "Contact", link: "contact", icon: faMobile },
   ];
-
-  const NavTitle = ({ title, icon }: { title?: string; icon: any }) => (
-    <Fragment>
-      <FontAwesomeIcon icon={icon} className="me-1 text-white fw-bold" />
-      <span className="text-white fw-bold">{title}</span>
-    </Fragment>
-  );
 
   return (
     <Navbar
       expand="lg"
-      className="py-0 px-5 mx-3 mt-3 border-bottom border-info rounded-5 fixed-top m-0"
+      className="py-0 px-5 mx-3 mt-3 border-bottom border-info fixed-top m-0"
       bg="info"
     >
       <NavbarBrand className="fw-bold" role="button">
-        <Link href="/" className="text-decoration-none">
+        <a href="#home" className="text-decoration-none text-uppercase">
           <img src="/images/LogoW.png" width="65px" />{" "}
           <span className="text-white">Suhaib</span>{" "}
           <span className="text-white d-none d-md-inline">Ahmad</span>
-        </Link>
+        </a>
       </NavbarBrand>
 
       <NavbarToggle
@@ -78,51 +69,38 @@ const NavbarComp = () => {
 
       <NavbarCollapse className="justify-content-end">
         <Nav>
-          {links.map(({ title, link, icon, scroll }, i) => (
+          {links.map(({ title, link, icon }, i) => (
             <NavItem key={i}>
-              {
-                // links ? (
-                //   <DropdownButton
-                //     variant="transparent"
-                //     drop="start"
-                //     data-bs-theme="dark"
-                //     title={<NavTitle icon={icon} title={title} />}
-                //   >
-                //     {links.map(({ title, link, target, color }, y) => (
-                //       <DropdownItem
-                //         href={link}
-                //         target={target}
-                //         style={{ backgroundColor: color, color: "white" }}
-                //         className="py-2"
-                //         key={y}
-                //       >
-                //         {title}
-                //       </DropdownItem>
-                //     ))}
-                //   </DropdownButton>
-                // ) :
-                scroll ? (
-                  <NavLink>
-                    <Link
-                      href={"#" + link}
-                      className="text-white fw-bold text-decoration-none"
-                    >
-                      <NavTitle icon={icon} title={title} />
-                    </Link>
-                  </NavLink>
-                ) : (
-                  <NavLink>
-                    <Link
-                      href={link}
-                      className="text-white fw-bold text-decoration-none"
-                    >
-                      <NavTitle icon={icon} title={title} />
-                    </Link>
-                  </NavLink>
-                )
-              }
+              <a
+                href={"#" + link}
+                className="text-white fw-bold text-decoration-none"
+              >
+                <NavLink>
+                  <FontAwesomeIcon
+                    icon={icon}
+                    className="me-1 text-white fw-bold"
+                  />
+                  <span className="text-white fw-bold d-inline d-lg-none d-xl-inline">
+                    {title}
+                  </span>
+                </NavLink>
+              </a>
             </NavItem>
           ))}
+
+          <NavItem>
+            <a
+              href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-WD-Resume-Sheet.pdf?alt=media"
+              target="_blank"
+            >
+              <Button variant="light" className="text-info ms-1">
+                <FontAwesomeIcon icon={faDownload} className="me-1 fw-bold" />
+                <span className="fw-bold d-inline d-lg-none d-xl-inline">
+                  CV
+                </span>
+              </Button>
+            </a>
+          </NavItem>
         </Nav>
       </NavbarCollapse>
     </Navbar>

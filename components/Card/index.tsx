@@ -23,19 +23,12 @@ const CardComp = ({
       className={
         `bg-transparent text-white w-100 my-2 border-${color} border-${
           onClick ? 1 : 5
-        } rounded-5 ` + className
+        } ` + className
       }
       onClick={onClick}
       role={onClick ? "button" : undefined}
     >
-      {image && (
-        <img
-          alt="Sample"
-          src={image}
-          width="100%"
-          className="rounded-5 rounded-bottom-0"
-        />
-      )}
+      {image && <img alt="Sample" src={image} width="100%" />}
 
       {title && (
         <CardTitle>

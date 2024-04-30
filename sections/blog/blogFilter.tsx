@@ -1,4 +1,10 @@
-import { faCode, faLaptop, faListCheck, faSchool, faSeedling } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCode,
+  faLaptop,
+  faListCheck,
+  faSchool,
+  faSeedling,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, ButtonGroup } from "react-bootstrap";
 

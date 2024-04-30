@@ -22,6 +22,10 @@ const MoreWorks = async ({ works }: { works: Props[] }) => {
       {showMore &&
         works
           ?.filter(({ hide }) => hide)
+          ?.filter(
+            ({ category }) =>
+              category === "Web Apps" || category === "Landing Pages"
+          )
           ?.map(({ image, title, description, category, url }, i) => (
             <Col xl={3} lg={3} md={4} sm={6} className="p-2 d-flex" key={i}>
               <WorkView
@@ -36,13 +40,17 @@ const MoreWorks = async ({ works }: { works: Props[] }) => {
 
       {showMore ? (
         <Col xs={12} className="text-center">
-          <Button variant="light" onClick={() => setShowMore(false)}>
+          <Button variant="info" onClick={() => setShowMore(false)}>
             Show Less
           </Button>
         </Col>
       ) : (
         <Col xs={12} className="text-center">
-          <Button variant="light" onClick={() => setShowMore(true)}>
+          <Button
+            variant="info"
+            className="text-white"
+            onClick={() => setShowMore(true)}
+          >
             Show More
           </Button>
         </Col>
