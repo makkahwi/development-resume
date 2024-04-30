@@ -2,6 +2,7 @@
 
 import {
   faBriefcase,
+  faDownload,
   faGraduationCap,
   faHome,
   faImages,
@@ -12,6 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  Button,
   Nav,
   NavItem,
   NavLink,
@@ -85,6 +87,20 @@ const NavbarComp = () => {
               </Link>
             </NavItem>
           ))}
+
+          <NavItem>
+            <a
+              href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-WD-Resume-Sheet.pdf?alt=media&token=2402492b-55ba-452f-b3f5-b206000d6f1d"
+              target="_blank"
+            >
+              <Button variant="light" className="text-info ms-1">
+                <FontAwesomeIcon icon={faDownload} className="me-1 fw-bold" />
+                <span className="fw-bold d-inline d-lg-none d-xl-inline">
+                  CV
+                </span>
+              </Button>
+            </a>
+          </NavItem>
         </Nav>
       </NavbarCollapse>
     </Navbar>

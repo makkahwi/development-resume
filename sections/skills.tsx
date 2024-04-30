@@ -122,7 +122,6 @@ const SkillsSection = async ({ page }: props) => {
       name: "Express.Js",
       color: "000000",
       website: "https://expressjs.com/",
-      subskills: [""],
     },
     {
       icon: faNodeJs,
