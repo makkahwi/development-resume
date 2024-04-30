@@ -11,20 +11,20 @@ const WorkView = ({
   category = "",
 }) => {
   return (
-    <CardComp image={image}>
-      <Typography size={4} justify="center" color="white">
+    <CardComp image={image} color="info">
+      <Typography size={4} justify="center" color="info">
         {title}
       </Typography>
 
-      {/* <Typography size={6} className="my-3" color="white">
+      {/* <Typography size={6} className="my-3" color="info">
                   {category}
                 </Typography> */}
 
-      {/* <Typography size={6} className="my-3" color="white">
+      {/* <Typography size={6} className="my-3" color="info">
                   {roles}
                 </Typography> */}
 
-      <Typography size={6} className="my-3" color="white">
+      <Typography size={6} className="my-3" color="info">
         {description}
 
         {url !== "" ? (

@@ -6,7 +6,7 @@ import { CarouselCaption, Col, Row } from "react-bootstrap";
 
 const WelcomeSection = () => {
   const texts = [
-    "Founder of Semesteer, Entrepreneur, Innovator & Web Developer",
+    "Senior Full-Stack Developer",
     "Innovating & Shaping Education Digital Solutions",
     "Entrepreneuring to Overcome Educational Challenges",
     "Entrepreneuring to Revolutionize Education Sector",

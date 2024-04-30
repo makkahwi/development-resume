@@ -1,9 +1,6 @@
 import { getJobs } from "@/api/data";
-import CardComp from "@/components/Card";
-import CarouselComp from "@/components/carousel";
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, Row } from "react-bootstrap";
 import { JobProps } from "../home/background";
 
@@ -18,8 +15,8 @@ const CareerSection = async () => {
     type = "",
     period = "",
   }) => (
-    <div className="bg-info text-white my-1 p-4 rounded-5">
-      <Typography size={6} color="white">
+    <div className="bg-white text-white my-1 p-4 rounded-5">
+      <Typography size={6} color="info">
         {period + " @ "}
         {website ? (
           <a
@@ -34,53 +31,35 @@ const CareerSection = async () => {
         )}
       </Typography>
 
-      <Typography size={5} color="white" className="my-3">
+      <Typography size={5} color="info" className="my-3">
         {title}
       </Typography>
 
-      <Typography size={6} color="white">
+      <Typography size={6} color="info">
         {type + " " + description}
       </Typography>
     </div>
   );
 
-  const CareerSlide = ({
-    title,
-    desc,
-    icon,
-    jobs,
-  }: {
-    title: string;
-    desc: string[];
-    icon: any;
-    jobs: {}[];
-  }) => (
-    <CardComp color="info">
-      <Typography size={3} justify="center" color="info" className="mt-5">
-        <FontAwesomeIcon icon={icon} /> {title}
-        <div className="m-5">
-          <Row>
-            {jobs?.map((job, i) => (
-              <Col md={4} className="p-2 d-flex" key={i}>
-                <JobBox {...job} />
-              </Col>
-            ))}
-          </Row>
-        </div>
-      </Typography>
-    </CardComp>
+  const CareerSlide = ({ jobs }: { jobs: {}[] }) => (
+    <div className="m-5">
+      <Row>
+        {jobs?.map((job, i) => (
+          <Col md={4} className="p-2 d-flex" key={i}>
+            <JobBox {...job} />
+          </Col>
+        ))}
+      </Row>
+    </div>
   );
 
   return (
-    <PageSection title="Careers" subtitle="Navigating Careers and Experiences">
-      <CarouselComp
-        controls
-        indicators
-        items={careers.map((career, i) => (
+    <PageSection title="Experiences" subtitle="Navigating Career" color="info">
+      {careers
+        .filter(({ title }) => title === "Web Development")
+        .map((career, i) => (
           <CareerSlide {...career} key={i} />
         ))}
-        dark
-      />
     </PageSection>
   );
 };

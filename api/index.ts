@@ -9,4 +9,4 @@ const formsApi = axios.create({
 });
 
 export const sendContacts = (data: object) =>
-  formsApi.post("net-website-contact-forms.json", data);
+  formsApi.post("dev-website-contact-forms.json", data);
