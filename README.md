@@ -5,3 +5,4 @@
 ## To Do
 
 - Localize App
+- Move education, skills & contacts to firebase
