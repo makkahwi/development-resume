@@ -36,10 +36,12 @@ const PageSection = ({
               padding: "17.5vh 0",
               minHeight: "70vh",
               background: `url('/images/${
-                color === "white" ? "BGPatternC" : "BGPatternW"
+                color === "white" || color === "light"
+                  ? "BGPattern2C"
+                  : "BGPattern2W"
               }.png')`,
               backgroundPositionY: "107.5%",
-              backgroundPositionX: "-12.5%",
+              backgroundPositionX: "-2.5%",
               backgroundSize: "350px auto",
               backgroundRepeat: "no-repeat",
             }
