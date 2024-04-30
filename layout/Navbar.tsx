@@ -22,7 +22,7 @@ import {
   NavbarCollapse,
   NavbarToggle,
 } from "react-bootstrap";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 
 const NavbarComp = () => {
   const links = [
@@ -55,11 +55,11 @@ const NavbarComp = () => {
       bg="info"
     >
       <NavbarBrand className="fw-bold" role="button">
-        <Link to="home" className="text-decoration-none text-uppercase">
+        <a href="#home" className="text-decoration-none text-uppercase">
           <img src="/images/LogoW.png" width="65px" />{" "}
           <span className="text-white">Suhaib</span>{" "}
           <span className="text-white d-none d-md-inline">Ahmad</span>
-        </Link>
+        </a>
       </NavbarBrand>
 
       <NavbarToggle
@@ -71,8 +71,8 @@ const NavbarComp = () => {
         <Nav>
           {links.map(({ title, link, icon }, i) => (
             <NavItem key={i}>
-              <Link
-                to={link}
+              <a
+                href={"#" + link}
                 className="text-white fw-bold text-decoration-none"
               >
                 <NavLink>
@@ -84,7 +84,7 @@ const NavbarComp = () => {
                     {title}
                   </span>
                 </NavLink>
-              </Link>
+              </a>
             </NavItem>
           ))}
 
