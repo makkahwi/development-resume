@@ -22,7 +22,7 @@ const WelcomeSection = () => {
         <Col lg={6} style={{ margin: "auto 0" }} className="py-5">
           <Typography
             size={1}
-            className="pb-4"
+            className="pb-4 text-uppercase"
             color="white"
             style={{ fontSize: "3.5vw" }}
           >

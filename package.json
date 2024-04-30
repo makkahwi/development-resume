@@ -1,7 +1,7 @@
 {
-  "name": "entrepreneurship-resume-website",
-  "description": "A Next.js-based entrepreneurship resume website with Firebase API",
-  "repository": "https://github.com/makkahwi/entrepreneurship-resume",
+  "name": "development-resume-website",
+  "description": "A Next.js-based development resume website with Firebase API",
+  "repository": "https://github.com/makkahwi/development-resume",
   "demo": "https://Suhaib.net",
   "author": {
     "name": "Suhaib Ahmad",

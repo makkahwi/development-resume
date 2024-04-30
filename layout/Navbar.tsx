@@ -55,7 +55,7 @@ const NavbarComp = () => {
       bg="info"
     >
       <NavbarBrand className="fw-bold" role="button">
-        <Link to="home" className="text-decoration-none">
+        <Link to="home" className="text-decoration-none text-uppercase">
           <img src="/images/LogoW.png" width="65px" />{" "}
           <span className="text-white">Suhaib</span>{" "}
           <span className="text-white d-none d-md-inline">Ahmad</span>

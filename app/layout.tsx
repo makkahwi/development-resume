@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: appTitle + " - " + appDesc,
-  description: "The website of Entrepreneur Suhaib Ahmad of Jordan.",
+  description: "The website of developer Suhaib Ahmad of Jordan.",
 };
 
 export const revalidate = apiCallRevalidate;
