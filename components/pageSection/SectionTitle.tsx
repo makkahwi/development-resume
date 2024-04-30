@@ -14,6 +14,8 @@ const SectionTitle = ({ title = "", subtitle = "", color = "" }) => {
         return "info";
       case "info":
         return "light";
+      case "dark":
+        return "white";
       default:
         return "info";
     }

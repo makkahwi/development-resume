@@ -71,7 +71,7 @@ const EducationSection = async ({ page }: props) => {
     <PageSection
       title="Education"
       subtitle="Where All of This Started"
-      color="secondary"
+      color="dark"
       id="education"
     >
       {skills.map(

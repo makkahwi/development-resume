@@ -5,7 +5,7 @@ import { socialLinksList } from "@/consts/data";
 
 const Footer = () => {
   return (
-    <Navbar className="py-4 px-4 my-0" bg="secondary">
+    <Navbar className="py-4 px-4 my-0" bg="dark">
       <NavbarText className="text-center w-100">
         <img src="/images/LogoW.png" width="400px" className="mt-5" />
 
