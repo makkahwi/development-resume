@@ -20,7 +20,7 @@ const WorksSection = async () => {
   return (
     <PageSection
       title="Works"
-      subtitle="Most Significant Projects"
+      subtitle="Most Significant"
       color="white"
       id="works"
       bg2

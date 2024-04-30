@@ -6,3 +6,5 @@
 
 - Localize App
 - Move education, skills & contacts to firebase
+- Apply "sharp edge" theme to all shapes
+- Remove "use client" in blog & works
