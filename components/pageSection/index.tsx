@@ -7,7 +7,6 @@ interface props {
   subtitle?: string;
   children: React.ReactNode;
   color?: string;
-  rounded?: boolean;
   card?: boolean;
   NoBg?: boolean;
   bg2?: boolean;
@@ -20,7 +19,6 @@ const PageSection = ({
   children,
   color = "white",
   bg2 = false,
-  rounded = false,
   card = false,
   NoBg = false,
   id = "",
@@ -57,7 +55,7 @@ const PageSection = ({
 
   const Content = () => (
     <div
-      className={`bg-${color} ${rounded && "rounded"}`}
+      className={`bg-${color}`}
       style={
         NoBg
           ? {

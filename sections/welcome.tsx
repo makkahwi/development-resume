@@ -49,7 +49,7 @@ const WelcomeSection = () => {
         </Col>
 
         <Col lg={4} style={{ margin: "auto 0" }} className="text-center">
-          <img src="/images/profile.jpg" width="100%" className="rounded-5" />
+          <img src="/images/profile.jpg" width="100%" />
         </Col>
       </Row>
     </PageSection>

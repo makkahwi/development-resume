@@ -51,7 +51,7 @@ const NavbarComp = () => {
   return (
     <Navbar
       expand="lg"
-      className="py-0 px-5 mx-3 mt-3 border-bottom border-info rounded-5 fixed-top m-0"
+      className="py-0 px-5 mx-3 mt-3 border-bottom border-info fixed-top m-0"
       bg="info"
     >
       <NavbarBrand className="fw-bold" role="button">

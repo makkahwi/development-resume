@@ -53,7 +53,6 @@ const CtaSection = () => {
       title="Get in Touch"
       subtitle="Connect with Me"
       color="primary"
-      rounded
       card
       id="contact"
       NoBg
