@@ -29,24 +29,10 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 
+import { JobProps } from "./education";
+
 interface props {
   page?: boolean;
-}
-
-export interface JobProps {
-  desc: string[];
-  icon: string;
-  title: string;
-  jobs: {
-    company: string;
-    description: string;
-    monthsCount: number;
-    period: string;
-    projectsCount: number;
-    title: string;
-    type: string;
-    website: string;
-  }[];
 }
 
 const SkillsSection = async ({ page }: props) => {

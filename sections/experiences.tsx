@@ -2,7 +2,8 @@ import { getJobs } from "@/api/data";
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
 import { Col, Row } from "react-bootstrap";
-import { JobProps } from "../home/background";
+
+import { JobProps } from "./education";
 
 const CareerSection = async () => {
   const careers: JobProps[] = await getJobs();
