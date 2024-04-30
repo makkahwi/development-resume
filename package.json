@@ -1,0 +1,43 @@
+{
+  "name": "entrepreneurship-resume-website",
+  "description": "A Next.js-based entrepreneurship resume website with Firebase API",
+  "repository": "https://github.com/makkahwi/entrepreneurship-resume",
+  "demo": "https://Suhaib.net",
+  "author": {
+    "name": "Suhaib Ahmad",
+    "url": "https://Suhaib.dev",
+    "github": "https://github.com/makkahwi",
+    "facebook": "https://facebook.com/makkahwi",
+    "linkedin": "https://linkedin.com/in/makkahwi",
+    "email": "SuhaibAhmadAi@hotmail.com"
+  },
+  "version": "7.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "axios": "^1.6.2",
+    "bootstrap": "^5.3.2",
+    "next": "14.0.0",
+    "react": "^18",
+    "react-bootstrap": "^2.9.1",
+    "react-dom": "^18",
+    "react-player": "^2.14.0",
+    "react-scroll": "^1.9.0",
+    "sass": "^1.69.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
+}

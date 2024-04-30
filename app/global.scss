@@ -1,0 +1,25 @@
+$theme-colors: (
+  "primary": #e2e2e2,
+  // 007BFF
+  "secondary": #6c757d,
+  // 6C757D
+  "success": #28a745,
+  // 28A745
+  "danger": #dc3545,
+  // DC3545
+  "warning": #ffc107,
+  // FFC107
+  "info": #17a2b8,
+  //17A2B8
+  "light": #f8f9fa,
+  //F8F9FA
+  "dark": #343a40,
+  // 343A40
+  "white": #ffffff,
+  // ffffff
+  "black": #000000,
+  // 000000
+);
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";

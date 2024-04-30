@@ -1,0 +1,604 @@
+{
+  "job-projects": [
+    {
+      "category": "Landing Pages",
+      "comingSoon": false,
+      "description": "Frontend Dev of Next.Js Based Landing Page",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/25.jpg?alt=media",
+      "title": "Mrs. Noor Kayyali",
+      "url": "https://www.noorkayyali.com/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "description": "System architecture of SaaS App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
+      "openSource": true,
+      "title": "Learngine"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "description": "System architecture of Open-Source SaaS App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/24.jpg?alt=media",
+      "openSource": true,
+      "title": "AppNest"
+    },
+    {
+      "category": "Landing Pages",
+      "comingSoon": true,
+      "description": "React.Js Based App",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/18.jpg?alt=media",
+      "title": "Zaytouna Club",
+      "url": "https://zaytouna-tau.vercel.app/"
+    },
+    {
+      "category": "Web Apps",
+      "description": "Full-Stack Dev of React.Js-Express.Js",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/15.jpg?alt=media",
+      "title": "AIS Staff Portal",
+      "url": "https://staff.aqsa.edu.my/"
+    },
+    {
+      "category": "Landing Pages",
+      "description": "Wordpress Website",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/4.jpg?alt=media",
+      "title": "SpeedWheels Company",
+      "url": "https://speedwheelstrade.online/"
+    },
+    {
+      "category": "Landing Pages",
+      "description": "Wordpress Website",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/3.jpg?alt=media",
+      "title": "Team Foundation",
+      "url": "https://teamtr.media/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "description": "Full-Stack Dev of PERN Based App",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/9.jpg?alt=media",
+      "title": "xEdu App",
+      "url": "https://xEdu.best/"
+    },
+    {
+      "category": "Landing Pages",
+      "description": "Wordpress Website",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/6.jpg?alt=media",
+      "title": "PPAM Organization",
+      "url": "https://ppam.org.my/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "description": "Full-Stack Dev of React.Js-Node.Js Based App",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
+      "title": "Dr. Ahmad Abu Mahfouth Clinic Mgmt System"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "description": "Frontend Dev of React.js Based Search-Engine App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/22.jpg?alt=media",
+      "title": "Crosure",
+      "url": "https://commsure.com/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "description": "Frontend Dev of React.js Based SaaS App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/21.jpg?alt=media",
+      "title": "Entreviable",
+      "url": "https://entreviable.com"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "AgileTz",
+      "description": "Frontend Dev of React.js Based Public (Governmental) Service App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/20.jpg?alt=media",
+      "title": "Sanad"
+    },
+    {
+      "category": "Web Apps",
+      "company": "AgileTz",
+      "description": "Full-Stack Dev of React.js-Node.js Based Multi-Front Public (Governmental) Service App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/14.jpg?alt=media",
+      "title": "DLS",
+      "url": "https://portal.dls.gov.jo/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "description": "Full-Stack Dev of React.Js-Laravel Based App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/19.jpg?alt=media",
+      "title": "Semesteer",
+      "url": "https://semesteer.com/"
+    },
+    {
+      "category": "Web Apps",
+      "company": "Trellah",
+      "description": "Frontend Dev of Vue.js Based App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/16.jpg?alt=media",
+      "title": "Trellah",
+      "url": "https://trellah.com/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "description": "Full-Stack Dev of React.Js-Node.Js Based App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/23.jpg?alt=media",
+      "title": "Rasmi & Kiwan"
+    },
+    {
+      "category": "Landing Pages",
+      "comingSoon": false,
+      "description": "Frontend Dev of Next.Js-Based Landing Page",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/17.jpg?alt=media",
+      "title": "Rasmi & Kiwan",
+      "url": "https://rasmiandkiwan.com/"
+    },
+    {
+      "category": "Web Apps",
+      "company": "Luxtag",
+      "description": "Frontend Dev of PERN Based App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/11.jpg?alt=media",
+      "title": "BrandTag",
+      "url": "https://app.brandtag.io/"
+    },
+    {
+      "category": "Landing Pages",
+      "comingSoon": false,
+      "description": "Frontend Dev of Next.Js Based Landing Page",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/12.jpg?alt=media",
+      "title": "Dr. Ahmad Abu Mahfouth",
+      "url": "https://drahmadabumahfouth.com"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "description": "Full-Stack Dev of Vue.js-Django Based App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/7.jpg?alt=media",
+      "openSource": true,
+      "title": "Currency Showroom",
+      "url": "https://currencies-showroom.vercel.app/"
+    },
+    {
+      "category": "Landing Pages",
+      "description": "Wordpress Website",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/1.jpg?alt=media",
+      "title": "OneShot Future Company",
+      "url": "https://oneshotfuture.com/"
+    },
+    {
+      "category": "Web Apps",
+      "description": "Full-Stack Dev of Laravel Based App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/8.jpg?alt=media",
+      "title": "AIS Students Portal",
+      "url": "https://students.aqsa.edu.my/"
+    },
+    {
+      "category": "Landing Pages",
+      "description": "Wordpress Website",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/2.jpg?alt=media",
+      "title": "AIS School",
+      "url": "https://aqsa.edu.my/"
+    },
+    {
+      "category": "Web Apps",
+      "description": "Full-Stack Dev of React-Django Based",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/13.jpg?alt=media",
+      "openSource": true,
+      "title": "Tadreebi",
+      "url": "https://tadreebi.netlify.app/"
+    },
+    {
+      "category": "Logos",
+      "description": "Logo Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo2.jpg?alt=media",
+      "title": "Finger Speak",
+      "url": "https: //silent-speakers.github.io/silent-speakers/#overview"
+    },
+    {
+      "category": "Others",
+      "description": "Business Card Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc1.jpg?alt=media",
+      "title": "AIS School",
+      "hide": true,
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc1.jpg?alt=media"
+    },
+    {
+      "category": "Logos",
+      "description": "Logo Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/LogoW.png?alt=media",
+      "title": "Al-Aqsa Staff Portal",
+      "url": "http: //staff.aqsa.edu.my/"
+    },
+    {
+      "category": "Booklets",
+      "description": "Booklet Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet5.jpg?alt=media",
+      "title": "PSAD Southeast Asia",
+      "hide": true,
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet5.jpg?alt=media"
+    },
+    {
+      "category": "Logos",
+      "description": "Logo Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo5.png?alt=media",
+      "link": "aam_app",
+      "title": "Dr. Ahmad Abu Mahfouth Clinic",
+      "url": "https://drahmadabumahfouth.com"
+    },
+    {
+      "category": "Booklets",
+      "description": "Booklet Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet2.jpg?alt=media",
+      "title": "Mercy Mission World",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet2.jpg?alt=media"
+    },
+    {
+      "category": "Banners & Posters",
+      "description": "Banner Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/banner2.jpg?alt=media",
+      "title": "Several University Clubs",
+      "hide": true,
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/banner2.jpg?alt=media"
+    },
+    {
+      "category": "Logos",
+      "description": "Logo Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo4.jpg?alt=media",
+      "title": "Univeristy Club",
+      "hide": true,
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo4.jpg?alt=media"
+    },
+    {
+      "category": "Banners & Posters",
+      "description": "Banner Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media",
+      "title": "SpeedWheels",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media"
+    },
+    {
+      "category": "Logos",
+      "description": "Logo Re-design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo1.jpg?alt=media",
+      "title": "QFM Malaysia",
+      "hide": true,
+      "url": "http: //qfmalaysia.org/"
+    },
+    {
+      "category": "Booklets",
+      "description": "Booklet Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet1.jpg?alt=media",
+      "title": "QFM Malaysia",
+      "hide": true,
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet1.jpg?alt=media"
+    },
+    {
+      "category": "Booklets",
+      "description": "Booklet Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet3.jpg?alt=media",
+      "title": "QFM Malaysia",
+      "hide": true,
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet3.jpg?alt=media"
+    },
+    {
+      "category": "Booklets",
+      "description": "Booklet Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet4.jpg?alt=media",
+      "title": "QFM Malaysia",
+      "hide": true,
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet4.jpg?alt=media"
+    },
+    {
+      "category": "Banners & Posters",
+      "description": "Poster Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster3.jpg?alt=media",
+      "title": "FYP Project",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster3.jpg?alt=media"
+    },
+    {
+      "category": "Others",
+      "description": "CV Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/cv.jpg?alt=media",
+      "title": "An Engineering Graduate",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/cv.jpg?alt=media"
+    },
+    {
+      "category": "Logos",
+      "description": "Logo Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo6.png?alt=media",
+      "title": "xEdu",
+      "hide": true,
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo6.png?alt=media"
+    },
+    {
+      "category": "Banners & Posters",
+      "description": "Brochure Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media",
+      "title": "Makan Sini Resturant",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media"
+    },
+    {
+      "category": "Others",
+      "description": "Business Card Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc2.jpg?alt=media",
+      "title": "Global Mediator",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc2.jpg?alt=media"
+    },
+    {
+      "category": "Booklets",
+      "description": "Booklet Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet6.jpg?alt=media",
+      "title": "IIUM",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet6.jpg?alt=media"
+    },
+    {
+      "category": "Others",
+      "description": "Brochure Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster2.jpg?alt=media",
+      "title": "IIUM",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster2.jpg?alt=media"
+    },
+    {
+      "category": "Videos",
+      "description": "Video Producing",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/video1.png?alt=media",
+      "title": "ICPC Asia Regional Contest",
+      "url": "https://www.youtube.com/watch?v=nwjGLer53sQ"
+    },
+    {
+      "category": "Videos",
+      "description": "Video Producing",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/video2.png?alt=media",
+      "title": "ICPC Asia Regional Contest",
+      "url": "https://www.youtube.com/watch?v=D1uIlE_YB3U"
+    }
+  ],
+  "jobs": [
+    {
+      "desc": [
+        "8 Years of Web Development",
+        "Developed solutions, systems, and applications on various scales.",
+        "Covered all technical aspects of the development process, from planning and design to infrastructure and delivery.",
+        "Acquired soft skills, including team leadership and development planning.",
+        "Notable projects include building the web application for Jordan's public services platform (Sanad) and Jordan's Land and Survey Department digital services portal."
+      ],
+      "icon": "faCode",
+      "jobs": [
+        {
+          "company": "Logatta",
+          "description": "To develop React.Js-based web apps for Saas services.",
+          "monthsCount": 5,
+          "period": "Aug - Dec 2023",
+          "projectsCount": 2,
+          "title": "Senior Frontend Deveoper",
+          "type": "Freelancer",
+          "website": "https://www.logatta.com"
+        },
+        {
+          "company": "Deloitte Digital",
+          "description": "To develop JS based web apps for online public (government) services.",
+          "monthsCount": 2,
+          "period": "Jun - Jul 2023",
+          "projectsCount": 0,
+          "title": "Delivery Consultant",
+          "type": "Full-Time",
+          "website": "https://www2.deloitte.com/xe/en/pages/strategy-operations/solutions/deloitte-jordan-digital-center.html"
+        },
+        {
+          "company": "AgileTz",
+          "description": "To develop React.Js-Node.Js web apps for online public (government) services.",
+          "monthsCount": 10,
+          "period": "Aug 2022 - May 2023",
+          "projectsCount": 2,
+          "title": "Senior Full-Stack Developer",
+          "type": "Full-Time",
+          "website": "https://www.agiletz.com/"
+        },
+        {
+          "company": "ArabWork",
+          "description": "Full-time job to develop a Vue-Symfony web app for an online service.",
+          "monthsCount": 2,
+          "period": "Jun 2022 - Aug 2022",
+          "projectsCount": 1,
+          "title": "Frontend Developer",
+          "website": "https://www.linkedin.com/company/arabwork/"
+        },
+        {
+          "company": "LuxTag",
+          "description": "To develop a flagship PERN based web app for an online service.",
+          "monthsCount": 12,
+          "period": "Nov 2020 - Oct 2021",
+          "projectsCount": 1,
+          "title": "Frontend Developer",
+          "type": "Full-Time",
+          "website": "https://luxtag.io/"
+        },
+        {
+          "company": "AIS School",
+          "description": "To develop a Laravel based web app of a student information system.",
+          "monthsCount": 12,
+          "period": "Sep 2019 - Aug 2020",
+          "projectsCount": 1,
+          "title": "Full-Stack Developer",
+          "type": "Part-Time",
+          "website": "http://aqsa.edu.my/"
+        },
+        {
+          "company": "Individually",
+          "description": "Executed several Laravel based & PERN based web app private & open-source projects.",
+          "period": "Sep 2019 - Present",
+          "title": "Full-Stack Developer",
+          "type": "Freelance"
+        },
+        {
+          "company": "Digizyn",
+          "description": "To develop a React.js-Node.js Based Multi-Front Public (Governmental) Service App.",
+          "monthsCount": 2,
+          "period": "Jul 2022 - Aug 2022",
+          "projectsCount": 0,
+          "title": "Full-Stack Developer",
+          "type": "Freelance",
+          "website": "https://digizyn.com/"
+        },
+        {
+          "company": "Individually",
+          "description": "Several code based frontend-only landing-page projects.",
+          "period": "May 2018 - Aug 2019",
+          "title": "Frontend Developer",
+          "type": "Freelance"
+        },
+        {
+          "company": "Individually",
+          "description": "Several wordpress based landing-page & simple web app projects.",
+          "period": "Oct 2015 - Apr 2018",
+          "title": "Wordpress Developer",
+          "type": "Freelance"
+        }
+      ],
+      "title": "Web Development"
+    },
+    {
+      "desc": [
+        "3 Years as Graphic & UI Designer",
+        "Worked as a graphic and UI designer for 3 years.",
+        "Gained foundational knowledge and learned design tricks.",
+        "Developed an understanding of distinguishing good vs bad designs.",
+        "Transitioned to a web development career.",
+        "Continued design as a side practice to maintain skills.",
+        "Created designs for various web applications.",
+        "Executed graphic design projects, including rebuilding foundation brand identities."
+      ],
+      "icon": "faPaintBrush",
+      "jobs": [
+        {
+          "certificate": "",
+          "company": "Speed Wheels",
+          "description": "Work about designing and preparing for a social-media promotional campaign.",
+          "monthsCount": 2,
+          "period": "Jan 2017 - Feb 2017",
+          "projectsCount": 5,
+          "title": "Graphic Designer",
+          "type": "Part-time",
+          "website": "https://speedwheels.shop/"
+        },
+        {
+          "certificate": "",
+          "company": "QFM Malaysia",
+          "description": "To design serveral booklets & brochures.",
+          "monthsCount": 6,
+          "period": "Jun - Aug 2016, May & July 2017, Jun 2018",
+          "projectsCount": 8,
+          "title": "Graphic Designer",
+          "type": "Part-time",
+          "website": "http://qfmalaysia.org/"
+        },
+        {
+          "certificate": "",
+          "company": "Mercy Mission World",
+          "description": "Work included gaphic designing & events management.",
+          "monthsCount": 7,
+          "period": "Dec 2015 - Jun 2016",
+          "projectsCount": 8,
+          "title": "PR Executive",
+          "type": "Part-time",
+          "website": "https://www.mercymissionworld.org/"
+        },
+        {
+          "company": "Freelance",
+          "description": "One experience to edit & produce videos for an event.",
+          "period": "Oct 2019 - Nov 2019",
+          "title": "Video Editor",
+          "type": "Freelance"
+        },
+        {
+          "company": "Freelance",
+          "description": "Executed enormous number of graphic designs for both print-out & digital uses.",
+          "period": "Feb 2015 - Apr 2019",
+          "title": "Graphic Designer",
+          "type": "Freelance"
+        }
+      ],
+      "title": "Graphics & UI Design"
+    },
+    {
+      "desc": [
+        "3 Years of Management-Related Experience",
+        "Worked in management-related roles, including Secretariat and financial management.",
+        "Developed skills in work documentation and organization.",
+        "Accumulated foundational experience in management roles over the years."
+      ],
+      "icon": "faBriefcase",
+      "jobs": [
+        {
+          "company": "WAMY",
+          "description": "Work as managment board member to run the organization",
+          "monthsCount": 12,
+          "period": "Feb 2014 - Jan 2015",
+          "title": "Board Member",
+          "type": "Part-time"
+        },
+        {
+          "company": "WAMY",
+          "description": "Job about documenting all foundation paper works.",
+          "monthsCount": 12,
+          "period": "Feb 2013 - Jan 2014",
+          "title": "Secretariat",
+          "type": "Part-time"
+        },
+        {
+          "company": "Shamy",
+          "description": "Job about documenting all foundation paper works, and included graphic design tasks.",
+          "monthsCount": 12,
+          "period": "Feb 2013 - Jan 2014",
+          "projectsCount": 8,
+          "title": "Secretariat",
+          "type": "Part-time"
+        },
+        {
+          "company": "Al-Masar",
+          "description": "Job about documenting all foundation paper works.",
+          "monthsCount": 30,
+          "period": "Dec 2008 - May 2011",
+          "projectsCount": 15,
+          "title": "Secretariat & Financial Managment",
+          "type": "Part-time"
+        }
+      ],
+      "title": "Managment Works"
+    }
+  ],
+  "projects": [
+    {
+      "img": "/images/semesteer.png",
+      "link": "https://www.semesteer.com/",
+      "texts": [
+        "I developed and tested this solution within a school environment for a whole year, successfully validating the concept.",
+        "This project is my primary focus, aiming to centralize, organize, and streamline the education process by providing online tools for data analysis, information sharing, and timely alerts to all stakeholders involved.",
+        "The solution is designed to be user-friendly: a school can easily input initial education data independently. Once set up, the platform facilitates ongoing updates, involving school staff, students, and their families.",
+        "With initial funding secured, a dedicated team is actively working on the project's continued development and executing a Go-To-Market plan. For detailed information, please visit the project's website @ https://www.semesteer.com.",
+        "Future plans include expanding the solution to digitze every corner of the education process going on & off-campus."
+      ]
+    },
+    {
+      "img": "/images/appnest-w.png",
+      "link": "https://sketcher-drab.vercel.app/",
+      "texts": [
+        "I have designed and built the architecture of a coming-soon open-source project of AppNest.",
+        "This project is about building a tool to help the planning and execution of any future web application projects.",
+        "I am supervising the team that is developing the code for the project, and soon we will launch the MVP for public testing."
+      ]
+    }
+  ]
+}
