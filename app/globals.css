@@ -113,3 +113,23 @@ a {
     color-scheme: dark;
   }
 }
+
+.corners {
+  -webkit-clip-path: polygon(
+    15px 0,
+    calc(100% - 15px) 0,
+    100% 50%,
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0% 50%
+  );
+  /* top left, top right, mid right, bottom right, bottom left, mid left*/
+  clip-path: polygon(
+    15px 0,
+    calc(100% - 15px) 0,
+    100% 50%,
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0% 50%
+  );
+}

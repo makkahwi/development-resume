@@ -40,7 +40,11 @@ const MoreWorks = async ({ works }: { works: Props[] }) => {
 
       {showMore ? (
         <Col xs={12} className="text-center">
-          <Button variant="info" onClick={() => setShowMore(false)}>
+          <Button
+            variant="info"
+            onClick={() => setShowMore(false)}
+            className="corners px-4"
+          >
             Show Less
           </Button>
         </Col>
@@ -48,7 +52,7 @@ const MoreWorks = async ({ works }: { works: Props[] }) => {
         <Col xs={12} className="text-center">
           <Button
             variant="info"
-            className="text-white"
+            className="text-white corners px-4"
             onClick={() => setShowMore(true)}
           >
             Show More

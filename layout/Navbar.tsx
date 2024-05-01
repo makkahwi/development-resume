@@ -51,7 +51,7 @@ const NavbarComp = () => {
   return (
     <Navbar
       expand="lg"
-      className="py-0 px-5 mx-3 mt-3 border-bottom border-info fixed-top m-0"
+      className="py-0 px-5 mx-3 mt-3 border-bottom border-info fixed-top m-0 corners"
       bg="info"
     >
       <NavbarBrand className="fw-bold" role="button">
@@ -91,7 +91,7 @@ const NavbarComp = () => {
               href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-WD-Resume-Sheet.pdf?alt=media"
               target="_blank"
             >
-              <Button variant="light" className="text-info ms-1">
+              <Button variant="light" className="text-info ms-1 corners px-4">
                 <FontAwesomeIcon icon={faDownload} className="me-1 fw-bold" />
                 <span className="fw-bold d-inline d-lg-none d-xl-inline">
                   CV

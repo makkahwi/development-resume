@@ -17,10 +17,14 @@ const AboutSection = () => {
             programmer. You may scroll down to see it for yourself.
           </Typography>
         </Col>
+      </Row>
 
+      <StatisticsSection />
+
+      <Row>
         <Col md={12} className="my-auto text-center">
-          <ButtonGroup>
-            <Button variant="info" className="text-white">
+          <ButtonGroup className="corners">
+            <Button variant="info" className="text-white px-4">
               <a
                 href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-WD-Resume-Sheet.pdf?alt=media"
                 target="_blank"
@@ -29,7 +33,7 @@ const AboutSection = () => {
               </a>
             </Button>
 
-            <Button variant="info" className="text-white">
+            <Button variant="info" className="text-white px-4">
               <a
                 href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib%20Ahmad%20Psychometric.pdf?alt=media"
                 target="_blank"
@@ -40,8 +44,6 @@ const AboutSection = () => {
           </ButtonGroup>
         </Col>
       </Row>
-
-      <StatisticsSection />
     </PageSection>
   );
 };

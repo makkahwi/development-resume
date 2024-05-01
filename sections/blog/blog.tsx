@@ -81,7 +81,7 @@ const BlogSection = ({ posts }: props) => {
           <Col md={12} className="mb-4 text-center">
             <Button
               onClick={() => setPageSize((current) => current + 4)}
-              variant="info"
+              variant="info corners px-4"
             >
               Show More
             </Button>
