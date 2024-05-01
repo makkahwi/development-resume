@@ -41,7 +41,7 @@ const StatisticsSection = async ({ page }: props) => {
       ),
     },
     {
-      title: "Projects Exectued",
+      title: "Built Products",
       count: careers.reduce(
         (careerFinal, careerCurrent) =>
           (careerFinal += careerCurrent.jobs.reduce(
@@ -54,7 +54,7 @@ const StatisticsSection = async ({ page }: props) => {
         0
       ),
     },
-    { title: "Career Shifts", count: 3 },
+    { title: "Designed Solutions", count: 9 },
   ];
 
   return (
