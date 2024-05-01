@@ -61,9 +61,21 @@ const StatisticsSection = async ({ page }: props) => {
     <Row className="my-5">
       {stats.map(({ title, count }, i) => (
         <Col md={4} className="my-3 text-info" key={i}>
-          <Typography justify="center" color="info" size={1}>
+          <Typography
+            justify="center"
+            color="info"
+            size={1}
+            style={{
+              background: 'url("/images/BracketsC.png")',
+              backgroundSize: "auto 100%",
+              backgroundPosition: "center center",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="py-3"
+          >
             {count}
           </Typography>
+
           <Typography justify="center" color="info" size={4}>
             {title}
           </Typography>
