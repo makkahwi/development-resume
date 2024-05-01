@@ -1,6 +1,22 @@
 {
   "job-projects": [
     {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "description": "Frontend Dev of Remix Based SaaS Web App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/26.jpg?alt=media",
+      "title": "Shwra",
+      "url": "https://www.shwra.sa/"
+    },
+    {
+      "category": "Landing Pages",
+      "comingSoon": true,
+      "description": "Frontend Dev of Next.Js Based Landing Page",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/27.jpg?alt=media",
+      "title": "E3 Ventures",
+      "url": "https://e3.ventures/"
+    },
+    {
       "category": "Landing Pages",
       "comingSoon": false,
       "description": "Frontend Dev of Next.Js Based Landing Page",
@@ -28,7 +44,6 @@
       "category": "Landing Pages",
       "comingSoon": true,
       "description": "React.Js Based App",
-      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/18.jpg?alt=media",
       "title": "Zaytouna Club",
       "url": "https://zaytouna-tau.vercel.app/"
@@ -210,24 +225,24 @@
     {
       "category": "Others",
       "description": "Business Card Design",
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc1.jpg?alt=media",
       "title": "AIS School",
-      "hide": true,
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc1.jpg?alt=media"
     },
     {
       "category": "Logos",
       "description": "Logo Design",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/LogoW.png?alt=media",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo.png?alt=media",
       "title": "Al-Aqsa Staff Portal",
       "url": "http: //staff.aqsa.edu.my/"
     },
     {
       "category": "Booklets",
       "description": "Booklet Design",
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet5.jpg?alt=media",
       "title": "PSAD Southeast Asia",
-      "hide": true,
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet5.jpg?alt=media"
     },
     {
@@ -248,17 +263,17 @@
     {
       "category": "Banners & Posters",
       "description": "Banner Design",
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/banner2.jpg?alt=media",
       "title": "Several University Clubs",
-      "hide": true,
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/banner2.jpg?alt=media"
     },
     {
       "category": "Logos",
       "description": "Logo Design",
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo4.jpg?alt=media",
       "title": "Univeristy Club",
-      "hide": true,
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo4.jpg?alt=media"
     },
     {
@@ -271,33 +286,33 @@
     {
       "category": "Logos",
       "description": "Logo Re-design",
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo1.jpg?alt=media",
       "title": "QFM Malaysia",
-      "hide": true,
       "url": "http: //qfmalaysia.org/"
     },
     {
       "category": "Booklets",
       "description": "Booklet Design",
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet1.jpg?alt=media",
       "title": "QFM Malaysia",
-      "hide": true,
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet1.jpg?alt=media"
     },
     {
       "category": "Booklets",
       "description": "Booklet Design",
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet3.jpg?alt=media",
       "title": "QFM Malaysia",
-      "hide": true,
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet3.jpg?alt=media"
     },
     {
       "category": "Booklets",
       "description": "Booklet Design",
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet4.jpg?alt=media",
       "title": "QFM Malaysia",
-      "hide": true,
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet4.jpg?alt=media"
     },
     {
@@ -317,9 +332,9 @@
     {
       "category": "Logos",
       "description": "Logo Design",
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo6.png?alt=media",
       "title": "xEdu",
-      "hide": true,
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo6.png?alt=media"
     },
     {
@@ -441,16 +456,6 @@
           "period": "Sep 2019 - Present",
           "title": "Full-Stack Developer",
           "type": "Freelance"
-        },
-        {
-          "company": "Digizyn",
-          "description": "To develop a React.js-Node.js Based Multi-Front Public (Governmental) Service App.",
-          "monthsCount": 2,
-          "period": "Jul 2022 - Aug 2022",
-          "projectsCount": 0,
-          "title": "Full-Stack Developer",
-          "type": "Freelance",
-          "website": "https://digizyn.com/"
         },
         {
           "company": "Individually",

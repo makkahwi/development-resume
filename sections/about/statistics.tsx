@@ -41,7 +41,7 @@ const StatisticsSection = async ({ page }: props) => {
       ),
     },
     {
-      title: "Projects Exectued",
+      title: "Built Products",
       count: careers.reduce(
         (careerFinal, careerCurrent) =>
           (careerFinal += careerCurrent.jobs.reduce(
@@ -54,16 +54,28 @@ const StatisticsSection = async ({ page }: props) => {
         0
       ),
     },
-    { title: "Career Shifts", count: 3 },
+    { title: "Designed Solutions", count: 9 },
   ];
 
   return (
     <Row className="my-5">
       {stats.map(({ title, count }, i) => (
         <Col md={4} className="my-3 text-info" key={i}>
-          <Typography justify="center" color="info" size={1}>
+          <Typography
+            justify="center"
+            color="info"
+            size={1}
+            style={{
+              background: 'url("/images/BracketsC.png")',
+              backgroundSize: "auto 100%",
+              backgroundPosition: "center center",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="py-3"
+          >
             {count}
           </Typography>
+
           <Typography justify="center" color="info" size={4}>
             {title}
           </Typography>
