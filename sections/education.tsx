@@ -97,15 +97,15 @@ const EducationSection = async ({ page }: props) => {
                 {desc}
               </Typography>
 
-              <ButtonGroup className="mt-3">
-                <Button variant="light">
+              <ButtonGroup className="mt-3 corners">
+                <Button variant="light" className="px-4">
                   <a href={cert} target="_blank">
                     <FontAwesomeIcon icon={faDownload} /> Certificates
                   </a>
                 </Button>
 
                 {downloads.map(({ link, label }, y) => (
-                  <Button variant={"light"} key={y}>
+                  <Button variant="light" className="px-4" key={y}>
                     <a href={link} target="_blank">
                       {label}
                     </a>

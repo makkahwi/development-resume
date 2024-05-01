@@ -16,7 +16,7 @@ const CareerSection = async () => {
     type = "",
     period = "",
   }) => (
-    <div className="bg-white text-white my-1 p-4 ">
+    <div className="bg-white text-white my-1 p-4">
       <Typography size={6} color="info">
         {period + " @ "}
         {website ? (

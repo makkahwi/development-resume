@@ -39,7 +39,7 @@ const BlogFilter = ({ pickedCategory, setPickedCategory }: props) => {
   ];
 
   return (
-    <ButtonGroup className="mb-5 w-100">
+    <ButtonGroup className="mb-5 w-100 corners">
       {buttons.map(({ text, category, icon }, i) => (
         <Button
           onClick={() => setPickedCategory(category)}
@@ -50,6 +50,7 @@ const BlogFilter = ({ pickedCategory, setPickedCategory }: props) => {
               ? "dark"
               : "secondary"
           }
+          className="px-4"
           key={i}
         >
           <FontAwesomeIcon icon={icon} className="me-2" />

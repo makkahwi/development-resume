@@ -63,7 +63,7 @@ const CtaSection = () => {
             <a href={link} target="_blank">
               <Button
                 style={{ backgroundColor: color }}
-                className="w-100 p-3 my-3 border-0"
+                className="w-100 p-3 my-3 border-0 corners"
               >
                 <Typography size={5} justify="center" color="white">
                   <FontAwesomeIcon icon={icon} /> {label}
@@ -89,7 +89,7 @@ const CtaSection = () => {
                       name={name}
                       placeholder={title}
                       type={type}
-                      className="py-3"
+                      className="py-3 corners px-4"
                       required={required}
                     />
                   </Col>
@@ -97,7 +97,11 @@ const CtaSection = () => {
               )}
 
               <Col md={12} className="text-end">
-                <Button variant="info" className="mt-3" type="submit">
+                <Button
+                  variant="info"
+                  className="mt-3 corners px-4"
+                  type="submit"
+                >
                   Submit
                 </Button>
               </Col>
