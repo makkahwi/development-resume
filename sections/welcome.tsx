@@ -17,12 +17,16 @@ const WelcomeSection = () => {
     <PageSection color="dark" NoBg id="home">
       <Row
         style={{ minHeight: "70vh" }}
-        className="text-white justify-content-between"
+        className="text-white justify-content-center"
       >
-        <Col lg={6} style={{ margin: "auto 0" }} className="py-5">
+        <Col xs={8} lg={4} style={{ margin: "auto" }} className="text-center">
+          <img src="/images/ProfilePhoto.jpg" width="100%" />
+        </Col>
+
+        <Col xs={8} lg={6} style={{ margin: "auto" }} className="py-5">
           <Typography
             size={1}
-            className="pb-4 text-uppercase"
+            className="pb-4 text-uppercase text-start"
             color="white"
             style={{ fontSize: "3.5vw" }}
           >
@@ -46,10 +50,6 @@ const WelcomeSection = () => {
               </Fragment>
             ))}
           /> */}
-        </Col>
-
-        <Col lg={4} style={{ margin: "auto 0" }} className="text-center">
-          <img src="/images/profile.jpg" width="100%" />
         </Col>
       </Row>
     </PageSection>
