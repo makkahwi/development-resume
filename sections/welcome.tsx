@@ -15,12 +15,15 @@ const WelcomeSection = () => {
 
   return (
     <PageSection color="dark" NoBg id="home">
-      <Row style={{ minHeight: "70vh" }} className="text-white">
-        <Col lg={5} style={{ margin: "auto 0" }} className="text-center">
-          <img src="/images/ProfilePhoto.jpg" width="70%" />
+      <Row
+        style={{ minHeight: "70vh" }}
+        className="text-white justify-content-center"
+      >
+        <Col xs={8} lg={4} style={{ margin: "auto" }} className="text-center">
+          <img src="/images/ProfilePhoto.jpg" width="100%" />
         </Col>
 
-        <Col lg={6} style={{ margin: "auto 0" }} className="py-5">
+        <Col xs={8} lg={6} style={{ margin: "auto" }} className="py-5">
           <Typography
             size={1}
             className="pb-4 text-uppercase text-start"
