@@ -1,6 +1,8 @@
-import { getJobs } from "@/api/data";
+import { getJobProjects, getJobs } from "@/api/data";
 import Typography from "@/components/typography";
 import { Col, Row } from "react-bootstrap";
+
+import { ProjectProps } from "../works/moreWorks";
 
 interface props {
   page?: boolean;
@@ -24,6 +26,7 @@ export interface JobProps {
 
 const StatisticsSection = async ({ page }: props) => {
   const careers: JobProps[] = await getJobs();
+  const projects: ProjectProps[] = await getJobProjects();
 
   const stats = [
     {
@@ -54,7 +57,10 @@ const StatisticsSection = async ({ page }: props) => {
         0
       ),
     },
-    { title: "Designed Solutions", count: 9 },
+    {
+      title: "Designed Solutions",
+      count: projects.filter(({ designed }) => designed)?.length,
+    },
   ];
 
   return (

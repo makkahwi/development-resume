@@ -4,7 +4,7 @@ import { Fragment, useState } from "react";
 import { Button, Col } from "react-bootstrap";
 import WorkView from "./WorkView";
 
-interface Props {
+export interface ProjectProps {
   category: string;
   comingSoon?: boolean;
   description: string;
@@ -12,9 +12,10 @@ interface Props {
   title: string;
   url?: string;
   hide?: boolean;
+  designed?: boolean;
 }
 
-const MoreWorks = async ({ works }: { works: Props[] }) => {
+const MoreWorks = async ({ works }: { works: ProjectProps[] }) => {
   const [showMore, setShowMore] = useState(false);
 
   return (
