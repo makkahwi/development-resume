@@ -2,6 +2,15 @@
   "job-projects": [
     {
       "category": "Web Apps",
+      "description": "Full-Stack Dev of React-Firebase Based Web App",
+      "designed": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/28.png?alt=media",
+      "openSource": true,
+      "title": "Health Daily Link",
+      "url": "https://health-daily-link.vercel.app/"
+    },
+    {
+      "category": "Web Apps",
       "comingSoon": true,
       "description": "Frontend Dev of Remix Based SaaS Web App",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/26.jpg?alt=media",
@@ -20,6 +29,7 @@
       "category": "Landing Pages",
       "comingSoon": false,
       "description": "Frontend Dev of Next.Js Based Landing Page",
+      "designed": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/25.jpg?alt=media",
       "title": "Mrs. Noor Kayyali",
       "url": "https://www.noorkayyali.com/"
@@ -28,6 +38,7 @@
       "category": "Web Apps",
       "comingSoon": true,
       "description": "System architecture of SaaS App",
+      "designed": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
       "openSource": true,
       "title": "Learngine"
@@ -36,6 +47,7 @@
       "category": "Web Apps",
       "comingSoon": true,
       "description": "System architecture of Open-Source SaaS App",
+      "designed": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/24.jpg?alt=media",
       "openSource": true,
       "title": "AppNest"
@@ -51,6 +63,7 @@
     {
       "category": "Web Apps",
       "description": "Full-Stack Dev of React.Js-Express.Js",
+      "designed": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/15.jpg?alt=media",
       "title": "AIS Staff Portal",
@@ -133,6 +146,7 @@
       "category": "Web Apps",
       "comingSoon": true,
       "description": "Full-Stack Dev of React.Js-Laravel Based App",
+      "designed": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/19.jpg?alt=media",
       "title": "Semesteer",
       "url": "https://semesteer.com/"
@@ -149,6 +163,7 @@
       "category": "Web Apps",
       "comingSoon": true,
       "description": "Full-Stack Dev of React.Js-Node.Js Based App",
+      "designed": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/23.jpg?alt=media",
       "title": "Rasmi & Kiwan"
     },
@@ -180,6 +195,7 @@
       "category": "Web Apps",
       "comingSoon": true,
       "description": "Full-Stack Dev of Vue.js-Django Based App",
+      "designed": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/7.jpg?alt=media",
       "openSource": true,
       "title": "Currency Showroom",
@@ -196,6 +212,7 @@
     {
       "category": "Web Apps",
       "description": "Full-Stack Dev of Laravel Based App",
+      "designed": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/8.jpg?alt=media",
       "title": "AIS Students Portal",
       "url": "https://students.aqsa.edu.my/"
@@ -210,6 +227,7 @@
     {
       "category": "Web Apps",
       "description": "Full-Stack Dev of React-Django Based",
+      "designed": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/13.jpg?alt=media",
       "openSource": true,
       "title": "Tadreebi",
