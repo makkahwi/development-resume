@@ -9,9 +9,20 @@ const WorkView = ({
   description = "",
   url = "",
   category = "",
+  openSource = false,
 }) => {
   return (
-    <CardComp image={image} color="info">
+    <CardComp
+      image={image}
+      color="info"
+      tag={
+        openSource
+          ? "Open-Source" + " " + category
+          : category
+          ? category
+          : undefined
+      }
+    >
       <Typography size={4} justify="center" color="info">
         {title}
       </Typography>
