@@ -8,6 +8,7 @@ interface props {
   image?: string;
   children: React.ReactNode;
   className?: string;
+  tag?: string | React.ReactNode;
 }
 
 const CardComp = ({
@@ -17,6 +18,7 @@ const CardComp = ({
   image,
   children,
   className,
+  tag,
 }: props) => {
   return (
     <Card
@@ -29,6 +31,16 @@ const CardComp = ({
       role={onClick ? "button" : undefined}
     >
       {image && <img alt="Sample" src={image} width="100%" />}
+
+      {tag && (
+        <Typography
+          size="sm"
+          justify="center"
+          className="m-2 position-absolute top-0 end-0 p-1 bg-dark text-white"
+        >
+          {tag}
+        </Typography>
+      )}
 
       {title && (
         <CardTitle>
