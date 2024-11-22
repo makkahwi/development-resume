@@ -12,6 +12,7 @@ export default async function Home() {
   const BlogSection = dynamic(() => import("@/sections/blog/blog"));
   const SkillsSection = dynamic(() => import("@/sections/skills"));
   const AboutSection = dynamic(() => import("@/sections/about/about"));
+  const SponsorSection = dynamic(() => import("@/sections/sponsor"));
 
   const posts: post[] = await getSemesteerBlogEnPosts();
 
@@ -26,6 +27,8 @@ export default async function Home() {
       <CareerSection />
 
       <WorksSection />
+
+      <SponsorSection />
 
       <SkillsSection />
 
