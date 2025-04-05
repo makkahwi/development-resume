@@ -4,6 +4,9 @@ import { post } from "@/sections/blog/blog";
 import EducationSection from "@/sections/education";
 import dynamic from "next/dynamic";
 import { Fragment } from "react";
+import { apiCallRevalidate } from "@/api/data";
+
+export const revalidate = apiCallRevalidate;
 
 export default async function Home() {
   const WorksSection = dynamic(() => import("@/sections/works/works"));
