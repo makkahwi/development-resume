@@ -13,7 +13,7 @@ export const socialLinksList = [
     name: "LinkedIn",
     icon: faLinkedinIn,
     link: "https://linkedin.com/in/makkahwi/",
-    label: "Connect and Empower",
+    label: "Linked In Progress",
     color: "#0A66C2",
   },
   {
@@ -62,12 +62,10 @@ export const socialLinksList = [
     name: "Instagram",
     icon: faInstagram,
     link: "https://instagram.com/makkahwi",
-    label: "Capture Life Together",
+    label: "Capture Life",
     color: "#E4405F",
   },
 ];
 
 export const appTitle = "Suhaib Ahmad";
 export const appDesc = "Personal Website";
-
-export const revalidationTimer = 60 * 60 * 24 * 5; // seconds * mins * hours * days
