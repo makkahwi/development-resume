@@ -3,8 +3,6 @@ import Footer from "@/layout/Footer";
 import CtaSection from "@/sections/cta";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import { apiCallRevalidate } from "@/api/data";
 import LandingPopUp from "@/components/LandingPopUp";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -20,7 +18,6 @@ export const metadata: Metadata = {
   description: "The website of developer Suhaib Ahmad of Jordan.",
 };
 
-export const revalidate = apiCallRevalidate;
 
 export default function RootLayout({
   children,
@@ -29,14 +26,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Fragment>
-          <main className="mx-0 mb-0 p-0 w-100 pb-5">{children}</main>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
 
-          <LandingPopUp />
-          <CtaSection />
-          <Footer />
-        </Fragment>
+      <body className={inter.className}>
+        <main className="mx-0 mb-0 p-0 w-100 pb-5">{children}</main>
+
+        {/* <LandingPopUp /> */}
+
+        <CtaSection />
+        <Footer />
 
         <Script
           async
