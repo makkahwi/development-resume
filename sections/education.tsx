@@ -97,7 +97,7 @@ const EducationSection = async ({ page }: props) => {
                 {desc}
               </Typography>
 
-              <ButtonGroup className="mt-3 corners">
+              {/* <ButtonGroup className="mt-3 corners">
                 <Button variant="light" className="px-4">
                   <a href={cert} target="_blank">
                     <FontAwesomeIcon icon={faDownload} /> Certificates
@@ -111,7 +111,7 @@ const EducationSection = async ({ page }: props) => {
                     </a>
                   </Button>
                 ))}
-              </ButtonGroup>
+              </ButtonGroup> */}
             </Col>
           </Row>
         )
