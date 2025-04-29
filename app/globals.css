@@ -108,12 +108,6 @@ a {
   color: inherit;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
 .corners {
   -webkit-clip-path: polygon(
     15px 0,
