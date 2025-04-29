@@ -46,7 +46,7 @@ const NavbarComp = () => {
     { title: "Sponsor", link: "sponsor", icon: faHeart },
     { title: "Skills", link: "skills", icon: faPaintBrush },
     { title: "Education", link: "education", icon: faGraduationCap },
-    { title: "Blog", link: "blog", icon: faNewspaper },
+    // { title: "Blog", link: "blog", icon: faNewspaper },
     { title: "Contact", link: "contact", icon: faMobile },
   ];
 
