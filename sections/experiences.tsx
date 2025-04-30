@@ -1,7 +1,7 @@
 import { getJobs } from "@/api/data";
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
-import { Col, Row } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 
 import { JobProps } from "./education";
 
@@ -20,12 +20,10 @@ const CareerSection = async () => {
       <Typography size={6} color="info">
         {period + " @ "}
         {website ? (
-          <a
-            href={website}
-            target="_blank"
-            className="text-decoration-none text-inherit"
-          >
-            {company}
+          <a href={website} target="_blank">
+            <Button variant="info" className="text-white m-0 px-1 py-0">
+              {company}
+            </Button>
           </a>
         ) : (
           company

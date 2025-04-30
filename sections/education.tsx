@@ -77,14 +77,14 @@ const EducationSection = async ({ page }: props) => {
     >
       {skills.map(
         ({ logo, name, school, website, desc, cert, downloads }, i) => (
-          <Row className="my-5 gx-5" key={i}>
+          <Row className="my-5 align-middle gx-5" key={i}>
             <Col md={6} className="text-white">
               <a href={website} target="_blank">
                 <img src={logo} width="100%" />
               </a>
             </Col>
 
-            <Col md={6} className="text-white">
+            <Col md={6} className="text-white mt-5">
               <Typography size={5} className="text-white">
                 {school}
               </Typography>
