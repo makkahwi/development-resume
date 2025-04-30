@@ -24,22 +24,22 @@ const AboutSection = () => {
       <Row>
         <Col md={12} className="my-auto text-center">
           <ButtonGroup className="corners">
-            <Button variant="info" className="text-white px-4">
-              <a
-                href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-WD-Resume-Sheet.pdf?alt=media"
-                target="_blank"
-              >
-                Download Resume Sheet
-              </a>
+            <Button
+              variant="info"
+              className="text-white px-4"
+              href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-WD-Resume-Sheet.pdf?alt=media"
+              target="_blank"
+            >
+              Download Resume Sheet
             </Button>
 
-            <Button variant="info" className="text-white px-4">
-              <a
-                href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib%20Ahmad%20Psychometric.pdf?alt=media"
-                target="_blank"
-              >
-                Download Psychometric Test
-              </a>
+            <Button
+              variant="info"
+              className="text-white px-4"
+              href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib%20Ahmad%20Psychometric.pdf?alt=media"
+              target="_blank"
+            >
+              Download Psychometric Test
             </Button>
           </ButtonGroup>
         </Col>

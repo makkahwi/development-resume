@@ -7,3 +7,4 @@
 - Localize App
 - Move education, skills & contacts to firebase
 - Remove "use client" in blog & works
+- Remove PageSection URL Show

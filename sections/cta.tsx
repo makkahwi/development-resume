@@ -60,16 +60,16 @@ const CtaSection = () => {
       <Row>
         {socialLinksList.map(({ name, icon, link, color, label }, i) => (
           <Col md={3} key={i}>
-            <a href={link} target="_blank">
-              <Button
-                style={{ backgroundColor: color }}
-                className="w-100 p-3 my-3 border-0 corners"
-              >
-                <Typography size={5} justify="center" color="white">
-                  <FontAwesomeIcon icon={icon} /> {label}
-                </Typography>
-              </Button>
-            </a>
+            <Button
+              style={{ backgroundColor: color }}
+              className="w-100 p-3 my-3 border-0 corners"
+              href={link}
+              target="_blank"
+            >
+              <Typography size={5} justify="center" color="white">
+                <FontAwesomeIcon icon={icon} /> {label}
+              </Typography>
+            </Button>
           </Col>
         ))}
 

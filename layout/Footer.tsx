@@ -19,11 +19,16 @@ const Footer = () => {
 
         <ButtonToolbar className="justify-content-center my-3">
           {socialLinksList.map(({ icon, link }, i) => (
-            <a href={link} target="_blank" key={i}>
-              <Button variant="ghost" className="text-dark ms-2" size="sm">
-                <FontAwesomeIcon icon={icon} />
-              </Button>
-            </a>
+            <Button
+              variant="ghost"
+              className="text-dark ms-2"
+              size="sm"
+              href={link}
+              target="_blank"
+              key={i}
+            >
+              <FontAwesomeIcon icon={icon} />
+            </Button>
           ))}
         </ButtonToolbar>
       </NavbarText>

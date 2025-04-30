@@ -89,17 +89,15 @@ const NavbarComp = () => {
           ))}
 
           <NavItem>
-            <a
+            <Button
+              variant="light"
+              className="text-info ms-1 corners px-4"
               href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-WD-Resume-Sheet.pdf?alt=media"
               target="_blank"
             >
-              <Button variant="light" className="text-info ms-1 corners px-4">
-                <FontAwesomeIcon icon={faDownload} className="me-1 fw-bold" />
-                <span className="fw-bold d-inline d-lg-none d-xl-inline">
-                  CV
-                </span>
-              </Button>
-            </a>
+              <FontAwesomeIcon icon={faDownload} className="me-1 fw-bold" />
+              <span className="fw-bold d-inline d-lg-none d-xl-inline">CV</span>
+            </Button>
           </NavItem>
         </Nav>
       </NavbarCollapse>
