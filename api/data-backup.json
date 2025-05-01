@@ -1,242 +1,612 @@
 {
   "job-projects": [
     {
-      "category": "Web Apps",
-      "description": "Full-Stack Dev of React-Firebase Based Web App",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/28.png?alt=media",
-      "openSource": true,
-      "title": "Health Daily Link",
-      "url": "https://health-daily-link.vercel.app/"
-    },
-    {
-      "category": "Web Apps",
-      "comingSoon": true,
-      "description": "Frontend Dev of Remix Based SaaS Web App",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/26.jpg?alt=media",
-      "title": "Shwra",
-      "url": "https://www.shwra.sa/"
-    },
-    {
-      "category": "Landing Pages",
-      "comingSoon": true,
-      "description": "Frontend Dev of Next.Js Based Landing Page",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/27.jpg?alt=media",
-      "title": "E3 Ventures",
-      "url": "https://e3.ventures/"
-    },
-    {
-      "category": "Landing Pages",
-      "comingSoon": false,
-      "description": "Frontend Dev of Next.Js Based Landing Page",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/25.jpg?alt=media",
-      "title": "Mrs. Noor Kayyali",
-      "url": "https://www.noorkayyali.com/"
-    },
-    {
-      "category": "Web Apps",
-      "comingSoon": true,
-      "description": "System architecture of SaaS App",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
-      "openSource": true,
-      "title": "Learngine"
-    },
-    {
-      "category": "Web Apps",
-      "comingSoon": true,
-      "description": "System architecture of Open-Source SaaS App",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/24.jpg?alt=media",
-      "openSource": true,
-      "title": "AppNest"
-    },
-    {
-      "category": "Landing Pages",
-      "comingSoon": true,
-      "description": "React.Js Based App",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/18.jpg?alt=media",
-      "title": "Zaytouna Club",
-      "url": "https://zaytouna-tau.vercel.app/"
-    },
-    {
-      "category": "Web Apps",
-      "description": "Full-Stack Dev of React.Js-Express.Js",
-      "designed": true,
-      "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/15.jpg?alt=media",
-      "title": "AIS Staff Portal",
-      "url": "https://staff.aqsa.edu.my/"
-    },
-    {
-      "category": "Landing Pages",
-      "description": "Wordpress Website",
-      "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/4.jpg?alt=media",
-      "title": "SpeedWheels Company",
-      "url": "https://speedwheelstrade.online/"
-    },
-    {
-      "category": "Landing Pages",
-      "description": "Wordpress Website",
-      "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/3.jpg?alt=media",
-      "title": "Team Foundation",
-      "url": "https://teamtr.media/"
-    },
-    {
-      "category": "Web Apps",
-      "comingSoon": true,
-      "description": "Full-Stack Dev of PERN Based App",
-      "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/9.jpg?alt=media",
-      "title": "xEdu App",
-      "url": "https://xEdu.best/"
-    },
-    {
-      "category": "Landing Pages",
-      "description": "Wordpress Website",
-      "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/6.jpg?alt=media",
-      "title": "PPAM Organization",
-      "url": "https://ppam.org.my/"
-    },
-    {
-      "category": "Web Apps",
-      "comingSoon": true,
-      "description": "Full-Stack Dev of React.Js-Node.Js Based App",
-      "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
-      "title": "Dr. Ahmad Abu Mahfouth Clinic Mgmt System"
-    },
-    {
-      "category": "Web Apps",
-      "comingSoon": true,
-      "description": "Frontend Dev of React.js Based Search-Engine App",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/22.jpg?alt=media",
-      "title": "Crosure",
-      "url": "https://commsure.com/"
-    },
-    {
-      "category": "Web Apps",
-      "comingSoon": true,
-      "description": "Frontend Dev of React.js Based SaaS App",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/21.jpg?alt=media",
-      "title": "Entreviable",
-      "url": "https://entreviable.com"
-    },
-    {
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript",
+        "JSON",
+        "REST API",
+        "Docker"
+      ],
       "category": "Web Apps",
       "comingSoon": true,
       "company": "AgileTz",
-      "description": "Frontend Dev of React.js Based Public (Governmental) Service App",
+      "role": "Frontend Web Development",
+      "description": "Public (Governmental) Service App",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/20.jpg?alt=media",
+      "importanceOrder": 29,
+      "timeOrder": 15,
       "title": "Sanad"
     },
     {
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "Express.Js",
+        "JavaScript",
+        "JSON",
+        "REST API",
+        "Docker"
+      ],
       "category": "Web Apps",
       "company": "AgileTz",
-      "description": "Full-Stack Dev of React.js-Node.js Based Multi-Front Public (Governmental) Service App",
+      "role": "Full-Stack Development",
+      "description": "Multi-Front Public (Governmental) Service App",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/14.jpg?alt=media",
+      "importanceOrder": 28,
+      "timeOrder": 14,
       "title": "DLS",
       "url": "https://portal.dls.gov.jo/"
     },
     {
+      "technologies": [
+        "React.Js",
+        "Next.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "Laravel",
+        "JavaScript",
+        "JSON",
+        "PhP",
+        "REST API",
+        "MySQL",
+        "Firebase",
+        "AWS"
+      ],
       "category": "Web Apps",
       "comingSoon": true,
-      "description": "Full-Stack Dev of React.Js-Laravel Based App",
+      "role": "Full-Stack Development",
+      "description": "Advanced Multi-tenant System",
       "designed": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/19.jpg?alt=media",
+      "importanceOrder": 27,
+      "timeOrder": 18,
       "title": "Semesteer",
       "url": "https://semesteer.com/"
     },
     {
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API"
+      ],
+      "category": "Web Apps",
+      "comingSoon": true,
+      "role": "Frontend Web Development",
+      "description": "SaaS App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/21.jpg?alt=media",
+      "importanceOrder": 26,
+      "timeOrder": 16,
+      "title": "Entreviable",
+      "url": "https://entreviable.com"
+    },
+    {
+      "technologies": [
+        "Vue.Js",
+        "CSS",
+        "Node.Js",
+        "JavaScript",
+        "JSON",
+        "REST API"
+      ],
       "category": "Web Apps",
       "company": "Trellah",
-      "description": "Frontend Dev of Vue.js Based App",
+      "role": "Frontend Web Development",
+      "description": "SaaS App",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/16.jpg?alt=media",
+      "importanceOrder": 25,
+      "timeOrder": 11,
       "title": "Trellah",
       "url": "https://trellah.com/"
     },
     {
-      "category": "Web Apps",
-      "comingSoon": true,
-      "description": "Full-Stack Dev of React.Js-Node.Js Based App",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/23.jpg?alt=media",
-      "title": "Rasmi & Kiwan"
-    },
-    {
-      "category": "Landing Pages",
-      "comingSoon": false,
-      "description": "Frontend Dev of Next.Js-Based Landing Page",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/17.jpg?alt=media",
-      "title": "Rasmi & Kiwan",
-      "url": "https://rasmiandkiwan.com/"
-    },
-    {
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "Express.Js",
+        "JavaScript",
+        "JSON",
+        "REST API",
+        "PostgreSQL",
+        "Docker"
+      ],
       "category": "Web Apps",
       "company": "Luxtag",
-      "description": "Frontend Dev of PERN Based App",
+      "role": "Frontend Web Development",
+      "description": "SaaS App",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/11.jpg?alt=media",
+      "importanceOrder": 24,
+      "timeOrder": 9,
       "title": "BrandTag",
       "url": "https://app.brandtag.io/"
     },
     {
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "category": "Web Apps",
+      "role": "End-to-End Build",
+      "description": "Open-Source SaaS App",
+      "designed": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/28.png?alt=media",
+      "importanceOrder": 23,
+      "openSource": true,
+      "timeOrder": 24,
+      "title": "Healthy Eating and Lifestyle Tracker",
+      "url": "https://heal-tracker.vercel.app/"
+    },
+    {
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "category": "Web Apps",
+      "comingSoon": true,
+      "role": "System Architecture & Team Oversight",
+      "description": "Open-Source SaaS App",
+      "designed": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/24.jpg?alt=media",
+      "importanceOrder": 22,
+      "openSource": true,
+      "timeOrder": 19,
+      "title": "AppNest"
+    },
+    {
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "Laravel",
+        "JSON",
+        "PhP",
+        "REST API",
+        "MySQL"
+      ],
+      "category": "Web Apps",
+      "role": "End-to-End Product Ownership",
+      "description": "Internal Data-Management Portal",
+      "designed": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/8.jpg?alt=media",
+      "importanceOrder": 21,
+      "timeOrder": 7,
+      "title": "AIS Students Portal"
+    },
+    {
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "Laravel",
+        "JavaScript",
+        "JSON",
+        "PhP",
+        "REST API",
+        "MySQL"
+      ],
+      "category": "Web Apps",
+      "role": "End-to-End Product Ownership",
+      "description": "Internal Data-Management Portal",
+      "designed": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/15.jpg?alt=media",
+      "importanceOrder": 20,
+      "timeOrder": 5,
+      "title": "AIS Staff Portal"
+    },
+    {
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API"
+      ],
+      "category": "Web Apps",
+      "comingSoon": true,
+      "role": "Frontend Web Development",
+      "description": "Specialized Search-Engine App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/22.jpg?alt=media",
+      "importanceOrder": 19,
+      "timeOrder": 17,
+      "title": "Crosure",
+      "url": "https://commsure.com/"
+    },
+    {
+      "technologies": [
+        "Remix",
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript",
+        "TypeScript",
+        "JSON",
+        "REST API"
+      ],
+      "category": "Web Apps",
+      "comingSoon": true,
+      "role": "Frontend Web Development",
+      "description": "SaaS Web App",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/26.jpg?alt=media",
+      "importanceOrder": 18,
+      "timeOrder": 21,
+      "title": "Shwra",
+      "url": "https://www.shwra.sa/"
+    },
+    {
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "Django",
+        "JavaScript",
+        "TypeScript",
+        "JSON",
+        "Python",
+        "REST API",
+        "PostgreSQL"
+      ],
+      "category": "Web Apps",
+      "role": "System Architecture & Team Oversight",
+      "description": "Open-Source SaaS App",
+      "designed": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/13.jpg?alt=media",
+      "importanceOrder": 17,
+      "openSource": true,
+      "timeOrder": 10,
+      "title": "Tadreebi",
+      "url": "https://tadreebi.netlify.app/"
+    },
+    {
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript",
+        "JSON",
+        "REST API"
+      ],
+      "category": "Web Apps",
+      "comingSoon": true,
+      "role": "Full-Stack Development",
+      "description": "SaaS App",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/9.jpg?alt=media",
+      "importanceOrder": 16,
+      "timeOrder": 9,
+      "title": "xEdu App"
+    },
+    {
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "category": "Web Apps",
+      "role": "End-to-End Build",
+      "description": "Open-Source SaaS App",
+      "designed": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
+      "importanceOrder": 15,
+      "openSource": true,
+      "timeOrder": 28,
+      "title": "PRICE",
+      "url": "https://price-admin.vercel.app/"
+    },
+    {
+      "technologies": [
+        "Vue.Js",
+        "Nuxt.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "category": "Web Apps",
+      "comingSoon": true,
+      "role": "End-to-End Build",
+      "description": "Open-Source SaaS App",
+      "designed": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/7.jpg?alt=media",
+      "importanceOrder": 14,
+      "openSource": true,
+      "timeOrder": 26,
+      "title": "Currencies Archiving & Sharing Hub",
+      "url": "https://cash-hub.vercel.app/"
+    },
+    {
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "category": "Web Apps",
+      "role": "End-to-End Build",
+      "description": "Open-Source SaaS App",
+      "designed": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
+      "importanceOrder": 13,
+      "openSource": true,
+      "timeOrder": 25,
+      "title": "Family Finance"
+    },
+    {
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "Express.Js",
+        "JavaScript",
+        "JSON",
+        "REST API",
+        "SQLite",
+        "Docker"
+      ],
+      "category": "Web Apps",
+      "comingSoon": true,
+      "role": "Full-Stack Development",
+      "description": "Internal Data-Management Portal",
+      "designed": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/23.jpg?alt=media",
+      "importanceOrder": 12,
+      "timeOrder": 13,
+      "title": "Rasmi & Kiwan"
+    },
+    {
+      "technologies": [
+        "Next.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
       "category": "Landing Pages",
       "comingSoon": false,
-      "description": "Frontend Dev of Next.Js Based Landing Page",
+      "role": "Frontend Web Development",
+      "description": "Personal Landing Page",
+      "designed": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/25.jpg?alt=media",
+      "importanceOrder": 11,
+      "timeOrder": 23,
+      "title": "Coach Noor Kayyali",
+      "url": "https://www.noorkayyali.com/"
+    },
+    {
+      "technologies": [
+        "Next.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "category": "Landing Pages",
+      "comingSoon": false,
+      "hide": true,
+      "role": "Frontend Web Development",
+      "description": "Personal Landing Page",
+      "designed": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/25.jpg?alt=media",
+      "importanceOrder": 10,
+      "timeOrder": 27,
+      "title": "Nutritionist Fatima Mohammad",
+      "url": "https://nutriFatima.com/"
+    },
+    {
+      "technologies": [
+        "Next.Js",
+        "Vite",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API"
+      ],
+      "category": "Landing Pages",
+      "comingSoon": true,
+      "role": "Frontend Web Development",
+      "description": "Company Profile Landing Page",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/27.jpg?alt=media",
+      "importanceOrder": 9,
+      "timeOrder": 22,
+      "title": "E3 Ventures",
+      "url": "https://e3.ventures/"
+    },
+    {
+      "technologies": [
+        "Next.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript",
+        "JSON",
+        "REST API"
+      ],
+      "category": "Landing Pages",
+      "comingSoon": false,
+      "role": "Frontend Web Development",
+      "description": "Personal Landing Page",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/12.jpg?alt=media",
+      "importanceOrder": 8,
+      "timeOrder": 20,
       "title": "Dr. Ahmad Abu Mahfouth",
       "url": "https://drahmadabumahfouth.com"
     },
     {
-      "category": "Web Apps",
-      "comingSoon": true,
-      "description": "Full-Stack Dev of Vue.js-Django Based App",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/7.jpg?alt=media",
-      "openSource": true,
-      "title": "Currency Showroom",
-      "url": "https://currencies-showroom.vercel.app/"
+      "technologies": [
+        "Next.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript",
+        "JSON",
+        "REST API"
+      ],
+      "category": "Landing Pages",
+      "comingSoon": false,
+      "role": "Frontend Web Development",
+      "description": "Company Profile Landing Page",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/17.jpg?alt=media",
+      "importanceOrder": 7,
+      "timeOrder": 12,
+      "title": "Rasmi & Kiwan",
+      "url": "https://rasmiandkiwan.com/"
     },
     {
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript"
+      ],
       "category": "Landing Pages",
-      "description": "Wordpress Website",
+      "comingSoon": true,
+      "hide": true,
+      "role": "Frontend Web Development",
+      "description": "Company Profile Landing Page",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/18.jpg?alt=media",
+      "importanceOrder": 6,
+      "timeOrder": 6,
+      "title": "Zaytouna Club",
+      "url": "https://zaytouna-tau.vercel.app/"
+    },
+    {
+      "technologies": [
+        "Wordpress",
+        "CSS"
+      ],
+      "category": "Landing Pages",
+      "role": "Frontend Web Development",
+      "description": "Company Profile Landing Page",
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/1.jpg?alt=media",
+      "importanceOrder": 5,
+      "timeOrder": 4,
       "title": "OneShot Future Company",
       "url": "https://oneshotfuture.com/"
     },
     {
-      "category": "Web Apps",
-      "description": "Full-Stack Dev of Laravel Based App",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/8.jpg?alt=media",
-      "title": "AIS Students Portal",
-      "url": "https://students.aqsa.edu.my/"
+      "technologies": [
+        "Wordpress",
+        "CSS"
+      ],
+      "category": "Landing Pages",
+      "role": "Frontend Web Development",
+      "description": "Company Profile Landing Page",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/6.jpg?alt=media",
+      "importanceOrder": 4,
+      "timeOrder": 3,
+      "title": "PPAM Organization",
+      "url": "https://ppam.org.my/"
     },
     {
+      "technologies": [
+        "Next.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript",
+        "JSON",
+        "REST API"
+      ],
       "category": "Landing Pages",
-      "description": "Wordpress Website",
+      "role": "Frontend Web Development",
+      "description": "Company Profile Landing Page",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/2.jpg?alt=media",
+      "importanceOrder": 3,
+      "timeOrder": 2,
       "title": "AIS School",
       "url": "https://aqsa.edu.my/"
     },
     {
-      "category": "Web Apps",
-      "description": "Full-Stack Dev of React-Django Based",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/13.jpg?alt=media",
-      "openSource": true,
-      "title": "Tadreebi",
-      "url": "https://tadreebi.netlify.app/"
+      "technologies": [
+        "Wordpress",
+        "CSS"
+      ],
+      "category": "Landing Pages",
+      "role": "Frontend Web Development",
+      "description": "Company Profile Landing Page",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/4.jpg?alt=media",
+      "importanceOrder": 2,
+      "timeOrder": 1,
+      "title": "SpeedWheels Company",
+      "url": "https://speedwheelstrade.online/"
+    },
+    {
+      "technologies": [
+        "Wordpress",
+        "CSS"
+      ],
+      "category": "Landing Pages",
+      "role": "Frontend Web Development",
+      "description": "Company Profile Landing Page",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/3.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 0,
+      "title": "Team Foundation",
+      "url": "https://teamtr.media/"
     },
     {
       "category": "Logos",
       "description": "Logo Design",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo2.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "Finger Speak",
       "url": "https: //silent-speakers.github.io/silent-speakers/#overview"
     },
@@ -245,6 +615,8 @@
       "description": "Business Card Design",
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc1.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "AIS School",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc1.jpg?alt=media"
     },
@@ -252,6 +624,8 @@
       "category": "Logos",
       "description": "Logo Design",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo.png?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "Al-Aqsa Staff Portal",
       "url": "http: //staff.aqsa.edu.my/"
     },
@@ -260,6 +634,8 @@
       "description": "Booklet Design",
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet5.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "PSAD Southeast Asia",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet5.jpg?alt=media"
     },
@@ -267,7 +643,9 @@
       "category": "Logos",
       "description": "Logo Design",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo5.png?alt=media",
+      "importanceOrder": 1,
       "link": "aam_app",
+      "timeOrder": 1,
       "title": "Dr. Ahmad Abu Mahfouth Clinic",
       "url": "https://drahmadabumahfouth.com"
     },
@@ -275,6 +653,8 @@
       "category": "Booklets",
       "description": "Booklet Design",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet2.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "Mercy Mission World",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet2.jpg?alt=media"
     },
@@ -283,6 +663,8 @@
       "description": "Banner Design",
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/banner2.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "Several University Clubs",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/banner2.jpg?alt=media"
     },
@@ -291,6 +673,8 @@
       "description": "Logo Design",
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo4.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "Univeristy Club",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo4.jpg?alt=media"
     },
@@ -298,6 +682,8 @@
       "category": "Banners & Posters",
       "description": "Banner Design",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "SpeedWheels",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media"
     },
@@ -306,6 +692,8 @@
       "description": "Logo Re-design",
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo1.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "QFM Malaysia",
       "url": "http: //qfmalaysia.org/"
     },
@@ -314,6 +702,8 @@
       "description": "Booklet Design",
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet1.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "QFM Malaysia",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet1.jpg?alt=media"
     },
@@ -322,6 +712,8 @@
       "description": "Booklet Design",
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet3.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "QFM Malaysia",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet3.jpg?alt=media"
     },
@@ -330,6 +722,8 @@
       "description": "Booklet Design",
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet4.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "QFM Malaysia",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet4.jpg?alt=media"
     },
@@ -337,6 +731,8 @@
       "category": "Banners & Posters",
       "description": "Poster Design",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster3.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "FYP Project",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster3.jpg?alt=media"
     },
@@ -344,6 +740,8 @@
       "category": "Others",
       "description": "CV Design",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/cv.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "An Engineering Graduate",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/cv.jpg?alt=media"
     },
@@ -352,6 +750,8 @@
       "description": "Logo Design",
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo6.png?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "xEdu",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo6.png?alt=media"
     },
@@ -359,6 +759,8 @@
       "category": "Banners & Posters",
       "description": "Brochure Design",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "Makan Sini Resturant",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media"
     },
@@ -366,6 +768,8 @@
       "category": "Others",
       "description": "Business Card Design",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc2.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "Global Mediator",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc2.jpg?alt=media"
     },
@@ -373,6 +777,8 @@
       "category": "Booklets",
       "description": "Booklet Design",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet6.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "IIUM",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet6.jpg?alt=media"
     },
@@ -380,6 +786,8 @@
       "category": "Others",
       "description": "Brochure Design",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster2.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "IIUM",
       "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster2.jpg?alt=media"
     },
@@ -387,6 +795,8 @@
       "category": "Videos",
       "description": "Video Producing",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/video1.png?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "ICPC Asia Regional Contest",
       "url": "https://www.youtube.com/watch?v=nwjGLer53sQ"
     },
@@ -394,6 +804,8 @@
       "category": "Videos",
       "description": "Video Producing",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/video2.png?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
       "title": "ICPC Asia Regional Contest",
       "url": "https://www.youtube.com/watch?v=D1uIlE_YB3U"
     }
@@ -409,6 +821,16 @@
       ],
       "icon": "faCode",
       "jobs": [
+        {
+          "company": "AlembicSoft",
+          "description": "To develop JS based web apps for online services.",
+          "monthsCount": 17,
+          "period": "Jul 2023 - Apr 2025",
+          "projectsCount": 1,
+          "title": "Senior Full-Stack Developer",
+          "type": "Full-Time Remote",
+          "website": "https://www.alembicsoft.com"
+        },
         {
           "company": "Logatta",
           "description": "To develop React.Js-based web apps for Saas services.",
@@ -443,7 +865,7 @@
           "company": "ArabWork",
           "description": "Full-time job to develop a Vue-Symfony web app for an online service.",
           "monthsCount": 2,
-          "period": "Jun 2022 - Aug 2022",
+          "period": "Jun - Aug 2022",
           "projectsCount": 1,
           "title": "Frontend Developer",
           "website": "https://www.linkedin.com/company/arabwork/"
@@ -612,6 +1034,33 @@
         "The solution is designed to be user-friendly: a school can easily input initial education data independently. Once set up, the platform facilitates ongoing updates, involving school staff, students, and their families.",
         "With initial funding secured, a dedicated team is actively working on the project's continued development and executing a Go-To-Market plan. For detailed information, please visit the project's website @ https://www.semesteer.com.",
         "Future plans include expanding the solution to digitze every corner of the education process going on & off-campus."
+      ]
+    },
+    {
+      "img": "/images/heal.png",
+      "link": "https://heal-tracker.vercel.app/",
+      "texts": [
+        "I developed and tested this solution of an open-source project of Healthy Eating and Lifestyle Tracker (HEAL).",
+        "This project is about building a tool to help tracking and following healthy lifestyle.",
+        "It was started due to personal need of having the software with all details, automation options for ongoing diet healthy journey since June 2024."
+      ]
+    },
+    {
+      "img": "/images/ccs.png",
+      "link": "https://cash-hub.vercel.app/",
+      "texts": [
+        "I developed and tested this open-source project of Currencies Archiving & Sharing Hub (CASH).",
+        "This project is about helping currency collectors like self to catalogue current collection and track plans of collecting new currencies.",
+        "It was started due to personal need of having such a tool to replace an excel sheet that's been developed & used for over 8 years till exhausted."
+      ]
+    },
+    {
+      "img": "/images/price.png",
+      "link": "https://price-admin.vercel.app/",
+      "texts": [
+        "I'm developing this coming-soon open-source project of Precise Record of Information on Costs and Expenses (PRICE).",
+        "This is going to be a community-driven platform (like wikipedia) to track the updates of consumable good price changes overtime.",
+        "Currently the tools is under development, actual pricing data is being collected and inserted, and soon we will launch the MVP for public engagement."
       ]
     },
     {
