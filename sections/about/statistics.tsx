@@ -80,12 +80,17 @@ const StatisticsSection = async ({ page }: props) => {
               backgroundPosition: "center center",
               backgroundRepeat: "no-repeat",
             }}
-            className="py-3"
+            className="py-3 font"
           >
             {count}
           </Typography>
 
-          <Typography justify="center" color="info" className="my-4" size={4}>
+          <Typography
+            justify="center"
+            color="info"
+            className="my-4 font"
+            size={4}
+          >
             {title}
           </Typography>
 

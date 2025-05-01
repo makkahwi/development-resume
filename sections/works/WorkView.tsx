@@ -26,7 +26,7 @@ const WorkView = ({
           : undefined
       }
     >
-      <Typography size={4} justify="center" color="info">
+      <Typography size={4} justify="center" color="info" className="font">
         {title}
       </Typography>
 

@@ -74,7 +74,12 @@ const CtaSection = () => {
         ))}
 
         <Col md={12}>
-          <Typography size={3} justify="center" className="my-5" color="dark">
+          <Typography
+            size={3}
+            justify="center"
+            className="my-5 font"
+            color="dark"
+          >
             Or Reach Me Here
           </Typography>
 

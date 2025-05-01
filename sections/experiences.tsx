@@ -30,7 +30,7 @@ const CareerSection = async () => {
         )}
       </Typography>
 
-      <Typography size={5} color="info" className="my-3">
+      <Typography size={5} color="info" className="my-3 font">
         {title}
       </Typography>
 

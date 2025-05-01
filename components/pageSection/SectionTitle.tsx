@@ -23,14 +23,19 @@ const SectionTitle = ({ title = "", subtitle = "", color = "" }) => {
 
   return (
     <Fragment>
-      <Typography size={6} justify="center" color={textColor()}>
+      <Typography
+        size={6}
+        justify="center"
+        color={textColor()}
+        className="font"
+      >
         {subtitle}
       </Typography>
 
       <Typography
         size={2}
         justify="center"
-        className="py-3 mb-5"
+        className="py-3 mb-5 font"
         color={textColor()}
       >
         {title}

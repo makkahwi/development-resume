@@ -56,8 +56,8 @@ const NavbarComp = () => {
       className="py-0 px-5 mx-3 mt-3 border-bottom border-info fixed-top m-0 corners"
       bg="info"
     >
-      <NavbarBrand className="fw-bold" role="button">
-        <a href="#home" className="text-decoration-none text-uppercase">
+      <NavbarBrand role="button">
+        <a href="#home" className="text-decoration-none text-uppercase font">
           <img src="/images/LogoW.png" width="65px" />{" "}
           <span className="text-white">Suhaib</span>{" "}
           <span className="text-white d-none d-md-inline">Ahmad</span>
@@ -75,13 +75,13 @@ const NavbarComp = () => {
             <NavItem key={i}>
               <NavLink
                 href={"#" + link}
-                className="text-white fw-bold text-decoration-none"
+                className="text-white text-decoration-none"
               >
                 <FontAwesomeIcon
                   icon={icon}
                   className="me-1 text-white fw-bold"
                 />
-                <span className="text-white fw-bold d-inline d-lg-none d-xl-inline">
+                <span className="text-white d-inline d-lg-none d-xl-inline font">
                   {title}
                 </span>
               </NavLink>
@@ -96,7 +96,7 @@ const NavbarComp = () => {
               target="_blank"
             >
               <FontAwesomeIcon icon={faDownload} className="me-1 fw-bold" />
-              <span className="fw-bold d-inline d-lg-none d-xl-inline">CV</span>
+              <span className="d-inline d-lg-none d-xl-inline font">CV</span>
             </Button>
           </NavItem>
         </Nav>

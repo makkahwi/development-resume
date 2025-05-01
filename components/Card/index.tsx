@@ -36,7 +36,7 @@ const CardComp = ({
         <Typography
           size="sm"
           justify="center"
-          className="m-2 position-absolute top-0 end-0 p-1 bg-dark text-white"
+          className="m-2 position-absolute top-0 end-0 p-1 bg-dark text-white font"
         >
           {tag}
         </Typography>
