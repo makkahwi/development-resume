@@ -16,8 +16,19 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: appTitle + " - " + appDesc,
   description: "The website of developer Suhaib Ahmad of Jordan.",
+  openGraph: {
+    title: appTitle,
+    description: "Jordan-based full-stack developer portfolio.",
+    url: "https://www.suhaib.dev",
+    siteName: "Suhaib Ahmad",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: appTitle,
+    description: "Explore the work and career of developer Suhaib Ahmad",
+  },
+  metadataBase: new URL("https://www.suhaib.dev"),
 };
-
 
 export default function RootLayout({
   children,
