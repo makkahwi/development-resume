@@ -27,6 +27,8 @@ import {
   faGears,
   faHashtag,
   faInfo,
+  faN,
+  faR,
   faRing,
   faRocket,
   faRuler,
@@ -83,7 +85,7 @@ const SkillsSection = async ({ page }: props) => {
     },
     {
       groups: ["Frontend"],
-      icon: faReact,
+      icon: faN,
       name: "Next.Js",
       color: "000000",
       website: "https://nextjs.org/",
@@ -95,6 +97,14 @@ const SkillsSection = async ({ page }: props) => {
       name: "Vite",
       color: "B63DFE",
       website: "https://vitejs.dev/",
+      subskills: ["Same as React.Js"],
+    },
+    {
+      groups: ["Frontend"],
+      icon: faR,
+      name: "Remix",
+      color: "000000",
+      website: "https://remix.run/",
       subskills: ["Same as React.Js"],
     },
     {
@@ -200,6 +210,13 @@ const SkillsSection = async ({ page }: props) => {
       name: "Firebase",
       color: "DD2C00",
       website: "https://firebase.google.com",
+    },
+    {
+      groups: ["Databases"],
+      icon: faDatabase,
+      name: "SQLite",
+      color: "004364",
+      website: "https://www.sqlite.org/",
     },
     {
       groups: ["DevOps & Tools"],
