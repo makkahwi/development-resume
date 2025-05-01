@@ -1,6 +1,8 @@
 import { getJobs } from "@/api/data";
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Col, Row } from "react-bootstrap";
 
 import { JobProps } from "./education";
@@ -20,14 +22,9 @@ const CareerSection = async () => {
       <Typography size={6} color="info">
         {period + " @ "}
         {website ? (
-          <Button
-            variant="info"
-            className="text-white m-0 px-1 py-0"
-            href={website}
-            target="_blank"
-          >
-            {company}
-          </Button>
+          <a className="text-decoration-none" href={website} target="_blank">
+            {company} <FontAwesomeIcon icon={faLink} />
+          </a>
         ) : (
           company
         )}
