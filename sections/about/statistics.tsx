@@ -30,8 +30,8 @@ const StatisticsSection = async ({ page }: props) => {
 
   const stats = [
     {
-      title: "Months in Jobs",
-      desc: "Below are only web development jobs, but I had a career as a graphic designer before.",
+      title: "Months in Web Development",
+      desc: "Spanning multiple roles since 2015, excluding earlier years as a graphic designer.",
       count: careers.reduce(
         (careerFinal, careerCurrent) =>
           (careerFinal += careerCurrent.jobs.reduce(
@@ -45,8 +45,8 @@ const StatisticsSection = async ({ page }: props) => {
       ),
     },
     {
-      title: "Built Products",
-      desc: "You could view samples of those in 'Works' section.",
+      title: "Digital Products Built",
+      desc: "From client portals to internal tools — samples are showcased in the Works section.",
       count: careers.reduce(
         (careerFinal, careerCurrent) =>
           (careerFinal += careerCurrent.jobs.reduce(
@@ -60,8 +60,8 @@ const StatisticsSection = async ({ page }: props) => {
       ),
     },
     {
-      title: "Designed Solutions",
-      desc: "Meaning that I've been part of defining client needs, drawing a fitting solution, designing user journey and experience and so on.",
+      title: "Tailored Solutions Designed",
+      desc: "Led end-to-end solution design: from client needs analysis to user journeys and UX flows.",
       count: projects.filter(({ designed }) => designed)?.length,
     },
   ];
@@ -85,11 +85,11 @@ const StatisticsSection = async ({ page }: props) => {
             {count}
           </Typography>
 
-          <Typography justify="center" color="info" size={4}>
+          <Typography justify="center" color="info" className="my-4" size={4}>
             {title}
           </Typography>
 
-          <Typography size={6} justify="center" className="p-5 lh-lg">
+          <Typography size={6} justify="center" className="px-4 lh-lg">
             {desc}
           </Typography>
         </Col>

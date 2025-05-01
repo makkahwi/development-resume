@@ -1,6 +1,12 @@
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faJs, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
+import {
+  faBrain,
+  faCode,
+  faDownload,
+  faRocket,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, ButtonGroup, Col, Row } from "react-bootstrap";
 
@@ -11,12 +17,61 @@ const AboutSection = () => {
     <PageSection id="about" bg2>
       <Row>
         <Col md={12} className="my-auto">
-          <Typography size={5} justify="center" className="p-5 lh-lg">
-            An individual with a constant passion & burning desire to keep
-            exploring, learning & giving a try to things, which makes me a fit
-            for the IT sector. I'm highly organized, detail-oriented and
-            timing-particular, and I believe that also what makes me a good
-            programmer. You may scroll down to see it for yourself.
+          <Typography size={5} className="py-3 lh-lg">
+            With nearly a decade of experience in{" "}
+            <span className="text-info">
+              <FontAwesomeIcon icon={faCode} /> web development{" "}
+              <FontAwesomeIcon icon={faCode} />{" "}
+            </span>
+            , I specialize in{" "}
+            <b>
+              building performant, scalable, and user-centric web applications.
+            </b>{" "}
+            I’ve grown from{" "}
+            <span style={{ color: "#61dafb" }}>
+              <FontAwesomeIcon icon={faRocket} /> front-end
+            </span>{" "}
+            foundations into full-stack leadership — balancing clean code,
+            intuitive UX, and product thinking.
+          </Typography>
+
+          <Typography size={5} className="py-3 lh-lg">
+            My focus since 2020 has been on{" "}
+            <span style={{ color: "#323330" }}>
+              <FontAwesomeIcon icon={faJs} /> JavaScript
+            </span>
+            ,{" "}
+            <span style={{ color: "#3178C6" }}>
+              <FontAwesomeIcon icon={faJs} /> TypeScript
+            </span>
+            , and modern frameworks like{" "}
+            <span style={{ color: "#61dafb" }}>
+              <FontAwesomeIcon icon={faReact} /> React.Js
+            </span>
+            ,{" "}
+            <span>
+              <FontAwesomeIcon icon={faReact} /> Next.Js
+            </span>{" "}
+            and{" "}
+            <span style={{ color: "#E0234E" }}>
+              <FontAwesomeIcon icon={faNodeJs} /> Nest.Js
+            </span>
+            , backed by hands-on work in both{" "}
+            <span style={{ color: "#61dafb" }}>
+              <FontAwesomeIcon icon={faRocket} /> client
+            </span>{" "}
+            and{" "}
+            <span style={{ color: "#E0234E" }}>
+              <FontAwesomeIcon icon={faBrain} /> backend
+            </span>{" "}
+            environments.
+          </Typography>
+
+          <Typography size={5} className="py-3 lh-lg">
+            I’ve led development efforts, contributed to open-source, and
+            overseen product deliverables — always aiming to turn ideas into
+            impactful software. I'm driven by curiosity, quality, and
+            collaborative problem-solving.
           </Typography>
         </Col>
       </Row>
