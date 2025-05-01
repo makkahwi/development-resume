@@ -9,10 +9,11 @@ const SponsorSection = () => {
       id="sponsor"
       color="dark"
     >
-      <div className="w-100 bg-white p-2 row mx-2">
+      <div className="w-100 p-2 row mx-2">
         <div className="col-md-9">
-          <Typography size={4} className="me-2" color="dark">
-            Sponsor Me On The Trusted Platform Of Github
+          <Typography size={5} className="me-2" color="white">
+            If you find my open-source work helpful, consider sponsoring me on
+            the trusted platform of Github to fuel more projects like these!
           </Typography>
         </div>
 

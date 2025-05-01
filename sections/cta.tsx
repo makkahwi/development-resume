@@ -51,7 +51,7 @@ const CtaSection = () => {
   return (
     <PageSection
       title="Get in Touch"
-      subtitle="Connect with Me"
+      subtitle="Let's collaborate on something great"
       color="light"
       card
       id="contact"
