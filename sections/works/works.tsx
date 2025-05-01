@@ -2,22 +2,24 @@ import { getJobProjects } from "@/api/data";
 import PageSection from "@/components/pageSection";
 import { Col, Row } from "react-bootstrap";
 
-import MoreWorks from "./moreWorks";
 import WorkView from "./WorkView";
 
-interface Props {
+export interface ProjectProps {
   category: string;
   comingSoon?: boolean;
+  designed?: boolean;
   description: string;
   image: string;
   title: string;
   url?: string;
+  technologies?: string[];
+  role?: string;
   hide?: boolean;
   openSource?: boolean;
 }
 
 const WorksSection = async () => {
-  const works: Props[] = await getJobProjects();
+  const works: ProjectProps[] = await getJobProjects();
 
   return (
     <PageSection
@@ -35,7 +37,19 @@ const WorksSection = async () => {
               category === "Web Apps" || category === "Landing Pages"
           )
           ?.map(
-            ({ image, title, description, category, url, openSource }, i) => (
+            (
+              {
+                image,
+                title,
+                description,
+                category,
+                url,
+                openSource,
+                technologies,
+                role,
+              },
+              i
+            ) => (
               <Col xl={3} lg={3} md={4} sm={6} className="p-2 d-flex" key={i}>
                 <WorkView
                   image={image}
@@ -43,13 +57,13 @@ const WorksSection = async () => {
                   description={description}
                   category={category}
                   url={url}
+                  technologies={technologies}
+                  role={role}
                   openSource={openSource}
                 />
               </Col>
             )
           )}
-
-        <MoreWorks works={works} />
       </Row>
     </PageSection>
   );

@@ -2,7 +2,7 @@ import { getJobProjects, getJobs } from "@/api/data";
 import Typography from "@/components/typography";
 import { Col, Row } from "react-bootstrap";
 
-import { ProjectProps } from "../works/moreWorks";
+import { ProjectProps } from "../works/works";
 
 interface props {
   page?: boolean;
@@ -30,7 +30,8 @@ const StatisticsSection = async ({ page }: props) => {
 
   const stats = [
     {
-      title: "Months in Jobs",
+      title: "Months in Web Development",
+      desc: "Spanning multiple roles since 2015, excluding earlier years as a graphic designer.",
       count: careers.reduce(
         (careerFinal, careerCurrent) =>
           (careerFinal += careerCurrent.jobs.reduce(
@@ -44,7 +45,8 @@ const StatisticsSection = async ({ page }: props) => {
       ),
     },
     {
-      title: "Built Products",
+      title: "Digital Products Built",
+      desc: "From client portals to internal tools — samples are showcased in the Works section.",
       count: careers.reduce(
         (careerFinal, careerCurrent) =>
           (careerFinal += careerCurrent.jobs.reduce(
@@ -58,14 +60,15 @@ const StatisticsSection = async ({ page }: props) => {
       ),
     },
     {
-      title: "Designed Solutions",
+      title: "Tailored Solutions Designed",
+      desc: "Led end-to-end solution design: from client needs analysis to user journeys and UX flows.",
       count: projects.filter(({ designed }) => designed)?.length,
     },
   ];
 
   return (
     <Row className="my-5">
-      {stats.map(({ title, count }, i) => (
+      {stats.map(({ title, count, desc }, i) => (
         <Col md={4} className="my-3 text-info" key={i}>
           <Typography
             justify="center"
@@ -82,8 +85,12 @@ const StatisticsSection = async ({ page }: props) => {
             {count}
           </Typography>
 
-          <Typography justify="center" color="info" size={4}>
+          <Typography justify="center" color="info" className="my-4" size={4}>
             {title}
+          </Typography>
+
+          <Typography size={6} justify="center" className="px-4 lh-lg">
+            {desc}
           </Typography>
         </Col>
       ))}

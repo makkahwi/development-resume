@@ -33,8 +33,14 @@ const WelcomeSection = () => {
             Suhaib Ahmad
           </Typography>
 
-          <Typography size={4} color="white">
+          <Typography size={4} color="white" className="mb-5">
             {texts[0]}
+          </Typography>
+
+          <Typography size="sm" color="white" className="mt-5 lh-lg">
+            Specialized in building scalable & user-focused web apps with
+            javascript & typescript. Based in Jordan, but open to remote
+            opportunities.
           </Typography>
 
           {/* <CarouselComp
