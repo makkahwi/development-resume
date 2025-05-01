@@ -11,7 +11,9 @@ const Footer = () => {
 
         <img src="/images/LogoC.png" width="300px" className="mt-5 mb-0" />
 
-        <h2 className="text-dark mt-0 mb-5 text-uppercase">Suhaib Ahmad</h2>
+        <h2 className="text-dark mt-0 mb-5 text-uppercase font">
+          Suhaib Ahmad
+        </h2>
 
         <Typography color="dark" justify="center">
           All Rights Reserved © 2018 - {new Date().getFullYear()}

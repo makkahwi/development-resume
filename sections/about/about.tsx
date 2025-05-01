@@ -80,7 +80,7 @@ const AboutSection = () => {
 
       <Row>
         <Col md={12} className="my-auto text-center">
-          <ButtonGroup className="corners">
+          <ButtonGroup className="corners font">
             <Button
               variant="info"
               className="text-white px-4"

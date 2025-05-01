@@ -26,14 +26,14 @@ const WelcomeSection = () => {
         <Col xs={8} lg={6} style={{ margin: "auto" }} className="py-5">
           <Typography
             size={1}
-            className="pb-4 text-uppercase text-start"
+            className="pb-4 text-uppercase text-start font"
             color="white"
             style={{ fontSize: "3.5vw" }}
           >
             Suhaib Ahmad
           </Typography>
 
-          <Typography size={4} color="white" className="mb-5">
+          <Typography size={4} color="white" className="mb-5 font">
             {texts[0]}
           </Typography>
 

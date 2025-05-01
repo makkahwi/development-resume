@@ -338,7 +338,7 @@ const SkillsSection = async ({ page }: props) => {
     <Fragment>
       <Typography
         size={4}
-        className="mt-5 mb-3 bg-info py-2 px-4 corners"
+        className="mt-5 mb-3 bg-info py-2 px-4 corners font"
         color="white"
       >
         <FontAwesomeIcon icon={icon} /> {group}
