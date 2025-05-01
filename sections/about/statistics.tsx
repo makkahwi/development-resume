@@ -2,7 +2,7 @@ import { getJobProjects, getJobs } from "@/api/data";
 import Typography from "@/components/typography";
 import { Col, Row } from "react-bootstrap";
 
-import { ProjectProps } from "../works/moreWorks";
+import { ProjectProps } from "../works/works";
 
 interface props {
   page?: boolean;

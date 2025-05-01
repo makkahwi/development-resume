@@ -4,9 +4,10 @@ import { Col, Row } from "react-bootstrap";
 
 import WorkView from "./WorkView";
 
-interface Props {
+export interface ProjectProps {
   category: string;
   comingSoon?: boolean;
+  designed?: boolean;
   description: string;
   image: string;
   title: string;
@@ -18,7 +19,7 @@ interface Props {
 }
 
 const WorksSection = async () => {
-  const works: Props[] = await getJobProjects();
+  const works: ProjectProps[] = await getJobProjects();
 
   return (
     <PageSection
