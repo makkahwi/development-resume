@@ -31,6 +31,7 @@ const StatisticsSection = async ({ page }: props) => {
   const stats = [
     {
       title: "Months in Jobs",
+      desc: "Below are only web development jobs, but I had a career as a graphic designer before.",
       count: careers.reduce(
         (careerFinal, careerCurrent) =>
           (careerFinal += careerCurrent.jobs.reduce(
@@ -45,6 +46,7 @@ const StatisticsSection = async ({ page }: props) => {
     },
     {
       title: "Built Products",
+      desc: "You could view samples of those in 'Works' section.",
       count: careers.reduce(
         (careerFinal, careerCurrent) =>
           (careerFinal += careerCurrent.jobs.reduce(
@@ -59,13 +61,14 @@ const StatisticsSection = async ({ page }: props) => {
     },
     {
       title: "Designed Solutions",
+      desc: "Meaning that I've been part of defining client needs, drawing a fitting solution, designing user journey and experience and so on.",
       count: projects.filter(({ designed }) => designed)?.length,
     },
   ];
 
   return (
     <Row className="my-5">
-      {stats.map(({ title, count }, i) => (
+      {stats.map(({ title, count, desc }, i) => (
         <Col md={4} className="my-3 text-info" key={i}>
           <Typography
             justify="center"
@@ -84,6 +87,10 @@ const StatisticsSection = async ({ page }: props) => {
 
           <Typography justify="center" color="info" size={4}>
             {title}
+          </Typography>
+
+          <Typography size={6} justify="center" className="p-5 lh-lg">
+            {desc}
           </Typography>
         </Col>
       ))}

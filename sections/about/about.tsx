@@ -1,5 +1,7 @@
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, ButtonGroup, Col, Row } from "react-bootstrap";
 
 import StatisticsSection from "./statistics";
@@ -30,7 +32,7 @@ const AboutSection = () => {
               href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-WD-Resume-Sheet.pdf?alt=media"
               target="_blank"
             >
-              Download Resume Sheet
+              <FontAwesomeIcon icon={faDownload} /> Download Resume Sheet
             </Button>
 
             <Button
@@ -39,7 +41,7 @@ const AboutSection = () => {
               href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib%20Ahmad%20Psychometric.pdf?alt=media"
               target="_blank"
             >
-              Download Psychometric Test
+              <FontAwesomeIcon icon={faDownload} /> Download Psychometric Test
             </Button>
           </ButtonGroup>
         </Col>
