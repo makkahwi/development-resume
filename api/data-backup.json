@@ -63,6 +63,7 @@
       ],
       "category": "Web Apps",
       "comingSoon": true,
+      "company": "AlembicSoft",
       "role": "Full-Stack Dev",
       "type": "B2B Education SaaS System",
       "description": "Totally covered the frontend development beside significant backend work.",
@@ -91,6 +92,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/21.jpg?alt=media",
       "importanceOrder": 26,
       "timeOrder": 16,
+      "company": "Logatta",
       "title": "Entreviable",
       "url": "https://entreviable.com"
     },
@@ -104,7 +106,7 @@
         "REST API"
       ],
       "category": "Web Apps",
-      "company": "Trellah",
+      "company": "ArabWork",
       "role": "Frontend Web Dev",
       "type": "Ride-Hailing for Goods System",
       "description": "Led the frontend work.",
@@ -151,6 +153,7 @@
       ],
       "category": "Web Apps",
       "role": "End-to-End Build",
+      "company": "Open Source",
       "type": "Health Traction SaaS App",
       "description": "Own product idea, executed from ideation, development to deployment.",
       "designed": true,
@@ -174,6 +177,7 @@
       ],
       "category": "Web Apps",
       "comingSoon": true,
+      "company": "Open Source",
       "role": "System Architecture & Team Oversight",
       "type": "Project Management System",
       "description": "Own product idea, execution is in-progress by supervised junior developers.",
@@ -196,6 +200,7 @@
         "MySQL"
       ],
       "category": "Web Apps",
+      "company": "AIS",
       "role": "End-to-End Product Ownership",
       "type": "Internal Data-Management Portal",
       "description": "Executed from customer needs identification, development to deployment.",
@@ -219,6 +224,7 @@
         "MySQL"
       ],
       "category": "Web Apps",
+      "company": "AIS",
       "role": "End-to-End Product Ownership",
       "type": "Internal Data-Management Portal",
       "description": "Executed from customer needs identification, development to deployment.",
@@ -241,6 +247,7 @@
       ],
       "category": "Web Apps",
       "comingSoon": true,
+      "company": "Logatta",
       "role": "Frontend Web Dev",
       "type": "Specialized Search-Engine App",
       "description": "A solely developed frontend app, totally new / from scratch.",
@@ -264,6 +271,7 @@
       ],
       "category": "Web Apps",
       "comingSoon": true,
+      "company": "Freelance",
       "role": "Frontend Web Dev",
       "type": "Service Providers Marketplace",
       "description": "A solely developed frontend app, totally new / from scratch.",
@@ -288,6 +296,7 @@
         "PostgreSQL"
       ],
       "category": "Web Apps",
+      "company": "Open Source",
       "role": "System Architecture & Team Oversight",
       "type": "Internal Data-Management Portal",
       "description": "A system for school / university students' internship progress tracking & management.",
@@ -311,6 +320,7 @@
       ],
       "category": "Web Apps",
       "comingSoon": true,
+      "company": "Freelance",
       "role": "Full-Stack Dev",
       "type": "Education SaaS System",
       "description": "Education content & teacher-student communication system.",
@@ -332,6 +342,7 @@
         "Firebase"
       ],
       "category": "Web Apps",
+      "company": "Open Source",
       "role": "End-to-End Build",
       "type": "Encyclopedia",
       "description": "Own product idea, execution is in-progress.",
@@ -357,6 +368,7 @@
       ],
       "category": "Web Apps",
       "comingSoon": true,
+      "company": "Open Source",
       "role": "End-to-End Build",
       "type": "Digital Showroom App",
       "description": "Own product idea, executed from ideation, development to deployment.",
@@ -381,6 +393,7 @@
       ],
       "category": "Web Apps",
       "role": "End-to-End Build",
+      "company": "Open Source",
       "type": "Financial Tracking SaaS App",
       "description": "Own product idea, execution is in-progress by supervised junior developers.",
       "designed": true,
@@ -405,6 +418,7 @@
       ],
       "category": "Web Apps",
       "comingSoon": true,
+      "company": "Freelance",
       "role": "Full-Stack Dev",
       "type": "Internal Data-Management Portal",
       "description": "Executed from customer needs identification, development to deployment.",
@@ -429,6 +443,7 @@
       "category": "Landing Pages",
       "comingSoon": false,
       "role": "Frontend Web Dev",
+      "company": "Freelance",
       "type": "Profile Landing Page",
       "description": "Simple individual's professional website.",
       "designed": true,
@@ -452,6 +467,7 @@
       "category": "Landing Pages",
       "comingSoon": false,
       "hide": true,
+      "company": "Freelance",
       "role": "Frontend Web Dev",
       "type": "Profile Landing Page",
       "description": "Simple individual's professional website.",
@@ -475,6 +491,7 @@
       ],
       "category": "Landing Pages",
       "comingSoon": true,
+      "company": "Freelance",
       "role": "Frontend Web Dev",
       "type": "Profile Landing Page",
       "description": "Simple company's professional website.",
@@ -502,6 +519,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/12.jpg?alt=media",
       "importanceOrder": 8,
       "timeOrder": 20,
+      "company": "Freelance",
       "title": "Dr. Ahmad Abu Mahfouth",
       "url": "https://drahmadabumahfouth.com"
     },
@@ -523,6 +541,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/17.jpg?alt=media",
       "importanceOrder": 7,
       "timeOrder": 12,
+      "company": "Freelance",
       "title": "Rasmi & Kiwan",
       "url": "https://rasmiandkiwan.com/"
     },
@@ -543,6 +562,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/18.jpg?alt=media",
       "importanceOrder": 6,
       "timeOrder": 6,
+      "company": "Freelance",
       "title": "Zaytouna Club",
       "url": "https://zaytouna-tau.vercel.app/"
     },
@@ -559,6 +579,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/1.jpg?alt=media",
       "importanceOrder": 5,
       "timeOrder": 4,
+      "company": "Freelancer",
       "title": "OneShot Future Company",
       "url": "https://oneshotfuture.com/"
     },
@@ -575,6 +596,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/6.jpg?alt=media",
       "importanceOrder": 4,
       "timeOrder": 3,
+      "company": "Freelancer",
       "title": "PPAM Organization",
       "url": "https://ppam.org.my/"
     },
@@ -590,6 +612,7 @@
       ],
       "category": "Landing Pages",
       "role": "Frontend Web Dev",
+      "company": "AIS",
       "type": "Profile Landing Page",
       "description": "Simple company's professional website.",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/2.jpg?alt=media",
@@ -610,6 +633,7 @@
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/4.jpg?alt=media",
       "importanceOrder": 2,
+      "company": "Freelancer",
       "timeOrder": 1,
       "title": "SpeedWheels Company",
       "url": "https://speedwheelstrade.online/"
@@ -627,6 +651,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/3.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 0,
+      "company": "Freelancer",
       "title": "Team Foundation",
       "url": "https://teamtr.media/"
     },
@@ -857,7 +882,8 @@
           "period": "Jul 2023 - Apr 2025",
           "projectsCount": 1,
           "title": "Senior Full-Stack Developer",
-          "type": "Full-Time Remote",
+          "type": "Full-Time",
+          "location": "Jordan",
           "website": "https://www.alembicsoft.com"
         },
         {
@@ -868,16 +894,18 @@
           "projectsCount": 2,
           "title": "Senior Frontend Deveoper",
           "type": "Freelancer",
+          "location": "Jordan",
           "website": "https://www.logatta.com"
         },
         {
-          "company": "Deloitte Digital",
+          "company": "Deloitte",
           "description": "To develop JS based web apps for online public (government) services.",
           "monthsCount": 2,
           "period": "Jun - Jul 2023",
           "projectsCount": 0,
           "title": "Delivery Consultant",
           "type": "Full-Time",
+          "location": "Jordan",
           "website": "https://www2.deloitte.com/xe/en/pages/strategy-operations/solutions/deloitte-jordan-digital-center.html"
         },
         {
@@ -888,56 +916,64 @@
           "projectsCount": 2,
           "title": "Senior Full-Stack Developer",
           "type": "Full-Time",
+          "location": "Jordan",
           "website": "https://www.agiletz.com/"
         },
         {
           "company": "ArabWork",
           "description": "Full-time job to develop a Vue-Symfony web app for an online service.",
           "monthsCount": 2,
+          "type": "Full-Time",
           "period": "Jun - Aug 2022",
           "projectsCount": 1,
+          "location": "Jordan",
           "title": "Frontend Developer",
           "website": "https://www.linkedin.com/company/arabwork/"
         },
         {
-          "company": "LuxTag",
+          "company": "Open Source",
+          "description": "Executed several PERN based web app projects.",
+          "period": "Jan 2022 - Present",
+          "location": "Jordan",
+          "title": "Architect & End-To-End Developer",
+          "type": "Freelance"
+        },
+        {
+          "company": "Luxtag",
           "description": "To develop a flagship PERN based web app for an online service.",
           "monthsCount": 12,
           "period": "Nov 2020 - Oct 2021",
           "projectsCount": 1,
           "title": "Frontend Developer",
           "type": "Full-Time",
-          "website": "https://luxtag.io/"
+          "location": "Malaysia",
+          "website": "https://Luxtag.io/"
         },
         {
-          "company": "AIS School",
+          "company": "AIS",
           "description": "To develop a Laravel based web app of a student information system.",
           "monthsCount": 12,
           "period": "Sep 2019 - Aug 2020",
           "projectsCount": 1,
           "title": "Full-Stack Developer",
           "type": "Part-Time",
+          "location": "Malaysia",
           "website": "http://aqsa.edu.my/"
         },
         {
-          "company": "Individually",
-          "description": "Executed several Laravel based & PERN based web app private & open-source projects.",
+          "company": "Freelance",
+          "description": "Executed several Laravel based & PERN based web app private projects.",
           "period": "Sep 2019 - Present",
+          "location": "Malaysia & Jordan",
           "title": "Full-Stack Developer",
           "type": "Freelance"
         },
         {
-          "company": "Individually",
-          "description": "Several code based frontend-only landing-page projects.",
-          "period": "May 2018 - Aug 2019",
+          "company": "Freelancer",
+          "description": "Several Wordpress & code based frontend-only landing-page projects.",
+          "period": "Oct 2015 - Aug 2019",
+          "location": "Malaysia",
           "title": "Frontend Developer",
-          "type": "Freelance"
-        },
-        {
-          "company": "Individually",
-          "description": "Several wordpress based landing-page & simple web app projects.",
-          "period": "Oct 2015 - Apr 2018",
-          "title": "Wordpress Developer",
           "type": "Freelance"
         }
       ],

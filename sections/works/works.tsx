@@ -13,7 +13,7 @@ export interface ProjectProps {
   image: string;
   title: string;
   url?: string;
-  technologies?: string[];
+  technologies: string[];
   company?: string;
   role?: string;
   hide?: boolean;
