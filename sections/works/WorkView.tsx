@@ -1,6 +1,7 @@
 import CardComp from "@/components/Card";
 import Typography from "@/components/typography";
 import {
+  faBuilding,
   faCode,
   faInfo,
   faInfoCircle,
@@ -18,6 +19,7 @@ const WorkView = ({
   role = "",
   technologies = [""],
   type = "",
+  company = "",
   openSource = false,
 }) => {
   return (
@@ -43,13 +45,13 @@ const WorkView = ({
           </Typography>
         </Col>
 
-        <Col xs={url ? 10 : 12}>
+        <Col xs={url ? 9 : 10}>
           <Typography size={6} className="my-3" color="info" justify="start">
             {type}
           </Typography>
         </Col>
 
-        <Col xs={url ? 2 : 0}>
+        <Col xs={url ? 3 : 2}>
           <Typography size={6} className="my-3" color="info" justify="end">
             {url !== "" ? (
               <OverlayTrigger overlay={<Tooltip>View</Tooltip>}>
@@ -60,6 +62,12 @@ const WorkView = ({
             ) : (
               ""
             )}
+
+            <OverlayTrigger overlay={<Tooltip>{company}</Tooltip>}>
+              <a href={"#" + company}>
+                <FontAwesomeIcon icon={faBuilding} className="ms-2" />
+              </a>
+            </OverlayTrigger>
           </Typography>
         </Col>
 
