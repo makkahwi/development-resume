@@ -9,10 +9,12 @@ export interface ProjectProps {
   comingSoon?: boolean;
   designed?: boolean;
   description: string;
+  type: string;
   image: string;
   title: string;
   url?: string;
-  technologies?: string[];
+  technologies: string[];
+  company?: string;
   role?: string;
   hide?: boolean;
   openSource?: boolean;
@@ -40,6 +42,7 @@ const WorksSection = async () => {
             (
               {
                 image,
+                company,
                 title,
                 description,
                 category,
@@ -47,18 +50,29 @@ const WorksSection = async () => {
                 openSource,
                 technologies,
                 role,
+                type,
               },
               i
             ) => (
-              <Col xl={3} lg={3} md={4} sm={6} className="p-2 d-flex" key={i}>
+              <Col
+                xl={3}
+                lg={3}
+                md={4}
+                sm={6}
+                className="p-2 d-flex"
+                id={title}
+                key={i}
+              >
                 <WorkView
                   image={image}
                   title={title}
                   description={description}
                   category={category}
                   url={url}
+                  company={company}
                   technologies={technologies}
                   role={role}
+                  type={type}
                   openSource={openSource}
                 />
               </Col>
