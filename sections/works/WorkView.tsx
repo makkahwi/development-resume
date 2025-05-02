@@ -1,6 +1,11 @@
 import CardComp from "@/components/Card";
 import Typography from "@/components/typography";
-import { faCode, faLink } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCode,
+  faInfo,
+  faInfoCircle,
+  faLink,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 
@@ -12,6 +17,7 @@ const WorkView = ({
   category = "",
   role = "",
   technologies = [""],
+  type = "",
   openSource = false,
 }) => {
   return (
@@ -31,23 +37,23 @@ const WorkView = ({
       </Typography>
 
       <Row>
-        <Col xs={9}>
-          <Typography size="sm" className="my-3" color="info">
-            {role}
+        <Col xs={12}>
+          <Typography size="sm" className="my-1" color="info">
+            Project
           </Typography>
         </Col>
 
-        <Col xs={3}>
-          <Typography size="sm" className="my-3" color="info" justify="end">
-            <OverlayTrigger
-              overlay={<Tooltip>{technologies.join(", ")}</Tooltip>}
-            >
-              <FontAwesomeIcon icon={faCode} />
-            </OverlayTrigger>
+        <Col xs={url ? 10 : 12}>
+          <Typography size={6} className="my-3" color="info" justify="start">
+            {type}
+          </Typography>
+        </Col>
 
+        <Col xs={url ? 2 : 0}>
+          <Typography size={6} className="my-3" color="info" justify="end">
             {url !== "" ? (
               <OverlayTrigger overlay={<Tooltip>View</Tooltip>}>
-                <a href={url} target="_blank" className="mx-1">
+                <a href={url} target="_blank">
                   <FontAwesomeIcon icon={faLink} />
                 </a>
               </OverlayTrigger>
@@ -56,15 +62,45 @@ const WorkView = ({
             )}
           </Typography>
         </Col>
+
+        <Col xs={12}>
+          <Typography size="sm" className="my-1" color="info">
+            Role
+          </Typography>
+        </Col>
+
+        <Col xs={9}>
+          <Typography size={6} className="my-2" color="info" justify="start">
+            {role}
+          </Typography>
+        </Col>
+
+        <Col xs={3}>
+          <Typography size={6} className="my-2" color="info" justify="end">
+            <OverlayTrigger
+              overlay={<Tooltip>{technologies.join(", ")}</Tooltip>}
+            >
+              <FontAwesomeIcon icon={faCode} />
+            </OverlayTrigger>
+
+            <OverlayTrigger
+              overlay={
+                <Tooltip>
+                  <Typography size="sm" className="my-2" color="light">
+                    {description}
+                  </Typography>
+                </Tooltip>
+              }
+            >
+              <FontAwesomeIcon icon={faInfoCircle} className="ms-2" />
+            </OverlayTrigger>
+          </Typography>
+        </Col>
       </Row>
 
       {/* <Typography size={6} className="my-3" color="info">
                   {roles}
                 </Typography> */}
-
-      <Typography size={6} className="my-3" color="info">
-        {description}
-      </Typography>
     </CardComp>
   );
 };

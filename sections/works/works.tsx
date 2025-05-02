@@ -9,6 +9,7 @@ export interface ProjectProps {
   comingSoon?: boolean;
   designed?: boolean;
   description: string;
+  type: string;
   image: string;
   title: string;
   url?: string;
@@ -47,6 +48,7 @@ const WorksSection = async () => {
                 openSource,
                 technologies,
                 role,
+                type,
               },
               i
             ) => (
@@ -59,6 +61,7 @@ const WorksSection = async () => {
                   url={url}
                   technologies={technologies}
                   role={role}
+                  type={type}
                   openSource={openSource}
                 />
               </Col>
