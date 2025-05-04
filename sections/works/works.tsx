@@ -3,6 +3,12 @@ import PageSection from "@/components/pageSection";
 import { Col, Row } from "react-bootstrap";
 
 import WorkView from "./WorkView";
+import PageButton from "@/components/PageButton";
+
+interface props {
+  openSource?: boolean;
+  home?: boolean;
+}
 
 export interface ProjectProps {
   category: string;
@@ -21,20 +27,21 @@ export interface ProjectProps {
   openSource?: boolean;
 }
 
-const WorksSection = async () => {
+const WorksSection = async ({ openSource, home }: props) => {
   const works: ProjectProps[] = await getJobProjects();
 
   return (
     <PageSection
       title="Works"
-      subtitle="Most Significant"
-      color="white"
+      subtitle={openSource ? "Open-Source" : "Most Significant"}
+      color={home ? "light" : "info"}
       id="works"
-      bg2
     >
       <Row>
         {works
-          ?.filter(({ hide }) => !hide)
+          ?.filter(({ hide, ...rest }) =>
+            openSource ? rest.openSource : home ? !hide : true
+          )
           ?.filter(
             ({ category }) =>
               category === "Web Apps" || category === "Landing Pages"
@@ -75,11 +82,15 @@ const WorksSection = async () => {
                   role={role}
                   type={type}
                   openSource={openSource}
+                  dark={home}
+                  short={home}
                 />
               </Col>
             )
           )}
       </Row>
+
+      {home && <PageButton link="/works#works" text="All Works Explained" />}
     </PageSection>
   );
 };

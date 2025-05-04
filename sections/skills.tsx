@@ -1,4 +1,5 @@
 import { getSkills } from "@/api/data";
+import PageButton from "@/components/PageButton";
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
 import * as brands from "@fortawesome/free-brands-svg-icons";
@@ -6,6 +7,10 @@ import * as solid from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fragment } from "react";
 import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
+
+interface props {
+  home?: boolean;
+}
 
 interface SkillProps {
   groups: string[];
@@ -17,7 +22,7 @@ interface SkillProps {
   subskills?: string[];
 }
 
-const SkillsSection = async () => {
+const SkillsSection = async ({ home }: props) => {
   const skills: SkillProps[] = await getSkills();
 
   const iconMap: Record<string, any> = {
@@ -29,8 +34,10 @@ const SkillsSection = async () => {
     <Fragment>
       <Typography
         size={4}
-        className="mt-5 mb-3 bg-info py-2 px-4 corners font"
-        color="white"
+        className={
+          (home ? "bg-light" : "bg-info") + " mt-5 mb-3 py-2 px-4 corners font"
+        }
+        color={home ? "info" : "white"}
       >
         <FontAwesomeIcon icon={iconMap[icon] || solid.faCode} /> {group}
       </Typography>
@@ -42,12 +49,12 @@ const SkillsSection = async () => {
             <a
               href={website}
               target="_blank"
-              className="h4 ps-5"
-              style={{ color: "#" + color }}
+              className="h4 ps-4"
+              style={{ color: home ? "white" : "#" + color }}
             >
-              {subskills ? (
+              {subskills && !home ? (
                 <OverlayTrigger
-                  overlay={<Tooltip>{subskills.join(",")}</Tooltip>}
+                  overlay={<Tooltip>{subskills.join(", ")}</Tooltip>}
                 >
                   <span>
                     <FontAwesomeIcon icon={iconMap[icon]} /> {name}
@@ -60,18 +67,20 @@ const SkillsSection = async () => {
               )}
             </a>
 
-            <span className="text-warning float-end">
-              {Array(rate)
-                .join(".")
-                .split(".")
-                .map((_, y) => (
-                  <FontAwesomeIcon
-                    icon={solid.faStar}
-                    className="ms-1"
-                    key={y}
-                  />
-                ))}
-            </span>
+            {!home && (
+              <span className="text-warning float-end">
+                {Array(rate)
+                  .join(".")
+                  .split(".")
+                  .map((_, y) => (
+                    <FontAwesomeIcon
+                      icon={solid.faStar}
+                      className="ms-1"
+                      key={y}
+                    />
+                  ))}
+              </span>
+            )}
           </div>
         ))}
     </Fragment>
@@ -81,7 +90,7 @@ const SkillsSection = async () => {
     <PageSection
       title="Technical Skills"
       subtitle="Earned By Jobs & For Jobs"
-      color="light"
+      color={home ? "info" : "light"}
       id="skills"
     >
       <Row className="my-5">
@@ -101,6 +110,8 @@ const SkillsSection = async () => {
           {renderGroupedSkills("Methodologies", "faRuler")}
         </Col>
       </Row>
+
+      {home && <PageButton link="/works#skills" text="Rated Skills" light />}
     </PageSection>
   );
 };

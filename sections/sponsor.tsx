@@ -1,15 +1,20 @@
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
 
-const SponsorSection = () => {
+interface props {
+  home?: boolean;
+}
+
+const SponsorSection = async ({ home }: props) => {
   return (
     <PageSection
       title={"Sponsor Me"}
       subtitle={"Noticed How Many Open-Source Projects?"}
       id="sponsor"
-      color="dark"
+      color={home ? "dark" : "light"}
+      bg2
     >
-      <Typography size={5} className="me-2" color="white">
+      <Typography size={5} className="me-2" color={home ? "light" : "dark"}>
         If you find my open-source work helpful, consider to{" "}
         <u>
           <a href="https://github.com/sponsors/makkahwi/" target="_blank">

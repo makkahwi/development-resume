@@ -1,41 +1,27 @@
-import { getSemesteerBlogEnPosts } from "@/api/data";
 import { apiCallRevalidate } from "@/api/data";
-import NavbarComp from "@/layout/Navbar";
-import { post } from "@/sections/blog/blog";
-import EducationSection from "@/sections/education";
 import dynamic from "next/dynamic";
 import { Fragment } from "react";
 
 export const revalidate = apiCallRevalidate;
 
 export default async function Home() {
-  const WorksSection = dynamic(() => import("@/sections/works/works"));
   const WelcomeSection = dynamic(() => import("@/sections/welcome"));
-  const CareerSection = dynamic(() => import("@/sections/experiences"));
-  // const BlogSection = dynamic(() => import("@/sections/blog/blog"));
-  const SkillsSection = dynamic(() => import("@/sections/skills"));
   const AboutSection = dynamic(() => import("@/sections/about/about"));
-  const SponsorSection = dynamic(() => import("@/sections/sponsor"));
-
-  // const posts: post[] = await getSemesteerBlogEnPosts();
+  const CareerSection = dynamic(() => import("@/sections/experiences"));
+  const WorksSection = dynamic(() => import("@/sections/works/works"));
+  const SkillsSection = dynamic(() => import("@/sections/skills"));
 
   return (
     <Fragment>
       <WelcomeSection />
 
-      <NavbarComp />
+      <AboutSection home={true} />
 
-      <AboutSection />
+      <CareerSection home={true} />
 
-      <CareerSection />
+      <WorksSection home={true} />
 
-      <WorksSection />
-
-      <SponsorSection />
-
-      <SkillsSection />
-
-      <EducationSection />
+      <SkillsSection home={true} />
 
       {/* <BlogSection posts={posts} /> */}
     </Fragment>

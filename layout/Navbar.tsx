@@ -1,15 +1,11 @@
 "use client";
 
 import {
-  faBriefcase,
+  faCode,
   faDownload,
-  faGraduationCap,
   faHeart,
   faHome,
-  faImages,
   faMobile,
-  faNewspaper,
-  faPaintBrush,
   faPerson,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,41 +19,32 @@ import {
   NavbarCollapse,
   NavbarToggle,
 } from "react-bootstrap";
-// import { Link } from "react-scroll";
 
 const NavbarComp = () => {
   const links = [
     {
       title: "Home",
-      link: "home",
+      link: "/",
       icon: faHome,
     },
     {
       title: "About",
-      link: "about",
+      link: "/about",
       icon: faPerson,
     },
-    {
-      title: "Experiences",
-      link: "experiences",
-      icon: faBriefcase,
-    },
-    { title: "Works", link: "works", icon: faImages },
-    { title: "Sponsor", link: "sponsor", icon: faHeart },
-    { title: "Skills", link: "skills", icon: faPaintBrush },
-    { title: "Education", link: "education", icon: faGraduationCap },
-    // { title: "Blog", link: "blog", icon: faNewspaper },
-    { title: "Contact", link: "contact", icon: faMobile },
+    { title: "Works", link: "/works", icon: faCode },
+    { title: "Sponsor", link: "/sponsor", icon: faHeart },
+    { title: "Contact", link: "contact", scroll: true, icon: faMobile },
   ];
 
   return (
     <Navbar
       expand="lg"
-      className="py-0 px-5 mx-3 mt-3 border-bottom border-info fixed-top m-0 corners"
+      className="py-0 px-5 mx-3 mt-3 border-bottom border-top border-dark fixed-top m-0 corners"
       bg="info"
     >
       <NavbarBrand role="button">
-        <a href="#home" className="text-decoration-none text-uppercase font">
+        <a href="/" className="text-decoration-none text-uppercase font">
           <img src="/images/LogoW.png" width="65px" />{" "}
           <span className="text-white">Suhaib</span>{" "}
           <span className="text-white d-none d-md-inline">Ahmad</span>
@@ -71,10 +58,10 @@ const NavbarComp = () => {
 
       <NavbarCollapse className="justify-content-end">
         <Nav>
-          {links.map(({ title, link, icon }, i) => (
+          {links.map(({ title, link, scroll, icon }, i) => (
             <NavItem key={i}>
               <NavLink
-                href={"#" + link}
+                href={(scroll ? "#" : "") + link}
                 className="text-white text-decoration-none"
               >
                 <FontAwesomeIcon
