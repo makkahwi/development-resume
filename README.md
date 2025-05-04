@@ -5,6 +5,6 @@
 ## To Do
 
 - Localize App
-- Move education & contacts to firebase
+- Move contacts to firebase
 - Remove "use client" in blog & works
 - Remove PageSection URL Show

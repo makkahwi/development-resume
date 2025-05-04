@@ -1600,5 +1600,43 @@
       "name": "REST API",
       "color": "176985"
     }
+  ],
+  "education": [
+    {
+      "logo": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/LTUC.png?alt=media",
+      "name": "6-Month Training Camp",
+      "school": "ASAC of LTUC College (Jordan)",
+      "website": "https://www.ltuc.com/",
+      "desc": "Python Based Web Dev (Code Fellows Curriculum)",
+      "cert": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
+      "downloads": [
+        {
+          "label": "Individual Works",
+          "link": "https://github.com/makkahwi/asac-works"
+        },
+        {
+          "label": "Midterm",
+          "link": "https://silent-speakers.github.io/silent-speakers/"
+        },
+        {
+          "label": "Final",
+          "link": "https://tadreebi.netlify.app/"
+        }
+      ]
+    },
+    {
+      "logo": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/IIUM.png?alt=media",
+      "name": "Bachelor of Computer Science",
+      "school": "International Islamic University Malaysia",
+      "website": "https://www.iium.edu.my/",
+      "desc": "Specialized in Data Science and Computational Intelligence",
+      "cert": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
+      "downloads": [
+        {
+          "label": "FYP Project",
+          "link": "https://github.com/makkahwi/iDecide"
+        }
+      ]
+    }
   ]
 }

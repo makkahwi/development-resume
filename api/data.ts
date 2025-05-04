@@ -63,6 +63,7 @@ const api = axios.create({
 });
 
 const getJobsApi = () => api.get("jobs.json");
+const getEducationApi = () => api.get("education.json");
 const getSkillsApi = () => api.get("skills.json");
 const getProjectsApi = () => api.get("projects.json");
 const getJobProjectsApi = () => api.get("job-projects.json");
@@ -77,6 +78,12 @@ export const getJobs = cache(async () => {
 
 export const getSkills = cache(async () => {
   const { data } = await getSkillsApi();
+
+  return data;
+});
+
+export const getEducation = cache(async () => {
+  const { data } = await getEducationApi();
 
   return data;
 });
