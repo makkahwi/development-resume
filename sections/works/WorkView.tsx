@@ -64,7 +64,7 @@ const WorkView = ({
             )}
 
             <OverlayTrigger overlay={<Tooltip>{company}</Tooltip>}>
-              <a href={"#" + company}>
+              <a href={"#" + company.replaceAll(" ", "_")}>
                 <FontAwesomeIcon icon={faBuilding} className="ms-2" />
               </a>
             </OverlayTrigger>

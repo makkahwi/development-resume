@@ -33,7 +33,10 @@ const CareerSection = async () => {
     );
 
     return (
-      <div className="bg-white text-white my-1 p-4 pb-2" id={company}>
+      <div
+        className="bg-white text-white my-1 p-4 pb-2"
+        id={company.replaceAll(" ", "_")}
+      >
         <Row>
           <Col xs={7}>
             <Typography size={6} color="info">
@@ -82,7 +85,7 @@ const CareerSection = async () => {
                   </Tooltip>
                 }
               >
-                <a href={"#" + title}>
+                <a href={"#" + title.replaceAll(" ", "_")}>
                   <FontAwesomeIcon icon={faCode} />
                 </a>
               </OverlayTrigger>
@@ -112,7 +115,11 @@ const CareerSection = async () => {
               Projects:{" "}
               {projects?.map(({ title }, i) => (
                 <OverlayTrigger overlay={<Tooltip>{title}</Tooltip>}>
-                  <a className="ms-2" href={"#" + title} key={i}>
+                  <a
+                    className="ms-2"
+                    href={"#" + title.replaceAll(" ", "_")}
+                    key={i}
+                  >
                     {/* <FontAwesomeIcon icon={faCode} /> */}
                     {i + 1}
                   </a>
