@@ -16,6 +16,7 @@ interface SkillProps {
   icon: any;
   name: string;
   color: string;
+  rate: number;
   website?: string;
   subskills?: string[];
 }
@@ -40,7 +41,7 @@ const SkillsSection = async ({ page }: props) => {
 
       {skills
         ?.filter((skill) => skill.groups.includes(group))
-        .map(({ icon, name, color, website, subskills }, i) => (
+        .map(({ icon, name, color, website, subskills, rate }, i) => (
           <a href={website} target="_blank" key={i}>
             <h4 className="ps-5" style={{ color: "#" + color }}>
               {subskills ? (
@@ -56,6 +57,19 @@ const SkillsSection = async ({ page }: props) => {
                   <FontAwesomeIcon icon={iconMap[icon]} /> {name}
                 </span>
               )}
+
+              <small className="text-warning float-end text-xs">
+                {Array(rate)
+                  .join(".")
+                  .split(".")
+                  .map((_, y) => (
+                    <FontAwesomeIcon
+                      icon={solid.faStar}
+                      className="ms-1"
+                      key={y}
+                    />
+                  ))}
+              </small>
             </h4>
           </a>
         ))}
