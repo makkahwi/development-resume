@@ -63,6 +63,7 @@ const api = axios.create({
 });
 
 const getJobsApi = () => api.get("jobs.json");
+const getSkillsApi = () => api.get("skills.json");
 const getProjectsApi = () => api.get("projects.json");
 const getJobProjectsApi = () => api.get("job-projects.json");
 
@@ -70,6 +71,12 @@ export const apiCallRevalidate = 60 * 60 * 24 * 7; // seconds * mins * hours * d
 
 export const getJobs = cache(async () => {
   const { data } = await getJobsApi();
+
+  return data;
+});
+
+export const getSkills = cache(async () => {
+  const { data } = await getSkillsApi();
 
   return data;
 });
