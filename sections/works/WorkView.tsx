@@ -21,11 +21,12 @@ const WorkView = ({
   type = "",
   company = "",
   openSource = false,
+  dark = false,
 }) => {
   return (
     <CardComp
       image={image}
-      color="info"
+      color={dark ? "info" : "light"}
       tag={
         openSource
           ? "Open-Source" + " " + category
@@ -34,25 +35,44 @@ const WorkView = ({
           : undefined
       }
     >
-      <Typography size={4} justify="center" color="info" className="font">
+      <Typography
+        size={4}
+        justify="center"
+        color={dark ? "info" : "light"}
+        className="font"
+      >
         {title}
       </Typography>
 
       <Row>
         <Col xs={12}>
-          <Typography size="sm" className="my-1" color="info">
+          <Typography
+            size="sm"
+            className="my-1"
+            color={dark ? "info" : "light"}
+          >
             Project
           </Typography>
         </Col>
 
         <Col xs={url ? 9 : 10}>
-          <Typography size={6} className="my-3" color="info" justify="start">
+          <Typography
+            size={6}
+            className="my-3"
+            color={dark ? "info" : "light"}
+            justify="start"
+          >
             {type}
           </Typography>
         </Col>
 
         <Col xs={url ? 3 : 2}>
-          <Typography size={6} className="my-3" color="info" justify="end">
+          <Typography
+            size={6}
+            className="my-3"
+            color={dark ? "info" : "light"}
+            justify="end"
+          >
             {url !== "" ? (
               <OverlayTrigger overlay={<Tooltip>View</Tooltip>}>
                 <a href={url} target="_blank">
@@ -72,19 +92,33 @@ const WorkView = ({
         </Col>
 
         <Col xs={12}>
-          <Typography size="sm" className="my-1" color="info">
+          <Typography
+            size="sm"
+            className="my-1"
+            color={dark ? "info" : "light"}
+          >
             Role
           </Typography>
         </Col>
 
         <Col xs={9}>
-          <Typography size={6} className="my-2" color="info" justify="start">
+          <Typography
+            size={6}
+            className="my-2"
+            color={dark ? "info" : "light"}
+            justify="start"
+          >
             {role}
           </Typography>
         </Col>
 
         <Col xs={3}>
-          <Typography size={6} className="my-2" color="info" justify="end">
+          <Typography
+            size={6}
+            className="my-2"
+            color={dark ? "info" : "light"}
+            justify="end"
+          >
             <OverlayTrigger
               overlay={<Tooltip>{technologies.join(", ")}</Tooltip>}
             >
@@ -94,7 +128,11 @@ const WorkView = ({
             <OverlayTrigger
               overlay={
                 <Tooltip>
-                  <Typography size="sm" className="my-2" color="light">
+                  <Typography
+                    size="sm"
+                    className="my-2"
+                    color={dark ? "info" : "light"}
+                  >
                     {description}
                   </Typography>
                 </Tooltip>

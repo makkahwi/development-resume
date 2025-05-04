@@ -13,8 +13,14 @@ import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 
 import { ProjectProps } from "./works/works";
 import { JobProps } from "./about/statistics";
+import { Fragment } from "react";
+import PageButton from "@/components/PageButton";
 
-const CareerSection = async () => {
+interface props {
+  home?: boolean;
+}
+
+const CareerSection = async ({ home }: props) => {
   const careers: JobProps[] = await getJobs();
   const works: ProjectProps[] = await getJobProjects();
 
@@ -35,18 +41,18 @@ const CareerSection = async () => {
 
     return (
       <div
-        className="bg-white text-white my-1 p-4 pb-2"
+        className={(home ? "bg-light" : "bg-info") + " my-1 p-4 pb-2"}
         id={company.replaceAll(" ", "_")}
       >
         <Row>
           <Col xs={7}>
-            <Typography size={6} color="info">
+            <Typography size={6} color={home ? "info" : "light"}>
               {period}
             </Typography>
           </Col>
 
           <Col xs={5}>
-            <Typography size={6} color="info" justify="end">
+            <Typography size={6} color={home ? "info" : "light"} justify="end">
               {website ? (
                 <a
                   className="text-decoration-none"
@@ -62,75 +68,91 @@ const CareerSection = async () => {
           </Col>
 
           <Col xs={10} className="my-3">
-            <Typography size={5} color="info" className="font">
+            <Typography
+              size={5}
+              color={home ? "info" : "light"}
+              className="font"
+            >
               {title}
             </Typography>
           </Col>
 
-          <Col xs={2} className="my-3">
-            <Typography size={5} color="info" className="font">
-              <OverlayTrigger
-                overlay={
-                  <Tooltip>
-                    {projects
-                      .reduce<string[]>(
-                        (final, { technologies }) => [
-                          ...final,
-                          ...technologies.filter(
-                            (tech) => !final.includes(tech)
-                          ),
-                        ],
-                        []
-                      )
-                      .join(", ")}
-                  </Tooltip>
-                }
-              >
-                <FontAwesomeIcon icon={faCode} />
-              </OverlayTrigger>
-            </Typography>
-          </Col>
-
-          <Col xs={7}>
-            <Typography size={6} color="info">
-              <FontAwesomeIcon icon={faClock} /> {type}
-            </Typography>
-          </Col>
-
-          <Col xs={description.length ? 4 : 5}>
-            <Typography size={6} color="info">
-              <FontAwesomeIcon icon={faLocationPin} /> {location}
-            </Typography>
-          </Col>
-
-          {description.length ? (
-            <Col xs={1}>
-              <OverlayTrigger overlay={<Tooltip>{description}</Tooltip>}>
-                <Typography size={6} color="info">
-                  <FontAwesomeIcon icon={faInfoCircle} />
-                </Typography>
-              </OverlayTrigger>
-            </Col>
-          ) : (
-            ""
-          )}
-
-          {projects.length ? (
-            <Col xs={12}>
-              <Typography size={6} color="info" className="mt-3">
-                Projects |{" "}
-                {projects?.map(({ title, shortTitle }, i) => (
-                  <OverlayTrigger overlay={<Tooltip>{title}</Tooltip>}>
-                    <a href={"#" + title.replaceAll(" ", "_")} key={i}>
-                      {shortTitle || title}
-                      {i === projects.length - 1 ? "" : " "}
-                    </a>
+          {!home && (
+            <Fragment>
+              <Col xs={2} className="my-3">
+                <Typography
+                  size={5}
+                  color={home ? "info" : "light"}
+                  className="font"
+                >
+                  <OverlayTrigger
+                    overlay={
+                      <Tooltip>
+                        {projects
+                          .reduce<string[]>(
+                            (final, { technologies }) => [
+                              ...final,
+                              ...technologies.filter(
+                                (tech) => !final.includes(tech)
+                              ),
+                            ],
+                            []
+                          )
+                          .join(", ")}
+                      </Tooltip>
+                    }
+                  >
+                    <FontAwesomeIcon icon={faCode} />
                   </OverlayTrigger>
-                ))}
-              </Typography>
-            </Col>
-          ) : (
-            ""
+                </Typography>
+              </Col>
+
+              <Col xs={7}>
+                <Typography size={6} color={home ? "info" : "light"}>
+                  <FontAwesomeIcon icon={faClock} /> {type}
+                </Typography>
+              </Col>
+
+              <Col xs={description.length ? 4 : 5}>
+                <Typography size={6} color={home ? "info" : "light"}>
+                  <FontAwesomeIcon icon={faLocationPin} /> {location}
+                </Typography>
+              </Col>
+
+              {description.length ? (
+                <Col xs={1}>
+                  <OverlayTrigger overlay={<Tooltip>{description}</Tooltip>}>
+                    <Typography size={6} color={home ? "info" : "light"}>
+                      <FontAwesomeIcon icon={faInfoCircle} />
+                    </Typography>
+                  </OverlayTrigger>
+                </Col>
+              ) : (
+                ""
+              )}
+
+              {projects.length ? (
+                <Col xs={12}>
+                  <Typography
+                    size={6}
+                    color={home ? "info" : "light"}
+                    className="mt-3"
+                  >
+                    Projects |{" "}
+                    {projects?.map(({ title, shortTitle }, i) => (
+                      <OverlayTrigger overlay={<Tooltip>{title}</Tooltip>}>
+                        <a href={"#" + title.replaceAll(" ", "_")} key={i}>
+                          {shortTitle || title}
+                          {i === projects.length - 1 ? "" : " "}
+                        </a>
+                      </OverlayTrigger>
+                    ))}
+                  </Typography>
+                </Col>
+              ) : (
+                ""
+              )}
+            </Fragment>
           )}
         </Row>
       </div>
@@ -153,7 +175,7 @@ const CareerSection = async () => {
     <PageSection
       title="Experiences"
       subtitle="Navigating Career"
-      color="info"
+      color={home ? "info" : undefined}
       id="experiences"
     >
       {careers
@@ -161,6 +183,8 @@ const CareerSection = async () => {
         .map((career, i) => (
           <CareerSlide {...career} key={i} />
         ))}
+
+      {home && <PageButton link="/works" text="More Details" light />}
     </PageSection>
   );
 };

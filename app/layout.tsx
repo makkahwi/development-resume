@@ -10,6 +10,7 @@ import Script from "next/script";
 import { Fragment } from "react";
 import "./global.scss";
 import "./globals.css";
+import NavbarComp from "@/layout/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,6 +45,8 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <main className="mx-0 mb-0 p-0 w-100 pb-5">{children}</main>
+
+        <NavbarComp />
 
         {/* <LandingPopUp /> */}
 
