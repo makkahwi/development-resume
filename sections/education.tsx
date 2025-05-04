@@ -1,71 +1,25 @@
-import { getJobs } from "@/api/data";
+import { getEducation, getJobs } from "@/api/data";
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, ButtonGroup, Col, Row } from "react-bootstrap";
 
-interface props {
-  page?: boolean;
-}
-
-export interface JobProps {
-  desc: string[];
-  icon: string;
-  title: string;
-  jobs: {
-    company: string;
-    description: string;
-    monthsCount: number;
-    period: string;
-    projectsCount: number;
-    title: string;
-    type: string;
-    website: string;
+interface EducationProps {
+  logo: string;
+  name: string;
+  school: string;
+  website: string;
+  desc: string;
+  cert: string;
+  downloads: {
+    label: string;
+    link: string;
   }[];
 }
 
-const EducationSection = async ({ page }: props) => {
-  const careers: JobProps[] = await getJobs();
-
-  const skills = [
-    {
-      logo: "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/LTUC.png?alt=media",
-      name: "6-Month Training Camp",
-      school: "ASAC of LTUC College (Jordan)",
-      website: "https://www.ltuc.com/",
-      desc: "Python Based Web Dev (Code Fellows Curriculum)",
-      cert: "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
-      downloads: [
-        {
-          label: "Individual Works",
-          link: "https://github.com/makkahwi/asac-works",
-        },
-        {
-          label: "Midterm",
-          link: "https://silent-speakers.github.io/silent-speakers/",
-        },
-        {
-          label: "Final",
-          link: "https://tadreebi.netlify.app/",
-        },
-      ],
-    },
-    {
-      logo: "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/IIUM.png?alt=media",
-      name: "Bachelor of Computer Science",
-      school: "International Islamic University Malaysia",
-      website: "https://www.iium.edu.my/",
-      desc: "Specialized in Data Science and Computational Intelligence",
-      cert: "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
-      downloads: [
-        {
-          label: "FYP Project",
-          link: "https://github.com/makkahwi/iDecide",
-        },
-      ],
-    },
-  ];
+const EducationSection = async () => {
+  const education: EducationProps[] = await getEducation();
 
   return (
     <PageSection
@@ -75,7 +29,7 @@ const EducationSection = async ({ page }: props) => {
       id="education"
       bg2
     >
-      {skills.map(
+      {education?.map(
         ({ logo, name, school, website, desc, cert, downloads }, i) => (
           <Row className="my-5 align-middle gx-5" key={i}>
             <Col md={6} className="text-white">

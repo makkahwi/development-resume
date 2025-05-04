@@ -5,6 +5,7 @@
 ## To Do
 
 - Localize App
-- Move education, skills & contacts to firebase
-- Remove "use client" in blog & works
+- Move contacts to firebase
+- Remove "use client" in blog
 - Remove PageSection URL Show
+- Add PDF resume generator

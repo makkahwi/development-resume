@@ -12,6 +12,7 @@ export interface ProjectProps {
   type: string;
   image: string;
   title: string;
+  shortTitle?: string;
   url?: string;
   technologies: string[];
   company?: string;
@@ -60,7 +61,7 @@ const WorksSection = async () => {
                 md={4}
                 sm={6}
                 className="p-2 d-flex"
-                id={title}
+                id={title.replaceAll(" ", "_")}
                 key={i}
               >
                 <WorkView

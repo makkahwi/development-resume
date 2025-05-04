@@ -1,17 +1,18 @@
-import { getJobs, getJobProjects } from "@/api/data";
+import { getJobProjects, getJobs } from "@/api/data";
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
 import {
   faClock,
   faCode,
+  faInfoCircle,
   faLink,
   faLocationPin,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
+import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 
-import { JobProps } from "./education";
 import { ProjectProps } from "./works/works";
+import { JobProps } from "./about/statistics";
 
 const CareerSection = async () => {
   const careers: JobProps[] = await getJobs();
@@ -33,7 +34,10 @@ const CareerSection = async () => {
     );
 
     return (
-      <div className="bg-white text-white my-1 p-4 pb-2" id={company}>
+      <div
+        className="bg-white text-white my-1 p-4 pb-2"
+        id={company.replaceAll(" ", "_")}
+      >
         <Row>
           <Col xs={7}>
             <Typography size={6} color="info">
@@ -82,9 +86,7 @@ const CareerSection = async () => {
                   </Tooltip>
                 }
               >
-                <a href={"#" + title}>
-                  <FontAwesomeIcon icon={faCode} />
-                </a>
+                <FontAwesomeIcon icon={faCode} />
               </OverlayTrigger>
             </Typography>
           </Col>
@@ -95,31 +97,41 @@ const CareerSection = async () => {
             </Typography>
           </Col>
 
-          <Col xs={5}>
+          <Col xs={description.length ? 4 : 5}>
             <Typography size={6} color="info">
               <FontAwesomeIcon icon={faLocationPin} /> {location}
             </Typography>
           </Col>
 
-          {/* <Col xs={12} className="my-2">
-            <Typography size={6} color="info">
-              {description}
-            </Typography>
-          </Col> */}
+          {description.length ? (
+            <Col xs={1}>
+              <OverlayTrigger overlay={<Tooltip>{description}</Tooltip>}>
+                <Typography size={6} color="info">
+                  <FontAwesomeIcon icon={faInfoCircle} />
+                </Typography>
+              </OverlayTrigger>
+            </Col>
+          ) : (
+            ""
+          )}
 
-          <Col xs={12}>
-            <Typography size={6} color="info" className="mt-2">
-              Projects:{" "}
-              {projects?.map(({ title }, i) => (
-                <OverlayTrigger overlay={<Tooltip>{title}</Tooltip>}>
-                  <a className="ms-2" href={"#" + title} key={i}>
-                    {/* <FontAwesomeIcon icon={faCode} /> */}
-                    {i + 1}
-                  </a>
-                </OverlayTrigger>
-              ))}
-            </Typography>
-          </Col>
+          {projects.length ? (
+            <Col xs={12}>
+              <Typography size={6} color="info" className="mt-3">
+                Projects |{" "}
+                {projects?.map(({ title, shortTitle }, i) => (
+                  <OverlayTrigger overlay={<Tooltip>{title}</Tooltip>}>
+                    <a href={"#" + title.replaceAll(" ", "_")} key={i}>
+                      {shortTitle || title}
+                      {i === projects.length - 1 ? "" : " "}
+                    </a>
+                  </OverlayTrigger>
+                ))}
+              </Typography>
+            </Col>
+          ) : (
+            ""
+          )}
         </Row>
       </div>
     );

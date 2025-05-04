@@ -20,6 +20,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/20.jpg?alt=media",
       "importanceOrder": 29,
       "timeOrder": 15,
+      "shortTitle": "Snd",
       "title": "Sanad"
     },
     {
@@ -72,6 +73,7 @@
       "importanceOrder": 27,
       "timeOrder": 18,
       "title": "Semesteer",
+      "shortTitle": "Sem",
       "url": "https://semesteer.com/"
     },
     {
@@ -94,6 +96,7 @@
       "timeOrder": 16,
       "company": "Logatta",
       "title": "Entreviable",
+      "shortTitle": "Ent",
       "url": "https://entreviable.com"
     },
     {
@@ -114,6 +117,7 @@
       "importanceOrder": 25,
       "timeOrder": 11,
       "title": "Trellah",
+      "shortTitle": "Tre",
       "url": "https://trellah.com/"
     },
     {
@@ -137,6 +141,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/11.jpg?alt=media",
       "importanceOrder": 24,
       "timeOrder": 9,
+      "shortTitle": "BT",
       "title": "BrandTag",
       "url": "https://app.brandtag.io/"
     },
@@ -161,6 +166,7 @@
       "importanceOrder": 23,
       "openSource": true,
       "timeOrder": 24,
+      "shortTitle": "HEAL",
       "title": "Healthy Eating and Lifestyle Tracker",
       "url": "https://heal-tracker.vercel.app/"
     },
@@ -186,6 +192,7 @@
       "importanceOrder": 22,
       "openSource": true,
       "timeOrder": 19,
+      "shortTitle": "ANest",
       "title": "AppNest"
     },
     {
@@ -208,6 +215,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/8.jpg?alt=media",
       "importanceOrder": 21,
       "timeOrder": 7,
+      "shortTitle": "Stu",
       "title": "AIS Students Portal"
     },
     {
@@ -233,6 +241,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/15.jpg?alt=media",
       "importanceOrder": 20,
       "timeOrder": 5,
+      "shortTitle": "Sta",
       "title": "AIS Staff Portal"
     },
     {
@@ -255,6 +264,7 @@
       "importanceOrder": 19,
       "timeOrder": 17,
       "title": "Crosure",
+      "shortTitle": "Cro",
       "url": "https://commsure.com/"
     },
     {
@@ -306,6 +316,7 @@
       "openSource": true,
       "timeOrder": 10,
       "title": "Tadreebi",
+      "shortTitle": "Tad",
       "url": "https://tadreebi.netlify.app/"
     },
     {
@@ -328,6 +339,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/9.jpg?alt=media",
       "importanceOrder": 16,
       "timeOrder": 9,
+      "shortTitle": "xEdu",
       "title": "xEdu App"
     },
     {
@@ -378,6 +390,7 @@
       "openSource": true,
       "timeOrder": 26,
       "title": "Currencies Archiving & Sharing Hub",
+      "shortTitle": "CASH",
       "url": "https://cash-hub.vercel.app/"
     },
     {
@@ -401,6 +414,7 @@
       "importanceOrder": 13,
       "openSource": true,
       "timeOrder": 25,
+      "shortTitle": "FF",
       "title": "Family Finance"
     },
     {
@@ -427,6 +441,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/23.jpg?alt=media",
       "importanceOrder": 12,
       "timeOrder": 13,
+      "shortTitle": "R&K",
       "title": "Rasmi & Kiwan"
     },
     {
@@ -451,6 +466,7 @@
       "importanceOrder": 11,
       "timeOrder": 23,
       "title": "Coach Noor Kayyali",
+      "shortTitle": "Noor",
       "url": "https://www.noorkayyali.com/"
     },
     {
@@ -475,6 +491,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/25.jpg?alt=media",
       "importanceOrder": 10,
       "timeOrder": 27,
+      "shortTitle": "Fat",
       "title": "Nutritionist Fatima Mohammad",
       "url": "https://nutriFatima.com/"
     },
@@ -499,6 +516,7 @@
       "importanceOrder": 9,
       "timeOrder": 22,
       "title": "E3 Ventures",
+      "shortTitle": "E3",
       "url": "https://e3.ventures/"
     },
     {
@@ -520,6 +538,7 @@
       "importanceOrder": 8,
       "timeOrder": 20,
       "company": "Freelance",
+      "shortTitle": "AAM",
       "title": "Dr. Ahmad Abu Mahfouth",
       "url": "https://drahmadabumahfouth.com"
     },
@@ -542,6 +561,7 @@
       "importanceOrder": 7,
       "timeOrder": 12,
       "company": "Freelance",
+      "shortTitle": "R&K",
       "title": "Rasmi & Kiwan",
       "url": "https://rasmiandkiwan.com/"
     },
@@ -564,6 +584,7 @@
       "timeOrder": 6,
       "company": "Freelance",
       "title": "Zaytouna Club",
+      "shortTitle": "Zay",
       "url": "https://zaytouna-tau.vercel.app/"
     },
     {
@@ -580,7 +601,8 @@
       "importanceOrder": 5,
       "timeOrder": 4,
       "company": "Freelancer",
-      "title": "OneShot Future Company",
+      "title": "OneShot Future",
+      "shortTitle": "OSF",
       "url": "https://oneshotfuture.com/"
     },
     {
@@ -597,7 +619,7 @@
       "importanceOrder": 4,
       "timeOrder": 3,
       "company": "Freelancer",
-      "title": "PPAM Organization",
+      "title": "PPAM",
       "url": "https://ppam.org.my/"
     },
     {
@@ -618,7 +640,8 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/2.jpg?alt=media",
       "importanceOrder": 3,
       "timeOrder": 2,
-      "title": "AIS School",
+      "title": "AIS Landing",
+      "shortTitle": "AIS",
       "url": "https://aqsa.edu.my/"
     },
     {
@@ -635,7 +658,8 @@
       "importanceOrder": 2,
       "company": "Freelancer",
       "timeOrder": 1,
-      "title": "SpeedWheels Company",
+      "title": "Speed Wheels",
+      "shortTitle": "SW",
       "url": "https://speedwheelstrade.online/"
     },
     {
@@ -652,6 +676,7 @@
       "importanceOrder": 1,
       "timeOrder": 0,
       "company": "Freelancer",
+      "shortTitle": "Team",
       "title": "Team Foundation",
       "url": "https://teamtr.media/"
     },
@@ -877,7 +902,7 @@
       "jobs": [
         {
           "company": "AlembicSoft",
-          "description": "To develop JS based web apps for online services.",
+          "description": "I didn't only develop, I supervised the work of whole team.",
           "monthsCount": 17,
           "period": "Jul 2023 - Apr 2025",
           "projectsCount": 1,
@@ -888,7 +913,7 @@
         },
         {
           "company": "Logatta",
-          "description": "To develop React.Js-based web apps for Saas services.",
+          "description": "",
           "monthsCount": 5,
           "period": "Aug - Dec 2023",
           "projectsCount": 2,
@@ -899,7 +924,7 @@
         },
         {
           "company": "Deloitte",
-          "description": "To develop JS based web apps for online public (government) services.",
+          "description": "",
           "monthsCount": 2,
           "period": "Jun - Jul 2023",
           "projectsCount": 0,
@@ -910,7 +935,7 @@
         },
         {
           "company": "AgileTz",
-          "description": "To develop React.Js-Node.Js web apps for online public (government) services.",
+          "description": "Main full-stack developer for one project, sole frontend developer for another.",
           "monthsCount": 10,
           "period": "Aug 2022 - May 2023",
           "projectsCount": 2,
@@ -921,7 +946,7 @@
         },
         {
           "company": "ArabWork",
-          "description": "Full-time job to develop a Vue-Symfony web app for an online service.",
+          "description": "",
           "monthsCount": 2,
           "type": "Full-Time",
           "period": "Jun - Aug 2022",
@@ -932,15 +957,15 @@
         },
         {
           "company": "Open Source",
-          "description": "Executed several PERN based web app projects.",
+          "description": "Products built for personal needs and technologies adapting purposes, published for others to contribute and use freely.",
           "period": "Jan 2022 - Present",
           "location": "Jordan",
-          "title": "Architect & End-To-End Developer",
+          "title": "Architect & Developer",
           "type": "Freelance"
         },
         {
           "company": "Luxtag",
-          "description": "To develop a flagship PERN based web app for an online service.",
+          "description": "Main full-stack developer, second in-command for team coordination.",
           "monthsCount": 12,
           "period": "Nov 2020 - Oct 2021",
           "projectsCount": 1,
@@ -951,7 +976,7 @@
         },
         {
           "company": "AIS",
-          "description": "To develop a Laravel based web app of a student information system.",
+          "description": "Sole full-stack developer for custom needs. Architected, planned, and executed.",
           "monthsCount": 12,
           "period": "Sep 2019 - Aug 2020",
           "projectsCount": 1,
@@ -962,7 +987,7 @@
         },
         {
           "company": "Freelance",
-          "description": "Executed several Laravel based & PERN based web app private projects.",
+          "description": "",
           "period": "Sep 2019 - Present",
           "location": "Malaysia & Jordan",
           "title": "Full-Stack Developer",
@@ -970,7 +995,7 @@
         },
         {
           "company": "Freelancer",
-          "description": "Several Wordpress & code based frontend-only landing-page projects.",
+          "description": "",
           "period": "Oct 2015 - Aug 2019",
           "location": "Malaysia",
           "title": "Frontend Developer",
@@ -1135,6 +1160,482 @@
         "I have designed and built the architecture of a coming-soon open-source project of AppNest.",
         "This project is about building a tool to help the planning and execution of any future web application projects.",
         "I am supervising the team that is developing the code for the project, and soon we will launch the MVP for public testing."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "rate": 5,
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faReact",
+      "name": "React.Js",
+      "color": "61dafb",
+      "website": "https://reactjs.org/",
+      "subskills": [
+        "Redux",
+        "Axios",
+        "i18next",
+        "Material-UI",
+        "Chakra-UI",
+        "TailwindCSS",
+        "Ant Design",
+        "PrimeReact",
+        "Styled Components",
+        "React Hook Form",
+        "Formik",
+        "Moment",
+        "Charts.Js",
+        "Eslint",
+        "prettier"
+      ]
+    },
+    {
+      "rate": 5,
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faN",
+      "name": "Next.Js",
+      "color": "000000",
+      "website": "https://nextjs.org/",
+      "subskills": [
+        "Same as React.Js"
+      ]
+    },
+    {
+      "rate": 3,
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faV",
+      "name": "Vite",
+      "color": "B63DFE",
+      "website": "https://vitejs.dev/",
+      "subskills": [
+        "Same as React.Js"
+      ]
+    },
+    {
+      "rate": 3,
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faR",
+      "name": "Remix",
+      "color": "000000",
+      "website": "https://remix.run/",
+      "subskills": [
+        "Same as React.Js"
+      ]
+    },
+    {
+      "rate": 3,
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faShapes",
+      "name": "Three.Js",
+      "color": "000000",
+      "website": "https://threejs.org/"
+    },
+    {
+      "rate": 4,
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faVuejs",
+      "name": "Vue.Js",
+      "color": "00bd83",
+      "website": "https://vuejs.org/",
+      "subskills": [
+        "VueX",
+        "Vuetify",
+        "Axios",
+        "Webpack",
+        "i18next"
+      ]
+    },
+    {
+      "rate": 4,
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faVuejs",
+      "name": "Nuxt.Js",
+      "color": "00DC82",
+      "website": "https://nuxt.com/",
+      "subskills": [
+        "Same as Vue.Js"
+      ]
+    },
+    {
+      "rate": 1,
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faAngular",
+      "name": "Angular.Js",
+      "color": "D6002F",
+      "website": "https://angular.dev/"
+    },
+    {
+      "rate": 5,
+      "groups": [
+        "Frontend",
+        "Backend"
+      ],
+      "icon": "faNode",
+      "name": "Node.Js",
+      "color": "8bc500",
+      "website": "https://nodejs.org/",
+      "subskills": [
+        "npm",
+        "yarn",
+        "strapi.io"
+      ]
+    },
+    {
+      "rate": 5,
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faNodeJs",
+      "name": "Express.Js",
+      "color": "000000",
+      "website": "https://expressjs.com/"
+    },
+    {
+      "rate": 4,
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faNodeJs",
+      "name": "Nest.Js",
+      "color": "E0234E",
+      "website": "https://nestjs.com/",
+      "subskills": [
+        "Typeorm"
+      ]
+    },
+    {
+      "rate": 4,
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faLaravel",
+      "name": "Laravel",
+      "color": "ff2d20",
+      "website": "https://laravel.com/"
+    },
+    {
+      "rate": 2,
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faHashtag",
+      "name": "Django",
+      "color": "092d1f",
+      "website": "https://www.djangoproject.com/",
+      "subskills": [
+        "DJ REST API",
+        "DJ Simple JWT",
+        "DJ Environ"
+      ]
+    },
+    {
+      "rate": 1,
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faGolang",
+      "name": "Go / GoLang",
+      "color": "00A7D0",
+      "website": "https://go.dev/"
+    },
+    {
+      "rate": 3,
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faWordpress",
+      "name": "Wordpress",
+      "color": "21759b",
+      "website": "https://wordpress.com/",
+      "subskills": [
+        "Elementor",
+        "Contact Form 7"
+      ]
+    },
+    {
+      "rate": 4,
+      "groups": [
+        "Databases"
+      ],
+      "icon": "faDatabase",
+      "name": "PostgreSQL",
+      "color": "2f6091",
+      "website": "https://www.postgresql.org/"
+    },
+    {
+      "rate": 4,
+      "groups": [
+        "Databases"
+      ],
+      "icon": "faDatabase",
+      "name": "MySQL",
+      "color": "ffa518",
+      "website": "https://www.mysql.com/"
+    },
+    {
+      "rate": 3,
+      "groups": [
+        "Databases"
+      ],
+      "icon": "faDatabase",
+      "name": "Mongo DB",
+      "color": "023430",
+      "website": "https://www.mongodb.com/"
+    },
+    {
+      "rate": 4,
+      "groups": [
+        "Databases"
+      ],
+      "icon": "faDatabase",
+      "name": "Firebase",
+      "color": "DD2C00",
+      "website": "https://firebase.google.com"
+    },
+    {
+      "rate": 4,
+      "groups": [
+        "Databases"
+      ],
+      "icon": "faDatabase",
+      "name": "SQLite",
+      "color": "004364",
+      "website": "https://www.sqlite.org/"
+    },
+    {
+      "rate": 3,
+      "groups": [
+        "DevOps & Tools"
+      ],
+      "icon": "faAmazon",
+      "name": "AWS",
+      "color": "ff9900",
+      "website": "https://aws.amazon.com/"
+    },
+    {
+      "rate": 5,
+      "groups": [
+        "DevOps & Tools"
+      ],
+      "icon": "faGithub",
+      "name": "Github",
+      "color": "000000",
+      "website": "https://www.github.com/"
+    },
+    {
+      "rate": 5,
+      "groups": [
+        "DevOps & Tools"
+      ],
+      "icon": "faDocker",
+      "name": "Docker",
+      "color": "2496ed",
+      "website": "https://www.docker.com/"
+    },
+    {
+      "rate": 5,
+      "groups": [
+        "Frontend",
+        "Backend"
+      ],
+      "icon": "faJs",
+      "name": "JavaScript",
+      "color": "323330",
+      "website": "https://www.javascript.com/",
+      "subskills": [
+        "ES6",
+        "ES5",
+        "Embedded JS"
+      ]
+    },
+    {
+      "rate": 4,
+      "groups": [
+        "Frontend",
+        "Backend"
+      ],
+      "icon": "faJs",
+      "name": "TypeScript",
+      "color": "3178C6",
+      "website": "https://www.typescriptlang.org/"
+    },
+    {
+      "rate": 3,
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faBroadcastTower",
+      "name": "jQuery",
+      "color": "0868ac",
+      "website": "https://jquery.com/"
+    },
+    {
+      "rate": 5,
+      "groups": [
+        "Frontend",
+        "Backend"
+      ],
+      "icon": "faRing",
+      "name": "JSON",
+      "color": "0f0f0f",
+      "website": "https://www.json.org/"
+    },
+    {
+      "rate": 2,
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faPython",
+      "name": "Python",
+      "color": "3771a1",
+      "website": "https://www.python.org/",
+      "subskills": [
+        "Numpy",
+        "Pandas",
+        "Matplotlib"
+      ]
+    },
+    {
+      "rate": 4,
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faPhp",
+      "name": "PhP",
+      "color": "4f5c93",
+      "website": "https://www.php.net/"
+    },
+    {
+      "rate": 5,
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faHtml5",
+      "name": "HTML",
+      "color": "e44d26",
+      "website": "https://html.spec.whatwg.org/"
+    },
+    {
+      "rate": 5,
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faCss3Alt",
+      "name": "CSS",
+      "color": "379ad6",
+      "website": "https://www.w3.org/TR/CSS/#css"
+    },
+    {
+      "rate": 5,
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faBootstrap",
+      "name": "Bootstrap",
+      "color": "7952b3",
+      "website": "https://getbootstrap.com/"
+    },
+    {
+      "rate": 3,
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faReact",
+      "name": "TailWind",
+      "color": "00BCFF",
+      "website": "https://tailwindcss.com/"
+    },
+    {
+      "rate": 5,
+      "groups": [
+        "Methodologies"
+      ],
+      "icon": "faSyncAlt",
+      "name": "Agile",
+      "color": "00a99d",
+      "website": "https://www.scrum.org/",
+      "subskills": [
+        "SCRUM",
+        "Kanban"
+      ]
+    },
+    {
+      "rate": 5,
+      "groups": [
+        "Methodologies"
+      ],
+      "icon": "faSyncAlt",
+      "name": "SCRUM",
+      "color": "1f93b8",
+      "website": "https://www.scrum.org/",
+      "subskills": [
+        "Jira",
+        "ClickUp",
+        "YouTrack"
+      ]
+    },
+    {
+      "rate": 5,
+      "groups": [
+        "Frontend",
+        "Backend"
+      ],
+      "icon": "faCloud",
+      "name": "REST API",
+      "color": "176985"
+    }
+  ],
+  "education": [
+    {
+      "logo": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/LTUC.png?alt=media",
+      "name": "6-Month Training Camp",
+      "school": "ASAC of LTUC College (Jordan)",
+      "website": "https://www.ltuc.com/",
+      "desc": "Python Based Web Dev (Code Fellows Curriculum)",
+      "cert": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
+      "downloads": [
+        {
+          "label": "Individual Works",
+          "link": "https://github.com/makkahwi/asac-works"
+        },
+        {
+          "label": "Midterm",
+          "link": "https://silent-speakers.github.io/silent-speakers/"
+        },
+        {
+          "label": "Final",
+          "link": "https://tadreebi.netlify.app/"
+        }
+      ]
+    },
+    {
+      "logo": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/IIUM.png?alt=media",
+      "name": "Bachelor of Computer Science",
+      "school": "International Islamic University Malaysia",
+      "website": "https://www.iium.edu.my/",
+      "desc": "Specialized in Data Science and Computational Intelligence",
+      "cert": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
+      "downloads": [
+        {
+          "label": "FYP Project",
+          "link": "https://github.com/makkahwi/iDecide"
+        }
       ]
     }
   ]

@@ -4,10 +4,6 @@ import { Col, Row } from "react-bootstrap";
 
 import { ProjectProps } from "../works/works";
 
-interface props {
-  page?: boolean;
-}
-
 export interface JobProps {
   desc: string[];
   icon: string;
@@ -24,7 +20,7 @@ export interface JobProps {
   }[];
 }
 
-const StatisticsSection = async ({ page }: props) => {
+const StatisticsSection = async () => {
   const careers: JobProps[] = await getJobs();
   const projects: ProjectProps[] = await getJobProjects();
 
