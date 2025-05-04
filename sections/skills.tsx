@@ -42,8 +42,13 @@ const SkillsSection = async ({ page }: props) => {
       {skills
         ?.filter((skill) => skill.groups.includes(group))
         .map(({ icon, name, color, website, subskills, rate }, i) => (
-          <a href={website} target="_blank" key={i}>
-            <h4 className="ps-5" style={{ color: "#" + color }}>
+          <div className="my-2" key={i}>
+            <a
+              href={website}
+              target="_blank"
+              className="h4 ps-5"
+              style={{ color: "#" + color }}
+            >
               {subskills ? (
                 <OverlayTrigger
                   overlay={<Tooltip>{subskills.join(",")}</Tooltip>}
@@ -57,21 +62,21 @@ const SkillsSection = async ({ page }: props) => {
                   <FontAwesomeIcon icon={iconMap[icon]} /> {name}
                 </span>
               )}
+            </a>
 
-              <small className="text-warning float-end text-xs">
-                {Array(rate)
-                  .join(".")
-                  .split(".")
-                  .map((_, y) => (
-                    <FontAwesomeIcon
-                      icon={solid.faStar}
-                      className="ms-1"
-                      key={y}
-                    />
-                  ))}
-              </small>
-            </h4>
-          </a>
+            <span className="text-warning float-end">
+              {Array(rate)
+                .join(".")
+                .split(".")
+                .map((_, y) => (
+                  <FontAwesomeIcon
+                    icon={solid.faStar}
+                    className="ms-1"
+                    key={y}
+                  />
+                ))}
+            </span>
+          </div>
         ))}
     </Fragment>
   );
