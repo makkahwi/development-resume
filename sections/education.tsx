@@ -5,7 +5,7 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, ButtonGroup, Col, Row } from "react-bootstrap";
 
-interface EduProps {
+interface EducationProps {
   logo: string;
   name: string;
   school: string;
@@ -19,7 +19,7 @@ interface EduProps {
 }
 
 const EducationSection = async () => {
-  const education: EduProps[] = await getEducation();
+  const education: EducationProps[] = await getEducation();
 
   return (
     <PageSection

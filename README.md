@@ -6,5 +6,5 @@
 
 - Localize App
 - Move contacts to firebase
-- Remove "use client" in blog & works
+- Remove "use client" in blog
 - Remove PageSection URL Show
