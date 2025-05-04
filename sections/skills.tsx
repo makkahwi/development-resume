@@ -49,12 +49,12 @@ const SkillsSection = async ({ home }: props) => {
             <a
               href={website}
               target="_blank"
-              className="h4 ps-5"
+              className="h4 ps-4"
               style={{ color: home ? "white" : "#" + color }}
             >
-              {subskills ? (
+              {subskills && !home ? (
                 <OverlayTrigger
-                  overlay={<Tooltip>{subskills.join(",")}</Tooltip>}
+                  overlay={<Tooltip>{subskills.join(", ")}</Tooltip>}
                 >
                   <span>
                     <FontAwesomeIcon icon={iconMap[icon]} /> {name}

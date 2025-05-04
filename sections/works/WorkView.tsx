@@ -22,6 +22,7 @@ const WorkView = ({
   company = "",
   openSource = false,
   dark = false,
+  short = false,
 }) => {
   return (
     <CardComp
@@ -41,108 +42,112 @@ const WorkView = ({
         color={dark ? "info" : "light"}
         className="font"
       >
-        {title}
+        {short && url ? (
+          <a href={url} target="_blank">
+            {title}
+          </a>
+        ) : (
+          title
+        )}
       </Typography>
 
-      <Row>
-        <Col xs={12}>
-          <Typography
-            size="sm"
-            className="my-1"
-            color={dark ? "info" : "light"}
-          >
-            Project
-          </Typography>
-        </Col>
+      {!short && (
+        <Row>
+          <Col xs={12}>
+            <Typography
+              size="sm"
+              className="my-1"
+              color={dark ? "info" : "light"}
+            >
+              Project
+            </Typography>
+          </Col>
 
-        <Col xs={url ? 9 : 10}>
-          <Typography
-            size={6}
-            className="my-3"
-            color={dark ? "info" : "light"}
-            justify="start"
-          >
-            {type}
-          </Typography>
-        </Col>
+          <Col xs={url ? 9 : 10}>
+            <Typography
+              size={6}
+              className="my-3"
+              color={dark ? "info" : "light"}
+              justify="start"
+            >
+              {type}
+            </Typography>
+          </Col>
 
-        <Col xs={url ? 3 : 2}>
-          <Typography
-            size={6}
-            className="my-3"
-            color={dark ? "info" : "light"}
-            justify="end"
-          >
-            {url !== "" ? (
-              <OverlayTrigger overlay={<Tooltip>View</Tooltip>}>
-                <a href={url} target="_blank">
-                  <FontAwesomeIcon icon={faLink} />
+          <Col xs={url ? 3 : 2}>
+            <Typography
+              size={6}
+              className="my-3"
+              color={dark ? "info" : "light"}
+              justify="end"
+            >
+              {url !== "" ? (
+                <OverlayTrigger overlay={<Tooltip>View</Tooltip>}>
+                  <a href={url} target="_blank">
+                    <FontAwesomeIcon icon={faLink} />
+                  </a>
+                </OverlayTrigger>
+              ) : (
+                ""
+              )}
+
+              <OverlayTrigger overlay={<Tooltip>{company}</Tooltip>}>
+                <a href={"#" + company.replaceAll(" ", "_")}>
+                  <FontAwesomeIcon icon={faBuilding} className="ms-2" />
                 </a>
               </OverlayTrigger>
-            ) : (
-              ""
-            )}
+            </Typography>
+          </Col>
 
-            <OverlayTrigger overlay={<Tooltip>{company}</Tooltip>}>
-              <a href={"#" + company.replaceAll(" ", "_")}>
-                <FontAwesomeIcon icon={faBuilding} className="ms-2" />
-              </a>
-            </OverlayTrigger>
-          </Typography>
-        </Col>
-
-        <Col xs={12}>
-          <Typography
-            size="sm"
-            className="my-1"
-            color={dark ? "info" : "light"}
-          >
-            Role
-          </Typography>
-        </Col>
-
-        <Col xs={9}>
-          <Typography
-            size={6}
-            className="my-2"
-            color={dark ? "info" : "light"}
-            justify="start"
-          >
-            {role}
-          </Typography>
-        </Col>
-
-        <Col xs={3}>
-          <Typography
-            size={6}
-            className="my-2"
-            color={dark ? "info" : "light"}
-            justify="end"
-          >
-            <OverlayTrigger
-              overlay={<Tooltip>{technologies.join(", ")}</Tooltip>}
+          <Col xs={12}>
+            <Typography
+              size="sm"
+              className="my-1"
+              color={dark ? "info" : "light"}
             >
-              <FontAwesomeIcon icon={faCode} />
-            </OverlayTrigger>
+              Role
+            </Typography>
+          </Col>
 
-            <OverlayTrigger
-              overlay={
-                <Tooltip>
-                  <Typography
-                    size="sm"
-                    className="my-2"
-                    color={dark ? "info" : "light"}
-                  >
-                    {description}
-                  </Typography>
-                </Tooltip>
-              }
+          <Col xs={9}>
+            <Typography
+              size={6}
+              className="my-2"
+              color={dark ? "info" : "light"}
+              justify="start"
             >
-              <FontAwesomeIcon icon={faInfoCircle} className="ms-2" />
-            </OverlayTrigger>
-          </Typography>
-        </Col>
-      </Row>
+              {role}
+            </Typography>
+          </Col>
+
+          <Col xs={3}>
+            <Typography
+              size={6}
+              className="my-2"
+              color={dark ? "info" : "light"}
+              justify="end"
+            >
+              <OverlayTrigger
+                overlay={<Tooltip>{technologies.join(", ")}</Tooltip>}
+              >
+                <FontAwesomeIcon icon={faCode} />
+              </OverlayTrigger>
+
+              <OverlayTrigger
+                overlay={
+                  <Tooltip>
+                    <Typography size="sm" className="my-2" color="light">
+                      {description}
+                    </Typography>
+                  </Tooltip>
+                }
+              >
+                <FontAwesomeIcon icon={faInfoCircle} className="ms-2" />
+              </OverlayTrigger>
+            </Typography>
+          </Col>
+        </Row>
+      )}
 
       {/* <Typography size={6} className="my-3" color="info">
                   {roles}

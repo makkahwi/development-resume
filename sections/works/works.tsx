@@ -83,13 +83,14 @@ const WorksSection = async ({ openSource, home }: props) => {
                   type={type}
                   openSource={openSource}
                   dark={home}
+                  short={home}
                 />
               </Col>
             )
           )}
       </Row>
 
-      {home && <PageButton link="/works#works" text="All Works" />}
+      {home && <PageButton link="/works#works" text="All Works Explained" />}
     </PageSection>
   );
 };

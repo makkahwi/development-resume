@@ -20,7 +20,11 @@ export interface JobProps {
   }[];
 }
 
-const StatisticsSection = async () => {
+interface props {
+  home?: boolean;
+}
+
+const StatisticsSection = async ({ home }: props) => {
   const careers: JobProps[] = await getJobs();
   const projects: ProjectProps[] = await getJobProjects();
 
@@ -90,9 +94,11 @@ const StatisticsSection = async () => {
             {title}
           </Typography>
 
-          <Typography size={6} justify="center" className="px-4 lh-lg">
-            {desc}
-          </Typography>
+          {!home && (
+            <Typography size={6} justify="center" className="px-4 lh-lg">
+              {desc}
+            </Typography>
+          )}
         </Col>
       ))}
     </Row>

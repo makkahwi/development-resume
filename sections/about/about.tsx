@@ -20,7 +20,7 @@ interface props {
 const AboutSection = async ({ home }: props) => {
   return (
     <PageSection id="about" bg2>
-      <StatisticsSection />
+      <StatisticsSection home={home} />
 
       {home ? (
         <PageButton link="/about" text="More On Me" />
