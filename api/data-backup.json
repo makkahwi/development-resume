@@ -20,6 +20,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/20.jpg?alt=media",
       "importanceOrder": 29,
       "timeOrder": 15,
+      "shortTitle": "Snd",
       "title": "Sanad"
     },
     {
@@ -72,6 +73,7 @@
       "importanceOrder": 27,
       "timeOrder": 18,
       "title": "Semesteer",
+      "shortTitle": "Sem",
       "url": "https://semesteer.com/"
     },
     {
@@ -94,6 +96,7 @@
       "timeOrder": 16,
       "company": "Logatta",
       "title": "Entreviable",
+      "shortTitle": "Ent",
       "url": "https://entreviable.com"
     },
     {
@@ -114,6 +117,7 @@
       "importanceOrder": 25,
       "timeOrder": 11,
       "title": "Trellah",
+      "shortTitle": "Tre",
       "url": "https://trellah.com/"
     },
     {
@@ -137,6 +141,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/11.jpg?alt=media",
       "importanceOrder": 24,
       "timeOrder": 9,
+      "shortTitle": "BT",
       "title": "BrandTag",
       "url": "https://app.brandtag.io/"
     },
@@ -161,6 +166,7 @@
       "importanceOrder": 23,
       "openSource": true,
       "timeOrder": 24,
+      "shortTitle": "HEAL",
       "title": "Healthy Eating and Lifestyle Tracker",
       "url": "https://heal-tracker.vercel.app/"
     },
@@ -186,6 +192,7 @@
       "importanceOrder": 22,
       "openSource": true,
       "timeOrder": 19,
+      "shortTitle": "ANest",
       "title": "AppNest"
     },
     {
@@ -208,6 +215,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/8.jpg?alt=media",
       "importanceOrder": 21,
       "timeOrder": 7,
+      "shortTitle": "Stu",
       "title": "AIS Students Portal"
     },
     {
@@ -233,6 +241,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/15.jpg?alt=media",
       "importanceOrder": 20,
       "timeOrder": 5,
+      "shortTitle": "Sta",
       "title": "AIS Staff Portal"
     },
     {
@@ -255,6 +264,7 @@
       "importanceOrder": 19,
       "timeOrder": 17,
       "title": "Crosure",
+      "shortTitle": "Cro",
       "url": "https://commsure.com/"
     },
     {
@@ -306,6 +316,7 @@
       "openSource": true,
       "timeOrder": 10,
       "title": "Tadreebi",
+      "shortTitle": "Tad",
       "url": "https://tadreebi.netlify.app/"
     },
     {
@@ -328,6 +339,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/9.jpg?alt=media",
       "importanceOrder": 16,
       "timeOrder": 9,
+      "shortTitle": "xEdu",
       "title": "xEdu App"
     },
     {
@@ -378,6 +390,7 @@
       "openSource": true,
       "timeOrder": 26,
       "title": "Currencies Archiving & Sharing Hub",
+      "shortTitle": "CASH",
       "url": "https://cash-hub.vercel.app/"
     },
     {
@@ -401,6 +414,7 @@
       "importanceOrder": 13,
       "openSource": true,
       "timeOrder": 25,
+      "shortTitle": "FF",
       "title": "Family Finance"
     },
     {
@@ -427,6 +441,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/23.jpg?alt=media",
       "importanceOrder": 12,
       "timeOrder": 13,
+      "shortTitle": "R&K",
       "title": "Rasmi & Kiwan"
     },
     {
@@ -451,6 +466,7 @@
       "importanceOrder": 11,
       "timeOrder": 23,
       "title": "Coach Noor Kayyali",
+      "shortTitle": "Noor",
       "url": "https://www.noorkayyali.com/"
     },
     {
@@ -475,6 +491,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/25.jpg?alt=media",
       "importanceOrder": 10,
       "timeOrder": 27,
+      "shortTitle": "Fat",
       "title": "Nutritionist Fatima Mohammad",
       "url": "https://nutriFatima.com/"
     },
@@ -499,6 +516,7 @@
       "importanceOrder": 9,
       "timeOrder": 22,
       "title": "E3 Ventures",
+      "shortTitle": "E3",
       "url": "https://e3.ventures/"
     },
     {
@@ -520,6 +538,7 @@
       "importanceOrder": 8,
       "timeOrder": 20,
       "company": "Freelance",
+      "shortTitle": "AAM",
       "title": "Dr. Ahmad Abu Mahfouth",
       "url": "https://drahmadabumahfouth.com"
     },
@@ -542,6 +561,7 @@
       "importanceOrder": 7,
       "timeOrder": 12,
       "company": "Freelance",
+      "shortTitle": "R&K",
       "title": "Rasmi & Kiwan",
       "url": "https://rasmiandkiwan.com/"
     },
@@ -564,6 +584,7 @@
       "timeOrder": 6,
       "company": "Freelance",
       "title": "Zaytouna Club",
+      "shortTitle": "Zay",
       "url": "https://zaytouna-tau.vercel.app/"
     },
     {
@@ -580,7 +601,8 @@
       "importanceOrder": 5,
       "timeOrder": 4,
       "company": "Freelancer",
-      "title": "OneShot Future Company",
+      "title": "OneShot Future",
+      "shortTitle": "OSF",
       "url": "https://oneshotfuture.com/"
     },
     {
@@ -597,7 +619,7 @@
       "importanceOrder": 4,
       "timeOrder": 3,
       "company": "Freelancer",
-      "title": "PPAM Organization",
+      "title": "PPAM",
       "url": "https://ppam.org.my/"
     },
     {
@@ -618,7 +640,8 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/2.jpg?alt=media",
       "importanceOrder": 3,
       "timeOrder": 2,
-      "title": "AIS School",
+      "title": "AIS Landing",
+      "shortTitle": "AIS",
       "url": "https://aqsa.edu.my/"
     },
     {
@@ -635,7 +658,8 @@
       "importanceOrder": 2,
       "company": "Freelancer",
       "timeOrder": 1,
-      "title": "SpeedWheels Company",
+      "title": "Speed Wheels",
+      "shortTitle": "SW",
       "url": "https://speedwheelstrade.online/"
     },
     {
@@ -652,6 +676,7 @@
       "importanceOrder": 1,
       "timeOrder": 0,
       "company": "Freelancer",
+      "shortTitle": "Team",
       "title": "Team Foundation",
       "url": "https://teamtr.media/"
     },
@@ -877,7 +902,7 @@
       "jobs": [
         {
           "company": "AlembicSoft",
-          "description": "To develop JS based web apps for online services.",
+          "description": "I didn't only develop, I supervised the work of whole team.",
           "monthsCount": 17,
           "period": "Jul 2023 - Apr 2025",
           "projectsCount": 1,
@@ -888,7 +913,7 @@
         },
         {
           "company": "Logatta",
-          "description": "To develop React.Js-based web apps for Saas services.",
+          "description": "",
           "monthsCount": 5,
           "period": "Aug - Dec 2023",
           "projectsCount": 2,
@@ -899,7 +924,7 @@
         },
         {
           "company": "Deloitte",
-          "description": "To develop JS based web apps for online public (government) services.",
+          "description": "",
           "monthsCount": 2,
           "period": "Jun - Jul 2023",
           "projectsCount": 0,
@@ -910,7 +935,7 @@
         },
         {
           "company": "AgileTz",
-          "description": "To develop React.Js-Node.Js web apps for online public (government) services.",
+          "description": "Main full-stack developer for one project, sole frontend developer for another.",
           "monthsCount": 10,
           "period": "Aug 2022 - May 2023",
           "projectsCount": 2,
@@ -921,7 +946,7 @@
         },
         {
           "company": "ArabWork",
-          "description": "Full-time job to develop a Vue-Symfony web app for an online service.",
+          "description": "",
           "monthsCount": 2,
           "type": "Full-Time",
           "period": "Jun - Aug 2022",
@@ -932,15 +957,15 @@
         },
         {
           "company": "Open Source",
-          "description": "Executed several PERN based web app projects.",
+          "description": "Products built for personal needs and technologies adapting purposes, published for others to contribute and use freely.",
           "period": "Jan 2022 - Present",
           "location": "Jordan",
-          "title": "Architect & End-To-End Developer",
+          "title": "Architect & Developer",
           "type": "Freelance"
         },
         {
           "company": "Luxtag",
-          "description": "To develop a flagship PERN based web app for an online service.",
+          "description": "Main full-stack developer, second in-command for team coordination.",
           "monthsCount": 12,
           "period": "Nov 2020 - Oct 2021",
           "projectsCount": 1,
@@ -951,7 +976,7 @@
         },
         {
           "company": "AIS",
-          "description": "To develop a Laravel based web app of a student information system.",
+          "description": "Sole full-stack developer for custom needs. Architected, planned, and executed.",
           "monthsCount": 12,
           "period": "Sep 2019 - Aug 2020",
           "projectsCount": 1,
@@ -962,7 +987,7 @@
         },
         {
           "company": "Freelance",
-          "description": "Executed several Laravel based & PERN based web app private projects.",
+          "description": "",
           "period": "Sep 2019 - Present",
           "location": "Malaysia & Jordan",
           "title": "Full-Stack Developer",
@@ -970,7 +995,7 @@
         },
         {
           "company": "Freelancer",
-          "description": "Several Wordpress & code based frontend-only landing-page projects.",
+          "description": "",
           "period": "Oct 2015 - Aug 2019",
           "location": "Malaysia",
           "title": "Frontend Developer",
