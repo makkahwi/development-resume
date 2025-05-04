@@ -7,10 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fragment } from "react";
 import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 
-interface props {
-  page?: boolean;
-}
-
 interface SkillProps {
   groups: string[];
   icon: any;
@@ -21,7 +17,7 @@ interface SkillProps {
   subskills?: string[];
 }
 
-const SkillsSection = async ({ page }: props) => {
+const SkillsSection = async () => {
   const skills: SkillProps[] = await getSkills();
 
   const iconMap: Record<string, any> = {

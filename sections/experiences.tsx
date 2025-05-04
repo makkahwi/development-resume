@@ -11,8 +11,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 
-import { JobProps } from "./education";
 import { ProjectProps } from "./works/works";
+import { JobProps } from "./about/statistics";
 
 const CareerSection = async () => {
   const careers: JobProps[] = await getJobs();
