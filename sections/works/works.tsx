@@ -30,7 +30,6 @@ const WorksSection = async () => {
       subtitle="Most Significant"
       color="white"
       id="works"
-      bg2
     >
       <Row>
         {works

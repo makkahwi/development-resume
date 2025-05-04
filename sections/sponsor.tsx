@@ -8,6 +8,7 @@ const SponsorSection = () => {
       subtitle={"Noticed How Many Open-Source Projects?"}
       id="sponsor"
       color="dark"
+      bg2
     >
       <Typography size={5} className="me-2" color="white">
         If you find my open-source work helpful, consider to{" "}
