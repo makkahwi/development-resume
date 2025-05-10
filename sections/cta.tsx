@@ -73,21 +73,43 @@ const CtaSection = () => {
           </Col>
         ))}
 
-        <Col md={12}>
+        <Col md={6}>
           <Typography
             size={3}
             justify="center"
             className="my-5 font"
             color="dark"
           >
-            Or Reach Me Here
+            Or Book A Session
+          </Typography>
+
+          <div
+            className="calendly-inline-widget w-100 h-100"
+            style={{ minHeight: "65vh", height: "fit-content" }}
+            data-url="https://calendly.com/suhaibahmadai/30min"
+          />
+          <script
+            type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"
+            async
+          />
+        </Col>
+
+        <Col md={6}>
+          <Typography
+            size={3}
+            justify="center"
+            className="my-5 font"
+            color="dark"
+          >
+            Or Fill Up A Form
           </Typography>
 
           <Form onSubmit={onSubmit}>
             <Row>
               {formInputs.map(
                 ({ title, name, required, fullWidth, type }, i) => (
-                  <Col md={fullWidth ? 12 : 3} className="my-1" key={i}>
+                  <Col md={12} className="my-3" key={i}>
                     <FormLabel>{title + (required ? " *" : "")}</FormLabel>
 
                     <FormControl
