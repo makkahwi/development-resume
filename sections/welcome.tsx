@@ -7,6 +7,8 @@ import { CarouselCaption, Col, Row } from "react-bootstrap";
 const WelcomeSection = () => {
   const texts = [
     "Senior Full-Stack Developer",
+    "Technical & Product Development Consultant",
+    "Career Starting Assistant",
     "Innovating & Shaping Education Digital Solutions",
     "Entrepreneuring to Overcome Educational Challenges",
     "Entrepreneuring to Revolutionize Education Sector",
@@ -35,6 +37,10 @@ const WelcomeSection = () => {
 
           <Typography size={4} color="white" className="mb-5 font">
             {texts[0]}
+            <br /> <br />
+            {texts[1]}
+            <br /> <br />
+            {texts[2]}
           </Typography>
 
           <Typography size="sm" color="white" className="mt-5 lh-lg">

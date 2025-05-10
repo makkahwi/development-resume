@@ -14,6 +14,7 @@ const IntroSection = async () => {
       title="Helping Others"
       subtitle="No Expected Return"
       id="education"
+      color="light"
       bg2
     >
       <Row className="my-5 align-middle gx-5">
