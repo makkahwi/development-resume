@@ -73,6 +73,25 @@ const CtaSection = () => {
           </Col>
         ))}
 
+        <Col md={12} className="text-center">
+          <Typography
+            size={3}
+            justify="center"
+            className="my-5 font"
+            color="dark"
+          >
+            Or Book A Session
+          </Typography>
+
+          <Button
+            className="w-50 p-3 mb-3 border-0 corners bg-info text-white "
+            href="https://calendly.com/suhaibahmadai/30min"
+            target="_blank"
+          >
+            Up to 30 Mins Online Session
+          </Button>
+        </Col>
+
         <Col md={12}>
           <Typography
             size={3}
@@ -80,14 +99,14 @@ const CtaSection = () => {
             className="my-5 font"
             color="dark"
           >
-            Or Reach Me Here
+            Or Fill Up A Form
           </Typography>
 
           <Form onSubmit={onSubmit}>
             <Row>
               {formInputs.map(
                 ({ title, name, required, fullWidth, type }, i) => (
-                  <Col md={fullWidth ? 12 : 3} className="my-1" key={i}>
+                  <Col md={fullWidth ? 12 : 3} className="my-3" key={i}>
                     <FormLabel>{title + (required ? " *" : "")}</FormLabel>
 
                     <FormControl

@@ -30,7 +30,7 @@ const StatisticsSection = async ({ home }: props) => {
 
   const stats = [
     {
-      title: "Months in Web Development",
+      title: "Months in Web Dev",
       desc: "Spanning multiple roles since 2015, excluding earlier years as a graphic designer.",
       count: careers.reduce(
         (careerFinal, careerCurrent) =>
@@ -45,7 +45,7 @@ const StatisticsSection = async ({ home }: props) => {
       ),
     },
     {
-      title: "Digital Products Built",
+      title: "Software Built",
       desc: "From client portals to internal tools — samples are showcased in the Works section.",
       count: careers.reduce(
         (careerFinal, careerCurrent) =>
@@ -60,47 +60,88 @@ const StatisticsSection = async ({ home }: props) => {
       ),
     },
     {
-      title: "Tailored Solutions Designed",
+      title: "Solutions Architected",
       desc: "Led end-to-end solution design: from client needs analysis to user journeys and UX flows.",
       count: projects.filter(({ designed }) => designed)?.length,
+    },
+    {
+      title: "Projects Consulted",
+      desc: "Provided strategic guidance to founders and product owners, regarding roadmapping, architecture and product direction.",
+      count: [
+        "AAM",
+        "Noor",
+        "Fatima",
+        "Semesteer",
+        "Mustaheq",
+        "Lyyyf",
+        "QR Menu",
+        "AIS Students",
+        "R&K",
+        "PPAM",
+        "Tamarras",
+        "Cura",
+      ].length,
+    },
+    {
+      title: "Individuals Trained",
+      desc: "Mentored aspiring developers through real-world projects, self-paced learning paths, and code quality reviews.",
+      count: [
+        "Mustafa Hasanat",
+        "Zaid Jarra",
+        "Mazen Adel",
+        "Suhaib Murshed",
+        "Raghad Abdulhadi",
+        "Emad Majdalawi",
+        "Ghaida Momani",
+        "Ahmad Kharfan",
+        "Mohammed Ba Khadher",
+        "Yahya Labeeb",
+        "Eleen Feras",
+        "Lareen Feras",
+        "Osaid Ahmad",
+        "Hamed Sulieman",
+        "AbdulRahman Othman",
+      ].length,
     },
   ];
 
   return (
-    <Row className="my-5">
-      {stats.map(({ title, count, desc }, i) => (
-        <Col md={4} className="my-3 text-info" key={i}>
-          <Typography
-            justify="center"
-            color="info"
-            size={1}
-            style={{
-              background: 'url("/images/BracketsC.png")',
-              backgroundSize: "auto 100%",
-              backgroundPosition: "center center",
-              backgroundRepeat: "no-repeat",
-            }}
-            className="py-3 font"
-          >
-            {count}
-          </Typography>
-
-          <Typography
-            justify="center"
-            color="info"
-            className="my-4 font"
-            size={4}
-          >
-            {title}
-          </Typography>
-
-          {!home && (
-            <Typography size={6} justify="center" className="px-4 lh-lg">
-              {desc}
+    <Row className="my-5 justify-content-between">
+      {stats
+        .sort((a, b) => b.count - a.count)
+        .map(({ title, count, desc }, i) => (
+          <Col md={2} className="my-3 text-info" key={i}>
+            <Typography
+              justify="center"
+              color="info"
+              size={1}
+              style={{
+                background: 'url("/images/BracketsC.png")',
+                backgroundSize: "auto 100%",
+                backgroundPosition: "center center",
+                backgroundRepeat: "no-repeat",
+              }}
+              className="py-3 font"
+            >
+              {count}
             </Typography>
-          )}
-        </Col>
-      ))}
+
+            <Typography
+              justify="center"
+              color="info"
+              className="my-4 font"
+              size={4}
+            >
+              {title}
+            </Typography>
+
+            {!home && (
+              <Typography size="sm" className="lh-lg">
+                {desc}
+              </Typography>
+            )}
+          </Col>
+        ))}
     </Row>
   );
 };
