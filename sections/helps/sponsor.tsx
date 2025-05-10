@@ -19,7 +19,7 @@ const SponsorSection = async ({ home }: props) => {
         className="me-2 lh-lg"
         color={home ? "light" : "dark"}
       >
-        If you find my open-source work, consultation, training assistant
+        If you find my open-source work, training assistant or consultation
         helpful, consider to{" "}
         <u>
           <a href="https://github.com/sponsors/makkahwi/" target="_blank">

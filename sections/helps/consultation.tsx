@@ -14,37 +14,26 @@ const ConsultationSection = async ({ home }: props) => {
 
   return (
     <PageSection
-      title="I Could Help You"
-      subtitle="Wanna Build A Software Product?"
+      title="Product Development Consultation"
+      subtitle="Need Help Starting Your Software Product?"
       id="consultation"
-      bg2
     >
       <Typography
         size={4}
         className="me-2 lh-lg"
         color={home ? "light" : "dark"}
       >
-        Planning to build a software product, but...
+        Not sure how to begin? Struggling to find cost-effective technical
+        guidance? Concerned about balancing investment with risk?
       </Typography>
-
-      <ul className="list-group m-3">
-        {topics.map((topic, i) => (
-          <li className="list-group-item" key={i}>
-            <Typography size={5} className="me-2 lh-lg">
-              {topic}
-            </Typography>
-          </li>
-        ))}
-      </ul>
 
       <Typography
         size={4}
         className="me-2 lh-lg"
         color={home ? "light" : "dark"}
       >
-        I could help you with free-of-charge online consultation session. Scroll
-        down to contacts so you either reach me out, or booking a session right
-        away.
+        I offer a free online consultation to help you move forward with clarity
+        and confidence. Scroll down to get in touch or book a session.
       </Typography>
     </PageSection>
   );

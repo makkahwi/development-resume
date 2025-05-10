@@ -73,7 +73,7 @@ const CtaSection = () => {
           </Col>
         ))}
 
-        <Col md={6}>
+        <Col md={12} className="text-center">
           <Typography
             size={3}
             justify="center"
@@ -83,19 +83,16 @@ const CtaSection = () => {
             Or Book A Session
           </Typography>
 
-          <div
-            className="calendly-inline-widget w-100 h-100"
-            style={{ minHeight: "65vh", height: "fit-content" }}
-            data-url="https://calendly.com/suhaibahmadai/30min"
-          />
-          <script
-            type="text/javascript"
-            src="https://assets.calendly.com/assets/external/widget.js"
-            async
-          />
+          <Button
+            className="w-50 p-3 mb-3 border-0 corners bg-info text-white "
+            href="https://calendly.com/suhaibahmadai/30min"
+            target="_blank"
+          >
+            Up to 30 Mins Online Session
+          </Button>
         </Col>
 
-        <Col md={6}>
+        <Col md={12}>
           <Typography
             size={3}
             justify="center"
@@ -109,7 +106,7 @@ const CtaSection = () => {
             <Row>
               {formInputs.map(
                 ({ title, name, required, fullWidth, type }, i) => (
-                  <Col md={12} className="my-3" key={i}>
+                  <Col md={fullWidth ? 12 : 3} className="my-3" key={i}>
                     <FormLabel>{title + (required ? " *" : "")}</FormLabel>
 
                     <FormControl
