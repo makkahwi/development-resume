@@ -13,7 +13,7 @@ const IntroSection = async () => {
     <PageSection
       title="Helping Others"
       subtitle="No Expected Return"
-      id="education"
+      id="intro"
       color="light"
       bg2
     >

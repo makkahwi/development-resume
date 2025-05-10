@@ -9,7 +9,7 @@ const SponsorSection = async ({ home }: props) => {
   return (
     <PageSection
       title={"Sponsor Me"}
-      subtitle={"You Could Be Part of The Help"}
+      subtitle={"You Could Be Part of This"}
       id="sponsor"
       color={home ? "dark" : "light"}
       bg2
@@ -26,7 +26,7 @@ const SponsorSection = async ({ home }: props) => {
             Sponsor Me
           </a>
         </u>{" "}
-        on the trusted platform of Github to fuel more projects like these!
+        on the trusted platform of Github to fuel more contributions like these!
       </Typography>
     </PageSection>
   );

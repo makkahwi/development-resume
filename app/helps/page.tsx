@@ -4,6 +4,7 @@ import { Fragment } from "react";
 export default async function HelpsPage() {
   const IntroSection = dynamic(() => import("@/sections/helps/intro"));
   const WorksSection = dynamic(() => import("@/sections/works/works"));
+  const TrainingSection = dynamic(() => import("@/sections/helps/training"));
   const ConsultationSection = dynamic(
     () => import("@/sections/helps/consultation")
   );
@@ -14,6 +15,8 @@ export default async function HelpsPage() {
       <IntroSection />
 
       <WorksSection openSource={true} />
+
+      <TrainingSection />
 
       <ConsultationSection />
 
