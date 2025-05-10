@@ -1,9 +1,9 @@
 import { getJobProjects } from "@/api/data";
+import PageButton from "@/components/PageButton";
 import PageSection from "@/components/pageSection";
 import { Col, Row } from "react-bootstrap";
 
 import WorkView from "./WorkView";
-import PageButton from "@/components/PageButton";
 
 interface props {
   openSource?: boolean;
@@ -32,8 +32,12 @@ const WorksSection = async ({ openSource, home }: props) => {
 
   return (
     <PageSection
-      title="Works"
-      subtitle={openSource ? "Open-Source" : "Most Significant"}
+      title={openSource ? "Open-Source Products" : "Works"}
+      subtitle={
+        openSource
+          ? "Free Solutions & Software For Everyone"
+          : "Most Significant"
+      }
       color={home ? "light" : "info"}
       id="works"
     >

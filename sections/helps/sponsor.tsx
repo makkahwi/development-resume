@@ -9,13 +9,18 @@ const SponsorSection = async ({ home }: props) => {
   return (
     <PageSection
       title={"Sponsor Me"}
-      subtitle={"Noticed How Many Open-Source Projects?"}
+      subtitle={"You Could Be Part of The Help"}
       id="sponsor"
       color={home ? "dark" : "light"}
       bg2
     >
-      <Typography size={5} className="me-2" color={home ? "light" : "dark"}>
-        If you find my open-source work helpful, consider to{" "}
+      <Typography
+        size={4}
+        className="me-2 lh-lg"
+        color={home ? "light" : "dark"}
+      >
+        If you find my open-source work, consultation, training assistant
+        helpful, consider to{" "}
         <u>
           <a href="https://github.com/sponsors/makkahwi/" target="_blank">
             Sponsor Me
