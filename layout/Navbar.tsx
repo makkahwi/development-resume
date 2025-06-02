@@ -79,7 +79,7 @@ const NavbarComp = () => {
             <Button
               variant="light"
               className="text-info ms-1 corners px-4"
-              href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-WD-Resume-Sheet.pdf?alt=media"
+              href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-ATS-Resume-Sheet.pdf?alt=media"
               target="_blank"
             >
               <FontAwesomeIcon icon={faDownload} className="me-1 fw-bold" />
