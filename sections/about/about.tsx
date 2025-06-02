@@ -1,3 +1,4 @@
+import PageButton from "@/components/PageButton";
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
 import { faJs, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
@@ -11,7 +12,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, ButtonGroup, Col, Row } from "react-bootstrap";
 
 import StatisticsSection from "./statistics";
-import PageButton from "@/components/PageButton";
 
 interface props {
   home?: boolean;
@@ -91,10 +91,21 @@ const AboutSection = async ({ home }: props) => {
               <Button
                 variant="info"
                 className="text-white px-4"
-                href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-WD-Resume-Sheet.pdf?alt=media"
+                href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-ATS-Resume-Sheet.pdf?alt=media"
                 target="_blank"
               >
-                <FontAwesomeIcon icon={faDownload} /> Download Resume Sheet
+                <FontAwesomeIcon icon={faDownload} /> Download ATS-Friendly
+                Resume Sheet
+              </Button>
+
+              <Button
+                variant="info"
+                className="text-white px-4"
+                href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-UI-Resume-Sheet.pdf?alt=media"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faDownload} /> Download
+                Manual-User-Friendly Resume Sheet
               </Button>
 
               <Button
