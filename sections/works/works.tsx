@@ -38,7 +38,7 @@ const WorksSection = async ({ openSource, home }: props) => {
           ? "Free Solutions & Software For Everyone"
           : "Most Significant"
       }
-      color={home ? "light" : "info"}
+      color={home ? "light" : "light"}
       id="works"
     >
       <Row>
@@ -86,7 +86,7 @@ const WorksSection = async ({ openSource, home }: props) => {
                   role={role}
                   type={type}
                   openSource={openSource}
-                  dark={home}
+                  dark
                   short={home}
                 />
               </Col>

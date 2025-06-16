@@ -25,29 +25,29 @@ const EducationSection = async () => {
     <PageSection
       title="Education"
       subtitle="Where All of This Started"
-      color="dark"
+      color="light"
       id="education"
       bg2
     >
       {education?.map(
         ({ logo, name, school, website, desc, cert, downloads }, i) => (
           <Row className="my-5 align-middle gx-5" key={i}>
-            <Col md={6} className="text-white">
+            <Col md={6} className="text-info">
               <a href={website} target="_blank">
                 <img src={logo} width="100%" />
               </a>
             </Col>
 
-            <Col md={6} className="text-white mt-5">
-              <Typography size={5} className="text-white">
+            <Col md={6} className="text-info mt-5">
+              <Typography size={5} className="text-info">
                 {school}
               </Typography>
 
-              <Typography size={2} className="text-white my-3">
+              <Typography size={2} className="text-dark my-3">
                 {name}
               </Typography>
 
-              <Typography size={6} className="text-white">
+              <Typography size={6} className="text-info">
                 {desc}
               </Typography>
 

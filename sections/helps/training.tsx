@@ -14,7 +14,7 @@ const TrainingSection = async () => {
       title="Training Beginners"
       subtitle="Aspiring to Become a Developer But Unsure Where to Start?"
       id="training"
-      color="light"
+      color="white"
       bg2
     >
       <Row className="my-5 align-middle gx-5">

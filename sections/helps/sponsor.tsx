@@ -11,7 +11,7 @@ const SponsorSection = async ({ home }: props) => {
       title={"Sponsor Me"}
       subtitle={"You Could Be Part of This"}
       id="sponsor"
-      color={home ? "dark" : "light"}
+      color={home ? "dark" : "white"}
       bg2
     >
       <Typography

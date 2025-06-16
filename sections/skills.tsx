@@ -50,7 +50,7 @@ const SkillsSection = async ({ home }: props) => {
               href={website}
               target="_blank"
               className="h4 ps-4"
-              style={{ color: home ? "white" : "#" + color }}
+              style={{ color: "#" + color }}
             >
               {subskills && !home ? (
                 <OverlayTrigger
@@ -90,19 +90,19 @@ const SkillsSection = async ({ home }: props) => {
     <PageSection
       title="Technical Skills"
       subtitle="Earned By Jobs & For Jobs"
-      color={home ? "info" : "light"}
+      color="white"
       id="skills"
     >
       <Row className="my-5">
-        <Col md={6} xl={4} className="my-2 text-white">
+        <Col md={6} xl={4} className="my-2 text-info">
           {renderGroupedSkills("Frontend", "faRocket")}
         </Col>
 
-        <Col md={6} xl={4} className="my-2 text-white">
+        <Col md={6} xl={4} className="my-2 text-info">
           {renderGroupedSkills("Backend", "faBrain")}
         </Col>
 
-        <Col md={6} xl={4} className="my-2 text-white">
+        <Col md={6} xl={4} className="my-2 text-info">
           {renderGroupedSkills("Databases", "faDatabase")}
 
           {renderGroupedSkills("DevOps & Tools", "faGears")}

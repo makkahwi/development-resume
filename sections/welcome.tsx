@@ -3,6 +3,7 @@ import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
 import { Fragment } from "react";
 import { CarouselCaption, Col, Row } from "react-bootstrap";
+import StatisticsSection from "./about/statistics";
 
 const WelcomeSection = () => {
   const texts = [
@@ -16,34 +17,33 @@ const WelcomeSection = () => {
   ];
 
   return (
-    <PageSection color="dark" NoBg id="home">
+    <PageSection color="white" NoBg id="home">
       <Row
         style={{ minHeight: "70vh" }}
-        className="text-white justify-content-center"
+        className="text-info justify-content-center align-middle"
       >
-        <Col xs={8} lg={4} style={{ margin: "auto" }} className="text-center">
+        <Col xs={8} lg={4} className="text-center my-auto mx-auto">
           <img src="/images/ProfilePhoto.jpg" width="100%" />
         </Col>
 
-        <Col xs={8} lg={6} style={{ margin: "auto" }} className="py-5">
+        <Col xs={8} lg={6} style={{ margin: "auto" }} className="py-5 my-auto">
           <Typography
             size={1}
-            className="pb-4 text-uppercase text-start font"
-            color="white"
-            style={{ fontSize: "3.5vw" }}
+            className="pb-4 text-uppercase text-start font display-3"
+            color="info"
           >
             Suhaib Ahmad
           </Typography>
 
-          <Typography size={4} color="white" className="mb-5 font">
-            {texts[0]}
-            <br /> <br />
-            {texts[1]}
-            <br /> <br />
-            {texts[2]}
+          <Typography size={6} color="info" className="mb-5 font lh-lg">
+            {
+              "I help bring software ideas to life — from architecture and design to code and deployment. Whether you're building a product, seeking technical guidance, or just getting started on your coding journey, I offer help tailored to your needs."
+            }
           </Typography>
 
-          {/* <Typography size="sm" color="white" className="mt-5 lh-lg">
+          <StatisticsSection home />
+
+          {/* <Typography size="sm" color="info" className="mt-5 lh-lg">
             Specialized in building scalable & user-focused web apps with
             javascript & typescript. Based in Jordan, but open to remote
             opportunities.
@@ -55,7 +55,7 @@ const WelcomeSection = () => {
                 <img src="/images/empty.png" />
 
                 <CarouselCaption>
-                  <Typography size={4} color="white">
+                  <Typography size={4} color="info">
                     {text}
                   </Typography>
                 </CarouselCaption>

@@ -31,10 +31,6 @@ export default async function Home() {
 
       <WelcomeSection />
 
-      <AboutSection home={true} />
-
-      <CareerSection home={true} />
-
       <WorksSection home={true} />
 
       <SkillsSection home={true} />
