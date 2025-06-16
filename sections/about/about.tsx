@@ -19,11 +19,11 @@ interface props {
 
 const AboutSection = async ({ home }: props) => {
   return (
-    <PageSection id="about" bg2>
+    <PageSection id="about" bg2 color={home ? "light" : "white"}>
       <StatisticsSection home={home} />
 
       {home ? (
-        <PageButton link="/about" text="More On Me" />
+        <PageButton link="/about" text="More Of Me" />
       ) : (
         <Row>
           <Col md={12} className="my-auto">

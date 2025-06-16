@@ -141,7 +141,11 @@ const CareerSection = async ({ home }: props) => {
                     Projects |{" "}
                     {projects?.map(({ title, shortTitle }, i) => (
                       <OverlayTrigger overlay={<Tooltip>{title}</Tooltip>}>
-                        <a href={"#" + title.replaceAll(" ", "_")} key={i}>
+                        <a
+                          href={"#" + title.replaceAll(" ", "_")}
+                          className="text-decoration-none"
+                          key={i}
+                        >
                           {shortTitle || title}
                           {i === projects.length - 1 ? "" : " "}
                         </a>

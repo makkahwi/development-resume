@@ -114,10 +114,10 @@ const StatisticsSection = async ({ home }: props) => {
             <Typography
               justify="center"
               color="info"
-              size={1}
+              size={home ? 4 : 1}
               style={{
                 background: 'url("/images/BracketsC.png")',
-                backgroundSize: "auto 100%",
+                backgroundSize: home ? "100%" : "auto 100%",
                 backgroundPosition: "center center",
                 backgroundRepeat: "no-repeat",
               }}
@@ -130,7 +130,7 @@ const StatisticsSection = async ({ home }: props) => {
               justify="center"
               color="info"
               className="my-4 font"
-              size={4}
+              size={home ? 6 : 4}
             >
               {title}
             </Typography>

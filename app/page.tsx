@@ -1,5 +1,7 @@
 import { apiCallRevalidate } from "@/api/data";
 import PageNavigator from "@/layout/PageNavigator";
+import HappyClientsSection from "@/sections/clients";
+import TestimonialsSection from "@/sections/testimonials";
 import {
   faBriefcase,
   faCode,
@@ -31,13 +33,13 @@ export default async function Home() {
 
       <WelcomeSection />
 
-      <AboutSection home={true} />
-
-      <CareerSection home={true} />
-
       <WorksSection home={true} />
 
       <SkillsSection home={true} />
+
+      <HappyClientsSection />
+
+      <TestimonialsSection />
 
       {/* <BlogSection posts={posts} /> */}
     </Fragment>

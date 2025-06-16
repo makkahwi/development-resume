@@ -43,7 +43,7 @@ const WorkView = ({
         className="font"
       >
         {short && url ? (
-          <a href={url} target="_blank">
+          <a href={url} target="_blank" className="text-decoration-none">
             {title}
           </a>
         ) : (
@@ -83,7 +83,11 @@ const WorkView = ({
             >
               {url !== "" ? (
                 <OverlayTrigger overlay={<Tooltip>View</Tooltip>}>
-                  <a href={url} target="_blank">
+                  <a
+                    href={url}
+                    target="_blank"
+                    className="text-decoration-none"
+                  >
                     <FontAwesomeIcon icon={faLink} />
                   </a>
                 </OverlayTrigger>
@@ -92,7 +96,10 @@ const WorkView = ({
               )}
 
               <OverlayTrigger overlay={<Tooltip>{company}</Tooltip>}>
-                <a href={"#" + company.replaceAll(" ", "_")}>
+                <a
+                  href={"#" + company.replaceAll(" ", "_")}
+                  className="text-decoration-none"
+                >
                   <FontAwesomeIcon icon={faBuilding} className="ms-2" />
                 </a>
               </OverlayTrigger>

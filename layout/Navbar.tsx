@@ -40,14 +40,14 @@ const NavbarComp = () => {
   return (
     <Navbar
       expand="lg"
-      className="py-0 px-5 mx-3 mt-3 border-bottom border-top border-dark fixed-top m-0 corners"
-      bg="info"
+      className="py-0 px-5 mx-3 mt-3 fixed-top m-0 corners"
+      bg="light"
     >
       <NavbarBrand role="button">
         <a href="/" className="text-decoration-none text-uppercase font">
-          <img src="/images/LogoW.png" width="65px" />{" "}
-          <span className="text-white">Suhaib</span>{" "}
-          <span className="text-white d-none d-md-inline">Ahmad</span>
+          <img src="/images/LogoC.png" width="65px" />{" "}
+          <span className="text-info">Suhaib</span>{" "}
+          <span className="text-info d-none d-md-inline">Ahmad</span>
         </a>
       </NavbarBrand>
 
@@ -62,13 +62,13 @@ const NavbarComp = () => {
             <NavItem key={i}>
               <NavLink
                 href={(scroll ? "#" : "") + link}
-                className="text-white text-decoration-none"
+                className="text-info text-decoration-none"
               >
                 <FontAwesomeIcon
                   icon={icon}
-                  className="me-1 text-white fw-bold"
+                  className="me-1 text-info fw-bold"
                 />
-                <span className="text-white d-inline d-lg-none d-xl-inline font">
+                <span className="text-info d-inline d-lg-none d-xl-inline font">
                   {title}
                 </span>
               </NavLink>
@@ -77,8 +77,8 @@ const NavbarComp = () => {
 
           <NavItem>
             <Button
-              variant="light"
-              className="text-info ms-1 corners px-4"
+              variant="info"
+              className="text-light ms-1 corners px-4"
               href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-ATS-Resume-Sheet.pdf?alt=media"
               target="_blank"
             >
