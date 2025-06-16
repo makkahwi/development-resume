@@ -5,7 +5,10 @@
 ## To Do
 
 - Localize App
-- Move contacts to firebase
+- Move to firebase
+  - contacts
+  - testimonials
+  - clients list
 - Remove "use client" in blog
 - Remove PageSection URL Show
 - Add PDF resume generator

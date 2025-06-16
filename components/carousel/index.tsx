@@ -22,7 +22,7 @@ function CarouselComp({
       indicators={indicators}
       variant={dark ? "dark" : "light"}
       pause="hover"
-      interval={7000}
+      interval={10000}
       {...rest}
     >
       {items.map((slide, i) => (
