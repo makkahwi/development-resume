@@ -49,7 +49,7 @@ const HappyClientsSection = () => {
     <PageSection title="Happy Clients" color="light" NoBg id="clients">
       <Row className="justify-content-center">
         {clients.map(({ img, link }, i) => (
-          <Col md={2} className="text-center p-5" key={i}>
+          <Col xs={6} sm={4} md={3} lg={2} className="text-center p-5" key={i}>
             <a href={link} target="_blank" className="text-decoration-none">
               <img
                 src={`https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/${img}?alt=media`}
