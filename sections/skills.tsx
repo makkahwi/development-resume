@@ -49,7 +49,7 @@ const SkillsSection = async ({ home }: props) => {
             <a
               href={website}
               target="_blank"
-              className="h4 ps-4"
+              className="h4 ps-4 text-decoration-none"
               style={{ color: "#" + color }}
             >
               {subskills && !home ? (

@@ -58,7 +58,7 @@ const BlogPostViewer = ({ pickedArticle, setPickedArticle }: props) => {
             {": "}
             {content.map(({ title = "", link = "" }, i = 0) => (
               <span key={i}>
-                <a href={link} target="_blank">
+                <a href={link} target="_blank" className="text-decoration-none">
                   {title}
                   {i < content.length - 1 ? ", " : ""}
                 </a>

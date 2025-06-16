@@ -22,7 +22,11 @@ const SponsorSection = async ({ home }: props) => {
         If you find my open-source work, training assistant or consultation
         helpful, consider to{" "}
         <u>
-          <a href="https://github.com/sponsors/makkahwi/" target="_blank">
+          <a
+            href="https://github.com/sponsors/makkahwi/"
+            target="_blank"
+            className="text-decoration-none"
+          >
             Sponsor Me
           </a>
         </u>{" "}

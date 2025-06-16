@@ -33,7 +33,11 @@ const EducationSection = async () => {
         ({ logo, name, school, website, desc, cert, downloads }, i) => (
           <Row className="my-5 align-middle gx-5" key={i}>
             <Col md={6} className="text-info">
-              <a href={website} target="_blank">
+              <a
+                href={website}
+                target="_blank"
+                className="text-decoration-none"
+              >
                 <img src={logo} width="100%" />
               </a>
             </Col>

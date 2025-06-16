@@ -13,7 +13,7 @@ export default async function PageNavigator({
             <a
               key={index}
               href={`#${id}`}
-              className="btn btn-dark ms-4 corners border-0 btn-sm p-2 my-2"
+              className="btn btn-dark ms-4 corners border-0 btn-sm p-2 my-2 text-decoration-none"
               data-bs-toggle="tooltip"
               data-bs-placement="right"
               title={label}
