@@ -16,3 +16,14 @@ export const iconsRendered = (icon = "") => {
       return faPaintBrush;
   }
 };
+
+export const colsCount = (cols = 0) => {
+  switch (cols) {
+    case 1:
+      return 12;
+    case 2:
+      return 6;
+    default:
+      return 4;
+  }
+};

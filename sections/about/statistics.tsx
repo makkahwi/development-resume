@@ -117,7 +117,7 @@ const StatisticsSection = async ({ home }: props) => {
               size={home ? 4 : 1}
               style={{
                 background: 'url("/images/BracketsC.png")',
-                backgroundSize: home ? "100%" : "auto 100%",
+                backgroundSize: "auto 80%",
                 backgroundPosition: "center center",
                 backgroundRepeat: "no-repeat",
               }}

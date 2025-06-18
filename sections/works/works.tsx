@@ -32,7 +32,7 @@ const WorksSection = async ({ openSource, home }: props) => {
 
   return (
     <PageSection
-      title={openSource ? "Open-Source Products" : "Works"}
+      title={openSource ? "Open-Source Products" : "Projects"}
       subtitle={
         openSource
           ? "Free Solutions & Software For Everyone"
@@ -94,7 +94,7 @@ const WorksSection = async ({ openSource, home }: props) => {
           )}
       </Row>
 
-      {home && <PageButton link="/works#works" text="All Works Explained" />}
+      {home && <PageButton link="/works#works" text="More On Projects" />}
     </PageSection>
   );
 };

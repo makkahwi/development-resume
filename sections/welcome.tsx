@@ -3,6 +3,7 @@ import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
 import { Fragment } from "react";
 import { CarouselCaption, Col, Row } from "react-bootstrap";
+
 import StatisticsSection from "./about/statistics";
 
 const WelcomeSection = () => {
@@ -17,7 +18,7 @@ const WelcomeSection = () => {
   ];
 
   return (
-    <PageSection color="white" NoBg id="home">
+    <PageSection color="white" BigPadding id="home">
       <Row
         style={{ minHeight: "70vh" }}
         className="text-info justify-content-center align-middle"
@@ -29,13 +30,13 @@ const WelcomeSection = () => {
         <Col xs={8} lg={6} style={{ margin: "auto" }} className="py-5 my-auto">
           <Typography
             size={1}
-            className="pb-4 text-uppercase text-start font display-3"
+            className="text-uppercase text-start font display-5"
             color="info"
           >
             Suhaib Ahmad
           </Typography>
 
-          <Typography size={6} color="info" className="mb-5 font lh-lg">
+          <Typography size={6} color="info" className="my-4 font lh-lg">
             {
               "I help bring software ideas to life — from architecture and design to code and deployment. Whether you're building a product, seeking technical guidance, or just getting started on your coding journey, I offer help tailored to your needs."
             }

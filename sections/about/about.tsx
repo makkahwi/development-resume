@@ -94,8 +94,7 @@ const AboutSection = async ({ home }: props) => {
                 href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-ATS-Resume-Sheet.pdf?alt=media"
                 target="_blank"
               >
-                <FontAwesomeIcon icon={faDownload} /> Download ATS-Friendly
-                Resume Sheet
+                <FontAwesomeIcon icon={faDownload} /> ATS-Friendly Resume
               </Button>
 
               <Button
@@ -104,8 +103,7 @@ const AboutSection = async ({ home }: props) => {
                 href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-UI-Resume-Sheet.pdf?alt=media"
                 target="_blank"
               >
-                <FontAwesomeIcon icon={faDownload} /> Download
-                Manual-User-Friendly Resume Sheet
+                <FontAwesomeIcon icon={faDownload} /> User-Friendly Resume
               </Button>
 
               <Button

@@ -1,7 +1,7 @@
 import PageSection from "@/components/pageSection";
 import { Col, Row } from "react-bootstrap";
 
-const HappyClientsSection = () => {
+const ProminentClientsSection = () => {
   const clients = [
     {
       link: "https://www.modee.gov.jo/",
@@ -12,8 +12,16 @@ const HappyClientsSection = () => {
       img: "agile.png",
     },
     {
+      link: "https://www.hrsd.gov.sa/",
+      img: "saudi.png",
+    },
+    {
       link: "https://www.arabwork.com/",
       img: "arabwork.png",
+    },
+    {
+      link: "https://www.deloitte.com/",
+      img: "deloitte.png",
     },
     {
       link: "https://capitalcloud.sa/",
@@ -46,7 +54,7 @@ const HappyClientsSection = () => {
   ];
 
   return (
-    <PageSection title="Happy Clients" color="light" NoBg id="clients">
+    <PageSection title="Prominent Clients" color="light" NoBg id="clients">
       <Row className="justify-content-center">
         {clients.map(({ img, link }, i) => (
           <Col xs={6} sm={4} md={3} lg={2} className="text-center p-5" key={i}>
@@ -63,4 +71,4 @@ const HappyClientsSection = () => {
   );
 };
 
-export default HappyClientsSection;
+export default ProminentClientsSection;

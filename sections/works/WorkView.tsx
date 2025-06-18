@@ -42,14 +42,21 @@ const WorkView = ({
         color={dark ? "info" : "light"}
         className="font"
       >
-        {short && url ? (
-          <a href={url} target="_blank" className="text-decoration-none">
-            {title}
-          </a>
-        ) : (
-          title
-        )}
+        {title}
       </Typography>
+
+      {short && url && (
+        <Typography
+          size={5}
+          justify="center"
+          color={dark ? "info" : "light"}
+          className="font mt-3"
+        >
+          <a href={url} target="_blank" className="text-decoration-none">
+            <FontAwesomeIcon icon={faLink} />
+          </a>
+        </Typography>
+      )}
 
       {!short && (
         <Row>

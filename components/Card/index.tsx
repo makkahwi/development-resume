@@ -23,8 +23,8 @@ const CardComp = ({
   return (
     <Card
       className={
-        `bg-transparent text-white w-100 my-2 border-${color} border-${
-          onClick ? 1 : 5
+        `bg-transparent text-white w-100 my-2 rounded-0 border-${color} border-${
+          onClick ? 1 : 2
         } ` + className
       }
       onClick={onClick}
