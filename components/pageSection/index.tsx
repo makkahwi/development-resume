@@ -59,7 +59,7 @@ const PageSection = ({
       style={
         NoBg
           ? {
-              padding: "17.5vh 0",
+              padding: "7.5vh 0",
             }
           : {
               padding: "17.5vh 0",
