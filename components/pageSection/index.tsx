@@ -9,6 +9,7 @@ interface props {
   color?: string;
   card?: boolean;
   NoBg?: boolean;
+  BigPadding?: boolean;
   bg2?: boolean;
   id?: string;
 }
@@ -21,6 +22,7 @@ const PageSection = ({
   bg2 = false,
   card = false,
   NoBg = false,
+  BigPadding = false,
   id = "",
   ...rest
 }: props) => {
@@ -60,6 +62,10 @@ const PageSection = ({
         NoBg
           ? {
               padding: "7.5vh 0",
+            }
+          : BigPadding
+          ? {
+              padding: "17.5vh 0",
             }
           : {
               padding: "17.5vh 0",

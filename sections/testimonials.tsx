@@ -43,7 +43,12 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <PageSection title="Testimonials" color="white" NoBg id="testimonials">
+    <PageSection
+      title="Testimonials"
+      color="white"
+      BigPadding
+      id="testimonials"
+    >
       <CarouselComp
         items={testimonials.map((group, i) => (
           <Row className="gx-4 gy-4" key={i}>

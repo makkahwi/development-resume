@@ -3,6 +3,7 @@ import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
 import { Fragment } from "react";
 import { CarouselCaption, Col, Row } from "react-bootstrap";
+
 import StatisticsSection from "./about/statistics";
 
 const WelcomeSection = () => {
@@ -17,7 +18,7 @@ const WelcomeSection = () => {
   ];
 
   return (
-    <PageSection color="white" NoBg id="home">
+    <PageSection color="white" BigPadding id="home">
       <Row
         style={{ minHeight: "70vh" }}
         className="text-info justify-content-center align-middle"

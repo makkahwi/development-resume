@@ -55,7 +55,7 @@ const CtaSection = () => {
       color="light"
       card
       id="contact"
-      NoBg
+      BigPadding
     >
       <Row>
         {socialLinksList.map(({ name, icon, link, color, label }, i) => (
