@@ -20,7 +20,7 @@ export default async function Home() {
   const CareerSection = dynamic(() => import("@/sections/experiences"));
   const WorksSection = dynamic(() => import("@/sections/works/works"));
   const SkillsSection = dynamic(() => import("@/sections/skills"));
-  const HappyClientsSection = dynamic(() => import("@/sections/clients"));
+  const ProminentClientsSection = dynamic(() => import("@/sections/clients"));
   const TestimonialsSection = dynamic(() => import("@/sections/testimonials"));
 
   const sections = [
@@ -41,7 +41,7 @@ export default async function Home() {
 
       <SkillsSection home={true} />
 
-      <HappyClientsSection />
+      <ProminentClientsSection />
 
       <TestimonialsSection />
 
