@@ -1,21 +1,5 @@
-import {
-  faBriefcase,
-  faCode,
-  faPaintBrush,
-} from "@fortawesome/free-solid-svg-icons";
-
-export const iconsRendered = (icon = "") => {
-  switch (icon) {
-    case "faBriefcase":
-      return faBriefcase;
-    case "faCode":
-      return faCode;
-    case "faPaintBrush":
-      return faPaintBrush;
-    default:
-      return faPaintBrush;
-  }
-};
+import * as brands from "@fortawesome/free-brands-svg-icons";
+import * as solid from "@fortawesome/free-solid-svg-icons";
 
 export const colsCount = (cols = 0) => {
   switch (cols) {
@@ -26,4 +10,9 @@ export const colsCount = (cols = 0) => {
     default:
       return 4;
   }
+};
+
+export const iconMap: Record<string, any> = {
+  ...solid,
+  ...brands,
 };

@@ -1,57 +1,15 @@
+import { getClients } from "@/api/data";
 import PageSection from "@/components/pageSection";
 import { Col, Row } from "react-bootstrap";
 
-const ProminentClientsSection = () => {
-  const clients = [
-    {
-      link: "https://www.modee.gov.jo/",
-      img: "modee.png",
-    },
-    {
-      link: "https://www.startupsjo.com/en/Pages/CustomPages/Startup/409",
-      img: "agile.png",
-    },
-    {
-      link: "https://www.hrsd.gov.sa/",
-      img: "saudi.png",
-    },
-    {
-      link: "https://www.arabwork.com/",
-      img: "arabwork.png",
-    },
-    {
-      link: "https://www.deloitte.com/",
-      img: "deloitte.png",
-    },
-    {
-      link: "https://capitalcloud.sa/",
-      img: "capitalcloud.png",
-    },
-    {
-      link: "https://www.dls.gov.jo/",
-      img: "dls.png",
-    },
-    {
-      link: "https://www.shai.sa/ar",
-      img: "shai.png",
-    },
-    {
-      link: "https://nutrifatima.com/",
-      img: "fatima.png",
-    },
-    {
-      link: "https://www.logatta.com/",
-      img: "logatta.png",
-    },
-    {
-      link: "https://www.luxtag.io/",
-      img: "luxtag.png",
-    },
-    {
-      link: "http://rasmiandkiwan.com/",
-      img: "r&k.png",
-    },
-  ];
+interface ClientProps {
+  link: string;
+  img: string;
+  prominent?: boolean;
+}
+
+const ProminentClientsSection = async () => {
+  const clients: ClientProps[] = await getClients();
 
   return (
     <PageSection title="Prominent Clients" color="light" NoBg id="clients">

@@ -1,5 +1,6 @@
 import axios from "axios";
 import { cache } from "react";
+
 import localData from "./blog-backup.json";
 
 const alembicApi = axios.create({
@@ -64,6 +65,9 @@ const api = axios.create({
 
 const getJobsApi = () => api.get("jobs.json");
 const getEducationApi = () => api.get("education.json");
+const getClientsApi = () => api.get("clients.json");
+const getTestimonialsApi = () => api.get("testimonials.json");
+const getContactsApi = () => api.get("contacts.json");
 const getSkillsApi = () => api.get("skills.json");
 const getProjectsApi = () => api.get("projects.json");
 const getJobProjectsApi = () => api.get("job-projects.json");
@@ -84,6 +88,24 @@ export const getSkills = cache(async () => {
 
 export const getEducation = cache(async () => {
   const { data } = await getEducationApi();
+
+  return data;
+});
+
+export const getClients = cache(async () => {
+  const { data } = await getClientsApi();
+
+  return data;
+});
+
+export const getContacts = cache(async () => {
+  const { data } = await getContactsApi();
+
+  return data;
+});
+
+export const getTestimonials = cache(async () => {
+  const { data } = await getTestimonialsApi();
 
   return data;
 });

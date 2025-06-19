@@ -2,7 +2,7 @@ import { getSkills } from "@/api/data";
 import PageButton from "@/components/PageButton";
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
-import * as brands from "@fortawesome/free-brands-svg-icons";
+import { iconMap } from "@/consts/functions";
 import * as solid from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fragment } from "react";
@@ -24,11 +24,6 @@ interface SkillProps {
 
 const SkillsSection = async ({ home }: props) => {
   const skills: SkillProps[] = await getSkills();
-
-  const iconMap: Record<string, any> = {
-    ...solid,
-    ...brands,
-  };
 
   const renderGroupedSkills = (group = "", icon = "") => (
     <Fragment>

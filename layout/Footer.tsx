@@ -1,9 +1,20 @@
+import { getContacts } from "@/api/data";
 import Typography from "@/components/typography";
-import { socialLinksList } from "@/consts/data";
+import { iconMap } from "@/consts/functions";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, ButtonToolbar, Navbar, NavbarText } from "react-bootstrap";
 
-const Footer = () => {
+export interface ContactProps {
+  name: string;
+  icon: string;
+  link: string;
+  label: string;
+  color: string;
+}
+
+const Footer = async () => {
+  const contacts: ContactProps[] = await getContacts();
+
   return (
     <Navbar className="py-2 px-4 my-0" bg="transparent">
       <NavbarText className="text-center w-100">
@@ -20,7 +31,7 @@ const Footer = () => {
         </Typography>
 
         <ButtonToolbar className="justify-content-center my-3">
-          {socialLinksList.map(({ icon, link }, i) => (
+          {contacts.map(({ icon, link }, i) => (
             <Button
               variant="ghost"
               className="text-dark ms-2"
@@ -29,7 +40,7 @@ const Footer = () => {
               target="_blank"
               key={i}
             >
-              <FontAwesomeIcon icon={icon} />
+              <FontAwesomeIcon icon={iconMap[icon]} />
             </Button>
           ))}
         </ButtonToolbar>
