@@ -1,11 +1,13 @@
 "use client";
 
 import { sendContacts } from "@/api";
+import { getContacts } from "@/api/data";
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
+import { iconMap } from "@/consts/functions";
+import { ContactProps } from "@/layout/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
-import { socialLinksList } from "@/consts/data";
+import { useLayoutEffect, useState } from "react";
 import {
   Alert,
   Button,
@@ -18,6 +20,11 @@ import {
 
 const CtaSection = () => {
   const [sent, setSent] = useState("");
+  const [contacts, setContacts] = useState<ContactProps[]>([]);
+
+  useLayoutEffect(() => {
+    getContacts().then((res) => setContacts(res));
+  }, []);
 
   const formInputs = [
     { name: "name", title: "Name", required: true },
@@ -58,7 +65,7 @@ const CtaSection = () => {
       BigPadding
     >
       <Row>
-        {socialLinksList.map(({ name, icon, link, color, label }, i) => (
+        {contacts.map(({ name, icon, link, color, label }, i) => (
           <Col md={3} key={i}>
             <Button
               style={{ backgroundColor: color }}
@@ -67,7 +74,7 @@ const CtaSection = () => {
               target="_blank"
             >
               <Typography size={5} justify="center" color="white">
-                <FontAwesomeIcon icon={icon} /> {label}
+                <FontAwesomeIcon icon={iconMap[icon]} /> {label}
               </Typography>
             </Button>
           </Col>
