@@ -1,13 +1,10 @@
 import PageNavigator from "@/layout/PageNavigator";
 import {
-  faChalkboard,
   faChalkboardUser,
   faCode,
-  faGraduationCap,
   faHandshake,
   faHeart,
-  faPerson,
-  faPlaneArrival,
+  faNotEqual,
   faUserDoctor,
 } from "@fortawesome/free-solid-svg-icons";
 import dynamic from "next/dynamic";
@@ -24,7 +21,8 @@ export default async function HelpsPage() {
 
   const sections = [
     { id: "intro", label: "Intro", icon: faHandshake },
-    { id: "works", label: "Works", icon: faCode },
+    { id: "works", label: "Open-Source", icon: faCode },
+    { id: "foc", label: "FOC", icon: faNotEqual },
     { id: "training", label: "Training", icon: faChalkboardUser },
     { id: "consultation", label: "Consultation", icon: faUserDoctor },
     { id: "sponsor", label: "Sponsor", icon: faHeart },
@@ -37,6 +35,8 @@ export default async function HelpsPage() {
       <IntroSection />
 
       <WorksSection openSource={true} />
+
+      <WorksSection foc={true} />
 
       <TrainingSection />
 

@@ -7,6 +7,7 @@ import WorkView from "./WorkView";
 
 interface props {
   openSource?: boolean;
+  foc?: boolean;
   home?: boolean;
 }
 
@@ -25,26 +26,37 @@ export interface ProjectProps {
   role?: string;
   hide?: boolean;
   openSource?: boolean;
+  foc?: boolean;
 }
 
-const WorksSection = async ({ openSource, home }: props) => {
+const WorksSection = async ({ openSource, foc, home }: props) => {
   const works: ProjectProps[] = await getJobProjects();
 
   return (
     <PageSection
-      title={openSource ? "Open-Source Products" : "Projects"}
+      title={
+        openSource
+          ? "Open-Source Products"
+          : foc
+          ? "Free-of-Charge Products"
+          : "Projects"
+      }
       subtitle={
         openSource
           ? "Free Solutions & Software For Everyone"
-          : "Most Significant"
+          : foc
+          ? "Private Solutions & For Non-Financial Returns"
+          : home
+          ? "Most Significant"
+          : "Samples"
       }
       color={home ? "light" : "light"}
-      id="works"
+      id={foc ? "foc" : "works"}
     >
       <Row>
         {works
           ?.filter(({ hide, ...rest }) =>
-            openSource ? rest.openSource : home ? !hide : true
+            openSource ? rest.openSource : foc ? rest.foc : home ? !hide : true
           )
           ?.filter(
             ({ category }) =>
