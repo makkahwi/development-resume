@@ -1,6 +1,184 @@
 {
+  "clients": [
+    {
+      "img": "modee.png",
+      "name": "Modee",
+      "link": "https://www.modee.gov.jo/",
+      "prominent": true
+    },
+    {
+      "img": "agile.png",
+      "name": "AgileTz",
+      "link": "https://www.startupsjo.com/en/Pages/CustomPages/Startup/409",
+      "prominent": true
+    },
+    {
+      "img": "saudi.png",
+      "name": "HRSD",
+      "link": "https://www.hrsd.gov.sa/",
+      "prominent": true
+    },
+    {
+      "img": "arabwork.png",
+      "name": "ArabWork",
+      "link": "https://www.arabwork.com/",
+      "prominent": true
+    },
+    {
+      "img": "deloitte.png",
+      "name": "Deloitte",
+      "link": "https://www.deloitte.com/",
+      "prominent": true
+    },
+    {
+      "img": "capitalcloud.png",
+      "name": "Capital Cloud",
+      "link": "https://capitalcloud.sa/",
+      "prominent": true
+    },
+    {
+      "img": "dls.png",
+      "name": "DLS",
+      "link": "https://www.dls.gov.jo/",
+      "prominent": true
+    },
+    {
+      "img": "shai.png",
+      "name": "Shai",
+      "link": "https://www.shai.sa/ar",
+      "prominent": true
+    },
+    {
+      "img": "fatima.png",
+      "name": "Fatima",
+      "link": "https://nutrifatima.com/",
+      "prominent": false
+    },
+    {
+      "img": "logatta.png",
+      "name": "Logatta",
+      "link": "https://www.logatta.com/",
+      "prominent": true
+    },
+    {
+      "img": "luxtag.png",
+      "name": "Luxtag",
+      "link": "https://www.luxtag.io/",
+      "prominent": true
+    },
+    {
+      "img": "r&k.png",
+      "name": "Rasmi & Kiwan",
+      "link": "http://rasmiandkiwan.com/",
+      "prominent": true
+    }
+  ],
+  "contacts": [
+    {
+      "color": "#0A66C2",
+      "icon": "faLinkedinIn",
+      "label": "Linked In Progress",
+      "link": "https://linkedin.com/in/makkahwi/",
+      "name": "LinkedIn"
+    },
+    {
+      "color": "#181717",
+      "icon": "faGithub",
+      "label": "Git It, Connect",
+      "link": "https://github.com/makkahwi",
+      "name": "Github"
+    },
+    {
+      "color": "#25D366",
+      "icon": "faWhatsapp",
+      "label": "Text Me Anytime",
+      "link": "https://wasap.my/962788424973",
+      "name": "WhatsApp"
+    },
+    {
+      "color": "#0088CC",
+      "icon": "faTelegram",
+      "label": "Let's Tele-chat",
+      "link": "https://t.me/makkahwi",
+      "name": "Telegram"
+    },
+    {
+      "color": "#001F3F",
+      "icon": "faPhone",
+      "label": "Call IF NECESSARY",
+      "link": "tel:+962788424973",
+      "name": "Phone"
+    },
+    {
+      "color": "#006400",
+      "icon": "faEnvelope",
+      "label": "Inbox Awaits You",
+      "link": "mailto:SuhaibAhmadAi@hotmail.com",
+      "name": "Email"
+    },
+    {
+      "color": "#1877F2",
+      "icon": "faFacebook",
+      "label": "Let's Chat Forever",
+      "link": "https://facebook.com/makkahwi",
+      "name": "Facebook"
+    },
+    {
+      "color": "#E4405F",
+      "icon": "faInstagram",
+      "label": "Capture Life",
+      "link": "https://instagram.com/makkahwi",
+      "name": "Instagram"
+    }
+  ],
+  "education": [
+    {
+      "cert": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
+      "desc": "Python Based Web Dev (Code Fellows Curriculum)",
+      "downloads": [
+        {
+          "label": "Individual Works",
+          "link": "https://github.com/makkahwi/asac-works"
+        },
+        {
+          "label": "Midterm",
+          "link": "https://silent-speakers.github.io/silent-speakers/"
+        },
+        {
+          "label": "Final",
+          "link": "https://tadreebi.netlify.app/"
+        }
+      ],
+      "logo": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/LTUC.png?alt=media",
+      "name": "6-Month Training Camp",
+      "school": "ASAC of LTUC College (Jordan)",
+      "website": "https://ltuc.edu.jo/"
+    },
+    {
+      "cert": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
+      "desc": "Specialized in Data Science and Computational Intelligence",
+      "downloads": [
+        {
+          "label": "FYP Project",
+          "link": "https://github.com/makkahwi/iDecide"
+        }
+      ],
+      "logo": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/IIUM.png?alt=media",
+      "name": "Bachelor of Computer Science",
+      "school": "International Islamic University Malaysia",
+      "website": "https://www.iium.edu.my/"
+    }
+  ],
   "job-projects": [
     {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "AgileTz",
+      "description": "A solely developed frontend app, totally new / from scratch for Jordan's unified government services portal of 'Sanad'.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/20.jpg?alt=media",
+      "importanceOrder": 29,
+      "role": "Frontend Web Dev",
+      "shortTitle": "Snd",
       "technologies": [
         "React.Js",
         "CSS",
@@ -11,19 +189,17 @@
         "REST API",
         "Docker"
       ],
-      "category": "Web Apps",
-      "comingSoon": true,
-      "company": "AgileTz",
-      "role": "Frontend Web Dev",
-      "type": "Public / Governmental Services",
-      "description": "A solely developed frontend app, totally new / from scratch for Jordan's unified government services portal of 'Sanad'.",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/20.jpg?alt=media",
-      "importanceOrder": 29,
       "timeOrder": 15,
-      "shortTitle": "Snd",
-      "title": "Sanad"
+      "title": "Sanad",
+      "type": "Public / Governmental Services"
     },
     {
+      "category": "Web Apps",
+      "company": "AgileTz",
+      "description": "Led the frontend development of Jordan's Department of Lands and Survey Portal, beside some backend development.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/14.jpg?alt=media",
+      "importanceOrder": 28,
+      "role": "Full-Stack Dev",
       "technologies": [
         "React.Js",
         "CSS",
@@ -35,18 +211,21 @@
         "REST API",
         "Docker"
       ],
-      "category": "Web Apps",
-      "company": "AgileTz",
-      "role": "Full-Stack Dev",
-      "type": "Public / Governmental Services",
-      "description": "Led the frontend development of Jordan's Department of Lands and Survey Portal, beside some backend development.",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/14.jpg?alt=media",
-      "importanceOrder": 28,
       "timeOrder": 14,
       "title": "DLS",
+      "type": "Public / Governmental Services",
       "url": "https://portal.dls.gov.jo/"
     },
     {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "AlembicSoft",
+      "description": "Totally covered the frontend development beside significant backend work.",
+      "designed": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/19.jpg?alt=media",
+      "importanceOrder": 27,
+      "role": "Full-Stack Dev",
+      "shortTitle": "Sem",
       "technologies": [
         "React.Js",
         "Next.Js",
@@ -62,21 +241,44 @@
         "Firebase",
         "AWS"
       ],
-      "category": "Web Apps",
-      "comingSoon": true,
-      "company": "AlembicSoft",
-      "role": "Full-Stack Dev",
-      "type": "B2B Education SaaS System",
-      "description": "Totally covered the frontend development beside significant backend work.",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/19.jpg?alt=media",
-      "importanceOrder": 27,
       "timeOrder": 18,
       "title": "Semesteer",
-      "shortTitle": "Sem",
+      "type": "B2B Education SaaS System",
       "url": "https://semesteer.com/"
     },
     {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "Shai",
+      "description": "Sole full-stack development of Saudi Public / Government Unified Platform For Nonprofit Organizations.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/29.jpg?alt=media",
+      "importanceOrder": 27,
+      "role": "Full-Stack Dev",
+      "shortTitle": "Must",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "Nest.Js",
+        "TypeScript",
+        "JSON",
+        "REST API"
+      ],
+      "timeOrder": 29,
+      "title": "Mustaheq",
+      "type": "Public / Governmental Services",
+      "url": "http://mustaheq.org/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": false,
+      "company": "Logatta",
+      "description": "Contributed to the frontend development effort.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/21.jpg?alt=media",
+      "importanceOrder": 26,
+      "role": "Frontend Web Dev",
+      "shortTitle": "Ent",
       "technologies": [
         "React.Js",
         "CSS",
@@ -86,20 +288,19 @@
         "JSON",
         "REST API"
       ],
-      "category": "Web Apps",
-      "comingSoon": true,
-      "role": "Frontend Web Dev",
-      "type": "Education SaaS System",
-      "description": "Contributed to the frontend development effort.",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/21.jpg?alt=media",
-      "importanceOrder": 26,
       "timeOrder": 16,
-      "company": "Logatta",
       "title": "Entreviable",
-      "shortTitle": "Ent",
+      "type": "Education SaaS System",
       "url": "https://entreviable.com"
     },
     {
+      "category": "Web Apps",
+      "company": "ArabWork",
+      "description": "Led the frontend work.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/16.jpg?alt=media",
+      "importanceOrder": 25,
+      "role": "Frontend Web Dev",
+      "shortTitle": "Tre",
       "technologies": [
         "Vue.Js",
         "CSS",
@@ -108,19 +309,19 @@
         "JSON",
         "REST API"
       ],
-      "category": "Web Apps",
-      "company": "ArabWork",
-      "role": "Frontend Web Dev",
-      "type": "Ride-Hailing for Goods System",
-      "description": "Led the frontend work.",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/16.jpg?alt=media",
-      "importanceOrder": 25,
       "timeOrder": 11,
       "title": "Trellah",
-      "shortTitle": "Tre",
-      "url": "https://trellah.com/"
+      "type": "Ride-Hailing for Goods System",
+      "url": "https://app.trellah.com"
     },
     {
+      "category": "Web Apps",
+      "company": "Luxtag",
+      "description": "Led the frontend development and UI/UX execution.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/11.jpg?alt=media",
+      "importanceOrder": 24,
+      "role": "Frontend Web Dev",
+      "shortTitle": "BT",
       "technologies": [
         "React.Js",
         "CSS",
@@ -133,44 +334,21 @@
         "PostgreSQL",
         "Docker"
       ],
-      "category": "Web Apps",
-      "company": "Luxtag",
-      "role": "Frontend Web Dev",
-      "type": "Blockchain-Powered Brand Protection SaaS App",
-      "description": "Led the frontend development and UI/UX execution.",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/11.jpg?alt=media",
-      "importanceOrder": 24,
       "timeOrder": 9,
-      "shortTitle": "BT",
       "title": "BrandTag",
+      "type": "Blockchain-Powered Brand Protection SaaS App",
       "url": "https://app.brandtag.io/"
     },
     {
-      "technologies": [
-        "React.Js",
-        "CSS",
-        "Bootstrap",
-        "Node.Js",
-        "TypeScript",
-        "JSON",
-        "REST API",
-        "Firebase"
-      ],
       "category": "Web Apps",
-      "role": "End-to-End Build",
       "company": "Open Source",
-      "type": "Health Traction SaaS App",
       "description": "Own product idea, executed from ideation, development to deployment.",
       "designed": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/28.png?alt=media",
       "importanceOrder": 23,
       "openSource": true,
-      "timeOrder": 24,
+      "role": "End-to-End Build",
       "shortTitle": "HEAL",
-      "title": "Healthy Eating and Lifestyle Tracker",
-      "url": "https://heal-tracker.vercel.app/"
-    },
-    {
       "technologies": [
         "React.Js",
         "CSS",
@@ -181,21 +359,47 @@
         "REST API",
         "Firebase"
       ],
+      "timeOrder": 24,
+      "title": "Healthy Eating and Lifestyle Tracker",
+      "type": "Health Traction SaaS App",
+      "url": "https://heal-tracker.vercel.app/"
+    },
+    {
       "category": "Web Apps",
       "comingSoon": true,
       "company": "Open Source",
-      "role": "System Architecture & Team Oversight",
-      "type": "Project Management System",
       "description": "Own product idea, execution is in-progress by supervised junior developers.",
       "designed": true,
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/24.jpg?alt=media",
       "importanceOrder": 22,
       "openSource": true,
-      "timeOrder": 19,
+      "role": "System Architecture & Team Oversight",
       "shortTitle": "ANest",
-      "title": "AppNest"
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "timeOrder": 19,
+      "title": "AppNest",
+      "type": "Project Management System"
     },
     {
+      "category": "Web Apps",
+      "company": "AIS",
+      "description": "Executed from customer needs identification, development to deployment.",
+      "designed": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/8.jpg?alt=media",
+      "importanceOrder": 21,
+      "role": "End-to-End Product Ownership",
+      "shortTitle": "Stu",
       "technologies": [
         "HTML",
         "CSS",
@@ -206,19 +410,20 @@
         "REST API",
         "MySQL"
       ],
-      "category": "Web Apps",
-      "company": "AIS",
-      "role": "End-to-End Product Ownership",
-      "type": "Internal Data-Management Portal",
-      "description": "Executed from customer needs identification, development to deployment.",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/8.jpg?alt=media",
-      "importanceOrder": 21,
       "timeOrder": 7,
-      "shortTitle": "Stu",
-      "title": "AIS Students Portal"
+      "title": "AIS Students Portal",
+      "type": "Internal Data-Management Portal"
     },
     {
+      "category": "Web Apps",
+      "company": "AIS",
+      "description": "Executed from customer needs identification, development to deployment.",
+      "designed": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/15.jpg?alt=media",
+      "importanceOrder": 20,
+      "role": "End-to-End Product Ownership",
+      "shortTitle": "Sta",
       "technologies": [
         "React.Js",
         "CSS",
@@ -231,20 +436,19 @@
         "REST API",
         "MySQL"
       ],
-      "category": "Web Apps",
-      "company": "AIS",
-      "role": "End-to-End Product Ownership",
-      "type": "Internal Data-Management Portal",
-      "description": "Executed from customer needs identification, development to deployment.",
-      "designed": true,
-      "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/15.jpg?alt=media",
-      "importanceOrder": 20,
       "timeOrder": 5,
-      "shortTitle": "Sta",
-      "title": "AIS Staff Portal"
+      "title": "AIS Staff Portal",
+      "type": "Internal Data-Management Portal"
     },
     {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "Logatta",
+      "description": "A solely developed frontend app, totally new / from scratch.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/22.jpg?alt=media",
+      "importanceOrder": 19,
+      "role": "Frontend Web Dev",
+      "shortTitle": "Cro",
       "technologies": [
         "React.Js",
         "CSS",
@@ -254,20 +458,19 @@
         "JSON",
         "REST API"
       ],
-      "category": "Web Apps",
-      "comingSoon": true,
-      "company": "Logatta",
-      "role": "Frontend Web Dev",
-      "type": "Specialized Search-Engine App",
-      "description": "A solely developed frontend app, totally new / from scratch.",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/22.jpg?alt=media",
-      "importanceOrder": 19,
       "timeOrder": 17,
       "title": "Crosure",
-      "shortTitle": "Cro",
+      "type": "Specialized Search-Engine App",
       "url": "https://commsure.com/"
     },
     {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "Freelance",
+      "description": "A solely developed frontend app, totally new / from scratch.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/26.jpg?alt=media",
+      "importanceOrder": 18,
+      "role": "Frontend Web Dev",
       "technologies": [
         "Remix",
         "React.Js",
@@ -279,19 +482,22 @@
         "JSON",
         "REST API"
       ],
-      "category": "Web Apps",
-      "comingSoon": true,
-      "company": "Freelance",
-      "role": "Frontend Web Dev",
-      "type": "Service Providers Marketplace",
-      "description": "A solely developed frontend app, totally new / from scratch.",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/26.jpg?alt=media",
-      "importanceOrder": 18,
       "timeOrder": 21,
       "title": "Shwra",
+      "type": "Service Providers Marketplace",
       "url": "https://www.shwra.sa/"
     },
     {
+      "category": "Web Apps",
+      "company": "Open Source",
+      "description": "A system for school / university students' internship progress tracking & management.",
+      "designed": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/13.jpg?alt=media",
+      "importanceOrder": 17,
+      "openSource": true,
+      "role": "System Architecture & Team Oversight",
+      "shortTitle": "Tad",
       "technologies": [
         "React.Js",
         "CSS",
@@ -305,21 +511,21 @@
         "REST API",
         "PostgreSQL"
       ],
-      "category": "Web Apps",
-      "company": "Open Source",
-      "role": "System Architecture & Team Oversight",
-      "type": "Internal Data-Management Portal",
-      "description": "A system for school / university students' internship progress tracking & management.",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/13.jpg?alt=media",
-      "importanceOrder": 17,
-      "openSource": true,
       "timeOrder": 10,
       "title": "Tadreebi",
-      "shortTitle": "Tad",
+      "type": "Internal Data-Management Portal",
       "url": "https://tadreebi.netlify.app/"
     },
     {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "Freelance",
+      "description": "Education content & teacher-student communication system.",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/9.jpg?alt=media",
+      "importanceOrder": 16,
+      "role": "Full-Stack Dev",
+      "shortTitle": "xEdu",
       "technologies": [
         "React.Js",
         "CSS",
@@ -329,20 +535,20 @@
         "JSON",
         "REST API"
       ],
-      "category": "Web Apps",
-      "comingSoon": true,
-      "company": "Freelance",
-      "role": "Full-Stack Dev",
-      "type": "Education SaaS System",
-      "description": "Education content & teacher-student communication system.",
-      "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/9.jpg?alt=media",
-      "importanceOrder": 16,
       "timeOrder": 9,
-      "shortTitle": "xEdu",
-      "title": "xEdu App"
+      "title": "xEdu App",
+      "type": "Education SaaS System"
     },
     {
+      "category": "Web Apps",
+      "company": "Open Source",
+      "description": "Own product idea, execution is in-progress.",
+      "designed": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
+      "importanceOrder": 15,
+      "openSource": true,
+      "role": "End-to-End Build",
       "technologies": [
         "React.Js",
         "CSS",
@@ -353,20 +559,22 @@
         "REST API",
         "Firebase"
       ],
-      "category": "Web Apps",
-      "company": "Open Source",
-      "role": "End-to-End Build",
-      "type": "Encyclopedia",
-      "description": "Own product idea, execution is in-progress.",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
-      "importanceOrder": 15,
-      "openSource": true,
       "timeOrder": 28,
       "title": "PRICE",
+      "type": "Encyclopedia",
       "url": "https://price-admin.vercel.app/"
     },
     {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "Open Source",
+      "description": "Own product idea, executed from ideation, development to deployment.",
+      "designed": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/7.jpg?alt=media",
+      "importanceOrder": 14,
+      "openSource": true,
+      "role": "End-to-End Build",
+      "shortTitle": "CASH",
       "technologies": [
         "Vue.Js",
         "Nuxt.Js",
@@ -378,22 +586,22 @@
         "REST API",
         "Firebase"
       ],
-      "category": "Web Apps",
-      "comingSoon": true,
-      "company": "Open Source",
-      "role": "End-to-End Build",
-      "type": "Digital Showroom App",
-      "description": "Own product idea, executed from ideation, development to deployment.",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/7.jpg?alt=media",
-      "importanceOrder": 14,
-      "openSource": true,
       "timeOrder": 26,
       "title": "Currencies Archiving & Sharing Hub",
-      "shortTitle": "CASH",
+      "type": "Digital Showroom App",
       "url": "https://cash-hub.vercel.app/"
     },
     {
+      "category": "Web Apps",
+      "company": "Open Source",
+      "description": "Own product idea, execution is in-progress by supervised junior developers.",
+      "designed": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
+      "importanceOrder": 13,
+      "openSource": true,
+      "role": "End-to-End Build",
+      "shortTitle": "FF",
       "technologies": [
         "React.Js",
         "CSS",
@@ -404,20 +612,21 @@
         "REST API",
         "Firebase"
       ],
-      "category": "Web Apps",
-      "role": "End-to-End Build",
-      "company": "Open Source",
-      "type": "Financial Tracking SaaS App",
-      "description": "Own product idea, execution is in-progress by supervised junior developers.",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
-      "importanceOrder": 13,
-      "openSource": true,
       "timeOrder": 25,
-      "shortTitle": "FF",
-      "title": "Family Finance"
+      "title": "Family Finance",
+      "type": "Financial Tracking SaaS App"
     },
     {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "Freelance",
+      "description": "Executed from customer needs identification, development to deployment.",
+      "designed": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/23.jpg?alt=media",
+      "importanceOrder": 12,
+      "role": "Full-Stack Dev",
+      "shortTitle": "R&K",
       "technologies": [
         "React.Js",
         "CSS",
@@ -430,21 +639,21 @@
         "SQLite",
         "Docker"
       ],
-      "category": "Web Apps",
-      "comingSoon": true,
-      "company": "Freelance",
-      "role": "Full-Stack Dev",
-      "type": "Internal Data-Management Portal",
-      "description": "Executed from customer needs identification, development to deployment.",
-      "designed": true,
-      "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/23.jpg?alt=media",
-      "importanceOrder": 12,
       "timeOrder": 13,
-      "shortTitle": "R&K",
-      "title": "Rasmi & Kiwan"
+      "title": "Rasmi & Kiwan",
+      "type": "Internal Data-Management Portal"
     },
     {
+      "category": "Landing Pages",
+      "comingSoon": false,
+      "company": "Freelance",
+      "description": "Simple individual's professional website.",
+      "designed": true,
+      "foc": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/25.jpg?alt=media",
+      "importanceOrder": 11,
+      "role": "Frontend Web Dev",
+      "shortTitle": "Noor",
       "technologies": [
         "Next.Js",
         "CSS",
@@ -455,21 +664,23 @@
         "REST API",
         "Firebase"
       ],
-      "category": "Landing Pages",
-      "comingSoon": false,
-      "role": "Frontend Web Dev",
-      "company": "Freelance",
-      "type": "Profile Landing Page",
-      "description": "Simple individual's professional website.",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/25.jpg?alt=media",
-      "importanceOrder": 11,
       "timeOrder": 23,
       "title": "Coach Noor Kayyali",
-      "shortTitle": "Noor",
+      "type": "Profile Landing Page",
       "url": "https://www.noorkayyali.com/"
     },
     {
+      "category": "Landing Pages",
+      "comingSoon": false,
+      "company": "Freelance",
+      "description": "Simple individual's professional website.",
+      "designed": true,
+      "foc": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/30.jpg?alt=media",
+      "importanceOrder": 10,
+      "role": "Frontend Web Dev",
+      "shortTitle": "Fat",
       "technologies": [
         "Next.Js",
         "CSS",
@@ -480,22 +691,21 @@
         "REST API",
         "Firebase"
       ],
-      "category": "Landing Pages",
-      "comingSoon": false,
-      "hide": true,
-      "company": "Freelance",
-      "role": "Frontend Web Dev",
-      "type": "Profile Landing Page",
-      "description": "Simple individual's professional website.",
-      "designed": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/25.jpg?alt=media",
-      "importanceOrder": 10,
       "timeOrder": 27,
-      "shortTitle": "Fat",
       "title": "Nutritionist Fatima Mohammad",
+      "type": "Profile Landing Page",
       "url": "https://nutriFatima.com/"
     },
     {
+      "category": "Landing Pages",
+      "comingSoon": true,
+      "company": "Freelance",
+      "description": "Simple company's professional website.",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/27.jpg?alt=media",
+      "importanceOrder": 9,
+      "role": "Frontend Web Dev",
+      "shortTitle": "E3",
       "technologies": [
         "Next.Js",
         "Vite",
@@ -506,20 +716,22 @@
         "JSON",
         "REST API"
       ],
-      "category": "Landing Pages",
-      "comingSoon": true,
-      "company": "Freelance",
-      "role": "Frontend Web Dev",
-      "type": "Profile Landing Page",
-      "description": "Simple company's professional website.",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/27.jpg?alt=media",
-      "importanceOrder": 9,
       "timeOrder": 22,
       "title": "E3 Ventures",
-      "shortTitle": "E3",
+      "type": "Profile Landing Page",
       "url": "https://e3.ventures/"
     },
     {
+      "category": "Landing Pages",
+      "comingSoon": false,
+      "company": "Freelance",
+      "description": "Simple individual's professional website.",
+      "foc": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/12.jpg?alt=media",
+      "importanceOrder": 8,
+      "role": "Frontend Web Dev",
+      "shortTitle": "AAM",
       "technologies": [
         "Next.Js",
         "CSS",
@@ -529,20 +741,22 @@
         "JSON",
         "REST API"
       ],
-      "category": "Landing Pages",
-      "comingSoon": false,
-      "role": "Frontend Web Dev",
-      "type": "Profile Landing Page",
-      "description": "Simple individual's professional website.",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/12.jpg?alt=media",
-      "importanceOrder": 8,
       "timeOrder": 20,
-      "company": "Freelance",
-      "shortTitle": "AAM",
       "title": "Dr. Ahmad Abu Mahfouth",
+      "type": "Profile Landing Page",
       "url": "https://drahmadabumahfouth.com"
     },
     {
+      "category": "Landing Pages",
+      "comingSoon": false,
+      "company": "Freelance",
+      "description": "Simple company's professional website.",
+      "foc": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/17.jpg?alt=media",
+      "importanceOrder": 7,
+      "role": "Frontend Web Dev",
+      "shortTitle": "R&K",
       "technologies": [
         "Next.Js",
         "CSS",
@@ -552,20 +766,22 @@
         "JSON",
         "REST API"
       ],
-      "category": "Landing Pages",
-      "comingSoon": false,
-      "role": "Frontend Web Dev",
-      "type": "Profile Landing Page",
-      "description": "Simple company's professional website.",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/17.jpg?alt=media",
-      "importanceOrder": 7,
       "timeOrder": 12,
-      "company": "Freelance",
-      "shortTitle": "R&K",
       "title": "Rasmi & Kiwan",
+      "type": "Profile Landing Page",
       "url": "https://rasmiandkiwan.com/"
     },
     {
+      "category": "Landing Pages",
+      "comingSoon": true,
+      "company": "Freelance",
+      "description": "Simple company's professional website.",
+      "foc": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/18.jpg?alt=media",
+      "importanceOrder": 6,
+      "role": "Frontend Web Dev",
+      "shortTitle": "Zay",
       "technologies": [
         "React.Js",
         "CSS",
@@ -573,56 +789,57 @@
         "Node.Js",
         "JavaScript"
       ],
-      "category": "Landing Pages",
-      "comingSoon": true,
-      "hide": true,
-      "role": "Frontend Web Dev",
-      "type": "Profile Landing Page",
-      "description": "Simple company's professional website.",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/18.jpg?alt=media",
-      "importanceOrder": 6,
       "timeOrder": 6,
-      "company": "Freelance",
       "title": "Zaytouna Club",
-      "shortTitle": "Zay",
+      "type": "Profile Landing Page",
       "url": "https://zaytouna-tau.vercel.app/"
     },
     {
-      "technologies": [
-        "Wordpress",
-        "CSS"
-      ],
       "category": "Landing Pages",
-      "role": "Frontend Web Dev",
-      "type": "Profile Landing Page",
+      "company": "Freelancer",
       "description": "Simple company's professional website.",
+      "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/1.jpg?alt=media",
       "importanceOrder": 5,
-      "timeOrder": 4,
-      "company": "Freelancer",
-      "title": "OneShot Future",
+      "role": "Frontend Web Dev",
       "shortTitle": "OSF",
-      "url": "https://oneshotfuture.com/"
-    },
-    {
       "technologies": [
         "Wordpress",
         "CSS"
       ],
-      "category": "Landing Pages",
-      "role": "Frontend Web Dev",
+      "timeOrder": 4,
+      "title": "OneShot Future",
       "type": "Profile Landing Page",
+      "url": "https://oneshotfuture.com/"
+    },
+    {
+      "category": "Landing Pages",
+      "company": "Freelancer",
       "description": "Simple company's professional website.",
+      "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/6.jpg?alt=media",
       "importanceOrder": 4,
+      "role": "Frontend Web Dev",
+      "technologies": [
+        "Wordpress",
+        "CSS"
+      ],
       "timeOrder": 3,
-      "company": "Freelancer",
       "title": "PPAM",
+      "type": "Profile Landing Page",
       "url": "https://ppam.org.my/"
     },
     {
+      "category": "Landing Pages",
+      "company": "AIS",
+      "description": "Simple company's professional website.",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/2.jpg?alt=media",
+      "importanceOrder": 3,
+      "role": "Frontend Web Dev",
+      "shortTitle": "AIS",
       "technologies": [
         "Next.Js",
         "CSS",
@@ -632,52 +849,45 @@
         "JSON",
         "REST API"
       ],
-      "category": "Landing Pages",
-      "role": "Frontend Web Dev",
-      "company": "AIS",
-      "type": "Profile Landing Page",
-      "description": "Simple company's professional website.",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/2.jpg?alt=media",
-      "importanceOrder": 3,
       "timeOrder": 2,
       "title": "AIS Landing",
-      "shortTitle": "AIS",
+      "type": "Profile Landing Page",
       "url": "https://aqsa.edu.my/"
     },
     {
-      "technologies": [
-        "Wordpress",
-        "CSS"
-      ],
       "category": "Landing Pages",
-      "role": "Frontend Web Dev",
-      "type": "Profile Landing Page",
+      "company": "Freelancer",
       "description": "Simple company's professional website.",
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/4.jpg?alt=media",
       "importanceOrder": 2,
-      "company": "Freelancer",
-      "timeOrder": 1,
-      "title": "Speed Wheels",
+      "role": "Frontend Web Dev",
       "shortTitle": "SW",
-      "url": "https://speedwheelstrade.online/"
-    },
-    {
       "technologies": [
         "Wordpress",
         "CSS"
       ],
-      "category": "Landing Pages",
-      "role": "Frontend Web Dev",
+      "timeOrder": 1,
+      "title": "Speed Wheels",
       "type": "Profile Landing Page",
+      "url": "https://speedwheelstrade.online/"
+    },
+    {
+      "category": "Landing Pages",
+      "company": "Freelancer",
       "description": "Simple company's professional website.",
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/3.jpg?alt=media",
       "importanceOrder": 1,
-      "timeOrder": 0,
-      "company": "Freelancer",
+      "role": "Frontend Web Dev",
       "shortTitle": "Team",
+      "technologies": [
+        "Wordpress",
+        "CSS"
+      ],
+      "timeOrder": 0,
       "title": "Team Foundation",
+      "type": "Profile Landing Page",
       "url": "https://teamtr.media/"
     },
     {
@@ -901,103 +1111,114 @@
       "icon": "faCode",
       "jobs": [
         {
+          "company": "Shai",
+          "description": "Sole full-stack developer for one SaaS Saudi-based project.",
+          "location": "Jordan",
+          "monthsCount": 1,
+          "period": "May 2025 - Current",
+          "projectsCount": 1,
+          "title": "Senior Full-Stack Developer",
+          "type": "Freelancer",
+          "website": "https://www.shai.sa/"
+        },
+        {
           "company": "AlembicSoft",
           "description": "I didn't only develop, I supervised the work of whole team.",
+          "location": "Jordan",
           "monthsCount": 17,
           "period": "Jul 2023 - Apr 2025",
           "projectsCount": 1,
           "title": "Senior Full-Stack Developer",
           "type": "Full-Time",
-          "location": "Jordan",
           "website": "https://www.alembicsoft.com"
         },
         {
           "company": "Logatta",
           "description": "",
+          "location": "Jordan",
           "monthsCount": 5,
           "period": "Aug - Dec 2023",
           "projectsCount": 2,
-          "title": "Senior Frontend Deveoper",
+          "title": "Senior Frontend Developer",
           "type": "Freelancer",
-          "location": "Jordan",
           "website": "https://www.logatta.com"
         },
         {
           "company": "Deloitte",
           "description": "",
+          "location": "Jordan",
           "monthsCount": 2,
           "period": "Jun - Jul 2023",
           "projectsCount": 0,
           "title": "Delivery Consultant",
           "type": "Full-Time",
-          "location": "Jordan",
           "website": "https://www2.deloitte.com/xe/en/pages/strategy-operations/solutions/deloitte-jordan-digital-center.html"
         },
         {
           "company": "AgileTz",
           "description": "Main full-stack developer for one project, sole frontend developer for another.",
+          "location": "Jordan",
           "monthsCount": 10,
           "period": "Aug 2022 - May 2023",
           "projectsCount": 2,
           "title": "Senior Full-Stack Developer",
           "type": "Full-Time",
-          "location": "Jordan",
           "website": "https://www.agiletz.com/"
         },
         {
           "company": "ArabWork",
           "description": "",
+          "location": "Jordan",
           "monthsCount": 2,
-          "type": "Full-Time",
           "period": "Jun - Aug 2022",
           "projectsCount": 1,
-          "location": "Jordan",
           "title": "Frontend Developer",
+          "type": "Full-Time",
           "website": "https://www.linkedin.com/company/arabwork/"
         },
         {
           "company": "Open Source",
           "description": "Products built for personal needs and technologies adapting purposes, published for others to contribute and use freely.",
-          "period": "Jan 2022 - Present",
           "location": "Jordan",
+          "period": "Jan 2022 - Present",
           "title": "Architect & Developer",
           "type": "Freelance"
         },
         {
           "company": "Luxtag",
           "description": "Main full-stack developer, second in-command for team coordination.",
+          "location": "Malaysia",
           "monthsCount": 12,
           "period": "Nov 2020 - Oct 2021",
           "projectsCount": 1,
           "title": "Frontend Developer",
           "type": "Full-Time",
-          "location": "Malaysia",
           "website": "https://Luxtag.io/"
         },
         {
           "company": "AIS",
           "description": "Sole full-stack developer for custom needs. Architected, planned, and executed.",
+          "location": "Malaysia",
           "monthsCount": 12,
           "period": "Sep 2019 - Aug 2020",
           "projectsCount": 1,
           "title": "Full-Stack Developer",
           "type": "Part-Time",
-          "location": "Malaysia",
           "website": "http://aqsa.edu.my/"
         },
         {
           "company": "Freelance",
           "description": "",
-          "period": "Sep 2019 - Present",
           "location": "Malaysia & Jordan",
+          "period": "Sep 2019 - Present",
           "title": "Full-Stack Developer",
           "type": "Freelance"
         },
         {
           "company": "Freelancer",
           "description": "",
-          "period": "Oct 2015 - Aug 2019",
           "location": "Malaysia",
+          "period": "Oct 2015 - Aug 2019",
           "title": "Frontend Developer",
           "type": "Freelance"
         }
@@ -1165,14 +1386,13 @@
   ],
   "skills": [
     {
-      "rate": 5,
+      "color": "61dafb",
       "groups": [
         "Frontend"
       ],
       "icon": "faReact",
       "name": "React.Js",
-      "color": "61dafb",
-      "website": "https://reactjs.org/",
+      "rate": 5,
       "subskills": [
         "Redux",
         "Axios",
@@ -1189,454 +1409,447 @@
         "Charts.Js",
         "Eslint",
         "prettier"
-      ]
+      ],
+      "website": "https://reactjs.org/"
     },
     {
-      "rate": 5,
+      "color": "000000",
       "groups": [
         "Frontend"
       ],
       "icon": "faN",
       "name": "Next.Js",
-      "color": "000000",
-      "website": "https://nextjs.org/",
+      "rate": 5,
       "subskills": [
         "Same as React.Js"
-      ]
+      ],
+      "website": "https://nextjs.org/"
     },
     {
-      "rate": 3,
+      "color": "B63DFE",
       "groups": [
         "Frontend"
       ],
       "icon": "faV",
       "name": "Vite",
-      "color": "B63DFE",
-      "website": "https://vitejs.dev/",
+      "rate": 3,
       "subskills": [
         "Same as React.Js"
-      ]
+      ],
+      "website": "https://vitejs.dev/"
     },
     {
-      "rate": 3,
+      "color": "000000",
       "groups": [
         "Frontend"
       ],
       "icon": "faR",
       "name": "Remix",
-      "color": "000000",
-      "website": "https://remix.run/",
+      "rate": 3,
       "subskills": [
         "Same as React.Js"
-      ]
+      ],
+      "website": "https://remix.run/"
     },
     {
-      "rate": 3,
+      "color": "000000",
       "groups": [
         "Frontend"
       ],
       "icon": "faShapes",
       "name": "Three.Js",
-      "color": "000000",
+      "rate": 3,
       "website": "https://threejs.org/"
     },
     {
-      "rate": 4,
+      "color": "00bd83",
       "groups": [
         "Frontend"
       ],
       "icon": "faVuejs",
       "name": "Vue.Js",
-      "color": "00bd83",
-      "website": "https://vuejs.org/",
+      "rate": 4,
       "subskills": [
         "VueX",
         "Vuetify",
         "Axios",
         "Webpack",
         "i18next"
-      ]
+      ],
+      "website": "https://vuejs.org/"
     },
     {
-      "rate": 4,
+      "color": "00DC82",
       "groups": [
         "Frontend"
       ],
       "icon": "faVuejs",
       "name": "Nuxt.Js",
-      "color": "00DC82",
-      "website": "https://nuxt.com/",
+      "rate": 4,
       "subskills": [
         "Same as Vue.Js"
-      ]
+      ],
+      "website": "https://nuxt.com/"
     },
     {
-      "rate": 1,
+      "color": "D6002F",
       "groups": [
         "Frontend"
       ],
       "icon": "faAngular",
       "name": "Angular.Js",
-      "color": "D6002F",
+      "rate": 1,
       "website": "https://angular.dev/"
     },
     {
-      "rate": 5,
+      "color": "8bc500",
       "groups": [
         "Frontend",
         "Backend"
       ],
       "icon": "faNode",
       "name": "Node.Js",
-      "color": "8bc500",
-      "website": "https://nodejs.org/",
+      "rate": 5,
       "subskills": [
         "npm",
         "yarn",
         "strapi.io"
-      ]
+      ],
+      "website": "https://nodejs.org/"
     },
     {
-      "rate": 5,
+      "color": "000000",
       "groups": [
         "Backend"
       ],
       "icon": "faNodeJs",
       "name": "Express.Js",
-      "color": "000000",
+      "rate": 5,
       "website": "https://expressjs.com/"
     },
     {
-      "rate": 4,
+      "color": "E0234E",
       "groups": [
         "Backend"
       ],
       "icon": "faNodeJs",
       "name": "Nest.Js",
-      "color": "E0234E",
-      "website": "https://nestjs.com/",
+      "rate": 4,
       "subskills": [
         "Typeorm"
-      ]
+      ],
+      "website": "https://nestjs.com/"
     },
     {
-      "rate": 4,
+      "color": "ff2d20",
       "groups": [
         "Backend"
       ],
       "icon": "faLaravel",
       "name": "Laravel",
-      "color": "ff2d20",
+      "rate": 4,
       "website": "https://laravel.com/"
     },
     {
-      "rate": 2,
+      "color": "092d1f",
       "groups": [
         "Backend"
       ],
       "icon": "faHashtag",
       "name": "Django",
-      "color": "092d1f",
-      "website": "https://www.djangoproject.com/",
+      "rate": 2,
       "subskills": [
         "DJ REST API",
         "DJ Simple JWT",
         "DJ Environ"
-      ]
+      ],
+      "website": "https://www.djangoproject.com/"
     },
     {
-      "rate": 1,
+      "color": "00A7D0",
       "groups": [
         "Backend"
       ],
       "icon": "faGolang",
       "name": "Go / GoLang",
-      "color": "00A7D0",
+      "rate": 1,
       "website": "https://go.dev/"
     },
     {
-      "rate": 3,
+      "color": "21759b",
       "groups": [
         "Frontend"
       ],
       "icon": "faWordpress",
       "name": "Wordpress",
-      "color": "21759b",
-      "website": "https://wordpress.com/",
+      "rate": 3,
       "subskills": [
         "Elementor",
         "Contact Form 7"
-      ]
+      ],
+      "website": "https://wordpress.com/"
     },
     {
-      "rate": 4,
+      "color": "2f6091",
       "groups": [
         "Databases"
       ],
       "icon": "faDatabase",
       "name": "PostgreSQL",
-      "color": "2f6091",
+      "rate": 4,
       "website": "https://www.postgresql.org/"
     },
     {
-      "rate": 4,
+      "color": "ffa518",
       "groups": [
         "Databases"
       ],
       "icon": "faDatabase",
       "name": "MySQL",
-      "color": "ffa518",
+      "rate": 4,
       "website": "https://www.mysql.com/"
     },
     {
-      "rate": 3,
+      "color": "023430",
       "groups": [
         "Databases"
       ],
       "icon": "faDatabase",
       "name": "Mongo DB",
-      "color": "023430",
+      "rate": 3,
       "website": "https://www.mongodb.com/"
     },
     {
-      "rate": 4,
+      "color": "DD2C00",
       "groups": [
         "Databases"
       ],
       "icon": "faDatabase",
       "name": "Firebase",
-      "color": "DD2C00",
+      "rate": 4,
       "website": "https://firebase.google.com"
     },
     {
-      "rate": 4,
+      "color": "004364",
       "groups": [
         "Databases"
       ],
       "icon": "faDatabase",
       "name": "SQLite",
-      "color": "004364",
+      "rate": 4,
       "website": "https://www.sqlite.org/"
     },
     {
-      "rate": 3,
+      "color": "ff9900",
       "groups": [
         "DevOps & Tools"
       ],
       "icon": "faAmazon",
       "name": "AWS",
-      "color": "ff9900",
+      "rate": 3,
       "website": "https://aws.amazon.com/"
     },
     {
-      "rate": 5,
+      "color": "000000",
       "groups": [
         "DevOps & Tools"
       ],
       "icon": "faGithub",
       "name": "Github",
-      "color": "000000",
+      "rate": 5,
       "website": "https://www.github.com/"
     },
     {
-      "rate": 5,
+      "color": "2496ed",
       "groups": [
         "DevOps & Tools"
       ],
       "icon": "faDocker",
       "name": "Docker",
-      "color": "2496ed",
+      "rate": 5,
       "website": "https://www.docker.com/"
     },
     {
-      "rate": 5,
+      "color": "323330",
       "groups": [
         "Frontend",
         "Backend"
       ],
       "icon": "faJs",
       "name": "JavaScript",
-      "color": "323330",
-      "website": "https://www.javascript.com/",
+      "rate": 5,
       "subskills": [
         "ES6",
         "ES5",
         "Embedded JS"
-      ]
+      ],
+      "website": "https://www.javascript.com/"
     },
     {
-      "rate": 4,
+      "color": "3178C6",
       "groups": [
         "Frontend",
         "Backend"
       ],
       "icon": "faJs",
       "name": "TypeScript",
-      "color": "3178C6",
+      "rate": 4,
       "website": "https://www.typescriptlang.org/"
     },
     {
-      "rate": 3,
+      "color": "0868ac",
       "groups": [
         "Frontend"
       ],
       "icon": "faBroadcastTower",
       "name": "jQuery",
-      "color": "0868ac",
+      "rate": 3,
       "website": "https://jquery.com/"
     },
     {
-      "rate": 5,
+      "color": "0f0f0f",
       "groups": [
         "Frontend",
         "Backend"
       ],
       "icon": "faRing",
       "name": "JSON",
-      "color": "0f0f0f",
+      "rate": 5,
       "website": "https://www.json.org/"
     },
     {
-      "rate": 2,
+      "color": "3771a1",
       "groups": [
         "Backend"
       ],
       "icon": "faPython",
       "name": "Python",
-      "color": "3771a1",
-      "website": "https://www.python.org/",
+      "rate": 2,
       "subskills": [
         "Numpy",
         "Pandas",
         "Matplotlib"
-      ]
+      ],
+      "website": "https://www.python.org/"
     },
     {
-      "rate": 4,
+      "color": "4f5c93",
       "groups": [
         "Backend"
       ],
       "icon": "faPhp",
       "name": "PhP",
-      "color": "4f5c93",
+      "rate": 4,
       "website": "https://www.php.net/"
     },
     {
-      "rate": 5,
+      "color": "e44d26",
       "groups": [
         "Frontend"
       ],
       "icon": "faHtml5",
       "name": "HTML",
-      "color": "e44d26",
+      "rate": 5,
       "website": "https://html.spec.whatwg.org/"
     },
     {
-      "rate": 5,
+      "color": "379ad6",
       "groups": [
         "Frontend"
       ],
       "icon": "faCss3Alt",
       "name": "CSS",
-      "color": "379ad6",
+      "rate": 5,
       "website": "https://www.w3.org/TR/CSS/#css"
     },
     {
-      "rate": 5,
+      "color": "7952b3",
       "groups": [
         "Frontend"
       ],
       "icon": "faBootstrap",
       "name": "Bootstrap",
-      "color": "7952b3",
+      "rate": 5,
       "website": "https://getbootstrap.com/"
     },
     {
-      "rate": 3,
+      "color": "00BCFF",
       "groups": [
         "Frontend"
       ],
       "icon": "faReact",
       "name": "TailWind",
-      "color": "00BCFF",
+      "rate": 3,
       "website": "https://tailwindcss.com/"
     },
     {
-      "rate": 5,
+      "color": "00a99d",
       "groups": [
         "Methodologies"
       ],
       "icon": "faSyncAlt",
       "name": "Agile",
-      "color": "00a99d",
-      "website": "https://www.scrum.org/",
+      "rate": 5,
       "subskills": [
         "SCRUM",
         "Kanban"
-      ]
+      ],
+      "website": "https://www.scrum.org/"
     },
     {
-      "rate": 5,
+      "color": "1f93b8",
       "groups": [
         "Methodologies"
       ],
       "icon": "faSyncAlt",
       "name": "SCRUM",
-      "color": "1f93b8",
-      "website": "https://www.scrum.org/",
+      "rate": 5,
       "subskills": [
         "Jira",
         "ClickUp",
         "YouTrack"
-      ]
+      ],
+      "website": "https://www.scrum.org/"
     },
     {
-      "rate": 5,
+      "color": "176985",
       "groups": [
         "Frontend",
         "Backend"
       ],
       "icon": "faCloud",
       "name": "REST API",
-      "color": "176985"
+      "rate": 5
     }
   ],
-  "education": [
-    {
-      "logo": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/LTUC.png?alt=media",
-      "name": "6-Month Training Camp",
-      "school": "ASAC of LTUC College (Jordan)",
-      "website": "https://www.ltuc.com/",
-      "desc": "Python Based Web Dev (Code Fellows Curriculum)",
-      "cert": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
-      "downloads": [
-        {
-          "label": "Individual Works",
-          "link": "https://github.com/makkahwi/asac-works"
-        },
-        {
-          "label": "Midterm",
-          "link": "https://silent-speakers.github.io/silent-speakers/"
-        },
-        {
-          "label": "Final",
-          "link": "https://tadreebi.netlify.app/"
-        }
-      ]
-    },
-    {
-      "logo": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/IIUM.png?alt=media",
-      "name": "Bachelor of Computer Science",
-      "school": "International Islamic University Malaysia",
-      "website": "https://www.iium.edu.my/",
-      "desc": "Specialized in Data Science and Computational Intelligence",
-      "cert": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
-      "downloads": [
-        {
-          "label": "FYP Project",
-          "link": "https://github.com/makkahwi/iDecide"
-        }
-      ]
-    }
+  "testimonials": [
+    [
+      {
+        "author": "Noor Kayyali",
+        "content": "Suhaib has been an outstanding mentee and technical advisor. He showed strong commitment to every session, was always respectful, and a pleasure to work with. He also developed my website, which continues to receive compliments and has been key in presenting my professional identity. His work is thoughtful, reliable, and impactful—I highly recommend him.",
+        "img": "noor.jpeg",
+        "link": "https://www.linkedin.com/in/noorkayyali"
+      },
+      {
+        "author": "Hanan N.",
+        "content": "Suhaib has always been generous with his technical advice, especially in backend development and database design. His input was consistently thoughtful, practical, and rooted in solid experience. I truly appreciated his willingness to support and guide whenever we needed an expert opinion.",
+        "img": "hanan.jpeg",
+        "link": "https://www.linkedin.com/in/hananni"
+      }
+    ],
+    [
+      {
+        "author": "Mazen Adel",
+        "content": "I had the chance to work under Suhaib's command on several creative projects, and I am certain he is among the best and most supportive leaders I've ever had the opportunity to work under. Suhaib organized the tasks, oversaw the workflow, and made sure everything was running according to our goal. I personally hope to be able to continue with him in more projects. I learnt from him a lot in management and clean code.",
+        "img": "mazen.jpeg",
+        "link": "https://www.linkedin.com/in/mazen-adel-bab"
+      },
+      {
+        "author": "Ahmad Alkharfan",
+        "content": "Great mentor, helped me get on my feet at the start of my career life.",
+        "img": "kharfan.jpeg",
+        "link": "https://www.linkedin.com/in/ahmad-alkharfan"
+      }
+    ]
   ]
 }
