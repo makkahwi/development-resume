@@ -2,9 +2,10 @@ import { getClients } from "@/api/data";
 import PageSection from "@/components/pageSection";
 import { Col, Row } from "react-bootstrap";
 
-interface ClientProps {
+export interface ClientProps {
   link: string;
   img: string;
+  name: string;
   prominent?: boolean;
 }
 

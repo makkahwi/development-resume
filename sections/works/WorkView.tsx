@@ -10,6 +10,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 
+import ProjectDetailsModal from "./projectDetails";
+
 const WorkView = ({
   image = "",
   title = "",
@@ -45,31 +47,40 @@ const WorkView = ({
         {title}
       </Typography>
 
-      {short && url && (
-        <Typography
-          size={5}
-          justify="center"
-          color={dark ? "info" : "light"}
-          className="font mt-3"
-        >
-          <a href={url} target="_blank" className="text-decoration-none">
-            <FontAwesomeIcon icon={faLink} />
-          </a>
-        </Typography>
+      {short && (
+        <div className="d-flex justify-content-center">
+          {url && (
+            <Typography
+              size={5}
+              justify="center"
+              color={dark ? "info" : "light"}
+              className="font me-2"
+            >
+              <a href={url} target="_blank" className="text-decoration-none">
+                <FontAwesomeIcon icon={faLink} />
+              </a>
+            </Typography>
+          )}
+
+          <ProjectDetailsModal
+            project={{
+              image,
+              title,
+              description,
+              url,
+              category,
+              role,
+              technologies,
+              type,
+              company,
+              openSource,
+            }}
+          />
+        </div>
       )}
 
       {!short && (
         <Row>
-          <Col xs={12}>
-            <Typography
-              size="sm"
-              className="my-1"
-              color={dark ? "info" : "light"}
-            >
-              Project
-            </Typography>
-          </Col>
-
           <Col xs={url ? 9 : 10}>
             <Typography
               size={6}
@@ -113,16 +124,6 @@ const WorkView = ({
             </Typography>
           </Col>
 
-          <Col xs={12}>
-            <Typography
-              size="sm"
-              className="my-1"
-              color={dark ? "info" : "light"}
-            >
-              Role
-            </Typography>
-          </Col>
-
           <Col xs={9}>
             <Typography
               size={6}
@@ -130,7 +131,7 @@ const WorkView = ({
               color={dark ? "info" : "light"}
               justify="start"
             >
-              {role}
+              <small>Role:</small> {role}
             </Typography>
           </Col>
 
@@ -160,9 +161,25 @@ const WorkView = ({
               </OverlayTrigger>
             </Typography>
           </Col>
+
+          <Col xs={12}>
+            <ProjectDetailsModal
+              project={{
+                image,
+                title,
+                description,
+                url,
+                category,
+                role,
+                technologies,
+                type,
+                company,
+                openSource,
+              }}
+            />
+          </Col>
         </Row>
       )}
-
       {/* <Typography size={6} className="my-3" color="info">
                   {roles}
                 </Typography> */}
