@@ -12,7 +12,7 @@ interface props {
   home?: boolean;
 }
 
-interface SkillProps {
+export interface SkillProps {
   groups: string[];
   icon: any;
   name: string;
