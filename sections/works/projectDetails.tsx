@@ -127,7 +127,9 @@ const ProjectDetailsModal = ({ project }: { project: ProjectProps }) => {
                     <td>Description</td>
 
                     <td>
-                      <Typography size="sm">{open.description}</Typography>
+                      <Typography size={6} className="lh-lg">
+                        {open.description}
+                      </Typography>
                     </td>
                   </tr>
 
