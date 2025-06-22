@@ -110,7 +110,7 @@ const ProjectDetailsModal = ({ project }: { project: ProjectProps }) => {
 
                           return (
                             <span
-                              className="h6 me-1"
+                              className="h6 me-3"
                               style={{ color: "#" + skill?.color }}
                               key={i}
                             >
