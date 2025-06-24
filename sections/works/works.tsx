@@ -24,6 +24,7 @@ export interface ProjectProps {
   technologies: string[];
   company?: string;
   role?: string;
+  date: string;
   hide?: boolean;
   openSource?: boolean;
   foc?: boolean;

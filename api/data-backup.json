@@ -189,6 +189,7 @@
         "REST API",
         "Docker"
       ],
+      "date": 2022,
       "timeOrder": 15,
       "title": "Sanad",
       "type": "Public / Governmental Services"
@@ -213,6 +214,7 @@
       ],
       "timeOrder": 14,
       "title": "DLS",
+      "date": 2021,
       "type": "Public / Governmental Services",
       "url": "https://portal.dls.gov.jo/"
     },
@@ -242,6 +244,7 @@
         "AWS"
       ],
       "timeOrder": 18,
+      "date": 2024,
       "title": "Semesteer",
       "type": "B2B Education SaaS System",
       "url": "https://semesteer.com/"
@@ -267,6 +270,7 @@
       ],
       "timeOrder": 29,
       "title": "Mustaheq",
+      "date": 2025,
       "type": "Public / Governmental Services",
       "url": "http://mustaheq.org/"
     },
@@ -290,6 +294,7 @@
       ],
       "timeOrder": 16,
       "title": "Entreviable",
+      "date": 2023,
       "type": "Education SaaS System",
       "url": "https://entreviable.com"
     },
@@ -311,6 +316,7 @@
       ],
       "timeOrder": 11,
       "title": "Trellah",
+      "date": 2022,
       "type": "Ride-Hailing for Goods System",
       "url": "https://app.trellah.com"
     },
@@ -336,6 +342,7 @@
       ],
       "timeOrder": 9,
       "title": "BrandTag",
+      "date": 2020,
       "type": "Blockchain-Powered Brand Protection SaaS App",
       "url": "https://app.brandtag.io/"
     },
@@ -360,6 +367,7 @@
         "Firebase"
       ],
       "timeOrder": 24,
+      "date": 2024,
       "title": "Healthy Eating and Lifestyle Tracker",
       "type": "Health Traction SaaS App",
       "url": "https://heal-tracker.vercel.app/"
@@ -387,6 +395,7 @@
         "Firebase"
       ],
       "timeOrder": 19,
+      "date": 2023,
       "title": "AppNest",
       "type": "Project Management System"
     },
@@ -411,6 +420,7 @@
         "MySQL"
       ],
       "timeOrder": 7,
+      "date": 2019,
       "title": "AIS Students Portal",
       "type": "Internal Data-Management Portal"
     },
@@ -437,6 +447,7 @@
         "MySQL"
       ],
       "timeOrder": 5,
+      "date": 2020,
       "title": "AIS Staff Portal",
       "type": "Internal Data-Management Portal"
     },
@@ -460,6 +471,7 @@
       ],
       "timeOrder": 17,
       "title": "Crosure",
+      "date": 2023,
       "type": "Specialized Search-Engine App",
       "url": "https://commsure.com/"
     },
@@ -484,6 +496,7 @@
       ],
       "timeOrder": 21,
       "title": "Shwra",
+      "date": 2024,
       "type": "Service Providers Marketplace",
       "url": "https://www.shwra.sa/"
     },
@@ -512,6 +525,7 @@
         "PostgreSQL"
       ],
       "timeOrder": 10,
+      "date": 2022,
       "title": "Tadreebi",
       "type": "Internal Data-Management Portal",
       "url": "https://tadreebi.netlify.app/"
@@ -536,6 +550,7 @@
         "REST API"
       ],
       "timeOrder": 9,
+      "date": 2021,
       "title": "xEdu App",
       "type": "Education SaaS System"
     },
@@ -561,6 +576,7 @@
       ],
       "timeOrder": 28,
       "title": "PRICE",
+      "date": 2025,
       "type": "Encyclopedia",
       "url": "https://price-admin.vercel.app/"
     },
@@ -587,6 +603,7 @@
         "Firebase"
       ],
       "timeOrder": 26,
+      "date": 2022,
       "title": "Currencies Archiving & Sharing Hub",
       "type": "Digital Showroom App",
       "url": "https://cash-hub.vercel.app/"
@@ -613,6 +630,7 @@
         "Firebase"
       ],
       "timeOrder": 25,
+      "date": 2025,
       "title": "Family Finance",
       "type": "Financial Tracking SaaS App"
     },
@@ -640,6 +658,7 @@
         "Docker"
       ],
       "timeOrder": 13,
+      "date": 2023,
       "title": "Rasmi & Kiwan",
       "type": "Internal Data-Management Portal"
     },
@@ -665,6 +684,7 @@
         "Firebase"
       ],
       "timeOrder": 23,
+      "date": 2024,
       "title": "Coach Noor Kayyali",
       "type": "Profile Landing Page",
       "url": "https://www.noorkayyali.com/"
@@ -692,9 +712,36 @@
         "Firebase"
       ],
       "timeOrder": 27,
+      "date": 2025,
       "title": "Nutritionist Fatima Mohammad",
       "type": "Profile Landing Page",
       "url": "https://nutriFatima.com/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": false,
+      "company": "Freelance",
+      "description": "Simple clients data management portal.",
+      "designed": true,
+      "foc": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/30.jpg?alt=media",
+      "importanceOrder": 10,
+      "role": "Frontend Web Dev",
+      "shortTitle": "Cli",
+      "technologies": [
+        "React.Js",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "timeOrder": 27,
+      "date": 2025,
+      "title": "Nutritionist Clients Portal",
+      "type": "Clients Management Portal",
+      "url": "https://portal.nutriFatima.com/"
     },
     {
       "category": "Landing Pages",
@@ -717,6 +764,7 @@
         "REST API"
       ],
       "timeOrder": 22,
+      "date": 2024,
       "title": "E3 Ventures",
       "type": "Profile Landing Page",
       "url": "https://e3.ventures/"
@@ -742,6 +790,7 @@
         "REST API"
       ],
       "timeOrder": 20,
+      "date": 2022,
       "title": "Dr. Ahmad Abu Mahfouth",
       "type": "Profile Landing Page",
       "url": "https://drahmadabumahfouth.com"
@@ -767,6 +816,7 @@
         "REST API"
       ],
       "timeOrder": 12,
+      "date": 2023,
       "title": "Rasmi & Kiwan",
       "type": "Profile Landing Page",
       "url": "https://rasmiandkiwan.com/"
@@ -790,6 +840,7 @@
         "JavaScript"
       ],
       "timeOrder": 6,
+      "date": 2020,
       "title": "Zaytouna Club",
       "type": "Profile Landing Page",
       "url": "https://zaytouna-tau.vercel.app/"
@@ -809,6 +860,7 @@
         "CSS"
       ],
       "timeOrder": 4,
+      "date": 2019,
       "title": "OneShot Future",
       "type": "Profile Landing Page",
       "url": "https://oneshotfuture.com/"
@@ -827,6 +879,7 @@
         "CSS"
       ],
       "timeOrder": 3,
+      "date": 2020,
       "title": "PPAM",
       "type": "Profile Landing Page",
       "url": "https://ppam.org.my/"
@@ -850,6 +903,7 @@
         "REST API"
       ],
       "timeOrder": 2,
+      "date": 2018,
       "title": "AIS Landing",
       "type": "Profile Landing Page",
       "url": "https://aqsa.edu.my/"
@@ -868,6 +922,7 @@
         "CSS"
       ],
       "timeOrder": 1,
+      "date": 2018,
       "title": "Speed Wheels",
       "type": "Profile Landing Page",
       "url": "https://speedwheelstrade.online/"
@@ -886,6 +941,7 @@
         "CSS"
       ],
       "timeOrder": 0,
+      "date": 2017,
       "title": "Team Foundation",
       "type": "Profile Landing Page",
       "url": "https://teamtr.media/"
