@@ -46,7 +46,7 @@ const TrainingSection = async () => {
             className="py-3 my-5 font"
             color="info"
           >
-            Trainees
+            Some of the Trainees
           </Typography>
         </Col>
 
