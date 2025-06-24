@@ -16,6 +16,7 @@ export interface JobProps {
     projectsCount: number;
     title: string;
     type: string;
+    location: string;
     website: string;
   }[];
 }
