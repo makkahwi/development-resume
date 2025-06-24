@@ -66,7 +66,7 @@ const CareerSection = async ({ home }: props) => {
                   }`}
                   key={i}
                 >
-                  <div className="timeline-panel row">
+                  <div className="timeline-panel bg-light row">
                     <div className="col-lg-12">
                       <small
                         className={
@@ -79,7 +79,11 @@ const CareerSection = async ({ home }: props) => {
                     </div>
 
                     <div className="col-lg-12">
-                      <h5 className={owner?.img ? "" : "mt-3 mb-4"}>
+                      <Typography
+                        size={5}
+                        color="dark"
+                        className={owner?.img ? "" : "mt-3 mb-4"}
+                      >
                         {title} @{" "}
                         {website ? (
                           <a
@@ -92,7 +96,7 @@ const CareerSection = async ({ home }: props) => {
                         ) : (
                           <CompanyView />
                         )}
-                      </h5>
+                      </Typography>
                     </div>
 
                     <div className="col">
@@ -174,7 +178,7 @@ const CareerSection = async ({ home }: props) => {
           )}
       </ul>
 
-      {home && <PageButton link="/works" text="More Details" light />}
+      {home && <PageButton link="/works" text="More Details" />}
     </PageSection>
   );
 };

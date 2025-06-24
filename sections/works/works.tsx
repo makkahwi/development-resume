@@ -107,7 +107,7 @@ const WorksSection = async ({ openSource, foc, home }: props) => {
           )}
       </Row>
 
-      {home && <PageButton link="/works#works" text="More On Projects" />}
+      {home && <PageButton link="/works#works" text="More Details" />}
     </PageSection>
   );
 };

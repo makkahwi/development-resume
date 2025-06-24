@@ -106,7 +106,7 @@ const SkillsSection = async ({ home }: props) => {
         </Col>
       </Row>
 
-      {home && <PageButton link="/works#skills" text="Rated Skills" light />}
+      {home && <PageButton link="/works#skills" text="Rated Skills" />}
     </PageSection>
   );
 };

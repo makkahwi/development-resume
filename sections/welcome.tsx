@@ -27,10 +27,10 @@ const WelcomeSection = () => {
           <img src="/images/ProfilePhoto.jpg" width="100%" />
         </Col>
 
-        <Col xs={8} lg={6} style={{ margin: "auto" }} className="py-5 my-auto">
+        <Col xs={8} lg={6} style={{ margin: "auto" }} className="py-2 my-auto">
           <Typography
             size={1}
-            className="text-uppercase text-start font display-5"
+            className="text-uppercase text-start font display-5 mt-5 pt-3"
             color="info"
           >
             Suhaib Ahmad
