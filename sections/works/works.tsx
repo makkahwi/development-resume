@@ -24,6 +24,7 @@ export interface ProjectProps {
   technologies: string[];
   company?: string;
   role?: string;
+  date: string;
   hide?: boolean;
   openSource?: boolean;
   foc?: boolean;
@@ -75,6 +76,7 @@ const WorksSection = async ({ openSource, foc, home }: props) => {
                 technologies,
                 role,
                 type,
+                date,
               },
               i
             ) => (
@@ -97,6 +99,7 @@ const WorksSection = async ({ openSource, foc, home }: props) => {
                   technologies={technologies}
                   role={role}
                   type={type}
+                  date={date}
                   openSource={openSource}
                   dark
                   short={home}
@@ -106,7 +109,7 @@ const WorksSection = async ({ openSource, foc, home }: props) => {
           )}
       </Row>
 
-      {home && <PageButton link="/works#works" text="More On Projects" />}
+      {home && <PageButton link="/works#works" text="More Details" />}
     </PageSection>
   );
 };

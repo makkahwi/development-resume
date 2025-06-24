@@ -16,6 +16,7 @@ export interface JobProps {
     projectsCount: number;
     title: string;
     type: string;
+    location: string;
     website: string;
   }[];
 }
@@ -71,8 +72,10 @@ const StatisticsSection = async ({ home }: props) => {
         "AAM",
         "Noor",
         "Fatima",
+        "Fatima Portal",
         "Semesteer",
         "Mustaheq",
+        "Mustaheq Search-Engine",
         "Lyyyf",
         "QR Menu",
         "AIS Students",
@@ -87,7 +90,7 @@ const StatisticsSection = async ({ home }: props) => {
       desc: "Mentored aspiring developers through real-world projects, self-paced learning paths, and code quality reviews.",
       count: [
         "Mustafa Hasanat",
-        "Zaid Jarra",
+        "Zaid Jarrar",
         "Mazen Adel",
         "Suhaib Murshed",
         "Raghad Abdulhadi",

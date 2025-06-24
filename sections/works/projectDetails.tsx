@@ -67,6 +67,14 @@ const ProjectDetailsModal = ({ project }: { project: ProjectProps }) => {
               <Table borderless>
                 <tbody>
                   <tr className="align-middle">
+                    <td>Date</td>
+
+                    <td>
+                      <Typography size={6}>{open.date}</Typography>
+                    </td>
+                  </tr>
+
+                  <tr className="align-middle">
                     <td>Category</td>
 
                     <td>

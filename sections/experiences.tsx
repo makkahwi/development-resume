@@ -1,4 +1,5 @@
-import { getJobProjects, getJobs } from "@/api/data";
+import { getClients, getJobProjects, getJobs } from "@/api/data";
+import PageButton from "@/components/PageButton";
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
 import {
@@ -9,12 +10,11 @@ import {
   faLocationPin,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
+import { Col, OverlayTrigger, Tooltip } from "react-bootstrap";
 
-import { ProjectProps } from "./works/works";
 import { JobProps } from "./about/statistics";
-import { Fragment } from "react";
-import PageButton from "@/components/PageButton";
+import { ProjectProps } from "./works/works";
+import { ClientProps } from "./clients";
 
 interface props {
   home?: boolean;
@@ -23,157 +23,7 @@ interface props {
 const CareerSection = async ({ home }: props) => {
   const careers: JobProps[] = await getJobs();
   const works: ProjectProps[] = await getJobProjects();
-
-  const JobBox = ({
-    company = "",
-    website = "",
-    description = "",
-    location = "",
-    title = "",
-    type = "",
-    period = "",
-  }) => {
-    const projects = works?.filter(
-      ({ category, ...rest }) =>
-        (category === "Web Apps" || category === "Landing Pages") &&
-        rest.company === company
-    );
-
-    return (
-      <div
-        className={(home ? "bg-light" : "bg-info") + " my-1 p-4 pb-2"}
-        id={company.replaceAll(" ", "_")}
-      >
-        <Row>
-          <Col xs={7}>
-            <Typography size={6} color={home ? "info" : "light"}>
-              {period}
-            </Typography>
-          </Col>
-
-          <Col xs={5}>
-            <Typography size={6} color={home ? "info" : "light"} justify="end">
-              {website ? (
-                <a
-                  className="text-decoration-none"
-                  href={website}
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faLink} /> {company}
-                </a>
-              ) : (
-                company
-              )}
-            </Typography>
-          </Col>
-
-          <Col xs={10} className="my-3">
-            <Typography
-              size={5}
-              color={home ? "info" : "light"}
-              className="font"
-            >
-              {title}
-            </Typography>
-          </Col>
-
-          {!home && (
-            <Fragment>
-              <Col xs={2} className="my-3">
-                <Typography
-                  size={5}
-                  color={home ? "info" : "light"}
-                  className="font"
-                >
-                  <OverlayTrigger
-                    overlay={
-                      <Tooltip>
-                        {projects
-                          .reduce<string[]>(
-                            (final, { technologies }) => [
-                              ...final,
-                              ...technologies.filter(
-                                (tech) => !final.includes(tech)
-                              ),
-                            ],
-                            []
-                          )
-                          .join(", ")}
-                      </Tooltip>
-                    }
-                  >
-                    <FontAwesomeIcon icon={faCode} />
-                  </OverlayTrigger>
-                </Typography>
-              </Col>
-
-              <Col xs={7}>
-                <Typography size={6} color={home ? "info" : "light"}>
-                  <FontAwesomeIcon icon={faClock} /> {type}
-                </Typography>
-              </Col>
-
-              <Col xs={description.length ? 4 : 5}>
-                <Typography size={6} color={home ? "info" : "light"}>
-                  <FontAwesomeIcon icon={faLocationPin} /> {location}
-                </Typography>
-              </Col>
-
-              {description.length ? (
-                <Col xs={1}>
-                  <OverlayTrigger overlay={<Tooltip>{description}</Tooltip>}>
-                    <Typography size={6} color={home ? "info" : "light"}>
-                      <FontAwesomeIcon icon={faInfoCircle} />
-                    </Typography>
-                  </OverlayTrigger>
-                </Col>
-              ) : (
-                ""
-              )}
-
-              {projects.length ? (
-                <Col xs={12}>
-                  <Typography
-                    size={6}
-                    color={home ? "info" : "light"}
-                    className="mt-3"
-                  >
-                    Projects |{" "}
-                    {projects?.map(({ title, shortTitle }, i) => (
-                      <OverlayTrigger overlay={<Tooltip>{title}</Tooltip>}>
-                        <a
-                          href={"#" + title.replaceAll(" ", "_")}
-                          className="text-decoration-none"
-                          key={i}
-                        >
-                          {shortTitle || title}
-                          {i === projects.length - 1 ? "" : " "}
-                        </a>
-                      </OverlayTrigger>
-                    ))}
-                  </Typography>
-                </Col>
-              ) : (
-                ""
-              )}
-            </Fragment>
-          )}
-        </Row>
-      </div>
-    );
-  };
-
-  const CareerSlide = ({ jobs }: { jobs: {}[] }) => (
-    <div className="m-5">
-      <Row>
-        {jobs?.map((job, i) => (
-          <Col md={4} className="p-2 d-flex" key={i}>
-            <JobBox {...job} />
-          </Col>
-        ))}
-      </Row>
-    </div>
-  );
+  const clients: ClientProps[] = await getClients();
 
   return (
     <PageSection
@@ -182,13 +32,153 @@ const CareerSection = async ({ home }: props) => {
       color={home ? "info" : undefined}
       id="experiences"
     >
-      {careers
-        .filter(({ title }) => title === "Web Development")
-        .map((career, i) => (
-          <CareerSlide {...career} key={i} />
-        ))}
+      <ul className="timeline-3">
+        {careers
+          .find(({ title }) => title === "Web Development")
+          ?.jobs.map(
+            (
+              { title, company, website, description, location, type, period },
+              i
+            ) => {
+              const projects = works?.filter(
+                ({ category, ...rest }) =>
+                  (category === "Web Apps" || category === "Landing Pages") &&
+                  rest.company === company
+              );
 
-      {home && <PageButton link="/works" text="More Details" light />}
+              const owner = clients.find(({ name }) => name === company);
+
+              const CompanyView = () =>
+                owner?.img ? (
+                  <img
+                    src={`https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/${owner?.img}?alt=media`}
+                    height="75px"
+                  />
+                ) : (
+                  company
+                );
+
+              return (
+                <li
+                  id={company}
+                  className={`timeline-item ${
+                    i % 2 === 1 ? "timeline-inverted" : ""
+                  }`}
+                  key={i}
+                >
+                  <div className="timeline-panel bg-light row">
+                    <div className="col-lg-12">
+                      <small
+                        className={
+                          "text-muted d-block " +
+                          (i % 2 === 0 ? "float-end" : "")
+                        }
+                      >
+                        {period}
+                      </small>
+                    </div>
+
+                    <div className="col-lg-12">
+                      <Typography
+                        size={5}
+                        color="dark"
+                        className={owner?.img ? "" : "mt-3 mb-4"}
+                      >
+                        {title} @{" "}
+                        {website ? (
+                          <a
+                            href={website}
+                            target="_blank"
+                            className="text-decoration-none"
+                          >
+                            <CompanyView />
+                          </a>
+                        ) : (
+                          <CompanyView />
+                        )}
+                      </Typography>
+                    </div>
+
+                    <div className="col">
+                      <Typography size={6} color="info">
+                        <FontAwesomeIcon icon={faClock} /> {type}
+                      </Typography>
+                    </div>
+
+                    <div className="col">
+                      <Typography size={6} color="info">
+                        <FontAwesomeIcon icon={faLocationPin} /> {location}
+                      </Typography>
+                    </div>
+
+                    <div className="col">
+                      <Typography size={6} color="info">
+                        <OverlayTrigger
+                          overlay={
+                            <Tooltip>
+                              {projects
+                                .reduce<string[]>(
+                                  (final, { technologies }) => [
+                                    ...final,
+                                    ...technologies.filter(
+                                      (tech) => !final.includes(tech)
+                                    ),
+                                  ],
+                                  []
+                                )
+                                .join(", ")}
+                            </Tooltip>
+                          }
+                        >
+                          <span>
+                            <FontAwesomeIcon icon={faCode} /> Tech
+                          </span>
+                        </OverlayTrigger>
+                      </Typography>
+                    </div>
+
+                    <div className="col">
+                      {description && (
+                        <OverlayTrigger
+                          overlay={<Tooltip>{description}</Tooltip>}
+                        >
+                          <Typography size={6} color="info">
+                            <FontAwesomeIcon icon={faInfoCircle} /> Details
+                          </Typography>
+                        </OverlayTrigger>
+                      )}
+                    </div>
+
+                    <div className="col-lg-12">
+                      {projects.length > 0 && (
+                        <Typography size={6} color="info" className="mt-3">
+                          Projects |
+                          <span className="d-inline-flex flex-wrap gap-2 ms-2">
+                            {projects.map(({ title, shortTitle }, j) => (
+                              <OverlayTrigger
+                                key={j}
+                                overlay={<Tooltip>{title}</Tooltip>}
+                              >
+                                <a
+                                  href={`#${title.replaceAll(" ", "_")}`}
+                                  className="text-decoration-none"
+                                >
+                                  {shortTitle || title}
+                                </a>
+                              </OverlayTrigger>
+                            ))}
+                          </span>
+                        </Typography>
+                      )}
+                    </div>
+                  </div>
+                </li>
+              );
+            }
+          )}
+      </ul>
+
+      {home && <PageButton link="/works" text="More Details" />}
     </PageSection>
   );
 };
