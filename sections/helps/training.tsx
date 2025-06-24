@@ -33,15 +33,9 @@ const TrainingSection = async () => {
           <Typography size={4} className="text-info lh-lg">
             I offer guided, self-paced training paths through real private &
             open-source projects — designed to help you build skills and land
-            your first coding job.
-          </Typography>
-        </Col>
-
-        <Col md={12} className="text-info">
-          <Typography size={4} className="text-info lh-lg">
-            It’s a free, win-win collaboration: you gain experience, I support
-            your growth and refine my non-technical skills. Scroll down to get
-            in touch or book a session.
+            your first coding job. It’s a free, win-win collaboration: you gain
+            experience, I support your growth and refine my non-technical
+            skills. Scroll down to get in touch or book a session.
           </Typography>
         </Col>
 
