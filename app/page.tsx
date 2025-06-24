@@ -17,7 +17,9 @@ export const revalidate = apiCallRevalidate;
 export default async function Home() {
   const WelcomeSection = dynamic(() => import("@/sections/welcome"));
   const AboutSection = dynamic(() => import("@/sections/about/about"));
-  const CareerSection = dynamic(() => import("@/sections/experiences"));
+  const CareerSection = dynamic(
+    () => import("@/sections/experiences/experiences")
+  );
   const WorksSection = dynamic(() => import("@/sections/works/works"));
   const SkillsSection = dynamic(() => import("@/sections/skills"));
   const ProminentClientsSection = dynamic(() => import("@/sections/clients"));

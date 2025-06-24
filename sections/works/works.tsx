@@ -22,6 +22,7 @@ export interface ProjectProps {
   shortTitle?: string;
   url?: string;
   technologies: string[];
+  details: string[];
   company?: string;
   role?: string;
   date: string;
@@ -74,6 +75,7 @@ const WorksSection = async ({ openSource, foc, home }: props) => {
                 url,
                 openSource,
                 technologies,
+                details,
                 role,
                 type,
                 date,
@@ -99,6 +101,7 @@ const WorksSection = async ({ openSource, foc, home }: props) => {
                   technologies={technologies}
                   role={role}
                   type={type}
+                  details={details}
                   date={date}
                   openSource={openSource}
                   dark
