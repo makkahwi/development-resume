@@ -50,10 +50,10 @@ const WorksSection = async ({ openSource, foc, home }: props) => {
           ? "Most Significant"
           : "Samples"
       }
-      color={home ? "light" : "light"}
+      color={foc ? "white" : "light"}
       id={foc ? "foc" : "works"}
     >
-      <Row>
+      <Row className="justify-content-center">
         {works
           ?.filter(({ hide, ...rest }) =>
             openSource ? rest.openSource : foc ? rest.foc : home ? !hide : true
