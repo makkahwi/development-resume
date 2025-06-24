@@ -4,6 +4,16 @@
 
 ## To Do
 
+- Complete details of
+  - ArabWork job
+  - Mustaheq search-engine
+  - Entreviable
+  - Open-source projects
+  - AIS projects
+  - Crosure
+  - Shwra
+  - xEdu App
+  - Landing pages
 - Localize App
 - Remove "use client" in blog
 - Remove PageSection URL Show
