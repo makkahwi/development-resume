@@ -135,7 +135,7 @@ const ProjectDetailsModal = ({ project }: { project: ProjectProps }) => {
                     </td>
                   </tr>
 
-                  <tr className="align-middle">
+                  <tr>
                     <td>Description</td>
 
                     <td>
@@ -145,7 +145,7 @@ const ProjectDetailsModal = ({ project }: { project: ProjectProps }) => {
                     </td>
                   </tr>
 
-                  <tr className="align-middle">
+                  <tr>
                     <td></td>
 
                     <td>
