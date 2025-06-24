@@ -70,7 +70,6 @@ const getTestimonialsApi = () => api.get("testimonials.json");
 const getTraineesApi = () => api.get("trainees.json");
 const getContactsApi = () => api.get("contacts.json");
 const getSkillsApi = () => api.get("skills.json");
-const getProjectsApi = () => api.get("projects.json");
 const getJobProjectsApi = () => api.get("job-projects.json");
 
 export const apiCallRevalidate = 60 * 60 * 24 * 7; // seconds * mins * hours * days
@@ -113,12 +112,6 @@ export const getTestimonials = cache(async () => {
 
 export const getTrainees = cache(async () => {
   const { data } = await getTraineesApi();
-
-  return data;
-});
-
-export const getProjects = cache(async () => {
-  const { data } = await getProjectsApi();
 
   return data;
 });

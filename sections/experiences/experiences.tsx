@@ -12,9 +12,10 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, OverlayTrigger, Tooltip } from "react-bootstrap";
 
-import { JobProps } from "./about/statistics";
-import { ProjectProps } from "./works/works";
-import { ClientProps } from "./clients";
+import { JobProps } from "../about/statistics";
+import { ProjectProps } from "../works/works";
+import { ClientProps } from "../clients";
+import ExperienceDetailsCollapse from "./experienceDetails";
 
 interface props {
   home?: boolean;
@@ -67,7 +68,7 @@ const CareerSection = async ({ home }: props) => {
                   key={i}
                 >
                   <div className="timeline-panel bg-light row">
-                    <div className="col-lg-12">
+                    <div className="col-12">
                       <small
                         className={
                           "text-muted d-block " +
@@ -78,7 +79,7 @@ const CareerSection = async ({ home }: props) => {
                       </small>
                     </div>
 
-                    <div className="col-lg-12">
+                    <div className="col-12">
                       <Typography
                         size={5}
                         color="dark"
@@ -137,19 +138,13 @@ const CareerSection = async ({ home }: props) => {
                       </Typography>
                     </div>
 
-                    <div className="col">
-                      {description && (
-                        <OverlayTrigger
-                          overlay={<Tooltip>{description}</Tooltip>}
-                        >
-                          <Typography size={6} color="info">
-                            <FontAwesomeIcon icon={faInfoCircle} /> Details
-                          </Typography>
-                        </OverlayTrigger>
-                      )}
-                    </div>
+                    {description && (
+                      <div className="col-12">
+                        <ExperienceDetailsCollapse description={description} />
+                      </div>
+                    )}
 
-                    <div className="col-lg-12">
+                    <div className="col-12">
                       {projects.length > 0 && (
                         <Typography size={6} color="info" className="mt-3">
                           Projects |

@@ -10,7 +10,7 @@ export interface JobProps {
   title: string;
   jobs: {
     company: string;
-    description: string;
+    description: string[];
     monthsCount: number;
     period: string;
     projectsCount: number;

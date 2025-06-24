@@ -174,7 +174,13 @@
       "category": "Web Apps",
       "comingSoon": true,
       "company": "AgileTz",
-      "description": "A solely developed frontend app, totally new / from scratch for Jordan's unified government services portal of 'Sanad'.",
+      "description": "Sanad is Jordan’s national gateway to digital government services. Built the frontend from scratch and maintained it as the only frontend developer.",
+      "details": [
+        "Delivered a responsive, modular frontend interface supporting various ministries and services.",
+        "Maintained accessibility, performance, and UX consistency across a growing number of services.",
+        "Collaborated closely with backend and DevOps teams to ensure seamless API integrations.",
+        "Contributed to UI/UX design decisions with the PM for maximum citizen engagement."
+      ],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/20.jpg?alt=media",
       "importanceOrder": 29,
       "role": "Frontend Web Dev",
@@ -197,7 +203,13 @@
     {
       "category": "Web Apps",
       "company": "AgileTz",
-      "description": "Led the frontend development of Jordan's Department of Lands and Survey Portal, beside some backend development.",
+      "description": "Led the frontend development of DLS web platform, digitizing public land services for the Jordanian governmental Department of Lands and Survey",
+      "details": [
+        "Built complex, dynamic forms and search interfaces for real estate, land registry, and title services.",
+        "Led a small frontend team while handling primary development tasks.",
+        "Integrated Express.js backend for lightweight data handling and API support.",
+        "Directly contributed to UX alongside the PM and stakeholders."
+      ],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/14.jpg?alt=media",
       "importanceOrder": 28,
       "role": "Full-Stack Dev",
@@ -222,7 +234,14 @@
       "category": "Web Apps",
       "comingSoon": true,
       "company": "AlembicSoft",
-      "description": "Totally covered the frontend development beside significant backend work.",
+      "description": "Semesteer is a full-featured School Information System (SIS) SaaS platform. Superheaded the project from concept to deployment — including client interviews, UX/UI design, architecture, development, and production delivery.",
+      "details": [
+        "Designed and implemented a multi-tenant architecture allowing each school to have isolated data environments.",
+        "Built core modules including student profiles, course management, attendance, fees, results, and parent portals.",
+        "Developed role-based access control and school-specific branding capabilities.",
+        "Integrated PDF generation, notifications, analytics dashboards, and support for both English and Arabic languages.",
+        "Optimized for AWS deployment with CI/CD, Docker, and secure configuration."
+      ],
       "designed": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/19.jpg?alt=media",
       "importanceOrder": 27,
@@ -253,7 +272,14 @@
       "category": "Web Apps",
       "comingSoon": false,
       "company": "Shai",
-      "description": "Sole full-stack development of Saudi Public / Government Unified Platform For Nonprofit Organizations.",
+      "description": "Mustaheq is a government-backed unified platform enabling non-profit organizations in Saudi Arabia to coordinate, streamline operations, and manage beneficiaries. Led the project end-to-end as full-stack developer and tech lead.",
+      "details": [
+        "Designed and built the platform architecture from scratch using NestJS (backend) and ReactJS (frontend).",
+        "Developed modules for beneficiary management, eligibility tracking, and coordination across multiple government bodies.",
+        "Implemented role-based access for government officials, NGOs, and auditors with strict data permissions.",
+        "Led a small cross-functional team and collaborated closely with product management and design.",
+        "Ensured compliance with Saudi government digital infrastructure standards and data security requirements."
+      ],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/29.jpg?alt=media",
       "importanceOrder": 27,
       "role": "Full-Stack Dev",
@@ -279,7 +305,8 @@
       "comingSoon": true,
       "company": "Shai",
       "hide": true,
-      "description": "Sole full-stack development of Saudi Public / Government Search-Engine For Nonprofit Organizations.",
+      "description": "Mustaheq is a government-backed unified platform enabling non-profit organizations in Saudi Arabia to coordinate, streamline operations, and manage beneficiaries. Led the project end-to-end as full-stack developer and tech lead.",
+      "details": [],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
       "importanceOrder": 28,
       "role": "Full-Stack Dev",
@@ -305,6 +332,7 @@
       "comingSoon": false,
       "company": "Logatta",
       "description": "Contributed to the frontend development effort.",
+      "details": [],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/21.jpg?alt=media",
       "importanceOrder": 26,
       "role": "Frontend Web Dev",
@@ -327,7 +355,12 @@
     {
       "category": "Web Apps",
       "company": "ArabWork",
-      "description": "Led the frontend work.",
+      "description": "Trellah is a logistics marketplace for commercial and personal shipments via trucks. Was the lead frontend developer working under a senior full-stack developer.",
+      "details": [
+        "Developed interactive UIs for both shippers and drivers, including map and order tracking components.",
+        "Implemented responsive dashboards for dispatchers and logistics coordinators.",
+        "Collaborated closely with backend engineer for real-time data handling and authentication flows."
+      ],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/16.jpg?alt=media",
       "importanceOrder": 25,
       "role": "Frontend Web Dev",
@@ -349,7 +382,13 @@
     {
       "category": "Web Apps",
       "company": "Luxtag",
-      "description": "Led the frontend development and UI/UX execution.",
+      "description": "BrandTag is a blockchain-based product verification platform. Spent 6 months in full-stack development before transitioning to lead frontend responsibilities.",
+      "details": [
+        "Integrated NEM blockchain APIs for tracking and verifying unique product tags.",
+        "Built interfaces for brand owners and consumers to validate product authenticity.",
+        "Created QR-scanning features and dashboards to visualize product movement.",
+        "Led refactoring of the frontend into modular, reusable components using React.js."
+      ],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/11.jpg?alt=media",
       "importanceOrder": 24,
       "role": "Frontend Web Dev",
@@ -376,6 +415,7 @@
       "category": "Web Apps",
       "company": "Open Source",
       "description": "Own product idea, executed from ideation, development to deployment.",
+      "details": [],
       "designed": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/28.png?alt=media",
       "importanceOrder": 23,
@@ -403,6 +443,7 @@
       "comingSoon": true,
       "company": "Open Source",
       "description": "Own product idea, execution is in-progress by supervised junior developers.",
+      "details": [],
       "designed": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/24.jpg?alt=media",
@@ -429,6 +470,7 @@
       "category": "Web Apps",
       "company": "AIS",
       "description": "Executed from customer needs identification, development to deployment.",
+      "details": [],
       "designed": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/8.jpg?alt=media",
@@ -454,6 +496,7 @@
       "category": "Web Apps",
       "company": "AIS",
       "description": "Executed from customer needs identification, development to deployment.",
+      "details": [],
       "designed": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/15.jpg?alt=media",
@@ -483,6 +526,7 @@
       "hide": true,
       "company": "Logatta",
       "description": "A solely developed frontend app, totally new / from scratch.",
+      "details": [],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/22.jpg?alt=media",
       "importanceOrder": 19,
       "role": "Frontend Web Dev",
@@ -508,6 +552,7 @@
       "hide": true,
       "company": "Freelance",
       "description": "A solely developed frontend app, totally new / from scratch.",
+      "details": [],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/26.jpg?alt=media",
       "importanceOrder": 18,
       "role": "Frontend Web Dev",
@@ -532,6 +577,7 @@
       "category": "Web Apps",
       "company": "Open Source",
       "description": "A system for school / university students' internship progress tracking & management.",
+      "details": [],
       "designed": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/13.jpg?alt=media",
@@ -563,6 +609,7 @@
       "comingSoon": true,
       "company": "Freelance",
       "description": "Education content & teacher-student communication system.",
+      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/9.jpg?alt=media",
       "importanceOrder": 16,
@@ -586,6 +633,7 @@
       "category": "Web Apps",
       "company": "Open Source",
       "description": "Own product idea, execution is in-progress.",
+      "details": [],
       "designed": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
@@ -613,6 +661,7 @@
       "comingSoon": true,
       "company": "Open Source",
       "description": "Own product idea, executed from ideation, development to deployment.",
+      "details": [],
       "designed": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/7.jpg?alt=media",
@@ -641,6 +690,7 @@
       "category": "Web Apps",
       "company": "Open Source",
       "description": "Own product idea, execution is in-progress by supervised junior developers.",
+      "details": [],
       "designed": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
@@ -667,7 +717,12 @@
       "category": "Web Apps",
       "comingSoon": true,
       "company": "Freelance",
-      "description": "Executed from customer needs identification, development to deployment.",
+      "description": "Rasmi & Kiwan is Jordan-based regional engineering consulting firm. Needed an internal platform to manage HR & project-management matters.",
+      "details": [
+        "Built core modules including staff profiles, project management, attendance, and financial data.",
+        "Developed role-based access control and branding customization capabilities.",
+        "Optimized for AWS deployment with CI/CD, Docker, and secure configuration."
+      ],
       "designed": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/23.jpg?alt=media",
@@ -696,6 +751,7 @@
       "comingSoon": false,
       "company": "Freelance",
       "description": "Simple individual's professional website.",
+      "details": [],
       "designed": true,
       "hide": true,
       "foc": true,
@@ -724,6 +780,7 @@
       "comingSoon": false,
       "company": "Freelance",
       "description": "Simple individual's professional website.",
+      "details": [],
       "designed": true,
       "foc": true,
       "hide": true,
@@ -752,6 +809,7 @@
       "comingSoon": false,
       "company": "Freelance",
       "description": "Simple clients data management portal.",
+      "details": [],
       "designed": true,
       "foc": true,
       "hide": true,
@@ -779,6 +837,7 @@
       "comingSoon": true,
       "company": "Freelance",
       "description": "Simple company's professional website.",
+      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/27.jpg?alt=media",
       "importanceOrder": 9,
@@ -805,6 +864,7 @@
       "comingSoon": false,
       "company": "Freelance",
       "description": "Simple individual's professional website.",
+      "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/12.jpg?alt=media",
@@ -831,6 +891,7 @@
       "comingSoon": false,
       "company": "Freelance",
       "description": "Simple company's professional website.",
+      "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/17.jpg?alt=media",
@@ -857,6 +918,7 @@
       "comingSoon": true,
       "company": "Freelance",
       "description": "Simple company's professional website.",
+      "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/18.jpg?alt=media",
@@ -880,6 +942,7 @@
       "category": "Landing Pages",
       "company": "Freelancer",
       "description": "Simple company's professional website.",
+      "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/1.jpg?alt=media",
@@ -900,6 +963,7 @@
       "category": "Landing Pages",
       "company": "Freelancer",
       "description": "Simple company's professional website.",
+      "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/6.jpg?alt=media",
@@ -919,6 +983,7 @@
       "category": "Landing Pages",
       "company": "AIS",
       "description": "Simple company's professional website.",
+      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/2.jpg?alt=media",
       "importanceOrder": 3,
@@ -943,6 +1008,7 @@
       "category": "Landing Pages",
       "company": "Freelancer",
       "description": "Simple company's professional website.",
+      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/4.jpg?alt=media",
       "importanceOrder": 2,
@@ -962,6 +1028,7 @@
       "category": "Landing Pages",
       "company": "Freelancer",
       "description": "Simple company's professional website.",
+      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/3.jpg?alt=media",
       "importanceOrder": 1,
@@ -1199,7 +1266,12 @@
       "jobs": [
         {
           "company": "Shai",
-          "description": "Sole full-stack developer for one SaaS Saudi-based project.",
+          "description": [
+            "Acted as tech lead for the core product, overseeing architecture, development, and technical direction.",
+            "Supervised team members across the stack, ensuring code quality, delivery timelines, and scalable practices.",
+            "Collaborated closely with the UX/UI designer, heavily contributing to product vision and user experience.",
+            "Led implementation of frontend and backend features, focusing on performance, usability, and maintainability."
+          ],
           "location": "Jordan",
           "monthsCount": 3,
           "period": "May 2025 - Current",
@@ -1210,7 +1282,12 @@
         },
         {
           "company": "AlembicSoft",
-          "description": "I didn't only develop, I supervised the work of whole team.",
+          "description": [
+            "Owned the entire product lifecycle from requirement gathering to system architecture, development, testing, and deployment.",
+            "Designed intuitive user interfaces and crafted scalable backend systems tailored to client needs.",
+            "Led discussions with stakeholders to align technical solutions with business goals.",
+            "Delivered full-stack applications with a strong focus on performance and user-centric design."
+          ],
           "location": "Jordan",
           "monthsCount": 17,
           "period": "Jul 2023 - Apr 2025",
@@ -1221,7 +1298,10 @@
         },
         {
           "company": "Logatta",
-          "description": "",
+          "description": [
+            "Lead frontend developer for an education SaaS product as a freelancer, responsible for the entire UI codebase.",
+            "Implemented modular, testable components and enhanced the UI performance across key modules."
+          ],
           "location": "Jordan",
           "monthsCount": 5,
           "period": "Aug - Dec 2023",
@@ -1232,7 +1312,11 @@
         },
         {
           "company": "Deloitte",
-          "description": "",
+          "description": [
+            "Continued working on active AgileTz projects following the acquisition by Deloitte.",
+            "Contributed to delivery processes and project handoffs with minimal disruption to ongoing development.",
+            "Departed due to a required overseas relocation that was not feasible to meet."
+          ],
           "location": "Jordan",
           "monthsCount": 2,
           "period": "Jun - Jul 2023",
@@ -1243,7 +1327,11 @@
         },
         {
           "company": "AgileTz",
-          "description": "Main full-stack developer for one project, sole frontend developer for another.",
+          "description": [
+            "Sole frontend developer for Sanad, Jordan’s unified e-services web platform, ensuring consistent performance and UI/UX quality.",
+            "Led frontend development for the DLS project, working closely with the project manager and actively shaping the user experience.",
+            "Managed architecture, reusable components, and development timelines for high-impact government services"
+          ],
           "location": "Jordan",
           "monthsCount": 10,
           "period": "Aug 2022 - May 2023",
@@ -1254,7 +1342,7 @@
         },
         {
           "company": "ArabWork",
-          "description": "",
+          "description": [],
           "location": "Jordan",
           "monthsCount": 2,
           "period": "Jun - Aug 2022",
@@ -1265,7 +1353,11 @@
         },
         {
           "company": "Open Source",
-          "description": "Products built for personal needs and technologies adapting purposes, published for others to contribute and use freely.",
+          "description": [
+            "Solved many daily-life challenges with end-to-end opens-ource products in various industries and life aspects.",
+            "Led the development of products, supervised and reviewed others’ development results.",
+            "Used it as an approach to adopt, absorb and test new development technologies & frameworks."
+          ],
           "location": "Jordan",
           "period": "Jan 2022 - Present",
           "title": "Architect & Developer",
@@ -1273,7 +1365,11 @@
         },
         {
           "company": "Luxtag",
-          "description": "Main full-stack developer, second in-command for team coordination.",
+          "description": [
+            "Lead frontend developer for a blockchain-based SaaS product, responsible for the entire UI codebase.",
+            "Served as second-in-command for the development team, covering team lead responsibilities during absence.",
+            "Implemented modular, testable components and enhanced the UI performance across key modules."
+          ],
           "location": "Malaysia",
           "monthsCount": 12,
           "period": "Nov 2020 - Oct 2021",
@@ -1284,7 +1380,11 @@
         },
         {
           "company": "AIS",
-          "description": "Sole full-stack developer for custom needs. Architected, planned, and executed.",
+          "description": [
+            "Owned the full lifecycle of the school’s internal systems — from requirements collection, UX/UI design, full-stack development, to testing and deployment.",
+            "Architected and built an end-to-end platform used daily by students, staff, and management.",
+            "Delivered a robust product with minimal technical debt by emphasizing clean code and modular design."
+          ],
           "location": "Malaysia",
           "monthsCount": 12,
           "period": "Sep 2019 - Aug 2020",
@@ -1295,7 +1395,11 @@
         },
         {
           "company": "Freelance",
-          "description": "",
+          "description": [
+            "Architected and built end-to-end opens-source and on-demand platforms used daily by various stakeholders.",
+            "Spearheaded the development of introductory, online fronts and landing pages for many organizations and individuals.",
+            "Delivered robust results with minimal technical debt by emphasizing clean codes and modular designs."
+          ],
           "location": "Malaysia & Jordan",
           "period": "Sep 2019 - Present",
           "title": "Full-Stack Developer",
@@ -1303,7 +1407,11 @@
         },
         {
           "company": "Freelancer",
-          "description": "",
+          "description": [
+            "Architected and built end-to-end opens-source and on-demand platforms used daily by various stakeholders.",
+            "Spearheaded the development of introductory, online fronts and landing pages for many organizations and individuals.",
+            "Delivered robust results with minimal technical debt by emphasizing clean codes and modular designs."
+          ],
           "location": "Malaysia",
           "period": "Oct 2015 - Aug 2019",
           "title": "Frontend Developer",

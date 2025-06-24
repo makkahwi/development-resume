@@ -57,13 +57,17 @@ const ProjectDetailsModal = ({ project }: { project: ProjectProps }) => {
           <Row>
             <Col
               lg={6}
-              className="justify-content-center overflow-y-hidden"
+              className="justify-content-center overflow-hidden"
               style={{ maxHeight: "95vh" }}
             >
               <img src={open.image} width="100%" />
             </Col>
 
-            <Col lg={6}>
+            <Col
+              lg={6}
+              className="overflow-y-auto"
+              style={{ maxHeight: "95vh" }}
+            >
               <Table borderless>
                 <tbody>
                   <tr className="align-middle">
@@ -138,6 +142,22 @@ const ProjectDetailsModal = ({ project }: { project: ProjectProps }) => {
                       <Typography size={6} className="lh-lg">
                         {open.description}
                       </Typography>
+                    </td>
+                  </tr>
+
+                  <tr className="align-middle">
+                    <td></td>
+
+                    <td>
+                      <ol>
+                        {open.details?.map((point, i) => (
+                          <li key={i}>
+                            <Typography size={6} className="lh-lg">
+                              {point}
+                            </Typography>
+                          </li>
+                        ))}
+                      </ol>
                     </td>
                   </tr>
 
