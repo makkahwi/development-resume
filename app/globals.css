@@ -128,6 +128,36 @@ ul.timeline-3::before {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 767px) {
+  .timeline-item,
+  .timeline-inverted {
+    width: 100%;
+    float: none;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+  .timeline-item::before,
+  .timeline-inverted::before {
+    left: 50% !important;
+    transform: translateX(-50%);
+    right: auto;
+  }
+
+  .timeline-panel {
+    text-align: left !important;
+    width: 100%;
+  }
+
+  ul.timeline-3::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;

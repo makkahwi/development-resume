@@ -67,7 +67,7 @@ const CareerSection = async ({ home }: props) => {
                   key={i}
                 >
                   <div className="timeline-panel row">
-                    <div className="col-md-12">
+                    <div className="col-lg-12">
                       <small
                         className={
                           "text-muted d-block " +
@@ -78,8 +78,8 @@ const CareerSection = async ({ home }: props) => {
                       </small>
                     </div>
 
-                    <div className="col-md-12">
-                      <h5 className="mt-3 mb-4">
+                    <div className="col-lg-12">
+                      <h5 className={owner?.img ? "" : "mt-3 mb-4"}>
                         {title} @{" "}
                         {website ? (
                           <a
@@ -95,20 +95,20 @@ const CareerSection = async ({ home }: props) => {
                       </h5>
                     </div>
 
-                    <div className="col-md-3">
+                    <div className="col">
                       <Typography size={6} color="info">
                         <FontAwesomeIcon icon={faClock} /> {type}
                       </Typography>
                     </div>
 
-                    <div className="col-md-3">
+                    <div className="col">
                       <Typography size={6} color="info">
                         <FontAwesomeIcon icon={faLocationPin} /> {location}
                       </Typography>
                     </div>
 
-                    <div className="col-md-3">
-                      <Typography size={6} color="info" className="font">
+                    <div className="col">
+                      <Typography size={6} color="info">
                         <OverlayTrigger
                           overlay={
                             <Tooltip>
@@ -133,7 +133,7 @@ const CareerSection = async ({ home }: props) => {
                       </Typography>
                     </div>
 
-                    <div className="col-md-3">
+                    <div className="col">
                       {description && (
                         <OverlayTrigger
                           overlay={<Tooltip>{description}</Tooltip>}
@@ -145,23 +145,25 @@ const CareerSection = async ({ home }: props) => {
                       )}
                     </div>
 
-                    <div className="col-md-12">
+                    <div className="col-lg-12">
                       {projects.length > 0 && (
                         <Typography size={6} color="info" className="mt-3">
-                          Projects |{" "}
-                          {projects.map(({ title, shortTitle }, j) => (
-                            <OverlayTrigger
-                              key={j}
-                              overlay={<Tooltip>{title}</Tooltip>}
-                            >
-                              <a
-                                href={`#${title.replaceAll(" ", "_")}`}
-                                className="text-decoration-none me-2"
+                          Projects |
+                          <span className="d-inline-flex flex-wrap gap-2 ms-2">
+                            {projects.map(({ title, shortTitle }, j) => (
+                              <OverlayTrigger
+                                key={j}
+                                overlay={<Tooltip>{title}</Tooltip>}
                               >
-                                {shortTitle || title}
-                              </a>
-                            </OverlayTrigger>
-                          ))}
+                                <a
+                                  href={`#${title.replaceAll(" ", "_")}`}
+                                  className="text-decoration-none"
+                                >
+                                  {shortTitle || title}
+                                </a>
+                              </OverlayTrigger>
+                            ))}
+                          </span>
                         </Typography>
                       )}
                     </div>

@@ -7,7 +7,10 @@ export default async function PageNavigator({
 }) {
   return (
     <Fragment>
-      <div className="position-fixed top-50 start-0 translate-middle-y d-flex flex-column z-3">
+      <div
+        className="position-fixed top-50 start-0 translate-middle-y d-flex flex-column"
+        style={{ zIndex: 4 }}
+      >
         {[...sections, { id: "contact", label: "Contact", icon: faMobile }].map(
           ({ id, label, icon }, index) => (
             <a
