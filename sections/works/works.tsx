@@ -76,6 +76,7 @@ const WorksSection = async ({ openSource, foc, home }: props) => {
                 technologies,
                 role,
                 type,
+                date,
               },
               i
             ) => (
@@ -98,6 +99,7 @@ const WorksSection = async ({ openSource, foc, home }: props) => {
                   technologies={technologies}
                   role={role}
                   type={type}
+                  date={date}
                   openSource={openSource}
                   dark
                   short={home}

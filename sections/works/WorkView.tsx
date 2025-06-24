@@ -21,6 +21,7 @@ const WorkView = ({
   role = "",
   technologies = [""],
   type = "",
+  date = "",
   company = "",
   openSource = false,
   dark = false,
@@ -64,6 +65,7 @@ const WorkView = ({
 
           <ProjectDetailsModal
             project={{
+              date,
               image,
               title,
               description,
@@ -165,6 +167,7 @@ const WorkView = ({
           <Col xs={12}>
             <ProjectDetailsModal
               project={{
+                date,
                 image,
                 title,
                 description,
