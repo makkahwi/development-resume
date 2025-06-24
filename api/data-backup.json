@@ -2,74 +2,74 @@
   "clients": [
     {
       "img": "modee.png",
-      "name": "Modee",
       "link": "https://www.modee.gov.jo/",
+      "name": "Modee",
       "prominent": true
     },
     {
       "img": "agile.png",
-      "name": "AgileTz",
       "link": "https://www.startupsjo.com/en/Pages/CustomPages/Startup/409",
+      "name": "AgileTz",
       "prominent": true
     },
     {
       "img": "saudi.png",
-      "name": "HRSD",
       "link": "https://www.hrsd.gov.sa/",
+      "name": "HRSD",
       "prominent": true
     },
     {
       "img": "arabwork.png",
-      "name": "ArabWork",
       "link": "https://www.arabwork.com/",
+      "name": "ArabWork",
       "prominent": true
     },
     {
       "img": "deloitte.png",
-      "name": "Deloitte",
       "link": "https://www.deloitte.com/",
+      "name": "Deloitte",
       "prominent": true
     },
     {
       "img": "capitalcloud.png",
-      "name": "Capital Cloud",
       "link": "https://capitalcloud.sa/",
+      "name": "Capital Cloud",
       "prominent": true
     },
     {
       "img": "dls.png",
-      "name": "DLS",
       "link": "https://www.dls.gov.jo/",
+      "name": "DLS",
       "prominent": true
     },
     {
       "img": "shai.png",
-      "name": "Shai",
       "link": "https://www.shai.sa/ar",
+      "name": "Shai",
       "prominent": true
     },
     {
       "img": "fatima.png",
-      "name": "Fatima",
       "link": "https://nutrifatima.com/",
+      "name": "Fatima",
       "prominent": false
     },
     {
       "img": "logatta.png",
-      "name": "Logatta",
       "link": "https://www.logatta.com/",
+      "name": "Logatta",
       "prominent": true
     },
     {
       "img": "luxtag.png",
-      "name": "Luxtag",
       "link": "https://www.luxtag.io/",
+      "name": "Luxtag",
       "prominent": true
     },
     {
       "img": "r&k.png",
-      "name": "Rasmi & Kiwan",
       "link": "http://rasmiandkiwan.com/",
+      "name": "Rasmi & Kiwan",
       "prominent": true
     }
   ],
@@ -1851,5 +1851,27 @@
         "link": "https://www.linkedin.com/in/ahmad-alkharfan"
       }
     ]
+  ],
+  "trainees": [
+    {
+      "img": "suhaib.jpg",
+      "link": "https://www.linkedin.com/in/suhib-mourshid",
+      "name": "Suhaib Mourshid"
+    },
+    {
+      "img": "kharfan.jpeg",
+      "link": "https://www.linkedin.com/in/ahmad-alkharfan",
+      "name": "Ahmad Alkharfan"
+    },
+    {
+      "img": "bakhadher.jpg",
+      "link": "https://www.linkedin.com/in/mohammed-abdullah-omar-ba-khadher",
+      "name": "Mohammed BaKhadher"
+    },
+    {
+      "img": "mazen.jpeg",
+      "link": "https://www.linkedin.com/in/mazen-adel-bab141258",
+      "name": "Mazen Adel"
+    }
   ]
 }

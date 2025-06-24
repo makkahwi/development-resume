@@ -67,6 +67,7 @@ const getJobsApi = () => api.get("jobs.json");
 const getEducationApi = () => api.get("education.json");
 const getClientsApi = () => api.get("clients.json");
 const getTestimonialsApi = () => api.get("testimonials.json");
+const getTraineesApi = () => api.get("trainees.json");
 const getContactsApi = () => api.get("contacts.json");
 const getSkillsApi = () => api.get("skills.json");
 const getProjectsApi = () => api.get("projects.json");
@@ -106,6 +107,12 @@ export const getContacts = cache(async () => {
 
 export const getTestimonials = cache(async () => {
   const { data } = await getTestimonialsApi();
+
+  return data;
+});
+
+export const getTrainees = cache(async () => {
+  const { data } = await getTraineesApi();
 
   return data;
 });

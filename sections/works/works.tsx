@@ -50,7 +50,7 @@ const WorksSection = async ({ openSource, foc, home }: props) => {
           ? "Most Significant"
           : "Samples"
       }
-      color={home ? "light" : "light"}
+      color={foc ? "white" : "light"}
       id={foc ? "foc" : "works"}
     >
       <Row>

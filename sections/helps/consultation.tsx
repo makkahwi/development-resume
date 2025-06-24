@@ -17,7 +17,7 @@ const ConsultationSection = async ({ home }: props) => {
       title="Product Development Consultation"
       subtitle="Need Help Starting Your Software Product?"
       id="consultation"
-      color="light"
+      color="white"
     >
       <Typography
         size={4}
