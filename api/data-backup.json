@@ -251,7 +251,7 @@
     },
     {
       "category": "Web Apps",
-      "comingSoon": true,
+      "comingSoon": false,
       "company": "Shai",
       "description": "Sole full-stack development of Saudi Public / Government Unified Platform For Nonprofit Organizations.",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/29.jpg?alt=media",
@@ -273,6 +273,32 @@
       "date": 2025,
       "type": "Public / Governmental Services",
       "url": "http://mustaheq.org/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "Shai",
+      "hide": true,
+      "description": "Sole full-stack development of Saudi Public / Government Search-Engine For Nonprofit Organizations.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
+      "importanceOrder": 28,
+      "role": "Full-Stack Dev",
+      "shortTitle": "Mus",
+      "technologies": [
+        "Next.Js",
+        "CSS",
+        "TailwindCSS",
+        "Node.Js",
+        "ElasticSearch",
+        "Nest.Js",
+        "TypeScript",
+        "JSON",
+        "REST API"
+      ],
+      "timeOrder": 30,
+      "title": "Mustaheq Search-Engine",
+      "date": 2025,
+      "type": "Public / Governmental Services"
     },
     {
       "category": "Web Apps",
@@ -454,6 +480,7 @@
     {
       "category": "Web Apps",
       "comingSoon": true,
+      "hide": true,
       "company": "Logatta",
       "description": "A solely developed frontend app, totally new / from scratch.",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/22.jpg?alt=media",
@@ -478,6 +505,7 @@
     {
       "category": "Web Apps",
       "comingSoon": true,
+      "hide": true,
       "company": "Freelance",
       "description": "A solely developed frontend app, totally new / from scratch.",
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/26.jpg?alt=media",
@@ -586,6 +614,7 @@
       "company": "Open Source",
       "description": "Own product idea, executed from ideation, development to deployment.",
       "designed": true,
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/7.jpg?alt=media",
       "importanceOrder": 14,
       "openSource": true,
@@ -668,6 +697,7 @@
       "company": "Freelance",
       "description": "Simple individual's professional website.",
       "designed": true,
+      "hide": true,
       "foc": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/25.jpg?alt=media",
       "importanceOrder": 11,
@@ -724,6 +754,7 @@
       "description": "Simple clients data management portal.",
       "designed": true,
       "foc": true,
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/30.jpg?alt=media",
       "importanceOrder": 10,
       "role": "Frontend Web Dev",
@@ -1569,7 +1600,7 @@
       "subskills": [
         "npm",
         "yarn",
-        "strapi.io"
+        "ElasticSearch"
       ],
       "website": "https://nodejs.org/"
     },
