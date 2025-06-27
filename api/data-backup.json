@@ -174,6 +174,7 @@
       "category": "Web Apps",
       "comingSoon": true,
       "company": "AgileTz",
+      "date": 2022,
       "description": "Sanad is Jordan’s national gateway to digital government services. Built the frontend from scratch and maintained it as the only frontend developer.",
       "details": [
         "Delivered a responsive, modular frontend interface supporting various ministries and services.",
@@ -183,6 +184,7 @@
       ],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/20.jpg?alt=media",
       "importanceOrder": 29,
+      "location": "Jordan",
       "role": "Frontend Web Dev",
       "shortTitle": "Snd",
       "technologies": [
@@ -195,14 +197,14 @@
         "REST API",
         "Docker"
       ],
-      "date": 2022,
       "timeOrder": 15,
       "title": "Sanad",
-      "type": "Public / Governmental Services"
+      "type": "Public / Governmental"
     },
     {
       "category": "Web Apps",
       "company": "AgileTz",
+      "date": 2021,
       "description": "Led the frontend development of DLS web platform, digitizing public land services for the Jordanian governmental Department of Lands and Survey",
       "details": [
         "Built complex, dynamic forms and search interfaces for real estate, land registry, and title services.",
@@ -212,6 +214,7 @@
       ],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/14.jpg?alt=media",
       "importanceOrder": 28,
+      "location": "Jordan",
       "role": "Full-Stack Dev",
       "technologies": [
         "React.Js",
@@ -226,15 +229,16 @@
       ],
       "timeOrder": 14,
       "title": "DLS",
-      "date": 2021,
-      "type": "Public / Governmental Services",
+      "type": "Public / Governmental",
       "url": "https://portal.dls.gov.jo/"
     },
     {
       "category": "Web Apps",
       "comingSoon": true,
       "company": "AlembicSoft",
-      "description": "Semesteer is a full-featured School Information System (SIS) SaaS platform. Superheaded the project from concept to deployment — including client interviews, UX/UI design, architecture, development, and production delivery.",
+      "date": 2024,
+      "description": "A full-featured School Information System (SIS) SaaS platform. Superheaded the project from concept to deployment — including client interviews, UX/UI design, architecture, development, and production delivery.",
+      "designed": true,
       "details": [
         "Designed and implemented a multi-tenant architecture allowing each school to have isolated data environments.",
         "Built core modules including student profiles, course management, attendance, fees, results, and parent portals.",
@@ -242,9 +246,9 @@
         "Integrated PDF generation, notifications, analytics dashboards, and support for both English and Arabic languages.",
         "Optimized for AWS deployment with CI/CD, Docker, and secure configuration."
       ],
-      "designed": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/19.jpg?alt=media",
       "importanceOrder": 27,
+      "location": "Jordan",
       "role": "Full-Stack Dev",
       "shortTitle": "Sem",
       "technologies": [
@@ -263,16 +267,16 @@
         "AWS"
       ],
       "timeOrder": 18,
-      "date": 2024,
       "title": "Semesteer",
-      "type": "B2B Education SaaS System",
+      "type": "Education",
       "url": "https://semesteer.com/"
     },
     {
       "category": "Web Apps",
       "comingSoon": false,
       "company": "Shai",
-      "description": "Mustaheq is a government-backed unified platform enabling non-profit organizations in Saudi Arabia to coordinate, streamline operations, and manage beneficiaries. Led the project end-to-end as full-stack developer and tech lead.",
+      "date": 2025,
+      "description": "A government-backed unified platform enabling non-profit organizations in Saudi Arabia to coordinate, streamline operations, and manage beneficiaries. Led the project end-to-end as full-stack developer and tech lead.",
       "details": [
         "Designed and built the platform architecture from scratch using NestJS (backend) and ReactJS (frontend).",
         "Developed modules for beneficiary management, eligibility tracking, and coordination across multiple government bodies.",
@@ -282,6 +286,7 @@
       ],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/29.jpg?alt=media",
       "importanceOrder": 27,
+      "location": "Saudi Arabia",
       "role": "Full-Stack Dev",
       "shortTitle": "Must",
       "technologies": [
@@ -289,6 +294,7 @@
         "CSS",
         "Bootstrap",
         "Node.Js",
+        "MicroServices",
         "Nest.Js",
         "TypeScript",
         "JSON",
@@ -296,19 +302,26 @@
       ],
       "timeOrder": 29,
       "title": "Mustaheq",
-      "date": 2025,
-      "type": "Public / Governmental Services",
+      "type": "Public / Governmental",
       "url": "http://mustaheq.org/"
     },
     {
       "category": "Web Apps",
       "comingSoon": true,
       "company": "Shai",
+      "date": 2025,
+      "description": "A specialized Arabic search engine to help individuals find relevant Saudi charities & societies, especially those using the Mustaheq portal.",
+      "details": [
+        "It was sort of my own idea to come up with, approved by owner.",
+        "Aimed at simplifying access to aid for recipients and boosting visibility for subscribing charities.",
+        "Public profiles were indexed with essential contact info, eligibility, and activity areas.",
+        "Powered by ElasticSearch and optimized with advanced database indexing for fast and accurate search.",
+        "Included admin tools to manage searchable metadata and optimize search relevance."
+      ],
       "hide": true,
-      "description": "Mustaheq is a government-backed unified platform enabling non-profit organizations in Saudi Arabia to coordinate, streamline operations, and manage beneficiaries. Led the project end-to-end as full-stack developer and tech lead.",
-      "details": [],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
       "importanceOrder": 28,
+      "location": "Saudi Arabia",
       "role": "Full-Stack Dev",
       "shortTitle": "Mus",
       "technologies": [
@@ -324,17 +337,22 @@
       ],
       "timeOrder": 30,
       "title": "Mustaheq Search-Engine",
-      "date": 2025,
-      "type": "Public / Governmental Services"
+      "type": "Public / Governmental"
     },
     {
       "category": "Web Apps",
       "comingSoon": false,
       "company": "Logatta",
-      "description": "Contributed to the frontend development effort.",
-      "details": [],
+      "date": 2023,
+      "description": "A professional e-learning portal focused on entrepreneurship, led by the prominent figure Dr. Maen Al Qatamin.",
+      "details": [
+        "I was the Lead Frontend Developer, owning the design and implementation of the UI using React and Bootstrap.",
+        "Worked closely with the client’s media and education teams to deliver an intuitive, responsive platform.",
+        "Developed video-based course browsing, lesson tracking, and user authentication systems."
+      ],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/21.jpg?alt=media",
       "importanceOrder": 26,
+      "location": "Jordan",
       "role": "Frontend Web Dev",
       "shortTitle": "Ent",
       "technologies": [
@@ -347,15 +365,15 @@
         "REST API"
       ],
       "timeOrder": 16,
-      "title": "Entreviable",
-      "date": 2023,
-      "type": "Education SaaS System",
+      "title": "Entreviable ",
+      "type": "Education",
       "url": "https://entreviable.com"
     },
     {
       "category": "Web Apps",
       "company": "ArabWork",
-      "description": "Trellah is a logistics marketplace for commercial and personal shipments via trucks. Was the lead frontend developer working under a senior full-stack developer.",
+      "date": 2022,
+      "description": "A logistics marketplace for commercial and personal shipments via trucks. Was the lead frontend developer working under a senior full-stack developer.",
       "details": [
         "Developed interactive UIs for both shippers and drivers, including map and order tracking components.",
         "Implemented responsive dashboards for dispatchers and logistics coordinators.",
@@ -363,6 +381,7 @@
       ],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/16.jpg?alt=media",
       "importanceOrder": 25,
+      "location": "Saudi Arabia",
       "role": "Frontend Web Dev",
       "shortTitle": "Tre",
       "technologies": [
@@ -375,14 +394,14 @@
       ],
       "timeOrder": 11,
       "title": "Trellah",
-      "date": 2022,
-      "type": "Ride-Hailing for Goods System",
+      "type": "Ride-Hailing",
       "url": "https://app.trellah.com"
     },
     {
       "category": "Web Apps",
       "company": "Luxtag",
-      "description": "BrandTag is a blockchain-based product verification platform. Spent 6 months in full-stack development before transitioning to lead frontend responsibilities.",
+      "date": 2020,
+      "description": "A blockchain-based product verification platform. Spent 6 months in full-stack development before transitioning to lead frontend responsibilities.",
       "details": [
         "Integrated NEM blockchain APIs for tracking and verifying unique product tags.",
         "Built interfaces for brand owners and consumers to validate product authenticity.",
@@ -391,6 +410,7 @@
       ],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/11.jpg?alt=media",
       "importanceOrder": 24,
+      "location": "Malaysia",
       "role": "Frontend Web Dev",
       "shortTitle": "BT",
       "technologies": [
@@ -403,22 +423,24 @@
         "JSON",
         "REST API",
         "PostgreSQL",
+        "Blockchain",
         "Docker"
       ],
       "timeOrder": 9,
       "title": "BrandTag",
-      "date": 2020,
-      "type": "Blockchain-Powered Brand Protection SaaS App",
+      "type": "Anti-Theft Protection",
       "url": "https://app.brandtag.io/"
     },
     {
       "category": "Web Apps",
       "company": "Open Source",
+      "date": 2024,
       "description": "Own product idea, executed from ideation, development to deployment.",
-      "details": [],
       "designed": true,
+      "details": [],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/28.png?alt=media",
       "importanceOrder": 23,
+      "location": "Jordan",
       "openSource": true,
       "role": "End-to-End Build",
       "shortTitle": "HEAL",
@@ -433,23 +455,24 @@
         "Firebase"
       ],
       "timeOrder": 24,
-      "date": 2024,
       "title": "Healthy Eating and Lifestyle Tracker",
-      "type": "Health Traction SaaS App",
+      "type": "Healthcare",
       "url": "https://heal-tracker.vercel.app/"
     },
     {
       "category": "Web Apps",
       "comingSoon": true,
       "company": "Open Source",
+      "date": 2023,
       "description": "Own product idea, execution is in-progress by supervised junior developers.",
-      "details": [],
       "designed": true,
+      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/24.jpg?alt=media",
       "importanceOrder": 22,
+      "location": "Jordan",
       "openSource": true,
-      "role": "System Architecture & Team Oversight",
+      "role": "Product Ownership",
       "shortTitle": "ANest",
       "technologies": [
         "React.Js",
@@ -462,20 +485,25 @@
         "Firebase"
       ],
       "timeOrder": 19,
-      "date": 2023,
       "title": "AppNest",
-      "type": "Project Management System"
+      "type": "Productivity Management"
     },
     {
       "category": "Web Apps",
       "company": "AIS",
-      "description": "Executed from customer needs identification, development to deployment.",
-      "details": [],
+      "date": 2019,
+      "description": "A student information system (SIS), built during my part-time engagement with AIS School.",
       "designed": true,
+      "details": [
+        "It was my first major Laravel PHP project, which I owned end-to-end — from gathering school requirements to deployment.",
+        "Included features for storing and managing student bio data, academic history, contact info, and documents.",
+        "Designed to reduce paper-based workload and streamline access to student records."
+      ],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/8.jpg?alt=media",
       "importanceOrder": 21,
-      "role": "End-to-End Product Ownership",
+      "location": "Malaysia",
+      "role": "Product Ownership",
       "shortTitle": "Stu",
       "technologies": [
         "HTML",
@@ -488,20 +516,25 @@
         "MySQL"
       ],
       "timeOrder": 7,
-      "date": 2019,
       "title": "AIS Students Portal",
-      "type": "Internal Data-Management Portal"
+      "type": "Productivity Management"
     },
     {
       "category": "Web Apps",
       "company": "AIS",
-      "description": "Executed from customer needs identification, development to deployment.",
-      "details": [],
+      "date": 2020,
+      "description": "A separate system for staff management and productivity tracking, developed for the same client of AIS.",
       "designed": true,
+      "details": [
+        "Implemented using vanilla JavaScript and templating, focused on simplicity and ease of daily use.",
+        "Allowed tracking attendance, reporting activities, and generating role-based overviews.",
+        "Designed for non-technical school staff to interact with effortlessly."
+      ],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/15.jpg?alt=media",
       "importanceOrder": 20,
-      "role": "End-to-End Product Ownership",
+      "location": "Malaysia",
+      "role": "Product Ownership",
       "shortTitle": "Sta",
       "technologies": [
         "React.Js",
@@ -516,19 +549,24 @@
         "MySQL"
       ],
       "timeOrder": 5,
-      "date": 2020,
       "title": "AIS Staff Portal",
-      "type": "Internal Data-Management Portal"
+      "type": "Productivity Management"
     },
     {
       "category": "Web Apps",
       "comingSoon": true,
-      "hide": true,
       "company": "Logatta",
-      "description": "A solely developed frontend app, totally new / from scratch.",
-      "details": [],
+      "date": 2023,
+      "description": "A geographic data visualization tool built for a UK-based client.",
+      "details": [
+        "Aggregated heatmap data of fire incidents across the UK to identify high-risk areas.",
+        "Aimed to support civil defense and fire prevention efforts by highlighting areas in need of increased preparedness.",
+        "Handled map overlays, real-time filters, and interactive data layers using modern JS libraries."
+      ],
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/22.jpg?alt=media",
       "importanceOrder": 19,
+      "location": "UK",
       "role": "Frontend Web Dev",
       "shortTitle": "Cro",
       "technologies": [
@@ -542,19 +580,20 @@
       ],
       "timeOrder": 17,
       "title": "Crosure",
-      "date": 2023,
-      "type": "Specialized Search-Engine App",
+      "type": "Search-Engine",
       "url": "https://commsure.com/"
     },
     {
       "category": "Web Apps",
       "comingSoon": true,
-      "hide": true,
       "company": "Freelance",
+      "date": 2024,
       "description": "A solely developed frontend app, totally new / from scratch.",
       "details": [],
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/26.jpg?alt=media",
       "importanceOrder": 18,
+      "location": "Saudi Arabia",
       "role": "Frontend Web Dev",
       "technologies": [
         "Remix",
@@ -569,21 +608,22 @@
       ],
       "timeOrder": 21,
       "title": "Shwra",
-      "date": 2024,
-      "type": "Service Providers Marketplace",
+      "type": "Marketplace",
       "url": "https://www.shwra.sa/"
     },
     {
       "category": "Web Apps",
       "company": "Open Source",
+      "date": 2022,
       "description": "A system for school / university students' internship progress tracking & management.",
-      "details": [],
       "designed": true,
+      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/13.jpg?alt=media",
       "importanceOrder": 17,
+      "location": "Jordan",
       "openSource": true,
-      "role": "System Architecture & Team Oversight",
+      "role": "Product Ownership",
       "shortTitle": "Tad",
       "technologies": [
         "React.Js",
@@ -599,20 +639,21 @@
         "PostgreSQL"
       ],
       "timeOrder": 10,
-      "date": 2022,
       "title": "Tadreebi",
-      "type": "Internal Data-Management Portal",
+      "type": "Productivity Management",
       "url": "https://tadreebi.netlify.app/"
     },
     {
       "category": "Web Apps",
       "comingSoon": true,
       "company": "Freelance",
+      "date": 2021,
       "description": "Education content & teacher-student communication system.",
       "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/9.jpg?alt=media",
       "importanceOrder": 16,
+      "location": "Malaysia",
       "role": "Full-Stack Dev",
       "shortTitle": "xEdu",
       "technologies": [
@@ -625,19 +666,20 @@
         "REST API"
       ],
       "timeOrder": 9,
-      "date": 2021,
       "title": "xEdu App",
-      "type": "Education SaaS System"
+      "type": "Education"
     },
     {
       "category": "Web Apps",
       "company": "Open Source",
+      "date": 2025,
       "description": "Own product idea, execution is in-progress.",
-      "details": [],
       "designed": true,
+      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
       "importanceOrder": 15,
+      "location": "Jordan",
       "openSource": true,
       "role": "End-to-End Build",
       "technologies": [
@@ -652,7 +694,6 @@
       ],
       "timeOrder": 28,
       "title": "PRICE",
-      "date": 2025,
       "type": "Encyclopedia",
       "url": "https://price-admin.vercel.app/"
     },
@@ -660,12 +701,14 @@
       "category": "Web Apps",
       "comingSoon": true,
       "company": "Open Source",
+      "date": 2022,
       "description": "Own product idea, executed from ideation, development to deployment.",
-      "details": [],
       "designed": true,
+      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/7.jpg?alt=media",
       "importanceOrder": 14,
+      "location": "Jordan",
       "openSource": true,
       "role": "End-to-End Build",
       "shortTitle": "CASH",
@@ -681,20 +724,21 @@
         "Firebase"
       ],
       "timeOrder": 26,
-      "date": 2022,
       "title": "Currencies Archiving & Sharing Hub",
-      "type": "Digital Showroom App",
+      "type": "Showroom",
       "url": "https://cash-hub.vercel.app/"
     },
     {
       "category": "Web Apps",
       "company": "Open Source",
+      "date": 2025,
       "description": "Own product idea, execution is in-progress by supervised junior developers.",
-      "details": [],
       "designed": true,
+      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
       "importanceOrder": 13,
+      "location": "Jordan",
       "openSource": true,
       "role": "End-to-End Build",
       "shortTitle": "FF",
@@ -709,24 +753,25 @@
         "Firebase"
       ],
       "timeOrder": 25,
-      "date": 2025,
       "title": "Family Finance",
-      "type": "Financial Tracking SaaS App"
+      "type": "FinTech"
     },
     {
       "category": "Web Apps",
       "comingSoon": true,
       "company": "Freelance",
+      "date": 2023,
       "description": "Rasmi & Kiwan is Jordan-based regional engineering consulting firm. Needed an internal platform to manage HR & project-management matters.",
+      "designed": true,
       "details": [
         "Built core modules including staff profiles, project management, attendance, and financial data.",
         "Developed role-based access control and branding customization capabilities.",
         "Optimized for AWS deployment with CI/CD, Docker, and secure configuration."
       ],
-      "designed": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/23.jpg?alt=media",
       "importanceOrder": 12,
+      "location": "Jordan",
       "role": "Full-Stack Dev",
       "shortTitle": "R&K",
       "technologies": [
@@ -742,21 +787,22 @@
         "Docker"
       ],
       "timeOrder": 13,
-      "date": 2023,
       "title": "Rasmi & Kiwan",
-      "type": "Internal Data-Management Portal"
+      "type": "Productivity Management"
     },
     {
       "category": "Landing Pages",
       "comingSoon": false,
       "company": "Freelance",
+      "date": 2024,
       "description": "Simple individual's professional website.",
-      "details": [],
       "designed": true,
-      "hide": true,
+      "details": [],
       "foc": true,
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/25.jpg?alt=media",
       "importanceOrder": 11,
+      "location": "Jordan",
       "role": "Frontend Web Dev",
       "shortTitle": "Noor",
       "technologies": [
@@ -770,22 +816,23 @@
         "Firebase"
       ],
       "timeOrder": 23,
-      "date": 2024,
       "title": "Coach Noor Kayyali",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://www.noorkayyali.com/"
     },
     {
       "category": "Landing Pages",
       "comingSoon": false,
       "company": "Freelance",
+      "date": 2025,
       "description": "Simple individual's professional website.",
-      "details": [],
       "designed": true,
+      "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/30.jpg?alt=media",
       "importanceOrder": 10,
+      "location": "Jordan",
       "role": "Frontend Web Dev",
       "shortTitle": "Fat",
       "technologies": [
@@ -799,22 +846,23 @@
         "Firebase"
       ],
       "timeOrder": 27,
-      "date": 2025,
       "title": "Nutritionist Fatima Mohammad",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://nutriFatima.com/"
     },
     {
       "category": "Web Apps",
       "comingSoon": false,
       "company": "Freelance",
+      "date": 2025,
       "description": "Simple clients data management portal.",
-      "details": [],
       "designed": true,
+      "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/30.jpg?alt=media",
       "importanceOrder": 10,
+      "location": "Jordan",
       "role": "Frontend Web Dev",
       "shortTitle": "Cli",
       "technologies": [
@@ -827,20 +875,21 @@
         "Firebase"
       ],
       "timeOrder": 27,
-      "date": 2025,
       "title": "Nutritionist Clients Portal",
-      "type": "Clients Management Portal",
+      "type": "Clients Management",
       "url": "https://portal.nutriFatima.com/"
     },
     {
       "category": "Landing Pages",
       "comingSoon": true,
       "company": "Freelance",
+      "date": 2024,
       "description": "Simple company's professional website.",
       "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/27.jpg?alt=media",
       "importanceOrder": 9,
+      "location": "Saudi Arabia",
       "role": "Frontend Web Dev",
       "shortTitle": "E3",
       "technologies": [
@@ -854,21 +903,22 @@
         "REST API"
       ],
       "timeOrder": 22,
-      "date": 2024,
       "title": "E3 Ventures",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://e3.ventures/"
     },
     {
       "category": "Landing Pages",
       "comingSoon": false,
       "company": "Freelance",
+      "date": 2022,
       "description": "Simple individual's professional website.",
       "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/12.jpg?alt=media",
       "importanceOrder": 8,
+      "location": "Jordan",
       "role": "Frontend Web Dev",
       "shortTitle": "AAM",
       "technologies": [
@@ -881,21 +931,22 @@
         "REST API"
       ],
       "timeOrder": 20,
-      "date": 2022,
       "title": "Dr. Ahmad Abu Mahfouth",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://drahmadabumahfouth.com"
     },
     {
       "category": "Landing Pages",
       "comingSoon": false,
       "company": "Freelance",
+      "date": 2023,
       "description": "Simple company's professional website.",
       "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/17.jpg?alt=media",
       "importanceOrder": 7,
+      "location": "Jordan",
       "role": "Frontend Web Dev",
       "shortTitle": "R&K",
       "technologies": [
@@ -908,21 +959,22 @@
         "REST API"
       ],
       "timeOrder": 12,
-      "date": 2023,
       "title": "Rasmi & Kiwan",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://rasmiandkiwan.com/"
     },
     {
       "category": "Landing Pages",
       "comingSoon": true,
       "company": "Freelance",
+      "date": 2020,
       "description": "Simple company's professional website.",
       "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/18.jpg?alt=media",
       "importanceOrder": 6,
+      "location": "Malaysia",
       "role": "Frontend Web Dev",
       "shortTitle": "Zay",
       "technologies": [
@@ -933,20 +985,21 @@
         "JavaScript"
       ],
       "timeOrder": 6,
-      "date": 2020,
       "title": "Zaytouna Club",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://zaytouna-tau.vercel.app/"
     },
     {
       "category": "Landing Pages",
       "company": "Freelancer",
+      "date": 2019,
       "description": "Simple company's professional website.",
       "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/1.jpg?alt=media",
       "importanceOrder": 5,
+      "location": "Malaysia",
       "role": "Frontend Web Dev",
       "shortTitle": "OSF",
       "technologies": [
@@ -954,39 +1007,41 @@
         "CSS"
       ],
       "timeOrder": 4,
-      "date": 2019,
       "title": "OneShot Future",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://oneshotfuture.com/"
     },
     {
       "category": "Landing Pages",
       "company": "Freelancer",
+      "date": 2020,
       "description": "Simple company's professional website.",
       "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/6.jpg?alt=media",
       "importanceOrder": 4,
+      "location": "Malaysia",
       "role": "Frontend Web Dev",
       "technologies": [
         "Wordpress",
         "CSS"
       ],
       "timeOrder": 3,
-      "date": 2020,
       "title": "PPAM",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://ppam.org.my/"
     },
     {
       "category": "Landing Pages",
       "company": "AIS",
+      "date": 2018,
       "description": "Simple company's professional website.",
       "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/2.jpg?alt=media",
       "importanceOrder": 3,
+      "location": "Malaysia",
       "role": "Frontend Web Dev",
       "shortTitle": "AIS",
       "technologies": [
@@ -999,19 +1054,20 @@
         "REST API"
       ],
       "timeOrder": 2,
-      "date": 2018,
       "title": "AIS Landing",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://aqsa.edu.my/"
     },
     {
       "category": "Landing Pages",
       "company": "Freelancer",
+      "date": 2018,
       "description": "Simple company's professional website.",
       "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/4.jpg?alt=media",
       "importanceOrder": 2,
+      "location": "Malaysia",
       "role": "Frontend Web Dev",
       "shortTitle": "SW",
       "technologies": [
@@ -1019,19 +1075,20 @@
         "CSS"
       ],
       "timeOrder": 1,
-      "date": 2018,
       "title": "Speed Wheels",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://speedwheelstrade.online/"
     },
     {
       "category": "Landing Pages",
       "company": "Freelancer",
+      "date": 2017,
       "description": "Simple company's professional website.",
       "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/3.jpg?alt=media",
       "importanceOrder": 1,
+      "location": "Malaysia",
       "role": "Frontend Web Dev",
       "shortTitle": "Team",
       "technologies": [
@@ -1039,9 +1096,8 @@
         "CSS"
       ],
       "timeOrder": 0,
-      "date": 2017,
       "title": "Team Foundation",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://teamtr.media/"
     },
     {
@@ -1342,7 +1398,12 @@
         },
         {
           "company": "ArabWork",
-          "description": [],
+          "description": [
+            "Joined as the main frontend developer for a project named Trellah, a Vue.js-based task management tool.",
+            "Delivered key modules independently, integrating API endpoints and handling component-level logic.",
+            "This was my first production-level Vue.js experience.",
+            "Transitioned after two months to a new opportunity that better matched my long-term goals in terms of position, compensation, and stack."
+          ],
           "location": "Jordan",
           "monthsCount": 2,
           "period": "Jun - Aug 2022",
@@ -1783,6 +1844,26 @@
         "Contact Form 7"
       ],
       "website": "https://wordpress.com/"
+    },
+    {
+      "color": "24BBB1",
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faSearch",
+      "name": "ElasticSearch",
+      "rate": 2,
+      "website": "https://www.elastic.co/elasticsearch"
+    },
+    {
+      "color": "EBC4DF",
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faSitemap",
+      "name": "MicroServices",
+      "rate": 2,
+      "website": "https://microservices.io/"
     },
     {
       "color": "2f6091",

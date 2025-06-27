@@ -22,8 +22,9 @@ const WorkView = ({
   technologies = [""],
   type = "",
   details = [""],
-  date = "",
+  date = 2000,
   company = "",
+  location = "",
   openSource = false,
   dark = false,
   short = false,
@@ -77,6 +78,7 @@ const WorkView = ({
               technologies,
               type,
               company,
+              location,
               openSource,
             }}
           />
@@ -150,18 +152,6 @@ const WorkView = ({
                 overlay={<Tooltip>{technologies.join(", ")}</Tooltip>}
               >
                 <FontAwesomeIcon icon={faCode} />
-              </OverlayTrigger>
-
-              <OverlayTrigger
-                overlay={
-                  <Tooltip>
-                    <Typography size="sm" className="my-2" color="light">
-                      {description}
-                    </Typography>
-                  </Tooltip>
-                }
-              >
-                <FontAwesomeIcon icon={faInfoCircle} className="ms-2" />
               </OverlayTrigger>
             </Typography>
           </Col>
