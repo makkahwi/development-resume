@@ -198,7 +198,8 @@
       "date": 2022,
       "timeOrder": 15,
       "title": "Sanad",
-      "type": "Public / Governmental Services"
+      "location": "Jordan",
+      "type": "Public / Governmental"
     },
     {
       "category": "Web Apps",
@@ -227,7 +228,8 @@
       "timeOrder": 14,
       "title": "DLS",
       "date": 2021,
-      "type": "Public / Governmental Services",
+      "location": "Jordan",
+      "type": "Public / Governmental",
       "url": "https://portal.dls.gov.jo/"
     },
     {
@@ -264,8 +266,9 @@
       ],
       "timeOrder": 18,
       "date": 2024,
+      "location": "Jordan",
       "title": "Semesteer",
-      "type": "B2B Education SaaS System",
+      "type": "Education",
       "url": "https://semesteer.com/"
     },
     {
@@ -296,8 +299,9 @@
       ],
       "timeOrder": 29,
       "title": "Mustaheq",
+      "location": "Saudi Arabia",
       "date": 2025,
-      "type": "Public / Governmental Services",
+      "type": "Public / Governmental",
       "url": "http://mustaheq.org/"
     },
     {
@@ -324,8 +328,9 @@
       ],
       "timeOrder": 30,
       "title": "Mustaheq Search-Engine",
+      "location": "Saudi Arabia",
       "date": 2025,
-      "type": "Public / Governmental Services"
+      "type": "Public / Governmental"
     },
     {
       "category": "Web Apps",
@@ -348,8 +353,9 @@
       ],
       "timeOrder": 16,
       "title": "Entreviable",
+      "location": "Jordan",
       "date": 2023,
-      "type": "Education SaaS System",
+      "type": "Education",
       "url": "https://entreviable.com"
     },
     {
@@ -375,8 +381,9 @@
       ],
       "timeOrder": 11,
       "title": "Trellah",
+      "location": "Saudi Arabia",
       "date": 2022,
-      "type": "Ride-Hailing for Goods System",
+      "type": "Ride-Hailing",
       "url": "https://app.trellah.com"
     },
     {
@@ -403,12 +410,14 @@
         "JSON",
         "REST API",
         "PostgreSQL",
+        "Blockchain",
         "Docker"
       ],
       "timeOrder": 9,
       "title": "BrandTag",
+      "location": "Malaysia",
       "date": 2020,
-      "type": "Blockchain-Powered Brand Protection SaaS App",
+      "type": "Anti-Theft Protection",
       "url": "https://app.brandtag.io/"
     },
     {
@@ -435,7 +444,8 @@
       "timeOrder": 24,
       "date": 2024,
       "title": "Healthy Eating and Lifestyle Tracker",
-      "type": "Health Traction SaaS App",
+      "type": "Healthcare",
+      "location": "Jordan",
       "url": "https://heal-tracker.vercel.app/"
     },
     {
@@ -449,7 +459,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/24.jpg?alt=media",
       "importanceOrder": 22,
       "openSource": true,
-      "role": "System Architecture & Team Oversight",
+      "role": "Product Ownership",
       "shortTitle": "ANest",
       "technologies": [
         "React.Js",
@@ -464,7 +474,8 @@
       "timeOrder": 19,
       "date": 2023,
       "title": "AppNest",
-      "type": "Project Management System"
+      "location": "Jordan",
+      "type": "Productivity Management"
     },
     {
       "category": "Web Apps",
@@ -475,7 +486,7 @@
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/8.jpg?alt=media",
       "importanceOrder": 21,
-      "role": "End-to-End Product Ownership",
+      "role": "Product Ownership",
       "shortTitle": "Stu",
       "technologies": [
         "HTML",
@@ -490,7 +501,8 @@
       "timeOrder": 7,
       "date": 2019,
       "title": "AIS Students Portal",
-      "type": "Internal Data-Management Portal"
+      "location": "Malaysia",
+      "type": "Productivity Management"
     },
     {
       "category": "Web Apps",
@@ -501,7 +513,7 @@
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/15.jpg?alt=media",
       "importanceOrder": 20,
-      "role": "End-to-End Product Ownership",
+      "role": "Product Ownership",
       "shortTitle": "Sta",
       "technologies": [
         "React.Js",
@@ -518,7 +530,8 @@
       "timeOrder": 5,
       "date": 2020,
       "title": "AIS Staff Portal",
-      "type": "Internal Data-Management Portal"
+      "location": "Malaysia",
+      "type": "Productivity Management"
     },
     {
       "category": "Web Apps",
@@ -543,7 +556,8 @@
       "timeOrder": 17,
       "title": "Crosure",
       "date": 2023,
-      "type": "Specialized Search-Engine App",
+      "location": "UK",
+      "type": "Search-Engine",
       "url": "https://commsure.com/"
     },
     {
@@ -569,8 +583,9 @@
       ],
       "timeOrder": 21,
       "title": "Shwra",
+      "location": "Saudi Arabia",
       "date": 2024,
-      "type": "Service Providers Marketplace",
+      "type": "Marketplace",
       "url": "https://www.shwra.sa/"
     },
     {
@@ -583,7 +598,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/13.jpg?alt=media",
       "importanceOrder": 17,
       "openSource": true,
-      "role": "System Architecture & Team Oversight",
+      "role": "Product Ownership",
       "shortTitle": "Tad",
       "technologies": [
         "React.Js",
@@ -601,7 +616,8 @@
       "timeOrder": 10,
       "date": 2022,
       "title": "Tadreebi",
-      "type": "Internal Data-Management Portal",
+      "location": "Jordan",
+      "type": "Productivity Management",
       "url": "https://tadreebi.netlify.app/"
     },
     {
@@ -627,7 +643,8 @@
       "timeOrder": 9,
       "date": 2021,
       "title": "xEdu App",
-      "type": "Education SaaS System"
+      "location": "Malaysia",
+      "type": "Education"
     },
     {
       "category": "Web Apps",
@@ -654,6 +671,7 @@
       "title": "PRICE",
       "date": 2025,
       "type": "Encyclopedia",
+      "location": "Jordan",
       "url": "https://price-admin.vercel.app/"
     },
     {
@@ -681,9 +699,10 @@
         "Firebase"
       ],
       "timeOrder": 26,
+      "location": "Jordan",
       "date": 2022,
       "title": "Currencies Archiving & Sharing Hub",
-      "type": "Digital Showroom App",
+      "type": "Showroom",
       "url": "https://cash-hub.vercel.app/"
     },
     {
@@ -710,8 +729,9 @@
       ],
       "timeOrder": 25,
       "date": 2025,
+      "location": "Jordan",
       "title": "Family Finance",
-      "type": "Financial Tracking SaaS App"
+      "type": "FinTech"
     },
     {
       "category": "Web Apps",
@@ -743,8 +763,9 @@
       ],
       "timeOrder": 13,
       "date": 2023,
+      "location": "Jordan",
       "title": "Rasmi & Kiwan",
-      "type": "Internal Data-Management Portal"
+      "type": "Productivity Management"
     },
     {
       "category": "Landing Pages",
@@ -771,8 +792,9 @@
       ],
       "timeOrder": 23,
       "date": 2024,
+      "location": "Jordan",
       "title": "Coach Noor Kayyali",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://www.noorkayyali.com/"
     },
     {
@@ -800,8 +822,9 @@
       ],
       "timeOrder": 27,
       "date": 2025,
+      "location": "Jordan",
       "title": "Nutritionist Fatima Mohammad",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://nutriFatima.com/"
     },
     {
@@ -828,8 +851,9 @@
       ],
       "timeOrder": 27,
       "date": 2025,
+      "location": "Jordan",
       "title": "Nutritionist Clients Portal",
-      "type": "Clients Management Portal",
+      "type": "Clients Management",
       "url": "https://portal.nutriFatima.com/"
     },
     {
@@ -855,8 +879,9 @@
       ],
       "timeOrder": 22,
       "date": 2024,
+      "location": "Saudi Arabia",
       "title": "E3 Ventures",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://e3.ventures/"
     },
     {
@@ -882,8 +907,9 @@
       ],
       "timeOrder": 20,
       "date": 2022,
+      "location": "Jordan",
       "title": "Dr. Ahmad Abu Mahfouth",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://drahmadabumahfouth.com"
     },
     {
@@ -908,9 +934,10 @@
         "REST API"
       ],
       "timeOrder": 12,
+      "location": "Jordan",
       "date": 2023,
       "title": "Rasmi & Kiwan",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://rasmiandkiwan.com/"
     },
     {
@@ -934,8 +961,9 @@
       ],
       "timeOrder": 6,
       "date": 2020,
+      "location": "Malaysia",
       "title": "Zaytouna Club",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://zaytouna-tau.vercel.app/"
     },
     {
@@ -955,8 +983,9 @@
       ],
       "timeOrder": 4,
       "date": 2019,
+      "location": "Malaysia",
       "title": "OneShot Future",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://oneshotfuture.com/"
     },
     {
@@ -975,8 +1004,9 @@
       ],
       "timeOrder": 3,
       "date": 2020,
+      "location": "Malaysia",
       "title": "PPAM",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://ppam.org.my/"
     },
     {
@@ -1000,8 +1030,9 @@
       ],
       "timeOrder": 2,
       "date": 2018,
+      "location": "Malaysia",
       "title": "AIS Landing",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://aqsa.edu.my/"
     },
     {
@@ -1020,8 +1051,9 @@
       ],
       "timeOrder": 1,
       "date": 2018,
+      "location": "Malaysia",
       "title": "Speed Wheels",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://speedwheelstrade.online/"
     },
     {
@@ -1040,8 +1072,9 @@
       ],
       "timeOrder": 0,
       "date": 2017,
+      "location": "Malaysia",
       "title": "Team Foundation",
-      "type": "Profile Landing Page",
+      "type": "Profile",
       "url": "https://teamtr.media/"
     },
     {
