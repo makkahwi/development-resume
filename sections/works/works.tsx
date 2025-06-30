@@ -65,11 +65,11 @@ const WorksSection = ({ openSource, foc, home }: Props) => {
 
   useEffect(() => {
     let result = works
-      .filter(({ hide }) =>
+      .filter(({ hide, openSource: openSourceProjects, foc: focProjects }) =>
         openSource
-          ? !hide && openSource
+          ? openSourceProjects
           : foc
-          ? !hide && foc
+          ? focProjects
           : home
           ? !hide
           : true
@@ -135,7 +135,7 @@ const WorksSection = ({ openSource, foc, home }: Props) => {
       color={foc ? "white" : "light"}
       id={foc ? "foc" : "works"}
     >
-      {!home && (
+      {!home && !foc && !openSource && (
         <Row className="mb-4 g-3 justify-content-center">
           <Col md={4}>
             <Form.Select
