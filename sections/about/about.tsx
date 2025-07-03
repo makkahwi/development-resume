@@ -79,10 +79,12 @@ const AboutSection = async ({ home }: props) => {
             </Typography>
 
             <Typography size={5} className="py-3 lh-lg">
-              I’ve led development efforts, contributed to open-source, and
-              overseen product deliverables — always aiming to turn ideas into
-              impactful software. I'm driven by curiosity, quality, and
-              collaborative problem-solving.
+              Been part of startups for most of the time, but also tested
+              working with small firms & big cooperations. I've led development
+              efforts, contributed to open-source, and overseen product
+              deliverables — always aiming to turn ideas into impactful
+              software. I'm driven by curiosity, quality, and collaborative
+              problem-solving.
             </Typography>
           </Col>
 
