@@ -12,7 +12,7 @@ export const socialLinksList = [
   {
     name: "LinkedIn",
     icon: faLinkedinIn,
-    link: "https://linkedin.com/in/makkahwi/",
+    link: "https://linkedin.com/in/SuhaibAhmadAi/",
     label: "Linked In Progress",
     color: "#0A66C2",
   },
