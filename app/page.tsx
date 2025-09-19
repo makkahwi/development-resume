@@ -1,11 +1,9 @@
 import { apiCallRevalidate } from "@/api/data";
 import PageNavigator from "@/layout/PageNavigator";
 import {
-  faBriefcase,
   faCode,
   faFaceSmile,
   faHome,
-  faPerson,
   faPersonCircleCheck,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
@@ -16,10 +14,6 @@ export const revalidate = apiCallRevalidate;
 
 export default async function Home() {
   const WelcomeSection = dynamic(() => import("@/sections/welcome"));
-  const AboutSection = dynamic(() => import("@/sections/about/about"));
-  const CareerSection = dynamic(
-    () => import("@/sections/experiences/experiences")
-  );
   const WorksSection = dynamic(() => import("@/sections/works/works"));
   const SkillsSection = dynamic(() => import("@/sections/skills"));
   const ProminentClientsSection = dynamic(() => import("@/sections/clients"));
