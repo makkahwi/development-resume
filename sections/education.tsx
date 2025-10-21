@@ -5,7 +5,7 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, ButtonGroup, Col, Row } from "react-bootstrap";
 
-export interface EducationProps {
+interface EducationProps {
   logo: string;
   name: string;
   school: string;
