@@ -5,7 +5,7 @@ import Typography from "@/components/typography";
 import { colsCount } from "@/consts/functions";
 import { Col, Row } from "react-bootstrap";
 
-interface TestimonialProps {
+export interface TestimonialProps {
   link: string;
   img: string;
   author: string;

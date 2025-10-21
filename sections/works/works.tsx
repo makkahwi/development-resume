@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getJobProjects } from "@/api/data";
+import { getJobProjects } from "@/api/client-data";
 import PageButton from "@/components/PageButton";
 import PageSection from "@/components/pageSection";
 import WorkView from "./WorkView";
