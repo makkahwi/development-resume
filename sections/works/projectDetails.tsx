@@ -5,7 +5,7 @@ import { faLink, faMaximize } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Col, Modal, ModalBody, Row, Table } from "react-bootstrap";
 
-import { getClients, getSkills } from "@/api/client-data";
+import { getClients, getSkills } from "@/api/data";
 import { Fragment, useEffect, useState } from "react";
 import { ClientProps } from "../clients";
 import { ProjectProps } from "./works";
@@ -16,10 +16,15 @@ interface Props extends ProjectProps {
   open?: boolean;
 }
 
-const ProjectDetailsModal = async ({ project }: { project: ProjectProps }) => {
+const ProjectDetailsModal = ({ project }: { project: ProjectProps }) => {
   const [open, setOpen] = useState<Props>(project);
-  const clients: ClientProps[] = await getClients();
-  const skills: SkillProps[] = await getSkills();
+  const [clients, setClients] = useState<ClientProps[]>([]);
+  const [skills, setSkills] = useState<SkillProps[]>([]);
+
+  useEffect(() => {
+    getClients().then((res) => setClients(res));
+    getSkills().then((res) => setSkills(res));
+  }, []);
 
   const onClose = () => setOpen(project);
 
