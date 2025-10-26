@@ -14,8 +14,12 @@
   - Shwra
   - xEdu App
   - Landing pages
+ 
+## Version 8.x Works
+
 - Localize App
-- Remove "use client" in blog
+- Remove "use client" / total server rendering
 - Remove PageSection URL Show
-- Add PDF resume generator
+- Add dynamic PDF resume generator
 - Build SEO (SSR) With API To Trigger Updates
+- Engage tools (Google Analytics, Microsoft Calrity, UptimeRobot, Sentry, Cypress, Grafana, CookieYes, PostHog)
