@@ -1,8 +1,13 @@
 import { appDesc, appTitle } from "@/consts/data";
 import Footer from "@/layout/Footer";
 import CtaSection from "@/sections/cta";
+import { config } from "@fortawesome/fontawesome-svg-core";
 
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+config.autoAddCss = false;
+
 import LandingPopUp from "@/components/LandingPopUp";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
