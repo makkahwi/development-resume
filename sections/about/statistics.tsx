@@ -1,7 +1,8 @@
-import { getJobProjects, getJobs } from "@/api/data";
+import { getClients, getJobProjects, getJobs } from "@/api/data";
 import Typography from "@/components/typography";
 import { Col, Row } from "react-bootstrap";
 
+import { ClientProps } from "../clients";
 import { ProjectProps } from "../works/works";
 
 export interface JobProps {
@@ -28,6 +29,7 @@ interface props {
 const StatisticsSection = async ({ home }: props) => {
   const careers: JobProps[] = await getJobs();
   const projects: ProjectProps[] = await getJobProjects();
+  const clients: ClientProps[] = await getClients();
 
   const stats = [
     {
@@ -64,6 +66,11 @@ const StatisticsSection = async ({ home }: props) => {
       title: "Solutions Architected",
       desc: "Led end-to-end solution design: from client needs analysis to user journeys and UX flows.",
       count: projects.filter(({ designed }) => designed)?.length,
+    },
+    {
+      title: "Happy Clients",
+      desc: "Happy employers & direct clients, whom accepted & used the end results.",
+      count: clients?.length,
     },
     {
       title: "Projects Consulted",
