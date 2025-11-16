@@ -7,15 +7,13 @@ export const metadata: Metadata = {
   description: "Senior full-stack developer, technical advisor, mentor and more.",
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: {
   children: React.ReactNode;
-}) {
-  // For now we hard-code lang="en". When we add localization with [locale],
-  // we will move this to a localized layout and toggle dir="rtl" for Arabic.
+}) =>  {
   return (
-    <html lang="en">
+    <html>
       <body className="bg-light">
         <Providers>
           {children}
@@ -24,3 +22,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+export default RootLayout;
