@@ -17,7 +17,6 @@ export default async function LocaleLayout({ children, params }: Props) {
     notFound();
   }
 
-  // Load messages for this locale from /messages/{locale}.json
   const messages = (await import(`../../messages/${locale}.json`)).default;
 
   const dir = locale === "ar" ? "rtl" : "ltr";
@@ -25,7 +24,6 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale} dir={dir}>
       <body className="bg-light">
-        {/* Analytics, consent, etc. */}
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Providers>{children}</Providers>
         </NextIntlClientProvider>
