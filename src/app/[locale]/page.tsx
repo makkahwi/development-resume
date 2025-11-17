@@ -1,67 +1,55 @@
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 
-const HomePage = async ({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) => {
-  const { locale } = await params;
-  const isAr = locale === "ar";
+export default async function HomeLocalePage() {
+  const t = await getTranslations("Home");
 
   return (
     <main className="container py-5">
       <header className="mb-5">
         <p className="text-muted small text-uppercase mb-1">
-          {isAr ? "الموقع قيد التطوير" : "Site under construction"}
+          {t("badge")}
         </p>
-        <h1 className="display-4 fw-bold mb-3">Suhaib Ahmad</h1>
+        <h1 className="display-4 fw-bold mb-3">
+          {t("headline")}
+        </h1>
         <p className="lead">
-          Senior Full-Stack Developer, Technical Advisor, and Founder.
+          {t("subtitle")}
         </p>
         <div className="d-flex gap-2 mt-3">
           <Link href="#work-with-me" className="btn btn-primary">
-            {isAr ? "لنعمل معًا" : "Work With Me"}
+            {t("workWithMe")}
           </Link>
           <Link href="#download-cv" className="btn btn-outline-secondary">
-            {isAr ? "تحميل السيرة الذاتية" : "Download CV"}
+            {t("downloadCv")}
           </Link>
         </div>
       </header>
 
       <section className="mb-5">
         <h2 className="h4 mb-3">
-          {isAr ? "الخطوات التالية" : "Next steps"}
+          {t("nextStepsTitle")}
         </h2>
         <ul>
-          <li>Build the real page structure (Home / About / Hands-on / Hands-off / Give Back / Blog).</li>
-          <li>Wire backend data via axios.</li>
-          <li>Fill in legal pages and analytics events.</li>
+          <li>{t("nextStep1")}</li>
+          <li>{t("nextStep2")}</li>
+          <li>{t("nextStep3")}</li>
         </ul>
       </section>
 
       <section id="work-with-me" className="mb-5">
         <h2 className="h4 mb-3">
-          {isAr ? "لنعمل معًا" : "Work With Me"}
+          {t("workWithMeTitle")}
         </h2>
-        <p>
-          {isAr
-            ? "سيتم هنا لاحقًا إضافة نموذج للتعاون أو فرص العمل."
-            : "This will later become a dedicated CTA and contact flow for employment, freelance, or collaboration."}
-        </p>
+        <p>{t("workWithMeBody")}</p>
       </section>
 
       <section id="download-cv">
         <h2 className="h4 mb-3">
-          {isAr ? "تحميل السيرة الذاتية" : "Download CV"}
+          {t("downloadCvTitle")}
         </h2>
-        <p>
-          {isAr
-            ? "سيتم لاحقًا توليد ملف PDF للسيرة الذاتية يمكن قراءته بواسطة أنظمة ATS."
-            : "This will later call an API route that generates an ATS-friendly PDF CV."}
-        </p>
+        <p>{t("downloadCvBody")}</p>
       </section>
     </main>
   );
 }
-
-export default HomePage;

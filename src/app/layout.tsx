@@ -12,15 +12,7 @@ const RootLayout = ({
 }: {
   children: React.ReactNode;
 }) =>  {
-  return (
-    <html>
-      <body className="bg-light">
-        <Providers>
-          {children}
-        </Providers>
-      </body>
-    </html>
-  );
+  return children;
 }
 
 export default RootLayout;

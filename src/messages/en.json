@@ -1,0 +1,20 @@
+{
+  "Home": {
+    "badge": "Site under construction",
+    "headline": "Suhaib Ahmad",
+    "subtitle": "Senior Full-Stack Developer, Technical Advisor, and Founder.",
+    "workWithMe": "Work With Me",
+    "downloadCv": "Download CV",
+
+    "nextStepsTitle": "Next steps",
+    "nextStep1": "Build the real page structure (Home / About / Hands-on / Hands-off / Give Back / Blog).",
+    "nextStep2": "Wire backend data via axios.",
+    "nextStep3": "Fill in legal pages and analytics events.",
+
+    "workWithMeTitle": "Work With Me",
+    "workWithMeBody": "This will later become a dedicated CTA and contact flow for employment, freelance, or collaboration.",
+
+    "downloadCvTitle": "Download CV",
+    "downloadCvBody": "This will later call an API route that generates an ATS-friendly PDF CV."
+  }
+}
