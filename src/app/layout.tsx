@@ -1,10 +1,17 @@
+import { brandConfig } from "@/brand/config";
 import type { Metadata } from "next";
 import "./globals.css";
-import Providers from "./providers";
 
 export const metadata: Metadata = {
-  title: "Suhaib Ahmad – Resume Website",
-  description: "Senior full-stack developer, technical advisor, mentor and more.",
+  title: {
+    default: `${brandConfig.siteName} – ${brandConfig.siteTagline}`,
+    template: `%s | ${brandConfig.siteName}`,
+  },
+  description: brandConfig.siteDescription,
+  metadataBase: new URL(brandConfig.baseUrl),
+  alternates: {
+    canonical: brandConfig.baseUrl,
+  },
 };
 
 const RootLayout = ({

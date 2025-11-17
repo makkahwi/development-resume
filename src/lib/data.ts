@@ -1,9 +1,6 @@
+// src/lib/data.ts
 import { api, isApiConfigured } from "./api";
 
-/**
- * Shape of the data we expect for the Home page snapshots.
- * You can adjust these interfaces as we flesh out the real schema.
- */
 export interface HomeSnapshots {
   aboutSummary: string;
   handsOnHighlight: string;
@@ -12,17 +9,8 @@ export interface HomeSnapshots {
   latestBlogTitle: string | null;
 }
 
-/**
- * Fetch Home snapshots from backend.
- * 
- * - If NEXT_PUBLIC_API_BASE_URL is set, we try calling:
- *     GET /public/home-snapshots
- *   (you can change this path later).
- * - If not configured, we return static mock data for now.
- */
-export async function getHomeSnapshots(): Promise<HomeSnapshots> {
+export const getHomeSnapshots = async (): Promise<HomeSnapshots> => {
   if (!isApiConfigured()) {
-    // Fallback mock data until backend is ready.
     return {
       aboutSummary:
         "Senior full-stack developer and technical advisor with experience in SaaS, EdTech, and ERP.",
@@ -36,8 +24,53 @@ export async function getHomeSnapshots(): Promise<HomeSnapshots> {
     };
   }
 
-  // When API is configured, call your real endpoint
-  // e.g. GET https://api.suhaib.dev/public/home-snapshots
   const response = await api.get<HomeSnapshots>("/public/home-snapshots");
   return response.data;
+};
+
+export interface BlogPost {
+  slug: string;
+  locale: string;
+  title: string;
+  excerpt: string;
+  contentHtml: string;
+  publishedAt: string;
+  tags: string[];
 }
+
+export const getBlogPost = async (
+  locale: string,
+  slug: string
+): Promise<BlogPost | null> => {
+  if (!isApiConfigured()) {
+    if (slug !== "sample-post") return null;
+
+    return {
+      slug,
+      locale,
+      title:
+        locale === "ar"
+          ? "مقال تجريبي حول تجربة تطوير الويب"
+          : "Sample Blog Post about Web Development",
+      excerpt:
+        locale === "ar"
+          ? "هذا نص تجريبي يوضح شكل صفحة المقال في الموقع الجديد."
+          : "This is a sample excerpt to show how a blog post page will look.",
+      contentHtml:
+        locale === "ar"
+          ? "<p>هذا المحتوى تجريبي فقط. سيتم استبداله لاحقًا ببيانات حقيقية قادمة من الـ API.</p>"
+          : "<p>This is only sample content. It will later be replaced by real data coming from your API.</p>",
+      publishedAt: new Date().toISOString(),
+      tags: ["sample", "draft"],
+    };
+  }
+
+  const response = await api.get<BlogPost>(
+    `/public/blog-posts/${encodeURIComponent(slug)}`,
+    {
+      params: { locale },
+    }
+  );
+
+  return response.data ?? null;
+};

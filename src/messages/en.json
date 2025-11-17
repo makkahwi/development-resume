@@ -1,7 +1,38 @@
 {
+  "About": {
+    "description": "Background, education and soft skills of Suhaib Ahmad.",
+    "headline": "About Me",
+    "title": "About – Suhaib Ahmad"
+  },
+  "Blog": {
+    "description": "Articles and insights about web development, architecture and tech entrepreneurship.",
+    "headline": "Blog",
+    "title": "Blog – Technical Articles & Insights"
+  },
+  "BlogPost": {
+    "titlePrefix": "Blog – ",
+    "descriptionSuffix": " – Article by Suhaib Ahmad."
+  },
+  "HandsOff": {
+    "description": "Highlights of leadership, mentorship and architectural decision-making.",
+    "headline": "Hands Off",
+    "title": "Hands-off Work – Leadership & Technical Direction"
+  },
+  "HandsOn": {
+    "description": "Overview of Suhaib Ahmad's hands-on experience, projects and technical skills.",
+    "headline": "Hands On",
+    "title": "Hands-on Work – Projects & Technical Experience"
+  },
   "Home": {
     "badge": "Site under construction",
+    "description": "Personal website of Suhaib Ahmad, Senior Full-Stack Developer, Technical Advisor, Mentor and more.",
     "headline": "Suhaib Ahmad",
-    "subtitle": "Senior Full-Stack Developer, Technical Advisor, Mentor and more."
+    "subtitle": "Senior Full-Stack Developer, Technical Advisor, Mentor and more.",
+    "title": "Suhaib Ahmad – Resume Website"
+  },
+  "NonProfit": {
+    "description": "Training, coaching, open-source contributions and free-of-charge products.",
+    "headline": "Give Back",
+    "title": "Give Back – Non-profit Work & Free Products"
   }
 }

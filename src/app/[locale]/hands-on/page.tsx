@@ -10,10 +10,10 @@ export const generateMetadata = async ({
   params,
 }: PageProps): Promise<Metadata> => {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Home" });
+  const t = await getTranslations({ locale, namespace: "HandsOn" });
 
   const base = brandConfig.baseUrl;
-  const path = `/${locale}`;
+  const path = `/${locale}/hands-on`;
 
   return {
     title: t("title"),
@@ -21,32 +21,24 @@ export const generateMetadata = async ({
     alternates: {
       canonical: `${base}${path}`,
       languages: {
-        en: `${base}/en`,
-        ar: `${base}/ar`,
+        en: `${base}/en/hands-on`,
+        ar: `${base}/ar/hands-on`,
       },
     },
   };
 };
 
-const HomeLocalePage = async ({ params }: PageProps) => {
+const HandsOnPage = async ({ params }: PageProps) => {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Home" });
+  const t = await getTranslations({ locale, namespace: "HandsOn" });
 
   return (
     <main className="container py-5">
-      <header className="mb-5">
-        <p className="text-muted small text-uppercase mb-1">
-          {t("badge")}
-        </p>
-        <h1 className="display-4 fw-bold mb-3">
-          {t("headline")}
-        </h1>
-        <p className="lead">
-          {t("subtitle")}
-        </p>
-      </header>
+      <h1 className="mb-4">
+        {t("headline")}
+      </h1>
     </main>
   );
 };
 
-export default HomeLocalePage;
+export default HandsOnPage;
