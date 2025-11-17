@@ -4,7 +4,7 @@ import type { ConsentState } from "@/lib/consent";
 import { readConsent, saveConsent } from "@/lib/consent";
 import { useEffect, useState } from "react";
 
-export default function ConsentBanner() {
+const ConsentBanner = () => {
   const [visible, setVisible] = useState(false);
   const [consent, setConsent] = useState<ConsentState | null>(null);
 
@@ -72,3 +72,5 @@ export default function ConsentBanner() {
     </div>
   );
 }
+
+export default ConsentBanner;

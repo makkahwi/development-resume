@@ -16,7 +16,7 @@ declare global {
   }
 }
 
-export default function AnalyticsProvider() {
+const AnalyticsProvider = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -92,3 +92,5 @@ export default function AnalyticsProvider() {
     </>
   );
 }
+
+export default AnalyticsProvider;

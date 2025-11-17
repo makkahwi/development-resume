@@ -1,11 +1,10 @@
-import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 
-export default async function HomeLocalePage({
+const HomeLocalePage = async({
   params,
 }: {
   params: Promise<{ locale: string }>;
-}) {
+}) => {
   const { locale } = await params;
 
   const t = await getTranslations({
@@ -29,3 +28,5 @@ export default async function HomeLocalePage({
     </main>
   );
 }
+
+export default HomeLocalePage;

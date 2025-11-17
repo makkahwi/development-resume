@@ -1,4 +1,4 @@
-import {getRequestConfig} from "next-intl/server";
+import { getRequestConfig } from "next-intl/server";
 
 const locales = ["en", "ar"] as const;
 type Locale = (typeof locales)[number];

@@ -1,10 +1,10 @@
 "use client";
 
-import React from "react";
 import AnalyticsProvider from "@/components/AnalyticsProvider";
 import ConsentBanner from "@/components/ConsentBanner";
+import React from "react";
 
-export default function Providers({ children }: { children: React.ReactNode }) {
+const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       {/* Analytics & session replay (GA4 + Clarity) */}
@@ -18,3 +18,5 @@ export default function Providers({ children }: { children: React.ReactNode }) {
     </>
   );
 }
+
+export default Providers;

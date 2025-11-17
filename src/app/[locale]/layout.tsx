@@ -1,5 +1,5 @@
-import {NextIntlClientProvider} from "next-intl";
-import {notFound} from "next/navigation";
+import { NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
 import Providers from "../providers";
 
 const locales = ["en", "ar"] as const;
@@ -10,7 +10,7 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
-export default async function LocaleLayout({ children, params }: Props) {
+const LocaleLayout = async({ children, params }: Props) => {
   const { locale } = await params;
 
   if (!locales.includes(locale as Locale)) {
@@ -31,3 +31,5 @@ export default async function LocaleLayout({ children, params }: Props) {
     </html>
   );
 }
+
+export default LocaleLayout
