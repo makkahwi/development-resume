@@ -7,6 +7,12 @@
       "prominent": true
     },
     {
+      "img": "dls.png",
+      "link": "https://www.dls.gov.jo/",
+      "name": "DLS",
+      "prominent": true
+    },
+    {
       "img": "agile.png",
       "link": "https://www.startupsjo.com/en/Pages/CustomPages/Startup/409",
       "name": "AgileTz",
@@ -19,15 +25,39 @@
       "prominent": true
     },
     {
-      "img": "arabwork.png",
-      "link": "https://www.arabwork.com/",
-      "name": "ArabWork",
+      "img": "shai.png",
+      "link": "https://www.shai.sa",
+      "name": "Shai",
       "prominent": true
     },
     {
-      "img": "deloitte.png",
-      "link": "https://www.deloitte.com/",
-      "name": "Deloitte",
+      "img": "sharq.png",
+      "link": "https://www.sharqforum.org/ar/",
+      "name": "Al Sharq Forum",
+      "prominent": true
+    },
+    {
+      "img": "sawaed.png",
+      "link": "https://www.sawaed-almaj.org/",
+      "name": "Sawaed",
+      "prominent": false
+    },
+    {
+      "img": "zaad.png",
+      "link": "https://zaadmaj.org.sa/",
+      "name": "Zaad",
+      "prominent": false
+    },
+    {
+      "img": "severalBrands.png",
+      "link": "https://severalbrands.com/",
+      "name": "Several Brands",
+      "prominent": true
+    },
+    {
+      "img": "trafficBox.png",
+      "link": "https://trafficbox.com/",
+      "name": "Traffic Box",
       "prominent": true
     },
     {
@@ -37,15 +67,33 @@
       "prominent": true
     },
     {
-      "img": "dls.png",
-      "link": "https://www.dls.gov.jo/",
-      "name": "DLS",
-      "prominent": true
+      "img": "e3.png",
+      "link": "https://e3.ventures/",
+      "name": "E3 Ventures",
+      "prominent": false
     },
     {
-      "img": "shai.png",
-      "link": "https://www.shai.sa/ar",
-      "name": "Shai",
+      "img": "shwra.png",
+      "link": "https://www.shwra.sa/",
+      "name": "Shwra",
+      "prominent": false
+    },
+    {
+      "img": "arabwork.png",
+      "link": "https://www.arabwork.com/",
+      "name": "ArabWork",
+      "prominent": false
+    },
+    {
+      "img": "trellah.png",
+      "link": "https://app.trellah.com/",
+      "name": "Trellah",
+      "prominent": false
+    },
+    {
+      "img": "tafakkur.png",
+      "link": "https://tafakkur.com/",
+      "name": "Tafakkur",
       "prominent": true
     },
     {
@@ -55,10 +103,40 @@
       "prominent": false
     },
     {
+      "img": "noor.png",
+      "link": "https://noorkayyali.com/",
+      "name": "Noor Training & Consultancy",
+      "prominent": false
+    },
+    {
+      "img": "alembicsoft.png",
+      "link": "https://www.alembicsoft.com/",
+      "name": "AlembicSoft",
+      "prominent": false
+    },
+    {
+      "img": "rnk.png",
+      "link": "https://rasmiandkiwan.com/",
+      "name": "R&K Consultants",
+      "prominent": false
+    },
+    {
       "img": "logatta.png",
       "link": "https://www.logatta.com/",
       "name": "Logatta",
       "prominent": true
+    },
+    {
+      "img": "entreviable.png",
+      "link": "https://entreviable.com/",
+      "name": "Entreviable",
+      "prominent": false
+    },
+    {
+      "img": "commsure.png",
+      "link": "https://commsure.com/",
+      "name": "Commsure",
+      "prominent": false
     },
     {
       "img": "luxtag.png",
@@ -67,10 +145,28 @@
       "prominent": true
     },
     {
-      "img": "r&k.png",
-      "link": "http://rasmiandkiwan.com/",
-      "name": "Rasmi & Kiwan",
-      "prominent": true
+      "img": "ais.png",
+      "link": "https://www.aqsa.edu.my/",
+      "name": "AIS",
+      "prominent": false
+    },
+    {
+      "img": "ppam.png",
+      "link": "https://ppam.org.my",
+      "name": "PPAM Malaysia",
+      "prominent": false
+    },
+    {
+      "img": "teamtr.png",
+      "link": "hthttps://teamtr.media/",
+      "name": "Team Foundation",
+      "prominent": false
+    },
+    {
+      "img": "speedwheels.png",
+      "link": "https://speedwheelstrade.online",
+      "name": "SpeedWheels Malaysia",
+      "prominent": false
     }
   ],
   "contacts": [
@@ -180,7 +276,8 @@
         "Delivered a responsive, modular frontend interface supporting various ministries and services.",
         "Maintained accessibility, performance, and UX consistency across a growing number of services.",
         "Collaborated closely with backend and DevOps teams to ensure seamless API integrations.",
-        "Contributed to UI/UX design decisions with the PM for maximum citizen engagement."
+        "Contributed to UI/UX design decisions with the PM for maximum citizen engagement.",
+        "Technically the product was ready for usage, weren't published for non-technical issues."
       ],
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/20.jpg?alt=media",
       "importanceOrder": 29,
@@ -303,14 +400,74 @@
       "timeOrder": 29,
       "title": "Mustaheq",
       "type": "Public / Governmental",
-      "url": "http://mustaheq.org/"
+      "url": "http://demo.mustaheq.org/"
     },
     {
       "category": "Web Apps",
-      "comingSoon": true,
+      "company": "Several Brands",
+      "date": 2025,
+      "description": "A specialized huge internal system for the company to manage its 10s of millions worth of online sales in the United States.",
+      "details": [
+        "Work is to build the ongoing marketing & sales team needs of features within the portal.",
+        "It's also required to contribute into revamp and refactor the redundant codes of functions & views.",
+        "Revamp and refactor is part of a plan aiming to upgrade framework to Vue 3."
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/33.jpg?alt=media",
+      "importanceOrder": 28,
+      "location": "USA",
+      "role": "Frontend Web Dev",
+      "shortTitle": "SB",
+      "technologies": [
+        "Vue.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "ElasticSearch",
+        "JavaScript",
+        "JSON",
+        "REST API"
+      ],
+      "timeOrder": 32,
+      "title": "Several Brands",
+      "type": "ERP",
+      "url": "http://admin.trafficbox.com"
+    },
+    {
+      "category": "Web Apps",
+      "company": "Tafakkur",
+      "date": 2025,
+      "description": "Led the frontend development of DLS web platform, digitizing public land services for the Jordanian governmental Department of Lands and Survey",
+      "details": [
+        "Built complex, dynamic forms and search interfaces for real estate, land registry, and title services.",
+        "Led a small frontend team while handling primary development tasks.",
+        "Integrated Express.js backend for lightweight data handling and API support.",
+        "Directly contributed to UX alongside the PM and stakeholders."
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/32.jpg?alt=media",
+      "importanceOrder": 27,
+      "location": "Jordan",
+      "role": "Senior Full-Stack Dev",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "Express.Js",
+        "JavaScript",
+        "JSON",
+        "REST API",
+        "Docker"
+      ],
+      "timeOrder": 31,
+      "title": "Tafakkur",
+      "type": "Landing Page With Admin Panel",
+      "url": "https://tafakkur.com"
+    },
+    {
+      "category": "Web Apps",
       "company": "Shai",
       "date": 2025,
-      "description": "A specialized Arabic search engine to help individuals find relevant Saudi charities & societies, especially those using the Mustaheq portal.",
+      "description": "A specialized under-construction Arabic search engine to help individuals find relevant Saudi charities & societies, especially those using the Mustaheq portal.",
       "details": [
         "It was sort of my own idea to come up with, approved by owner.",
         "Aimed at simplifying access to aid for recipients and boosting visibility for subscribing charities.",
@@ -319,13 +476,13 @@
         "Included admin tools to manage searchable metadata and optimize search relevance."
       ],
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/31.png?alt=media",
       "importanceOrder": 28,
       "location": "Saudi Arabia",
       "role": "Full-Stack Dev",
       "shortTitle": "Mus",
       "technologies": [
-        "Next.Js",
+        "Vite",
         "CSS",
         "TailwindCSS",
         "Node.Js",
@@ -337,7 +494,8 @@
       ],
       "timeOrder": 30,
       "title": "Mustaheq Search-Engine",
-      "type": "Public / Governmental"
+      "type": "Public / Governmental",
+      "url": "http://mustaheq.org/"
     },
     {
       "category": "Web Apps",
@@ -379,6 +537,7 @@
         "Implemented responsive dashboards for dispatchers and logistics coordinators.",
         "Collaborated closely with backend engineer for real-time data handling and authentication flows."
       ],
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/16.jpg?alt=media",
       "importanceOrder": 25,
       "location": "Saudi Arabia",
@@ -433,11 +592,11 @@
     },
     {
       "category": "Web Apps",
-      "company": "Open Source",
+      "company": "Freelance",
       "date": 2024,
       "description": "Own product idea, executed from ideation, development to deployment.",
       "designed": true,
-      "details": [],
+      "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/28.png?alt=media",
       "importanceOrder": 23,
       "location": "Jordan",
@@ -462,16 +621,14 @@
     {
       "category": "Web Apps",
       "comingSoon": true,
-      "company": "Open Source",
+      "company": "Freelance",
       "date": 2023,
       "description": "Own product idea, execution is in-progress by supervised junior developers.",
       "designed": true,
-      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/24.jpg?alt=media",
       "importanceOrder": 22,
       "location": "Jordan",
-      "openSource": true,
       "role": "Product Ownership",
       "shortTitle": "ANest",
       "technologies": [
@@ -589,7 +746,6 @@
       "company": "Freelance",
       "date": 2024,
       "description": "A solely developed frontend app, totally new / from scratch.",
-      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/26.jpg?alt=media",
       "importanceOrder": 18,
@@ -613,11 +769,10 @@
     },
     {
       "category": "Web Apps",
-      "company": "Open Source",
+      "company": "Freelance",
       "date": 2022,
       "description": "A system for school / university students' internship progress tracking & management.",
       "designed": true,
-      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/13.jpg?alt=media",
       "importanceOrder": 17,
@@ -646,10 +801,9 @@
     {
       "category": "Web Apps",
       "comingSoon": true,
-      "company": "Freelance",
+      "company": "Freelancer",
       "date": 2021,
       "description": "Education content & teacher-student communication system.",
-      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/9.jpg?alt=media",
       "importanceOrder": 16,
@@ -671,13 +825,12 @@
     },
     {
       "category": "Web Apps",
-      "company": "Open Source",
+      "company": "Freelance",
       "date": 2025,
       "description": "Own product idea, execution is in-progress.",
       "designed": true,
-      "details": [],
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/35.jpg?alt=media",
       "importanceOrder": 15,
       "location": "Jordan",
       "openSource": true,
@@ -700,11 +853,10 @@
     {
       "category": "Web Apps",
       "comingSoon": true,
-      "company": "Open Source",
+      "company": "Freelance",
       "date": 2022,
       "description": "Own product idea, executed from ideation, development to deployment.",
       "designed": true,
-      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/7.jpg?alt=media",
       "importanceOrder": 14,
@@ -730,11 +882,10 @@
     },
     {
       "category": "Web Apps",
-      "company": "Open Source",
+      "company": "Freelance",
       "date": 2025,
       "description": "Own product idea, execution is in-progress by supervised junior developers.",
       "designed": true,
-      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
       "importanceOrder": 13,
@@ -793,11 +944,10 @@
     {
       "category": "Landing Pages",
       "comingSoon": false,
-      "company": "Freelance",
+      "company": "Noor Training & Consultancy",
       "date": 2024,
       "description": "Simple individual's professional website.",
       "designed": true,
-      "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/25.jpg?alt=media",
@@ -823,11 +973,10 @@
     {
       "category": "Landing Pages",
       "comingSoon": false,
-      "company": "Freelance",
+      "company": "Freelancer",
       "date": 2025,
       "description": "Simple individual's professional website.",
       "designed": true,
-      "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/30.jpg?alt=media",
@@ -857,10 +1006,9 @@
       "date": 2025,
       "description": "Simple clients data management portal.",
       "designed": true,
-      "details": [],
       "foc": true,
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/30.jpg?alt=media",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/34.jpg?alt=media",
       "importanceOrder": 10,
       "location": "Jordan",
       "role": "Frontend Web Dev",
@@ -885,7 +1033,6 @@
       "company": "Freelance",
       "date": 2024,
       "description": "Simple company's professional website.",
-      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/27.jpg?alt=media",
       "importanceOrder": 9,
@@ -913,7 +1060,6 @@
       "company": "Freelance",
       "date": 2022,
       "description": "Simple individual's professional website.",
-      "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/12.jpg?alt=media",
@@ -938,10 +1084,9 @@
     {
       "category": "Landing Pages",
       "comingSoon": false,
-      "company": "Freelance",
+      "company": "Freelancer",
       "date": 2023,
       "description": "Simple company's professional website.",
-      "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/17.jpg?alt=media",
@@ -969,7 +1114,6 @@
       "company": "Freelance",
       "date": 2020,
       "description": "Simple company's professional website.",
-      "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/18.jpg?alt=media",
@@ -994,7 +1138,6 @@
       "company": "Freelancer",
       "date": 2019,
       "description": "Simple company's professional website.",
-      "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/1.jpg?alt=media",
@@ -1016,7 +1159,6 @@
       "company": "Freelancer",
       "date": 2020,
       "description": "Simple company's professional website.",
-      "details": [],
       "foc": true,
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/6.jpg?alt=media",
@@ -1037,7 +1179,6 @@
       "company": "AIS",
       "date": 2018,
       "description": "Simple company's professional website.",
-      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/2.jpg?alt=media",
       "importanceOrder": 3,
@@ -1063,7 +1204,6 @@
       "company": "Freelancer",
       "date": 2018,
       "description": "Simple company's professional website.",
-      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/4.jpg?alt=media",
       "importanceOrder": 2,
@@ -1084,7 +1224,6 @@
       "company": "Freelancer",
       "date": 2017,
       "description": "Simple company's professional website.",
-      "details": [],
       "hide": true,
       "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/3.jpg?alt=media",
       "importanceOrder": 1,
@@ -1321,6 +1460,52 @@
       "icon": "faCode",
       "jobs": [
         {
+          "company": "Several Brands",
+          "description": [
+            "A frontend developer, contributing to build the dashboard of internal ERP system.",
+            "Leading effort to revamp, refactor and upgrade the dashboard technologies."
+          ],
+          "location": "Jordan",
+          "monthsCount": 1,
+          "period": "Oct 2025 - Current",
+          "projectsCount": 2,
+          "title": "Frontend Developer",
+          "type": "Full-Time",
+          "website": "https://www.severalbrands.com"
+        },
+        {
+          "company": "Shai",
+          "description": [
+            "A technical advisor to help the new development team members to continue working on built-by-me products.",
+            "Coordinate and assign the tasks among product team, which includes (Frontend, Backend, DevOps, UI/UX).",
+            "Supervise and review the coding works of the development team.",
+            "Interfere to do hands-on coding when development team is unable to meet task requirements.",
+            "It's only remote freelance job, with occasional (on-need) evening working hours."
+          ],
+          "location": "Jordan",
+          "monthsCount": 1,
+          "period": "Oct 2025 - Current",
+          "projectsCount": 2,
+          "title": "Technical Advisor",
+          "type": "Freelancer",
+          "website": "https://www.shai.sa/"
+        },
+        {
+          "company": "Tafakkur",
+          "description": [
+            "A developer to help with build new features, pages & sections in large landing page that introduces the client work and promote their products and publishing outcomes.",
+            "Work include revamping a low-end coded full-stack developer.",
+            "It's only remote freelance job, with evening working hours."
+          ],
+          "location": "Jordan",
+          "monthsCount": 2,
+          "period": "Sep 2025 - Current",
+          "projectsCount": 1,
+          "title": "Senior Full-Stack Developer",
+          "type": "Freelancer",
+          "website": "https://tafakkur.com/"
+        },
+        {
           "company": "Shai",
           "description": [
             "Acted as tech lead for the core product, overseeing architecture, development, and technical direction.",
@@ -1329,12 +1514,27 @@
             "Led implementation of frontend and backend features, focusing on performance, usability, and maintainability."
           ],
           "location": "Jordan",
-          "monthsCount": 3,
-          "period": "May 2025 - Current",
+          "monthsCount": 5,
+          "period": "May - Sep 2025",
           "projectsCount": 2,
           "title": "Senior Full-Stack Developer",
           "type": "Freelancer",
           "website": "https://www.shai.sa/"
+        },
+        {
+          "company": "Noor Training & Consultancy",
+          "description": [
+            "A technical advisor to help with any technical difficulties, including web apps and infrastructure (DevOp) issues.",
+            "Work included building totally new landing page and clients management portal.",
+            "It's only remote freelance job, with occasional (on-need) evening working hours."
+          ],
+          "location": "Jordan",
+          "monthsCount": 27,
+          "period": "Aug 2023 - Current",
+          "projectsCount": 2,
+          "title": "Technical Advisor",
+          "type": "Freelancer",
+          "website": "https://noorkayyali.com/"
         },
         {
           "company": "AlembicSoft",
@@ -1342,7 +1542,8 @@
             "Owned the entire product lifecycle from requirement gathering to system architecture, development, testing, and deployment.",
             "Designed intuitive user interfaces and crafted scalable backend systems tailored to client needs.",
             "Led discussions with stakeholders to align technical solutions with business goals.",
-            "Delivered full-stack applications with a strong focus on performance and user-centric design."
+            "Delivered full-stack applications with a strong focus on performance and user-centric design.",
+            "Left due to the total shutdown of the startup firm."
           ],
           "location": "Jordan",
           "monthsCount": 17,
@@ -1367,30 +1568,16 @@
           "website": "https://www.logatta.com"
         },
         {
-          "company": "Deloitte",
-          "description": [
-            "Continued working on active AgileTz projects following the acquisition by Deloitte.",
-            "Contributed to delivery processes and project handoffs with minimal disruption to ongoing development.",
-            "Departed due to a required overseas relocation that was not feasible to meet."
-          ],
-          "location": "Jordan",
-          "monthsCount": 2,
-          "period": "Jun - Jul 2023",
-          "projectsCount": 0,
-          "title": "Delivery Consultant",
-          "type": "Full-Time",
-          "website": "https://www2.deloitte.com/xe/en/pages/strategy-operations/solutions/deloitte-jordan-digital-center.html"
-        },
-        {
           "company": "AgileTz",
           "description": [
             "Sole frontend developer for Sanad, Jordan’s unified e-services web platform, ensuring consistent performance and UI/UX quality.",
             "Led frontend development for the DLS project, working closely with the project manager and actively shaping the user experience.",
-            "Managed architecture, reusable components, and development timelines for high-impact government services"
+            "Managed architecture, reusable components, and development timelines for high-impact government services",
+            "Departed due to a required overseas semi-relocation that was not feasible to meet."
           ],
           "location": "Jordan",
           "monthsCount": 10,
-          "period": "Aug 2022 - May 2023",
+          "period": "Aug 2022 - Jul 2023",
           "projectsCount": 2,
           "title": "Senior Full-Stack Developer",
           "type": "Full-Time",
@@ -1411,18 +1598,6 @@
           "title": "Frontend Developer",
           "type": "Full-Time",
           "website": "https://www.linkedin.com/company/arabwork/"
-        },
-        {
-          "company": "Open Source",
-          "description": [
-            "Solved many daily-life challenges with end-to-end opens-ource products in various industries and life aspects.",
-            "Led the development of products, supervised and reviewed others’ development results.",
-            "Used it as an approach to adopt, absorb and test new development technologies & frameworks."
-          ],
-          "location": "Jordan",
-          "period": "Jan 2022 - Present",
-          "title": "Architect & Developer",
-          "type": "Freelance"
         },
         {
           "company": "Luxtag",
@@ -1593,6 +1768,15 @@
   ],
   "projects": [
     {
+      "img": "/images/appnest-w.png",
+      "link": "https://sketcher-drab.vercel.app/",
+      "texts": [
+        "I have designed and built the architecture of a coming-soon open-source project of AppNest.",
+        "This project is about building a tool to help the planning and execution of any future web application projects.",
+        "I am supervising the team that is developing the code for the project, and soon we will launch the MVP for public testing."
+      ]
+    },
+    {
       "img": "/images/semesteer.png",
       "link": "https://www.semesteer.com/",
       "texts": [
@@ -1628,15 +1812,6 @@
         "I'm developing this coming-soon open-source project of Precise Record of Information on Costs and Expenses (PRICE).",
         "This is going to be a community-driven platform (like wikipedia) to track the updates of consumable good price changes overtime.",
         "Currently the tools is under development, actual pricing data is being collected and inserted, and soon we will launch the MVP for public engagement."
-      ]
-    },
-    {
-      "img": "/images/appnest-w.png",
-      "link": "https://sketcher-drab.vercel.app/",
-      "texts": [
-        "I have designed and built the architecture of a coming-soon open-source project of AppNest.",
-        "This project is about building a tool to help the planning and execution of any future web application projects.",
-        "I am supervising the team that is developing the code for the project, and soon we will launch the MVP for public testing."
       ]
     }
   ],
@@ -1853,6 +2028,9 @@
       "icon": "faSearch",
       "name": "ElasticSearch",
       "rate": 2,
+      "subskills": [
+        "OpenSearch"
+      ],
       "website": "https://www.elastic.co/elasticsearch"
     },
     {
