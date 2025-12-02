@@ -19,6 +19,6 @@ export const api = axios.create({
 });
 
 // Optional: helper to detect if API is configured
-export function isApiConfigured(): boolean {
+export const isApiConfigured = (): boolean => {
   return Boolean(API_BASE_URL);
 }

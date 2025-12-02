@@ -19,7 +19,7 @@ const DEFAULT_CONSENT: ConsentState = {
   marketing: false,
 };
 
-export function readConsent(): ConsentState {
+export const readConsent = (): ConsentState => {
   if (typeof window === "undefined") {
     return DEFAULT_CONSENT;
   }
@@ -39,7 +39,7 @@ export function readConsent(): ConsentState {
   }
 }
 
-export function saveConsent(consent: ConsentState) {
+export const saveConsent = (consent: ConsentState) => {
   // Store for e.g. 180 days
   Cookies.set(CONSENT_COOKIE_KEY, JSON.stringify(consent), {
     expires: 180,
