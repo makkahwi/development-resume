@@ -1,10 +1,7 @@
+import { brandConfig } from "@/brand/config";
+import type { PageProps } from "@/types/base";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { brandConfig } from "@/brand/config";
-
-type PageProps = {
-  params: Promise<{ locale: string }>;
-};
 
 export const generateMetadata = async ({
   params,
