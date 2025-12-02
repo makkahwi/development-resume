@@ -8,10 +8,14 @@ export const brandConfig = {
   accentColor: "#0f2032",
 
   socials: {
+    linkedin: "https://linkedin.com/in/SuhaibAhmadAi/",
     github: "https://github.com/makkahwi",
-    linkedin: "https://www.linkedin.com/in/suhaib-ahmad/",
-    twitter: "",
+    whatsapp: "https://wasap.my/962788424973",
+    telegram: "https://t.me/makkahwi",
+    phone: "tel:+962788424973",
     email: "mailto:hello@suhaib.dev",
+    facebook: "https://facebook.com/makkahwi",
+    instagram: "https://instagram.com/makkahwi",
   },
 
   baseUrl: "https://suhaib.dev",

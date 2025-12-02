@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
-import LanguageSwitch from "@/components/page";
+import LanguageSwitch from "@/components/LanguageSwitch";
 import { brandConfig } from "@/brand/config";
 
 type NavLinkItem = {
@@ -17,8 +17,9 @@ const navLinks: NavLinkItem[] = [
   { key: "home", href: "/", iconClass: "bi-house-door" },
   { key: "about", href: "/about", iconClass: "bi-person" },
   { key: "handsOn", href: "/hands-on", iconClass: "bi-code-slash" },
-  { key: "handsOff", href: "/hands-off", iconClass: "bi-diagram-3" },
+  { key: "handsOff", href: "/hands-off", iconClass: "bi-list-check" },
   { key: "nonProfit", href: "/non-profit", iconClass: "bi-heart" },
+  { key: "blog", href: "/blog", iconClass: "bi-journal-text" },
   // Contact scrolls to section on the same page
   { key: "contact", href: "contact", scroll: true, iconClass: "bi-phone" },
 ];

@@ -36,6 +36,7 @@
     "Nav": {
       "home": "Home",
       "about": "About",
+      "blog": "Blog",
       "handsOn": "Hands-on",
       "handsOff": "Hands-off",
       "nonProfit": "Give Back",

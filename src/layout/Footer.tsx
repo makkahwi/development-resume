@@ -8,6 +8,37 @@ const Footer = () => {
   const { socials } = brandConfig;
   const year = new Date().getFullYear();
 
+  const renderSocialIcon = (type: string) => {
+    switch (type) {
+      case "github":
+        return "bi-github"
+      case "linkedin":
+        return "bi-linkedin"
+      case "twitter":
+        return "bi-twitter"
+      case "facebook":
+        return "bi-facebook"
+      case "instagram":
+        return "bi-instagram"
+      case "whatsapp":
+        return "bi-whatsapp"
+      case "telegram":
+        return "bi-telegram"
+      case "phone":
+        return "bi-telephone-fill"
+      case "email":
+        return "bi-envelope-fill"
+      default:
+        return "bi-globe";
+    }
+  };
+
+  const socialLinks = Object.keys(socials).map(key => ({
+    type: key,
+    url: socials[key as keyof typeof socials],
+    icon: renderSocialIcon(key)
+  }));
+
   return (
     <footer className="mt-5 pt-4 border-top bg-transparent">
       <div className="container text-center">
@@ -16,44 +47,30 @@ const Footer = () => {
         <img
           src="/images/LogoC.png"
           width={200}
-          className="mt-5 mb-2"
+          className="mt-5"
           alt="Logo"
         />
 
-        <h2 className="text-dark mt-0 mb-3 text-uppercase">
+        <h2 className="text-dark my-3 text-uppercase">
           {t(brandConfig.siteName)}
         </h2>
 
-        <p className="text-muted mb-2">
+        <p className="text-muted mt-5 mb-2">
           {t("AllRightsReserved")} © 2018 - {year}
         </p>
 
         <div className="d-flex justify-content-center gap-3 my-3">
-          {socials.github && (
+          {socialLinks.map(({ type, url, icon }) => (
             <a
-              href={socials.github}
+              key={type}
+              href={url}
               target="_blank"
               rel="noreferrer"
-              className="text-dark fs-5"
+              className="text-dark"
             >
-              <i className="bi bi-github" />
+              <i className={`bi ${icon}`} />
             </a>
-          )}
-          {socials.linkedin && (
-            <a
-              href={socials.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="text-dark fs-5"
-            >
-              <i className="bi bi-linkedin" />
-            </a>
-          )}
-          {socials.email && (
-            <a href={socials.email} className="text-dark fs-5">
-              <i className="bi bi-envelope" />
-            </a>
-          )}
+          ))}
         </div>
       </div>
     </footer>

@@ -10,9 +10,9 @@ const LanguageSwitch =  ({ locale }: PageProps) => {
       className="btn btn-primary text-light px-4 corners"
       onClick={() => {
         if (locale === "en") {
-          window.location.href = "/ar"
+          window.location.href = window.location.href.replace("/en", "/ar")
         } else {
-          window.location.href = "/en"
+          window.location.href = window.location.href.replace("/ar", "/en")
         }
       }}
     >      
