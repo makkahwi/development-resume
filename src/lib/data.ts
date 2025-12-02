@@ -1,4 +1,3 @@
-// src/lib/data.ts
 import { api, isApiConfigured } from "./api";
 
 export interface HomeSnapshots {
