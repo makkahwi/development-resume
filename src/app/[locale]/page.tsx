@@ -33,17 +33,7 @@ const HomeLocalePage = async ({ params }: PageProps) => {
 
   return (
     <main className="container py-5">
-      <header className="mb-5">
-        <p className="text-muted small text-uppercase mb-1">
-          {t("badge")}
-        </p>
-
-       <LanguageSwitch locale={locale} />
-
-        <h1 className="display-4 fw-bold mb-3">
-          {t("headline")}
-        </h1>
-        
+      <header className="mb-5">        
         <p className="lead">
           {t("subtitle")}
         </p>

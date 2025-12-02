@@ -1,3 +1,6 @@
+import Footer from "@/layout/Footer";
+import NavbarComp from "@/layout/Navbar";
+import PageNavigator from "@/layout/PageNavigator";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import Providers from "../providers";
@@ -23,9 +26,21 @@ const LocaleLayout = async({ children, params }: Props) => {
 
   return (
     <html lang={locale} dir={dir}>
-      <body className="bg-light">
+      <body className="bg-white">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Providers>{children}</Providers>
+          <main className="mx-0 mb-0 mt-5 px-0 w-100 py-5">
+            {/* Top navbar */}
+            <NavbarComp />
+      
+            {/* Optional sticky side navigator (we can control per-page later) */}
+            <PageNavigator />
+      
+            {/* Main content area */}
+            <Providers>{children}</Providers>
+      
+            {/* CTA & footer could be here later when we port CtaSection */}
+            <Footer />
+          </main>
         </NextIntlClientProvider>
       </body>
     </html>

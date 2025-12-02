@@ -24,11 +24,24 @@
     "title": "Hands-on Work – Projects & Technical Experience"
   },
   "Home": {
-    "badge": "Site under construction",
     "description": "Personal website of Suhaib Ahmad, Senior Full-Stack Developer, Technical Advisor, Mentor and more.",
-    "headline": "Suhaib Ahmad",
     "subtitle": "Senior Full-Stack Developer, Technical Advisor, Mentor and more.",
     "title": "Suhaib Ahmad – Resume Website"
+  },
+  "Layout": {
+    "Footer": {
+      "Suhaib Ahmad": "Suhaib Ahmad",
+      "AllRightsReserved": "All Rights Reserved"
+    },
+    "Nav": {
+      "home": "Home",
+      "about": "About",
+      "handsOn": "Hands-on",
+      "handsOff": "Hands-off",
+      "nonProfit": "Give Back",
+      "Suhaib Ahmad": "Suhaib Ahmad",
+      "contact": "Contact"
+    }
   },
   "NonProfit": {
     "description": "Training, coaching, open-source contributions and free-of-charge products.",
