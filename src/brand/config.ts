@@ -3,9 +3,9 @@ export const brandConfig = {
   siteTagline: "Senior Full-Stack Developer & Technical Advisor",
   siteDescription:
     "Portfolio and resume website of Suhaib Ahmad, a senior full-stack developer, technical advisor, and founder.",
-  primaryColor: "#0d6efd",
-  secondaryColor: "#6c757d",
-  accentColor: "#ffc107",
+  primaryColor: "#1c3967",
+  secondaryColor: "#e2e2e2",
+  accentColor: "#0f2032",
 
   socials: {
     github: "https://github.com/makkahwi",
