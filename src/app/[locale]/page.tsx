@@ -1,4 +1,6 @@
 import { brandConfig } from "@/brand/config";
+import LanguageSwitch from "@/components/page";
+
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
@@ -38,9 +40,13 @@ const HomeLocalePage = async ({ params }: PageProps) => {
         <p className="text-muted small text-uppercase mb-1">
           {t("badge")}
         </p>
+
+       <LanguageSwitch locale={locale} />
+
         <h1 className="display-4 fw-bold mb-3">
           {t("headline")}
         </h1>
+        
         <p className="lead">
           {t("subtitle")}
         </p>
