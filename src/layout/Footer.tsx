@@ -1,46 +1,80 @@
 "use client";
 
 import { brandConfig } from "@/brand/config";
+import ContactForm from "@/components/ContactForm";
 import { useTranslations } from "next-intl";
+
+const { socials } = brandConfig;
+
+const renderSocialDetails = (type: string) => {
+  switch (type) {
+    case "github":
+      return { icon: "bi-github", label: "Git It, Connect", color: "#000000" };
+    case "linkedin":
+      return {
+        icon: "bi-linkedin",
+        label: "Linked In Progress",
+        color: "#000000",
+      };
+    case "twitter":
+      return { icon: "bi-twitter", label: "X Tweets", color: "#000000" };
+    case "facebook":
+      return {
+        icon: "bi-facebook",
+        label: "We'd Friend Forever",
+        color: "#000000",
+      };
+    case "instagram":
+      return { icon: "bi-instagram", label: "Capture Life", color: "#000000" };
+    case "whatsapp":
+      return {
+        icon: "bi-whatsapp",
+        label: "Text Me Anytime",
+        color: "#000000",
+      };
+    case "telegram":
+      return {
+        icon: "bi-telegram",
+        label: "Let's Tele-chat",
+        color: "#000000",
+      };
+    case "phone":
+      return {
+        icon: "bi-telephone-fill",
+        label: "Call IF NEEDED",
+        color: "#000000",
+      };
+    case "email":
+      return {
+        icon: "bi-envelope-fill",
+        label: "Inbox Awaits You",
+        color: "#000000",
+      };
+    default:
+      return { icon: "bi-globe", label: "Let's Contact", color: "#000000" };
+  }
+};
+
+export const socialLinks = Object.keys(socials).map((key) => {
+  const { icon, label, color } = renderSocialDetails(key);
+
+  return {
+    type: key,
+    url: socials[key as keyof typeof socials],
+    icon,
+    label,
+    color,
+  };
+});
 
 const Footer = () => {
   const t = useTranslations("Layout.Footer");
-  const { socials } = brandConfig;
   const year = new Date().getFullYear();
-
-  const renderSocialIcon = (type: string) => {
-    switch (type) {
-      case "github":
-        return "bi-github";
-      case "linkedin":
-        return "bi-linkedin";
-      case "twitter":
-        return "bi-twitter";
-      case "facebook":
-        return "bi-facebook";
-      case "instagram":
-        return "bi-instagram";
-      case "whatsapp":
-        return "bi-whatsapp";
-      case "telegram":
-        return "bi-telegram";
-      case "phone":
-        return "bi-telephone-fill";
-      case "email":
-        return "bi-envelope-fill";
-      default:
-        return "bi-globe";
-    }
-  };
-
-  const socialLinks = Object.keys(socials).map((key) => ({
-    type: key,
-    url: socials[key as keyof typeof socials],
-    icon: renderSocialIcon(key),
-  }));
 
   return (
     <footer className="mt-5 pt-4 border-top bg-transparent">
+      <ContactForm />
+
       <div className="container text-center">
         <hr className="px-5 mx-5" />
 

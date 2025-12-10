@@ -10,8 +10,18 @@
     "title": "Blog – Technical Articles & Insights"
   },
   "BlogPost": {
-    "titlePrefix": "Blog – ",
-    "descriptionSuffix": " – Article by Suhaib Ahmad."
+    "descriptionSuffix": " – Article by Suhaib Ahmad.",
+    "titlePrefix": "Blog – "
+  },
+  "ContactForm": {
+    "Email": "Email",
+    "Message": "Message",
+    "Name": "Name",
+    "Organization": "Organization",
+    "Phone": "Phone",
+    "Submit": "Submit",
+    "Subtitle": "Liked what you saw? Let's communicate!",
+    "Title": "Contact Me"
   },
   "HandsOff": {
     "description": "Highlights of leadership, mentorship and architectural decision-making.",
@@ -30,18 +40,18 @@
   },
   "Layout": {
     "Footer": {
-      "Suhaib Ahmad": "Suhaib Ahmad",
-      "AllRightsReserved": "All Rights Reserved"
+      "AllRightsReserved": "All Rights Reserved",
+      "Suhaib Ahmad": "Suhaib Ahmad"
     },
     "Nav": {
-      "home": "Home",
+      "Suhaib Ahmad": "Suhaib Ahmad",
       "about": "About",
       "blog": "Blog",
-      "handsOn": "Hands-on",
+      "contact": "Contact",
       "handsOff": "Hands-off",
-      "nonProfit": "Give Back",
-      "Suhaib Ahmad": "Suhaib Ahmad",
-      "contact": "Contact"
+      "handsOn": "Hands-on",
+      "home": "Home",
+      "nonProfit": "Give Back"
     }
   },
   "NonProfit": {

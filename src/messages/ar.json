@@ -10,8 +10,18 @@
     "title": "المدونة – مقالات ورؤى تقنية"
   },
   "BlogPost": {
-      "titlePrefix": "المدونة – ",
-      "descriptionSuffix": " – مقال بواسطة صهيب أحمد."
+    "descriptionSuffix": " – مقال بواسطة صهيب أحمد.",
+    "titlePrefix": "المدونة – "
+  },
+  "ContactForm": {
+    "Email": "البريد الإلكتروني",
+    "Message": "الرسالة",
+    "Name": "الاسم",
+    "Organization": "الجهة",
+    "Phone": "رقم الهاتف",
+    "Submit": "إرسال",
+    "Subtitle": "مهتم؟",
+    "Title": "تواصل معي"
   },
   "HandsOff": {
     "description": "عرض لدور صهـيب أحمد في القيادة التقنية، mentoring، واتخاذ القرارات المعمارية.",
@@ -27,21 +37,21 @@
     "description": "الموقع الشخصي لصهيب أحمد، مطور ويب متكامل (Full-Stack), مستشار تقني, مدرب في مجال البرمجة.",
     "subtitle": "مطور ويب متكامل (Full-Stack), مستشار تقني, مدرب في مجال البرمجة والكثير.",
     "title": "صهـيب أحمد – الموقع الشخصي والسيرة الذاتية"
-  },  
+  },
   "Layout": {
     "Footer": {
-      "Suhaib Ahmad": "صهيب أحمد",
-      "AllRightsReserved": "جميع الحقوق محفوظة"
+      "AllRightsReserved": "جميع الحقوق محفوظة",
+      "Suhaib Ahmad": "صهيب أحمد"
     },
     "Nav": {
-      "home": "الرئيسية",
+      "Suhaib Ahmad": "صهيب أحمد",
       "about": "عني",
       "blog": "المدونة",
-      "handsOn": "التجربة العملية",
-      "Suhaib Ahmad": "صهيب أحمد",
+      "contact": "تواصل",
       "handsOff": "التجربة غير العملية",
-      "nonProfit": "المساعدة",
-      "contact": "تواصل"
+      "handsOn": "التجربة العملية",
+      "home": "الرئيسية",
+      "nonProfit": "المساعدة"
     }
   },
   "NonProfit": {
