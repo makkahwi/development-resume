@@ -1,4 +1,5 @@
 import { brandConfig } from "@/brand/config";
+
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -14,12 +15,8 @@ export const metadata: Metadata = {
   },
 };
 
-const RootLayout = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) =>  {
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return children;
-}
+};
 
 export default RootLayout;

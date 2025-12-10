@@ -11,32 +11,32 @@ const Footer = () => {
   const renderSocialIcon = (type: string) => {
     switch (type) {
       case "github":
-        return "bi-github"
+        return "bi-github";
       case "linkedin":
-        return "bi-linkedin"
+        return "bi-linkedin";
       case "twitter":
-        return "bi-twitter"
+        return "bi-twitter";
       case "facebook":
-        return "bi-facebook"
+        return "bi-facebook";
       case "instagram":
-        return "bi-instagram"
+        return "bi-instagram";
       case "whatsapp":
-        return "bi-whatsapp"
+        return "bi-whatsapp";
       case "telegram":
-        return "bi-telegram"
+        return "bi-telegram";
       case "phone":
-        return "bi-telephone-fill"
+        return "bi-telephone-fill";
       case "email":
-        return "bi-envelope-fill"
+        return "bi-envelope-fill";
       default:
         return "bi-globe";
     }
   };
 
-  const socialLinks = Object.keys(socials).map(key => ({
+  const socialLinks = Object.keys(socials).map((key) => ({
     type: key,
     url: socials[key as keyof typeof socials],
-    icon: renderSocialIcon(key)
+    icon: renderSocialIcon(key),
   }));
 
   return (
@@ -44,12 +44,7 @@ const Footer = () => {
       <div className="container text-center">
         <hr className="px-5 mx-5" />
 
-        <img
-          src="/images/LogoC.png"
-          width={200}
-          className="mt-5"
-          alt="Logo"
-        />
+        <img src="/images/LogoC.png" width={200} className="mt-5" alt="Logo" />
 
         <h2 className="text-dark my-3 text-uppercase">
           {t(brandConfig.siteName)}
