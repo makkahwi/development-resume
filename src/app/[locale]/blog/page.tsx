@@ -1,8 +1,8 @@
 import { brandConfig } from "@/brand/config";
+
 import type { PageProps } from "@/types/base";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-
 
 export const generateMetadata = async ({
   params,
@@ -31,10 +31,8 @@ const BlogPage = async ({ params }: PageProps) => {
   const t = await getTranslations({ locale, namespace: "Blog" });
 
   return (
-    <main className="container py-5">
-      <h1 className="mb-4">
-        {t("headline")}
-      </h1>
+    <main className="py-5">
+      <h1 className="mb-4">{t("headline")}</h1>
     </main>
   );
 };

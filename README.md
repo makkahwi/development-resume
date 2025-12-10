@@ -1,6 +1,6 @@
 To do list
 
-- centralize components (button, page section)
+- centralize components (button)
 - apply brand colors to theme
 - turn footer into server component
 - on route change scroll to top

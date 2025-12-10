@@ -1,5 +1,6 @@
 import { brandConfig } from "@/brand/config";
 import { getBlogPost } from "@/lib/data";
+
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
@@ -8,7 +9,6 @@ import { notFound } from "next/navigation";
 type PageProps = {
   params: Promise<{ locale: string; slug: string }>;
 };
-
 
 export const generateMetadata = async ({
   params,
@@ -70,7 +70,7 @@ const BlogPostPage = async ({ params }: PageProps) => {
         });
 
   return (
-    <main className="container py-5">
+    <main className="py-5">
       <nav className="mb-4">
         <Link href={`/${locale}/blog`} className="text-decoration-none">
           &larr; {t("backToBlog")}
