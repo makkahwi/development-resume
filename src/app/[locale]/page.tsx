@@ -1,5 +1,10 @@
 import { brandConfig } from "@/brand/config";
-
+import BlogSection from "@/sections/Home/Blog";
+import ClientsSection from "@/sections/Home/Clients";
+import HomeHeroSection from "@/sections/Home/Hero";
+import ProjectsSection from "@/sections/Home/Projects";
+import SkillsSection from "@/sections/Home/Skills";
+import TestimonialsSection from "@/sections/Home/Testimonials";
 import type { PageProps } from "@/types/base";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
@@ -32,9 +37,12 @@ const HomeLocalePage = async ({ params }: PageProps) => {
 
   return (
     <main className="py-5">
-      <header className="mb-5">
-        <p className="lead">{t("subtitle")}</p>
-      </header>
+      <HomeHeroSection t={t} />
+      <ProjectsSection t={t} />
+      <SkillsSection t={t} />
+      <ClientsSection t={t} />
+      <TestimonialsSection t={t} />
+      <BlogSection t={t} />
     </main>
   );
 };
