@@ -41,10 +41,10 @@
   "Layout": {
     "Footer": {
       "AllRightsReserved": "جميع الحقوق محفوظة",
-      "Suhaib Ahmad": "صهيب أحمد"
+      "Title": "صهيب أحمد"
     },
     "Nav": {
-      "Suhaib Ahmad": "صهيب أحمد",
+      "Title": "صهيب أحمد",
       "about": "عني",
       "blog": "المدونة",
       "contact": "تواصل",

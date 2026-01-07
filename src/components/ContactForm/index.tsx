@@ -1,9 +1,9 @@
 "use client";
 
+import { contactsList } from "@/api/hardCodedData";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import PageSection from "../PageSection";
-import { socialLinks } from "@/layout/Footer";
 
 const ContactForm = () => {
   const t = useTranslations("ContactForm");
@@ -53,12 +53,12 @@ const ContactForm = () => {
       card
     >
       <div className="row">
-        {socialLinks.map(({ label, url, icon, color }, index) => (
+        {contactsList.map(({ color, icon, label, link, name }, index) => (
           <div className="col-6 col-md-3" key={index}>
             <button
               type="button"
               className="btn w-100 corners py-3 mb-4"
-              onClick={() => window.open(url, "_blank")}
+              onClick={() => window.open(link, "_blank")}
               style={{ backgroundColor: color, color: "#ffffff" }}
             >
               <h5>

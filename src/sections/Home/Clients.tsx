@@ -10,16 +10,16 @@ const ClientsSection = async ({ t }: { t: Function }) => {
     >
       <div className="row">
         {clientsList
-          .filter((client) => client.prominent)
-          .map((client, index) => (
+          .filter(({ prominent }) => prominent)
+          .map(({ link, img, name }, index) => (
             <a
               key={index}
-              href={client.link}
+              href={link}
               target="_blank"
               rel="noopener noreferrer"
               className="col-6 col-md-3 mb-4 d-flex align-items-center justify-content-center"
             >
-              <img src={client.img} alt={client.name} className="img-fluid" />
+              <img src={img} alt={name} className="img-fluid" />
             </a>
           ))}
       </div>

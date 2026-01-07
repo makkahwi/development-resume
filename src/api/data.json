@@ -873,10 +873,9 @@
       "website": "https://www.iium.edu.my/"
     }
   ],
-  "job-projects": [
+  "jobProjects": [
     {
       "category": "Consulting",
-      "title": "Lyyyf",
       "company": "Lyyyf",
       "date": 2025,
       "description": "string",
@@ -888,6 +887,7 @@
       "shortTitle": "Lyyyf",
       "technologies": [],
       "timeOrder": 0,
+      "title": "Lyyyf",
       "type": "string"
     },
     {
@@ -903,8 +903,8 @@
       "shortTitle": "string",
       "technologies": [],
       "timeOrder": 0,
-      "type": "string",
-      "title": "QR Menu"
+      "title": "QR Menu",
+      "type": "string"
     },
     {
       "category": "Consulting",
@@ -919,8 +919,8 @@
       "shortTitle": "string",
       "technologies": [],
       "timeOrder": 0,
-      "type": "string",
-      "title": "Tamarras"
+      "title": "Tamarras",
+      "type": "string"
     },
     {
       "category": "Consulting",
@@ -935,8 +935,8 @@
       "shortTitle": "string",
       "technologies": [],
       "timeOrder": 0,
-      "type": "string",
-      "title": "Cura"
+      "title": "Cura",
+      "type": "string"
     },
     {
       "category": "Web Apps",

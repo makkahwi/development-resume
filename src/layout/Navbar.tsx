@@ -1,10 +1,9 @@
 "use client";
 
-import Link from "next/link";
-import { useLocale, useTranslations } from "next-intl";
-import { usePathname } from "next/navigation";
 import LanguageSwitch from "@/components/LanguageSwitch";
-import { brandConfig } from "@/brand/config";
+import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type NavLinkItem = {
   key: string;
@@ -53,7 +52,7 @@ const NavbarComp = () => {
           className="navbar-brand text-decoration-none text-uppercase d-flex align-items-center gap-2"
         >
           <img src="/images/LogoC.png" width={50} alt="Logo" />
-          <span className="text-primary fw-bold">{t(brandConfig.siteName)}</span>
+          <span className="text-primary fw-bold">{t("Title")}</span>
         </Link>
 
         {/* Toggler */}
@@ -70,19 +69,24 @@ const NavbarComp = () => {
         </button>
 
         {/* Links */}
-        <div className="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="mainNavbar"
+        >
           <ul className="navbar-nav align-items-lg-center">
-            {navLinks.map((item) => (
-              <li className="nav-item" key={item.key}>
+            {navLinks.map(({ key, href, scroll, iconClass }) => (
+              <li className="nav-item" key={key}>
                 <Link
-                  href={buildHref(item)}
+                  href={buildHref({ key, href, scroll, iconClass })}
                   className={`nav-link d-flex align-items-center gap-1 ${
-                    isActive(item) ? "text-primary fw-semibold" : "text-secondary"
+                    isActive({ key, href, scroll, iconClass })
+                      ? "text-primary fw-semibold"
+                      : "text-secondary"
                   }`}
                 >
-                  <i className={`bi ${item.iconClass} fw-bold`} />
+                  <i className={`bi ${iconClass} fw-bold`} />
                   <span className="d-inline d-lg-none d-xl-inline">
-                    {t(item.key)}
+                    {t(key)}
                   </span>
                 </Link>
               </li>
@@ -100,7 +104,7 @@ const NavbarComp = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="bi bi-download me-1 fw-bold" />{' '}
+                <i className="bi bi-download me-1 fw-bold" />{" "}
                 <span className="d-inline d-lg-none d-xl-inline">CV</span>
               </a>
             </li>

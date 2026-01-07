@@ -12,14 +12,14 @@ const HomeHeroSection = async ({ t }: { t: Function }) => {
       label: "Months in Web Dev",
     },
     {
-      count: projectsList.filter((project) => project.category === "Web App")
+      count: projectsList.filter(({ category }) => category === "Web App")
         ?.length,
       label: "Software Built",
     },
     { count: clientsList.length, label: "Happy Clients" },
     { count: traineesList.length, label: "Individuals Trained" },
     {
-      count: projectsList.filter((project) => project.category === "Consulting")
+      count: projectsList.filter(({ category }) => category === "Consulting")
         ?.length,
       label: "Projects Consulted",
     },
@@ -38,13 +38,13 @@ const HomeHeroSection = async ({ t }: { t: Function }) => {
 
       <section>
         <div className="row">
-          {stats.map((stat, index) => (
+          {stats.map(({ count, label }, index) => (
             <div
               key={index}
               className="col-6 col-md-4 col-lg-2 mb-4 text-center"
             >
-              <h2 className="display-6">{stat.count}+</h2>
-              <p>{stat.label}</p>
+              <h2 className="display-6">{count}+</h2>
+              <p>{label}</p>
             </div>
           ))}
         </div>

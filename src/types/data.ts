@@ -34,6 +34,27 @@ export interface ClientProps {
   prominent?: boolean;
 }
 
+export interface ContactProps {
+  color: string;
+  icon: string;
+  label: string;
+  link: string;
+  name: string;
+}
+
+export interface EducationProps {
+  cert: string;
+  desc: string;
+  downloads: {
+    label: string;
+    link: string;
+  }[];
+  logo: string;
+  name: string;
+  school: string;
+  website: string;
+}
+
 export interface JobProps {
   company: string;
   description: string[];
