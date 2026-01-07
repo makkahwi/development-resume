@@ -10,7 +10,7 @@ export const generateMetadata = async ({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "NonProfit" });
 
-  const base = brandConfig.baseUrl;
+  const base = brandConfig.appUrl;
   const path = `/${locale}/non-profit`;
 
   return {

@@ -6,5 +6,5 @@ export const brandConfig = {
   primaryColor: "#1c3967",
   secondaryColor: "#e2e2e2",
   accentColor: "#0f2032",
-  baseUrl: "https://suhaib.dev",
+  appUrl: "https://suhaib.dev",
 };

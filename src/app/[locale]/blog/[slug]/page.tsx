@@ -21,7 +21,7 @@ export const generateMetadata = async ({
     namespace: "Meta.BlogPost",
   });
 
-  const base = brandConfig.baseUrl;
+  const base = brandConfig.appUrl;
   const path = `/${locale}/blog/${slug}`;
 
   const title = post

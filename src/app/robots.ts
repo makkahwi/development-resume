@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { brandConfig } from "@/brand/config";
 
 const robots = (): MetadataRoute.Robots => {
-  const base = brandConfig.baseUrl.replace(/\/+$/, "");
+  const base = brandConfig.appUrl.replace(/\/+$/, "");
 
   return {
     rules: [

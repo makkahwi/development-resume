@@ -15,7 +15,7 @@ export const generateMetadata = async ({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Home" });
 
-  const base = brandConfig.baseUrl;
+  const base = brandConfig.appUrl;
   const path = `/${locale}`;
 
   return {

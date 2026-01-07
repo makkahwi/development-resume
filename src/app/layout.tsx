@@ -9,9 +9,9 @@ export const metadata: Metadata = {
     template: `%s | ${brandConfig.siteName}`,
   },
   description: brandConfig.siteDescription,
-  metadataBase: new URL(brandConfig.baseUrl),
+  metadataBase: new URL(brandConfig.appUrl),
   alternates: {
-    canonical: brandConfig.baseUrl,
+    canonical: brandConfig.appUrl,
   },
 };
 
