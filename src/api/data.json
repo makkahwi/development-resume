@@ -597,280 +597,280 @@
   ],
   "clients": [
     {
-      "img": "modee.png",
-      "link": "https://www.modee.gov.jo/",
-      "name": "Modee",
+      "image": "modee.png",
+      "url": "https://www.modee.gov.jo/",
+      "label": "Modee",
       "prominent": true
     },
     {
-      "img": "dls.png",
-      "link": "https://www.dls.gov.jo/",
-      "name": "DLS",
+      "image": "dls.png",
+      "url": "https://www.dls.gov.jo/",
+      "label": "DLS",
       "prominent": true
     },
     {
-      "img": "saudi.png",
-      "link": "https://www.hrsd.gov.sa/",
-      "name": "HRSD",
+      "image": "saudi.png",
+      "url": "https://www.hrsd.gov.sa/",
+      "label": "HRSD",
       "prominent": true
     },
     {
-      "img": "deloitte.png",
-      "link": "https://www.deloitte.com/middle-east/en/services/consulting/services/deloitte-jordan-digital-center.html",
-      "name": "Deloitte",
+      "image": "deloitte.png",
+      "url": "https://www.deloitte.com/middle-east/en/services/consulting/services/deloitte-jordan-digital-center.html",
+      "label": "Deloitte",
       "prominent": true
     },
     {
-      "img": "sharq.png",
-      "link": "https://www.sharqforum.org/ar/",
-      "name": "Al Sharq Forum",
+      "image": "sharq.png",
+      "url": "https://www.sharqforum.org/ar/",
+      "label": "Al Sharq Forum",
       "prominent": true
     },
     {
-      "img": "shai.png",
-      "link": "https://www.shai.sa",
-      "name": "Shai",
+      "image": "shai.png",
+      "url": "https://www.shai.sa",
+      "label": "Shai",
       "prominent": true
     },
     {
-      "img": "agile.png",
-      "link": "https://www.startupsjo.com/en/Pages/CustomPages/Startup/409",
-      "name": "AgileTz",
+      "image": "agile.png",
+      "url": "https://www.startupsjo.com/en/Pages/CustomPages/Startup/409",
+      "label": "AgileTz",
       "prominent": true
     },
     {
-      "img": "sawaed.png",
-      "link": "https://www.sawaed-almaj.org/",
-      "name": "Sawaed",
+      "image": "sawaed.png",
+      "url": "https://www.sawaed-almaj.org/",
+      "label": "Sawaed",
       "prominent": false
     },
     {
-      "img": "zaad.png",
-      "link": "https://zaadmaj.org.sa/",
-      "name": "Zaad",
+      "image": "zaad.png",
+      "url": "https://zaadmaj.org.sa/",
+      "label": "Zaad",
       "prominent": false
     },
     {
-      "img": "artawiyah.png",
-      "link": "https://www.ber-artawyah.org/",
-      "name": "Ber Artawiyah",
+      "image": "artawiyah.png",
+      "url": "https://www.ber-artawyah.org/",
+      "label": "Ber Artawiyah",
       "prominent": false
     },
     {
-      "img": "severalBrands.png",
-      "link": "https://severalbrands.com/",
-      "name": "Several Brands",
+      "image": "severalBrands.png",
+      "url": "https://severalbrands.com/",
+      "label": "Several Brands",
       "prominent": true
     },
     {
-      "img": "trafficBox.png",
-      "link": "https://trafficbox.com/",
-      "name": "Traffic Box",
+      "image": "trafficBox.png",
+      "url": "https://trafficbox.com/",
+      "label": "Traffic Box",
       "prominent": true
     },
     {
-      "img": "capitalcloud.png",
-      "link": "https://capitalcloud.sa/",
-      "name": "Capital Cloud",
+      "image": "capitalcloud.png",
+      "url": "https://capitalcloud.sa/",
+      "label": "Capital Cloud",
       "prominent": true
     },
     {
-      "img": "e3.png",
-      "link": "https://e3.ventures/",
-      "name": "E3 Ventures",
+      "image": "e3.png",
+      "url": "https://e3.ventures/",
+      "label": "E3 Ventures",
       "prominent": false
     },
     {
-      "img": "shwra.png",
-      "link": "https://www.shwra.sa/",
-      "name": "Shwra",
+      "image": "shwra.png",
+      "url": "https://www.shwra.sa/",
+      "label": "Shwra",
       "prominent": false
     },
     {
-      "img": "arabwork.png",
-      "link": "https://www.arabwork.com/",
-      "name": "ArabWork",
+      "image": "arabwork.png",
+      "url": "https://www.arabwork.com/",
+      "label": "ArabWork",
       "prominent": false
     },
     {
-      "img": "trellah.png",
-      "link": "https://app.trellah.com/",
-      "name": "Trellah",
+      "image": "trellah.png",
+      "url": "https://app.trellah.com/",
+      "label": "Trellah",
       "prominent": false
     },
     {
-      "img": "tafakkur.png",
-      "link": "https://tafakkur.com/",
-      "name": "Tafakkur",
+      "image": "tafakkur.png",
+      "url": "https://tafakkur.com/",
+      "label": "Tafakkur",
       "prominent": true
     },
     {
-      "img": "fatima.png",
-      "link": "https://nutrifatima.com/",
-      "name": "Fatima",
+      "image": "fatima.png",
+      "url": "https://nutrifatima.com/",
+      "label": "Fatima",
       "prominent": false
     },
     {
-      "img": "noor.png",
-      "link": "https://noorkayyali.com/",
-      "name": "Noor Training & Consultancy",
+      "image": "noor.png",
+      "url": "https://noorkayyali.com/",
+      "label": "Noor Training & Consultancy",
       "prominent": false
     },
     {
-      "img": "alembicsoft.png",
-      "link": "https://www.alembicsoft.com/",
-      "name": "AlembicSoft",
+      "image": "alembicsoft.png",
+      "url": "https://www.alembicsoft.com/",
+      "label": "AlembicSoft",
       "prominent": false
     },
     {
-      "img": "rnk.png",
-      "link": "https://rasmiandkiwan.com/",
-      "name": "R&K Consultants",
+      "image": "rnk.png",
+      "url": "https://rasmiandkiwan.com/",
+      "label": "R&K Consultants",
       "prominent": false
     },
     {
-      "img": "logatta.png",
-      "link": "https://www.logatta.com/",
-      "name": "Logatta",
+      "image": "logatta.png",
+      "url": "https://www.logatta.com/",
+      "label": "Logatta",
       "prominent": false
     },
     {
-      "img": "entreviable.png",
-      "link": "https://entreviable.com/",
-      "name": "Entreviable",
+      "image": "entreviable.png",
+      "url": "https://entreviable.com/",
+      "label": "Entreviable",
       "prominent": false
     },
     {
-      "img": "commsure.png",
-      "link": "https://commsure.com/",
-      "name": "Commsure",
+      "image": "commsure.png",
+      "url": "https://commsure.com/",
+      "label": "Commsure",
       "prominent": false
     },
     {
-      "img": "luxtag.png",
-      "link": "https://www.luxtag.io/",
-      "name": "Luxtag",
+      "image": "luxtag.png",
+      "url": "https://www.luxtag.io/",
+      "label": "Luxtag",
       "prominent": true
     },
     {
-      "img": "ais.png",
-      "link": "https://www.aqsa.edu.my/",
-      "name": "AIS",
+      "image": "ais.png",
+      "url": "https://www.aqsa.edu.my/",
+      "label": "AIS",
       "prominent": false
     },
     {
-      "img": "ppam.png",
-      "link": "https://ppam.org.my",
-      "name": "PPAM Malaysia",
+      "image": "ppam.png",
+      "url": "https://ppam.org.my",
+      "label": "PPAM Malaysia",
       "prominent": false
     },
     {
-      "img": "teamtr.png",
-      "link": "hthttps://teamtr.media/",
-      "name": "Team Foundation",
+      "image": "teamtr.png",
+      "url": "hthttps://teamtr.media/",
+      "label": "Team Foundation",
       "prominent": false
     },
     {
-      "img": "speedwheels.png",
-      "link": "https://speedwheelstrade.online",
-      "name": "SpeedWheels Malaysia",
+      "image": "speedwheels.png",
+      "url": "https://speedwheelstrade.online",
+      "label": "SpeedWheels Malaysia",
       "prominent": false
     }
   ],
   "contacts": [
     {
       "color": "#0A66C2",
-      "icon": "faLinkedinIn",
+      "icon": "fa-brand fa-linkedinIn",
       "label": "Linked In Progress",
-      "link": "https://linkedin.com/in/SuhaibAhmadAi/",
+      "url": "https://linkedin.com/in/SuhaibAhmadAi/",
       "name": "LinkedIn"
     },
     {
       "color": "#181717",
-      "icon": "faGithub",
+      "icon": "fa-brand fa-github",
       "label": "Git It, Connect",
-      "link": "https://github.com/makkahwi",
+      "url": "https://github.com/makkahwi",
       "name": "Github"
     },
     {
       "color": "#25D366",
-      "icon": "faWhatsapp",
+      "icon": "fa-brand fa-whatsapp",
       "label": "Text Me Anytime",
-      "link": "https://wasap.my/962788424973",
+      "url": "https://wasap.my/962788424973",
       "name": "WhatsApp"
     },
     {
       "color": "#0088CC",
-      "icon": "faTelegram",
+      "icon": "fa-brand fa-telegram",
       "label": "Let's Tele-chat",
-      "link": "https://t.me/makkahwi",
+      "url": "https://t.me/makkahwi",
       "name": "Telegram"
     },
     {
       "color": "#001F3F",
-      "icon": "faPhone",
+      "icon": "fa-solid fa-phone",
       "label": "Call IF NECESSARY",
-      "link": "tel:+962788424973",
+      "url": "tel:+962788424973",
       "name": "Phone"
     },
     {
       "color": "#006400",
-      "icon": "faEnvelope",
+      "icon": "fa-solid fa-envelope",
       "label": "Inbox Awaits You",
-      "link": "mailto:SuhaibAhmadAi@hotmail.com",
+      "url": "mailto:SuhaibAhmadAi@hotmail.com",
       "name": "Email"
     },
     {
       "color": "#1877F2",
-      "icon": "faFacebook",
+      "icon": "fa-brand fa-facebook",
       "label": "Let's Chat Forever",
-      "link": "https://facebook.com/makkahwi",
+      "url": "https://facebook.com/makkahwi",
       "name": "Facebook"
     },
     {
       "color": "#E4405F",
-      "icon": "faInstagram",
+      "icon": "fa-brand fa-instagram",
       "label": "Capture Life",
-      "link": "https://instagram.com/makkahwi",
+      "url": "https://instagram.com/makkahwi",
       "name": "Instagram"
     }
   ],
   "education": [
     {
-      "cert": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
+      "cert": "Scroll.pdf?alt=media",
       "desc": "Python Based Web Dev (Code Fellows Curriculum)",
       "downloads": [
         {
           "label": "Individual Works",
-          "link": "https://github.com/makkahwi/asac-works"
+          "url": "https://github.com/makkahwi/asac-works"
         },
         {
           "label": "Midterm",
-          "link": "https://silent-speakers.github.io/silent-speakers/"
+          "url": "https://silent-speakers.github.io/silent-speakers/"
         },
         {
           "label": "Final",
-          "link": "https://tadreebi.netlify.app/"
+          "url": "https://tadreebi.netlify.app/"
         }
       ],
-      "logo": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/LTUC.png?alt=media",
-      "name": "6-Month Training Camp",
+      "logo": "LTUC.png?alt=media",
+      "label": "6-Month Training Camp",
       "school": "ASAC of LTUC College (Jordan)",
-      "website": "https://ltuc.edu.jo/"
+      "url": "https://ltuc.edu.jo/"
     },
     {
-      "cert": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
+      "cert": "Scroll.pdf?alt=media",
       "desc": "Specialized in Data Science and Computational Intelligence",
       "downloads": [
         {
           "label": "FYP Project",
-          "link": "https://github.com/makkahwi/iDecide"
+          "url": "https://github.com/makkahwi/iDecide"
         }
       ],
-      "logo": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/IIUM.png?alt=media",
-      "name": "Bachelor of Computer Science",
+      "logo": "IIUM.png?alt=media",
+      "label": "Bachelor of Computer Science",
       "school": "International Islamic University Malaysia",
-      "website": "https://www.iium.edu.my/"
+      "url": "https://www.iium.edu.my/"
     }
   ],
   "jobProjects": [
@@ -880,7 +880,7 @@
       "date": 2025,
       "description": "string",
       "details": [],
-      "image": "string",
+      "image": "",
       "importanceOrder": 0,
       "location": "string",
       "role": "string",
@@ -896,7 +896,7 @@
       "date": 2025,
       "description": "string",
       "details": [],
-      "image": "string",
+      "image": "",
       "importanceOrder": 0,
       "location": "string",
       "role": "string",
@@ -912,7 +912,7 @@
       "date": 2024,
       "description": "string",
       "details": [],
-      "image": "string",
+      "image": "",
       "importanceOrder": 0,
       "location": "string",
       "role": "string",
@@ -928,7 +928,7 @@
       "date": 2024,
       "description": "string",
       "details": [],
-      "image": "string",
+      "image": "",
       "importanceOrder": 0,
       "location": "string",
       "role": "string",
@@ -939,7 +939,7 @@
       "type": "string"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "comingSoon": true,
       "company": "AgileTz",
       "date": 2022,
@@ -951,7 +951,7 @@
         "Contributed to UI/UX design decisions with the PM for maximum citizen engagement.",
         "Technically the product was ready for usage, weren't published for non-technical issues."
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/20.jpg?alt=media",
+      "image": "20.jpg?alt=media",
       "importanceOrder": 29,
       "location": "Jordan",
       "role": "Frontend Web Dev",
@@ -971,7 +971,7 @@
       "type": "Public / Governmental"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "company": "AgileTz",
       "date": 2021,
       "description": "Led the frontend development of DLS web platform, digitizing public land services for the Jordanian governmental Department of Lands and Survey",
@@ -981,7 +981,7 @@
         "Integrated Express.js backend for lightweight data handling and API support.",
         "Directly contributed to UX alongside the PM and stakeholders."
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/14.jpg?alt=media",
+      "image": "14.jpg?alt=media",
       "importanceOrder": 28,
       "location": "Jordan",
       "role": "Full-Stack Dev",
@@ -1002,7 +1002,7 @@
       "url": "https://portal.dls.gov.jo/"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "comingSoon": true,
       "company": "AlembicSoft",
       "consulted": true,
@@ -1016,7 +1016,7 @@
         "Integrated PDF generation, notifications, analytics dashboards, and support for both English and Arabic languages.",
         "Optimized for AWS deployment with CI/CD, Docker, and secure configuration."
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/19.jpg?alt=media",
+      "image": "19.jpg?alt=media",
       "importanceOrder": 27,
       "location": "Jordan",
       "role": "Full-Stack Dev",
@@ -1042,7 +1042,7 @@
       "url": "https://semesteer.com/"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "comingSoon": false,
       "company": "Shai",
       "consulted": true,
@@ -1055,7 +1055,7 @@
         "Led a small cross-functional team and collaborated closely with product management and design.",
         "Ensured compliance with Saudi government digital infrastructure standards and data security requirements."
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/29.jpg?alt=media",
+      "image": "29.jpg?alt=media",
       "importanceOrder": 27,
       "location": "Saudi Arabia",
       "role": "Full-Stack Dev",
@@ -1077,7 +1077,7 @@
       "url": "http://demo.mustaheq.org/"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "company": "Several Brands",
       "date": 2025,
       "description": "A specialized huge internal system for the company to manage its 10s of millions worth of online sales in the United States.",
@@ -1086,7 +1086,7 @@
         "It's also required to contribute into revamp and refactor the redundant codes of functions & views.",
         "Revamp and refactor is part of a plan aiming to upgrade framework to Vue 3."
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/33.jpg?alt=media",
+      "image": "33.jpg?alt=media",
       "importanceOrder": 28,
       "location": "USA",
       "role": "Frontend Web Dev",
@@ -1107,7 +1107,7 @@
       "url": "http://admin.trafficbox.com"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "company": "Tafakkur",
       "date": 2025,
       "description": "Led the frontend development of DLS web platform, digitizing public land services for the Jordanian governmental Department of Lands and Survey",
@@ -1117,7 +1117,7 @@
         "Integrated Express.js backend for lightweight data handling and API support.",
         "Directly contributed to UX alongside the PM and stakeholders."
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/32.jpg?alt=media",
+      "image": "32.jpg?alt=media",
       "importanceOrder": 27,
       "location": "Jordan",
       "role": "Senior Full-Stack Dev",
@@ -1138,7 +1138,7 @@
       "url": "https://tafakkur.com"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "company": "Shai",
       "consulted": true,
       "date": 2025,
@@ -1151,7 +1151,7 @@
         "Included admin tools to manage searchable metadata and optimize search relevance."
       ],
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/31.png?alt=media",
+      "image": "31.png?alt=media",
       "importanceOrder": 28,
       "location": "Saudi Arabia",
       "role": "Full-Stack Dev",
@@ -1173,7 +1173,7 @@
       "url": "http://mustaheq.org/"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "comingSoon": false,
       "company": "Logatta",
       "date": 2023,
@@ -1183,7 +1183,7 @@
         "Worked closely with the client’s media and education teams to deliver an intuitive, responsive platform.",
         "Developed video-based course browsing, lesson tracking, and user authentication systems."
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/21.jpg?alt=media",
+      "image": "21.jpg?alt=media",
       "importanceOrder": 26,
       "location": "Jordan",
       "role": "Frontend Web Dev",
@@ -1203,7 +1203,7 @@
       "url": "https://entreviable.com"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "company": "ArabWork",
       "date": 2022,
       "description": "A logistics marketplace for commercial and personal shipments via trucks. Was the lead frontend developer working under a senior full-stack developer.",
@@ -1213,7 +1213,7 @@
         "Collaborated closely with backend engineer for real-time data handling and authentication flows."
       ],
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/16.jpg?alt=media",
+      "image": "16.jpg?alt=media",
       "importanceOrder": 25,
       "location": "Saudi Arabia",
       "role": "Frontend Web Dev",
@@ -1232,7 +1232,7 @@
       "url": "https://app.trellah.com"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "company": "Luxtag",
       "date": 2020,
       "description": "A blockchain-based product verification platform. Spent 6 months in full-stack development before transitioning to lead frontend responsibilities.",
@@ -1242,7 +1242,7 @@
         "Created QR-scanning features and dashboards to visualize product movement.",
         "Led refactoring of the frontend into modular, reusable components using React.js."
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/11.jpg?alt=media",
+      "image": "11.jpg?alt=media",
       "importanceOrder": 24,
       "location": "Malaysia",
       "role": "Frontend Web Dev",
@@ -1266,13 +1266,13 @@
       "url": "https://app.brandtag.io/"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "company": "Freelance",
       "date": 2024,
       "description": "Own product idea, executed from ideation, development to deployment.",
       "designed": true,
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/28.png?alt=media",
+      "image": "28.png?alt=media",
       "importanceOrder": 23,
       "location": "Jordan",
       "openSource": true,
@@ -1294,14 +1294,14 @@
       "url": "https://heal-tracker.vercel.app/"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "comingSoon": true,
       "company": "Freelance",
       "date": 2023,
       "description": "Own product idea, execution is in-progress by supervised junior developers.",
       "designed": true,
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/24.jpg?alt=media",
+      "image": "24.jpg?alt=media",
       "importanceOrder": 22,
       "location": "Jordan",
       "role": "Product Ownership",
@@ -1321,7 +1321,7 @@
       "type": "Productivity Management"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "company": "AIS",
       "consulted": true,
       "date": 2019,
@@ -1333,7 +1333,7 @@
         "Designed to reduce paper-based workload and streamline access to student records."
       ],
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/8.jpg?alt=media",
+      "image": "8.jpg?alt=media",
       "importanceOrder": 21,
       "location": "Malaysia",
       "role": "Product Ownership",
@@ -1353,7 +1353,7 @@
       "type": "Productivity Management"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "company": "AIS",
       "date": 2020,
       "description": "A separate system for staff management and productivity tracking, developed for the same client of AIS.",
@@ -1364,7 +1364,7 @@
         "Designed for non-technical school staff to interact with effortlessly."
       ],
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/15.jpg?alt=media",
+      "image": "15.jpg?alt=media",
       "importanceOrder": 20,
       "location": "Malaysia",
       "role": "Product Ownership",
@@ -1386,7 +1386,7 @@
       "type": "Productivity Management"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "comingSoon": true,
       "company": "Logatta",
       "date": 2023,
@@ -1397,7 +1397,7 @@
         "Handled map overlays, real-time filters, and interactive data layers using modern JS libraries."
       ],
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/22.jpg?alt=media",
+      "image": "22.jpg?alt=media",
       "importanceOrder": 19,
       "location": "UK",
       "role": "Frontend Web Dev",
@@ -1417,13 +1417,13 @@
       "url": "https://commsure.com/"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "comingSoon": true,
       "company": "Freelance",
       "date": 2024,
       "description": "A solely developed frontend app, totally new / from scratch.",
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/26.jpg?alt=media",
+      "image": "26.jpg?alt=media",
       "importanceOrder": 18,
       "location": "Saudi Arabia",
       "role": "Frontend Web Dev",
@@ -1444,13 +1444,13 @@
       "url": "https://www.shwra.sa/"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "company": "Freelance",
       "date": 2022,
       "description": "A system for school / university students' internship progress tracking & management.",
       "designed": true,
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/13.jpg?alt=media",
+      "image": "13.jpg?alt=media",
       "importanceOrder": 17,
       "location": "Jordan",
       "openSource": true,
@@ -1475,13 +1475,13 @@
       "url": "https://tadreebi.netlify.app/"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "comingSoon": true,
       "company": "Freelancer",
       "date": 2021,
       "description": "Education content & teacher-student communication system.",
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/9.jpg?alt=media",
+      "image": "9.jpg?alt=media",
       "importanceOrder": 16,
       "location": "Malaysia",
       "role": "Full-Stack Dev",
@@ -1500,13 +1500,13 @@
       "type": "Education"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "company": "Freelance",
       "date": 2025,
       "description": "Own product idea, execution is in-progress.",
       "designed": true,
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/35.jpg?alt=media",
+      "image": "35.jpg?alt=media",
       "importanceOrder": 15,
       "location": "Jordan",
       "openSource": true,
@@ -1527,14 +1527,14 @@
       "url": "https://price-admin.vercel.app/"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "comingSoon": true,
       "company": "Freelance",
       "date": 2022,
       "description": "Own product idea, executed from ideation, development to deployment.",
       "designed": true,
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/7.jpg?alt=media",
+      "image": "7.jpg?alt=media",
       "importanceOrder": 14,
       "location": "Jordan",
       "openSource": true,
@@ -1557,13 +1557,13 @@
       "url": "https://cash-hub.vercel.app/"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "company": "Freelance",
       "date": 2025,
       "description": "Own product idea, execution is in-progress by supervised junior developers.",
       "designed": true,
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
+      "image": "10.jpg?alt=media",
       "importanceOrder": 13,
       "location": "Jordan",
       "openSource": true,
@@ -1584,7 +1584,7 @@
       "type": "FinTech"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "comingSoon": true,
       "company": "Freelance",
       "consulted": true,
@@ -1597,7 +1597,7 @@
         "Optimized for AWS deployment with CI/CD, Docker, and secure configuration."
       ],
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/23.jpg?alt=media",
+      "image": "23.jpg?alt=media",
       "importanceOrder": 12,
       "location": "Jordan",
       "role": "Full-Stack Dev",
@@ -1628,7 +1628,7 @@
       "designed": true,
       "foc": true,
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/25.jpg?alt=media",
+      "image": "25.jpg?alt=media",
       "importanceOrder": 11,
       "location": "Jordan",
       "role": "Frontend Web Dev",
@@ -1658,7 +1658,7 @@
       "designed": true,
       "foc": true,
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/30.jpg?alt=media",
+      "image": "30.jpg?alt=media",
       "importanceOrder": 10,
       "location": "Jordan",
       "role": "Frontend Web Dev",
@@ -1679,7 +1679,7 @@
       "url": "https://nutriFatima.com/"
     },
     {
-      "category": "Web Apps",
+      "category": "Web App",
       "comingSoon": false,
       "company": "Freelance",
       "consulted": true,
@@ -1688,7 +1688,7 @@
       "designed": true,
       "foc": true,
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/34.jpg?alt=media",
+      "image": "34.jpg?alt=media",
       "importanceOrder": 10,
       "location": "Jordan",
       "role": "Frontend Web Dev",
@@ -1714,7 +1714,7 @@
       "date": 2024,
       "description": "Simple company's professional website.",
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/27.jpg?alt=media",
+      "image": "27.jpg?alt=media",
       "importanceOrder": 9,
       "location": "Saudi Arabia",
       "role": "Frontend Web Dev",
@@ -1743,7 +1743,7 @@
       "description": "Simple individual's professional website.",
       "foc": true,
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/12.jpg?alt=media",
+      "image": "12.jpg?alt=media",
       "importanceOrder": 8,
       "location": "Jordan",
       "role": "Frontend Web Dev",
@@ -1770,7 +1770,7 @@
       "description": "Simple company's professional website.",
       "foc": true,
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/17.jpg?alt=media",
+      "image": "17.jpg?alt=media",
       "importanceOrder": 7,
       "location": "Jordan",
       "role": "Frontend Web Dev",
@@ -1797,7 +1797,7 @@
       "description": "Simple company's professional website.",
       "foc": true,
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/18.jpg?alt=media",
+      "image": "18.jpg?alt=media",
       "importanceOrder": 6,
       "location": "Malaysia",
       "role": "Frontend Web Dev",
@@ -1821,7 +1821,7 @@
       "description": "Simple company's professional website.",
       "foc": true,
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/1.jpg?alt=media",
+      "image": "1.jpg?alt=media",
       "importanceOrder": 5,
       "location": "Malaysia",
       "role": "Frontend Web Dev",
@@ -1843,7 +1843,7 @@
       "description": "Simple company's professional website.",
       "foc": true,
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/6.jpg?alt=media",
+      "image": "6.jpg?alt=media",
       "importanceOrder": 4,
       "location": "Malaysia",
       "role": "Frontend Web Dev",
@@ -1862,7 +1862,7 @@
       "date": 2018,
       "description": "Simple company's professional website.",
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/2.jpg?alt=media",
+      "image": "2.jpg?alt=media",
       "importanceOrder": 3,
       "location": "Malaysia",
       "role": "Frontend Web Dev",
@@ -1887,7 +1887,7 @@
       "date": 2018,
       "description": "Simple company's professional website.",
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/4.jpg?alt=media",
+      "image": "4.jpg?alt=media",
       "importanceOrder": 2,
       "location": "Malaysia",
       "role": "Frontend Web Dev",
@@ -1907,7 +1907,7 @@
       "date": 2017,
       "description": "Simple company's professional website.",
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/3.jpg?alt=media",
+      "image": "3.jpg?alt=media",
       "importanceOrder": 1,
       "location": "Malaysia",
       "role": "Frontend Web Dev",
@@ -1924,7 +1924,7 @@
     {
       "category": "Logos",
       "description": "Logo Design",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo2.jpg?alt=media",
+      "image": "logo2.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "Finger Speak",
@@ -1934,16 +1934,16 @@
       "category": "Others",
       "description": "Business Card Design",
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc1.jpg?alt=media",
+      "image": "bc1.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "AIS School",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc1.jpg?alt=media"
+      "url": "bc1.jpg?alt=media"
     },
     {
       "category": "Logos",
       "description": "Logo Design",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo.png?alt=media",
+      "image": "logo.png?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "Al-Aqsa Staff Portal",
@@ -1953,18 +1953,18 @@
       "category": "Booklets",
       "description": "Booklet Design",
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet5.jpg?alt=media",
+      "image": "booklet5.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "PSAD Southeast Asia",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet5.jpg?alt=media"
+      "url": "booklet5.jpg?alt=media"
     },
     {
       "category": "Logos",
       "description": "Logo Design",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo5.png?alt=media",
+      "image": "logo5.png?alt=media",
       "importanceOrder": 1,
-      "link": "aam_app",
+      "url": "aam_app",
       "timeOrder": 1,
       "title": "Dr. Ahmad Abu Mahfouth Clinic",
       "url": "https://drahmadabumahfouth.com"
@@ -1972,46 +1972,46 @@
     {
       "category": "Booklets",
       "description": "Booklet Design",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet2.jpg?alt=media",
+      "image": "booklet2.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "Mercy Mission World",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet2.jpg?alt=media"
+      "url": "booklet2.jpg?alt=media"
     },
     {
       "category": "Banners & Posters",
       "description": "Banner Design",
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/banner2.jpg?alt=media",
+      "image": "banner2.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "Several University Clubs",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/banner2.jpg?alt=media"
+      "url": "banner2.jpg?alt=media"
     },
     {
       "category": "Logos",
       "description": "Logo Design",
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo4.jpg?alt=media",
+      "image": "logo4.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "Univeristy Club",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo4.jpg?alt=media"
+      "url": "logo4.jpg?alt=media"
     },
     {
       "category": "Banners & Posters",
       "description": "Banner Design",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media",
+      "image": "poster1.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "SpeedWheels",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media"
+      "url": "poster1.jpg?alt=media"
     },
     {
       "category": "Logos",
       "description": "Logo Re-design",
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo1.jpg?alt=media",
+      "image": "logo1.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "QFM Malaysia",
@@ -2021,100 +2021,100 @@
       "category": "Booklets",
       "description": "Booklet Design",
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet1.jpg?alt=media",
+      "image": "booklet1.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "QFM Malaysia",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet1.jpg?alt=media"
+      "url": "booklet1.jpg?alt=media"
     },
     {
       "category": "Booklets",
       "description": "Booklet Design",
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet3.jpg?alt=media",
+      "image": "booklet3.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "QFM Malaysia",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet3.jpg?alt=media"
+      "url": "booklet3.jpg?alt=media"
     },
     {
       "category": "Booklets",
       "description": "Booklet Design",
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet4.jpg?alt=media",
+      "image": "booklet4.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "QFM Malaysia",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet4.jpg?alt=media"
+      "url": "booklet4.jpg?alt=media"
     },
     {
       "category": "Banners & Posters",
       "description": "Poster Design",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster3.jpg?alt=media",
+      "image": "poster3.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "FYP Project",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster3.jpg?alt=media"
+      "url": "poster3.jpg?alt=media"
     },
     {
       "category": "Others",
       "description": "CV Design",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/cv.jpg?alt=media",
+      "image": "cv.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "An Engineering Graduate",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/cv.jpg?alt=media"
+      "url": "cv.jpg?alt=media"
     },
     {
       "category": "Logos",
       "description": "Logo Design",
       "hide": true,
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo6.png?alt=media",
+      "image": "logo6.png?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "xEdu",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo6.png?alt=media"
+      "url": "logo6.png?alt=media"
     },
     {
       "category": "Banners & Posters",
       "description": "Brochure Design",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media",
+      "image": "poster1.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "Makan Sini Resturant",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media"
+      "url": "poster1.jpg?alt=media"
     },
     {
       "category": "Others",
       "description": "Business Card Design",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc2.jpg?alt=media",
+      "image": "bc2.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "Global Mediator",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc2.jpg?alt=media"
+      "url": "bc2.jpg?alt=media"
     },
     {
       "category": "Booklets",
       "description": "Booklet Design",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet6.jpg?alt=media",
+      "image": "booklet6.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "IIUM",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet6.jpg?alt=media"
+      "url": "booklet6.jpg?alt=media"
     },
     {
       "category": "Others",
       "description": "Brochure Design",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster2.jpg?alt=media",
+      "image": "poster2.jpg?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "IIUM",
-      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster2.jpg?alt=media"
+      "url": "poster2.jpg?alt=media"
     },
     {
       "category": "Videos",
       "description": "Video Producing",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/video1.png?alt=media",
+      "image": "video1.png?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "ICPC Asia Regional Contest",
@@ -2123,7 +2123,7 @@
     {
       "category": "Videos",
       "description": "Video Producing",
-      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/video2.png?alt=media",
+      "image": "video2.png?alt=media",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "ICPC Asia Regional Contest",
@@ -2139,7 +2139,7 @@
         "Acquired soft skills, including team leadership and development planning.",
         "Notable projects include building the web application for Jordan's public services platform (Sanad) and Jordan's Land and Survey Department digital services portal."
       ],
-      "icon": "faCode",
+      "icon": "fa-solid fa-code",
       "jobs": [
         {
           "company": "Several Brands",
@@ -2153,7 +2153,7 @@
           "projectsCount": 2,
           "title": "Frontend Developer",
           "type": "Full-Time",
-          "website": "https://www.severalbrands.com"
+          "url": "https://www.severalbrands.com"
         },
         {
           "company": "Shai",
@@ -2170,7 +2170,7 @@
           "projectsCount": 2,
           "title": "Technical Advisor",
           "type": "Freelancer",
-          "website": "https://www.shai.sa/"
+          "url": "https://www.shai.sa/"
         },
         {
           "company": "Tafakkur",
@@ -2185,7 +2185,7 @@
           "projectsCount": 1,
           "title": "Senior Full-Stack Developer",
           "type": "Freelancer",
-          "website": "https://tafakkur.com/"
+          "url": "https://tafakkur.com/"
         },
         {
           "company": "Shai",
@@ -2201,7 +2201,7 @@
           "projectsCount": 2,
           "title": "Senior Full-Stack Developer",
           "type": "Freelancer",
-          "website": "https://www.shai.sa/"
+          "url": "https://www.shai.sa/"
         },
         {
           "company": "Noor Training & Consultancy",
@@ -2216,7 +2216,7 @@
           "projectsCount": 2,
           "title": "Technical Advisor",
           "type": "Freelancer",
-          "website": "https://noorkayyali.com/"
+          "url": "https://noorkayyali.com/"
         },
         {
           "company": "AlembicSoft",
@@ -2233,7 +2233,7 @@
           "projectsCount": 1,
           "title": "Senior Full-Stack Developer",
           "type": "Full-Time",
-          "website": "https://www.alembicsoft.com"
+          "url": "https://www.alembicsoft.com"
         },
         {
           "company": "Logatta",
@@ -2247,7 +2247,7 @@
           "projectsCount": 2,
           "title": "Senior Frontend Developer",
           "type": "Freelancer",
-          "website": "https://www.logatta.com"
+          "url": "https://www.logatta.com"
         },
         {
           "company": "AgileTz",
@@ -2263,7 +2263,7 @@
           "projectsCount": 2,
           "title": "Senior Full-Stack Developer",
           "type": "Full-Time",
-          "website": "https://www.agiletz.com/"
+          "url": "https://www.agiletz.com/"
         },
         {
           "company": "ArabWork",
@@ -2279,7 +2279,7 @@
           "projectsCount": 1,
           "title": "Frontend Developer",
           "type": "Full-Time",
-          "website": "https://www.linkedin.com/company/arabwork/"
+          "url": "https://www.linkedin.com/company/arabwork/"
         },
         {
           "company": "Luxtag",
@@ -2294,7 +2294,7 @@
           "projectsCount": 1,
           "title": "Frontend Developer",
           "type": "Full-Time",
-          "website": "https://Luxtag.io/"
+          "url": "https://Luxtag.io/"
         },
         {
           "company": "AIS",
@@ -2309,7 +2309,7 @@
           "projectsCount": 1,
           "title": "Full-Stack Developer",
           "type": "Part-Time",
-          "website": "http://aqsa.edu.my/"
+          "url": "http://aqsa.edu.my/"
         },
         {
           "company": "Freelance",
@@ -2349,7 +2349,7 @@
         "Created designs for various web applications.",
         "Executed graphic design projects, including rebuilding foundation brand identities."
       ],
-      "icon": "faPaintBrush",
+      "icon": "fa-solid fa-paintBrush",
       "jobs": [
         {
           "certificate": "",
@@ -2362,7 +2362,7 @@
           "projectsCount": 5,
           "title": "Graphic Designer",
           "type": "Part-time",
-          "website": "https://speedwheels.shop/"
+          "url": "https://speedwheels.shop/"
         },
         {
           "certificate": "",
@@ -2375,7 +2375,7 @@
           "projectsCount": 8,
           "title": "Graphic Designer",
           "type": "Part-time",
-          "website": "http://qfmalaysia.org/"
+          "url": "http://qfmalaysia.org/"
         },
         {
           "certificate": "",
@@ -2388,7 +2388,7 @@
           "projectsCount": 8,
           "title": "PR Executive",
           "type": "Part-time",
-          "website": "https://www.mercymissionworld.org/"
+          "url": "https://www.mercymissionworld.org/"
         },
         {
           "company": "Freelance",
@@ -2418,7 +2418,7 @@
         "Developed skills in work documentation and organization.",
         "Accumulated foundational experience in management roles over the years."
       ],
-      "icon": "faBriefcase",
+      "icon": "fa-solid fa-briefcase",
       "jobs": [
         {
           "company": "WAMY",
@@ -2468,9 +2468,9 @@
   ],
   "projects": [
     {
-      "img": "/images/appnest-w.png",
-      "link": "https://initia-landing.vercel.app/",
-      "name": "initia",
+      "image": "/images/appnest-w.png",
+      "url": "https://initia-landing.vercel.app/",
+      "label": "initia",
       "texts": [
         "Initia is a new initiative focused on helping founders and teams move from idea to working product faster, using practical engineering, automation, and battle-tested product patterns.",
         "The project is shaped directly by my previous startup experience, with a strong emphasis on early validation, speed of execution, and reducing wasted effort before scale.",
@@ -2480,9 +2480,9 @@
       ]
     },
     {
-      "img": "/images/semesteer.png",
-      "link": "https://www.semesteer.com/",
-      "name": "semesteer",
+      "image": "/images/semesteer.png",
+      "url": "https://www.semesteer.com/",
+      "label": "semesteer",
       "texts": [
         "I spent over two years working full-time on building and deploying an education-tech startup, owning the product from concept to real-world use.",
         "The journey exposed me to the full reality of entrepreneurship—where technical excellence meets market constraints, adoption challenges, and execution pressure.",
@@ -2498,8 +2498,8 @@
       "groups": [
         "Frontend"
       ],
-      "icon": "faReact",
-      "name": "React.Js",
+      "icon": "fa-brand fa-react",
+      "label": "React.Js",
       "rate": 5,
       "subSkills": [
         "Redux",
@@ -2518,64 +2518,64 @@
         "Eslint",
         "prettier"
       ],
-      "website": "https://reactjs.org/"
+      "url": "https://reactjs.org/"
     },
     {
       "color": "000000",
       "groups": [
         "Frontend"
       ],
-      "icon": "faN",
-      "name": "Next.Js",
+      "icon": "fa-solid fa-n",
+      "label": "Next.Js",
       "rate": 5,
       "subSkills": [
         "Same as React.Js"
       ],
-      "website": "https://nextjs.org/"
+      "url": "https://nextjs.org/"
     },
     {
       "color": "B63DFE",
       "groups": [
         "Frontend"
       ],
-      "icon": "faV",
-      "name": "Vite",
+      "icon": "fa-solid fa-v",
+      "label": "Vite",
       "rate": 3,
       "subSkills": [
         "Same as React.Js"
       ],
-      "website": "https://vitejs.dev/"
+      "url": "https://vitejs.dev/"
     },
     {
       "color": "000000",
       "groups": [
         "Frontend"
       ],
-      "icon": "faR",
-      "name": "Remix",
+      "icon": "fa-solid fa-r",
+      "label": "Remix",
       "rate": 3,
       "subSkills": [
         "Same as React.Js"
       ],
-      "website": "https://remix.run/"
+      "url": "https://remix.run/"
     },
     {
       "color": "000000",
       "groups": [
         "Frontend"
       ],
-      "icon": "faShapes",
-      "name": "Three.Js",
+      "icon": "fa-solid fa-shapes",
+      "label": "Three.Js",
       "rate": 3,
-      "website": "https://threejs.org/"
+      "url": "https://threejs.org/"
     },
     {
       "color": "00bd83",
       "groups": [
         "Frontend"
       ],
-      "icon": "faVuejs",
-      "name": "Vue.Js",
+      "icon": "fa-brand fa-vuejs",
+      "label": "Vue.Js",
       "rate": 4,
       "subSkills": [
         "VueX",
@@ -2584,30 +2584,30 @@
         "Webpack",
         "i18next"
       ],
-      "website": "https://vuejs.org/"
+      "url": "https://vuejs.org/"
     },
     {
       "color": "00DC82",
       "groups": [
         "Frontend"
       ],
-      "icon": "faVuejs",
-      "name": "Nuxt.Js",
+      "icon": "fa-brand fa-vuejs",
+      "label": "Nuxt.Js",
       "rate": 4,
       "subSkills": [
         "Same as Vue.Js"
       ],
-      "website": "https://nuxt.com/"
+      "url": "https://nuxt.com/"
     },
     {
       "color": "D6002F",
       "groups": [
         "Frontend"
       ],
-      "icon": "faAngular",
-      "name": "Angular.Js",
+      "icon": "fa-brand fa-angular",
+      "label": "Angular.Js",
       "rate": 1,
-      "website": "https://angular.dev/"
+      "url": "https://angular.dev/"
     },
     {
       "color": "8bc500",
@@ -2615,190 +2615,190 @@
         "Frontend",
         "Backend"
       ],
-      "icon": "faNode",
-      "name": "Node.Js",
+      "icon": "fa-brand fa-node",
+      "label": "Node.Js",
       "rate": 5,
       "subSkills": [
         "npm",
         "yarn",
         "ElasticSearch"
       ],
-      "website": "https://nodejs.org/"
+      "url": "https://nodejs.org/"
     },
     {
       "color": "000000",
       "groups": [
         "Backend"
       ],
-      "icon": "faNodeJs",
-      "name": "Express.Js",
+      "icon": "fa-brand fa-nodeJs",
+      "label": "Express.Js",
       "rate": 5,
-      "website": "https://expressjs.com/"
+      "url": "https://expressjs.com/"
     },
     {
       "color": "E0234E",
       "groups": [
         "Backend"
       ],
-      "icon": "faNodeJs",
-      "name": "Nest.Js",
+      "icon": "fa-brand fa-nodeJs",
+      "label": "Nest.Js",
       "rate": 4,
       "subSkills": [
         "Typeorm"
       ],
-      "website": "https://nestjs.com/"
+      "url": "https://nestjs.com/"
     },
     {
       "color": "ff2d20",
       "groups": [
         "Backend"
       ],
-      "icon": "faLaravel",
-      "name": "Laravel",
+      "icon": "fa-brand fa-laravel",
+      "label": "Laravel",
       "rate": 4,
-      "website": "https://laravel.com/"
+      "url": "https://laravel.com/"
     },
     {
       "color": "092d1f",
       "groups": [
         "Backend"
       ],
-      "icon": "faHashtag",
-      "name": "Django",
+      "icon": "fa-solid fa-hashtag",
+      "label": "Django",
       "rate": 2,
       "subSkills": [
         "DJ REST API",
         "DJ Simple JWT",
         "DJ Environ"
       ],
-      "website": "https://www.djangoproject.com/"
+      "url": "https://www.djangoproject.com/"
     },
     {
       "color": "00A7D0",
       "groups": [
         "Backend"
       ],
-      "icon": "faGolang",
-      "name": "Go / GoLang",
+      "icon": "fa-brand fa-golang",
+      "label": "Go / GoLang",
       "rate": 1,
-      "website": "https://go.dev/"
+      "url": "https://go.dev/"
     },
     {
       "color": "21759b",
       "groups": [
         "Frontend"
       ],
-      "icon": "faWordpress",
-      "name": "Wordpress",
+      "icon": "fa-brand fa-wordpress",
+      "label": "Wordpress",
       "rate": 3,
       "subSkills": [
         "Elementor",
         "Contact Form 7"
       ],
-      "website": "https://wordpress.com/"
+      "url": "https://wordpress.com/"
     },
     {
       "color": "24BBB1",
       "groups": [
         "Backend"
       ],
-      "icon": "faSearch",
-      "name": "ElasticSearch",
+      "icon": "fa-solid fa-search",
+      "label": "ElasticSearch",
       "rate": 2,
       "subSkills": [
         "OpenSearch"
       ],
-      "website": "https://www.elastic.co/elasticsearch"
+      "url": "https://www.elastic.co/elasticsearch"
     },
     {
       "color": "EBC4DF",
       "groups": [
         "Backend"
       ],
-      "icon": "faSitemap",
-      "name": "MicroServices",
+      "icon": "fa-solid fa-sitemap",
+      "label": "MicroServices",
       "rate": 2,
-      "website": "https://microservices.io/"
+      "url": "https://microservices.io/"
     },
     {
       "color": "2f6091",
       "groups": [
         "Databases"
       ],
-      "icon": "faDatabase",
-      "name": "PostgreSQL",
+      "icon": "fa-solid fa-database",
+      "label": "PostgreSQL",
       "rate": 4,
-      "website": "https://www.postgresql.org/"
+      "url": "https://www.postgresql.org/"
     },
     {
       "color": "ffa518",
       "groups": [
         "Databases"
       ],
-      "icon": "faDatabase",
-      "name": "MySQL",
+      "icon": "fa-solid fa-database",
+      "label": "MySQL",
       "rate": 4,
-      "website": "https://www.mysql.com/"
+      "url": "https://www.mysql.com/"
     },
     {
       "color": "023430",
       "groups": [
         "Databases"
       ],
-      "icon": "faDatabase",
-      "name": "Mongo DB",
+      "icon": "fa-solid fa-database",
+      "label": "Mongo DB",
       "rate": 3,
-      "website": "https://www.mongodb.com/"
+      "url": "https://www.mongodb.com/"
     },
     {
       "color": "DD2C00",
       "groups": [
         "Databases"
       ],
-      "icon": "faDatabase",
-      "name": "Firebase",
+      "icon": "fa-solid fa-database",
+      "label": "Firebase",
       "rate": 4,
-      "website": "https://firebase.google.com"
+      "url": "https://firebase.google.com"
     },
     {
       "color": "004364",
       "groups": [
         "Databases"
       ],
-      "icon": "faDatabase",
-      "name": "SQLite",
+      "icon": "fa-solid fa-database",
+      "label": "SQLite",
       "rate": 4,
-      "website": "https://www.sqlite.org/"
+      "url": "https://www.sqlite.org/"
     },
     {
       "color": "ff9900",
       "groups": [
         "DevOps & Tools"
       ],
-      "icon": "faAmazon",
-      "name": "AWS",
+      "icon": "fa-brand fa-amazon",
+      "label": "AWS",
       "rate": 3,
-      "website": "https://aws.amazon.com/"
+      "url": "https://aws.amazon.com/"
     },
     {
       "color": "000000",
       "groups": [
         "DevOps & Tools"
       ],
-      "icon": "faGithub",
-      "name": "Github",
+      "icon": "fa-brand fa-github",
+      "label": "Github",
       "rate": 5,
-      "website": "https://www.github.com/"
+      "url": "https://www.github.com/"
     },
     {
       "color": "2496ed",
       "groups": [
         "DevOps & Tools"
       ],
-      "icon": "faDocker",
-      "name": "Docker",
+      "icon": "fa-brand fa-docker",
+      "label": "Docker",
       "rate": 5,
-      "website": "https://www.docker.com/"
+      "url": "https://www.docker.com/"
     },
     {
       "color": "323330",
@@ -2806,15 +2806,15 @@
         "Frontend",
         "Backend"
       ],
-      "icon": "faJs",
-      "name": "JavaScript",
+      "icon": "fa-brand fa-js",
+      "label": "JavaScript",
       "rate": 5,
       "subSkills": [
         "ES6",
         "ES5",
         "Embedded JS"
       ],
-      "website": "https://www.javascript.com/"
+      "url": "https://www.javascript.com/"
     },
     {
       "color": "3178C6",
@@ -2822,20 +2822,20 @@
         "Frontend",
         "Backend"
       ],
-      "icon": "faJs",
-      "name": "TypeScript",
+      "icon": "fa-brand fa-js",
+      "label": "TypeScript",
       "rate": 4,
-      "website": "https://www.typescriptlang.org/"
+      "url": "https://www.typescriptlang.org/"
     },
     {
       "color": "0868ac",
       "groups": [
         "Frontend"
       ],
-      "icon": "faBroadcastTower",
-      "name": "jQuery",
+      "icon": "fa-solid fa-broadcastTower",
+      "label": "jQuery",
       "rate": 3,
-      "website": "https://jquery.com/"
+      "url": "https://jquery.com/"
     },
     {
       "color": "0f0f0f",
@@ -2843,104 +2843,104 @@
         "Frontend",
         "Backend"
       ],
-      "icon": "faRing",
-      "name": "JSON",
+      "icon": "fa-solid fa-ring",
+      "label": "JSON",
       "rate": 5,
-      "website": "https://www.json.org/"
+      "url": "https://www.json.org/"
     },
     {
       "color": "3771a1",
       "groups": [
         "Backend"
       ],
-      "icon": "faPython",
-      "name": "Python",
+      "icon": "fa-brand fa-python",
+      "label": "Python",
       "rate": 2,
       "subSkills": [
         "Numpy",
         "Pandas",
         "Matplotlib"
       ],
-      "website": "https://www.python.org/"
+      "url": "https://www.python.org/"
     },
     {
       "color": "4f5c93",
       "groups": [
         "Backend"
       ],
-      "icon": "faPhp",
-      "name": "PhP",
+      "icon": "fa-brand fa-php",
+      "label": "PhP",
       "rate": 4,
-      "website": "https://www.php.net/"
+      "url": "https://www.php.net/"
     },
     {
       "color": "e44d26",
       "groups": [
         "Frontend"
       ],
-      "icon": "faHtml5",
-      "name": "HTML",
+      "icon": "fa-brand fa-html5",
+      "label": "HTML",
       "rate": 5,
-      "website": "https://html.spec.whatwg.org/"
+      "url": "https://html.spec.whatwg.org/"
     },
     {
       "color": "379ad6",
       "groups": [
         "Frontend"
       ],
-      "icon": "faCss3Alt",
-      "name": "CSS",
+      "icon": "fa-brand fa-css3Alt",
+      "label": "CSS",
       "rate": 5,
-      "website": "https://www.w3.org/TR/CSS/#css"
+      "url": "https://www.w3.org/TR/CSS/#css"
     },
     {
       "color": "7952b3",
       "groups": [
         "Frontend"
       ],
-      "icon": "faBootstrap",
-      "name": "Bootstrap",
+      "icon": "fa-brand fa-bootstrap",
+      "label": "Bootstrap",
       "rate": 5,
-      "website": "https://getbootstrap.com/"
+      "url": "https://getbootstrap.com/"
     },
     {
       "color": "00BCFF",
       "groups": [
         "Frontend"
       ],
-      "icon": "faReact",
-      "name": "TailWind",
+      "icon": "fa-brand fa-react",
+      "label": "TailWind",
       "rate": 3,
-      "website": "https://tailwindcss.com/"
+      "url": "https://tailwindcss.com/"
     },
     {
       "color": "00a99d",
       "groups": [
         "Methodologies"
       ],
-      "icon": "faSyncAlt",
-      "name": "Agile",
+      "icon": "fa-solid fa-syncAlt",
+      "label": "Agile",
       "rate": 5,
       "subSkills": [
         "SCRUM",
         "Kanban"
       ],
-      "website": "https://www.scrum.org/"
+      "url": "https://www.scrum.org/"
     },
     {
       "color": "1f93b8",
       "groups": [
         "Methodologies"
       ],
-      "icon": "faSyncAlt",
-      "name": "SCRUM",
+      "icon": "fa-solid fa-syncAlt",
+      "label": "SCRUM",
       "rate": 5,
       "subSkills": [
         "Jira",
         "ClickUp",
         "YouTrack"
       ],
-      "website": "https://www.scrum.org/"
+      "url": "https://www.scrum.org/"
     },
     {
       "color": "176985",
@@ -2948,8 +2948,8 @@
         "Frontend",
         "Backend"
       ],
-      "icon": "faCloud",
-      "name": "REST API",
+      "icon": "fa-solid fa-cloud",
+      "label": "REST API",
       "rate": 5
     }
   ],
@@ -2957,127 +2957,127 @@
     {
       "author": "Noor Kayyali",
       "content": "Suhaib has been an outstanding mentee and technical advisor. He showed strong commitment to every session, was always respectful, and a pleasure to work with. He also developed my website, which continues to receive compliments and has been key in presenting my professional identity. His work is thoughtful, reliable, and impactful—I highly recommend him.",
-      "img": "noor.jpeg",
-      "link": "https://www.linkedin.com/in/noorkayyali"
+      "image": "noor.jpeg",
+      "url": "https://www.linkedin.com/in/noorkayyali"
     },
     {
       "author": "Hanan N.",
       "content": "Suhaib has always been generous with his technical advice, especially in backend development and database design. His input was consistently thoughtful, practical, and rooted in solid experience. I truly appreciated his willingness to support and guide whenever we needed an expert opinion.",
-      "img": "hanan.jpeg",
-      "link": "https://www.linkedin.com/in/hananni"
+      "image": "hanan.jpeg",
+      "url": "https://www.linkedin.com/in/hananni"
     },
     {
       "author": "Mazen Adel",
       "content": "I had the chance to work under Suhaib's command on several creative projects, and I am certain he is among the best and most supportive leaders I've ever had the opportunity to work under. Suhaib organized the tasks, oversaw the workflow, and made sure everything was running according to our goal. I personally hope to be able to continue with him in more projects. I learnt from him a lot in management and clean code.",
-      "img": "mazen.jpeg",
-      "link": "https://www.linkedin.com/in/mazen-adel-bab"
+      "image": "mazen.jpeg",
+      "url": "https://www.linkedin.com/in/mazen-adel-bab"
     },
     {
       "author": "Ahmad Alkharfan",
       "content": "Great mentor, helped me get on my feet at the start of my career life.",
-      "img": "kharfan.jpeg",
-      "link": "https://www.linkedin.com/in/ahmad-alkharfan"
+      "image": "kharfan.jpeg",
+      "url": "https://www.linkedin.com/in/ahmad-alkharfan"
     }
   ],
   "trainees": [
     {
       "highlight": true,
-      "img": "suhaib.jpg",
-      "link": "https://www.linkedin.com/in/suhib-mourshid",
-      "name": "Suhaib Mourshid"
+      "image": "suhaib.jpg",
+      "url": "https://www.linkedin.com/in/suhib-mourshid",
+      "label": "Suhaib Mourshid"
     },
     {
       "highlight": true,
-      "img": "kharfan.jpeg",
-      "link": "https://www.linkedin.com/in/ahmad-alkharfan",
-      "name": "Ahmad Alkharfan"
+      "image": "kharfan.jpeg",
+      "url": "https://www.linkedin.com/in/ahmad-alkharfan",
+      "label": "Ahmad Alkharfan"
     },
     {
       "highlight": true,
-      "img": "bakhadher.jpg",
-      "link": "https://www.linkedin.com/in/mohammed-abdullah-omar-ba-khadher",
-      "name": "Mohammed BaKhadher"
+      "image": "bakhadher.jpg",
+      "url": "https://www.linkedin.com/in/mohammed-abdullah-omar-ba-khadher",
+      "label": "Mohammed BaKhadher"
     },
     {
       "highlight": true,
-      "img": "mazen.jpeg",
-      "link": "https://www.linkedin.com/in/mazen-adel-bab141258",
-      "name": "Mazen Adel"
+      "image": "mazen.jpeg",
+      "url": "https://www.linkedin.com/in/mazen-adel-bab141258",
+      "label": "Mazen Adel"
     },
     {
-      "img": "",
-      "link": "",
-      "name": "Mustafa Hasanat"
+      "image": "",
+      "url": "",
+      "label": "Mustafa Hasanat"
     },
     {
-      "img": "",
-      "link": "",
-      "name": "Zaid Jarrar"
+      "image": "",
+      "url": "",
+      "label": "Zaid Jarrar"
     },
     {
-      "img": "",
-      "link": "",
-      "name": "Mazen Adel"
+      "image": "",
+      "url": "",
+      "label": "Mazen Adel"
     },
     {
-      "img": "",
-      "link": "",
-      "name": "Suhaib Murshed"
+      "image": "",
+      "url": "",
+      "label": "Suhaib Murshed"
     },
     {
-      "img": "",
-      "link": "",
-      "name": "Raghad Abdulhadi"
+      "image": "",
+      "url": "",
+      "label": "Raghad Abdulhadi"
     },
     {
-      "img": "",
-      "link": "",
-      "name": "Emad Majdalawi"
+      "image": "",
+      "url": "",
+      "label": "Emad Majdalawi"
     },
     {
-      "img": "",
-      "link": "",
-      "name": "Ghaida Momani"
+      "image": "",
+      "url": "",
+      "label": "Ghaida Momani"
     },
     {
-      "img": "",
-      "link": "",
-      "name": "Ahmad Kharfan"
+      "image": "",
+      "url": "",
+      "label": "Ahmad Kharfan"
     },
     {
-      "img": "",
-      "link": "",
-      "name": "Mohammed Ba Khadher"
+      "image": "",
+      "url": "",
+      "label": "Mohammed Ba Khadher"
     },
     {
-      "img": "",
-      "link": "",
-      "name": "Yahya Labeeb"
+      "image": "",
+      "url": "",
+      "label": "Yahya Labeeb"
     },
     {
-      "img": "",
-      "link": "",
-      "name": "Eleen Feras"
+      "image": "",
+      "url": "",
+      "label": "Eleen Feras"
     },
     {
-      "img": "",
-      "link": "",
-      "name": "Lareen Feras"
+      "image": "",
+      "url": "",
+      "label": "Lareen Feras"
     },
     {
-      "img": "",
-      "link": "",
-      "name": "Osaid Ahmad"
+      "image": "",
+      "url": "",
+      "label": "Osaid Ahmad"
     },
     {
-      "img": "",
-      "link": "",
-      "name": "Hamed Sulieman"
+      "image": "",
+      "url": "",
+      "label": "Hamed Sulieman"
     },
     {
-      "img": "",
-      "link": "",
-      "name": "AbdulRahman Othman"
+      "image": "",
+      "url": "",
+      "label": "AbdulRahman Othman"
     }
   ]
 }

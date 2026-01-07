@@ -62,7 +62,7 @@ const ContactForm = () => {
               style={{ backgroundColor: color, color: "#ffffff" }}
             >
               <h5>
-                <i className={`bi ${icon}`} /> {label}
+                <i className={`fa-solid ${icon}`} /> {label}
               </h5>
             </button>
           </div>

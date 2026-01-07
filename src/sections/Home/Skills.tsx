@@ -10,7 +10,11 @@ const SkillsSection = async ({
   short?: boolean;
 }) => {
   return (
-    <PageSection title={t("Title")} subtitle={t("subtitle")} id="skills">
+    <PageSection
+      title={t("Skills.Title")}
+      subtitle={t("Skills.Subtitle")}
+      id="skills"
+    >
       <div className="row">
         {skillsList.map((skill, index) => (
           <SkillCard key={index} short={short} {...skill} />

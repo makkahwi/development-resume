@@ -10,11 +10,17 @@ const ProjectsSection = async ({
   short?: boolean;
 }) => {
   return (
-    <PageSection title={t("Title")} subtitle={t("subtitle")} id="projects">
+    <PageSection
+      title={t("Projects.Title")}
+      subtitle={t("Projects.Subtitle")}
+      id="projects"
+    >
       <div className="row">
-        {projectsList.map((project, index) => (
-          <ProjectCard key={index} short={short} {...project} />
-        ))}
+        {projectsList
+          .filter(({ category }) => category === "Web App")
+          .map((project, index) => (
+            <ProjectCard key={index} short={short} {...project} />
+          ))}
       </div>
     </PageSection>
   );

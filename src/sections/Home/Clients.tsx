@@ -4,22 +4,28 @@ import PageSection from "@/components/PageSection";
 const ClientsSection = async ({ t }: { t: Function }) => {
   return (
     <PageSection
-      title={t("clients.title")}
-      subtitle={t("clients.subtitle")}
+      title={t("Clients.Title")}
+      subtitle={t("Clients.Subtitle")}
       id="clients"
     >
       <div className="row">
         {clientsList
-          .filter(({ prominent }) => prominent)
-          .map(({ link, img, name }, index) => (
+          .filter(
+            ({ prominent, image }) => prominent && image && image.length > 0
+          )
+          .map(({ url, image, label }, index) => (
             <a
               key={index}
-              href={link}
+              href={url}
               target="_blank"
               rel="noopener noreferrer"
               className="col-6 col-md-3 mb-4 d-flex align-items-center justify-content-center"
             >
-              <img src={img} alt={name} className="img-fluid" />
+              <img
+                src={process.env.NEXT_PUBLIC_STORAGE_URL + image}
+                alt={label}
+                className="img-fluid"
+              />
             </a>
           ))}
       </div>

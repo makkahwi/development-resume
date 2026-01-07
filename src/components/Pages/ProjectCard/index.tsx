@@ -12,7 +12,14 @@ const ProjectCard = ({
   return (
     <div className="card">
       <div className="card-body text-center">
-        <Image src={image} alt={title} width={400} height={400} />
+        {image && image.length > 0 && (
+          <Image
+            src={process.env.NEXT_PUBLIC_STORAGE_URL + image}
+            alt={title}
+            width={400}
+            height={400}
+          />
+        )}
 
         {technologies?.length && technologies?.length > 0 && (
           <div className="mb-3">
@@ -29,7 +36,7 @@ const ProjectCard = ({
 
         {url && (
           <a href={url} target="_blank" rel="noopener noreferrer">
-            <i className="bi bi-link-45deg" />
+            <i className="fa-solid bi-link-45deg" />
           </a>
         )}
       </div>

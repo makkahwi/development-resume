@@ -1,16 +1,21 @@
 import { TestimonialProps } from "@/types/data";
 import Image from "next/image";
 
-const TestimonialCard = ({ author, content, img, link }: TestimonialProps) => {
+const TestimonialCard = ({ author, content, image, url }: TestimonialProps) => {
   return (
     <div className="card">
       <div className="card-body text-center">
         <h2>{author}</h2>
         <p>{content}</p>
 
-        {link && (
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            <Image src={img} alt={author} width={400} height={400} />
+        {url && image && image.length > 0 && (
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            <Image
+              src={process.env.NEXT_PUBLIC_STORAGE_URL + image}
+              alt={author}
+              width={400}
+              height={400}
+            />
           </a>
         )}
       </div>

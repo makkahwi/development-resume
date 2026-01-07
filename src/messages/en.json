@@ -34,17 +34,37 @@
     "Title": "Hands-on Work – Projects & Technical Experience"
   },
   "Home": {
+    "Blog": {
+      "Subtitle": "What I have in my mind",
+      "Title": "Blog"
+    },
+    "Clients": {
+      "Subtitle": "Some of the most well-known clients I worked with",
+      "Title": "Prominent Clients"
+    },
     "Description": "Personal website of Suhaib Ahmad, Senior Full-Stack Developer, Technical Advisor, Mentor and more.",
-    "subtitle": "I help bring software ideas to life — from architecture and design to code and deployment. Whether you're building a product, seeking technical guidance, or just getting started on your coding journey, I offer help tailored to your needs.",
+    "Projects": {
+      "Subtitle": "The highlighted technical projects I have worked on",
+      "Title": "Projects"
+    },
+    "Skills": {
+      "Subtitle": "The significant technical skills I possess",
+      "Title": "Skills"
+    },
+    "Subtitle": "I help bring software ideas to life — from architecture and design to code and deployment. Whether you're building a product, seeking technical guidance, or just getting started on your coding journey, I offer help tailored to your needs.",
+    "Testimonials": {
+      "Subtitle": "What others say about me",
+      "Title": "Testimonials"
+    },
     "Title": "Suhaib Ahmad – Resume Website"
   },
   "Layout": {
     "Footer": {
       "AllRightsReserved": "All Rights Reserved",
-      "Suhaib Ahmad": "Suhaib Ahmad"
+      "Title": "Suhaib Ahmad"
     },
     "Nav": {
-      "Suhaib Ahmad": "Suhaib Ahmad",
+      "Title": "Suhaib Ahmad",
       "about": "About",
       "blog": "Blog",
       "contact": "Contact",

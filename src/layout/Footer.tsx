@@ -1,5 +1,3 @@
-"use client";
-
 import { contactsList } from "@/api/hardCodedData";
 import ContactForm from "@/components/ContactForm";
 import { useTranslations } from "next-intl";
@@ -32,7 +30,7 @@ const Footer = () => {
               style={{ color }}
               key={i}
             >
-              <i className={`bi ${icon}`} />
+              <i className={`fa-solid ${icon}`} />
             </a>
           ))}
         </div>

@@ -32,7 +32,7 @@ const PageNavigator = ({ sections = defaultSections }: PageNavigatorProps) => {
           data-bs-placement="right"
           title={label}
         >
-          <i className={`bi ${iconClass}`} />
+          <i className={`fa-solid ${iconClass}`} />
         </a>
       ))}
     </div>

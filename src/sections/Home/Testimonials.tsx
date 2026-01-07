@@ -5,8 +5,8 @@ import PageSection from "@/components/PageSection";
 const TestimonialsSection = async ({ t }: { t: Function }) => {
   return (
     <PageSection
-      title={t("testimonials.title")}
-      subtitle={t("testimonials.subtitle")}
+      title={t("Testimonials.Title")}
+      subtitle={t("Testimonials.Subtitle")}
       id="testimonials"
     >
       <div className="row">

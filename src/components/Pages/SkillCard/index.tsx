@@ -1,11 +1,10 @@
 import { SkillsProps } from "@/types/data";
-import Image from "next/image";
 
 const SkillCard = ({
   color,
   groups,
   icon,
-  name,
+  label,
   rate,
   subSkills,
   website,
@@ -16,7 +15,7 @@ const SkillCard = ({
       <div className="card-body text-center">
         <h4>
           <a href={website} target="_blank" rel="noopener noreferrer">
-            <i className={`bi ${icon} me-1`} /> {name}
+            <i className={`fa-solid ${icon} me-1`} /> {label}
           </a>
         </h4>
 
@@ -25,7 +24,9 @@ const SkillCard = ({
             .fill("")
             .map((_, i) => (
               <i
-                className={`bi star text-${rate >= i ? "muted" : "warning"}`}
+                className={`fa-solid fa-star text-${
+                  rate >= i ? "muted" : "warning"
+                }`}
                 key={i}
               />
             ))}

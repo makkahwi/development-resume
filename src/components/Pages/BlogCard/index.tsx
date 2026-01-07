@@ -13,7 +13,14 @@ const BlogPostCard = ({
   return (
     <div className="card">
       <div className="card-body text-center">
-        {image && <Image src={image} alt={id} width={400} height={400} />}
+        {image && image.length > 0 && (
+          <Image
+            src={process.env.NEXT_PUBLIC_STORAGE_URL + image}
+            alt={id}
+            width={400}
+            height={400}
+          />
+        )}
 
         <h2>{versions.en.title}</h2>
 

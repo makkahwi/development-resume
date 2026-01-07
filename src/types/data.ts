@@ -28,9 +28,9 @@ export interface BlogProps {
 }
 
 export interface ClientProps {
-  name: string;
-  img: string;
-  link: string;
+  label: string;
+  image: string;
+  url: string;
   prominent?: boolean;
 }
 
@@ -38,7 +38,7 @@ export interface ContactProps {
   color: string;
   icon: string;
   label: string;
-  link: string;
+  url: string;
   name: string;
 }
 
@@ -47,12 +47,12 @@ export interface EducationProps {
   desc: string;
   downloads: {
     label: string;
-    link: string;
+    url: string;
   }[];
   logo: string;
-  name: string;
+  label: string;
   school: string;
-  website: string;
+  url: string;
 }
 
 export interface JobProps {
@@ -91,7 +91,7 @@ export interface SkillsProps {
   color: string;
   groups: string[];
   icon: string;
-  name: string;
+  label: string;
   rate: number;
   subSkills?: string[];
   website?: string;
@@ -100,13 +100,13 @@ export interface SkillsProps {
 export interface TestimonialProps {
   author: string;
   content: string;
-  img: string;
-  link: string;
+  image: string;
+  url: string;
 }
 
 export interface TraineeProps {
-  img: string;
-  link: string;
-  name: string;
+  image: string;
+  url: string;
+  label: string;
   highlight?: boolean;
 }

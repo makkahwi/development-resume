@@ -84,7 +84,7 @@ const NavbarComp = () => {
                       : "text-secondary"
                   }`}
                 >
-                  <i className={`bi ${iconClass} fw-bold`} />
+                  <i className={`fa-solid ${iconClass} fw-bold`} />
                   <span className="d-inline d-lg-none d-xl-inline">
                     {t(key)}
                   </span>
@@ -104,7 +104,7 @@ const NavbarComp = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="bi bi-download me-1 fw-bold" />{" "}
+                <i className="fa-solid bi-download me-1 fw-bold" />{" "}
                 <span className="d-inline d-lg-none d-xl-inline">CV</span>
               </a>
             </li>
