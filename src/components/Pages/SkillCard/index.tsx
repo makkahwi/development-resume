@@ -1,27 +1,22 @@
+import { SkillsProps } from "@/types/data";
 import Image from "next/image";
 
-export interface SkillsProps {
-  title: string;
-  level: number;
-  icon: string;
-  groups: string[];
-  url?: string;
-}
-
 const SkillCard = ({
-  title,
-  level,
-  icon,
+  color,
   groups,
-  url,
+  icon,
+  name,
+  rate,
+  subSkills,
+  website,
   short = true,
 }: SkillsProps & { short?: boolean }) => {
   return (
     <div className="card">
       <div className="card-body text-center">
         <h4>
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            <i className={`bi ${icon} me-1`} /> {title}
+          <a href={website} target="_blank" rel="noopener noreferrer">
+            <i className={`bi ${icon} me-1`} /> {name}
           </a>
         </h4>
 
@@ -30,7 +25,7 @@ const SkillCard = ({
             .fill("")
             .map((_, i) => (
               <i
-                className={`bi star text-${level >= i ? "muted" : "warning"}`}
+                className={`bi star text-${rate >= i ? "muted" : "warning"}`}
                 key={i}
               />
             ))}

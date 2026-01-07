@@ -1,12 +1,5 @@
+import { ProjectProps } from "@/types/data";
 import Image from "next/image";
-
-export interface ProjectProps {
-  technologies: string[];
-  title: string;
-  description: string;
-  url?: string;
-  image: string;
-}
 
 const ProjectCard = ({
   technologies,
@@ -21,9 +14,9 @@ const ProjectCard = ({
       <div className="card-body text-center">
         <Image src={image} alt={title} width={400} height={400} />
 
-        {technologies.length > 0 && (
+        {technologies?.length && technologies?.length > 0 && (
           <div className="mb-3">
-            {technologies.map((tech, index) => (
+            {technologies?.map((tech, index) => (
               <span key={index} className="badge bg-secondary me-1">
                 {tech}
               </span>

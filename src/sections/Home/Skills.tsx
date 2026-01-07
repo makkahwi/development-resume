@@ -1,4 +1,5 @@
-import SkillCard, { SkillsProps } from "@/components/Pages/SkillCard";
+import { skillsList } from "@/api/hardCodedData";
+import SkillCard from "@/components/Pages/SkillCard";
 import PageSection from "@/components/PageSection";
 
 const SkillsSection = async ({
@@ -8,20 +9,10 @@ const SkillsSection = async ({
   t: Function;
   short?: boolean;
 }) => {
-  const skills: SkillsProps[] = [
-    {
-      title: "Project Alpha",
-      icon: "/images/projects/alpha.png",
-      url: "https://example.com/project-alpha",
-      level: 90,
-      groups: ["Web Development", "UI/UX"],
-    },
-  ];
-
   return (
     <PageSection title={t("title")} subtitle={t("subtitle")} id="skills">
       <div className="row">
-        {skills.map((skill, index) => (
+        {skillsList.map((skill, index) => (
           <SkillCard key={index} short={short} {...skill} />
         ))}
       </div>

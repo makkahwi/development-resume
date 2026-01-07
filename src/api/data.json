@@ -1,0 +1,3083 @@
+{
+  "blog": [
+    {
+      "category": "startup-product",
+      "date": "2026-01-13",
+      "id": "speed-without-structure-delayed-collapse",
+      "tags": [
+        "startup",
+        "mvp",
+        "product-development",
+        "software-architecture",
+        "technical-decisions"
+      ],
+      "versions": {
+        "ar": {
+          "long": [
+            {
+              "text": "كثير فرق تطوير بتحكي: «إحنا بدنا نمشي بسرعة». والنية غالبًا صافية. لكن في فرق جوهري بين إنك تمشي بسرعة، وإنك تبني عشوائي.",
+              "type": "paragraph"
+            },
+            {
+              "text": "الاثنين ممكن يطلعوا نتيجة سريعة بالبداية، لكن واحد منهم فقط بكمّل مع الوقت.",
+              "type": "paragraph"
+            },
+            {
+              "level": 2,
+              "text": "السرعة الصحيحة في بناء المنتجات",
+              "type": "heading"
+            },
+            {
+              "items": [
+                "فكرة واضحة ومحددة",
+                "حدود معروفة للـ MVP",
+                "أقل تنظيم ممكن يسمح للمشروع يكمل",
+                "قرارات سريعة لكن مفهومة السبب"
+              ],
+              "style": "unordered",
+              "type": "list"
+            },
+            {
+              "text": "السرعة الصحيحة تكون واعية، مقصودة، وقابلة للتصحيح بدون تدمير الأساس.",
+              "type": "paragraph"
+            },
+            {
+              "level": 2,
+              "text": "البناء العشوائي: الخطر المؤجّل",
+              "type": "heading"
+            },
+            {
+              "items": [
+                "إضافة ميزات لأن أحدهم طلبها",
+                "تغيير سلوك النظام بناءً على افتراضات",
+                "تخريب الأساس لأن الحل الحالي أسهل",
+                "إهمال التوثيق بحجة ضيق الوقت"
+              ],
+              "style": "unordered",
+              "type": "list"
+            },
+            {
+              "text": "المشكلة الحقيقية لا تظهر فورًا، بل بعد أشهر، عندما يصبح أي تعديل صغير مخاطرة، ويبدأ الفريق بالخوف من لمس الكود.",
+              "type": "paragraph"
+            },
+            {
+              "level": 2,
+              "text": "Minimal Architecture ≠ Perfect Architecture",
+              "type": "heading"
+            },
+            {
+              "text": "المشاريع الناشئة لا تحتاج إلى Microservices أو أنماط معقدة. ما تحتاجه هو تنظيم بسيط، مسؤوليات واضحة، وقرارات مفهومة.",
+              "type": "paragraph"
+            },
+            {
+              "text": "Minimal Architecture تعني أقل تنظيم ممكن، لكنه كافٍ ليمنع انهيار المنتج مع النمو.",
+              "type": "paragraph"
+            },
+            {
+              "level": 2,
+              "text": "الخلاصة",
+              "type": "heading"
+            },
+            {
+              "text": "السرعة مطلوبة، لكن السرعة الصحيحة لها شكل. إذا كان كل شيء يصبح أصعب مع الوقت، فغالبًا المشكلة ليست في الوقت، بل في أنك بنيت أسرع مما نظّمت.",
+              "type": "paragraph"
+            }
+          ],
+          "meta": {
+            "description": "لماذا تؤدي السرعة بدون تنظيم إلى انهيار المنتجات البرمجية لاحقًا؟ شرح الفرق بين البناء السريع الواعي والبناء العشوائي، وأهمية Minimal Architecture.",
+            "title": "السرعة بدون تنظيم في بناء المنتجات البرمجية | Minimal Architecture"
+          },
+          "short": [
+            {
+              "text": "كثير فرق بتحكي: «بدنا نمشي بسرعة». لكن في فرق خطير بين السرعة الواعية، والبناء العشوائي.",
+              "type": "paragraph"
+            },
+            {
+              "text": "السرعة الصحيحة يكون إلها حدود واضحة، تنظيم بسيط، وقرارات مفهومة. أما العشوائية فتعطي نتيجة مؤقتة ثم تتحول إلى عبء.",
+              "type": "paragraph"
+            },
+            {
+              "text": "Minimal Architecture لا تعني التعقيد، بل أقل تنظيم ممكن يسمح للمنتج يكبر بدون ما ينهار.",
+              "type": "paragraph"
+            }
+          ],
+          "slug": "السرعة-بدون-تنظيم-انهيار-مؤجل",
+          "title": "السرعة بدون تنظيم = انهيار مؤجّل"
+        },
+        "en": {
+          "long": [
+            {
+              "text": "Many teams say they want to move fast. The intention is usually good. However, there is a critical difference between intentional speed and chaotic building.",
+              "type": "paragraph"
+            },
+            {
+              "text": "Both can produce quick results early on, but only one can sustain growth over time.",
+              "type": "paragraph"
+            },
+            {
+              "level": 2,
+              "text": "What Intentional Speed Looks Like",
+              "type": "heading"
+            },
+            {
+              "items": [
+                "A clear product vision",
+                "Defined MVP boundaries",
+                "Minimal but sufficient structure",
+                "Fast decisions with clear reasoning"
+              ],
+              "style": "unordered",
+              "type": "list"
+            },
+            {
+              "level": 2,
+              "text": "The Risk of Chaotic Building",
+              "type": "heading"
+            },
+            {
+              "text": "Chaotic building delays problems rather than eliminating them. Over time, small changes become risky, onboarding slows down, and teams fear touching the codebase.",
+              "type": "paragraph"
+            },
+            {
+              "level": 2,
+              "text": "Minimal Architecture Is Not Overengineering",
+              "type": "heading"
+            },
+            {
+              "text": "Early-stage products do not need complex architectures. They need clarity, ownership, and just enough structure to avoid collapse.",
+              "type": "paragraph"
+            },
+            {
+              "level": 2,
+              "text": "Conclusion",
+              "type": "heading"
+            },
+            {
+              "text": "Speed matters. But sustainable speed requires structure. If everything feels harder over time, the issue is not speed—it is lack of organization.",
+              "type": "paragraph"
+            }
+          ],
+          "meta": {
+            "description": "Why moving fast without structure causes software products to collapse later, and how minimal architecture prevents long-term technical failure.",
+            "title": "Speed Without Structure in Software Products | Minimal Architecture"
+          },
+          "short": [
+            {
+              "text": "Moving fast is not the problem. Building without structure is.",
+              "type": "paragraph"
+            },
+            {
+              "text": "Intentional speed is supported by clear boundaries and minimal organization. Chaos only delays failure.",
+              "type": "paragraph"
+            },
+            {
+              "text": "Minimal architecture is not about perfection. It is about survival and growth.",
+              "type": "paragraph"
+            }
+          ],
+          "slug": "speed-without-structure-delayed-collapse",
+          "title": "Speed Without Structure Leads to Delayed Collapse"
+        }
+      }
+    },
+    {
+      "category": "startup-product",
+      "date": "2026-01-20",
+      "id": "technical-debt-from-day-one",
+      "tags": [
+        "startup",
+        "mvp",
+        "technical-debt",
+        "software-engineering",
+        "product-development",
+        "architecture"
+      ],
+      "versions": {
+        "ar": {
+          "long": [
+            {
+              "text": "الدَّين التقني (Technical Debt) مش دايمًا قرار واعي. كثير مرات بيبدأ من أول أسبوع… بدون ما حدا ينتبه.",
+              "type": "paragraph"
+            },
+            {
+              "text": "والأخطر؟ إنه بمرحلة الـ MVP بتحس إن كل شي طبيعي: المنتج شغال، الفريق متحمّس، والسرعة ممتازة. بس بعد شهرين أو ثلاثة… بتبدأ الفاتورة توصل.",
+              "type": "paragraph"
+            },
+            {
+              "level": 2,
+              "text": "شو يعني Technical Debt ببساطة؟",
+              "type": "heading"
+            },
+            {
+              "text": "هو مجموعة اختصارات وقرارات “سريعة” بتدفع ثمنها لاحقًا على شكل: بطء بالتطوير، أخطاء متكررة، صعوبة صيانة، وخوف من التعديل.",
+              "type": "paragraph"
+            },
+            {
+              "level": 2,
+              "text": "أمثلة على دين تقني بيبدأ من أول يوم",
+              "type": "heading"
+            },
+            {
+              "items": [
+                "تسمية غير واضحة للملفات والمجلدات لأن «هلأ خلصناها»",
+                "Logic متكرر بكل صفحة بدل وظيفة مشتركة واحدة",
+                "عدم وجود Logging أو Error tracking لأن «لسه بدري»",
+                "API endpoints بدون معايير ثابتة (response shape يتغير كل مرة)",
+                "Quick fixes في البيانات (data shape) بدل توحيدها من البداية"
+              ],
+              "style": "unordered",
+              "type": "list"
+            },
+            {
+              "level": 2,
+              "text": "وين الاختصارات طبيعية ومقبولة؟",
+              "type": "heading"
+            },
+            {
+              "text": "في الـ MVP، الاختصارات مش حرام. بس لازم تكون “مؤقتة ومعلّمة”. اختصر في الأشياء اللي بتأثر على الشكل أو الراحة، مش على أساس المنتج.",
+              "type": "paragraph"
+            },
+            {
+              "items": [
+                "UI غير مثالي (طالما واضح ويخدم الوظيفة)",
+                "تصميم بسيط بدل نظام تصميم كامل",
+                "Features ثانوية تنشال أو تتأجل بدون تخريب المنتج",
+                "تقليل حالات الاستخدام (use-cases) لأساس واحد واضح"
+              ],
+              "style": "unordered",
+              "type": "list"
+            },
+            {
+              "level": 2,
+              "text": "وين ممنوع تختصر؟",
+              "type": "heading"
+            },
+            {
+              "text": "في أشياء إذا اختصرت فيها، بتزرع مشاكل هيكلية. وهون الدين التقني بيصير “فخ” بدل ما يكون قرار ذكي.",
+              "type": "paragraph"
+            },
+            {
+              "items": [
+                "Authentication/Authorization (صلاحيات) — لأنه صعب تشتغل عليه بعدين بدون تكسير",
+                "Data model الأساسي — إذا خرب من أول يوم، كل شي فوقه بيخرب",
+                "Logging/Error handling — بدونهم ما رح تعرف شو اللي بصير عند المستخدم",
+                "معايير API/DTOs — لأن عدم الثبات يخلق فوضى بين الفرونت والباك",
+                "مبدأ واحد واضح للهيكلة (Minimal Architecture) — حتى لو بسيط"
+              ],
+              "style": "unordered",
+              "type": "list"
+            },
+            {
+              "level": 2,
+              "text": "كيف تقلل الدين التقني بدون ما تبطّئ الفريق؟",
+              "type": "heading"
+            },
+            {
+              "items": [
+                "خلي كل Shortcut عليه ملاحظة واضحة (TODO + سبب + موعد مراجعة)",
+                "ثبت “شكل” الـ API responses من البداية",
+                "حط Minimal structure للمجلدات والـ layers (حتى لو بسيط)",
+                "فعّل logging و error tracking مبكرًا (حتى لو نسخة خفيفة)",
+                "خصص وقت صغير أسبوعيًا لتسديد دين تقني واحد واضح"
+              ],
+              "style": "unordered",
+              "type": "list"
+            },
+            {
+              "level": 2,
+              "text": "الخلاصة",
+              "type": "heading"
+            },
+            {
+              "text": "الـ Technical Debt ما بيبدأ لما المشروع يكبر… غالبًا بيبدأ من أول يوم. الاختصارات مسموحة، بس لازم تعرف وين تختصر ووين ممنوع. السرعة بدون وعي = فاتورة كبيرة لاحقًا.",
+              "type": "paragraph"
+            }
+          ],
+          "meta": {
+            "description": "شرح عملي لكيف يبدأ الدَّين التقني من أول يوم في بناء المنتج، ومتى تكون الاختصارات مقبولة، ومتى تتحول إلى فخ يهدد عمر المشروع.",
+            "title": "الدَّين التقني في المشاريع الناشئة: كيف يبدأ من أول يوم؟ | Technical Debt"
+          },
+          "short": [
+            {
+              "text": "الدَّين التقني (Technical Debt) مش شرط يجي بعد سنة… كثير مرات بيبدأ من أول أسبوع بدون ما نحس.",
+              "type": "paragraph"
+            },
+            {
+              "text": "اختصر بالـ UI وبالـ تفاصيل الثانوية… بس لا تختصر بالأساس: بياناتك، صلاحياتك، الـ logs، وثبات الـ API.",
+              "type": "paragraph"
+            },
+            {
+              "text": "السرعة الصح هي اختصارات واعية ومعلّمة. أما الاختصارات العشوائية… فاتورتها بتوصل بعد شهرين.",
+              "type": "paragraph"
+            }
+          ],
+          "slug": "الدين-التقني-من-اول-يوم",
+          "title": "كيف الدَّين التقني بيبدأ من أول يوم بدون ما تحس؟"
+        },
+        "en": {
+          "long": [
+            {
+              "text": "Technical debt rarely starts a year later. In many MVPs, it starts in week one—quietly—while everything still looks “fast” and “working.”",
+              "type": "paragraph"
+            },
+            {
+              "text": "The problem is not speed. The problem is taking shortcuts in the wrong places, creating a hidden cost that shows up months later as slow delivery, repeated bugs, and fear of change.",
+              "type": "paragraph"
+            },
+            {
+              "level": 2,
+              "text": "What Technical Debt Really Means",
+              "type": "heading"
+            },
+            {
+              "text": "Technical debt is the accumulated cost of quick decisions that make future change harder. It appears as friction: complexity, instability, messy code paths, and unclear ownership.",
+              "type": "paragraph"
+            },
+            {
+              "level": 2,
+              "text": "Common Day-One Debt Patterns",
+              "type": "heading"
+            },
+            {
+              "items": [
+                "Unclear folder/file conventions because “we’ll clean later”",
+                "Duplicated logic across pages instead of shared utilities",
+                "No logging or error tracking because “it’s too early”",
+                "Inconsistent API responses that change per endpoint",
+                "Data model hacks instead of a stable core schema"
+              ],
+              "style": "unordered",
+              "type": "list"
+            },
+            {
+              "level": 2,
+              "text": "Where Shortcuts Are Fine in an MVP",
+              "type": "heading"
+            },
+            {
+              "text": "Shortcuts are not evil. In MVPs they are often necessary—if they are intentional and reversible.",
+              "type": "paragraph"
+            },
+            {
+              "items": [
+                "Imperfect UI as long as the workflow is clear",
+                "Simple design instead of a full design system",
+                "Deferring secondary features that don’t affect the core value",
+                "Narrowing use-cases to one focused customer journey"
+              ],
+              "style": "unordered",
+              "type": "list"
+            },
+            {
+              "level": 2,
+              "text": "Where Shortcuts Become Dangerous",
+              "type": "heading"
+            },
+            {
+              "text": "Some shortcuts create structural debt that is expensive to fix later, especially once real users exist.",
+              "type": "paragraph"
+            },
+            {
+              "items": [
+                "Authentication & authorization (permissions)",
+                "Core data model and migrations",
+                "Logging, error handling, and observability",
+                "Stable API contracts (DTOs / response shapes)",
+                "Minimal architecture rules (boundaries and ownership)"
+              ],
+              "style": "unordered",
+              "type": "list"
+            },
+            {
+              "level": 2,
+              "text": "How to Reduce Debt Without Slowing Delivery",
+              "type": "heading"
+            },
+            {
+              "items": [
+                "Make shortcuts explicit: TODO + reason + review date",
+                "Standardize API response contracts early",
+                "Adopt minimal structure (folders/layers) from day one",
+                "Enable lightweight logging and error tracking early",
+                "Pay one small debt item weekly to keep momentum"
+              ],
+              "style": "unordered",
+              "type": "list"
+            },
+            {
+              "level": 2,
+              "text": "Conclusion",
+              "type": "heading"
+            },
+            {
+              "text": "Technical debt often starts on day one. Speed is valuable—but only when you know where to shortcut and where not to. Intentional shortcuts keep you fast; chaotic shortcuts slow you down later.",
+              "type": "paragraph"
+            }
+          ],
+          "meta": {
+            "description": "A practical guide to how technical debt starts early in MVPs, where shortcuts are acceptable, where they are dangerous, and how to reduce debt without slowing delivery.",
+            "title": "Technical Debt in Startups: How It Starts on Day One | MVP Engineering"
+          },
+          "short": [
+            {
+              "text": "Technical debt doesn’t start “later.” In many MVPs, it starts in week one—when teams cut corners in the wrong places.",
+              "type": "paragraph"
+            },
+            {
+              "text": "Cut corners in UI and secondary features if needed, but don’t cut corners in core data, auth, logging, and stable API contracts.",
+              "type": "paragraph"
+            },
+            {
+              "text": "Intentional shortcuts keep you fast. Chaotic shortcuts create a delayed collapse.",
+              "type": "paragraph"
+            }
+          ],
+          "slug": "technical-debt-starts-day-one",
+          "title": "Technical Debt Starts on Day One (Often Without You Noticing)"
+        }
+      }
+    },
+    {
+      "category": "startup-product-decisions",
+      "date": "2026-01-27",
+      "id": "why-many-mvps-are-rebuilt-after-year-one",
+      "tags": [
+        "MVP",
+        "Product Strategy",
+        "Technical Debt",
+        "Startup Growth",
+        "Product Rebuild"
+      ],
+      "versions": {
+        "ar": {
+          "long": [
+            {
+              "text": "ليش كثير MVPs ينعاد بناؤها بعد أول سنة؟ ومش دايمًا هذا شي سيّئ.",
+              "type": "paragraph"
+            },
+            {
+              "text": "خلّيني أبدأ باعتراف بسيط: إعادة بناء المنتج مش دائمًا فشل. أحيانًا… هي أول قرار ناضج فعليًا.",
+              "type": "paragraph"
+            },
+            {
+              "level": 3,
+              "text": "الحقيقة اللي ما حد بحب يسمعها",
+              "type": "heading"
+            },
+            {
+              "items": [
+                "بتوقّعات",
+                "بافتراضات",
+                "وبفهم ناقص للمستخدم الحقيقي"
+              ],
+              "style": "unordered",
+              "type": "list"
+            },
+            {
+              "text": "حتى لو الكود نظيف، والفكرة واضحة، والفريق قوي… الواقع دايمًا بيفاجئك.",
+              "type": "paragraph"
+            },
+            {
+              "level": 3,
+              "text": "ليش بنوصل لمرحلة إعادة البناء؟",
+              "type": "heading"
+            },
+            {
+              "items": [
+                "تغيّر استخدام المنتج",
+                "نمو غير متوقّع",
+                "تراكم الدَّين التقني بصمت",
+                "نجاح المنتج أكثر من المتوقع"
+              ],
+              "style": "unordered",
+              "type": "list"
+            },
+            {
+              "level": 3,
+              "text": "متى تكون إعادة البناء قرار ذكي؟",
+              "type": "heading"
+            },
+            {
+              "items": [
+                "وجود بيانات استخدام حقيقية",
+                "رؤية أوضح للمنتج",
+                "وضوح ما يجب الحفاظ عليه وما يجب تغييره",
+                "حل مشاكل جوهرية فعلية"
+              ],
+              "style": "unordered",
+              "type": "list"
+            },
+            {
+              "level": 3,
+              "text": "ومتى تكون إعادة البناء هروب؟",
+              "type": "heading"
+            },
+            {
+              "items": [
+                "إعادة كتابة مستمرة بدون سبب",
+                "السبب الوحيد: الكود لا يعجبنا",
+                "عدم وجود مستخدمين حقيقيين",
+                "غياب التعلّم من السوق"
+              ],
+              "style": "unordered",
+              "type": "list"
+            },
+            {
+              "text": "الـ MVP مش لازم يعيش للأبد، بس لازم يعيش كفاية ليتعلّم.",
+              "type": "paragraph"
+            }
+          ],
+          "meta": {
+            "description": "إعادة بناء المنتج بعد أول سنة مش دائمًا فشل. أحيانًا تكون أول قرار ناضج مبني على بيانات حقيقية وفهم أعمق للمستخدم.",
+            "title": "ليش كثير MVPs ينعاد بناؤها بعد أول سنة؟ ومش دايمًا هذا شي سيّئ"
+          },
+          "short": [
+            {
+              "text": "إعادة بناء الـ MVP بعد أول سنة مش دايمًا فشل. أحيانًا هي نتيجة طبيعية للتعلّم الحقيقي من المستخدمين.",
+              "type": "paragraph"
+            },
+            {
+              "text": "المهم مش هل أعدت البناء، بل ليش؟ وبناءً على أي بيانات؟",
+              "type": "paragraph"
+            }
+          ],
+          "slug": "ليش-كثير-MVPs-ينعاد-بناؤها-بعد-أول-سنة؟-ومش-دايمًا-هذا-شي-سيّئ",
+          "title": "ليش كثير MVPs ينعاد بناؤها بعد أول سنة؟ ومش دايمًا هذا شي سيّئ"
+        },
+        "en": {
+          "long": [
+            {
+              "text": "Why do so many MVPs get rebuilt after the first year? And why is that not always a bad thing?",
+              "type": "paragraph"
+            },
+            {
+              "text": "Rebuilding a product is not always a sign of failure. In many cases, it’s the first truly mature decision a team makes.",
+              "type": "paragraph"
+            },
+            {
+              "level": 3,
+              "text": "The uncomfortable truth",
+              "type": "heading"
+            },
+            {
+              "text": "The first version of almost any product is built on assumptions, expectations, and incomplete understanding of real users.",
+              "type": "paragraph"
+            },
+            {
+              "level": 3,
+              "text": "When rebuilding is the right decision",
+              "type": "heading"
+            },
+            {
+              "items": [
+                "You now have real usage data",
+                "You understand your users better",
+                "You know what must stay and what must go",
+                "The rebuild solves core problems"
+              ],
+              "style": "unordered",
+              "type": "list"
+            }
+          ],
+          "meta": {
+            "description": "Rebuilding an MVP after year one is not always a failure. Often, it’s the first mature decision based on real usage and data.",
+            "title": "Why Many MVPs Are Rebuilt After the First Year (And Why That’s Not Always Bad)"
+          },
+          "short": [
+            {
+              "text": "Rebuilding an MVP after the first year is often a sign of learning, not failure.",
+              "type": "paragraph"
+            }
+          ],
+          "slug": "why-many-mvps-are-rebuilt-after-the-first-year-and-why-thats-not-always-bad",
+          "title": "Why Many MVPs Are Rebuilt After the First Year (And Why That’s Not Always Bad)"
+        }
+      }
+    }
+  ],
+  "clients": [
+    {
+      "img": "modee.png",
+      "link": "https://www.modee.gov.jo/",
+      "name": "Modee",
+      "prominent": true
+    },
+    {
+      "img": "dls.png",
+      "link": "https://www.dls.gov.jo/",
+      "name": "DLS",
+      "prominent": true
+    },
+    {
+      "img": "saudi.png",
+      "link": "https://www.hrsd.gov.sa/",
+      "name": "HRSD",
+      "prominent": true
+    },
+    {
+      "img": "deloitte.png",
+      "link": "https://www.deloitte.com/middle-east/en/services/consulting/services/deloitte-jordan-digital-center.html",
+      "name": "Deloitte",
+      "prominent": true
+    },
+    {
+      "img": "sharq.png",
+      "link": "https://www.sharqforum.org/ar/",
+      "name": "Al Sharq Forum",
+      "prominent": true
+    },
+    {
+      "img": "shai.png",
+      "link": "https://www.shai.sa",
+      "name": "Shai",
+      "prominent": true
+    },
+    {
+      "img": "agile.png",
+      "link": "https://www.startupsjo.com/en/Pages/CustomPages/Startup/409",
+      "name": "AgileTz",
+      "prominent": true
+    },
+    {
+      "img": "sawaed.png",
+      "link": "https://www.sawaed-almaj.org/",
+      "name": "Sawaed",
+      "prominent": false
+    },
+    {
+      "img": "zaad.png",
+      "link": "https://zaadmaj.org.sa/",
+      "name": "Zaad",
+      "prominent": false
+    },
+    {
+      "img": "artawiyah.png",
+      "link": "https://www.ber-artawyah.org/",
+      "name": "Ber Artawiyah",
+      "prominent": false
+    },
+    {
+      "img": "severalBrands.png",
+      "link": "https://severalbrands.com/",
+      "name": "Several Brands",
+      "prominent": true
+    },
+    {
+      "img": "trafficBox.png",
+      "link": "https://trafficbox.com/",
+      "name": "Traffic Box",
+      "prominent": true
+    },
+    {
+      "img": "capitalcloud.png",
+      "link": "https://capitalcloud.sa/",
+      "name": "Capital Cloud",
+      "prominent": true
+    },
+    {
+      "img": "e3.png",
+      "link": "https://e3.ventures/",
+      "name": "E3 Ventures",
+      "prominent": false
+    },
+    {
+      "img": "shwra.png",
+      "link": "https://www.shwra.sa/",
+      "name": "Shwra",
+      "prominent": false
+    },
+    {
+      "img": "arabwork.png",
+      "link": "https://www.arabwork.com/",
+      "name": "ArabWork",
+      "prominent": false
+    },
+    {
+      "img": "trellah.png",
+      "link": "https://app.trellah.com/",
+      "name": "Trellah",
+      "prominent": false
+    },
+    {
+      "img": "tafakkur.png",
+      "link": "https://tafakkur.com/",
+      "name": "Tafakkur",
+      "prominent": true
+    },
+    {
+      "img": "fatima.png",
+      "link": "https://nutrifatima.com/",
+      "name": "Fatima",
+      "prominent": false
+    },
+    {
+      "img": "noor.png",
+      "link": "https://noorkayyali.com/",
+      "name": "Noor Training & Consultancy",
+      "prominent": false
+    },
+    {
+      "img": "alembicsoft.png",
+      "link": "https://www.alembicsoft.com/",
+      "name": "AlembicSoft",
+      "prominent": false
+    },
+    {
+      "img": "rnk.png",
+      "link": "https://rasmiandkiwan.com/",
+      "name": "R&K Consultants",
+      "prominent": false
+    },
+    {
+      "img": "logatta.png",
+      "link": "https://www.logatta.com/",
+      "name": "Logatta",
+      "prominent": false
+    },
+    {
+      "img": "entreviable.png",
+      "link": "https://entreviable.com/",
+      "name": "Entreviable",
+      "prominent": false
+    },
+    {
+      "img": "commsure.png",
+      "link": "https://commsure.com/",
+      "name": "Commsure",
+      "prominent": false
+    },
+    {
+      "img": "luxtag.png",
+      "link": "https://www.luxtag.io/",
+      "name": "Luxtag",
+      "prominent": true
+    },
+    {
+      "img": "ais.png",
+      "link": "https://www.aqsa.edu.my/",
+      "name": "AIS",
+      "prominent": false
+    },
+    {
+      "img": "ppam.png",
+      "link": "https://ppam.org.my",
+      "name": "PPAM Malaysia",
+      "prominent": false
+    },
+    {
+      "img": "teamtr.png",
+      "link": "hthttps://teamtr.media/",
+      "name": "Team Foundation",
+      "prominent": false
+    },
+    {
+      "img": "speedwheels.png",
+      "link": "https://speedwheelstrade.online",
+      "name": "SpeedWheels Malaysia",
+      "prominent": false
+    }
+  ],
+  "contacts": [
+    {
+      "color": "#0A66C2",
+      "icon": "faLinkedinIn",
+      "label": "Linked In Progress",
+      "link": "https://linkedin.com/in/SuhaibAhmadAi/",
+      "name": "LinkedIn"
+    },
+    {
+      "color": "#181717",
+      "icon": "faGithub",
+      "label": "Git It, Connect",
+      "link": "https://github.com/makkahwi",
+      "name": "Github"
+    },
+    {
+      "color": "#25D366",
+      "icon": "faWhatsapp",
+      "label": "Text Me Anytime",
+      "link": "https://wasap.my/962788424973",
+      "name": "WhatsApp"
+    },
+    {
+      "color": "#0088CC",
+      "icon": "faTelegram",
+      "label": "Let's Tele-chat",
+      "link": "https://t.me/makkahwi",
+      "name": "Telegram"
+    },
+    {
+      "color": "#001F3F",
+      "icon": "faPhone",
+      "label": "Call IF NECESSARY",
+      "link": "tel:+962788424973",
+      "name": "Phone"
+    },
+    {
+      "color": "#006400",
+      "icon": "faEnvelope",
+      "label": "Inbox Awaits You",
+      "link": "mailto:SuhaibAhmadAi@hotmail.com",
+      "name": "Email"
+    },
+    {
+      "color": "#1877F2",
+      "icon": "faFacebook",
+      "label": "Let's Chat Forever",
+      "link": "https://facebook.com/makkahwi",
+      "name": "Facebook"
+    },
+    {
+      "color": "#E4405F",
+      "icon": "faInstagram",
+      "label": "Capture Life",
+      "link": "https://instagram.com/makkahwi",
+      "name": "Instagram"
+    }
+  ],
+  "education": [
+    {
+      "cert": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
+      "desc": "Python Based Web Dev (Code Fellows Curriculum)",
+      "downloads": [
+        {
+          "label": "Individual Works",
+          "link": "https://github.com/makkahwi/asac-works"
+        },
+        {
+          "label": "Midterm",
+          "link": "https://silent-speakers.github.io/silent-speakers/"
+        },
+        {
+          "label": "Final",
+          "link": "https://tadreebi.netlify.app/"
+        }
+      ],
+      "logo": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/LTUC.png?alt=media",
+      "name": "6-Month Training Camp",
+      "school": "ASAC of LTUC College (Jordan)",
+      "website": "https://ltuc.edu.jo/"
+    },
+    {
+      "cert": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Scroll.pdf?alt=media",
+      "desc": "Specialized in Data Science and Computational Intelligence",
+      "downloads": [
+        {
+          "label": "FYP Project",
+          "link": "https://github.com/makkahwi/iDecide"
+        }
+      ],
+      "logo": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/IIUM.png?alt=media",
+      "name": "Bachelor of Computer Science",
+      "school": "International Islamic University Malaysia",
+      "website": "https://www.iium.edu.my/"
+    }
+  ],
+  "job-projects": [
+    {
+      "category": "Consulting",
+      "title": "Lyyyf",
+      "company": "Lyyyf",
+      "date": 2025,
+      "description": "string",
+      "details": [],
+      "image": "string",
+      "importanceOrder": 0,
+      "location": "string",
+      "role": "string",
+      "shortTitle": "Lyyyf",
+      "technologies": [],
+      "timeOrder": 0,
+      "type": "string"
+    },
+    {
+      "category": "Consulting",
+      "company": "Daleel 108",
+      "date": 2025,
+      "description": "string",
+      "details": [],
+      "image": "string",
+      "importanceOrder": 0,
+      "location": "string",
+      "role": "string",
+      "shortTitle": "string",
+      "technologies": [],
+      "timeOrder": 0,
+      "type": "string",
+      "title": "QR Menu"
+    },
+    {
+      "category": "Consulting",
+      "company": "Tamarras",
+      "date": 2024,
+      "description": "string",
+      "details": [],
+      "image": "string",
+      "importanceOrder": 0,
+      "location": "string",
+      "role": "string",
+      "shortTitle": "string",
+      "technologies": [],
+      "timeOrder": 0,
+      "type": "string",
+      "title": "Tamarras"
+    },
+    {
+      "category": "Consulting",
+      "company": "Cura",
+      "date": 2024,
+      "description": "string",
+      "details": [],
+      "image": "string",
+      "importanceOrder": 0,
+      "location": "string",
+      "role": "string",
+      "shortTitle": "string",
+      "technologies": [],
+      "timeOrder": 0,
+      "type": "string",
+      "title": "Cura"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "AgileTz",
+      "date": 2022,
+      "description": "Sanad is Jordan’s national gateway to digital government services. Built the frontend from scratch and maintained it as the only frontend developer.",
+      "details": [
+        "Delivered a responsive, modular frontend interface supporting various ministries and services.",
+        "Maintained accessibility, performance, and UX consistency across a growing number of services.",
+        "Collaborated closely with backend and DevOps teams to ensure seamless API integrations.",
+        "Contributed to UI/UX design decisions with the PM for maximum citizen engagement.",
+        "Technically the product was ready for usage, weren't published for non-technical issues."
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/20.jpg?alt=media",
+      "importanceOrder": 29,
+      "location": "Jordan",
+      "role": "Frontend Web Dev",
+      "shortTitle": "Snd",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript",
+        "JSON",
+        "REST API",
+        "Docker"
+      ],
+      "timeOrder": 15,
+      "title": "Sanad",
+      "type": "Public / Governmental"
+    },
+    {
+      "category": "Web Apps",
+      "company": "AgileTz",
+      "date": 2021,
+      "description": "Led the frontend development of DLS web platform, digitizing public land services for the Jordanian governmental Department of Lands and Survey",
+      "details": [
+        "Built complex, dynamic forms and search interfaces for real estate, land registry, and title services.",
+        "Led a small frontend team while handling primary development tasks.",
+        "Integrated Express.js backend for lightweight data handling and API support.",
+        "Directly contributed to UX alongside the PM and stakeholders."
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/14.jpg?alt=media",
+      "importanceOrder": 28,
+      "location": "Jordan",
+      "role": "Full-Stack Dev",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "Express.Js",
+        "JavaScript",
+        "JSON",
+        "REST API",
+        "Docker"
+      ],
+      "timeOrder": 14,
+      "title": "DLS",
+      "type": "Public / Governmental",
+      "url": "https://portal.dls.gov.jo/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "AlembicSoft",
+      "consulted": true,
+      "date": 2024,
+      "description": "A full-featured School Information System (SIS) SaaS platform. Superheaded the project from concept to deployment — including client interviews, UX/UI design, architecture, development, and production delivery.",
+      "designed": true,
+      "details": [
+        "Designed and implemented a multi-tenant architecture allowing each school to have isolated data environments.",
+        "Built core modules including student profiles, course management, attendance, fees, results, and parent portals.",
+        "Developed role-based access control and school-specific branding capabilities.",
+        "Integrated PDF generation, notifications, analytics dashboards, and support for both English and Arabic languages.",
+        "Optimized for AWS deployment with CI/CD, Docker, and secure configuration."
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/19.jpg?alt=media",
+      "importanceOrder": 27,
+      "location": "Jordan",
+      "role": "Full-Stack Dev",
+      "shortTitle": "Sem",
+      "technologies": [
+        "React.Js",
+        "Next.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "Laravel",
+        "JavaScript",
+        "JSON",
+        "PhP",
+        "REST API",
+        "MySQL",
+        "Firebase",
+        "AWS"
+      ],
+      "timeOrder": 18,
+      "title": "Semesteer",
+      "type": "Education",
+      "url": "https://semesteer.com/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": false,
+      "company": "Shai",
+      "consulted": true,
+      "date": 2025,
+      "description": "A government-backed unified platform enabling non-profit organizations in Saudi Arabia to coordinate, streamline operations, and manage beneficiaries. Led the project end-to-end as full-stack developer and tech lead.",
+      "details": [
+        "Designed and built the platform architecture from scratch using NestJS (backend) and ReactJS (frontend).",
+        "Developed modules for beneficiary management, eligibility tracking, and coordination across multiple government bodies.",
+        "Implemented role-based access for government officials, NGOs, and auditors with strict data permissions.",
+        "Led a small cross-functional team and collaborated closely with product management and design.",
+        "Ensured compliance with Saudi government digital infrastructure standards and data security requirements."
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/29.jpg?alt=media",
+      "importanceOrder": 27,
+      "location": "Saudi Arabia",
+      "role": "Full-Stack Dev",
+      "shortTitle": "Must",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "MicroServices",
+        "Nest.Js",
+        "TypeScript",
+        "JSON",
+        "REST API"
+      ],
+      "timeOrder": 29,
+      "title": "Mustaheq",
+      "type": "Public / Governmental",
+      "url": "http://demo.mustaheq.org/"
+    },
+    {
+      "category": "Web Apps",
+      "company": "Several Brands",
+      "date": 2025,
+      "description": "A specialized huge internal system for the company to manage its 10s of millions worth of online sales in the United States.",
+      "details": [
+        "Work is to build the ongoing marketing & sales team needs of features within the portal.",
+        "It's also required to contribute into revamp and refactor the redundant codes of functions & views.",
+        "Revamp and refactor is part of a plan aiming to upgrade framework to Vue 3."
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/33.jpg?alt=media",
+      "importanceOrder": 28,
+      "location": "USA",
+      "role": "Frontend Web Dev",
+      "shortTitle": "SB",
+      "technologies": [
+        "Vue.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "ElasticSearch",
+        "JavaScript",
+        "JSON",
+        "REST API"
+      ],
+      "timeOrder": 32,
+      "title": "Several Brands",
+      "type": "ERP",
+      "url": "http://admin.trafficbox.com"
+    },
+    {
+      "category": "Web Apps",
+      "company": "Tafakkur",
+      "date": 2025,
+      "description": "Led the frontend development of DLS web platform, digitizing public land services for the Jordanian governmental Department of Lands and Survey",
+      "details": [
+        "Built complex, dynamic forms and search interfaces for real estate, land registry, and title services.",
+        "Led a small frontend team while handling primary development tasks.",
+        "Integrated Express.js backend for lightweight data handling and API support.",
+        "Directly contributed to UX alongside the PM and stakeholders."
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/32.jpg?alt=media",
+      "importanceOrder": 27,
+      "location": "Jordan",
+      "role": "Senior Full-Stack Dev",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "Express.Js",
+        "JavaScript",
+        "JSON",
+        "REST API",
+        "Docker"
+      ],
+      "timeOrder": 31,
+      "title": "Tafakkur",
+      "type": "Landing Page With Admin Panel",
+      "url": "https://tafakkur.com"
+    },
+    {
+      "category": "Web Apps",
+      "company": "Shai",
+      "consulted": true,
+      "date": 2025,
+      "description": "A specialized under-construction Arabic search engine to help individuals find relevant Saudi charities & societies, especially those using the Mustaheq portal.",
+      "details": [
+        "It was sort of my own idea to come up with, approved by owner.",
+        "Aimed at simplifying access to aid for recipients and boosting visibility for subscribing charities.",
+        "Public profiles were indexed with essential contact info, eligibility, and activity areas.",
+        "Powered by ElasticSearch and optimized with advanced database indexing for fast and accurate search.",
+        "Included admin tools to manage searchable metadata and optimize search relevance."
+      ],
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/31.png?alt=media",
+      "importanceOrder": 28,
+      "location": "Saudi Arabia",
+      "role": "Full-Stack Dev",
+      "shortTitle": "Mus",
+      "technologies": [
+        "Vite",
+        "CSS",
+        "TailwindCSS",
+        "Node.Js",
+        "ElasticSearch",
+        "Nest.Js",
+        "TypeScript",
+        "JSON",
+        "REST API"
+      ],
+      "timeOrder": 30,
+      "title": "Mustaheq Search-Engine",
+      "type": "Public / Governmental",
+      "url": "http://mustaheq.org/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": false,
+      "company": "Logatta",
+      "date": 2023,
+      "description": "A professional e-learning portal focused on entrepreneurship, led by the prominent figure Dr. Maen Al Qatamin.",
+      "details": [
+        "I was the Lead Frontend Developer, owning the design and implementation of the UI using React and Bootstrap.",
+        "Worked closely with the client’s media and education teams to deliver an intuitive, responsive platform.",
+        "Developed video-based course browsing, lesson tracking, and user authentication systems."
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/21.jpg?alt=media",
+      "importanceOrder": 26,
+      "location": "Jordan",
+      "role": "Frontend Web Dev",
+      "shortTitle": "Ent",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API"
+      ],
+      "timeOrder": 16,
+      "title": "Entreviable ",
+      "type": "Education",
+      "url": "https://entreviable.com"
+    },
+    {
+      "category": "Web Apps",
+      "company": "ArabWork",
+      "date": 2022,
+      "description": "A logistics marketplace for commercial and personal shipments via trucks. Was the lead frontend developer working under a senior full-stack developer.",
+      "details": [
+        "Developed interactive UIs for both shippers and drivers, including map and order tracking components.",
+        "Implemented responsive dashboards for dispatchers and logistics coordinators.",
+        "Collaborated closely with backend engineer for real-time data handling and authentication flows."
+      ],
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/16.jpg?alt=media",
+      "importanceOrder": 25,
+      "location": "Saudi Arabia",
+      "role": "Frontend Web Dev",
+      "shortTitle": "Tre",
+      "technologies": [
+        "Vue.Js",
+        "CSS",
+        "Node.Js",
+        "JavaScript",
+        "JSON",
+        "REST API"
+      ],
+      "timeOrder": 11,
+      "title": "Trellah",
+      "type": "Ride-Hailing",
+      "url": "https://app.trellah.com"
+    },
+    {
+      "category": "Web Apps",
+      "company": "Luxtag",
+      "date": 2020,
+      "description": "A blockchain-based product verification platform. Spent 6 months in full-stack development before transitioning to lead frontend responsibilities.",
+      "details": [
+        "Integrated NEM blockchain APIs for tracking and verifying unique product tags.",
+        "Built interfaces for brand owners and consumers to validate product authenticity.",
+        "Created QR-scanning features and dashboards to visualize product movement.",
+        "Led refactoring of the frontend into modular, reusable components using React.js."
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/11.jpg?alt=media",
+      "importanceOrder": 24,
+      "location": "Malaysia",
+      "role": "Frontend Web Dev",
+      "shortTitle": "BT",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "Express.Js",
+        "JavaScript",
+        "JSON",
+        "REST API",
+        "PostgreSQL",
+        "Blockchain",
+        "Docker"
+      ],
+      "timeOrder": 9,
+      "title": "BrandTag",
+      "type": "Anti-Theft Protection",
+      "url": "https://app.brandtag.io/"
+    },
+    {
+      "category": "Web Apps",
+      "company": "Freelance",
+      "date": 2024,
+      "description": "Own product idea, executed from ideation, development to deployment.",
+      "designed": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/28.png?alt=media",
+      "importanceOrder": 23,
+      "location": "Jordan",
+      "openSource": true,
+      "role": "End-to-End Build",
+      "shortTitle": "HEAL",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "timeOrder": 24,
+      "title": "Healthy Eating and Lifestyle Tracker",
+      "type": "Healthcare",
+      "url": "https://heal-tracker.vercel.app/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "Freelance",
+      "date": 2023,
+      "description": "Own product idea, execution is in-progress by supervised junior developers.",
+      "designed": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/24.jpg?alt=media",
+      "importanceOrder": 22,
+      "location": "Jordan",
+      "role": "Product Ownership",
+      "shortTitle": "ANest",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "timeOrder": 19,
+      "title": "AppNest",
+      "type": "Productivity Management"
+    },
+    {
+      "category": "Web Apps",
+      "company": "AIS",
+      "consulted": true,
+      "date": 2019,
+      "description": "A student information system (SIS), built during my part-time engagement with AIS School.",
+      "designed": true,
+      "details": [
+        "It was my first major Laravel PHP project, which I owned end-to-end — from gathering school requirements to deployment.",
+        "Included features for storing and managing student bio data, academic history, contact info, and documents.",
+        "Designed to reduce paper-based workload and streamline access to student records."
+      ],
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/8.jpg?alt=media",
+      "importanceOrder": 21,
+      "location": "Malaysia",
+      "role": "Product Ownership",
+      "shortTitle": "Stu",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "Laravel",
+        "JSON",
+        "PhP",
+        "REST API",
+        "MySQL"
+      ],
+      "timeOrder": 7,
+      "title": "AIS Students Portal",
+      "type": "Productivity Management"
+    },
+    {
+      "category": "Web Apps",
+      "company": "AIS",
+      "date": 2020,
+      "description": "A separate system for staff management and productivity tracking, developed for the same client of AIS.",
+      "designed": true,
+      "details": [
+        "Implemented using vanilla JavaScript and templating, focused on simplicity and ease of daily use.",
+        "Allowed tracking attendance, reporting activities, and generating role-based overviews.",
+        "Designed for non-technical school staff to interact with effortlessly."
+      ],
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/15.jpg?alt=media",
+      "importanceOrder": 20,
+      "location": "Malaysia",
+      "role": "Product Ownership",
+      "shortTitle": "Sta",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "Laravel",
+        "JavaScript",
+        "JSON",
+        "PhP",
+        "REST API",
+        "MySQL"
+      ],
+      "timeOrder": 5,
+      "title": "AIS Staff Portal",
+      "type": "Productivity Management"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "Logatta",
+      "date": 2023,
+      "description": "A geographic data visualization tool built for a UK-based client.",
+      "details": [
+        "Aggregated heatmap data of fire incidents across the UK to identify high-risk areas.",
+        "Aimed to support civil defense and fire prevention efforts by highlighting areas in need of increased preparedness.",
+        "Handled map overlays, real-time filters, and interactive data layers using modern JS libraries."
+      ],
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/22.jpg?alt=media",
+      "importanceOrder": 19,
+      "location": "UK",
+      "role": "Frontend Web Dev",
+      "shortTitle": "Cro",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API"
+      ],
+      "timeOrder": 17,
+      "title": "Crosure",
+      "type": "Search-Engine",
+      "url": "https://commsure.com/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "Freelance",
+      "date": 2024,
+      "description": "A solely developed frontend app, totally new / from scratch.",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/26.jpg?alt=media",
+      "importanceOrder": 18,
+      "location": "Saudi Arabia",
+      "role": "Frontend Web Dev",
+      "technologies": [
+        "Remix",
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript",
+        "TypeScript",
+        "JSON",
+        "REST API"
+      ],
+      "timeOrder": 21,
+      "title": "Shwra",
+      "type": "Marketplace",
+      "url": "https://www.shwra.sa/"
+    },
+    {
+      "category": "Web Apps",
+      "company": "Freelance",
+      "date": 2022,
+      "description": "A system for school / university students' internship progress tracking & management.",
+      "designed": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/13.jpg?alt=media",
+      "importanceOrder": 17,
+      "location": "Jordan",
+      "openSource": true,
+      "role": "Product Ownership",
+      "shortTitle": "Tad",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "Django",
+        "JavaScript",
+        "TypeScript",
+        "JSON",
+        "Python",
+        "REST API",
+        "PostgreSQL"
+      ],
+      "timeOrder": 10,
+      "title": "Tadreebi",
+      "type": "Productivity Management",
+      "url": "https://tadreebi.netlify.app/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "Freelancer",
+      "date": 2021,
+      "description": "Education content & teacher-student communication system.",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/9.jpg?alt=media",
+      "importanceOrder": 16,
+      "location": "Malaysia",
+      "role": "Full-Stack Dev",
+      "shortTitle": "xEdu",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript",
+        "JSON",
+        "REST API"
+      ],
+      "timeOrder": 9,
+      "title": "xEdu App",
+      "type": "Education"
+    },
+    {
+      "category": "Web Apps",
+      "company": "Freelance",
+      "date": 2025,
+      "description": "Own product idea, execution is in-progress.",
+      "designed": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/35.jpg?alt=media",
+      "importanceOrder": 15,
+      "location": "Jordan",
+      "openSource": true,
+      "role": "End-to-End Build",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "timeOrder": 28,
+      "title": "PRICE",
+      "type": "Encyclopedia",
+      "url": "https://price-admin.vercel.app/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "Freelance",
+      "date": 2022,
+      "description": "Own product idea, executed from ideation, development to deployment.",
+      "designed": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/7.jpg?alt=media",
+      "importanceOrder": 14,
+      "location": "Jordan",
+      "openSource": true,
+      "role": "End-to-End Build",
+      "shortTitle": "CASH",
+      "technologies": [
+        "Vue.Js",
+        "Nuxt.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "timeOrder": 26,
+      "title": "Currencies Archiving & Sharing Hub",
+      "type": "Showroom",
+      "url": "https://cash-hub.vercel.app/"
+    },
+    {
+      "category": "Web Apps",
+      "company": "Freelance",
+      "date": 2025,
+      "description": "Own product idea, execution is in-progress by supervised junior developers.",
+      "designed": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/10.jpg?alt=media",
+      "importanceOrder": 13,
+      "location": "Jordan",
+      "openSource": true,
+      "role": "End-to-End Build",
+      "shortTitle": "FF",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "timeOrder": 25,
+      "title": "Family Finance",
+      "type": "FinTech"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": true,
+      "company": "Freelance",
+      "consulted": true,
+      "date": 2023,
+      "description": "Rasmi & Kiwan is Jordan-based regional engineering consulting firm. Needed an internal platform to manage HR & project-management matters.",
+      "designed": true,
+      "details": [
+        "Built core modules including staff profiles, project management, attendance, and financial data.",
+        "Developed role-based access control and branding customization capabilities.",
+        "Optimized for AWS deployment with CI/CD, Docker, and secure configuration."
+      ],
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/23.jpg?alt=media",
+      "importanceOrder": 12,
+      "location": "Jordan",
+      "role": "Full-Stack Dev",
+      "shortTitle": "R&K",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "Express.Js",
+        "JavaScript",
+        "JSON",
+        "REST API",
+        "SQLite",
+        "Docker"
+      ],
+      "timeOrder": 13,
+      "title": "Rasmi & Kiwan",
+      "type": "Productivity Management"
+    },
+    {
+      "category": "Landing Pages",
+      "comingSoon": false,
+      "company": "Noor Training & Consultancy",
+      "consulted": true,
+      "date": 2024,
+      "description": "Simple individual's professional website.",
+      "designed": true,
+      "foc": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/25.jpg?alt=media",
+      "importanceOrder": 11,
+      "location": "Jordan",
+      "role": "Frontend Web Dev",
+      "shortTitle": "Noor",
+      "technologies": [
+        "Next.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "timeOrder": 23,
+      "title": "Coach Noor Kayyali",
+      "type": "Profile",
+      "url": "https://www.noorkayyali.com/"
+    },
+    {
+      "category": "Landing Pages",
+      "comingSoon": false,
+      "company": "Freelancer",
+      "consulted": true,
+      "date": 2025,
+      "description": "Simple individual's professional website.",
+      "designed": true,
+      "foc": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/30.jpg?alt=media",
+      "importanceOrder": 10,
+      "location": "Jordan",
+      "role": "Frontend Web Dev",
+      "shortTitle": "Fat",
+      "technologies": [
+        "Next.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "timeOrder": 27,
+      "title": "Nutritionist Fatima Mohammad",
+      "type": "Profile",
+      "url": "https://nutriFatima.com/"
+    },
+    {
+      "category": "Web Apps",
+      "comingSoon": false,
+      "company": "Freelance",
+      "consulted": true,
+      "date": 2025,
+      "description": "Simple clients data management portal.",
+      "designed": true,
+      "foc": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/34.jpg?alt=media",
+      "importanceOrder": 10,
+      "location": "Jordan",
+      "role": "Frontend Web Dev",
+      "shortTitle": "Cli",
+      "technologies": [
+        "React.Js",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API",
+        "Firebase"
+      ],
+      "timeOrder": 27,
+      "title": "Nutritionist Clients Portal",
+      "type": "Clients Management",
+      "url": "https://portal.nutriFatima.com/"
+    },
+    {
+      "category": "Landing Pages",
+      "comingSoon": true,
+      "company": "Freelance",
+      "date": 2024,
+      "description": "Simple company's professional website.",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/27.jpg?alt=media",
+      "importanceOrder": 9,
+      "location": "Saudi Arabia",
+      "role": "Frontend Web Dev",
+      "shortTitle": "E3",
+      "technologies": [
+        "Next.Js",
+        "Vite",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "TypeScript",
+        "JSON",
+        "REST API"
+      ],
+      "timeOrder": 22,
+      "title": "E3 Ventures",
+      "type": "Profile",
+      "url": "https://e3.ventures/"
+    },
+    {
+      "category": "Landing Pages",
+      "comingSoon": false,
+      "company": "Freelance",
+      "consulted": true,
+      "date": 2022,
+      "description": "Simple individual's professional website.",
+      "foc": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/12.jpg?alt=media",
+      "importanceOrder": 8,
+      "location": "Jordan",
+      "role": "Frontend Web Dev",
+      "shortTitle": "AAM",
+      "technologies": [
+        "Next.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript",
+        "JSON",
+        "REST API"
+      ],
+      "timeOrder": 20,
+      "title": "Dr. Ahmad Abu Mahfouth",
+      "type": "Profile",
+      "url": "https://drahmadabumahfouth.com"
+    },
+    {
+      "category": "Landing Pages",
+      "comingSoon": false,
+      "company": "Freelancer",
+      "date": 2023,
+      "description": "Simple company's professional website.",
+      "foc": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/17.jpg?alt=media",
+      "importanceOrder": 7,
+      "location": "Jordan",
+      "role": "Frontend Web Dev",
+      "shortTitle": "R&K",
+      "technologies": [
+        "Next.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript",
+        "JSON",
+        "REST API"
+      ],
+      "timeOrder": 12,
+      "title": "Rasmi & Kiwan",
+      "type": "Profile",
+      "url": "https://rasmiandkiwan.com/"
+    },
+    {
+      "category": "Landing Pages",
+      "comingSoon": true,
+      "company": "Freelance",
+      "date": 2020,
+      "description": "Simple company's professional website.",
+      "foc": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/18.jpg?alt=media",
+      "importanceOrder": 6,
+      "location": "Malaysia",
+      "role": "Frontend Web Dev",
+      "shortTitle": "Zay",
+      "technologies": [
+        "React.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript"
+      ],
+      "timeOrder": 6,
+      "title": "Zaytouna Club",
+      "type": "Profile",
+      "url": "https://zaytouna-tau.vercel.app/"
+    },
+    {
+      "category": "Landing Pages",
+      "company": "Freelancer",
+      "date": 2019,
+      "description": "Simple company's professional website.",
+      "foc": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/1.jpg?alt=media",
+      "importanceOrder": 5,
+      "location": "Malaysia",
+      "role": "Frontend Web Dev",
+      "shortTitle": "OSF",
+      "technologies": [
+        "Wordpress",
+        "CSS"
+      ],
+      "timeOrder": 4,
+      "title": "OneShot Future",
+      "type": "Profile",
+      "url": "https://oneshotfuture.com/"
+    },
+    {
+      "category": "Landing Pages",
+      "company": "Freelancer",
+      "consulted": true,
+      "date": 2020,
+      "description": "Simple company's professional website.",
+      "foc": true,
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/6.jpg?alt=media",
+      "importanceOrder": 4,
+      "location": "Malaysia",
+      "role": "Frontend Web Dev",
+      "technologies": [
+        "Wordpress",
+        "CSS"
+      ],
+      "timeOrder": 3,
+      "title": "PPAM",
+      "type": "Profile",
+      "url": "https://ppam.org.my/"
+    },
+    {
+      "category": "Landing Pages",
+      "company": "AIS",
+      "date": 2018,
+      "description": "Simple company's professional website.",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/2.jpg?alt=media",
+      "importanceOrder": 3,
+      "location": "Malaysia",
+      "role": "Frontend Web Dev",
+      "shortTitle": "AIS",
+      "technologies": [
+        "Next.Js",
+        "CSS",
+        "Bootstrap",
+        "Node.Js",
+        "JavaScript",
+        "JSON",
+        "REST API"
+      ],
+      "timeOrder": 2,
+      "title": "AIS Landing",
+      "type": "Profile",
+      "url": "https://aqsa.edu.my/"
+    },
+    {
+      "category": "Landing Pages",
+      "company": "Freelancer",
+      "date": 2018,
+      "description": "Simple company's professional website.",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/4.jpg?alt=media",
+      "importanceOrder": 2,
+      "location": "Malaysia",
+      "role": "Frontend Web Dev",
+      "shortTitle": "SW",
+      "technologies": [
+        "Wordpress",
+        "CSS"
+      ],
+      "timeOrder": 1,
+      "title": "Speed Wheels",
+      "type": "Profile",
+      "url": "https://speedwheelstrade.online/"
+    },
+    {
+      "category": "Landing Pages",
+      "company": "Freelancer",
+      "date": 2017,
+      "description": "Simple company's professional website.",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/3.jpg?alt=media",
+      "importanceOrder": 1,
+      "location": "Malaysia",
+      "role": "Frontend Web Dev",
+      "shortTitle": "Team",
+      "technologies": [
+        "Wordpress",
+        "CSS"
+      ],
+      "timeOrder": 0,
+      "title": "Team Foundation",
+      "type": "Profile",
+      "url": "https://teamtr.media/"
+    },
+    {
+      "category": "Logos",
+      "description": "Logo Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo2.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "Finger Speak",
+      "url": "https: //silent-speakers.github.io/silent-speakers/#overview"
+    },
+    {
+      "category": "Others",
+      "description": "Business Card Design",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc1.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "AIS School",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc1.jpg?alt=media"
+    },
+    {
+      "category": "Logos",
+      "description": "Logo Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo.png?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "Al-Aqsa Staff Portal",
+      "url": "http: //staff.aqsa.edu.my/"
+    },
+    {
+      "category": "Booklets",
+      "description": "Booklet Design",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet5.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "PSAD Southeast Asia",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet5.jpg?alt=media"
+    },
+    {
+      "category": "Logos",
+      "description": "Logo Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo5.png?alt=media",
+      "importanceOrder": 1,
+      "link": "aam_app",
+      "timeOrder": 1,
+      "title": "Dr. Ahmad Abu Mahfouth Clinic",
+      "url": "https://drahmadabumahfouth.com"
+    },
+    {
+      "category": "Booklets",
+      "description": "Booklet Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet2.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "Mercy Mission World",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet2.jpg?alt=media"
+    },
+    {
+      "category": "Banners & Posters",
+      "description": "Banner Design",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/banner2.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "Several University Clubs",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/banner2.jpg?alt=media"
+    },
+    {
+      "category": "Logos",
+      "description": "Logo Design",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo4.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "Univeristy Club",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo4.jpg?alt=media"
+    },
+    {
+      "category": "Banners & Posters",
+      "description": "Banner Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "SpeedWheels",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media"
+    },
+    {
+      "category": "Logos",
+      "description": "Logo Re-design",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo1.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "QFM Malaysia",
+      "url": "http: //qfmalaysia.org/"
+    },
+    {
+      "category": "Booklets",
+      "description": "Booklet Design",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet1.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "QFM Malaysia",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet1.jpg?alt=media"
+    },
+    {
+      "category": "Booklets",
+      "description": "Booklet Design",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet3.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "QFM Malaysia",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet3.jpg?alt=media"
+    },
+    {
+      "category": "Booklets",
+      "description": "Booklet Design",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet4.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "QFM Malaysia",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet4.jpg?alt=media"
+    },
+    {
+      "category": "Banners & Posters",
+      "description": "Poster Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster3.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "FYP Project",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster3.jpg?alt=media"
+    },
+    {
+      "category": "Others",
+      "description": "CV Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/cv.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "An Engineering Graduate",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/cv.jpg?alt=media"
+    },
+    {
+      "category": "Logos",
+      "description": "Logo Design",
+      "hide": true,
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo6.png?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "xEdu",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/logo6.png?alt=media"
+    },
+    {
+      "category": "Banners & Posters",
+      "description": "Brochure Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "Makan Sini Resturant",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster1.jpg?alt=media"
+    },
+    {
+      "category": "Others",
+      "description": "Business Card Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc2.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "Global Mediator",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/bc2.jpg?alt=media"
+    },
+    {
+      "category": "Booklets",
+      "description": "Booklet Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet6.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "IIUM",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/booklet6.jpg?alt=media"
+    },
+    {
+      "category": "Others",
+      "description": "Brochure Design",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster2.jpg?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "IIUM",
+      "url": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/poster2.jpg?alt=media"
+    },
+    {
+      "category": "Videos",
+      "description": "Video Producing",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/video1.png?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "ICPC Asia Regional Contest",
+      "url": "https://www.youtube.com/watch?v=nwjGLer53sQ"
+    },
+    {
+      "category": "Videos",
+      "description": "Video Producing",
+      "image": "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/video2.png?alt=media",
+      "importanceOrder": 1,
+      "timeOrder": 1,
+      "title": "ICPC Asia Regional Contest",
+      "url": "https://www.youtube.com/watch?v=D1uIlE_YB3U"
+    }
+  ],
+  "jobs": [
+    {
+      "desc": [
+        "9 Years of Web Development",
+        "Developed solutions, systems, and applications on various scales.",
+        "Covered all technical aspects of the development process, from planning and design to infrastructure and delivery.",
+        "Acquired soft skills, including team leadership and development planning.",
+        "Notable projects include building the web application for Jordan's public services platform (Sanad) and Jordan's Land and Survey Department digital services portal."
+      ],
+      "icon": "faCode",
+      "jobs": [
+        {
+          "company": "Several Brands",
+          "description": [
+            "A frontend developer, contributing to build the dashboard of internal ERP system.",
+            "Leading effort to revamp, refactor and upgrade the dashboard technologies."
+          ],
+          "location": "Jordan",
+          "monthsCount": 1,
+          "period": "Oct 2025 - Current",
+          "projectsCount": 2,
+          "title": "Frontend Developer",
+          "type": "Full-Time",
+          "website": "https://www.severalbrands.com"
+        },
+        {
+          "company": "Shai",
+          "description": [
+            "A technical advisor to help the new development team members to continue working on built-by-me products.",
+            "Coordinate and assign the tasks among product team, which includes (Frontend, Backend, DevOps, UI/UX).",
+            "Supervise and review the coding works of the development team.",
+            "Interfere to do hands-on coding when development team is unable to meet task requirements.",
+            "It's only remote freelance job, with occasional (on-need) evening working hours."
+          ],
+          "location": "Jordan",
+          "monthsCount": 1,
+          "period": "Oct 2025 - Current",
+          "projectsCount": 2,
+          "title": "Technical Advisor",
+          "type": "Freelancer",
+          "website": "https://www.shai.sa/"
+        },
+        {
+          "company": "Tafakkur",
+          "description": [
+            "A developer to help with build new features, pages & sections in large landing page that introduces the client work and promote their products and publishing outcomes.",
+            "Work include revamping a low-end coded full-stack developer.",
+            "It's only remote freelance job, with evening working hours."
+          ],
+          "location": "Jordan",
+          "monthsCount": 2,
+          "period": "Sep 2025 - Current",
+          "projectsCount": 1,
+          "title": "Senior Full-Stack Developer",
+          "type": "Freelancer",
+          "website": "https://tafakkur.com/"
+        },
+        {
+          "company": "Shai",
+          "description": [
+            "Acted as tech lead for the core product, overseeing architecture, development, and technical direction.",
+            "Supervised team members across the stack, ensuring code quality, delivery timelines, and scalable practices.",
+            "Collaborated closely with the UX/UI designer, heavily contributing to product vision and user experience.",
+            "Led implementation of frontend and backend features, focusing on performance, usability, and maintainability."
+          ],
+          "location": "Jordan",
+          "monthsCount": 5,
+          "period": "May - Sep 2025",
+          "projectsCount": 2,
+          "title": "Senior Full-Stack Developer",
+          "type": "Freelancer",
+          "website": "https://www.shai.sa/"
+        },
+        {
+          "company": "Noor Training & Consultancy",
+          "description": [
+            "A technical advisor to help with any technical difficulties, including web apps and infrastructure (DevOp) issues.",
+            "Work included building totally new landing page and clients management portal.",
+            "It's only remote freelance job, with occasional (on-need) evening working hours."
+          ],
+          "location": "Jordan",
+          "monthsCount": 27,
+          "period": "Aug 2023 - Current",
+          "projectsCount": 2,
+          "title": "Technical Advisor",
+          "type": "Freelancer",
+          "website": "https://noorkayyali.com/"
+        },
+        {
+          "company": "AlembicSoft",
+          "description": [
+            "Owned the entire product lifecycle from requirement gathering to system architecture, development, testing, and deployment.",
+            "Designed intuitive user interfaces and crafted scalable backend systems tailored to client needs.",
+            "Led discussions with stakeholders to align technical solutions with business goals.",
+            "Delivered full-stack applications with a strong focus on performance and user-centric design.",
+            "Left due to the total shutdown of the startup firm."
+          ],
+          "location": "Jordan",
+          "monthsCount": 17,
+          "period": "Jul 2023 - Apr 2025",
+          "projectsCount": 1,
+          "title": "Senior Full-Stack Developer",
+          "type": "Full-Time",
+          "website": "https://www.alembicsoft.com"
+        },
+        {
+          "company": "Logatta",
+          "description": [
+            "Lead frontend developer for an education SaaS product as a freelancer, responsible for the entire UI codebase.",
+            "Implemented modular, testable components and enhanced the UI performance across key modules."
+          ],
+          "location": "Jordan",
+          "monthsCount": 5,
+          "period": "Aug - Dec 2023",
+          "projectsCount": 2,
+          "title": "Senior Frontend Developer",
+          "type": "Freelancer",
+          "website": "https://www.logatta.com"
+        },
+        {
+          "company": "AgileTz",
+          "description": [
+            "Sole frontend developer for Sanad, Jordan’s unified e-services web platform, ensuring consistent performance and UI/UX quality.",
+            "Led frontend development for the DLS project, working closely with the project manager and actively shaping the user experience.",
+            "Managed architecture, reusable components, and development timelines for high-impact government services",
+            "Departed due to a required overseas semi-relocation that was not feasible to meet."
+          ],
+          "location": "Jordan",
+          "monthsCount": 10,
+          "period": "Aug 2022 - Jul 2023",
+          "projectsCount": 2,
+          "title": "Senior Full-Stack Developer",
+          "type": "Full-Time",
+          "website": "https://www.agiletz.com/"
+        },
+        {
+          "company": "ArabWork",
+          "description": [
+            "Joined as the main frontend developer for a project named Trellah, a Vue.js-based task management tool.",
+            "Delivered key modules independently, integrating API endpoints and handling component-level logic.",
+            "This was my first production-level Vue.js experience.",
+            "Transitioned after two months to a new opportunity that better matched my long-term goals in terms of position, compensation, and stack."
+          ],
+          "location": "Jordan",
+          "monthsCount": 2,
+          "period": "Jun - Aug 2022",
+          "projectsCount": 1,
+          "title": "Frontend Developer",
+          "type": "Full-Time",
+          "website": "https://www.linkedin.com/company/arabwork/"
+        },
+        {
+          "company": "Luxtag",
+          "description": [
+            "Lead frontend developer for a blockchain-based SaaS product, responsible for the entire UI codebase.",
+            "Served as second-in-command for the development team, covering team lead responsibilities during absence.",
+            "Implemented modular, testable components and enhanced the UI performance across key modules."
+          ],
+          "location": "Malaysia",
+          "monthsCount": 12,
+          "period": "Nov 2020 - Oct 2021",
+          "projectsCount": 1,
+          "title": "Frontend Developer",
+          "type": "Full-Time",
+          "website": "https://Luxtag.io/"
+        },
+        {
+          "company": "AIS",
+          "description": [
+            "Owned the full lifecycle of the school’s internal systems — from requirements collection, UX/UI design, full-stack development, to testing and deployment.",
+            "Architected and built an end-to-end platform used daily by students, staff, and management.",
+            "Delivered a robust product with minimal technical debt by emphasizing clean code and modular design."
+          ],
+          "location": "Malaysia",
+          "monthsCount": 12,
+          "period": "Sep 2019 - Aug 2020",
+          "projectsCount": 1,
+          "title": "Full-Stack Developer",
+          "type": "Part-Time",
+          "website": "http://aqsa.edu.my/"
+        },
+        {
+          "company": "Freelance",
+          "description": [
+            "Architected and built end-to-end opens-source and on-demand platforms used daily by various stakeholders.",
+            "Spearheaded the development of introductory, online fronts and landing pages for many organizations and individuals.",
+            "Delivered robust results with minimal technical debt by emphasizing clean codes and modular designs."
+          ],
+          "location": "Malaysia & Jordan",
+          "period": "Sep 2019 - Present",
+          "title": "Full-Stack Developer",
+          "type": "Freelance"
+        },
+        {
+          "company": "Freelancer",
+          "description": [
+            "Architected and built end-to-end opens-source and on-demand platforms used daily by various stakeholders.",
+            "Spearheaded the development of introductory, online fronts and landing pages for many organizations and individuals.",
+            "Delivered robust results with minimal technical debt by emphasizing clean codes and modular designs."
+          ],
+          "location": "Malaysia",
+          "period": "Oct 2015 - Aug 2019",
+          "title": "Frontend Developer",
+          "type": "Freelance"
+        }
+      ],
+      "title": "Web Development"
+    },
+    {
+      "desc": [
+        "3 Years as Graphic & UI Designer",
+        "Worked as a graphic and UI designer for 3 years.",
+        "Gained foundational knowledge and learned design tricks.",
+        "Developed an understanding of distinguishing good vs bad designs.",
+        "Transitioned to a web development career.",
+        "Continued design as a side practice to maintain skills.",
+        "Created designs for various web applications.",
+        "Executed graphic design projects, including rebuilding foundation brand identities."
+      ],
+      "icon": "faPaintBrush",
+      "jobs": [
+        {
+          "certificate": "",
+          "company": "Speed Wheels",
+          "description": [
+            "Work about designing and preparing for a social-media promotional campaign."
+          ],
+          "monthsCount": 2,
+          "period": "Jan 2017 - Feb 2017",
+          "projectsCount": 5,
+          "title": "Graphic Designer",
+          "type": "Part-time",
+          "website": "https://speedwheels.shop/"
+        },
+        {
+          "certificate": "",
+          "company": "QFM Malaysia",
+          "description": [
+            "To design serveral booklets & brochures."
+          ],
+          "monthsCount": 6,
+          "period": "Jun - Aug 2016, May & July 2017, Jun 2018",
+          "projectsCount": 8,
+          "title": "Graphic Designer",
+          "type": "Part-time",
+          "website": "http://qfmalaysia.org/"
+        },
+        {
+          "certificate": "",
+          "company": "Mercy Mission World",
+          "description": [
+            "Work included gaphic designing & events management."
+          ],
+          "monthsCount": 7,
+          "period": "Dec 2015 - Jun 2016",
+          "projectsCount": 8,
+          "title": "PR Executive",
+          "type": "Part-time",
+          "website": "https://www.mercymissionworld.org/"
+        },
+        {
+          "company": "Freelance",
+          "description": [
+            "One experience to edit & produce videos for an event."
+          ],
+          "period": "Oct 2019 - Nov 2019",
+          "title": "Video Editor",
+          "type": "Freelance"
+        },
+        {
+          "company": "Freelance",
+          "description": [
+            "Executed enormous number of graphic designs for both print-out & digital uses."
+          ],
+          "period": "Feb 2015 - Apr 2019",
+          "title": "Graphic Designer",
+          "type": "Freelance"
+        }
+      ],
+      "title": "Graphics & UI Design"
+    },
+    {
+      "desc": [
+        "3 Years of Management-Related Experience",
+        "Worked in management-related roles, including Secretariat and financial management.",
+        "Developed skills in work documentation and organization.",
+        "Accumulated foundational experience in management roles over the years."
+      ],
+      "icon": "faBriefcase",
+      "jobs": [
+        {
+          "company": "WAMY",
+          "description": [
+            "Work as managment board member to run the organization"
+          ],
+          "monthsCount": 12,
+          "period": "Feb 2014 - Jan 2015",
+          "title": "Board Member",
+          "type": "Part-time"
+        },
+        {
+          "company": "WAMY",
+          "description": [
+            "Job about documenting all foundation paper works."
+          ],
+          "monthsCount": 12,
+          "period": "Feb 2013 - Jan 2014",
+          "title": "Secretariat",
+          "type": "Part-time"
+        },
+        {
+          "company": "Shamy",
+          "description": [
+            "Job about documenting all foundation paper works, and included graphic design tasks."
+          ],
+          "monthsCount": 12,
+          "period": "Feb 2013 - Jan 2014",
+          "projectsCount": 8,
+          "title": "Secretariat",
+          "type": "Part-time"
+        },
+        {
+          "company": "Al-Masar",
+          "description": [
+            "Job about documenting all foundation paper works."
+          ],
+          "monthsCount": 30,
+          "period": "Dec 2008 - May 2011",
+          "projectsCount": 15,
+          "title": "Secretariat & Financial Managment",
+          "type": "Part-time"
+        }
+      ],
+      "title": "Managment Works"
+    }
+  ],
+  "projects": [
+    {
+      "img": "/images/appnest-w.png",
+      "link": "https://initia-landing.vercel.app/",
+      "name": "initia",
+      "texts": [
+        "Initia is a new initiative focused on helping founders and teams move from idea to working product faster, using practical engineering, automation, and battle-tested product patterns.",
+        "The project is shaped directly by my previous startup experience, with a strong emphasis on early validation, speed of execution, and reducing wasted effort before scale.",
+        "Initia prioritizes building real, usable systems—authentication, data models, workflows, and integrations—rather than disposable demos or slideware.",
+        "The approach blends hands-on development with product thinking, enabling technical founders to focus on outcomes, not just code.",
+        "Initia is being developed iteratively, starting with direct collaboration and real use cases, before evolving into more structured tools and offerings."
+      ]
+    },
+    {
+      "img": "/images/semesteer.png",
+      "link": "https://www.semesteer.com/",
+      "name": "semesteer",
+      "texts": [
+        "I spent over two years working full-time on building and deploying an education-tech startup, owning the product from concept to real-world use.",
+        "The journey exposed me to the full reality of entrepreneurship—where technical excellence meets market constraints, adoption challenges, and execution pressure.",
+        "Hands-on collaboration with schools, staff, students, and parents shaped my approach to building systems that must work in complex, real environments.",
+        "While the product didn’t scale into a sustainable business, the experience fundamentally sharpened my judgment as a founder and product builder.",
+        "These lessons now directly guide my future initiatives, with a stronger focus on validation, speed, and sustainable execution."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "color": "61dafb",
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faReact",
+      "name": "React.Js",
+      "rate": 5,
+      "subSkills": [
+        "Redux",
+        "Axios",
+        "i18next",
+        "Material-UI",
+        "Chakra-UI",
+        "TailwindCSS",
+        "Ant Design",
+        "PrimeReact",
+        "Styled Components",
+        "React Hook Form",
+        "Formik",
+        "Moment",
+        "Charts.Js",
+        "Eslint",
+        "prettier"
+      ],
+      "website": "https://reactjs.org/"
+    },
+    {
+      "color": "000000",
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faN",
+      "name": "Next.Js",
+      "rate": 5,
+      "subSkills": [
+        "Same as React.Js"
+      ],
+      "website": "https://nextjs.org/"
+    },
+    {
+      "color": "B63DFE",
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faV",
+      "name": "Vite",
+      "rate": 3,
+      "subSkills": [
+        "Same as React.Js"
+      ],
+      "website": "https://vitejs.dev/"
+    },
+    {
+      "color": "000000",
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faR",
+      "name": "Remix",
+      "rate": 3,
+      "subSkills": [
+        "Same as React.Js"
+      ],
+      "website": "https://remix.run/"
+    },
+    {
+      "color": "000000",
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faShapes",
+      "name": "Three.Js",
+      "rate": 3,
+      "website": "https://threejs.org/"
+    },
+    {
+      "color": "00bd83",
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faVuejs",
+      "name": "Vue.Js",
+      "rate": 4,
+      "subSkills": [
+        "VueX",
+        "Vuetify",
+        "Axios",
+        "Webpack",
+        "i18next"
+      ],
+      "website": "https://vuejs.org/"
+    },
+    {
+      "color": "00DC82",
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faVuejs",
+      "name": "Nuxt.Js",
+      "rate": 4,
+      "subSkills": [
+        "Same as Vue.Js"
+      ],
+      "website": "https://nuxt.com/"
+    },
+    {
+      "color": "D6002F",
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faAngular",
+      "name": "Angular.Js",
+      "rate": 1,
+      "website": "https://angular.dev/"
+    },
+    {
+      "color": "8bc500",
+      "groups": [
+        "Frontend",
+        "Backend"
+      ],
+      "icon": "faNode",
+      "name": "Node.Js",
+      "rate": 5,
+      "subSkills": [
+        "npm",
+        "yarn",
+        "ElasticSearch"
+      ],
+      "website": "https://nodejs.org/"
+    },
+    {
+      "color": "000000",
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faNodeJs",
+      "name": "Express.Js",
+      "rate": 5,
+      "website": "https://expressjs.com/"
+    },
+    {
+      "color": "E0234E",
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faNodeJs",
+      "name": "Nest.Js",
+      "rate": 4,
+      "subSkills": [
+        "Typeorm"
+      ],
+      "website": "https://nestjs.com/"
+    },
+    {
+      "color": "ff2d20",
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faLaravel",
+      "name": "Laravel",
+      "rate": 4,
+      "website": "https://laravel.com/"
+    },
+    {
+      "color": "092d1f",
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faHashtag",
+      "name": "Django",
+      "rate": 2,
+      "subSkills": [
+        "DJ REST API",
+        "DJ Simple JWT",
+        "DJ Environ"
+      ],
+      "website": "https://www.djangoproject.com/"
+    },
+    {
+      "color": "00A7D0",
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faGolang",
+      "name": "Go / GoLang",
+      "rate": 1,
+      "website": "https://go.dev/"
+    },
+    {
+      "color": "21759b",
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faWordpress",
+      "name": "Wordpress",
+      "rate": 3,
+      "subSkills": [
+        "Elementor",
+        "Contact Form 7"
+      ],
+      "website": "https://wordpress.com/"
+    },
+    {
+      "color": "24BBB1",
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faSearch",
+      "name": "ElasticSearch",
+      "rate": 2,
+      "subSkills": [
+        "OpenSearch"
+      ],
+      "website": "https://www.elastic.co/elasticsearch"
+    },
+    {
+      "color": "EBC4DF",
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faSitemap",
+      "name": "MicroServices",
+      "rate": 2,
+      "website": "https://microservices.io/"
+    },
+    {
+      "color": "2f6091",
+      "groups": [
+        "Databases"
+      ],
+      "icon": "faDatabase",
+      "name": "PostgreSQL",
+      "rate": 4,
+      "website": "https://www.postgresql.org/"
+    },
+    {
+      "color": "ffa518",
+      "groups": [
+        "Databases"
+      ],
+      "icon": "faDatabase",
+      "name": "MySQL",
+      "rate": 4,
+      "website": "https://www.mysql.com/"
+    },
+    {
+      "color": "023430",
+      "groups": [
+        "Databases"
+      ],
+      "icon": "faDatabase",
+      "name": "Mongo DB",
+      "rate": 3,
+      "website": "https://www.mongodb.com/"
+    },
+    {
+      "color": "DD2C00",
+      "groups": [
+        "Databases"
+      ],
+      "icon": "faDatabase",
+      "name": "Firebase",
+      "rate": 4,
+      "website": "https://firebase.google.com"
+    },
+    {
+      "color": "004364",
+      "groups": [
+        "Databases"
+      ],
+      "icon": "faDatabase",
+      "name": "SQLite",
+      "rate": 4,
+      "website": "https://www.sqlite.org/"
+    },
+    {
+      "color": "ff9900",
+      "groups": [
+        "DevOps & Tools"
+      ],
+      "icon": "faAmazon",
+      "name": "AWS",
+      "rate": 3,
+      "website": "https://aws.amazon.com/"
+    },
+    {
+      "color": "000000",
+      "groups": [
+        "DevOps & Tools"
+      ],
+      "icon": "faGithub",
+      "name": "Github",
+      "rate": 5,
+      "website": "https://www.github.com/"
+    },
+    {
+      "color": "2496ed",
+      "groups": [
+        "DevOps & Tools"
+      ],
+      "icon": "faDocker",
+      "name": "Docker",
+      "rate": 5,
+      "website": "https://www.docker.com/"
+    },
+    {
+      "color": "323330",
+      "groups": [
+        "Frontend",
+        "Backend"
+      ],
+      "icon": "faJs",
+      "name": "JavaScript",
+      "rate": 5,
+      "subSkills": [
+        "ES6",
+        "ES5",
+        "Embedded JS"
+      ],
+      "website": "https://www.javascript.com/"
+    },
+    {
+      "color": "3178C6",
+      "groups": [
+        "Frontend",
+        "Backend"
+      ],
+      "icon": "faJs",
+      "name": "TypeScript",
+      "rate": 4,
+      "website": "https://www.typescriptlang.org/"
+    },
+    {
+      "color": "0868ac",
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faBroadcastTower",
+      "name": "jQuery",
+      "rate": 3,
+      "website": "https://jquery.com/"
+    },
+    {
+      "color": "0f0f0f",
+      "groups": [
+        "Frontend",
+        "Backend"
+      ],
+      "icon": "faRing",
+      "name": "JSON",
+      "rate": 5,
+      "website": "https://www.json.org/"
+    },
+    {
+      "color": "3771a1",
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faPython",
+      "name": "Python",
+      "rate": 2,
+      "subSkills": [
+        "Numpy",
+        "Pandas",
+        "Matplotlib"
+      ],
+      "website": "https://www.python.org/"
+    },
+    {
+      "color": "4f5c93",
+      "groups": [
+        "Backend"
+      ],
+      "icon": "faPhp",
+      "name": "PhP",
+      "rate": 4,
+      "website": "https://www.php.net/"
+    },
+    {
+      "color": "e44d26",
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faHtml5",
+      "name": "HTML",
+      "rate": 5,
+      "website": "https://html.spec.whatwg.org/"
+    },
+    {
+      "color": "379ad6",
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faCss3Alt",
+      "name": "CSS",
+      "rate": 5,
+      "website": "https://www.w3.org/TR/CSS/#css"
+    },
+    {
+      "color": "7952b3",
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faBootstrap",
+      "name": "Bootstrap",
+      "rate": 5,
+      "website": "https://getbootstrap.com/"
+    },
+    {
+      "color": "00BCFF",
+      "groups": [
+        "Frontend"
+      ],
+      "icon": "faReact",
+      "name": "TailWind",
+      "rate": 3,
+      "website": "https://tailwindcss.com/"
+    },
+    {
+      "color": "00a99d",
+      "groups": [
+        "Methodologies"
+      ],
+      "icon": "faSyncAlt",
+      "name": "Agile",
+      "rate": 5,
+      "subSkills": [
+        "SCRUM",
+        "Kanban"
+      ],
+      "website": "https://www.scrum.org/"
+    },
+    {
+      "color": "1f93b8",
+      "groups": [
+        "Methodologies"
+      ],
+      "icon": "faSyncAlt",
+      "name": "SCRUM",
+      "rate": 5,
+      "subSkills": [
+        "Jira",
+        "ClickUp",
+        "YouTrack"
+      ],
+      "website": "https://www.scrum.org/"
+    },
+    {
+      "color": "176985",
+      "groups": [
+        "Frontend",
+        "Backend"
+      ],
+      "icon": "faCloud",
+      "name": "REST API",
+      "rate": 5
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "Noor Kayyali",
+      "content": "Suhaib has been an outstanding mentee and technical advisor. He showed strong commitment to every session, was always respectful, and a pleasure to work with. He also developed my website, which continues to receive compliments and has been key in presenting my professional identity. His work is thoughtful, reliable, and impactful—I highly recommend him.",
+      "img": "noor.jpeg",
+      "link": "https://www.linkedin.com/in/noorkayyali"
+    },
+    {
+      "author": "Hanan N.",
+      "content": "Suhaib has always been generous with his technical advice, especially in backend development and database design. His input was consistently thoughtful, practical, and rooted in solid experience. I truly appreciated his willingness to support and guide whenever we needed an expert opinion.",
+      "img": "hanan.jpeg",
+      "link": "https://www.linkedin.com/in/hananni"
+    },
+    {
+      "author": "Mazen Adel",
+      "content": "I had the chance to work under Suhaib's command on several creative projects, and I am certain he is among the best and most supportive leaders I've ever had the opportunity to work under. Suhaib organized the tasks, oversaw the workflow, and made sure everything was running according to our goal. I personally hope to be able to continue with him in more projects. I learnt from him a lot in management and clean code.",
+      "img": "mazen.jpeg",
+      "link": "https://www.linkedin.com/in/mazen-adel-bab"
+    },
+    {
+      "author": "Ahmad Alkharfan",
+      "content": "Great mentor, helped me get on my feet at the start of my career life.",
+      "img": "kharfan.jpeg",
+      "link": "https://www.linkedin.com/in/ahmad-alkharfan"
+    }
+  ],
+  "trainees": [
+    {
+      "highlight": true,
+      "img": "suhaib.jpg",
+      "link": "https://www.linkedin.com/in/suhib-mourshid",
+      "name": "Suhaib Mourshid"
+    },
+    {
+      "highlight": true,
+      "img": "kharfan.jpeg",
+      "link": "https://www.linkedin.com/in/ahmad-alkharfan",
+      "name": "Ahmad Alkharfan"
+    },
+    {
+      "highlight": true,
+      "img": "bakhadher.jpg",
+      "link": "https://www.linkedin.com/in/mohammed-abdullah-omar-ba-khadher",
+      "name": "Mohammed BaKhadher"
+    },
+    {
+      "highlight": true,
+      "img": "mazen.jpeg",
+      "link": "https://www.linkedin.com/in/mazen-adel-bab141258",
+      "name": "Mazen Adel"
+    },
+    {
+      "img": "",
+      "link": "",
+      "name": "Mustafa Hasanat"
+    },
+    {
+      "img": "",
+      "link": "",
+      "name": "Zaid Jarrar"
+    },
+    {
+      "img": "",
+      "link": "",
+      "name": "Mazen Adel"
+    },
+    {
+      "img": "",
+      "link": "",
+      "name": "Suhaib Murshed"
+    },
+    {
+      "img": "",
+      "link": "",
+      "name": "Raghad Abdulhadi"
+    },
+    {
+      "img": "",
+      "link": "",
+      "name": "Emad Majdalawi"
+    },
+    {
+      "img": "",
+      "link": "",
+      "name": "Ghaida Momani"
+    },
+    {
+      "img": "",
+      "link": "",
+      "name": "Ahmad Kharfan"
+    },
+    {
+      "img": "",
+      "link": "",
+      "name": "Mohammed Ba Khadher"
+    },
+    {
+      "img": "",
+      "link": "",
+      "name": "Yahya Labeeb"
+    },
+    {
+      "img": "",
+      "link": "",
+      "name": "Eleen Feras"
+    },
+    {
+      "img": "",
+      "link": "",
+      "name": "Lareen Feras"
+    },
+    {
+      "img": "",
+      "link": "",
+      "name": "Osaid Ahmad"
+    },
+    {
+      "img": "",
+      "link": "",
+      "name": "Hamed Sulieman"
+    },
+    {
+      "img": "",
+      "link": "",
+      "name": "AbdulRahman Othman"
+    }
+  ]
+}

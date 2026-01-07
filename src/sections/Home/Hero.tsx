@@ -1,13 +1,32 @@
-import { TransitionFunction } from "react";
+import {
+  clientsList,
+  jobsList,
+  projectsList,
+  traineesList,
+} from "@/api/hardCodedData";
 
 const HomeHeroSection = async ({ t }: { t: Function }) => {
-  const stats = [
-    { count: 151, label: "Months in Web Dev" },
-    { count: 61, label: "Software Built" },
-    { count: 30, label: "Happy Clients" },
-    { count: 15, label: "Individuals Trained" },
-    { count: 14, label: "Projects Consulted" },
-    { count: 13, label: "Solutions Architected" },
+  const stats: { count: number; label: string }[] = [
+    {
+      count: jobsList.reduce((total, job) => total + (job.monthsCount || 0), 0),
+      label: "Months in Web Dev",
+    },
+    {
+      count: projectsList.filter((project) => project.category === "Web App")
+        ?.length,
+      label: "Software Built",
+    },
+    { count: clientsList.length, label: "Happy Clients" },
+    { count: traineesList.length, label: "Individuals Trained" },
+    {
+      count: projectsList.filter((project) => project.category === "Consulting")
+        ?.length,
+      label: "Projects Consulted",
+    },
+    {
+      count: projectsList.filter(({ designed }) => designed)?.length,
+      label: "Solutions Architected",
+    },
   ];
 
   return (

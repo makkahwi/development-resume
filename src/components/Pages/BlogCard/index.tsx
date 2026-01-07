@@ -1,10 +1,5 @@
+import { BlogProps } from "@/types/data";
 import Image from "next/image";
-
-export interface BlogProps {
-  title: string;
-  image: string;
-  content: string;
-}
 
 const BlogPostCard = ({
   title,
