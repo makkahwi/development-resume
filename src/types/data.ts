@@ -1,10 +1,3 @@
-export interface ClientProps {
-  name: string;
-  img: string;
-  link: string;
-  prominent?: boolean;
-}
-
 interface BlogPostContent {
   text?: string;
   type: string;
@@ -25,12 +18,20 @@ interface BlogContentBlock {
 export interface BlogProps {
   category: string;
   date: string;
+  image?: string;
   id: string;
   tags: string[];
   versions: {
     ar: BlogContentBlock;
     en: BlogContentBlock;
   };
+}
+
+export interface ClientProps {
+  name: string;
+  img: string;
+  link: string;
+  prominent?: boolean;
 }
 
 export interface JobProps {
@@ -43,13 +44,6 @@ export interface JobProps {
   title: string;
   type: string;
   website?: string;
-}
-
-export interface TraineeProps {
-  img: string;
-  link: string;
-  name: string;
-  highlight?: boolean;
 }
 
 export interface ProjectProps {
@@ -87,4 +81,11 @@ export interface TestimonialProps {
   content: string;
   img: string;
   link: string;
+}
+
+export interface TraineeProps {
+  img: string;
+  link: string;
+  name: string;
+  highlight?: boolean;
 }
