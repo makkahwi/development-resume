@@ -1,17 +1,17 @@
 {
   "About": {
-    "description": "Background, education and soft skills of Suhaib Ahmad.",
-    "headline": "About Me",
-    "title": "About – Suhaib Ahmad"
+    "Description": "Background, education and soft skills of Suhaib Ahmad.",
+    "Headline": "About Me",
+    "Title": "About – Suhaib Ahmad"
   },
   "Blog": {
-    "description": "Articles and insights about web development, architecture and tech entrepreneurship.",
-    "headline": "Blog",
-    "title": "Blog – Technical Articles & Insights"
+    "Description": "Articles and insights about web development, architecture and tech entrepreneurship.",
+    "Headline": "Blog",
+    "Title": "Blog – Technical Articles & Insights"
   },
   "BlogPost": {
-    "descriptionSuffix": " – Article by Suhaib Ahmad.",
-    "titlePrefix": "Blog – "
+    "DescriptionSuffix": " – Article by Suhaib Ahmad.",
+    "TitlePrefix": "Blog – "
   },
   "ContactForm": {
     "Email": "Email",
@@ -24,19 +24,19 @@
     "Title": "Contact Me"
   },
   "HandsOff": {
-    "description": "Highlights of leadership, mentorship and architectural decision-making.",
-    "headline": "Hands Off",
-    "title": "Hands-off Work – Leadership & Technical Direction"
+    "Description": "Highlights of leadership, mentorship and architectural decision-making.",
+    "Headline": "Hands Off",
+    "Title": "Hands-off Work – Leadership & Technical Direction"
   },
   "HandsOn": {
-    "description": "Overview of Suhaib Ahmad's hands-on experience, projects and technical skills.",
-    "headline": "Hands On",
-    "title": "Hands-on Work – Projects & Technical Experience"
+    "Description": "Overview of Suhaib Ahmad's hands-on experience, projects and technical skills.",
+    "Headline": "Hands On",
+    "Title": "Hands-on Work – Projects & Technical Experience"
   },
   "Home": {
-    "description": "Personal website of Suhaib Ahmad, Senior Full-Stack Developer, Technical Advisor, Mentor and more.",
+    "Description": "Personal website of Suhaib Ahmad, Senior Full-Stack Developer, Technical Advisor, Mentor and more.",
     "subtitle": "I help bring software ideas to life — from architecture and design to code and deployment. Whether you're building a product, seeking technical guidance, or just getting started on your coding journey, I offer help tailored to your needs.",
-    "title": "Suhaib Ahmad – Resume Website"
+    "Title": "Suhaib Ahmad – Resume Website"
   },
   "Layout": {
     "Footer": {
@@ -55,8 +55,8 @@
     }
   },
   "NonProfit": {
-    "description": "Training, coaching, open-source contributions and free-of-charge products.",
-    "headline": "Give Back",
-    "title": "Give Back – Non-profit Work & Free Products"
+    "Description": "Training, coaching, open-source contributions and free-of-charge products.",
+    "Headline": "Give Back",
+    "Title": "Give Back – Non-profit Work & Free Products"
   }
 }

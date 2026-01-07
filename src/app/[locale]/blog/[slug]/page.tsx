@@ -25,12 +25,12 @@ export const generateMetadata = async ({
   const path = `/${locale}/blog/${slug}`;
 
   const title = post
-    ? `${t("titlePrefix")}${post.title}`
-    : t("titlePrefix") + slug;
+    ? `${t("TitlePrefix")}${post.title}`
+    : t("TitlePrefix") + slug;
 
   const description = post
-    ? `${post.excerpt}${t("descriptionSuffix")}`
-    : t("descriptionSuffix");
+    ? `${post.excerpt}${t("DescriptionSuffix")}`
+    : t("DescriptionSuffix");
 
   return {
     title,

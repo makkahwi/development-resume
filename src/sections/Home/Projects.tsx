@@ -10,7 +10,7 @@ const ProjectsSection = async ({
   short?: boolean;
 }) => {
   return (
-    <PageSection title={t("title")} subtitle={t("subtitle")} id="projects">
+    <PageSection title={t("Title")} subtitle={t("subtitle")} id="projects">
       <div className="row">
         {projectsList.map((project, index) => (
           <ProjectCard key={index} short={short} {...project} />

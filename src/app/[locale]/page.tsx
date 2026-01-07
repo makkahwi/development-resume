@@ -19,8 +19,8 @@ export const generateMetadata = async ({
   const path = `/${locale}`;
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title: t("Title"),
+    description: t("Description"),
     alternates: {
       canonical: `${base}${path}`,
       languages: {

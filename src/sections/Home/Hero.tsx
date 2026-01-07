@@ -32,7 +32,7 @@ const HomeHeroSection = async ({ t }: { t: Function }) => {
   return (
     <div>
       <header className="mb-5">
-        <h1>{t("title")}</h1>
+        <h1>{t("Title")}</h1>
         <p className="lead">{t("subtitle")}</p>
       </header>
 

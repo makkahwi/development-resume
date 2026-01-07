@@ -14,8 +14,8 @@ export const generateMetadata = async ({
   const path = `/${locale}/hands-off`;
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title: t("Title"),
+    description: t("Description"),
     alternates: {
       canonical: `${base}${path}`,
       languages: {
@@ -32,7 +32,7 @@ const HandsOffPage = async ({ params }: PageProps) => {
 
   return (
     <main className="py-5">
-      <h1 className="mb-4">{t("headline")}</h1>
+      <h1 className="mb-4">{t("Headline")}</h1>
     </main>
   );
 };
