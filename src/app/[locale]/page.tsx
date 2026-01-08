@@ -1,5 +1,5 @@
 import { brandConfig } from "@/brand/config";
-import BlogSection from "@/sections/Home/Blog";
+import BlogSection from "@/sections/Common/Blog";
 import ClientsSection from "@/sections/Home/Clients";
 import HomeHeroSection from "@/sections/Home/Hero";
 import ProjectsSection from "@/sections/Common/Projects";
