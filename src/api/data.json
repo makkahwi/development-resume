@@ -837,7 +837,7 @@
   ],
   "education": [
     {
-      "cert": "Scroll.pdf?alt=media",
+      "cert": "Scroll.pdf",
       "description": "Python Based Web Dev (Code Fellows Curriculum)",
       "downloads": [
         {
@@ -853,13 +853,13 @@
           "url": "https://tadreebi.netlify.app/"
         }
       ],
-      "logo": "LTUC.png?alt=media",
+      "logo": "LTUC.png",
       "label": "6-Month Training Camp",
       "school": "ASAC of LTUC College (Jordan)",
       "url": "https://ltuc.edu.jo/"
     },
     {
-      "cert": "Scroll.pdf?alt=media",
+      "cert": "Scroll.pdf",
       "description": "Specialized in Data Science and Computational Intelligence",
       "downloads": [
         {
@@ -867,7 +867,7 @@
           "url": "https://github.com/makkahwi/iDecide"
         }
       ],
-      "logo": "IIUM.png?alt=media",
+      "logo": "IIUM.png",
       "label": "Bachelor of Computer Science",
       "school": "International Islamic University Malaysia",
       "url": "https://www.iium.edu.my/"
@@ -951,7 +951,7 @@
         "Contributed to UI/UX design decisions with the PM for maximum citizen engagement.",
         "Technically the product was ready for usage, weren't published for non-technical issues."
       ],
-      "image": "20.jpg?alt=media",
+      "image": "20.jpg",
       "importanceOrder": 29,
       "location": "Jordan",
       "role": "Frontend Web Dev",
@@ -981,7 +981,7 @@
         "Integrated Express.js backend for lightweight data handling and API support.",
         "Directly contributed to UX alongside the PM and stakeholders."
       ],
-      "image": "14.jpg?alt=media",
+      "image": "14.jpg",
       "importanceOrder": 28,
       "location": "Jordan",
       "role": "Full-Stack Dev",
@@ -1016,7 +1016,7 @@
         "Integrated PDF generation, notifications, analytics dashboards, and support for both English and Arabic languages.",
         "Optimized for AWS deployment with CI/CD, Docker, and secure configuration."
       ],
-      "image": "19.jpg?alt=media",
+      "image": "19.jpg",
       "importanceOrder": 27,
       "location": "Jordan",
       "role": "Full-Stack Dev",
@@ -1055,7 +1055,7 @@
         "Led a small cross-functional team and collaborated closely with product management and design.",
         "Ensured compliance with Saudi government digital infrastructure standards and data security requirements."
       ],
-      "image": "29.jpg?alt=media",
+      "image": "29.jpg",
       "importanceOrder": 27,
       "location": "Saudi Arabia",
       "role": "Full-Stack Dev",
@@ -1086,7 +1086,7 @@
         "It's also required to contribute into revamp and refactor the redundant codes of functions & views.",
         "Revamp and refactor is part of a plan aiming to upgrade framework to Vue 3."
       ],
-      "image": "33.jpg?alt=media",
+      "image": "33.jpg",
       "importanceOrder": 28,
       "location": "USA",
       "role": "Frontend Web Dev",
@@ -1117,7 +1117,7 @@
         "Integrated Express.js backend for lightweight data handling and API support.",
         "Directly contributed to UX alongside the PM and stakeholders."
       ],
-      "image": "32.jpg?alt=media",
+      "image": "32.jpg",
       "importanceOrder": 27,
       "location": "Jordan",
       "role": "Senior Full-Stack Dev",
@@ -1151,7 +1151,7 @@
         "Included admin tools to manage searchable metadata and optimize search relevance."
       ],
       "hide": true,
-      "image": "31.png?alt=media",
+      "image": "31.png",
       "importanceOrder": 28,
       "location": "Saudi Arabia",
       "role": "Full-Stack Dev",
@@ -1183,7 +1183,7 @@
         "Worked closely with the client’s media and education teams to deliver an intuitive, responsive platform.",
         "Developed video-based course browsing, lesson tracking, and user authentication systems."
       ],
-      "image": "21.jpg?alt=media",
+      "image": "21.jpg",
       "importanceOrder": 26,
       "location": "Jordan",
       "role": "Frontend Web Dev",
@@ -1213,7 +1213,7 @@
         "Collaborated closely with backend engineer for real-time data handling and authentication flows."
       ],
       "hide": true,
-      "image": "16.jpg?alt=media",
+      "image": "16.jpg",
       "importanceOrder": 25,
       "location": "Saudi Arabia",
       "role": "Frontend Web Dev",
@@ -1242,7 +1242,7 @@
         "Created QR-scanning features and dashboards to visualize product movement.",
         "Led refactoring of the frontend into modular, reusable components using React.js."
       ],
-      "image": "11.jpg?alt=media",
+      "image": "11.jpg",
       "importanceOrder": 24,
       "location": "Malaysia",
       "role": "Frontend Web Dev",
@@ -1272,7 +1272,7 @@
       "description": "Own product idea, executed from ideation, development to deployment.",
       "designed": true,
       "hide": true,
-      "image": "28.png?alt=media",
+      "image": "28.png",
       "importanceOrder": 23,
       "location": "Jordan",
       "openSource": true,
@@ -1301,7 +1301,7 @@
       "description": "Own product idea, execution is in-progress by supervised junior developers.",
       "designed": true,
       "hide": true,
-      "image": "24.jpg?alt=media",
+      "image": "24.jpg",
       "importanceOrder": 22,
       "location": "Jordan",
       "role": "Product Ownership",
@@ -1333,7 +1333,7 @@
         "Designed to reduce paper-based workload and streamline access to student records."
       ],
       "hide": true,
-      "image": "8.jpg?alt=media",
+      "image": "8.jpg",
       "importanceOrder": 21,
       "location": "Malaysia",
       "role": "Product Ownership",
@@ -1364,7 +1364,7 @@
         "Designed for non-technical school staff to interact with effortlessly."
       ],
       "hide": true,
-      "image": "15.jpg?alt=media",
+      "image": "15.jpg",
       "importanceOrder": 20,
       "location": "Malaysia",
       "role": "Product Ownership",
@@ -1397,7 +1397,7 @@
         "Handled map overlays, real-time filters, and interactive data layers using modern JS libraries."
       ],
       "hide": true,
-      "image": "22.jpg?alt=media",
+      "image": "22.jpg",
       "importanceOrder": 19,
       "location": "UK",
       "role": "Frontend Web Dev",
@@ -1423,7 +1423,7 @@
       "date": 2024,
       "description": "A solely developed frontend app, totally new / from scratch.",
       "hide": true,
-      "image": "26.jpg?alt=media",
+      "image": "26.jpg",
       "importanceOrder": 18,
       "location": "Saudi Arabia",
       "role": "Frontend Web Dev",
@@ -1450,7 +1450,7 @@
       "description": "A system for school / university students' internship progress tracking & management.",
       "designed": true,
       "hide": true,
-      "image": "13.jpg?alt=media",
+      "image": "13.jpg",
       "importanceOrder": 17,
       "location": "Jordan",
       "openSource": true,
@@ -1481,7 +1481,7 @@
       "date": 2021,
       "description": "Education content & teacher-student communication system.",
       "hide": true,
-      "image": "9.jpg?alt=media",
+      "image": "9.jpg",
       "importanceOrder": 16,
       "location": "Malaysia",
       "role": "Full-Stack Dev",
@@ -1506,7 +1506,7 @@
       "description": "Own product idea, execution is in-progress.",
       "designed": true,
       "hide": true,
-      "image": "35.jpg?alt=media",
+      "image": "35.jpg",
       "importanceOrder": 15,
       "location": "Jordan",
       "openSource": true,
@@ -1534,7 +1534,7 @@
       "description": "Own product idea, executed from ideation, development to deployment.",
       "designed": true,
       "hide": true,
-      "image": "7.jpg?alt=media",
+      "image": "7.jpg",
       "importanceOrder": 14,
       "location": "Jordan",
       "openSource": true,
@@ -1563,7 +1563,7 @@
       "description": "Own product idea, execution is in-progress by supervised junior developers.",
       "designed": true,
       "hide": true,
-      "image": "10.jpg?alt=media",
+      "image": "10.jpg",
       "importanceOrder": 13,
       "location": "Jordan",
       "openSource": true,
@@ -1597,7 +1597,7 @@
         "Optimized for AWS deployment with CI/CD, Docker, and secure configuration."
       ],
       "hide": true,
-      "image": "23.jpg?alt=media",
+      "image": "23.jpg",
       "importanceOrder": 12,
       "location": "Jordan",
       "role": "Full-Stack Dev",
@@ -1628,7 +1628,7 @@
       "designed": true,
       "foc": true,
       "hide": true,
-      "image": "25.jpg?alt=media",
+      "image": "25.jpg",
       "importanceOrder": 11,
       "location": "Jordan",
       "role": "Frontend Web Dev",
@@ -1658,7 +1658,7 @@
       "designed": true,
       "foc": true,
       "hide": true,
-      "image": "30.jpg?alt=media",
+      "image": "30.jpg",
       "importanceOrder": 10,
       "location": "Jordan",
       "role": "Frontend Web Dev",
@@ -1688,7 +1688,7 @@
       "designed": true,
       "foc": true,
       "hide": true,
-      "image": "34.jpg?alt=media",
+      "image": "34.jpg",
       "importanceOrder": 10,
       "location": "Jordan",
       "role": "Frontend Web Dev",
@@ -1714,7 +1714,7 @@
       "date": 2024,
       "description": "Simple company's professional website.",
       "hide": true,
-      "image": "27.jpg?alt=media",
+      "image": "27.jpg",
       "importanceOrder": 9,
       "location": "Saudi Arabia",
       "role": "Frontend Web Dev",
@@ -1743,7 +1743,7 @@
       "description": "Simple individual's professional website.",
       "foc": true,
       "hide": true,
-      "image": "12.jpg?alt=media",
+      "image": "12.jpg",
       "importanceOrder": 8,
       "location": "Jordan",
       "role": "Frontend Web Dev",
@@ -1770,7 +1770,7 @@
       "description": "Simple company's professional website.",
       "foc": true,
       "hide": true,
-      "image": "17.jpg?alt=media",
+      "image": "17.jpg",
       "importanceOrder": 7,
       "location": "Jordan",
       "role": "Frontend Web Dev",
@@ -1797,7 +1797,7 @@
       "description": "Simple company's professional website.",
       "foc": true,
       "hide": true,
-      "image": "18.jpg?alt=media",
+      "image": "18.jpg",
       "importanceOrder": 6,
       "location": "Malaysia",
       "role": "Frontend Web Dev",
@@ -1821,7 +1821,7 @@
       "description": "Simple company's professional website.",
       "foc": true,
       "hide": true,
-      "image": "1.jpg?alt=media",
+      "image": "1.jpg",
       "importanceOrder": 5,
       "location": "Malaysia",
       "role": "Frontend Web Dev",
@@ -1843,7 +1843,7 @@
       "description": "Simple company's professional website.",
       "foc": true,
       "hide": true,
-      "image": "6.jpg?alt=media",
+      "image": "6.jpg",
       "importanceOrder": 4,
       "location": "Malaysia",
       "role": "Frontend Web Dev",
@@ -1862,7 +1862,7 @@
       "date": 2018,
       "description": "Simple company's professional website.",
       "hide": true,
-      "image": "2.jpg?alt=media",
+      "image": "2.jpg",
       "importanceOrder": 3,
       "location": "Malaysia",
       "role": "Frontend Web Dev",
@@ -1887,7 +1887,7 @@
       "date": 2018,
       "description": "Simple company's professional website.",
       "hide": true,
-      "image": "4.jpg?alt=media",
+      "image": "4.jpg",
       "importanceOrder": 2,
       "location": "Malaysia",
       "role": "Frontend Web Dev",
@@ -1907,7 +1907,7 @@
       "date": 2017,
       "description": "Simple company's professional website.",
       "hide": true,
-      "image": "3.jpg?alt=media",
+      "image": "3.jpg",
       "importanceOrder": 1,
       "location": "Malaysia",
       "role": "Frontend Web Dev",
@@ -1924,7 +1924,7 @@
     {
       "category": "Logos",
       "description": "Logo Design",
-      "image": "logo2.jpg?alt=media",
+      "image": "logo2.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "Finger Speak",
@@ -1934,16 +1934,16 @@
       "category": "Others",
       "description": "Business Card Design",
       "hide": true,
-      "image": "bc1.jpg?alt=media",
+      "image": "bc1.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "AIS School",
-      "url": "bc1.jpg?alt=media"
+      "url": "bc1.jpg"
     },
     {
       "category": "Logos",
       "description": "Logo Design",
-      "image": "logo.png?alt=media",
+      "image": "logo.png",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "Al-Aqsa Staff Portal",
@@ -1953,16 +1953,16 @@
       "category": "Booklets",
       "description": "Booklet Design",
       "hide": true,
-      "image": "booklet5.jpg?alt=media",
+      "image": "booklet5.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "PSAD Southeast Asia",
-      "url": "booklet5.jpg?alt=media"
+      "url": "booklet5.jpg"
     },
     {
       "category": "Logos",
       "description": "Logo Design",
-      "image": "logo5.png?alt=media",
+      "image": "logo5.png",
       "importanceOrder": 1,
       "url": "aam_app",
       "timeOrder": 1,
@@ -1972,46 +1972,46 @@
     {
       "category": "Booklets",
       "description": "Booklet Design",
-      "image": "booklet2.jpg?alt=media",
+      "image": "booklet2.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "Mercy Mission World",
-      "url": "booklet2.jpg?alt=media"
+      "url": "booklet2.jpg"
     },
     {
       "category": "Banners & Posters",
       "description": "Banner Design",
       "hide": true,
-      "image": "banner2.jpg?alt=media",
+      "image": "banner2.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "Several University Clubs",
-      "url": "banner2.jpg?alt=media"
+      "url": "banner2.jpg"
     },
     {
       "category": "Logos",
       "description": "Logo Design",
       "hide": true,
-      "image": "logo4.jpg?alt=media",
+      "image": "logo4.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "Univeristy Club",
-      "url": "logo4.jpg?alt=media"
+      "url": "logo4.jpg"
     },
     {
       "category": "Banners & Posters",
       "description": "Banner Design",
-      "image": "poster1.jpg?alt=media",
+      "image": "poster1.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "SpeedWheels",
-      "url": "poster1.jpg?alt=media"
+      "url": "poster1.jpg"
     },
     {
       "category": "Logos",
       "description": "Logo Re-design",
       "hide": true,
-      "image": "logo1.jpg?alt=media",
+      "image": "logo1.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "QFM Malaysia",
@@ -2021,100 +2021,100 @@
       "category": "Booklets",
       "description": "Booklet Design",
       "hide": true,
-      "image": "booklet1.jpg?alt=media",
+      "image": "booklet1.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "QFM Malaysia",
-      "url": "booklet1.jpg?alt=media"
+      "url": "booklet1.jpg"
     },
     {
       "category": "Booklets",
       "description": "Booklet Design",
       "hide": true,
-      "image": "booklet3.jpg?alt=media",
+      "image": "booklet3.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "QFM Malaysia",
-      "url": "booklet3.jpg?alt=media"
+      "url": "booklet3.jpg"
     },
     {
       "category": "Booklets",
       "description": "Booklet Design",
       "hide": true,
-      "image": "booklet4.jpg?alt=media",
+      "image": "booklet4.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "QFM Malaysia",
-      "url": "booklet4.jpg?alt=media"
+      "url": "booklet4.jpg"
     },
     {
       "category": "Banners & Posters",
       "description": "Poster Design",
-      "image": "poster3.jpg?alt=media",
+      "image": "poster3.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "FYP Project",
-      "url": "poster3.jpg?alt=media"
+      "url": "poster3.jpg"
     },
     {
       "category": "Others",
       "description": "CV Design",
-      "image": "cv.jpg?alt=media",
+      "image": "cv.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "An Engineering Graduate",
-      "url": "cv.jpg?alt=media"
+      "url": "cv.jpg"
     },
     {
       "category": "Logos",
       "description": "Logo Design",
       "hide": true,
-      "image": "logo6.png?alt=media",
+      "image": "logo6.png",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "xEdu",
-      "url": "logo6.png?alt=media"
+      "url": "logo6.png"
     },
     {
       "category": "Banners & Posters",
       "description": "Brochure Design",
-      "image": "poster1.jpg?alt=media",
+      "image": "poster1.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "Makan Sini Resturant",
-      "url": "poster1.jpg?alt=media"
+      "url": "poster1.jpg"
     },
     {
       "category": "Others",
       "description": "Business Card Design",
-      "image": "bc2.jpg?alt=media",
+      "image": "bc2.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "Global Mediator",
-      "url": "bc2.jpg?alt=media"
+      "url": "bc2.jpg"
     },
     {
       "category": "Booklets",
       "description": "Booklet Design",
-      "image": "booklet6.jpg?alt=media",
+      "image": "booklet6.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "IIUM",
-      "url": "booklet6.jpg?alt=media"
+      "url": "booklet6.jpg"
     },
     {
       "category": "Others",
       "description": "Brochure Design",
-      "image": "poster2.jpg?alt=media",
+      "image": "poster2.jpg",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "IIUM",
-      "url": "poster2.jpg?alt=media"
+      "url": "poster2.jpg"
     },
     {
       "category": "Videos",
       "description": "Video Producing",
-      "image": "video1.png?alt=media",
+      "image": "video1.png",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "ICPC Asia Regional Contest",
@@ -2123,7 +2123,7 @@
     {
       "category": "Videos",
       "description": "Video Producing",
-      "image": "video2.png?alt=media",
+      "image": "video2.png",
       "importanceOrder": 1,
       "timeOrder": 1,
       "title": "ICPC Asia Regional Contest",

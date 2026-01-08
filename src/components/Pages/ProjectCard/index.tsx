@@ -14,7 +14,7 @@ const ProjectCard = ({
       <div className="card-body text-center">
         {image && image.length > 0 && (
           <Image
-            src={process.env.NEXT_PUBLIC_STORAGE_URL + image}
+            src={process.env.NEXT_PUBLIC_STORAGE_URL + image + "?alt=media"}
             alt={title}
             width={400}
             height={400}

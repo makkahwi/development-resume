@@ -10,7 +10,7 @@ const TraineeCard = ({ name, image, url }: TraineeProps) => {
         {url && image && image.length > 0 && (
           <a href={url} target="_blank" rel="noopener noreferrer">
             <Image
-              src={process.env.NEXT_PUBLIC_STORAGE_URL + image}
+              src={process.env.NEXT_PUBLIC_STORAGE_URL + image + "?alt=media"}
               alt={name}
               width={400}
               height={400}

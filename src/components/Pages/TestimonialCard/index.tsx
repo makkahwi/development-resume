@@ -11,7 +11,7 @@ const TestimonialCard = ({ author, content, image, url }: TestimonialProps) => {
         {url && image && image.length > 0 && (
           <a href={url} target="_blank" rel="noopener noreferrer">
             <Image
-              src={process.env.NEXT_PUBLIC_STORAGE_URL + image}
+              src={process.env.NEXT_PUBLIC_STORAGE_URL + image + "?alt=media"}
               alt={author}
               width={400}
               height={400}

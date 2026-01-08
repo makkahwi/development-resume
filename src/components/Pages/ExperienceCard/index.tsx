@@ -1,4 +1,6 @@
+import { clientsList } from "@/api/hardCodedData";
 import { JobProps } from "@/types/data";
+import Image from "next/image";
 
 const ExperienceCard = ({
   company,
@@ -11,11 +13,28 @@ const ExperienceCard = ({
   type,
   url,
 }: JobProps) => {
+  const companyLogo = clientsList.find(
+    (client) => client.label === company
+  )?.image;
+
   return (
     <div className="card">
       <div className="card-body text-center">
         <p>
-          {period} | {company} @ {location}
+          {period} |{" "}
+          {companyLogo ? (
+            <Image
+              src={
+                process.env.NEXT_PUBLIC_STORAGE_URL + companyLogo + "?alt=media"
+              }
+              alt={company}
+              width={50}
+              height={50}
+            />
+          ) : (
+            company
+          )}
+          @ {location}
         </p>
         <h2>
           {title} <small>{type}</small>

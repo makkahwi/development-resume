@@ -22,7 +22,7 @@ const ClientsSection = async ({ t }: { t: Function }) => {
               className="col-6 col-md-3 mb-4 d-flex align-items-center justify-content-center"
             >
               <img
-                src={process.env.NEXT_PUBLIC_STORAGE_URL + image}
+                src={process.env.NEXT_PUBLIC_STORAGE_URL + image + "?alt=media"}
                 alt={label}
                 className="img-fluid"
               />
