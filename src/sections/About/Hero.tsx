@@ -1,7 +1,7 @@
 import { statisticsList } from "@/api/hardCodedData";
 import StatisticCard from "@/components/Pages/StatisticCard";
 
-const AboutHeroSection = async () => {
+const AboutHeroSection = async ({ t }: { t: Function }) => {
   return (
     <div>
       <header className="mb-5">

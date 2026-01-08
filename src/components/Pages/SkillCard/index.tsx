@@ -7,14 +7,14 @@ const SkillCard = ({
   label,
   rate,
   subSkills,
-  website,
+  url,
   short = true,
 }: SkillsProps & { short?: boolean }) => {
   return (
     <div className="card">
       <div className="card-body text-center">
         <h4>
-          <a href={website} target="_blank" rel="noopener noreferrer">
+          <a href={url} target="_blank" rel="noopener noreferrer">
             <i className={`fa-solid ${icon} me-1`} /> {label}
           </a>
         </h4>

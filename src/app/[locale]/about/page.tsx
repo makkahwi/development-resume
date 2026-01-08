@@ -1,4 +1,6 @@
 import { brandConfig } from "@/brand/config";
+import EducationSection from "@/sections/About/Education";
+import AboutHeroSection from "@/sections/About/Hero";
 
 import type { PageProps } from "@/types/base";
 import type { Metadata } from "next";
@@ -32,7 +34,9 @@ const AboutPage = async ({ params }: PageProps) => {
 
   return (
     <main className="py-5">
-      <h1 className="mb-4">{t("Headline")}</h1>
+      <AboutHeroSection t={t} />
+
+      <EducationSection t={t} />
     </main>
   );
 };

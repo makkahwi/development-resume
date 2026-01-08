@@ -64,7 +64,7 @@ export interface JobProps {
   projectsCount?: number;
   title: string;
   type: string;
-  website?: string;
+  url?: string;
 }
 
 export interface ProjectProps {
@@ -94,7 +94,7 @@ export interface SkillsProps {
   label: string;
   rate: number;
   subSkills?: string[];
-  website?: string;
+  url?: string;
 }
 
 export interface StatisticProps {
