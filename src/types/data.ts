@@ -44,7 +44,7 @@ export interface ContactProps {
 
 export interface EducationProps {
   cert: string;
-  desc: string;
+  description: string;
   downloads: {
     label: string;
     url: string;
@@ -95,6 +95,12 @@ export interface SkillsProps {
   rate: number;
   subSkills?: string[];
   website?: string;
+}
+
+export interface StatisticProps {
+  count: number;
+  label: string;
+  description: string;
 }
 
 export interface TestimonialProps {

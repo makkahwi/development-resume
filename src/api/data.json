@@ -838,7 +838,7 @@
   "education": [
     {
       "cert": "Scroll.pdf?alt=media",
-      "desc": "Python Based Web Dev (Code Fellows Curriculum)",
+      "description": "Python Based Web Dev (Code Fellows Curriculum)",
       "downloads": [
         {
           "label": "Individual Works",
@@ -860,7 +860,7 @@
     },
     {
       "cert": "Scroll.pdf?alt=media",
-      "desc": "Specialized in Data Science and Computational Intelligence",
+      "description": "Specialized in Data Science and Computational Intelligence",
       "downloads": [
         {
           "label": "FYP Project",
@@ -2132,7 +2132,7 @@
   ],
   "jobs": [
     {
-      "desc": [
+      "description": [
         "9 Years of Web Development",
         "Developed solutions, systems, and applications on various scales.",
         "Covered all technical aspects of the development process, from planning and design to infrastructure and delivery.",
@@ -2339,7 +2339,7 @@
       "title": "Web Development"
     },
     {
-      "desc": [
+      "description": [
         "3 Years as Graphic & UI Designer",
         "Worked as a graphic and UI designer for 3 years.",
         "Gained foundational knowledge and learned design tricks.",
@@ -2412,7 +2412,7 @@
       "title": "Graphics & UI Design"
     },
     {
-      "desc": [
+      "description": [
         "3 Years of Management-Related Experience",
         "Worked in management-related roles, including Secretariat and financial management.",
         "Developed skills in work documentation and organization.",
