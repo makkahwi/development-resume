@@ -82,6 +82,8 @@ export interface ProjectProps {
   shortTitle?: string;
   designed?: boolean;
   technologies?: string[];
+  openSource?: boolean;
+  foc?: boolean;
   timeOrder: number;
   title: string;
   type?: string;
@@ -113,6 +115,6 @@ export interface TestimonialProps {
 export interface TraineeProps {
   image: string;
   url: string;
-  label: string;
+  name: string;
   highlight?: boolean;
 }

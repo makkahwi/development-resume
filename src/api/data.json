@@ -1619,7 +1619,7 @@
       "type": "Productivity Management"
     },
     {
-      "category": "Landing Pages",
+      "category": "Landing Page",
       "comingSoon": false,
       "company": "Noor Training & Consultancy",
       "consulted": true,
@@ -1649,7 +1649,7 @@
       "url": "https://www.noorkayyali.com/"
     },
     {
-      "category": "Landing Pages",
+      "category": "Landing Page",
       "comingSoon": false,
       "company": "Freelancer",
       "consulted": true,
@@ -1708,7 +1708,7 @@
       "url": "https://portal.nutriFatima.com/"
     },
     {
-      "category": "Landing Pages",
+      "category": "Landing Page",
       "comingSoon": true,
       "company": "Freelance",
       "date": 2024,
@@ -1735,7 +1735,7 @@
       "url": "https://e3.ventures/"
     },
     {
-      "category": "Landing Pages",
+      "category": "Landing Page",
       "comingSoon": false,
       "company": "Freelance",
       "consulted": true,
@@ -1763,7 +1763,7 @@
       "url": "https://drahmadabumahfouth.com"
     },
     {
-      "category": "Landing Pages",
+      "category": "Landing Page",
       "comingSoon": false,
       "company": "Freelancer",
       "date": 2023,
@@ -1790,7 +1790,7 @@
       "url": "https://rasmiandkiwan.com/"
     },
     {
-      "category": "Landing Pages",
+      "category": "Landing Page",
       "comingSoon": true,
       "company": "Freelance",
       "date": 2020,
@@ -1815,7 +1815,7 @@
       "url": "https://zaytouna-tau.vercel.app/"
     },
     {
-      "category": "Landing Pages",
+      "category": "Landing Page",
       "company": "Freelancer",
       "date": 2019,
       "description": "Simple company's professional website.",
@@ -1836,7 +1836,7 @@
       "url": "https://oneshotfuture.com/"
     },
     {
-      "category": "Landing Pages",
+      "category": "Landing Page",
       "company": "Freelancer",
       "consulted": true,
       "date": 2020,
@@ -1857,7 +1857,7 @@
       "url": "https://ppam.org.my/"
     },
     {
-      "category": "Landing Pages",
+      "category": "Landing Page",
       "company": "AIS",
       "date": 2018,
       "description": "Simple company's professional website.",
@@ -1882,7 +1882,7 @@
       "url": "https://aqsa.edu.my/"
     },
     {
-      "category": "Landing Pages",
+      "category": "Landing Page",
       "company": "Freelancer",
       "date": 2018,
       "description": "Simple company's professional website.",
@@ -1902,7 +1902,7 @@
       "url": "https://speedwheelstrade.online/"
     },
     {
-      "category": "Landing Pages",
+      "category": "Landing Page",
       "company": "Freelancer",
       "date": 2017,
       "description": "Simple company's professional website.",
@@ -2984,100 +2984,100 @@
       "highlight": true,
       "image": "suhaib.jpg",
       "url": "https://www.linkedin.com/in/suhib-mourshid",
-      "label": "Suhaib Mourshid"
+      "name": "Suhaib Mourshid"
     },
     {
       "highlight": true,
       "image": "kharfan.jpeg",
       "url": "https://www.linkedin.com/in/ahmad-alkharfan",
-      "label": "Ahmad Alkharfan"
+      "name": "Ahmad Alkharfan"
     },
     {
       "highlight": true,
       "image": "bakhadher.jpg",
       "url": "https://www.linkedin.com/in/mohammed-abdullah-omar-ba-khadher",
-      "label": "Mohammed BaKhadher"
+      "name": "Mohammed BaKhadher"
     },
     {
       "highlight": true,
       "image": "mazen.jpeg",
       "url": "https://www.linkedin.com/in/mazen-adel-bab141258",
-      "label": "Mazen Adel"
+      "name": "Mazen Adel"
     },
     {
       "image": "",
       "url": "",
-      "label": "Mustafa Hasanat"
+      "name": "Mustafa Hasanat"
     },
     {
       "image": "",
       "url": "",
-      "label": "Zaid Jarrar"
+      "name": "Zaid Jarrar"
     },
     {
       "image": "",
       "url": "",
-      "label": "Mazen Adel"
+      "name": "Mazen Adel"
     },
     {
       "image": "",
       "url": "",
-      "label": "Suhaib Murshed"
+      "name": "Suhaib Murshed"
     },
     {
       "image": "",
       "url": "",
-      "label": "Raghad Abdulhadi"
+      "name": "Raghad Abdulhadi"
     },
     {
       "image": "",
       "url": "",
-      "label": "Emad Majdalawi"
+      "name": "Emad Majdalawi"
     },
     {
       "image": "",
       "url": "",
-      "label": "Ghaida Momani"
+      "name": "Ghaida Momani"
     },
     {
       "image": "",
       "url": "",
-      "label": "Ahmad Kharfan"
+      "name": "Ahmad Kharfan"
     },
     {
       "image": "",
       "url": "",
-      "label": "Mohammed Ba Khadher"
+      "name": "Mohammed Ba Khadher"
     },
     {
       "image": "",
       "url": "",
-      "label": "Yahya Labeeb"
+      "name": "Yahya Labeeb"
     },
     {
       "image": "",
       "url": "",
-      "label": "Eleen Feras"
+      "name": "Eleen Feras"
     },
     {
       "image": "",
       "url": "",
-      "label": "Lareen Feras"
+      "name": "Lareen Feras"
     },
     {
       "image": "",
       "url": "",
-      "label": "Osaid Ahmad"
+      "name": "Osaid Ahmad"
     },
     {
       "image": "",
       "url": "",
-      "label": "Hamed Sulieman"
+      "name": "Hamed Sulieman"
     },
     {
       "image": "",
       "url": "",
-      "label": "AbdulRahman Othman"
+      "name": "AbdulRahman Othman"
     }
   ]
 }

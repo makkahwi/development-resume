@@ -1,5 +1,7 @@
 import { brandConfig } from "@/brand/config";
-
+import ProjectsSection from "@/sections/Common/Projects";
+import NonProfitHeroSection from "@/sections/NonProfit/Hero";
+import MentoringSection from "@/sections/NonProfit/Mentoring";
 import type { PageProps } from "@/types/base";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
@@ -32,7 +34,13 @@ const NonProfitPage = async ({ params }: PageProps) => {
 
   return (
     <main className="py-5">
-      <h1 className="mb-4">{t("Headline")}</h1>
+      <NonProfitHeroSection t={t} />
+
+      <ProjectsSection t={t} openSourceOnly />
+
+      <ProjectsSection t={t} focOnly />
+
+      <MentoringSection t={t} />
     </main>
   );
 };
