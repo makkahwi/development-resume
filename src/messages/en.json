@@ -1,6 +1,10 @@
 {
   "About": {
     "Description": "Background, education and soft skills of Suhaib Ahmad.",
+    "Education": {
+      "Subtitle": "Formal education and certifications",
+      "Title": "Education"
+    },
     "Headline": "About Me",
     "Title": "About – Suhaib Ahmad"
   },
@@ -30,7 +34,19 @@
   },
   "HandsOn": {
     "Description": "Overview of Suhaib Ahmad's hands-on experience, projects and technical skills.",
+    "Experiences": {
+      "Subtitle": "Work Experiences",
+      "Title": "Experiences"
+    },
     "Headline": "Hands On",
+    "Projects": {
+      "Subtitle": "Highlighted Projects",
+      "Title": "Projects"
+    },
+    "Skills": {
+      "Subtitle": "Highlighted Skills",
+      "Title": "Skills"
+    },
     "Title": "Hands-on Work – Projects & Technical Experience"
   },
   "Home": {
@@ -76,7 +92,15 @@
   },
   "NonProfit": {
     "Description": "Training, coaching, open-source contributions and free-of-charge products.",
-    "Headline": "Give Back",
+    "Mentoring": {
+      "Subtitle": "Training and Coaching Initiatives",
+      "Title": "Mentoring & Coaching"
+    },
+    "Projects": {
+      "Subtitle": "Highlighted Open-Source Projects",
+      "Title": "Open-Source Projects"
+    },
+    "Subtitle": "Give Back",
     "Title": "Give Back – Non-profit Work & Free Products"
   }
 }
