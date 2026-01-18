@@ -1,6 +1,6 @@
-import { projectsList } from "@/api/hardCodedData";
 import ProjectCard from "@/components/Pages/ProjectCard";
 import PageSection from "@/components/PageSection";
+import { projectsList } from "@/lib/data";
 
 const ProjectsSection = async ({
   t,
@@ -24,7 +24,7 @@ const ProjectsSection = async ({
           .filter(
             ({ category, openSource, foc }) =>
               ["Web App", "Landing Page"].includes(category) &&
-              (focOnly ? foc : openSourceOnly ? openSource : !openSource)
+              (focOnly ? foc : openSourceOnly ? openSource : !openSource),
           )
           .map((project, index) => (
             <ProjectCard key={index} short={short} {...project} />

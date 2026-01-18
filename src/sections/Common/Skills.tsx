@@ -1,6 +1,6 @@
-import { skillsList } from "@/api/hardCodedData";
 import SkillCard from "@/components/Pages/SkillCard";
 import PageSection from "@/components/PageSection";
+import { skillsList } from "@/lib/data";
 
 const SkillsSection = async ({
   t,

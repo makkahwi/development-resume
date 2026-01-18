@@ -1,5 +1,5 @@
-import { educationsList } from "@/api/hardCodedData";
 import PageSection from "@/components/PageSection";
+import { educationsList } from "@/lib/data";
 
 const EducationSection = async ({ t }: { t: Function }) => {
   return (
@@ -21,7 +21,7 @@ const EducationSection = async ({ t }: { t: Function }) => {
 
             <p>{description}</p>
           </div>
-        )
+        ),
       )}
     </PageSection>
   );

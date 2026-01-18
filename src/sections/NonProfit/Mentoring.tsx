@@ -1,6 +1,6 @@
-import { traineesList } from "@/api/hardCodedData";
 import TraineeCard from "@/components/Pages/TraineeCard";
 import PageSection from "@/components/PageSection";
+import { traineesList } from "@/lib/data";
 
 const MentoringSection = async ({ t }: { t: Function }) => {
   return (

@@ -1,6 +1,6 @@
-import { testimonialsList } from "@/api/hardCodedData";
 import TestimonialCard from "@/components/Pages/TestimonialCard";
 import PageSection from "@/components/PageSection";
+import { testimonialsList } from "@/lib/data";
 
 const TestimonialsSection = async ({ t }: { t: Function }) => {
   return (

@@ -24,7 +24,7 @@ const getStatisticsList = async (): Promise<StatisticProps[]> => {
       {
         count: jobsList.reduce(
           (total, job) => total + (job.monthsCount || 0),
-          0
+          0,
         ),
         label: "Months in Web Dev",
         description:
@@ -89,11 +89,23 @@ const HomeHeroSection = async ({ t }: { t: Function }) => {
       </header>
 
       <section>
+        <p className="lead">{t("Description")}</p>
+
         <div className="row">
           {statistics.map((statistic, index) => (
             <StatisticCard key={index} {...statistic} />
           ))}
         </div>
+
+        <button className="btn btn-primary">{t("CTA.Main")}</button>
+
+        <button className="btn btn-outline-primary ms-2">
+          {t("CTA.Secondary")}
+        </button>
+
+        <button className="btn btn-outline-secondary ms-2">
+          {t("CTA.More")}
+        </button>
       </section>
     </div>
   );

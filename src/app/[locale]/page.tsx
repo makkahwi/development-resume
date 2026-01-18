@@ -1,10 +1,12 @@
 import { brandConfig } from "@/brand/config";
+import AboutHeroSection from "@/sections/About/Hero";
 import BlogSection from "@/sections/Common/Blog";
-import ClientsSection from "@/sections/Home/Clients";
-import HomeHeroSection from "@/sections/Home/Hero";
 import ProjectsSection from "@/sections/Common/Projects";
 import SkillsSection from "@/sections/Common/Skills";
+import ClientsSection from "@/sections/Home/Clients";
+import HomeHeroSection from "@/sections/Home/Hero";
 import TestimonialsSection from "@/sections/Home/Testimonials";
+
 import type { PageProps } from "@/types/base";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
@@ -20,7 +22,7 @@ export const generateMetadata = async ({
 
   return {
     title: t("Title"),
-    description: t("Description"),
+    description: t("Subtitle"),
     alternates: {
       canonical: `${base}${path}`,
       languages: {
@@ -38,9 +40,10 @@ const HomeLocalePage = async ({ params }: PageProps) => {
   return (
     <main className="py-5">
       <HomeHeroSection t={t} />
+      <ClientsSection t={t} />
+      <AboutHeroSection t={t} short />
       <ProjectsSection t={t} short />
       <SkillsSection t={t} short />
-      <ClientsSection t={t} />
       <TestimonialsSection t={t} />
       <BlogSection t={t} />
     </main>

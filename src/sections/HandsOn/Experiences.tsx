@@ -1,6 +1,6 @@
-import { jobsList } from "@/api/hardCodedData";
 import ExperienceCard from "@/components/Pages/ExperienceCard";
 import PageSection from "@/components/PageSection";
+import { jobsList } from "@/lib/data";
 
 const ExperiencesSection = async ({ t }: { t: Function }) => {
   return (

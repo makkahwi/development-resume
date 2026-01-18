@@ -50,15 +50,21 @@
     "Title": "Hands-on Work – Projects & Technical Experience"
   },
   "Home": {
+    "About": "I’m a Jordan-based senior software engineer with 10+ years of experience building scalable, maintainable, and product-driven web platforms. I’ve grown from frontend foundations into full-stack execution and technical leadership — balancing clean code, system architecture, and user-centric design. My current focus revolves around JavaScript/TypeScript ecosystems, with hands-on depth in React, Next.js, NestJS, and Node backends. Most of my work has been with fast-moving startups, but I’ve also delivered for SMEs and larger organizations across EdTech, SaaS, and internal tooling domains. Beyond coding, I contribute to architectural planning, mentor developers, collaborate with product teams, and help early companies turn ideas into reliable software. Curiosity, clarity, and collaborative problem-solving drive my approach to engineering.",
     "Blog": {
       "Subtitle": "What I have in my mind",
       "Title": "Blog"
+    },
+    "CTA": {
+      "Main": "Work With Me",
+      "Secondary": "Download Resume",
+      "More": "Explore Projects"
     },
     "Clients": {
       "Subtitle": "Some of the most well-known clients I worked with",
       "Title": "Prominent Clients"
     },
-    "Description": "Personal website of Suhaib Ahmad, Senior Full-Stack Developer, Technical Advisor, Mentor and more.",
+    "Description": "Building scalable web platforms, guiding engineering decisions, and turning early-stage products into production-ready software.",
     "Projects": {
       "Subtitle": "The highlighted technical projects I have worked on",
       "Title": "Projects"
@@ -67,7 +73,7 @@
       "Subtitle": "The significant technical skills I possess",
       "Title": "Skills"
     },
-    "Subtitle": "I help bring software ideas to life — from architecture and design to code and deployment. Whether you're building a product, seeking technical guidance, or just getting started on your coding journey, I offer help tailored to your needs.",
+    "Subtitle": "Senior Full-Stack Developer & Technical Advisor",
     "Testimonials": {
       "Subtitle": "What others say about me",
       "Title": "Testimonials"

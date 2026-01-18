@@ -1,6 +1,6 @@
-import { blogPosts } from "@/api/hardCodedData";
 import BlogPostCard from "@/components/Pages/BlogCard";
 import PageSection from "@/components/PageSection";
+import { blogPosts } from "@/lib/data";
 
 const BlogSection = async ({ t, short }: { t: Function; short?: boolean }) => {
   return (
