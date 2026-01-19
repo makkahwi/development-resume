@@ -2,7 +2,7 @@ import { brandConfig } from "@/brand/config";
 import ProjectsSection from "@/sections/Common/Projects";
 import SkillsSection from "@/sections/Common/Skills";
 import ExperiencesSection from "@/sections/HandsOn/Experiences";
-
+import HandsOnHeroSection from "@/sections/HandsOn/Hero";
 import type { PageProps } from "@/types/base";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
@@ -35,6 +35,8 @@ const HandsOnPage = async ({ params }: PageProps) => {
 
   return (
     <main className="py-5">
+      <HandsOnHeroSection t={t} />
+
       <ExperiencesSection t={t} />
 
       <ProjectsSection t={t} />
