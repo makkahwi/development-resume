@@ -15,6 +15,13 @@
       "Title": "Education"
     },
     "Headline": "About Me",
+    "OpenTo": {
+      "Advisory": "Technical Advisory for Early-Stage Teams",
+      "Architecture": "Architecture & Codebase Setup",
+      "Conclusion": "My focus today is on roles where engineering meets product impact and long-term maintainability.",
+      "Development": "Senior / Lead Full-Stack Development",
+      "Mentorship": "Mentorship & Developer Training"
+    },
     "Personal": {
       "Hobbies": {
         "BuildingSideProjects": "Building side software projects",
