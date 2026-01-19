@@ -995,6 +995,36 @@
       },
       {
         "category": "Web App",
+        "comingSoon": true,
+        "company": "Several Brands",
+        "date": 2025,
+        "description": "",
+        "details": [
+          ""
+        ],
+        "image": "36.jpg",
+        "importanceOrder": 29,
+        "location": "Jordan",
+        "role": "Frontend Web Dev",
+        "shortTitle": "Snd",
+        "technologies": [
+          "Vue.Js",
+          "CSS",
+          "Bootstrap",
+          "Node.Js",
+          "JavaScript",
+          "TypeScript",
+          "JSON",
+          "REST API",
+          "ViTest",
+          "Pinia"
+        ],
+        "timeOrder": 33,
+        "title": "Trackulla",
+        "type": "SaaS"
+      },
+      {
+        "category": "Web App",
         "comingSoon": false,
         "company": "Shai",
         "consulted": true,
@@ -1961,8 +1991,12 @@
         "rate": 4,
         "subSkills": [
           "VueX",
+          "ViTest",
+          "i18next",
+          "Vue Router",
           "Vuetify",
           "Axios",
+          "Pinia",
           "Webpack",
           "i18next"
         ],
