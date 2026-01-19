@@ -1,6 +1,7 @@
 import { brandConfig } from "@/brand/config";
 import EducationSection from "@/sections/About/Education";
 import AboutHeroSection from "@/sections/About/Hero";
+import PersonalSection from "@/sections/About/Personal";
 
 import type { PageProps } from "@/types/base";
 import type { Metadata } from "next";
@@ -37,6 +38,8 @@ const AboutPage = async ({ params }: PageProps) => {
       <AboutHeroSection t={t} />
 
       <EducationSection t={t} />
+
+      <PersonalSection t={t} />
     </main>
   );
 };

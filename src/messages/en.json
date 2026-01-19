@@ -15,6 +15,22 @@
       "Title": "Education"
     },
     "Headline": "About Me",
+    "Personal": {
+      "Hobbies": {
+        "BuildingSideProjects": "Building side software projects",
+        "Chess": "Chess",
+        "EnvironmentalActivities": "Environmental activities (Back in Malaysia days)",
+        "HealthyLifestyle": "Healthy lifestyle",
+        "Swimming": "Swimming"
+      },
+      "LearningPhilosophy": {
+        "OneOnOneCoaching": "One-on-one developer coaching",
+        "ProjectBasedDevelopment": "Project-based skill development",
+        "SelfLearning": "Self-learning / Practical mentoring &gt; large classrooms"
+      },
+      "Subtitle": "A few personal details about me",
+      "Title": "Personal"
+    },
     "Title": "About – Suhaib Ahmad"
   },
   "Blog": {
