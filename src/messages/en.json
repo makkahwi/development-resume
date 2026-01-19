@@ -1,5 +1,14 @@
 {
   "About": {
+    "About": "I’m a senior full-stack developer with 10+ years in software engineering, specializing in JavaScript/TypeScript ecosystems and scalable web platforms.",
+    "AtGlance": {
+      "Environments": "Startup + SME + NGO experience",
+      "Experience": "10+ years in software engineering",
+      "Languages": "Fluent in English & Arabic",
+      "Locations": "Based in Jordan (GMT+3), after a relocation of 10 years in Malaysia.",
+      "Sectors": "Worked across EdTech, ERP & SaaS products",
+      "Specialization": "Specialized in React, Next.js, NestJS"
+    },
     "Description": "Background, education and soft skills of Suhaib Ahmad.",
     "Education": {
       "Subtitle": "Formal education and certifications",
@@ -57,8 +66,8 @@
     },
     "CTA": {
       "Main": "Work With Me",
-      "Secondary": "Download Resume",
-      "More": "Explore Projects"
+      "More": "Explore Projects",
+      "Secondary": "Download Resume"
     },
     "Clients": {
       "Subtitle": "Some of the most well-known clients I worked with",

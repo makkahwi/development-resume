@@ -8,6 +8,15 @@ const AboutHeroSection = async ({
   t: Function;
   short?: boolean;
 }) => {
+  const atGlance = [
+    t("AtGlance.Experience"),
+    t("AtGlance.Specialization"),
+    t("AtGlance.Sectors"),
+    t("AtGlance.Environments"),
+    t("AtGlance.Locations"),
+    t("AtGlance.Languages"),
+  ];
+
   return (
     <div>
       <header className="mb-5">
@@ -20,6 +29,16 @@ const AboutHeroSection = async ({
             ))}
 
             {t("About")}
+
+            <div className="row">
+              {atGlance.map((item, index) => (
+                <div key={index} className="col-12 col-md-6 mb-3">
+                  <div className="d-flex align-items-start">
+                    <span>{item}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </>
         )}
       </header>
