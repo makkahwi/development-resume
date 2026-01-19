@@ -90,6 +90,40 @@
       "Subtitle": "Highlighted Skills",
       "Title": "Skills"
     },
+    "Timeline": {
+      "Point1": {
+        "Content": "WordPress, HTML, CSS, vanilla JS — early freelance & client work.",
+        "Title": "Freelance Frontend & CMS Developer",
+        "Years": "2015 - 2019"
+      },
+      "Point2": {
+        "Content": "Adopted Laravel PHP; explored React & Vue in small projects.",
+        "Title": "Framework Transition Period",
+        "Years": "2019 - 2020"
+      },
+      "Point3": {
+        "Content": "Specialized in React.js & Express.js for web apps and APIs.",
+        "Title": "Full-Stack JavaScript Engineering",
+        "Years": "2020 - 2023"
+      },
+      "Point4": {
+        "Content": "Built modern full-stack platforms with clean architecture patterns.",
+        "Title": "TypeScript, NestJS & Next.js Ecosystem",
+        "Years": "2023 - 2025"
+      },
+      "Point5": {
+        "Content": "Full-time focus on multi-tenant SIS platform from 0 → MVP → Production.",
+        "Title": "Founder & Lead Engineer — Semesteer (EdTech SaaS)",
+        "Years": "2023 - 2025"
+      },
+      "Point6": {
+        "Content": "Returning to industry roles with experience as founder & lead engineer.",
+        "Title": "Senior Full-Stack Engineer",
+        "Years": "2025 - Present"
+      },
+      "Subtitle": "Summarizing The Journey",
+      "Title": "Timeline"
+    },
     "Title": "Hands-on Work – Projects & Technical Experience"
   },
   "Home": {
