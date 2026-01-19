@@ -71,6 +71,17 @@
       "Title": "Experiences"
     },
     "Headline": "Hands On",
+    "Hero": "I build scalable products from the ground up: architecture, APIs, interfaces, CI/CD, and deployment. My technical execution spans MVP validation, multi-tenant platforms, microservices, and production-grade deployments.",
+    "Highlights": {
+      "Content1": "Designed & implemented multi-tenant data architectures for SaaS platforms.",
+      "Content2": "Built production-grade authentication & authorization (JWT, OAuth2, 2FA, RBAC).",
+      "Content3": "Integrated search & indexing systems using OpenSearch/Elasticsearch patterns.",
+      "Content4": "Deployed containerized services using Docker & AWS (S3, EC2, Lambda, CloudFront).",
+      "Content5": "Improved application performance & infrastructure cost-efficiency through profiling, caching, and database optimization.",
+      "Content6": "Designed and extended service-oriented and modular backend architectures for scalability and maintainability.",
+      "Subtitle": "Highlighted Projects & Technical Experience",
+      "Title": "Highlights"
+    },
     "Projects": {
       "Subtitle": "Highlighted Projects",
       "Title": "Projects"
@@ -79,7 +90,6 @@
       "Subtitle": "Highlighted Skills",
       "Title": "Skills"
     },
-    "Hero": "I build scalable products from the ground up: architecture, APIs, interfaces, CI/CD, and deployment. My technical execution spans MVP validation, multi-tenant platforms, microservices, and production-grade deployments.",
     "Title": "Hands-on Work – Projects & Technical Experience"
   },
   "Home": {

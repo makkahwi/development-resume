@@ -3,6 +3,7 @@ import ProjectsSection from "@/sections/Common/Projects";
 import SkillsSection from "@/sections/Common/Skills";
 import ExperiencesSection from "@/sections/HandsOn/Experiences";
 import HandsOnHeroSection from "@/sections/HandsOn/Hero";
+import HighlightsSection from "@/sections/HandsOn/Highlights";
 import type { PageProps } from "@/types/base";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
@@ -42,6 +43,8 @@ const HandsOnPage = async ({ params }: PageProps) => {
       <ProjectsSection t={t} />
 
       <SkillsSection t={t} />
+
+      <HighlightsSection t={t} />
     </main>
   );
 };
