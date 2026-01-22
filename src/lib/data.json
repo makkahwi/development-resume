@@ -991,7 +991,7 @@
         "timeOrder": 18,
         "title": "Semesteer",
         "type": "Education",
-        "url": "https://semesteer.com/"
+        "url": "https://semesteer-landing.vercel.app/"
       },
       {
         "category": "Web App",
@@ -3117,7 +3117,7 @@
           "While the product didn’t scale into a sustainable business, the experience fundamentally sharpened my judgment as a founder and product builder.",
           "These lessons now directly guide my future initiatives, with a stronger focus on validation, speed, and sustainable execution."
         ],
-        "url": "https://www.semesteer.com/"
+        "url": "https://semesteer-landing.vercel.app/"
       }
     ],
     "testimonials": [
