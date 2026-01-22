@@ -340,16 +340,94 @@
     }
   },
   "NonProfit": {
+    "Community": {
+      "NonProfit": {
+        "Body": "I have supported educational and non-profit initiatives with technical advice, scoping, and hands-on help where possible—especially in areas related to education, internal tools, and data visibility.",
+        "Title": "Non-profit and social impact"
+      },
+      "OpenSource": {
+        "Body": "I contribute in the form of starter projects, utilities, documentation, and examples that help developers explore real-world patterns rather than only toy problems.",
+        "Title": "Open-source and public code"
+      },
+      "Title": "Open-source and non-profit work"
+    },
+    "Cta": {
+      "Body": "If you are trying to enter the field, or you are running an initiative that would benefit from technical guidance, feel free to reach out.",
+      "ForDevelopers": "I’m a developer and need guidance",
+      "ForOrganizations": "We’re a non-profit or initiative",
+      "Title": "Want to benefit from this side of my work?"
+    },
     "Description": "Training, coaching, open-source contributions and free-of-charge products.",
+    "FreeTools": {
+      "Intro": "Some of the tools and resources I created primarily to support students, juniors, and community projects.",
+      "Items": {
+        "ToolOne": {
+          "Description": "A small utility to help developers structure their CV content in a way that is clearer for both recruiters and ATS systems.",
+          "Name": "ATS-friendly CV helper",
+          "Status": "Planned as part of this website."
+        },
+        "ToolThree": {
+          "Description": "Written learning paths that show what to learn, in which order, without being locked into specific courses or platforms.",
+          "Name": "Learning path outlines",
+          "Status": "Continuously improved based on real mentoring experience."
+        },
+        "ToolTwo": {
+          "Description": "Minimal React / Next.js boilerplates used in mentoring sessions to help learners focus on problem-solving instead of setup.",
+          "Name": "Starter templates for learners",
+          "Status": "Shared on demand with trainees and mentees."
+        }
+      },
+      "LabelStatus": "Status:",
+      "Title": "Free-of-charge tools and resources"
+    },
+    "Intro": {
+      "Badge": "Community and give-back",
+      "Subtitle": "Mentoring, free tools, and support for people and projects that need a technical push, not a contract.",
+      "Title": "Helping developers and initiatives beyond paid work"
+    },
     "Mentoring": {
-      "Subtitle": "Training and Coaching Initiatives",
-      "Title": "Mentoring & Coaching"
+      "Groups": {
+        "Approach": {
+          "Body": "I avoid big, passive classes. I prefer small groups and 1:1 conversations, practical exercises, code reviews, and honest feedback about the reality of the field.",
+          "Title": "How I prefer to teach"
+        },
+        "Developers": {
+          "Body": "I help new developers move from tutorials and scattered resources into real projects, modern web stacks, and clear learning paths.",
+          "Title": "Aspiring and early-career developers"
+        },
+        "WhoIHelp": {
+          "Body": "Fresh graduates, bootcamp and LTUC alumni, self-learners, and junior developers who want to grow but don’t know what to focus on next.",
+          "Title": "Who I usually support"
+        }
+      },
+      "Title": "Developer mentoring and training"
     },
     "Projects": {
       "Subtitle": "Highlighted Open-Source Projects",
       "Title": "Open-Source Projects"
     },
     "Subtitle": "Give Back",
+    "Testimonials": {
+      "Intro": "Some of the people I’ve supported through mentoring, code reviews, and guidance. Names and details are simplified for privacy.",
+      "Items": {
+        "One": {
+          "Meta": "Bootcamp graduate · Frontend track",
+          "Name": "A. Developer",
+          "Quote": "Working together helped me understand what a real project looks like and how to move beyond tutorials."
+        },
+        "Three": {
+          "Meta": "CS student · Final year project",
+          "Name": "S. Student",
+          "Quote": "The feedback on my project, CV, and GitHub profile made it much easier to approach my first interviews with confidence."
+        },
+        "Two": {
+          "Meta": "Self-learner · Career switch",
+          "Name": "M. Learner",
+          "Quote": "The most valuable part was not getting answers, but learning how to look for answers and structure my learning."
+        }
+      },
+      "Title": "Trainees and mentoring impact"
+    },
     "Title": "Give Back – Non-profit Work & Free Products"
   }
 }

@@ -1,12 +1,12 @@
-import PageSection from "@/components/PageSection";
-
 const NonProfitHeroSection = async ({ t }: { t: Function }) => {
   return (
-    <PageSection title={t("Title")} subtitle={t("Subtitle")} id="hero">
-      {
-        "Life isn't only about making money, or doing something and expect materialistic returns, one could do something out of payback and favour return to community."
-      }
-    </PageSection>
+    <section className="mb-5 text-center">
+      <span className="badge bg-light text-secondary mb-2">
+        {t("Intro.Badge")}
+      </span>
+      <h1 className="h3 fw-bold mb-3">{t("Intro.Title")}</h1>
+      <p className="text-muted mb-0">{t("Intro.Subtitle")}</p>
+    </section>
   );
 };
 
