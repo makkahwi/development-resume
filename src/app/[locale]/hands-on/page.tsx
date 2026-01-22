@@ -36,7 +36,7 @@ const HandsOnPage = async ({ params }: PageProps) => {
   const t = await getTranslations({ locale, namespace: "HandsOn" });
 
   return (
-    <main className="py-5">
+    <main>
       <HandsOnHeroSection t={t} />
 
       <ExperiencesSection t={t} />

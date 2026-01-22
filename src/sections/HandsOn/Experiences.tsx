@@ -8,8 +8,9 @@ const ExperiencesSection = async ({ t }: { t: Function }) => {
       title={t("Experiences.Title")}
       subtitle={t("Experiences.Subtitle")}
       id="experiences"
+      color="light"
     >
-      <div className="row">
+      <div className="row g-4">
         {jobsList.map((job, index) => (
           <ExperienceCard key={index} {...job} />
         ))}

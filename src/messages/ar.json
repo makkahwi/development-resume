@@ -205,6 +205,11 @@
       "Title": "الخبرات"
     },
     "Headline": "التجربة العملية",
+    "Intro": {
+      "Badge": "Technical Execution",
+      "Subtitle": "I build scalable products from the ground up: architecture, APIs, interfaces, CI/CD, and deployment. My technical execution spans MVP validation, multi-tenant platforms, microservices, and production-grade deployments.",
+      "Title": "Building Products from Code to Production"
+    },
     "Projects": {
       "Subtitle": "المشاريع البارزة",
       "Title": "المشاريع"

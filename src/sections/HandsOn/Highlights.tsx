@@ -1,5 +1,4 @@
 import PageSection from "@/components/PageSection";
-import { educationsList } from "@/lib/data";
 
 const HighlightsSection = async ({ t }: { t: Function }) => {
   const contents = [
@@ -16,11 +15,23 @@ const HighlightsSection = async ({ t }: { t: Function }) => {
       subtitle={t("Highlights.Subtitle")}
       id="highlights"
     >
-      {contents.map((content, index) => (
-        <div key={index} className="col-6 col-md-4 col-lg-2 mb-4 text-center">
-          <h4 className="display-6">{content}</h4>
-        </div>
-      ))}
+      <div className="row g-4">
+        {contents.map((content, index) => (
+          <div key={index} className="col-md-6">
+            <div className="card h-100 border-0 shadow-sm">
+              <div className="card-body d-flex align-items-start">
+                <div
+                  className="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3"
+                  style={{ width: "40px", height: "40px" }}
+                >
+                  <i className="bi bi-check-circle-fill text-primary" />
+                </div>
+                <p className="mb-0 text-muted">{content}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </PageSection>
   );
 };

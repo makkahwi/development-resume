@@ -237,7 +237,6 @@
       "Title": "Experiences"
     },
     "Headline": "Hands On",
-    "Hero": "I build scalable products from the ground up: architecture, APIs, interfaces, CI/CD, and deployment. My technical execution spans MVP validation, multi-tenant platforms, microservices, and production-grade deployments.",
     "Highlights": {
       "Content1": "Designed & implemented multi-tenant data architectures for SaaS platforms.",
       "Content2": "Built production-grade authentication & authorization (JWT, OAuth2, 2FA, RBAC).",
@@ -247,6 +246,11 @@
       "Content6": "Designed and extended service-oriented and modular backend architectures for scalability and maintainability.",
       "Subtitle": "Highlighted Projects & Technical Experience",
       "Title": "Highlights"
+    },
+    "Intro": {
+      "Badge": "Technical Execution",
+      "Subtitle": "I build scalable products from the ground up: architecture, APIs, interfaces, CI/CD, and deployment. My technical execution spans MVP validation, multi-tenant platforms, microservices, and production-grade deployments.",
+      "Title": "Building Products from Code to Production"
     },
     "Projects": {
       "Subtitle": "Highlighted Projects",
