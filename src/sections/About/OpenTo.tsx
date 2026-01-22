@@ -10,20 +10,34 @@ const OpenToSection = async ({ t }: { t: Function }) => {
 
   return (
     <PageSection
-      title={t("OpenTo.Title")}
-      subtitle={t("OpenTo.Subtitle")}
+      title="Open to New Opportunities"
+      subtitle="What I'm looking for in my next role"
       id="openTo"
+      color="light"
     >
-      <h3>{t("OpenTo.Intro")}</h3>
-      <div className="row mb-4 text-center">
+      <div className="row g-4 mb-5">
         {openToList.map((item, itemIndex) => (
-          <div key={itemIndex} className="col-12 col-md-4 mb-2">
-            <span>{item}</span>
+          <div key={itemIndex} className="col-md-6">
+            <div className="card h-100 border-0 shadow-sm">
+              <div className="card-body d-flex align-items-center">
+                <div
+                  className="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3"
+                  style={{ width: "40px", height: "40px" }}
+                >
+                  <i className="bi bi-briefcase text-primary" />
+                </div>
+                <h4 className="h6 fw-bold mb-0">{item}</h4>
+              </div>
+            </div>
           </div>
         ))}
       </div>
 
-      <h4>{t("OpenTo.Conclusion")}</h4>
+      <div className="card border-0 shadow-sm bg-primary bg-opacity-10">
+        <div className="card-body text-center py-4">
+          <p className="lead mb-0 text-dark">{t("OpenTo.Conclusion")}</p>
+        </div>
+      </div>
     </PageSection>
   );
 };

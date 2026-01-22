@@ -7,22 +7,37 @@ const EducationSection = async ({ t }: { t: Function }) => {
       title={t("Education.Title")}
       subtitle={t("Education.Subtitle")}
       id="education"
+      color="light"
     >
-      {educationsList.map(
-        ({ cert, description, downloads, logo, label, school, url }, index) => (
-          <div key={index} className="col-6 col-md-4 col-lg-2 mb-4 text-center">
-            <img
-              src={process.env.NEXT_PUBLIC_STORAGE_URL + logo + "?alt=media"}
-              alt={label}
-              className="img-fluid mb-2"
-            />
-
-            <h4 className="display-6">{school}</h4>
-
-            <p>{description}</p>
-          </div>
-        ),
-      )}
+      <div className="row g-4">
+        {educationsList.map(
+          (
+            { cert, description, downloads, logo, label, school, url },
+            index,
+          ) => (
+            <div key={index} className="col-md-6">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body text-center">
+                  <div className="mb-3">
+                    <img
+                      src={
+                        process.env.NEXT_PUBLIC_STORAGE_URL +
+                        logo +
+                        "?alt=media"
+                      }
+                      alt={label}
+                      className="img-fluid"
+                      style={{ maxHeight: "80px", objectFit: "contain" }}
+                    />
+                  </div>
+                  <h4 className="h6 fw-bold mb-2">{school}</h4>
+                  <p className="text-muted small mb-0">{description}</p>
+                </div>
+              </div>
+            </div>
+          ),
+        )}
+      </div>
     </PageSection>
   );
 };

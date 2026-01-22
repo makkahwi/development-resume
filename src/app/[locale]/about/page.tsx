@@ -35,7 +35,7 @@ const AboutPage = async ({ params }: PageProps) => {
   const t = await getTranslations({ locale, namespace: "About" });
 
   return (
-    <main className="py-5">
+    <main>
       <AboutHeroSection t={t} />
 
       <EducationSection t={t} />

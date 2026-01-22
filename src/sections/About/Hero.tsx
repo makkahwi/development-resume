@@ -18,31 +18,54 @@ const AboutHeroSection = async ({
   ];
 
   return (
-    <div>
-      <header className="mb-5">
+    <section className="py-5 mb-4">
+      <div className="container">
         {short ? (
-          t("About")
+          <div className="text-center">
+            <p className="lead text-muted">{t("About")}</p>
+          </div>
         ) : (
           <>
-            {statisticsList.map((statistic, index) => (
-              <StatisticCard key={index} {...statistic} />
-            ))}
+            <div className="text-center mb-5">
+              <h1 className="display-5 fw-bold mb-4">{t("Headline")}</h1>
+              <p
+                className="lead text-muted mx-auto"
+                style={{ maxWidth: "800px" }}
+              >
+                {t("About")}
+              </p>
+            </div>
 
-            {t("About")}
-
-            <div className="row">
-              {atGlance.map((item, index) => (
-                <div key={index} className="col-12 col-md-6 mb-3">
-                  <div className="d-flex align-items-start">
-                    <span>{item}</span>
-                  </div>
-                </div>
+            <div className="row g-4 mb-5">
+              {statisticsList.map((statistic, index) => (
+                <StatisticCard key={index} {...statistic} />
               ))}
+            </div>
+
+            <div className="card border-0 shadow-sm">
+              <div className="card-body p-4">
+                <h3 className="h5 fw-bold mb-4">At a Glance</h3>
+                <div className="row g-3">
+                  {atGlance.map((item, index) => (
+                    <div key={index} className="col-12 col-md-6">
+                      <div className="d-flex align-items-start">
+                        <div
+                          className="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3"
+                          style={{ width: "32px", height: "32px" }}
+                        >
+                          <i className="bi bi-check text-primary" />
+                        </div>
+                        <p className="mb-0">{item}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </>
         )}
-      </header>
-    </div>
+      </div>
+    </section>
   );
 };
 

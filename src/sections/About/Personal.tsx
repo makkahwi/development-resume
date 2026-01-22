@@ -3,7 +3,7 @@ import PageSection from "@/components/PageSection";
 const PersonalSection = async ({ t }: { t: Function }) => {
   const personalParts = [
     {
-      name: t("Personal.Hobbies.Title"),
+      name: "Hobbies & Interests",
       items: [
         t("Personal.Hobbies.Chess"),
         t("Personal.Hobbies.Swimming"),
@@ -13,7 +13,7 @@ const PersonalSection = async ({ t }: { t: Function }) => {
       ],
     },
     {
-      name: t("Personal.LearningPhilosophy.Title"),
+      name: "Learning Philosophy",
       items: [
         t("Personal.LearningPhilosophy.SelfLearning"),
         t("Personal.LearningPhilosophy.OneOnOneCoaching"),
@@ -28,19 +28,33 @@ const PersonalSection = async ({ t }: { t: Function }) => {
       subtitle={t("Personal.Subtitle")}
       id="personal"
     >
-      {personalParts.map(({ name, items }, index) => (
-        <div key={index} className="row mb-4 text-center">
-          <div className="col-12">
-            <h3>{name}</h3>
-          </div>
-
-          {items.map((item, itemIndex) => (
-            <div key={itemIndex} className="col-12 col-md-4 mb-2">
-              <span>{item}</span>
+      <div className="row g-4">
+        {personalParts.map(({ name, items }, index) => (
+          <div key={index} className="col-md-6">
+            <div className="card h-100 border-0 shadow-sm">
+              <div className="card-body">
+                <h3 className="h5 fw-bold mb-4">{name}</h3>
+                <div className="d-flex flex-column gap-3">
+                  {items.map((item, itemIndex) => (
+                    <div key={itemIndex} className="d-flex align-items-start">
+                      <div
+                        className="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3"
+                        style={{ width: "28px", height: "28px" }}
+                      >
+                        <i
+                          className="bi bi-circle-fill text-primary"
+                          style={{ fontSize: "8px" }}
+                        />
+                      </div>
+                      <span className="text-muted">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
-          ))}
-        </div>
-      ))}
+          </div>
+        ))}
+      </div>
     </PageSection>
   );
 };
