@@ -1,0 +1,37 @@
+import PageSection from "@/components/PageSection";
+
+const PageCtaSection = ({
+  title,
+  subtitle,
+  actions,
+}: {
+  title: string;
+  subtitle: string;
+  actions: { url: string; label: string; outline?: boolean }[];
+}) => {
+  return (
+    <PageSection color="light" noBg>
+      <div className="container">
+        <div className="card border-0 shadow-sm">
+          <div className="card-body text-center py-5">
+            <h2 className="h3 fw-bold mb-3">{title}</h2>
+            <p className="text-muted mb-4">{subtitle}</p>
+            <div className="d-flex flex-wrap justify-content-center gap-3">
+              {actions.map(({ url, label, outline }, i) => (
+                <a
+                  key={i}
+                  href={url}
+                  className={`btn px-4 ${outline ? "btn-outline-primary" : "btn-primary"}`}
+                >
+                  {label}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </PageSection>
+  );
+};
+
+export default PageCtaSection;
