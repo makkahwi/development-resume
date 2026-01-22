@@ -7,19 +7,22 @@ const ProjectsSection = async ({
   short,
   openSourceOnly,
   focOnly,
+  color,
 }: {
   t: Function;
   short?: boolean;
   openSourceOnly?: boolean;
   focOnly?: boolean;
+  color?: string;
 }) => {
   return (
     <PageSection
       title={t("Projects.Title")}
       subtitle={t("Projects.Subtitle")}
       id="projects"
+      color={color}
     >
-      <div className="row">
+      <div className="row g-4">
         {projectsList
           .filter(
             ({ category, openSource, foc }) =>

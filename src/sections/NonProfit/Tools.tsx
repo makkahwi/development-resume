@@ -1,31 +1,41 @@
+import PageSection from "@/components/PageSection";
+
 const ToolsSection = ({ t }: { t: any }) => {
   const freeTools = ["ToolOne", "ToolTwo", "ToolThree"];
 
   return (
-    <section className="mb-5">
-      <h2 className="h5 fw-semibold mb-3">{t("FreeTools.Title")}</h2>
-      <p className="small text-muted mb-3">{t("FreeTools.Intro")}</p>
-      <div className="row g-3">
-        {freeTools.map((key) => (
-          <div className="col-md-4" key={key}>
-            <div className="border rounded-3 p-3 h-100">
-              <h3 className="h6 fw-bold mb-1">
-                {t(`FreeTools.Items.${key}.Name`)}
-              </h3>
-              <p className="small text-muted mb-1">
-                {t(`FreeTools.Items.${key}.Description`)}
-              </p>
-              <p className="small mb-0">
-                <span className="fw-semibold">
-                  {t("FreeTools.LabelStatus")}{" "}
-                </span>
-                {t(`FreeTools.Items.${key}.Status`)}
-              </p>
+    <PageSection color="light" noBg>
+      <div className="container">
+        <div className="text-center mb-5">
+          <h2 className="h3 fw-bold mb-3">{t("FreeTools.Title")}</h2>
+          <p className="text-muted">{t("FreeTools.Intro")}</p>
+        </div>
+        <div className="row g-4">
+          {freeTools.map((key) => (
+            <div className="col-md-4" key={key}>
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body">
+                  <h3 className="h5 fw-bold mb-3">
+                    {t(`FreeTools.Items.${key}.Name`)}
+                  </h3>
+                  <p className="text-muted mb-3">
+                    {t(`FreeTools.Items.${key}.Description`)}
+                  </p>
+                  <p className="small mb-0">
+                    <span className="fw-semibold text-primary">
+                      {t("FreeTools.LabelStatus")}:{" "}
+                    </span>
+                    <span className="text-muted">
+                      {t(`FreeTools.Items.${key}.Status`)}
+                    </span>
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </section>
+    </PageSection>
   );
 };
 

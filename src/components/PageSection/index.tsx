@@ -95,18 +95,18 @@ const PageSection = ({
               padding: "7.5vh 0",
             }
           : bigPadding
-          ? {
-              padding: "17.5vh 0",
-            }
-          : {
-              padding: "17.5vh 0",
-              minHeight: "70vh",
-              background: `url('/images/${BgPicker()}.png')`,
-              backgroundPositionY: "102.5%",
-              backgroundPositionX: "7.55%",
-              backgroundSize: "350px auto",
-              backgroundRepeat: "no-repeat",
-            }
+            ? {
+                padding: "17.5vh 0",
+              }
+            : {
+                padding: "17.5vh 0",
+                minHeight: "70vh",
+                background: `url('/images/${BgPicker()}.png')`,
+                backgroundPositionY: "102.5%",
+                backgroundPositionX: "7.55%",
+                backgroundSize: "350px auto",
+                backgroundRepeat: "no-repeat",
+              }
       }
       id={id}
       {...rest}

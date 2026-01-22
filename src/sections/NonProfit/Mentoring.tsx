@@ -6,12 +6,12 @@ const MentoringSection = async ({ t }: { t: Function }) => {
   return (
     <PageSection
       title={t("Testimonials.Title")}
-      subtitle={t("Mentoring.Subtitle")}
+      subtitle={t("Testimonials.Subtitle")}
       id="mentoring"
     >
-      <p className="small text-muted mb-3">{t("Testimonials.Intro")}</p>
+      <p className="text-muted text-center mb-5">{t("Testimonials.Intro")}</p>
 
-      <div className="row">
+      <div className="row g-4">
         {traineesList
           .filter(({ highlight }) => highlight)
           .map((trainee, index) => (

@@ -1,17 +1,28 @@
+import PageSection from "@/components/PageSection";
+
 const NonProfitCTA = ({ t }: { t: any }) => {
   return (
-    <section className="mb-5 text-center">
-      <h2 className="h5 fw-semibold mb-3">{t("Cta.Title")}</h2>
-      <p className="small text-muted mb-3">{t("Cta.Body")}</p>
-      <div className="d-flex justify-content-center gap-2">
-        <a href="#contact" className="btn btn-primary">
-          {t("Cta.ForDevelopers")}
-        </a>
-        <a href="#contact" className="btn btn-outline-secondary">
-          {t("Cta.ForOrganizations")}
-        </a>
+    <PageSection color="light" noBg>
+      <div className="container">
+        <div className="card border-0 shadow-sm">
+          <div className="card-body text-center py-5">
+            <h2 className="h3 fw-bold mb-3">{t("Cta.Title")}</h2>
+            <p className="text-muted mb-4">{t("Cta.Body")}</p>
+            <div className="d-flex flex-wrap justify-content-center gap-3">
+              <a href="#contact" className="btn btn-primary btn-lg px-4">
+                {t("Cta.ForDevelopers")}
+              </a>
+              <a
+                href="#contact"
+                className="btn btn-outline-primary btn-lg px-4"
+              >
+                {t("Cta.ForOrganizations")}
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </PageSection>
   );
 };
 

@@ -37,14 +37,14 @@ const NonProfitPage = async ({ params }: PageProps) => {
   const t = await getTranslations({ locale, namespace: "NonProfit" });
 
   return (
-    <main className="py-5">
+    <main>
       <NonProfitHeroSection t={t} />
 
       <HelpGroupsSection t={t} />
 
       <OpenSourceSection t={t} />
 
-      <ProjectsSection t={t} openSourceOnly />
+      <ProjectsSection t={t} openSourceOnly color="light" />
 
       <ProjectsSection t={t} focOnly />
 
