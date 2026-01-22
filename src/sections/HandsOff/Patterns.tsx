@@ -11,13 +11,13 @@ const HandsOffPatterns = async ({ t }: { t: any }) => {
 
   return (
     <PageSection title={t("Patterns.Title")}>
-      <p className="small text-muted mb-4">{t("Patterns.Intro")}</p>
+      <p className="text-muted text-center mb-5">{t("Patterns.Intro")}</p>
 
-      <div className="d-flex flex-wrap gap-2">
+      <div className="d-flex flex-wrap justify-content-center gap-3">
         {patterns.map((pattern, i) => (
           <span
             key={i}
-            className="badge bg-light text-secondary border rounded-pill px-3 py-2"
+            className="badge bg-primary bg-opacity-10 text-primary rounded-pill px-4 py-3 fs-6"
           >
             {pattern}
           </span>

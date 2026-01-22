@@ -14,15 +14,15 @@ const HandsOffDecisions = async ({ t }: { t: any }) => {
 
   return (
     <PageSection title={t("Decisions.Title")}>
-      <p className="small text-center text-muted mb-4">
-        {t("Decisions.Intro")}
-      </p>
+      <p className="text-center text-muted mb-5">{t("Decisions.Intro")}</p>
 
-      <div className="row g-2">
+      <div className="row g-3">
         {decisions.map((decision, i) => (
           <div className="col-sm-6 col-lg-3" key={i}>
-            <div className="border rounded-3 p-2 h-100">
-              <p className="small mb-0">{decision}</p>
+            <div className="card bg-light h-100 border-0 shadow-sm">
+              <div className="card-body d-flex align-items-center justify-content-center text-center">
+                <p className="mb-0 fw-semibold">{decision}</p>
+              </div>
             </div>
           </div>
         ))}

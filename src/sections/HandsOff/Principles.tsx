@@ -21,13 +21,15 @@ const HandsOffPrinciples = async ({ t }: { t: any }) => {
   ];
 
   return (
-    <PageSection title={t("Principles.Title")}>
-      <div className="row g-3">
+    <PageSection title={t("Principles.Title")} color="light">
+      <div className="row g-4">
         {principles.map(({ title, body }, i) => (
           <div className="col-md-6" key={i}>
-            <div className="border rounded-3 p-3 h-100">
-              <h3 className="h6 fw-bold mb-1">{title}</h3>
-              <p className="small mb-0 text-muted">{body}</p>
+            <div className="card h-100 border-0 shadow-sm">
+              <div className="card-body">
+                <h3 className="h5 fw-bold mb-3">{title}</h3>
+                <p className="text-muted mb-0">{body}</p>
+              </div>
             </div>
           </div>
         ))}

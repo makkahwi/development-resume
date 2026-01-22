@@ -1,5 +1,6 @@
 import { brandConfig } from "@/brand/config";
 import HandsOffAdvisory from "@/sections/HandsOff/Advisory";
+import HandsOffCta from "@/sections/HandsOff/CTA";
 import HandsOffDecisions from "@/sections/HandsOff/Decisions";
 import HandsOffIntro from "@/sections/HandsOff/Intro";
 import HandsOffMentoring from "@/sections/HandsOff/Mentoring";
@@ -40,7 +41,7 @@ const HandsOffPage = async ({ params }: PageProps) => {
   const t = await getTranslations({ locale, namespace: "HandsOff" });
 
   return (
-    <main className="py-5">
+    <main>
       <HandsOffIntro t={t} />
 
       <HandsOffRoles t={t} />
@@ -58,6 +59,8 @@ const HandsOffPage = async ({ params }: PageProps) => {
       <HandsOffPrinciples t={t} />
 
       <HandsOffAdvisory t={t} />
+
+      <HandsOffCta t={t} />
     </main>
   );
 };

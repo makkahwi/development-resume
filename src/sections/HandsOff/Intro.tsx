@@ -1,13 +1,13 @@
-const HandsOffIntro = async ({ t }: { t: any }) => {
+import PageHeroSection from "@/components/PageSection/PageHeroSection";
+
+const HandsOffHeroSection = async ({ t }: { t: Function }) => {
   return (
-    <section className="mb-5 text-center">
-      <span className="badge bg-light text-secondary mb-2">
-        {t("Intro.Badge")}
-      </span>
-      <h1 className="h3 fw-bold mb-3">{t("Intro.Title")}</h1>
-      <p className="text-muted mb-0">{t("Intro.Subtitle")}</p>
-    </section>
+    <PageHeroSection
+      badge={t("Intro.Badge")}
+      title={t("Intro.Title")}
+      subtitle={t("Intro.Subtitle")}
+    />
   );
 };
 
-export default HandsOffIntro;
+export default HandsOffHeroSection;

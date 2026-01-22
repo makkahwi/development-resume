@@ -26,28 +26,18 @@ const HandsOffAdvisory = async ({ t }: { t: any }) => {
 
   return (
     <PageSection title={t("Advisory.Title")}>
-      <p className="small text-muted mb-3">{t("Advisory.Intro")}</p>
-      <div className="row justify-content-center g-3 mb-4">
+      <p className="text-muted text-center mb-5">{t("Advisory.Intro")}</p>
+      <div className="row g-4 mb-5">
         {modes.map(({ title, body }, i) => (
           <div className="col-md-4" key={i}>
-            <div className="border rounded-3 p-3 h-100">
-              <h3 className="h6 fw-bold mb-1">{title}</h3>
-              <p className="small mb-0 text-muted">{body}</p>
+            <div className="card h-100 border-0 shadow-sm">
+              <div className="card-body">
+                <h3 className="h5 fw-bold mb-3">{title}</h3>
+                <p className="text-muted mb-0">{body}</p>
+              </div>
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="text-center mt-5">
-        <p className="mb-3">{t("Advisory.CtaText")}</p>
-        <div className="d-flex justify-content-center gap-2">
-          <a href="#contact" className="btn btn-primary">
-            {t("Advisory.CtaPrimary")}
-          </a>
-          <a href="#download-cv" className="btn btn-outline-secondary">
-            {t("Advisory.CtaSecondary")}
-          </a>
-        </div>
       </div>
     </PageSection>
   );

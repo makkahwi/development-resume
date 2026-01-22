@@ -30,27 +30,37 @@ const HandsOffRealityMap = async ({ t }: { t: any }) => {
   ];
 
   return (
-    <PageSection title={t("RealityMap.Title")}>
-      <div className="table-responsive">
-        <table className="table table-sm align-middle">
-          <thead>
-            <tr>
-              <th className="small">{t("RealityMap.Headers.Expectation")}</th>
-              <th className="small">{t("RealityMap.Headers.Reality")}</th>
-              <th className="small">{t("RealityMap.Headers.HowINavigate")}</th>
-            </tr>
-          </thead>
+    <PageSection title={t("RealityMap.Title")} color="light">
+      <div className="card border-0 shadow-sm">
+        <div className="card-body p-0">
+          <div className="table-responsive table-bordered text-center">
+            <table className="table table-hover mb-0 align-middle">
+              <thead className="table-light">
+                <tr>
+                  <th className="fw-semibold py-4">
+                    {t("RealityMap.Headers.Expectation")}
+                  </th>
+                  <th className="fw-semibold py-4">
+                    {t("RealityMap.Headers.Reality")}
+                  </th>
+                  <th className="fw-semibold py-4">
+                    {t("RealityMap.Headers.HowINavigate")}
+                  </th>
+                </tr>
+              </thead>
 
-          <tbody>
-            {rows.map((row, i) => (
-              <tr key={i}>
-                <td>{row.expectation}</td>
-                <td>{row.reality}</td>
-                <td>{row.navigation}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+              <tbody>
+                {rows.map((row, i) => (
+                  <tr key={i}>
+                    <td className="py-3">{row.expectation}</td>
+                    <td className="py-3">{row.reality}</td>
+                    <td className="py-3">{row.navigation}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </PageSection>
   );
