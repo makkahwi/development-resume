@@ -60,8 +60,174 @@
     "Title": "Contact Me"
   },
   "HandsOff": {
+    "Advisory": {
+      "CtaPrimary": "Work with me",
+      "CtaSecondary": "Download CV",
+      "CtaText": "If you’re looking for someone who can bridge product, UX, and engineering decisions, I’d be happy to talk.",
+      "Intro": "Beyond full-time roles, I sometimes support teams and founders with focused advisory engagements.",
+      "Modes": {
+        "ArchitectureAudit": {
+          "Body": "Review existing systems, identify risks and complexity hotspots, and suggest practical improvements.",
+          "Title": "Architecture audit"
+        },
+        "DevEnablement": {
+          "Body": "Support junior and mid-level developers with reviews, pairing, and growth plans.",
+          "Title": "Developer enablement"
+        },
+        "MvpScoping": {
+          "Body": "Help translate ideas into realistic MVP scopes, flows, and release plans.",
+          "Title": "MVP scoping"
+        },
+        "StackEvaluation": {
+          "Body": "Assess current or proposed stacks and align them with team skills, roadmap, and constraints.",
+          "Title": "Tech stack evaluation"
+        },
+        "UxReview": {
+          "Body": "Map user journeys, spot friction points, and suggest low-cost UX improvements.",
+          "Title": "UX & flow review"
+        }
+      },
+      "Title": "Advisory modes and how I can help"
+    },
+    "Decisions": {
+      "Intro": "In startups and ground-up builds, the right decisions matter more than any specific framework.",
+      "Items": {
+        "ApiBoundaries": "API contracts, integration boundaries, and service responsibilities.",
+        "AuthModels": "Authentication and access models (JWT, OAuth2, 2FA, RBAC).",
+        "DataModeling": "Data models and multi-tenant database schemas.",
+        "DeliveryPlanning": "Delivery planning, iterations, and realistic release mapping.",
+        "FeatureScope": "Feature scope and priorities for each release.",
+        "PerformanceCost": "Performance and cost tradeoffs across infrastructure and design.",
+        "ServiceDesign": "Service decomposition, modularity, and when to avoid premature microservices.",
+        "UxAlignment": "Aligning user flows with technical constraints and timelines."
+      },
+      "Title": "Decisions I help own"
+    },
     "Description": "Highlights of leadership, mentorship and architectural decision-making.",
     "Headline": "Hands Off",
+    "Intro": {
+      "Badge": "Beyond the code",
+      "Subtitle": "How I contribute beyond implementation: product decisions, architecture, mentoring, and startup-level thinking.",
+      "Title": "Hands-off work: decisions, direction, and leadership"
+    },
+    "Mentoring": {
+      "Blocks": {
+        "Early": {
+          "Body": "Onboarded developers into modern frameworks and helped them move from basic scripting to structured application thinking.",
+          "Period": "2019–2020"
+        },
+        "FounderPhase": {
+          "Body": "As a founder, worked with aspiring developers and early-career engineers, helping them understand real product constraints, MVP expectations, and long-term thinking.",
+          "Period": "2023–2025"
+        },
+        "SecondCommand": {
+          "Body": "Often operated as the second-in-command below a team lead: reviewing pull requests, debugging complex issues, and guiding juniors on how to self-educate effectively.",
+          "Period": "2020–2023"
+        }
+      },
+      "Title": "Mentoring and team enablement"
+    },
+    "Patterns": {
+      "Intro": "Some of the recurring patterns I use when guiding products and teams.",
+      "Items": {
+        "ArchForIteration": "Architect for iteration, not for a hypothetical version 10.",
+        "DecisionLogs": "Write decisions down instead of relying on memory or chat history.",
+        "DocAsProduct": "Treat documentation and decision logs as part of the product.",
+        "MvpMlp": "MVP to MLP: aim for a Minimum Lovable Product, not just a checklist MVP.",
+        "PairingOnboarding": "Use pairing and real tasks to onboard developers.",
+        "ProductMetrics": "Care more about product and user metrics than vanity numbers.",
+        "UserFeedback": "Integrate real user feedback into future iterations."
+      },
+      "Title": "Patterns I apply often"
+    },
+    "Principles": {
+      "Items": {
+        "CalmFirstActLater": {
+          "Body": "I try not to react instantly. I pause, understand, and then respond — whether it’s about progress, blockers, or disagreements.",
+          "Title": "Calm first, act later"
+        },
+        "PrepareClarifyExecute": {
+          "Body": "I don’t improvise critical decisions. I write things down, map options, and move once there is enough clarity.",
+          "Title": "Prepare, clarify, execute"
+        },
+        "ScalabilityEarly": {
+          "Body": "Multi-tenant schemas, modular services, and maintainable structures are not add-ons — they are part of the first design.",
+          "Title": "Think about scalability early"
+        },
+        "StructureOutlivesUrgency": {
+          "Body": "I document, structure, and organize even when I’m the only one looking at it — because systems outlive the moment.",
+          "Title": "Structure outlives urgency"
+        }
+      },
+      "Title": "Principles I Operate By"
+    },
+    "RealityMap": {
+      "Headers": {
+        "Expectation": "What teams expect",
+        "HowINavigate": "How I navigate it",
+        "Reality": "What actually happens"
+      },
+      "Rows": {
+        "Juniors": {
+          "Expectation": "Junior devs will figure it out.",
+          "Navigation": "Be proactive in mentoring, pairing, and setting clear learning paths.",
+          "Reality": "They often struggle silently."
+        },
+        "Mvp": {
+          "Expectation": "MVP is cheap and temporary.",
+          "Navigation": "Design for iteration, not throwaway prototypes.",
+          "Reality": "MVP decisions shape v2 and v3."
+        },
+        "Scope": {
+          "Expectation": "Requirements are clear and stable.",
+          "Navigation": "Keep scope flexible, document decisions, and reprioritize often.",
+          "Reality": "New information and constraints appear every week."
+        },
+        "Tech": {
+          "Expectation": "Tech choices are obvious.",
+          "Navigation": "Evaluate options through product, team, and long-term needs.",
+          "Reality": "Wrong choices limit runway and velocity."
+        },
+        "Ux": {
+          "Expectation": "UX is done before development.",
+          "Navigation": "Collaborate closely, adjust flows, and protect core usability.",
+          "Reality": "UX evolves while features are being built."
+        }
+      },
+      "Title": "Startup reality map"
+    },
+    "Roles": {
+      "ArchitectureSteward": {
+        "Body": "I design systems, data models, and boundaries that stay maintainable as products grow from MVP to later versions.",
+        "Title": "The Architecture Steward"
+      },
+      "DeveloperMentor": {
+        "Body": "I help juniors and self-learners grow into independent engineers through focused guidance, reviews, and pairing.",
+        "Title": "The Developer Mentor"
+      },
+      "ProductTranslator": {
+        "Body": "I translate vague ideas and constraints into clear features, flows, and technical decisions that teams can actually ship.",
+        "Title": "The Product Translator"
+      },
+      "Title": "The hats I wear beyond coding"
+    },
+    "Snapshots": {
+      "Cases": {
+        "BlockchainApp": {
+          "Body": "Advised on what blockchain was realistically good for, clarified tradeoffs, and scoped an MVP that matched both tech and user expectations.",
+          "Title": "Blockchain Anti-Theft App"
+        },
+        "Edtech": {
+          "Body": "Designed product flows, architecture, and data models for a multi-tenant school platform, gaining firsthand insight into adoption and go-to-market challenges.",
+          "Title": "EdTech SaaS (Semesteer)"
+        },
+        "PublicSector": {
+          "Body": "Helped balance regulatory requirements, UX, and developer capacity within tight timelines and evolving requirements.",
+          "Title": "Public Sector Product"
+        }
+      },
+      "Title": "Hands-off snapshots"
+    },
     "Title": "Hands-off Work – Leadership & Technical Direction"
   },
   "HandsOn": {

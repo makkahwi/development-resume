@@ -1,4 +1,13 @@
 import { brandConfig } from "@/brand/config";
+import HandsOffAdvisory from "@/sections/HandsOff/Advisory";
+import HandsOffDecisions from "@/sections/HandsOff/Decisions";
+import HandsOffIntro from "@/sections/HandsOff/Intro";
+import HandsOffMentoring from "@/sections/HandsOff/Mentoring";
+import HandsOffPatterns from "@/sections/HandsOff/Patterns";
+import HandsOffPrinciples from "@/sections/HandsOff/Principles";
+import HandsOffRealityMap from "@/sections/HandsOff/RealityMap";
+import HandsOffRoles from "@/sections/HandsOff/Roles";
+import HandsOffSnapshots from "@/sections/HandsOff/Snapshots";
 
 import type { PageProps } from "@/types/base";
 import type { Metadata } from "next";
@@ -32,7 +41,23 @@ const HandsOffPage = async ({ params }: PageProps) => {
 
   return (
     <main className="py-5">
-      <h1 className="mb-4">{t("Headline")}</h1>
+      <HandsOffIntro t={t} />
+
+      <HandsOffRoles t={t} />
+
+      <HandsOffDecisions t={t} />
+
+      <HandsOffRealityMap t={t} />
+
+      <HandsOffPatterns t={t} />
+
+      <HandsOffMentoring t={t} />
+
+      <HandsOffSnapshots t={t} />
+
+      <HandsOffPrinciples t={t} />
+
+      <HandsOffAdvisory t={t} />
     </main>
   );
 };

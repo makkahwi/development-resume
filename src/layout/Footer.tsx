@@ -1,5 +1,5 @@
-import { contactsList } from "@/api/hardCodedData";
 import ContactForm from "@/components/ContactForm";
+import { contactsList } from "@/lib/data";
 import { useTranslations } from "next-intl";
 
 const Footer = () => {
@@ -22,9 +22,9 @@ const Footer = () => {
         </p>
 
         <div className="d-flex justify-content-center gap-3 my-3">
-          {contactsList.map(({ color, icon, label, link, name }, i) => (
+          {contactsList.map(({ color, icon, label, url, name }, i) => (
             <a
-              href={link}
+              href={url}
               target="_blank"
               rel="noreferrer"
               style={{ color }}

@@ -1,4 +1,4 @@
-import { clientsList } from "@/api/hardCodedData";
+import { clientsList } from "@/lib/data";
 import { JobProps } from "@/types/data";
 import Image from "next/image";
 
@@ -14,7 +14,7 @@ const ExperienceCard = ({
   url,
 }: JobProps) => {
   const companyLogo = clientsList.find(
-    (client) => client.label === company
+    (client) => client.label === company,
   )?.image;
 
   return (
