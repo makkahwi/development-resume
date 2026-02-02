@@ -1,14 +1,14 @@
-import { NextRequest, NextResponse } from "next/server";
 import {
+  revalidateAllPaths,
+  revalidateBlogPaths,
   revalidateClientsPaths,
   revalidateJobsPaths,
   revalidateProjectsPaths,
-  revalidateTraineesPaths,
   revalidateSkillsPaths,
-  revalidateBlogPaths,
   revalidateTestimonialsPaths,
-  revalidateAllPaths,
+  revalidateTraineesPaths,
 } from "@/lib/revalidation";
+import { NextRequest, NextResponse } from "next/server";
 
 /**
  * Webhook endpoint for triggering revalidation from external sources
@@ -101,7 +101,6 @@ export async function POST(request: NextRequest) {
       message: `Successfully revalidated paths for ${collection}`,
     });
   } catch (error) {
-    console.error("Revalidation error:", error);
     return NextResponse.json(
       {
         error: "Failed to revalidate",

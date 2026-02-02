@@ -64,7 +64,6 @@ const getStatisticsList = async (): Promise<StatisticProps[]> => {
       },
     ];
   } catch (error) {
-    console.error("Failed to fetch statistics from API:", error);
     // Fallback to hardcoded data on error
     return statisticsList;
   }

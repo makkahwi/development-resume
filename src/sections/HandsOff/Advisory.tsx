@@ -30,7 +30,7 @@ const HandsOffAdvisory = async ({ t }: { t: any }) => {
       <div className="row g-4 mb-5">
         {modes.map(({ title, body }, i) => (
           <div className="col-md-4" key={i}>
-            <div className="card h-100 border-0 shadow-sm">
+            <div className="card bg-light h-100 border-0 shadow-sm">
               <div className="card-body">
                 <h3 className="h5 fw-bold mb-3">{title}</h3>
                 <p className="text-muted mb-0">{body}</p>
