@@ -8,7 +8,12 @@ body {
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
 body,
@@ -34,4 +39,54 @@ body,
     15px 100%,
     0% 50%
   );
+}
+
+/* Client logo styles */
+.client-logo {
+  max-height: 120px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.client-logo-link:hover .client-logo {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Testimonial card styles */
+.testimonial-card {
+  transition: all 0.3s ease;
+  padding: 1.5rem;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
+.testimonial-card .card-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.testimonial-card svg {
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-image-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.testimonial-image-link:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-image-link img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
 }

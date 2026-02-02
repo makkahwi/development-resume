@@ -15,6 +15,18 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  webpack: (config, { dev, isServer }) => {
+    // Disable source maps in development to avoid malformed source map errors
+    if (dev) {
+      config.devtool = false;
+      // Suppress source map warnings
+      config.ignoreWarnings = [
+        /Failed to parse source map/,
+        /Critical dependency/,
+      ];
+    }
+    return config;
+  },
 };
 
 export default withNextIntl(nextConfig);

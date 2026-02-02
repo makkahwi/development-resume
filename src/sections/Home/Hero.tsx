@@ -69,44 +69,69 @@ const getStatisticsList = async (): Promise<StatisticProps[]> => {
   }
 };
 
-const HomeHeroSection = async ({ t }: { t: Function }) => {
+const HomeHeroSection = async ({
+  t,
+  home,
+}: {
+  t: Function;
+  home?: boolean;
+}) => {
   const statistics = await getStatisticsList();
 
   return (
-    <div>
-      <header className="mb-5">
-        <Image
-          src={
-            process.env.NEXT_PUBLIC_STORAGE_URL + "profile.jpg" + "?alt=media"
-          }
-          alt="Logo"
-          width={150}
-          height={150}
-        />
-        <h1>{t("Title")}</h1>
-        <p className="lead">{t("Subtitle")}</p>
-      </header>
+    <section className={home ? "py-5 mb-4" : "py-3"}>
+      <div className="container">
+        <header className={home ? "text-center mb-5" : "mb-4"}>
+          <div className={home ? "mb-4" : "mb-3"}>
+            <Image
+              src={
+                process.env.NEXT_PUBLIC_STORAGE_URL +
+                "profile.jpg" +
+                "?alt=media"
+              }
+              alt="Logo"
+              width={home ? 180 : 150}
+              height={home ? 180 : 150}
+              className="rounded-circle shadow"
+            />
+          </div>
+          <h1 className={home ? "display-4 fw-bold mb-3" : "mb-3"}>
+            {t("Title")}
+          </h1>
+          <p
+            className={home ? "lead fs-4 text-muted mx-auto" : "lead"}
+            style={home ? { maxWidth: "700px" } : {}}
+          >
+            {t("Subtitle")}
+          </p>
+        </header>
 
-      <section>
-        <p className="lead">{t("Description")}</p>
+        <div className={home ? "mb-5" : "mb-4"}>
+          <p
+            className={home ? "lead text-center mx-auto mb-5" : "lead mb-4"}
+            style={home ? { maxWidth: "800px" } : {}}
+          >
+            {t("Description")}
+          </p>
 
-        <div className="row">
-          {statistics.map((statistic, index) => (
-            <StatisticCard key={index} {...statistic} />
-          ))}
+          <div className="row g-4">
+            {statistics.map((statistic, index) => (
+              <StatisticCard key={index} {...statistic} />
+            ))}
+          </div>
         </div>
 
-        <button className="btn btn-primary">{t("CTA.Main")}</button>
-
-        <button className="btn btn-outline-primary ms-2">
-          {t("CTA.Secondary")}
-        </button>
-
-        <button className="btn btn-outline-secondary ms-2">
-          {t("CTA.More")}
-        </button>
-      </section>
-    </div>
+        <div className={home ? "text-center" : ""}>
+          <button className="btn btn-primary btn-lg">{t("CTA.Main")}</button>
+          <button className="btn btn-outline-primary btn-lg ms-2">
+            {t("CTA.Secondary")}
+          </button>
+          <button className="btn btn-outline-secondary btn-lg ms-2">
+            {t("CTA.More")}
+          </button>
+        </div>
+      </div>
+    </section>
   );
 };
 

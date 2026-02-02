@@ -36,15 +36,16 @@ export const generateMetadata = async ({
 const HomeLocalePage = async ({ params }: PageProps) => {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Home" });
+  const tAbout = await getTranslations({ locale, namespace: "About" });
 
   return (
-    <main className="py-5">
-      <HomeHeroSection t={t} />
-      <ClientsSection t={t} />
-      <AboutHeroSection t={t} short />
+    <main>
+      <HomeHeroSection t={t} home />
+      <ClientsSection t={t} home />
+      <AboutHeroSection t={tAbout} short />
       <ProjectsSection t={t} short />
       <SkillsSection t={t} short />
-      <TestimonialsSection t={t} />
+      <TestimonialsSection t={t} home />
       <BlogSection t={t} />
     </main>
   );
