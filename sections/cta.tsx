@@ -5,6 +5,7 @@ import { iconMap } from "@/consts/functions";
 import { ContactProps } from "@/layout/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Col, Row } from "react-bootstrap";
+
 import ContactForm from "./contactForm";
 
 const CtaSection = async () => {
@@ -42,15 +43,15 @@ const CtaSection = async () => {
             className="my-5 font"
             color="dark"
           >
-            Or Book A Session
+            Or Book A Discovery Call
           </Typography>
 
           <Button
             className="w-50 p-3 mb-3 border-0 corners bg-info text-white "
-            href="https://calendly.com/suhaibahmadai/30min"
+            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ11WXpxIUv7ZmQSrHHpc5EhskFJ6_ROebTBChnDRYsMHfimOX40-KTTadUm2qH4DtYyO1957aIj"
             target="_blank"
           >
-            Up to 30 Mins Online Session
+            Up To 1 Hour Discussion
           </Button>
         </Col>
 
