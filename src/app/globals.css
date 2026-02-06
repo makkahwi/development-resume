@@ -2,6 +2,35 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css";
 
+:root {
+  --bs-primary: #1c3967;
+  --bs-light: #e2e2e2;
+  --bs-dark: #0f2032;
+  --bs-primary-rgb: 28, 57, 103;
+  --bs-light-rgb: 226, 226, 226;
+  --bs-dark-rgb: 15, 32, 50;
+  --bs-primary-bg-subtle: #e2e7f1;
+  --bs-primary-border-subtle: #c6d0e3;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: #162b4e;
+  --bs-btn-hover-border-color: #162b4e;
+  --bs-btn-active-bg: #142544;
+  --bs-btn-active-border-color: #142544;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-active-bg: #162b4e;
+  --bs-btn-active-border-color: #162b4e;
+}
+
 html,
 body {
   padding: 0;
