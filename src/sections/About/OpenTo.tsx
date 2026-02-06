@@ -2,10 +2,10 @@ import PageSection from "@/components/PageSection";
 
 const OpenToSection = async ({ t }: { t: Function }) => {
   const openToList = [
-    { label: t("OpenTo.Development"), icon: "bi bi-code-slash" },
-    { label: t("OpenTo.Advisory"), icon: "bi bi-compass" },
-    { label: t("OpenTo.Mentorship"), icon: "bi bi-people" },
-    { label: t("OpenTo.Architecture"), icon: "bi bi-diagram-3" },
+    { label: t("OpenTo.Development"), icon: "fa-solid fa-code" },
+    { label: t("OpenTo.Advisory"), icon: "fa-solid fa-compass" },
+    { label: t("OpenTo.Mentorship"), icon: "fa-solid fa-people-group" },
+    { label: t("OpenTo.Architecture"), icon: "fa-solid fa-diagram-project" },
   ];
 
   return (
@@ -45,3 +45,4 @@ const OpenToSection = async ({ t }: { t: Function }) => {
 };
 
 export default OpenToSection;
+

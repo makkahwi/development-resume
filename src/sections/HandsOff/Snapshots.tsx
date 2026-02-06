@@ -5,17 +5,17 @@ const HandsOffSnapshots = async ({ t }: { t: any }) => {
     {
       title: t("Snapshots.Cases.PublicSector.Title"),
       body: t("Snapshots.Cases.PublicSector.Body"),
-      icon: "bi bi-building",
+      icon: "fa-solid fa-building",
     },
     {
       title: t("Snapshots.Cases.BlockchainApp.Title"),
       body: t("Snapshots.Cases.BlockchainApp.Body"),
-      icon: "bi bi-shield-lock",
+      icon: "fa-solid fa-shield-halved",
     },
     {
       title: t("Snapshots.Cases.Edtech.Title"),
       body: t("Snapshots.Cases.Edtech.Body"),
-      icon: "bi bi-mortarboard",
+      icon: "fa-solid fa-graduation-cap",
     },
   ];
 
@@ -44,3 +44,4 @@ const HandsOffSnapshots = async ({ t }: { t: any }) => {
 };
 
 export default HandsOffSnapshots;
+

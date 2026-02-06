@@ -19,12 +19,12 @@ const AboutHeroSection = async ({
     t("AtGlance.Languages"),
   ];
   const atGlanceIcons = [
-    "bi bi-graph-up",
-    "bi bi-cpu",
-    "bi bi-building",
-    "bi bi-diagram-3",
-    "bi bi-geo-alt",
-    "bi bi-translate",
+    "fa-solid fa-chart-line",
+    "fa-solid fa-microchip",
+    "fa-solid fa-building",
+    "fa-solid fa-diagram-project",
+    "fa-solid fa-location-dot",
+    "fa-solid fa-language",
   ];
 
   return (
@@ -84,3 +84,4 @@ const AboutHeroSection = async ({
 };
 
 export default AboutHeroSection;
+

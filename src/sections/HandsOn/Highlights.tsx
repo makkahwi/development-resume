@@ -24,7 +24,7 @@ const HighlightsSection = async ({ t }: { t: Function }) => {
                   <span className="badge bg-primary bg-opacity-10 text-primary">
                     {index + 1}
                   </span>
-                  <i className="bi bi-lightning-charge text-primary fs-4" />
+                  <i className="fa-solid fa-bolt text-primary fs-4" />
                 </div>
                 <p className="mb-0 text-muted">{content}</p>
               </div>
@@ -37,3 +37,4 @@ const HighlightsSection = async ({ t }: { t: Function }) => {
 };
 
 export default HighlightsSection;
+

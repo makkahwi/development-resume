@@ -64,7 +64,7 @@ const ExperienceCard = ({
               rel="noopener noreferrer"
               className="btn btn-sm btn-primary px-4 border-0 corners"
             >
-              {viewEmployerLabel} <i className="bi bi-arrow-right ms-1" />
+              {viewEmployerLabel} <i className="fa-solid fa-arrow-right ms-1" />
             </a>
           )}
         </div>
@@ -73,3 +73,4 @@ const ExperienceCard = ({
   );
 };
 export default ExperienceCard;
+

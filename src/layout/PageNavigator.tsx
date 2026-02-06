@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 type PageNavigatorSection = {
   id: string;
   label: string;
-  iconClass: string; // bootstrap icon class
+  iconClass: string; // font awesome class
 };
 
 type PageNavigatorProps = {
@@ -30,33 +30,33 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
           {
             id: "clients",
             label: t("Home.Clients"),
-            iconClass: "bi bi-people",
+            iconClass: "fa-solid fa-people-group",
           },
           {
             id: "projects",
             label: t("Common.Projects"),
-            iconClass: "bi bi-grid-3x3-gap",
+            iconClass: "fa-solid fa-grip",
           },
-          { id: "skills", label: t("Common.Skills"), iconClass: "bi bi-stars" },
+          { id: "skills", label: t("Common.Skills"), iconClass: "fa-solid fa-star" },
           {
             id: "hands-off",
             label: t("Home.HandsOff"),
-            iconClass: "bi bi-compass",
+            iconClass: "fa-solid fa-compass",
           },
           {
             id: "give-back",
             label: t("Home.GiveBack"),
-            iconClass: "bi bi-heart",
+            iconClass: "fa-solid fa-heart",
           },
           {
             id: "testimonials",
             label: t("Home.Testimonials"),
-            iconClass: "bi bi-chat-quote",
+            iconClass: "fa-solid fa-comments",
           },
           {
             id: "blog",
             label: t("Common.Blog"),
-            iconClass: "bi bi-journal-text",
+            iconClass: "fa-solid fa-book",
           },
         ];
       case normalizedPath === "/about":
@@ -64,17 +64,17 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
           {
             id: "education",
             label: t("About.Education"),
-            iconClass: "bi bi-mortarboard",
+            iconClass: "fa-solid fa-graduation-cap",
           },
           {
             id: "personal",
             label: t("About.Personal"),
-            iconClass: "bi bi-person",
+            iconClass: "fa-solid fa-user",
           },
           {
             id: "openTo",
             label: t("About.OpenTo"),
-            iconClass: "bi bi-briefcase",
+            iconClass: "fa-solid fa-briefcase",
           },
         ];
       case normalizedPath === "/hands-on":
@@ -82,23 +82,23 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
           {
             id: "experiences",
             label: t("HandsOn.Experiences"),
-            iconClass: "bi bi-briefcase",
+            iconClass: "fa-solid fa-briefcase",
           },
           {
             id: "projects",
             label: t("Common.Projects"),
-            iconClass: "bi bi-grid-3x3-gap",
+            iconClass: "fa-solid fa-grip",
           },
-          { id: "skills", label: t("Common.Skills"), iconClass: "bi bi-stars" },
+          { id: "skills", label: t("Common.Skills"), iconClass: "fa-solid fa-star" },
           {
             id: "highlights",
             label: t("HandsOn.Highlights"),
-            iconClass: "bi bi-lightning",
+            iconClass: "fa-solid fa-bolt",
           },
           {
             id: "timeline",
             label: t("HandsOn.Timeline"),
-            iconClass: "bi bi-clock-history",
+            iconClass: "fa-solid fa-clock-rotate-left",
           },
         ];
       case normalizedPath === "/hands-off":
@@ -106,47 +106,47 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
           {
             id: "roles",
             label: t("HandsOff.Roles"),
-            iconClass: "bi bi-person-workspace",
+            iconClass: "fa-solid fa-chalkboard-user",
           },
           {
             id: "decisions",
             label: t("HandsOff.Decisions"),
-            iconClass: "bi bi-diagram-3",
+            iconClass: "fa-solid fa-diagram-project",
           },
           {
             id: "reality-map",
             label: t("HandsOff.RealityMap"),
-            iconClass: "bi bi-map",
+            iconClass: "fa-solid fa-map",
           },
           {
             id: "patterns",
             label: t("HandsOff.Patterns"),
-            iconClass: "bi bi-repeat",
+            iconClass: "fa-solid fa-repeat",
           },
           {
             id: "mentoring",
             label: t("HandsOff.Mentoring"),
-            iconClass: "bi bi-people",
+            iconClass: "fa-solid fa-people-group",
           },
           {
             id: "snapshots",
             label: t("HandsOff.Snapshots"),
-            iconClass: "bi bi-camera",
+            iconClass: "fa-solid fa-camera",
           },
           {
             id: "principles",
             label: t("HandsOff.Principles"),
-            iconClass: "bi bi-compass",
+            iconClass: "fa-solid fa-compass",
           },
           {
             id: "advisory",
             label: t("HandsOff.Advisory"),
-            iconClass: "bi bi-chat-square-text",
+            iconClass: "fa-solid fa-comment-dots",
           },
           {
             id: "hands-off-cta",
             label: t("HandsOff.Cta"),
-            iconClass: "bi bi-flag",
+            iconClass: "fa-solid fa-flag",
           },
         ];
       case normalizedPath === "/non-profit":
@@ -154,27 +154,27 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
           {
             id: "mentoring",
             label: t("NonProfit.Mentoring"),
-            iconClass: "bi bi-people",
+            iconClass: "fa-solid fa-people-group",
           },
           {
             id: "community",
             label: t("NonProfit.Community"),
-            iconClass: "bi bi-globe",
+            iconClass: "fa-solid fa-globe",
           },
           {
             id: "projects",
             label: t("Common.Projects"),
-            iconClass: "bi bi-grid-3x3-gap",
+            iconClass: "fa-solid fa-grip",
           },
           {
             id: "tools",
             label: t("NonProfit.Tools"),
-            iconClass: "bi bi-tools",
+            iconClass: "fa-solid fa-screwdriver-wrench",
           },
           {
             id: "giveback-cta",
             label: t("NonProfit.Cta"),
-            iconClass: "bi bi-flag",
+            iconClass: "fa-solid fa-flag",
           },
         ];
       case normalizedPath === "/blog":
@@ -182,7 +182,7 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
           {
             id: "blog",
             label: t("Common.Blog"),
-            iconClass: "bi bi-journal-text",
+            iconClass: "fa-solid fa-book",
           },
         ];
       default:
@@ -195,9 +195,9 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
   }
 
   const allSections = [
-    { id: "hero", label: t("Common.Hero"), iconClass: "bi bi-house" },
+    { id: "hero", label: t("Common.Hero"), iconClass: "fa-solid fa-house" },
     ...(sections.length > 0 ? sections : inferredSections),
-    { id: "contact", label: t("Common.Contact"), iconClass: "bi bi-telephone" },
+    { id: "contact", label: t("Common.Contact"), iconClass: "fa-solid fa-phone" },
   ];
 
   return (
@@ -222,3 +222,4 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
 };
 
 export default PageNavigator;
+

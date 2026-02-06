@@ -2,17 +2,17 @@ import PageSection from "@/components/PageSection";
 
 const HandsOffDecisions = async ({ t }: { t: any }) => {
   const decisions = [
-    { text: t("Decisions.Items.FeatureScope"), icon: "bi bi-flag" },
-    { text: t("Decisions.Items.UxAlignment"), icon: "bi bi-columns-gap" },
-    { text: t("Decisions.Items.AuthModels"), icon: "bi bi-shield-lock" },
-    { text: t("Decisions.Items.DataModeling"), icon: "bi bi-database" },
-    { text: t("Decisions.Items.ApiBoundaries"), icon: "bi bi-diagram-2" },
-    { text: t("Decisions.Items.ServiceDesign"), icon: "bi bi-boxes" },
+    { text: t("Decisions.Items.FeatureScope"), icon: "fa-solid fa-flag" },
+    { text: t("Decisions.Items.UxAlignment"), icon: "fa-solid fa-table-columns" },
+    { text: t("Decisions.Items.AuthModels"), icon: "fa-solid fa-shield-halved" },
+    { text: t("Decisions.Items.DataModeling"), icon: "fa-solid fa-database" },
+    { text: t("Decisions.Items.ApiBoundaries"), icon: "fa-solid fa-diagram-project" },
+    { text: t("Decisions.Items.ServiceDesign"), icon: "fa-solid fa-boxes-stacked" },
     {
       text: t("Decisions.Items.DeliveryPlanning"),
-      icon: "bi bi-calendar2-week",
+      icon: "fa-solid fa-calendar-week",
     },
-    { text: t("Decisions.Items.PerformanceCost"), icon: "bi bi-speedometer2" },
+    { text: t("Decisions.Items.PerformanceCost"), icon: "fa-solid fa-gauge-high" },
   ];
 
   return (
@@ -45,3 +45,4 @@ const HandsOffDecisions = async ({ t }: { t: any }) => {
 };
 
 export default HandsOffDecisions;
+

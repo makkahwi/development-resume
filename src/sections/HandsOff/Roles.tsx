@@ -5,17 +5,17 @@ const HandsOffRoles = async ({ t }: { t: any }) => {
     {
       title: t("Roles.ProductTranslator.Title"),
       body: t("Roles.ProductTranslator.Body"),
-      icon: "bi bi-diagram-3",
+      icon: "fa-solid fa-diagram-project",
     },
     {
       title: t("Roles.ArchitectureSteward.Title"),
       body: t("Roles.ArchitectureSteward.Body"),
-      icon: "bi bi-bricks",
+      icon: "fa-solid fa-cubes",
     },
     {
       title: t("Roles.DeveloperMentor.Title"),
       body: t("Roles.DeveloperMentor.Body"),
-      icon: "bi bi-people",
+      icon: "fa-solid fa-people-group",
     },
   ];
   return (
@@ -43,3 +43,4 @@ const HandsOffRoles = async ({ t }: { t: any }) => {
 };
 
 export default HandsOffRoles;
+

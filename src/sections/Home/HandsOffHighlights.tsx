@@ -6,17 +6,17 @@ const HandsOffHighlights = ({ t, locale }: { t: Function; locale: string }) => {
     {
       title: t("HandsOffHighlights.Items.Decisions.Title"),
       body: t("HandsOffHighlights.Items.Decisions.Body"),
-      icon: "bi bi-lightbulb",
+      icon: "fa-solid fa-lightbulb",
     },
     {
       title: t("HandsOffHighlights.Items.Advisory.Title"),
       body: t("HandsOffHighlights.Items.Advisory.Body"),
-      icon: "bi bi-diagram-3",
+      icon: "fa-solid fa-diagram-project",
     },
     {
       title: t("HandsOffHighlights.Items.Mentoring.Title"),
       body: t("HandsOffHighlights.Items.Mentoring.Body"),
-      icon: "bi bi-people",
+      icon: "fa-solid fa-people-group",
     },
   ];
 
@@ -65,3 +65,4 @@ const HandsOffHighlights = ({ t, locale }: { t: Function; locale: string }) => {
 };
 
 export default HandsOffHighlights;
+

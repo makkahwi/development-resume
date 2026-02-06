@@ -5,17 +5,17 @@ const HelpGroupsSection = async ({ t }: { t: Function }) => {
     {
       title: t("Mentoring.Groups.Developers.Title"),
       body: t("Mentoring.Groups.Developers.Body"),
-      icon: "bi bi-code-slash",
+      icon: "fa-solid fa-code",
     },
     {
       title: t("Mentoring.Groups.WhoIHelp.Title"),
       body: t("Mentoring.Groups.WhoIHelp.Body"),
-      icon: "bi bi-people",
+      icon: "fa-solid fa-people-group",
     },
     {
       title: t("Mentoring.Groups.Approach.Title"),
       body: t("Mentoring.Groups.Approach.Body"),
-      icon: "bi bi-compass",
+      icon: "fa-solid fa-compass",
     },
   ];
 
@@ -49,3 +49,4 @@ const HelpGroupsSection = async ({ t }: { t: Function }) => {
 };
 
 export default HelpGroupsSection;
+

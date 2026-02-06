@@ -2,9 +2,9 @@ import PageSection from "@/components/PageSection";
 
 const ToolsSection = ({ t }: { t: any }) => {
   const freeTools = [
-    { key: "ToolOne", icon: "bi bi-tools" },
-    { key: "ToolTwo", icon: "bi bi-rocket-takeoff" },
-    { key: "ToolThree", icon: "bi bi-kanban" },
+    { key: "ToolOne", icon: "fa-solid fa-screwdriver-wrench" },
+    { key: "ToolTwo", icon: "fa-solid fa-rocket" },
+    { key: "ToolThree", icon: "fa-solid fa-table-columns" },
   ];
 
   return (
@@ -52,3 +52,4 @@ const ToolsSection = ({ t }: { t: any }) => {
 };
 
 export default ToolsSection;
+

@@ -6,17 +6,17 @@ const GiveBackHighlights = ({ t, locale }: { t: Function; locale: string }) => {
     {
       title: t("GiveBackHighlights.Items.Mentoring.Title"),
       body: t("GiveBackHighlights.Items.Mentoring.Body"),
-      icon: "bi bi-heart",
+      icon: "fa-solid fa-heart",
     },
     {
       title: t("GiveBackHighlights.Items.OpenSource.Title"),
       body: t("GiveBackHighlights.Items.OpenSource.Body"),
-      icon: "bi bi-github",
+      icon: "fa-brands fa-github",
     },
     {
       title: t("GiveBackHighlights.Items.Tools.Title"),
       body: t("GiveBackHighlights.Items.Tools.Body"),
-      icon: "bi bi-tools",
+      icon: "fa-solid fa-screwdriver-wrench",
     },
   ];
 
@@ -66,3 +66,4 @@ const GiveBackHighlights = ({ t, locale }: { t: Function; locale: string }) => {
 };
 
 export default GiveBackHighlights;
+

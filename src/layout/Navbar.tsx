@@ -14,14 +14,14 @@ type NavLinkItem = {
 };
 
 const navLinks: NavLinkItem[] = [
-  { key: "home", href: "/", iconClass: "bi-house-door" },
-  { key: "about", href: "/about", iconClass: "bi-person" },
-  { key: "handsOn", href: "/hands-on", iconClass: "bi-code-slash" },
-  { key: "handsOff", href: "/hands-off", iconClass: "bi-list-check" },
-  { key: "nonProfit", href: "/non-profit", iconClass: "bi-heart" },
-  { key: "blog", href: "/blog", iconClass: "bi-journal-text" },
+  { key: "home", href: "/", iconClass: "fa-house" },
+  { key: "about", href: "/about", iconClass: "fa-user" },
+  { key: "handsOn", href: "/hands-on", iconClass: "fa-code" },
+  { key: "handsOff", href: "/hands-off", iconClass: "fa-list-check" },
+  { key: "nonProfit", href: "/non-profit", iconClass: "fa-heart" },
+  { key: "blog", href: "/blog", iconClass: "fa-book" },
   // Contact scrolls to section on the same page
-  { key: "contact", href: "contact", scroll: true, iconClass: "bi-phone" },
+  { key: "contact", href: "contact", scroll: true, iconClass: "fa-phone" },
 ];
 
 const NavbarComp = () => {
@@ -105,7 +105,7 @@ const NavbarComp = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fa-solid bi-download me-1 fw-bold" />{" "}
+                <i className="fa-solid fa-download me-1 fw-bold" />{" "}
                 <span className="d-inline d-lg-none d-xl-inline">CV</span>
               </a>
             </li>

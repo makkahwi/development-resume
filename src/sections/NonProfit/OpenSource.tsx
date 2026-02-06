@@ -5,12 +5,12 @@ const OpenSourceSection = ({ t }: { t: any }) => {
     {
       title: t("Community.OpenSource.Title"),
       body: t("Community.OpenSource.Body"),
-      icon: "bi bi-github",
+      icon: "fa-brands fa-github",
     },
     {
       title: t("Community.NonProfit.Title"),
       body: t("Community.NonProfit.Body"),
-      icon: "bi bi-building",
+      icon: "fa-solid fa-building",
     },
   ];
 
@@ -48,3 +48,4 @@ const OpenSourceSection = ({ t }: { t: any }) => {
 };
 
 export default OpenSourceSection;
+

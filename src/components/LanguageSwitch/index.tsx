@@ -16,7 +16,7 @@ const LanguageSwitch = ({ locale }: PageProps) => {
         }
       }}
     >
-      <i className="fa-solid bi-globe fw-bold" /> {locale === "en" ? "ع" : "En"}
+      <i className="fa-solid fa-globe fw-bold" /> {locale === "en" ? "ع" : "En"}
     </button>
   );
 };
