@@ -4,9 +4,10 @@ import BlogSection from "@/sections/Common/Blog";
 import ProjectsSection from "@/sections/Common/Projects";
 import SkillsSection from "@/sections/Common/Skills";
 import ClientsSection from "@/sections/Home/Clients";
+import GiveBackHighlights from "@/sections/Home/GiveBackHighlights";
+import HandsOffHighlights from "@/sections/Home/HandsOffHighlights";
 import HomeHeroSection from "@/sections/Home/Hero";
 import TestimonialsSection from "@/sections/Home/Testimonials";
-
 import type { PageProps } from "@/types/base";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
@@ -35,18 +36,27 @@ export const generateMetadata = async ({
 
 const HomeLocalePage = async ({ params }: PageProps) => {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Home" });
+  const tHome = await getTranslations({ locale, namespace: "Home" });
   const tAbout = await getTranslations({ locale, namespace: "About" });
+  const tBlog = await getTranslations({ locale, namespace: "Blog" });
 
   return (
     <main>
-      <HomeHeroSection t={t} home />
-      <ClientsSection t={t} home />
+      <HomeHeroSection t={tHome} home locale={locale} />
+      <ClientsSection t={tHome} home />
       <AboutHeroSection t={tAbout} short />
-      <ProjectsSection t={t} short />
-      <SkillsSection t={t} short />
-      <TestimonialsSection t={t} home />
-      <BlogSection t={t} />
+      <ProjectsSection t={tHome} short />
+      <SkillsSection t={tHome} short />
+      <HandsOffHighlights t={tHome} locale={locale} />
+      <GiveBackHighlights t={tHome} locale={locale} />
+      <TestimonialsSection t={tHome} home />
+      <BlogSection
+        title={tHome("Blog.Title")}
+        subtitle={tHome("Blog.Subtitle")}
+        locale={locale}
+        short
+        ctaLabel={tBlog("ReadMore")}
+      />
     </main>
   );
 };
