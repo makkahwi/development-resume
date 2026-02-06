@@ -31,8 +31,17 @@ export const generateMetadata = async ({
   };
 };
 
-const HandsOnPage = async ({ params }: PageProps) => {
+type HandsOnPageProps = PageProps & {
+  searchParams?: Promise<{ category?: string }> | { category?: string };
+};
+
+const HandsOnPage = async ({ params, searchParams }: HandsOnPageProps) => {
   const { locale } = await params;
+  const rawSearchParams = await searchParams;
+  const category =
+    typeof rawSearchParams?.category === "string"
+      ? rawSearchParams.category
+      : undefined;
   const t = await getTranslations({ locale, namespace: "HandsOn" });
 
   return (
@@ -41,7 +50,12 @@ const HandsOnPage = async ({ params }: PageProps) => {
 
       <ExperiencesSection t={t} />
 
-      <ProjectsSection t={t} />
+      <ProjectsSection
+        t={t}
+        showFilters
+        activeCategory={category}
+        basePath={`/${locale}/hands-on`}
+      />
 
       <SkillsSection t={t} />
 
