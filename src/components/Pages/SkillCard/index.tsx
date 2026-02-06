@@ -50,7 +50,7 @@ const SkillCard = ({
 
   return (
     <div className="col-sm-6 col-md-4 col-lg-3">
-      <div className="card h-100 border-0 shadow-sm">
+      <div className="card h-100 border-0 p-3 shadow-sm">
         <div className="card-body">
           <div className="text-center mb-3">
             <i

@@ -29,7 +29,7 @@ const HelpGroupsSection = async ({ t }: { t: Function }) => {
       <div className="row g-4">
         {mentoringGroups.map(({ title, body, icon }, i) => (
           <div className="col-md-4" key={i}>
-            <div className="card h-100 border-0 shadow-sm">
+            <div className="card h-100 border-0 p-3 shadow-sm">
               <div className="card-body">
                 <div
                   className="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
