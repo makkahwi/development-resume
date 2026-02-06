@@ -20,7 +20,7 @@ const ExperienceCard = ({
 
   return (
     <div className="col-lg-6">
-      <div className="card h-100 border-0 shadow-sm">
+      <div className="card h-100 border-0 corners">
         <div className="card-body">
           <div className="d-flex align-items-center mb-3">
             {companyLogo && (

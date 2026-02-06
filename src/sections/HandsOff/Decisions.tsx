@@ -2,19 +2,22 @@ import PageSection from "@/components/PageSection";
 
 const HandsOffDecisions = async ({ t }: { t: any }) => {
   const decisions = [
-    t("Decisions.Items.FeatureScope"),
-    t("Decisions.Items.UxAlignment"),
-    t("Decisions.Items.AuthModels"),
-    t("Decisions.Items.DataModeling"),
-    t("Decisions.Items.ApiBoundaries"),
-    t("Decisions.Items.ServiceDesign"),
-    t("Decisions.Items.DeliveryPlanning"),
-    t("Decisions.Items.PerformanceCost"),
+    { text: t("Decisions.Items.FeatureScope"), icon: "bi bi-flag" },
+    { text: t("Decisions.Items.UxAlignment"), icon: "bi bi-columns-gap" },
+    { text: t("Decisions.Items.AuthModels"), icon: "bi bi-shield-lock" },
+    { text: t("Decisions.Items.DataModeling"), icon: "bi bi-database" },
+    { text: t("Decisions.Items.ApiBoundaries"), icon: "bi bi-diagram-2" },
+    { text: t("Decisions.Items.ServiceDesign"), icon: "bi bi-boxes" },
+    {
+      text: t("Decisions.Items.DeliveryPlanning"),
+      icon: "bi bi-calendar2-week",
+    },
+    { text: t("Decisions.Items.PerformanceCost"), icon: "bi bi-speedometer2" },
   ];
 
   return (
     <PageSection title={t("Decisions.Title")} id="decisions">
-      <div className="card bg-light border-0 shadow-sm corners mb-5">
+      <div className="card bg-light border-0 corners mb-5">
         <div className="card-body text-center">
           <p className="text-muted mb-0">{t("Decisions.Intro")}</p>
         </div>
@@ -24,8 +27,14 @@ const HandsOffDecisions = async ({ t }: { t: any }) => {
         {decisions.map((decision, i) => (
           <div className="col-sm-6 col-lg-3" key={i}>
             <div className="card bg-light h-100 border-0 corners px-3">
-              <div className="card-body d-flex align-items-center justify-content-center text-center">
-                <p className="mb-0 fw-semibold">{decision}</p>
+              <div className="card-body text-center">
+                <div
+                  className="bg-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                  style={{ width: "44px", height: "44px" }}
+                >
+                  <i className={`${decision.icon} text-primary`} />
+                </div>
+                <p className="mb-0 fw-semibold">{decision.text}</p>
               </div>
             </div>
           </div>

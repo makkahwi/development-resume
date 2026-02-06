@@ -18,6 +18,14 @@ const AboutHeroSection = async ({
     t("AtGlance.Locations"),
     t("AtGlance.Languages"),
   ];
+  const atGlanceIcons = [
+    "bi bi-graph-up",
+    "bi bi-cpu",
+    "bi bi-building",
+    "bi bi-diagram-3",
+    "bi bi-geo-alt",
+    "bi bi-translate",
+  ];
 
   return (
     <section className="py-5 mb-4" id="hero">
@@ -44,7 +52,7 @@ const AboutHeroSection = async ({
               ))}
             </div>
 
-            <div className="card bg-light border-0 shadow-sm">
+            <div className="card bg-light border-0 px-3 corners">
               <div className="card-body p-4">
                 <h3 className="h5 fw-bold mb-4">{t("AtGlanceTitle")}</h3>
                 <div className="row g-3">
@@ -52,12 +60,16 @@ const AboutHeroSection = async ({
                     <div key={index} className="col-12 col-md-6">
                       <div className="d-flex align-items-start">
                         <div
-                          className="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3"
-                          style={{ width: "32px", height: "32px" }}
+                          className="bg-white border rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3"
+                          style={{ width: "36px", height: "36px" }}
                         >
-                          <i className="bi bi-check text-primary" />
+                          <i
+                            className={`${atGlanceIcons[index % atGlanceIcons.length]} text-primary`}
+                          />
                         </div>
-                        <p className="mb-0">{item}</p>
+                        <div>
+                          <p className="mb-0 fw-semibold">{item}</p>
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -72,4 +84,3 @@ const AboutHeroSection = async ({
 };
 
 export default AboutHeroSection;
-

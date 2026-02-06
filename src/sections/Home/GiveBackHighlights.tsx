@@ -6,14 +6,17 @@ const GiveBackHighlights = ({ t, locale }: { t: Function; locale: string }) => {
     {
       title: t("GiveBackHighlights.Items.Mentoring.Title"),
       body: t("GiveBackHighlights.Items.Mentoring.Body"),
+      icon: "bi bi-heart",
     },
     {
       title: t("GiveBackHighlights.Items.OpenSource.Title"),
       body: t("GiveBackHighlights.Items.OpenSource.Body"),
+      icon: "bi bi-github",
     },
     {
       title: t("GiveBackHighlights.Items.Tools.Title"),
       body: t("GiveBackHighlights.Items.Tools.Body"),
+      icon: "bi bi-tools",
     },
   ];
 
@@ -27,9 +30,22 @@ const GiveBackHighlights = ({ t, locale }: { t: Function; locale: string }) => {
       <div className="row g-4">
         {items.map((item) => (
           <div className="col-12 col-md-4" key={item.title}>
-            <div className="card h-100 border-0 shadow-sm">
+            <div className="card h-100 border-0 px-3 corners">
               <div className="card-body">
-                <h3 className="h5 fw-bold">{item.title}</h3>
+                <div className="d-flex align-items-start gap-3 mb-3">
+                  <div
+                    className="bg-white border rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
+                    style={{ width: "44px", height: "44px" }}
+                  >
+                    <i className={`${item.icon} text-primary fs-5`} />
+                  </div>
+                  <div>
+                    <h3 className="h5 fw-bold mb-1">{item.title}</h3>
+                    <span className="badge text-bg-primary-subtle text-primary fw-semibold">
+                      {t("GiveBackHighlights.Badge")}
+                    </span>
+                  </div>
+                </div>
                 <p className="text-muted mb-0">{item.body}</p>
               </div>
             </div>

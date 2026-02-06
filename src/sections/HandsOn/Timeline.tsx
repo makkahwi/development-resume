@@ -41,58 +41,22 @@ const TimelineSection = async ({ t }: { t: Function }) => {
       id="timeline"
       color="light"
     >
-      <div className="card border-0 shadow-sm">
-        <div className="card-body p-4">
-          <div className="position-relative">
-            {contents.map(({ years, title, content }, index) => (
-              <div
-                key={index}
-                className="position-relative ps-5 pb-4"
-                style={{
-                  marginBottom: index < contents.length - 1 ? "2rem" : "0",
-                }}
-              >
-                {/* Timeline line */}
-                {index < contents.length - 1 && (
-                  <div
-                    className="position-absolute bg-primary"
-                    style={{
-                      left: "11px",
-                      top: "24px",
-                      width: "2px",
-                      height: "calc(100% + 2rem)",
-                      opacity: 0.3,
-                    }}
-                  />
-                )}
-
-                {/* Timeline dot */}
-                <div
-                  className="position-absolute bg-primary rounded-circle d-flex align-items-center justify-content-center"
-                  style={{
-                    left: "0",
-                    top: "4px",
-                    width: "24px",
-                    height: "24px",
-                  }}
-                >
-                  <div
-                    className="bg-white rounded-circle"
-                    style={{ width: "10px", height: "10px" }}
-                  />
+      <div className="row g-4">
+        {contents.map(({ years, title, content }, index) => (
+          <div className="col-12" key={index}>
+            <div className="card border-0 corners">
+              <div className="card-body d-flex flex-column flex-md-row align-items-start gap-3">
+                <div className="bg-primary bg-opacity-10 text-primary fw-semibold px-3 py-2 corners">
+                  {years}
                 </div>
-
-                {/* Content */}
                 <div>
-                  <h4 className="h6 text-primary fw-bold mb-2">
-                    {years} | {title}
-                  </h4>
+                  <h4 className="h6 fw-bold mb-2">{title}</h4>
                   <p className="text-muted mb-0">{content}</p>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </PageSection>
   );

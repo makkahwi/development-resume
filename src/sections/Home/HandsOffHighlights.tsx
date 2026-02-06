@@ -6,14 +6,17 @@ const HandsOffHighlights = ({ t, locale }: { t: Function; locale: string }) => {
     {
       title: t("HandsOffHighlights.Items.Decisions.Title"),
       body: t("HandsOffHighlights.Items.Decisions.Body"),
+      icon: "bi bi-lightbulb",
     },
     {
       title: t("HandsOffHighlights.Items.Advisory.Title"),
       body: t("HandsOffHighlights.Items.Advisory.Body"),
+      icon: "bi bi-diagram-3",
     },
     {
       title: t("HandsOffHighlights.Items.Mentoring.Title"),
       body: t("HandsOffHighlights.Items.Mentoring.Body"),
+      icon: "bi bi-people",
     },
   ];
 
@@ -26,9 +29,22 @@ const HandsOffHighlights = ({ t, locale }: { t: Function; locale: string }) => {
       <div className="row g-4">
         {items.map((item) => (
           <div className="col-12 col-md-4" key={item.title}>
-            <div className="card h-100 border-0 shadow-sm">
+            <div className="card bg-light h-100 border-0 px-3 corners">
               <div className="card-body">
-                <h3 className="h5 fw-bold">{item.title}</h3>
+                <div className="d-flex align-items-start gap-3 mb-3">
+                  <div
+                    className="bg-white border rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
+                    style={{ width: "44px", height: "44px" }}
+                  >
+                    <i className={`${item.icon} text-primary fs-5`} />
+                  </div>
+                  <div>
+                    <h3 className="h5 fw-bold mb-1">{item.title}</h3>
+                    <span className="badge text-bg-primary-subtle text-primary fw-semibold">
+                      {t("HandsOffHighlights.Badge")}
+                    </span>
+                  </div>
+                </div>
                 <p className="text-muted mb-0">{item.body}</p>
               </div>
             </div>
@@ -39,7 +55,7 @@ const HandsOffHighlights = ({ t, locale }: { t: Function; locale: string }) => {
       <div className="text-center mt-4">
         <Link
           href={`/${locale}/hands-off`}
-          className="btn btn-primary px-4 border-0 corners"
+          className="btn btn-primary px-3 border-0 corners"
         >
           {t("HandsOffHighlights.Cta")}
         </Link>

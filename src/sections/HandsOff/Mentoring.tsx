@@ -18,7 +18,7 @@ const HandsOffMentoring = async ({ t }: { t: any }) => {
 
   return (
     <PageSection title={t("Mentoring.Title")} color="light" id="mentoring">
-      <div className="card border-0 shadow-sm corners">
+      <div className="card border-0 corners">
         <div className="card-body p-4">
           <div className="position-relative">
             {blocks.map(({ period, body }, i) => (

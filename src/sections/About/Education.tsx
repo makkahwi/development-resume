@@ -16,8 +16,8 @@ const EducationSection = async ({ t }: { t: Function }) => {
             index,
           ) => (
             <div key={index} className="col-md-6">
-              <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body text-center">
+              <div className="card h-100 border-0 corners px-3">
+                <div className="card-body">
                   <div className="mb-3">
                     <a href={url} target="_blank" rel="noreferrer">
                       <img
@@ -32,8 +32,17 @@ const EducationSection = async ({ t }: { t: Function }) => {
                       />
                     </a>
                   </div>
-                  <h4 className="h6 fw-bold mb-2">{school}</h4>
-                  <p className="text-muted small mb-0">{description}</p>
+                  <div className="d-flex align-items-start justify-content-between gap-2">
+                    <div>
+                      <h4 className="h6 fw-bold mb-2">{school}</h4>
+                      <p className="text-muted small mb-0">{description}</p>
+                    </div>
+                    {(label || cert) && (
+                      <span className="badge text-bg-primary-subtle text-primary fw-semibold">
+                        {label || cert}
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>

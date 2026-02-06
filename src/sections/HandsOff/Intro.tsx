@@ -13,12 +13,10 @@ const HandsOffHeroSection = async ({ t }: { t: Function }) => {
           <div className="row g-3">
             {["Decisions", "Patterns", "Advisory"].map((key) => (
               <div key={key} className="col-md-4">
-                <div className="card border-0 shadow-sm corners">
+                <div className="card border-0 corners">
                   <div className="card-body">
                     <h3 className="h6 fw-bold mb-1">{t(`${key}.Title`)}</h3>
-                    <p className="text-muted small mb-0">
-                      {t(`${key}.Intro`)}
-                    </p>
+                    <p className="text-muted small mb-0">{t(`${key}.Intro`)}</p>
                   </div>
                 </div>
               </div>

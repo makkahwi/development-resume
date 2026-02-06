@@ -305,7 +305,7 @@
       "Point4": {
         "Content": "Built modern full-stack platforms with clean architecture patterns.",
         "Title": "TypeScript, NestJS & Next.js Ecosystem",
-        "Years": "2023 - 2025"
+        "Years": "2023 - Present"
       },
       "Point5": {
         "Content": "Full-time focus on multi-tenant SIS platform from 0 → MVP → Production.",
@@ -339,6 +339,7 @@
     },
     "Description": "Building scalable web platforms, guiding engineering decisions, and turning early-stage products into production-ready software.",
     "GiveBackHighlights": {
+      "Badge": "Community focus",
       "Cta": "See Give Back Work",
       "Items": {
         "Mentoring": {
@@ -358,6 +359,7 @@
       "Title": "Give Back"
     },
     "HandsOffHighlights": {
+      "Badge": "Leadership",
       "Cta": "Explore Hands-off Work",
       "Items": {
         "Advisory": {

@@ -1,7 +1,11 @@
 import PageSection from "@/components/PageSection";
 
 const ToolsSection = ({ t }: { t: any }) => {
-  const freeTools = ["ToolOne", "ToolTwo", "ToolThree"];
+  const freeTools = [
+    { key: "ToolOne", icon: "bi bi-tools" },
+    { key: "ToolTwo", icon: "bi bi-rocket-takeoff" },
+    { key: "ToolThree", icon: "bi bi-kanban" },
+  ];
 
   return (
     <PageSection color="light" noBg id="tools">
@@ -11,23 +15,31 @@ const ToolsSection = ({ t }: { t: any }) => {
           <p className="text-muted">{t("FreeTools.Intro")}</p>
         </div>
         <div className="row g-4">
-          {freeTools.map((key) => (
+          {freeTools.map(({ key, icon }) => (
             <div className="col-md-4" key={key}>
-              <div className="card h-100 border-0 shadow-sm">
+              <div className="card h-100 border-0 corners bg-white px-3">
                 <div className="card-body">
-                  <h3 className="h5 fw-bold mb-3">
-                    {t(`FreeTools.Items.${key}.Name`)}
-                  </h3>
+                  <div className="d-flex align-items-start gap-3 mb-3">
+                    <div
+                      className="bg-light border rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
+                      style={{ width: 44, height: 44 }}
+                    >
+                      <i className={`${icon} text-primary fs-5`} />
+                    </div>
+                    <div>
+                      <h3 className="h5 fw-bold mb-1">
+                        {t(`FreeTools.Items.${key}.Name`)}
+                      </h3>
+                      <span className="badge text-bg-primary-subtle text-primary fw-semibold">
+                        {t(`FreeTools.Items.${key}.Status`)}
+                      </span>
+                    </div>
+                  </div>
                   <p className="text-muted mb-3">
                     {t(`FreeTools.Items.${key}.Description`)}
                   </p>
-                  <p className="small mb-0">
-                    <span className="fw-semibold text-primary">
-                      {t("FreeTools.LabelStatus")}:{" "}
-                    </span>
-                    <span className="text-muted">
-                      {t(`FreeTools.Items.${key}.Status`)}
-                    </span>
+                  <p className="small text-muted mb-0">
+                    {t("FreeTools.LabelStatus")}
                   </p>
                 </div>
               </div>

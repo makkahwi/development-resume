@@ -34,7 +34,7 @@ const HandsOffRealityMap = async ({ t }: { t: any }) => {
       <div className="row g-4">
         {rows.map((row, i) => (
           <div className="col-12" key={i}>
-            <div className="card border-0 shadow-sm corners">
+            <div className="card border-0 corners">
               <div className="card-body">
                 <div className="row g-4">
                   <div className="col-md-4">

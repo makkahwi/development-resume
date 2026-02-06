@@ -2,10 +2,10 @@ import PageSection from "@/components/PageSection";
 
 const OpenToSection = async ({ t }: { t: Function }) => {
   const openToList = [
-    t("OpenTo.Development"),
-    t("OpenTo.Advisory"),
-    t("OpenTo.Mentorship"),
-    t("OpenTo.Architecture"),
+    { label: t("OpenTo.Development"), icon: "bi bi-code-slash" },
+    { label: t("OpenTo.Advisory"), icon: "bi bi-compass" },
+    { label: t("OpenTo.Mentorship"), icon: "bi bi-people" },
+    { label: t("OpenTo.Architecture"), icon: "bi bi-diagram-3" },
   ];
 
   return (
@@ -24,9 +24,9 @@ const OpenToSection = async ({ t }: { t: Function }) => {
                   className="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3"
                   style={{ width: "40px", height: "40px" }}
                 >
-                  <i className="bi bi-briefcase text-primary" />
+                  <i className={`${item.icon} text-primary`} />
                 </div>
-                <h4 className="h6 fw-bold mb-0">{item}</h4>
+                <h4 className="h6 fw-bold mb-0">{item.label}</h4>
               </div>
             </div>
           </div>

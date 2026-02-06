@@ -24,9 +24,12 @@ const HandsOffSnapshots = async ({ t }: { t: any }) => {
       <div className="row g-4">
         {snapshots.map(({ title, body, icon }, i) => (
           <div className="col-md-4" key={i}>
-            <div className="card bg-light h-100 border-0 shadow-sm corners">
+            <div className="card bg-light h-100 border-0 corners">
               <div className="card-body">
-                <div className="bg-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style={{ width: "42px", height: "42px" }}>
+                <div
+                  className="bg-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                  style={{ width: "42px", height: "42px" }}
+                >
                   <i className={`${icon} text-primary`} />
                 </div>
                 <h3 className="h5 fw-bold mb-3">{title}</h3>

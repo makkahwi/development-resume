@@ -17,14 +17,14 @@ const HighlightsSection = async ({ t }: { t: Function }) => {
     >
       <div className="row g-4">
         {contents.map((content, index) => (
-          <div key={index} className="col-md-6">
+          <div key={index} className="col-md-6 col-lg-4">
             <div className="card bg-light h-100 border-0 corners px-3">
-              <div className="card-body d-flex align-items-start">
-                <div
-                  className="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3"
-                  style={{ width: "40px", height: "40px" }}
-                >
-                  <i className="bi bi-check-circle-fill text-primary" />
+              <div className="card-body">
+                <div className="d-flex align-items-center justify-content-between mb-3">
+                  <span className="badge bg-primary bg-opacity-10 text-primary">
+                    {index + 1}
+                  </span>
+                  <i className="bi bi-lightning-charge text-primary fs-4" />
                 </div>
                 <p className="mb-0 text-muted">{content}</p>
               </div>
