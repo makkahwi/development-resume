@@ -1,11 +1,13 @@
 import StatisticCard from "@/components/Pages/StatisticCard";
-import { statisticsList } from "@/lib/data";
+import { buildStatisticsList } from "@/lib/data";
 
 const AboutHeroSection = async ({
   t,
+  tStats,
   short,
 }: {
   t: Function;
+  tStats: (key: string) => string;
   short?: boolean;
 }) => {
   const atGlance = [
@@ -37,7 +39,7 @@ const AboutHeroSection = async ({
             </div>
 
             <div className="row g-4 mb-5">
-              {statisticsList.map((statistic, index) => (
+              {buildStatisticsList(tStats).map((statistic, index) => (
                 <StatisticCard key={index} {...statistic} />
               ))}
             </div>
@@ -70,3 +72,4 @@ const AboutHeroSection = async ({
 };
 
 export default AboutHeroSection;
+

@@ -250,7 +250,8 @@
     "Description": "Overview of Suhaib Ahmad's hands-on experience, projects and technical skills.",
     "Experiences": {
       "Subtitle": "Work Experiences",
-      "Title": "Experiences"
+      "Title": "Experiences",
+      "ViewEmployer": "View Employer"
     },
     "Headline": "Hands On",
     "Highlights": {
@@ -597,6 +598,32 @@
       "Title": "Trainees and mentoring impact"
     },
     "Title": "Give Back – Non-profit Work & Free Products"
+  },
+  "Stats": {
+    "MonthsInWebDev": {
+      "Label": "Months in Web Dev",
+      "Description": "Spanning multiple roles since 2015, excluding earlier years as a graphic designer."
+    },
+    "SoftwareBuilt": {
+      "Label": "Software Built",
+      "Description": "From client portals to internal tools — samples are showcased in the Works section."
+    },
+    "HappyClients": {
+      "Label": "Happy Clients",
+      "Description": "Happy employers and direct clients who accepted and used the end results."
+    },
+    "IndividualsTrained": {
+      "Label": "Individuals Trained",
+      "Description": "Mentored aspiring developers through real-world projects, self-paced learning paths, and code quality reviews."
+    },
+    "ProjectsConsulted": {
+      "Label": "Projects Consulted",
+      "Description": "Provided strategic guidance to founders and product owners on roadmapping, architecture, and product direction."
+    },
+    "SolutionsArchitected": {
+      "Label": "Solutions Architected",
+      "Description": "Led end-to-end solution design from needs analysis to user journeys and UX flows."
+    }
   },
   "PageNav": {
     "About": {

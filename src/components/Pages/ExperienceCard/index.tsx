@@ -12,7 +12,8 @@ const ExperienceCard = ({
   title,
   type,
   url,
-}: JobProps) => {
+  viewEmployerLabel,
+}: JobProps & { viewEmployerLabel: string }) => {
   const companyLogo = clientsList.find(
     (client) => client.label === company,
   )?.image;
@@ -63,7 +64,7 @@ const ExperienceCard = ({
               rel="noopener noreferrer"
               className="btn btn-sm btn-primary px-4 border-0 corners"
             >
-              View Employer <i className="bi bi-arrow-right ms-1" />
+              {viewEmployerLabel} <i className="bi bi-arrow-right ms-1" />
             </a>
           )}
         </div>

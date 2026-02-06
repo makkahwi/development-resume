@@ -24,46 +24,53 @@ export const testimonialsList: TestimonialProps[] = json.developer.testimonials;
 export const contactsList: ContactProps[] = json.common.contacts;
 export const educationsList: EducationProps[] = json.common.education;
 
-export const statisticsList: StatisticProps[] = [
-  {
-    count: jobsList.reduce((total, job) => total + (job.monthsCount || 0), 0),
-    label: "Months in Web Dev",
-    description:
-      "Spanning multiple roles since 2015, excluding earlier years as a graphic designer.",
+export const buildStatisticsList = (
+  t: (key: string) => string,
+  data?: {
+    jobs?: JobProps[];
+    clients?: ClientProps[];
+    projects?: ProjectProps[];
+    trainees?: TraineeProps[];
   },
-  {
-    count: projectsList.filter(({ category }) => category === "Web App")
-      ?.length,
-    label: "Software Built",
-    description:
-      "From client portals to internal tools — samples are showcased in the Works section.",
-  },
-  {
-    count: clientsList.length,
-    label: "Happy Clients",
-    description:
-      "Happy employers & direct clients, whom accepted & used the end results.",
-  },
-  {
-    count: traineesList.length,
-    label: "Individuals Trained",
-    description:
-      "Mentored aspiring developers through real-world projects, self-paced learning paths, and code quality reviews.",
-  },
-  {
-    count: projectsList.filter(({ category }) => category === "Consulting")
-      ?.length,
-    label: "Projects Consulted",
-    description:
-      "Provided strategic guidance to founders and product owners, regarding roadmapping, architecture and product direction.",
-  },
-  {
-    count: projectsList.filter(({ designed }) => designed)?.length,
-    label: "Solutions Architected",
-    description:
-      "Led end-to-end solution design: from client needs analysis to user journeys and UX flows.",
-  },
-];
+): StatisticProps[] => {
+  const jobs = data?.jobs || jobsList;
+  const clients = data?.clients || clientsList;
+  const projects = data?.projects || projectsList;
+  const trainees = data?.trainees || traineesList;
+
+  return [
+    {
+      count: jobs.reduce((total, job) => total + (job.monthsCount || 0), 0),
+      label: t("MonthsInWebDev.Label"),
+      description: t("MonthsInWebDev.Description"),
+    },
+    {
+      count: projects.filter(({ category }) => category === "Web App")?.length,
+      label: t("SoftwareBuilt.Label"),
+      description: t("SoftwareBuilt.Description"),
+    },
+    {
+      count: clients.length,
+      label: t("HappyClients.Label"),
+      description: t("HappyClients.Description"),
+    },
+    {
+      count: trainees.length,
+      label: t("IndividualsTrained.Label"),
+      description: t("IndividualsTrained.Description"),
+    },
+    {
+      count: projects.filter(({ category }) => category === "Consulting")?.length,
+      label: t("ProjectsConsulted.Label"),
+      description: t("ProjectsConsulted.Description"),
+    },
+    {
+      count: projects.filter(({ designed }) => designed)?.length,
+      label: t("SolutionsArchitected.Label"),
+      description: t("SolutionsArchitected.Description"),
+    },
+  ];
+};
 
 type BlogLocale = "en" | "ar";
 
@@ -159,3 +166,4 @@ export const getBlogPost = async (
   const match = posts.find((post) => post.slug === slug);
   return match || null;
 };
+

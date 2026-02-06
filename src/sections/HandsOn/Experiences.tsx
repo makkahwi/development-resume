@@ -12,7 +12,11 @@ const ExperiencesSection = async ({ t }: { t: Function }) => {
     >
       <div className="row g-4">
         {jobsList.map((job, index) => (
-          <ExperienceCard key={index} {...job} />
+          <ExperienceCard
+            key={index}
+            viewEmployerLabel={t("Experiences.ViewEmployer")}
+            {...job}
+          />
         ))}
       </div>
     </PageSection>

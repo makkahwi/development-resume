@@ -1,7 +1,13 @@
 import { brandConfig } from "@/brand/config";
 import StatisticCard from "@/components/Pages/StatisticCard";
 import * as api from "@/lib/api";
-import { statisticsList } from "@/lib/data";
+import {
+  buildStatisticsList,
+  clientsList,
+  jobsList,
+  projectsList,
+  traineesList,
+} from "@/lib/data";
 import { StatisticProps } from "@/types/data";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,7 +20,9 @@ import Link from "next/link";
  *   revalidatePath("/") - to refresh home page with updated stats
  *   revalidatePath("/[locale]") - to refresh localized home pages
  */
-const getStatisticsList = async (): Promise<StatisticProps[]> => {
+const getStatisticsList = async (
+  tStats: (key: string) => string,
+): Promise<StatisticProps[]> => {
   try {
     // Fetch from API endpoint
     const jobsList = await api.getAll("/developer/jobs");
@@ -22,52 +30,20 @@ const getStatisticsList = async (): Promise<StatisticProps[]> => {
     const projectsList = await api.getAll("/developer/projects");
     const traineesList = await api.getAll("/developer/trainees");
 
-    return [
-      {
-        count: jobsList.reduce(
-          (total, job) => total + (job.monthsCount || 0),
-          0,
-        ),
-        label: "Months in Web Dev",
-        description:
-          "Spanning multiple roles since 2015, excluding earlier years as a graphic designer.",
-      },
-      {
-        count: projectsList.filter(({ category }) => category === "Web App")
-          ?.length,
-        label: "Software Built",
-        description:
-          "From client portals to internal tools — samples are showcased in the Works section.",
-      },
-      {
-        count: clientsList.length,
-        label: "Happy Clients",
-        description:
-          "Happy employers & direct clients, whom accepted & used the end results.",
-      },
-      {
-        count: traineesList.length,
-        label: "Individuals Trained",
-        description:
-          "Mentored aspiring developers through real-world projects, self-paced learning paths, and code quality reviews.",
-      },
-      {
-        count: projectsList.filter(({ category }) => category === "Consulting")
-          ?.length,
-        label: "Projects Consulted",
-        description:
-          "Provided strategic guidance to founders and product owners, regarding roadmapping, architecture and product direction.",
-      },
-      {
-        count: projectsList.filter(({ designed }) => designed)?.length,
-        label: "Solutions Architected",
-        description:
-          "Led end-to-end solution design: from client needs analysis to user journeys and UX flows.",
-      },
-    ];
+    return buildStatisticsList(tStats, {
+      jobs: jobsList,
+      clients: clientsList,
+      projects: projectsList,
+      trainees: traineesList,
+    });
   } catch (error) {
     // Fallback to hardcoded data on error
-    return statisticsList;
+    return buildStatisticsList(tStats, {
+      jobs: jobsList,
+      clients: clientsList,
+      projects: projectsList,
+      trainees: traineesList,
+    });
   }
 };
 
@@ -75,12 +51,14 @@ const HomeHeroSection = async ({
   t,
   home,
   locale,
+  tStats,
 }: {
   t: Function;
   home?: boolean;
   locale: string;
+  tStats: (key: string) => string;
 }) => {
-  const statistics = await getStatisticsList();
+  const statistics = await getStatisticsList(tStats);
 
   return (
     <section className={home ? "py-5 mb-4" : "py-3"} id="hero">

@@ -39,12 +39,13 @@ const HomeLocalePage = async ({ params }: PageProps) => {
   const tHome = await getTranslations({ locale, namespace: "Home" });
   const tAbout = await getTranslations({ locale, namespace: "About" });
   const tBlog = await getTranslations({ locale, namespace: "Blog" });
+  const tStats = await getTranslations({ locale, namespace: "Stats" });
 
   return (
     <main>
-      <HomeHeroSection t={tHome} home locale={locale} />
+      <HomeHeroSection t={tHome} home locale={locale} tStats={tStats} />
       <ClientsSection t={tHome} home />
-      <AboutHeroSection t={tAbout} short />
+      <AboutHeroSection t={tAbout} tStats={tStats} short />
       <ProjectsSection t={tHome} short />
       <SkillsSection t={tHome} short />
       <HandsOffHighlights t={tHome} locale={locale} />
@@ -62,3 +63,4 @@ const HomeLocalePage = async ({ params }: PageProps) => {
 };
 
 export default HomeLocalePage;
+

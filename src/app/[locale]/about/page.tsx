@@ -33,10 +33,11 @@ export const generateMetadata = async ({
 const AboutPage = async ({ params }: PageProps) => {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "About" });
+  const tStats = await getTranslations({ locale, namespace: "Stats" });
 
   return (
     <main>
-      <AboutHeroSection t={t} />
+      <AboutHeroSection t={t} tStats={tStats} />
 
       <EducationSection t={t} />
 
