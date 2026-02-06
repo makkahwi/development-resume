@@ -1,8 +1,10 @@
+import { brandConfig } from "@/brand/config";
 import StatisticCard from "@/components/Pages/StatisticCard";
 import * as api from "@/lib/api";
 import { statisticsList } from "@/lib/data";
 import { StatisticProps } from "@/types/data";
 import Image from "next/image";
+import Link from "next/link";
 
 /**
  * Fetches statistics list from API or returns hardcoded data
@@ -72,9 +74,11 @@ const getStatisticsList = async (): Promise<StatisticProps[]> => {
 const HomeHeroSection = async ({
   t,
   home,
+  locale,
 }: {
   t: Function;
   home?: boolean;
+  locale: string;
 }) => {
   const statistics = await getStatisticsList();
 
@@ -122,13 +126,23 @@ const HomeHeroSection = async ({
         </div>
 
         <div className={home ? "text-center" : ""}>
-          <button className="btn btn-primary btn-lg">{t("CTA.Main")}</button>
-          <button className="btn btn-outline-primary btn-lg ms-2">
+          <Link href={`/${locale}#contact`} className="btn btn-primary btn-lg">
+            {t("CTA.Main")}
+          </Link>
+          <a
+            className="btn btn-outline-primary btn-lg ms-2"
+            href={brandConfig.cvUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
             {t("CTA.Secondary")}
-          </button>
-          <button className="btn btn-outline-secondary btn-lg ms-2">
+          </a>
+          <Link
+            href={`/${locale}/hands-on`}
+            className="btn btn-outline-secondary btn-lg ms-2"
+          >
             {t("CTA.More")}
-          </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 "use client";
 
+import { brandConfig } from "@/brand/config";
 import LanguageSwitch from "@/components/LanguageSwitch";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
@@ -100,7 +101,7 @@ const NavbarComp = () => {
             <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
               <a
                 className="btn btn-primary text-light px-4 corners"
-                href="https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-ATS-Resume-Sheet.pdf?alt=media"
+                href={brandConfig.cvUrl}
                 target="_blank"
                 rel="noreferrer"
               >

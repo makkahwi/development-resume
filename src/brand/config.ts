@@ -7,4 +7,6 @@ export const brandConfig = {
   secondaryColor: "#e2e2e2",
   accentColor: "#0f2032",
   appUrl: "https://suhaib.dev",
+  cvUrl:
+    "https://firebasestorage.googleapis.com/v0/b/resume-data-8215f.appspot.com/o/Suhaib-Ahmad-ATS-Resume-Sheet.pdf?alt=media",
 };
