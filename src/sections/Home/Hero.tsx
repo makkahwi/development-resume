@@ -126,11 +126,14 @@ const HomeHeroSection = async ({
         </div>
 
         <div className={home ? "text-center" : ""}>
-          <Link href={`/${locale}#contact`} className="btn btn-primary btn-lg">
+          <Link
+            href={`/${locale}#contact`}
+            className="btn btn-primary btn-lg px-4 border-0 corners"
+          >
             {t("CTA.Main")}
           </Link>
           <a
-            className="btn btn-outline-primary btn-lg ms-2"
+            className="btn btn-secondary btn-lg ms-2 px-4 border-0 corners"
             href={brandConfig.cvUrl}
             target="_blank"
             rel="noreferrer"
@@ -139,7 +142,7 @@ const HomeHeroSection = async ({
           </a>
           <Link
             href={`/${locale}/hands-on`}
-            className="btn btn-outline-secondary btn-lg ms-2"
+            className="btn btn-secondary btn-lg ms-2 px-4 border-0 corners"
           >
             {t("CTA.More")}
           </Link>

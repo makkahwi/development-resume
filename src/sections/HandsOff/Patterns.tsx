@@ -17,7 +17,7 @@ const HandsOffPatterns = async ({ t }: { t: any }) => {
         {patterns.map((pattern, i) => (
           <span
             key={i}
-            className="badge bg-primary bg-opacity-10 text-primary rounded-pill px-4 py-3 fs-6"
+            className="badge bg-primary bg-opacity-10 text-primary px-4 py-3 fs-6 corners"
           >
             {pattern}
           </span>

@@ -93,7 +93,7 @@ const SkillCard = ({
                 {groups.map((group, index) => (
                   <span
                     key={index}
-                    className="badge bg-primary bg-opacity-10 text-primary"
+                    className="badge bg-primary bg-opacity-10 text-primary corners px-3"
                   >
                     {group}
                   </span>

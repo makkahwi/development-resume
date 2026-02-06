@@ -209,7 +209,7 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
         <a
           key={`${id}-${index}`}
           href={`#${id}`}
-          className="btn btn-dark ms-4 rounded-3 border-0 btn-sm p-2 my-2 text-decoration-none"
+          className="btn btn-dark ms-4 border-0 btn-sm p-2 my-2 text-decoration-none corners"
           data-bs-toggle="tooltip"
           data-bs-placement="right"
           title={label}

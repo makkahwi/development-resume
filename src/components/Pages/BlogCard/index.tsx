@@ -28,9 +28,7 @@ const BlogPostCard = ({
         });
 
   const formattedCategory = category
-    ? category
-        .replace(/-/g, " ")
-        .replace(/\b\w/g, (char) => char.toUpperCase())
+    ? category.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase())
     : "";
 
   return (
@@ -76,7 +74,7 @@ const BlogPostCard = ({
 
           <Link
             href={`/${locale}/blog/${slug}`}
-            className="btn btn-outline-primary btn-sm w-100 mt-auto"
+            className="btn btn-primary btn-sm w-100 mt-auto px-4 border-0 corners"
           >
             {ctaLabel}
           </Link>

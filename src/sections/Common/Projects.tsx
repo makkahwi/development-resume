@@ -56,8 +56,8 @@ const ProjectsSection = async ({
                 key={option.value}
                 href={href}
                 className={`btn btn-sm ${
-                  isActive ? "btn-primary" : "btn-outline-primary"
-                }`}
+                  isActive ? "btn-primary" : "btn-primary"
+                } px-4 border-0 corners`}
               >
                 {option.label}
               </a>

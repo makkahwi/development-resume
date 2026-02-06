@@ -13,9 +13,8 @@ const HandsOffCta = async ({ t }: { t: any }) => {
         },
         {
           label: t("Advisory.CtaSecondary"),
-
           url: "#download-cv",
-          outline: true,
+          color: "secondary",
         },
       ]}
     />

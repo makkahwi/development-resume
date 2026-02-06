@@ -61,7 +61,7 @@ const ExperienceCard = ({
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-sm btn-outline-primary"
+              className="btn btn-sm btn-primary px-4 border-0 corners"
             >
               View Employer <i className="bi bi-arrow-right ms-1" />
             </a>

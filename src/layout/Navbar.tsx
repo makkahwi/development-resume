@@ -45,7 +45,7 @@ const NavbarComp = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg py-0 px-3 px-md-5 mt-3 fixed-top bg-light shadow-sm corners mx-4">
+    <nav className="navbar navbar-expand-lg py-0 px-3 px-md-5 mt-3 fixed-top bg-light px-4 border-0 corners mx-4">
       <div className="container-fluid">
         {/* Brand */}
         <Link
@@ -100,7 +100,7 @@ const NavbarComp = () => {
             {/* CV button */}
             <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
               <a
-                className="btn btn-primary text-light px-4 corners"
+                className="btn btn-primary text-light px-4 border-0 corners"
                 href={brandConfig.cvUrl}
                 target="_blank"
                 rel="noreferrer"

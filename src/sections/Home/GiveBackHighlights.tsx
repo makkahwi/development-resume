@@ -40,7 +40,7 @@ const GiveBackHighlights = ({ t, locale }: { t: Function; locale: string }) => {
       <div className="text-center mt-4">
         <Link
           href={`/${locale}/non-profit`}
-          className="btn btn-outline-primary"
+          className="btn btn-primary px-4 border-0 corners"
         >
           {t("GiveBackHighlights.Cta")}
         </Link>

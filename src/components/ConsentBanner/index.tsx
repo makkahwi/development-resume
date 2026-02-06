@@ -43,26 +43,30 @@ const ConsentBanner = () => {
   };
 
   return (
-    <div className="position-fixed bottom-0 start-0 end-0 bg-dark text-light py-3 px-3 px-md-5 shadow-lg" style={{ zIndex: 1080 }}>
+    <div
+      className="position-fixed bottom-0 start-0 end-0 bg-dark text-light py-3 px-3 px-md-5 shadow-lg"
+      style={{ zIndex: 1080 }}
+    >
       <div className="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
         <div>
           <h2 className="h6 mb-1">Cookies & Analytics</h2>
           <p className="mb-0 small">
-            We use cookies to make this site work and to understand how it’s used.
-            You can allow analytics or continue with necessary cookies only.
+            We use cookies to make this site work and to understand how it’s
+            used. You can allow analytics or continue with necessary cookies
+            only.
           </p>
         </div>
         <div className="d-flex gap-2">
           <button
             type="button"
-            className="btn btn-outline-light btn-sm"
+            className="btn btn-light btn-sm px-4 border-0 corners"
             onClick={necessaryOnly}
           >
             Necessary only
           </button>
           <button
             type="button"
-            className="btn btn-primary btn-sm"
+            className="btn btn-primary btn-sm px-4 border-0 corners"
             onClick={acceptAll}
           >
             Allow all
@@ -71,6 +75,6 @@ const ConsentBanner = () => {
       </div>
     </div>
   );
-}
+};
 
 export default ConsentBanner;

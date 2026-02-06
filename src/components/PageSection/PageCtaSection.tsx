@@ -8,7 +8,7 @@ const PageCtaSection = ({
 }: {
   title: string;
   subtitle: string;
-  actions: { url: string; label: string; outline?: boolean }[];
+  actions: { url: string; label: string; color?: string }[];
   id?: string;
 }) => {
   return (
@@ -19,11 +19,11 @@ const PageCtaSection = ({
             <h2 className="h3 fw-bold mb-3">{title}</h2>
             <p className="text-muted mb-4">{subtitle}</p>
             <div className="d-flex flex-wrap justify-content-center gap-3">
-              {actions.map(({ url, label, outline }, i) => (
+              {actions.map(({ url, label, color }, i) => (
                 <a
                   key={i}
                   href={url}
-                  className={`btn px-4 ${outline ? "btn-outline-primary" : "btn-primary"}`}
+                  className={`btn px-4 border-0 corners btn-${color || "primary"}`}
                 >
                   {label}
                 </a>

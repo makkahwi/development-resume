@@ -59,7 +59,7 @@ const ContactForm = () => {
             <a href={url} target="_blank" rel="noreferrer">
               <button
                 type="button"
-                className="btn w-100 corners py-3 mb-4"
+                className="btn w-100 px-4 border-0 corners py-3 mb-4"
                 style={{ backgroundColor: color, color: "#ffffff" }}
               >
                 <h5>
@@ -71,7 +71,7 @@ const ContactForm = () => {
         ))}
       </div>
 
-      <div className="card border-0 shadow-sm p-4 mb-4">
+      <div className="card border-0 p-4 mb-4">
         <div className="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
           <div>
             <h3 className="h5 fw-bold mb-1">{t("Discovery.Title")}</h3>
@@ -81,7 +81,7 @@ const ContactForm = () => {
             href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ11WXpxIUv7ZmQSrHHpc5EhskFJ6_ROebTBChnDRYsMHfimOX40-KTTadUm2qH4DtYyO1957aIj"
             target="_blank"
             rel="noreferrer"
-            className="btn btn-outline-primary"
+            className="btn btn-primary px-4 border-0 corners"
           >
             {t("Discovery.Cta")}
           </a>
@@ -100,7 +100,7 @@ const ContactForm = () => {
 
             {type === "textarea" ? (
               <textarea
-                className="form-control border-0 corners mt-2"
+                className="form-control border-0 px-4 border-0 corners mt-2"
                 name={name}
                 value={formData[name as keyof typeof formData]}
                 required={required}
@@ -111,7 +111,7 @@ const ContactForm = () => {
             ) : (
               <input
                 type={type}
-                className="form-control border-0 corners mt-2"
+                className="form-control border-0 px-4 border-0 corners mt-2"
                 name={name}
                 value={formData[name as keyof typeof formData]}
                 required={required}
@@ -124,7 +124,10 @@ const ContactForm = () => {
         ))}
 
         <div className="col-12 text-start mt-4">
-          <button type="submit" className="btn btn-primary corners px-4">
+          <button
+            type="submit"
+            className="btn btn-primary px-4 border-0 corners"
+          >
             {t("Submit")}
           </button>
         </div>

@@ -37,7 +37,10 @@ const HandsOffHighlights = ({ t, locale }: { t: Function; locale: string }) => {
       </div>
 
       <div className="text-center mt-4">
-        <Link href={`/${locale}/hands-off`} className="btn btn-outline-primary">
+        <Link
+          href={`/${locale}/hands-off`}
+          className="btn btn-primary px-4 border-0 corners"
+        >
           {t("HandsOffHighlights.Cta")}
         </Link>
       </div>

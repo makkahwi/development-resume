@@ -46,7 +46,7 @@ const ProjectCard = ({
                 {technologies?.map((tech, index) => (
                   <span
                     key={index}
-                    className="badge bg-primary bg-opacity-10 text-primary"
+                    className="badge bg-primary bg-opacity-10 text-primary corners px-3 border-0"
                   >
                     {tech}
                   </span>
@@ -61,7 +61,7 @@ const ProjectCard = ({
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-outline-primary btn-sm w-100"
+                className="btn btn-primary btn-sm w-100 px-4 border-0 corners"
               >
                 {viewProjectLabel}
               </a>
