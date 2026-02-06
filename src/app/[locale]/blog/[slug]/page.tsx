@@ -1,6 +1,5 @@
 import { brandConfig } from "@/brand/config";
 import { getBlogPost } from "@/lib/data";
-
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
@@ -18,15 +17,13 @@ export const generateMetadata = async ({
   const post = await getBlogPost(locale, slug);
   const t = await getTranslations({
     locale,
-    namespace: "Meta.BlogPost",
+    namespace: "BlogPost",
   });
 
   const base = brandConfig.appUrl;
   const path = `/${locale}/blog/${slug}`;
 
-  const title = post
-    ? `${t("TitlePrefix")}${post.title}`
-    : t("TitlePrefix") + slug;
+  const title = post ? `${t("TitlePrefix")}${post.title}` : t("TitlePrefix");
 
   const description = post
     ? `${post.excerpt}${t("DescriptionSuffix")}`

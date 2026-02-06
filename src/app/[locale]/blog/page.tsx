@@ -1,6 +1,5 @@
 import { brandConfig } from "@/brand/config";
 import BlogSection from "@/sections/Common/Blog";
-
 import type { PageProps } from "@/types/base";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
@@ -33,7 +32,12 @@ const BlogPage = async ({ params }: PageProps) => {
 
   return (
     <main className="py-5">
-      <BlogSection t={t} />
+      <BlogSection
+        title={t("Title")}
+        subtitle={t("Description")}
+        locale={locale}
+        ctaLabel={t("ReadMore")}
+      />
     </main>
   );
 };

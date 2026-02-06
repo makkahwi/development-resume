@@ -2,6 +2,8 @@ interface BlogPostContent {
   text?: string;
   type: string;
   items?: string[];
+  level?: number;
+  style?: string;
 }
 
 interface BlogContentBlock {
