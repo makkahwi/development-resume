@@ -859,38 +859,6 @@
     ],
     "projects": [
       {
-        "category": "Consulting",
-        "company": "Tamarras",
-        "date": 2024,
-        "description": "string",
-        "details": [],
-        "image": "",
-        "importanceOrder": 0,
-        "location": "string",
-        "role": "string",
-        "shortTitle": "string",
-        "technologies": [],
-        "timeOrder": 0,
-        "title": "Tamarras",
-        "type": "string"
-      },
-      {
-        "category": "Consulting",
-        "company": "Cura",
-        "date": 2024,
-        "description": "string",
-        "details": [],
-        "image": "",
-        "importanceOrder": 0,
-        "location": "string",
-        "role": "string",
-        "shortTitle": "string",
-        "technologies": [],
-        "timeOrder": 0,
-        "title": "Cura",
-        "type": "string"
-      },
-      {
         "category": "Web App",
         "comingSoon": true,
         "company": "AgileTz",
@@ -1006,7 +974,7 @@
           ""
         ],
         "featured": true,
-        "image": "36.jpg",
+        "image": "10.jpg",
         "importanceOrder": 29,
         "location": "Jordan",
         "role": "Frontend Web Dev",

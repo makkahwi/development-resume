@@ -1,9 +1,11 @@
 import ContactForm from "@/components/ContactForm";
 import { contactsList } from "@/lib/data";
-import { useTranslations } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
+import Link from "next/link";
 
-const Footer = () => {
-  const t = useTranslations("Layout.Footer");
+const Footer = async () => {
+  const t = await getTranslations("Layout.Footer");
+  const locale = await getLocale();
   const year = new Date().getFullYear();
 
   return (
@@ -17,9 +19,21 @@ const Footer = () => {
 
         <h2 className="text-dark my-3 text-uppercase">{t("Title")}</h2>
 
-        <p className="text-muted mt-5 mb-2">
+        <p className="text-muted mt-4 mb-2">
           {t("AllRightsReserved")} © 2018 - {year}
         </p>
+
+        <div className="d-flex justify-content-center gap-3 my-3">
+          <Link href={`/${locale}/privacy`} className="text-muted small">
+            {t("Privacy")}
+          </Link>
+          <Link href={`/${locale}/terms`} className="text-muted small">
+            {t("Terms")}
+          </Link>
+          <Link href={`/${locale}/cookies`} className="text-muted small">
+            {t("Cookies")}
+          </Link>
+        </div>
 
         <div className="d-flex justify-content-center gap-3 my-3">
           {contactsList.map(({ color, icon, label, url, name }, i) => (

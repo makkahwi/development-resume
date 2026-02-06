@@ -12,6 +12,9 @@ const sitemap = (): MetadataRoute.Sitemap => {
     "/hands-off",
     "/non-profit",
     "/blog",
+    "/privacy",
+    "/terms",
+    "/cookies",
   ];
 
   const entries: MetadataRoute.Sitemap = [];
