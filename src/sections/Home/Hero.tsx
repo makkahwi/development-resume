@@ -120,7 +120,7 @@ const HomeHeroSection = async ({
 
           <div className="row g-4">
             {statistics.map((statistic, index) => (
-              <StatisticCard key={index} {...statistic} />
+              <StatisticCard key={index} short {...statistic} />
             ))}
           </div>
         </div>

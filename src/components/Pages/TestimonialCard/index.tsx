@@ -6,15 +6,7 @@ const TestimonialCard = ({ author, content, image, url }: TestimonialProps) => {
     <div className="card h-100 border-0 shadow-sm testimonial-card">
       <div className="card-body d-flex flex-column">
         <div className="mb-4">
-          <svg
-            className="text-primary mb-3"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-4.5-3-7-3s-7 1.75-7 3v7c0 7 4 8 7 8z" />
-          </svg>
+          <i className="fa-solid fa-quote-left text-primary mb-3 fs-2" />
           <p className="card-text lead mb-0">{content}</p>
         </div>
 

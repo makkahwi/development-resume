@@ -39,7 +39,7 @@ const LocaleLayout = async({ children, params }: Props) => {
             <Providers>{children}</Providers>
       
             {/* CTA & footer could be here later when we port CtaSection */}
-            <Footer />
+            <Footer locale={locale} />
           </main>
         </NextIntlClientProvider>
       </body>

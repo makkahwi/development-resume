@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 type PageNavigatorSection = {
   id: string;
   label: string;
@@ -8,14 +12,12 @@ type PageNavigatorProps = {
   sections?: PageNavigatorSection[];
 };
 
-const defaultSections: PageNavigatorSection[] = [
-  { id: "contact", label: "Contact", iconClass: "bi-phone" },
-];
+const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
+  const t = useTranslations("Layout.Nav");
 
-const PageNavigator = ({ sections = defaultSections }: PageNavigatorProps) => {
   const allSections = [
     ...sections,
-    { id: "contact", label: "Contact", iconClass: "bi-telephone" },
+    { id: "contact", label: t("contact"), iconClass: "bi-telephone" },
   ];
 
   return (

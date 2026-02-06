@@ -19,16 +19,18 @@ const EducationSection = async ({ t }: { t: Function }) => {
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-body text-center">
                   <div className="mb-3">
-                    <img
-                      src={
-                        process.env.NEXT_PUBLIC_STORAGE_URL +
-                        logo +
-                        "?alt=media"
-                      }
-                      alt={label}
-                      className="img-fluid"
-                      style={{ maxHeight: "80px", objectFit: "contain" }}
-                    />
+                    <a href={url} target="_blank" rel="noreferrer">
+                      <img
+                        src={
+                          process.env.NEXT_PUBLIC_STORAGE_URL +
+                          logo +
+                          "?alt=media"
+                        }
+                        alt={label}
+                        className="img-fluid"
+                        style={{ maxHeight: "80px", objectFit: "contain" }}
+                      />
+                    </a>
                   </div>
                   <h4 className="h6 fw-bold mb-2">{school}</h4>
                   <p className="text-muted small mb-0">{description}</p>

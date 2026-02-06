@@ -8,10 +8,16 @@ const ProjectCard = ({
   url,
   image,
   short = false,
-}: ProjectProps & { short?: boolean }) => {
+  technologiesLabel,
+  viewProjectLabel,
+}: ProjectProps & {
+  short?: boolean;
+  technologiesLabel: string;
+  viewProjectLabel: string;
+}) => {
   return (
     <div className="col-md-6 col-lg-4">
-      <div className="card h-100 border-0 shadow-sm">
+      <div className="card bg-light h-100 border-0 shadow-sm">
         {image && image.length > 0 && (
           <Image
             src={process.env.NEXT_PUBLIC_STORAGE_URL + image + "?alt=media"}
@@ -33,7 +39,7 @@ const ProjectCard = ({
             <div className="mb-3">
               {!short && (
                 <h6 className="text-uppercase small fw-semibold text-secondary mb-2">
-                  Technologies
+                  {technologiesLabel}
                 </h6>
               )}
               <div className="d-flex flex-wrap gap-2">
@@ -57,7 +63,7 @@ const ProjectCard = ({
                 rel="noopener noreferrer"
                 className="btn btn-outline-primary btn-sm w-100"
               >
-                View Project →
+                {viewProjectLabel}
               </a>
             </div>
           )}

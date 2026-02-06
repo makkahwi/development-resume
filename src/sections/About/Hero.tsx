@@ -42,9 +42,9 @@ const AboutHeroSection = async ({
               ))}
             </div>
 
-            <div className="card border-0 shadow-sm">
+            <div className="card bg-light border-0 shadow-sm">
               <div className="card-body p-4">
-                <h3 className="h5 fw-bold mb-4">At a Glance</h3>
+                <h3 className="h5 fw-bold mb-4">{t("AtGlanceTitle")}</h3>
                 <div className="row g-3">
                   {atGlance.map((item, index) => (
                     <div key={index} className="col-12 col-md-6">

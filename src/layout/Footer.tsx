@@ -1,11 +1,11 @@
 import ContactForm from "@/components/ContactForm";
 import { contactsList } from "@/lib/data";
-import { getLocale, getTranslations } from "next-intl/server";
+import { normalizeFaIcon } from "@/lib/icons";
+import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
-const Footer = async () => {
-  const t = await getTranslations("Layout.Footer");
-  const locale = await getLocale();
+const Footer = async ({ locale }: { locale: string }) => {
+  const t = await getTranslations({ locale, namespace: "Layout.Footer" });
   const year = new Date().getFullYear();
 
   return (
@@ -44,7 +44,7 @@ const Footer = async () => {
               style={{ color }}
               key={i}
             >
-              <i className={`fa-solid ${icon}`} />
+              <i className={normalizeFaIcon(icon)} />
             </a>
           ))}
         </div>

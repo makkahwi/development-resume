@@ -21,8 +21,17 @@ const ProjectsSection = async ({
   activeCategory?: string;
   basePath?: string;
 }) => {
-  const filterOptions = ["All", "Web App", "Landing Page"];
-  const selectedCategory = filterOptions.includes(activeCategory || "")
+  const filterOptions = showFilters
+    ? [
+        { label: t("Projects.Filters.All"), value: "All" },
+        { label: t("Projects.Filters.WebApp"), value: "Web App" },
+        { label: t("Projects.Filters.LandingPage"), value: "Landing Page" },
+      ]
+    : [];
+
+  const selectedCategory = filterOptions.some(
+    (option) => option.value === activeCategory,
+  )
     ? activeCategory
     : "All";
 
@@ -36,21 +45,21 @@ const ProjectsSection = async ({
       {showFilters && basePath && (
         <div className="d-flex flex-wrap gap-2 justify-content-center mb-4">
           {filterOptions.map((option) => {
-            const isActive = option === selectedCategory;
+            const isActive = option.value === selectedCategory;
             const href =
-              option === "All"
+              option.value === "All"
                 ? basePath
-                : `${basePath}?category=${encodeURIComponent(option)}`;
+                : `${basePath}?category=${encodeURIComponent(option.value)}`;
 
             return (
               <a
-                key={option}
+                key={option.value}
                 href={href}
                 className={`btn btn-sm ${
                   isActive ? "btn-primary" : "btn-outline-primary"
                 }`}
               >
-                {option}
+                {option.label}
               </a>
             );
           })}
@@ -76,7 +85,13 @@ const ProjectsSection = async ({
               : project.category === selectedCategory,
           )
           .map((project, index) => (
-            <ProjectCard key={index} short={short} {...project} />
+            <ProjectCard
+              key={index}
+              short={short}
+              technologiesLabel={t("Projects.TechnologiesLabel")}
+              viewProjectLabel={t("Projects.ViewProject")}
+              {...project}
+            />
           ))}
       </div>
     </PageSection>

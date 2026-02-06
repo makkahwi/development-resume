@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import PageSection from "../PageSection";
 import { contactsList } from "@/lib/data";
+import { normalizeFaIcon } from "@/lib/icons";
 
 const ContactForm = () => {
   const t = useTranslations("ContactForm");
@@ -55,19 +56,38 @@ const ContactForm = () => {
       <div className="row">
         {contactsList.map(({ color, icon, label, url, name }, index) => (
           <div className="col-6 col-md-3" key={index}>
-            <button
-              type="button"
-              className="btn w-100 corners py-3 mb-4"
-              onClick={() => window.open(url, "_blank")}
-              style={{ backgroundColor: color, color: "#ffffff" }}
-            >
-              <h5>
-                <i className={`fa-solid ${icon}`} /> {label}
-              </h5>
-            </button>
+            <a href={url} target="_blank" rel="noreferrer">
+              <button
+                type="button"
+                className="btn w-100 corners py-3 mb-4"
+                style={{ backgroundColor: color, color: "#ffffff" }}
+              >
+                <h5>
+                  <i className={normalizeFaIcon(icon)} /> {label}
+                </h5>
+              </button>
+            </a>
           </div>
         ))}
       </div>
+
+      <div className="card border-0 shadow-sm p-4 mb-4">
+        <div className="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+          <div>
+            <h3 className="h5 fw-bold mb-1">{t("Discovery.Title")}</h3>
+            <p className="text-muted mb-0">{t("Discovery.Subtitle")}</p>
+          </div>
+          <a
+            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ11WXpxIUv7ZmQSrHHpc5EhskFJ6_ROebTBChnDRYsMHfimOX40-KTTadUm2qH4DtYyO1957aIj"
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-outline-primary"
+          >
+            {t("Discovery.Cta")}
+          </a>
+        </div>
+      </div>
+
       <form className="row mt-5">
         {inputs.map(({ label, type, name, required, fullWidth }) => (
           <div

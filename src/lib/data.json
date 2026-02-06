@@ -2033,7 +2033,7 @@
         "groups": [
           "Backend"
         ],
-        "icon": "fa-brand fa-nodeJs",
+        "icon": "fa-brand fa-node-js",
         "label": "Express.Js",
         "rate": 5,
         "url": "https://expressjs.com/"
@@ -2043,7 +2043,7 @@
         "groups": [
           "Backend"
         ],
-        "icon": "fa-brand fa-nodeJs",
+        "icon": "fa-brand fa-node-js",
         "label": "Nest.Js",
         "rate": 4,
         "subSkills": [
@@ -2235,7 +2235,7 @@
         "groups": [
           "Frontend"
         ],
-        "icon": "fa-solid fa-broadcastTower",
+        "icon": "fa-solid fa-tower-broadcast",
         "label": "jQuery",
         "rate": 3,
         "url": "https://jquery.com/"
@@ -2291,7 +2291,7 @@
         "groups": [
           "Frontend"
         ],
-        "icon": "fa-brand fa-css3Alt",
+        "icon": "fa-brand fa-css3-alt",
         "label": "CSS",
         "rate": 5,
         "url": "https://www.w3.org/TR/CSS/#css"
@@ -2321,7 +2321,7 @@
         "groups": [
           "Methodologies"
         ],
-        "icon": "fa-solid fa-syncAlt",
+        "icon": "fa-solid fa-rotate",
         "label": "Agile",
         "rate": 5,
         "subSkills": [
@@ -2335,7 +2335,7 @@
         "groups": [
           "Methodologies"
         ],
-        "icon": "fa-solid fa-syncAlt",
+        "icon": "fa-solid fa-rotate",
         "label": "SCRUM",
         "rate": 5,
         "subSkills": [
@@ -2391,9 +2391,9 @@
       },
       {
         "highlight": true,
-        "image": "kharfan.jpeg",
-        "name": "Ahmad Alkharfan",
-        "url": "https://www.linkedin.com/in/ahmad-alkharfan"
+        "image": "mazen.jpeg",
+        "name": "Mazen Adel",
+        "url": "https://www.linkedin.com/in/mazen-adel-bab141258"
       },
       {
         "highlight": true,
@@ -2403,9 +2403,9 @@
       },
       {
         "highlight": true,
-        "image": "mazen.jpeg",
-        "name": "Mazen Adel",
-        "url": "https://www.linkedin.com/in/mazen-adel-bab141258"
+        "image": "kharfan.jpeg",
+        "name": "Ahmad Alkharfan",
+        "url": "https://www.linkedin.com/in/ahmad-alkharfan"
       },
       {
         "image": "",
@@ -2415,16 +2415,6 @@
       {
         "image": "",
         "name": "Zaid Jarrar",
-        "url": ""
-      },
-      {
-        "image": "",
-        "name": "Mazen Adel",
-        "url": ""
-      },
-      {
-        "image": "",
-        "name": "Suhaib Murshed",
         "url": ""
       },
       {
@@ -2440,16 +2430,6 @@
       {
         "image": "",
         "name": "Ghaida Momani",
-        "url": ""
-      },
-      {
-        "image": "",
-        "name": "Ahmad Kharfan",
-        "url": ""
-      },
-      {
-        "image": "",
-        "name": "Mohammed Ba Khadher",
         "url": ""
       },
       {

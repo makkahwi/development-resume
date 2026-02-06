@@ -9,14 +9,27 @@ const SkillCard = ({
   subSkills,
   url,
   short = false,
-}: SkillsProps & { short?: boolean }) => {
+  categoryLabel,
+}: SkillsProps & { short?: boolean; categoryLabel: string }) => {
+  const normalizedIcon = (() => {
+    const value = icon?.replace("fa-brand", "fa-brands") || "";
+    const tokens = value.split(" ").filter(Boolean);
+    const hasValidToken = tokens.some(
+      (token) => token.startsWith("fa-") && token.length > 4,
+    );
+    return hasValidToken ? value : "fa-solid fa-code";
+  })();
+
   if (short) {
     return (
       <div className="col-sm-6 col-md-4 col-lg-3">
         <div className="card h-100 border-0 shadow-sm">
           <div className="card-body text-center">
             <div className="mb-3">
-              <i className={`${icon} text-primary fa-2x`} />
+              <i
+                className={`${normalizedIcon} fa-2x`}
+                style={{ color: `#${color}` }}
+              />
             </div>
 
             <h4 className="h6 fw-bold mb-0">
@@ -40,7 +53,10 @@ const SkillCard = ({
       <div className="card h-100 border-0 shadow-sm">
         <div className="card-body">
           <div className="text-center mb-3">
-            <i className={`${icon} text-primary fa-2x`} />
+            <i
+              className={`${normalizedIcon} fa-2x`}
+              style={{ color: `#${color}` }}
+            />
           </div>
 
           <h4 className="h6 fw-bold text-center mb-3">
@@ -70,7 +86,7 @@ const SkillCard = ({
           {groups && groups.length > 0 && (
             <div className="mb-3">
               <p className="text-uppercase small fw-semibold text-secondary mb-2">
-                Category
+                {categoryLabel}
               </p>
 
               <div className="d-flex flex-wrap gap-2">

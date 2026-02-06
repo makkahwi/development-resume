@@ -1,13 +1,7 @@
 import PageSection from "@/components/PageSection";
 import Link from "next/link";
 
-const HandsOffHighlights = ({
-  t,
-  locale,
-}: {
-  t: Function;
-  locale: string;
-}) => {
+const HandsOffHighlights = ({ t, locale }: { t: Function; locale: string }) => {
   const items = [
     {
       title: t("HandsOffHighlights.Items.Decisions.Title"),
@@ -28,7 +22,6 @@ const HandsOffHighlights = ({
       title={t("HandsOffHighlights.Title")}
       subtitle={t("HandsOffHighlights.Subtitle")}
       id="hands-off"
-      color="light"
     >
       <div className="row g-4">
         {items.map((item) => (
@@ -44,10 +37,7 @@ const HandsOffHighlights = ({
       </div>
 
       <div className="text-center mt-4">
-        <Link
-          href={`/${locale}/hands-off`}
-          className="btn btn-outline-primary"
-        >
+        <Link href={`/${locale}/hands-off`} className="btn btn-outline-primary">
           {t("HandsOffHighlights.Cta")}
         </Link>
       </div>

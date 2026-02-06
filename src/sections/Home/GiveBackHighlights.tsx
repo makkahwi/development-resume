@@ -1,13 +1,7 @@
 import PageSection from "@/components/PageSection";
 import Link from "next/link";
 
-const GiveBackHighlights = ({
-  t,
-  locale,
-}: {
-  t: Function;
-  locale: string;
-}) => {
+const GiveBackHighlights = ({ t, locale }: { t: Function; locale: string }) => {
   const items = [
     {
       title: t("GiveBackHighlights.Items.Mentoring.Title"),
@@ -28,6 +22,7 @@ const GiveBackHighlights = ({
       title={t("GiveBackHighlights.Title")}
       subtitle={t("GiveBackHighlights.Subtitle")}
       id="give-back"
+      color="light"
     >
       <div className="row g-4">
         {items.map((item) => (
