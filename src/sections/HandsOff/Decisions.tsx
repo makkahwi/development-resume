@@ -13,7 +13,7 @@ const HandsOffDecisions = async ({ t }: { t: any }) => {
   ];
 
   return (
-    <PageSection title={t("Decisions.Title")}>
+    <PageSection title={t("Decisions.Title")} id="decisions">
       <p className="text-center text-muted mb-5">{t("Decisions.Intro")}</p>
 
       <div className="row g-3">

@@ -13,7 +13,7 @@ const OpenSourceSection = ({ t }: { t: any }) => {
   ];
 
   return (
-    <PageSection noBg>
+    <PageSection noBg id="community">
       <div className="container">
         <div className="text-center mb-5">
           <h2 className="h3 fw-bold">{t("Community.Title")}</h2>

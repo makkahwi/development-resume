@@ -4,13 +4,15 @@ const PageCtaSection = ({
   title,
   subtitle,
   actions,
+  id,
 }: {
   title: string;
   subtitle: string;
   actions: { url: string; label: string; outline?: boolean }[];
+  id?: string;
 }) => {
   return (
-    <PageSection color="light" noBg>
+    <PageSection color="light" noBg id={id}>
       <div className="container">
         <div className="card border-0 shadow-sm">
           <div className="card-body text-center py-5">

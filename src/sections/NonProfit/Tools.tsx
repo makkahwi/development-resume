@@ -4,7 +4,7 @@ const ToolsSection = ({ t }: { t: any }) => {
   const freeTools = ["ToolOne", "ToolTwo", "ToolThree"];
 
   return (
-    <PageSection color="light" noBg>
+    <PageSection color="light" noBg id="tools">
       <div className="container">
         <div className="text-center mb-5">
           <h2 className="h3 fw-bold mb-3">{t("FreeTools.Title")}</h2>

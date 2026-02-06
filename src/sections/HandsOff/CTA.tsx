@@ -5,6 +5,7 @@ const HandsOffCta = async ({ t }: { t: any }) => {
     <PageCtaSection
       title={""}
       subtitle={t("Advisory.CtaText")}
+      id="hands-off-cta"
       actions={[
         {
           label: t("Advisory.CtaPrimary"),

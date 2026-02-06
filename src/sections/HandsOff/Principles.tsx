@@ -21,7 +21,7 @@ const HandsOffPrinciples = async ({ t }: { t: any }) => {
   ];
 
   return (
-    <PageSection title={t("Principles.Title")} color="light">
+    <PageSection title={t("Principles.Title")} color="light" id="principles">
       <div className="row g-4">
         {principles.map(({ title, body }, i) => (
           <div className="col-md-6" key={i}>

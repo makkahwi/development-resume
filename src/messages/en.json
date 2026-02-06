@@ -21,9 +21,15 @@
       "Architecture": "Architecture & Codebase Setup",
       "Conclusion": "My focus today is on roles where engineering meets product impact and long-term maintainability.",
       "Development": "Senior / Lead Full-Stack Development",
-      "Mentorship": "Mentorship & Developer Training"
+      "Mentorship": "Mentorship & Developer Training",
+      "Subtitle": "What I'm looking for in my next role",
+      "Title": "Open to New Opportunities"
     },
     "Personal": {
+      "Groups": {
+        "Hobbies": "Hobbies & Interests",
+        "Learning": "Learning Philosophy"
+      },
       "Hobbies": {
         "BuildingSideProjects": "Building side software projects",
         "Chess": "Chess",
@@ -591,5 +597,47 @@
       "Title": "Trainees and mentoring impact"
     },
     "Title": "Give Back – Non-profit Work & Free Products"
+  },
+  "PageNav": {
+    "About": {
+      "Education": "Education",
+      "OpenTo": "Open to",
+      "Personal": "Personal"
+    },
+    "Common": {
+      "Blog": "Blog",
+      "Contact": "Contact",
+      "Hero": "Hero",
+      "Projects": "Projects",
+      "Skills": "Skills"
+    },
+    "HandsOff": {
+      "Advisory": "Advisory",
+      "Cta": "CTA",
+      "Decisions": "Decisions",
+      "Mentoring": "Mentoring",
+      "Patterns": "Patterns",
+      "Principles": "Principles",
+      "RealityMap": "Reality Map",
+      "Roles": "Roles",
+      "Snapshots": "Snapshots"
+    },
+    "HandsOn": {
+      "Experiences": "Experiences",
+      "Highlights": "Highlights",
+      "Timeline": "Timeline"
+    },
+    "Home": {
+      "Clients": "Clients",
+      "GiveBack": "Give Back",
+      "HandsOff": "Hands-off",
+      "Testimonials": "Testimonials"
+    },
+    "NonProfit": {
+      "Community": "Community",
+      "Cta": "CTA",
+      "Mentoring": "Mentoring",
+      "Tools": "Tools"
+    }
   }
 }

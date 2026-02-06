@@ -30,7 +30,7 @@ const HandsOffRealityMap = async ({ t }: { t: any }) => {
   ];
 
   return (
-    <PageSection title={t("RealityMap.Title")} color="light">
+    <PageSection title={t("RealityMap.Title")} color="light" id="reality-map">
       <div className="card border-0 shadow-sm">
         <div className="card-body p-0">
           <div className="table-responsive table-bordered text-center">

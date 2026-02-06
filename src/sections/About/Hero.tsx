@@ -18,7 +18,7 @@ const AboutHeroSection = async ({
   ];
 
   return (
-    <section className="py-5 mb-4">
+    <section className="py-5 mb-4" id="hero">
       <div className="container">
         {short ? (
           <div className="text-center">

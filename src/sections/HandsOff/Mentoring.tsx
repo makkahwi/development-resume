@@ -17,7 +17,7 @@ const HandsOffMentoring = async ({ t }: { t: any }) => {
   ];
 
   return (
-    <PageSection title={t("Mentoring.Title")} color="light">
+    <PageSection title={t("Mentoring.Title")} color="light" id="mentoring">
       <div className="card border-0 shadow-sm">
         <div className="card-body p-4">
           <div className="position-relative">

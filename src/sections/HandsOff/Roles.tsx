@@ -16,7 +16,7 @@ const HandsOffRoles = async ({ t }: { t: any }) => {
     },
   ];
   return (
-    <PageSection title={t("Roles.Title")} color="light">
+    <PageSection title={t("Roles.Title")} color="light" id="roles">
       <div className="row g-4">
         {roles.map(({ title, body }, i) => (
           <div className="col-md-4" key={i}>

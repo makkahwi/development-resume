@@ -10,7 +10,7 @@ const HandsOffPatterns = async ({ t }: { t: any }) => {
   ];
 
   return (
-    <PageSection title={t("Patterns.Title")}>
+    <PageSection title={t("Patterns.Title")} id="patterns">
       <p className="text-muted text-center mb-5">{t("Patterns.Intro")}</p>
 
       <div className="d-flex flex-wrap justify-content-center gap-3">

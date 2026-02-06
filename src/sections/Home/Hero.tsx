@@ -83,7 +83,7 @@ const HomeHeroSection = async ({
   const statistics = await getStatisticsList();
 
   return (
-    <section className={home ? "py-5 mb-4" : "py-3"}>
+    <section className={home ? "py-5 mb-4" : "py-3"} id="hero">
       <div className="container">
         <header className={home ? "text-center mb-5" : "mb-4"}>
           <div className={home ? "mb-4" : "mb-3"}>

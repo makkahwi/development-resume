@@ -17,7 +17,7 @@ const HandsOffSnapshots = async ({ t }: { t: any }) => {
   ];
 
   return (
-    <PageSection title={t("Snapshots.Title")}>
+    <PageSection title={t("Snapshots.Title")} id="snapshots">
       <div className="row g-4">
         {snapshots.map(({ title, body }, i) => (
           <div className="col-md-4" key={i}>

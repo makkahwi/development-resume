@@ -10,8 +10,8 @@ const OpenToSection = async ({ t }: { t: Function }) => {
 
   return (
     <PageSection
-      title="Open to New Opportunities"
-      subtitle="What I'm looking for in my next role"
+      title={t("OpenTo.Title")}
+      subtitle={t("OpenTo.Subtitle")}
       id="openTo"
       color="light"
     >

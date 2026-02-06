@@ -21,9 +21,15 @@
       "Architecture": "تصميم المعمارية وإعداد قاعدة الكود",
       "Conclusion": "تركيزي اليوم هو على الأدوار التي تجمع بين الهندسة والتأثير على المنتج والاستدامة طويلة الأمد.",
       "Development": "تطوير متقدم/قيادي متكامل",
-      "Mentorship": "الإرشاد وتدريب المطورين"
+      "Mentorship": "الإرشاد وتدريب المطورين",
+      "Subtitle": "ما أبحث عنه في دوري القادم",
+      "Title": "منفتح على فرص جديدة"
     },
     "Personal": {
+      "Groups": {
+        "Hobbies": "الهوايات والاهتمامات",
+        "Learning": "فلسفة التعلم"
+      },
       "Hobbies": {
         "BuildingSideProjects": "بناء مشاريع برمجية جانبية",
         "Chess": "الشطرنج",
@@ -591,5 +597,47 @@
       "Title": "المتدربون وأثر الإرشاد"
     },
     "Title": "العطاء والعمل غير الربحي"
+  },
+  "PageNav": {
+    "About": {
+      "Education": "التعليم",
+      "OpenTo": "منفتح على",
+      "Personal": "الجانب الشخصي"
+    },
+    "Common": {
+      "Blog": "المدونة",
+      "Contact": "تواصل",
+      "Hero": "االرئيسية",
+      "Projects": "المشاريع",
+      "Skills": "المهارات"
+    },
+    "HandsOff": {
+      "Advisory": "الاستشارات",
+      "Cta": "دعوة للتواصل",
+      "Decisions": "القرارات",
+      "Mentoring": "الإرشاد",
+      "Patterns": "الأنماط",
+      "Principles": "المبادئ",
+      "RealityMap": "خريطة الواقع",
+      "Roles": "الأدوار",
+      "Snapshots": "لقطات"
+    },
+    "HandsOn": {
+      "Experiences": "الخبرات",
+      "Highlights": "الملخص",
+      "Timeline": "الخط الزمني"
+    },
+    "Home": {
+      "Clients": "العملاء",
+      "GiveBack": "العطاء",
+      "HandsOff": "العمل الإشرافي",
+      "Testimonials": "الشهادات"
+    },
+    "NonProfit": {
+      "Community": "المجتمع",
+      "Cta": "دعوة للتواصل",
+      "Mentoring": "الإرشاد",
+      "Tools": "الأدوات"
+    }
   }
 }

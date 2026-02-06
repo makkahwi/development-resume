@@ -8,7 +8,7 @@ const PageHeroSection = async ({
   subtitle: string;
 }) => {
   return (
-    <section className="py-5 mb-4">
+    <section className="py-5 mb-4" id="hero">
       <div className="container">
         <div className="text-center">
           <span className="badge bg-primary bg-opacity-10 text-primary mb-3">

@@ -25,7 +25,7 @@ const HandsOffAdvisory = async ({ t }: { t: any }) => {
   ];
 
   return (
-    <PageSection title={t("Advisory.Title")}>
+    <PageSection title={t("Advisory.Title")} id="advisory">
       <p className="text-muted text-center mb-5">{t("Advisory.Intro")}</p>
       <div className="row g-4 mb-5">
         {modes.map(({ title, body }, i) => (

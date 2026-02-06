@@ -3,7 +3,7 @@ import PageSection from "@/components/PageSection";
 const PersonalSection = async ({ t }: { t: Function }) => {
   const personalParts = [
     {
-      name: "Hobbies & Interests",
+      name: t("Personal.Groups.Hobbies"),
       items: [
         t("Personal.Hobbies.Chess"),
         t("Personal.Hobbies.Swimming"),
@@ -13,7 +13,7 @@ const PersonalSection = async ({ t }: { t: Function }) => {
       ],
     },
     {
-      name: "Learning Philosophy",
+      name: t("Personal.Groups.Learning"),
       items: [
         t("Personal.LearningPhilosophy.SelfLearning"),
         t("Personal.LearningPhilosophy.OneOnOneCoaching"),
