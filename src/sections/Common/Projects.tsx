@@ -25,9 +25,15 @@ const ProjectsSection = async ({
       <div className="row g-4">
         {projectsList
           .filter(
-            ({ category, openSource, foc }) =>
+            ({ category, openSource, foc, featured }) =>
               ["Web App", "Landing Page"].includes(category) &&
-              (focOnly ? foc : openSourceOnly ? openSource : !openSource),
+              (short
+                ? featured
+                : focOnly
+                  ? foc
+                  : openSourceOnly
+                    ? openSource
+                    : !openSource),
           )
           .map((project, index) => (
             <ProjectCard key={index} short={short} {...project} />

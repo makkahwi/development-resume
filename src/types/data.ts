@@ -77,6 +77,7 @@ export interface ProjectProps {
   image: string;
   importanceOrder: number;
   url?: string;
+  featured?: boolean;
   location?: string;
   role?: string;
   shortTitle?: string;
