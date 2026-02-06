@@ -31,36 +31,35 @@ const HandsOffRealityMap = async ({ t }: { t: any }) => {
 
   return (
     <PageSection title={t("RealityMap.Title")} color="light" id="reality-map">
-      <div className="card border-0 shadow-sm">
-        <div className="card-body p-0">
-          <div className="table-responsive table-bordered text-center">
-            <table className="table table-hover mb-0 align-middle">
-              <thead className="table-light">
-                <tr>
-                  <th className="fw-semibold py-4">
-                    {t("RealityMap.Headers.Expectation")}
-                  </th>
-                  <th className="fw-semibold py-4">
-                    {t("RealityMap.Headers.Reality")}
-                  </th>
-                  <th className="fw-semibold py-4">
-                    {t("RealityMap.Headers.HowINavigate")}
-                  </th>
-                </tr>
-              </thead>
-
-              <tbody>
-                {rows.map((row, i) => (
-                  <tr key={i}>
-                    <td className="py-3">{row.expectation}</td>
-                    <td className="py-3">{row.reality}</td>
-                    <td className="py-3">{row.navigation}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+      <div className="row g-4">
+        {rows.map((row, i) => (
+          <div className="col-12" key={i}>
+            <div className="card border-0 shadow-sm corners">
+              <div className="card-body">
+                <div className="row g-4">
+                  <div className="col-md-4">
+                    <span className="badge bg-primary bg-opacity-10 text-primary mb-2">
+                      {t("RealityMap.Headers.Expectation")}
+                    </span>
+                    <p className="text-muted mb-0">{row.expectation}</p>
+                  </div>
+                  <div className="col-md-4">
+                    <span className="badge bg-dark bg-opacity-10 text-dark mb-2">
+                      {t("RealityMap.Headers.Reality")}
+                    </span>
+                    <p className="text-muted mb-0">{row.reality}</p>
+                  </div>
+                  <div className="col-md-4">
+                    <span className="badge bg-success bg-opacity-10 text-success mb-2">
+                      {t("RealityMap.Headers.HowINavigate")}
+                    </span>
+                    <p className="text-muted mb-0">{row.navigation}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </PageSection>
   );

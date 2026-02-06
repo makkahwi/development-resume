@@ -14,7 +14,11 @@ const HandsOffDecisions = async ({ t }: { t: any }) => {
 
   return (
     <PageSection title={t("Decisions.Title")} id="decisions">
-      <p className="text-center text-muted mb-5">{t("Decisions.Intro")}</p>
+      <div className="card bg-light border-0 shadow-sm corners mb-5">
+        <div className="card-body text-center">
+          <p className="text-muted mb-0">{t("Decisions.Intro")}</p>
+        </div>
+      </div>
 
       <div className="row g-3">
         {decisions.map((decision, i) => (
