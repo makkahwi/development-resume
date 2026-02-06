@@ -19,7 +19,7 @@ const HandsOffDecisions = async ({ t }: { t: any }) => {
       <div className="row g-3">
         {decisions.map((decision, i) => (
           <div className="col-sm-6 col-lg-3" key={i}>
-            <div className="card bg-light h-100 border-0 shadow-sm">
+            <div className="card bg-light h-100 border-0 corners px-3">
               <div className="card-body d-flex align-items-center justify-content-center text-center">
                 <p className="mb-0 fw-semibold">{decision}</p>
               </div>

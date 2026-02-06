@@ -1,9 +1,15 @@
 import { TestimonialProps } from "@/types/data";
 import Image from "next/image";
 
-const TestimonialCard = ({ author, content, image, url }: TestimonialProps) => {
+const TestimonialCard = ({
+  author,
+  content,
+  image,
+  url,
+  color,
+}: TestimonialProps & { color?: string }) => {
   return (
-    <div className="card h-100 border-0 testimonial-card">
+    <div className={`card h-100 border-0 testimonial-card bg-${color}`}>
       <div className="card-body d-flex flex-column">
         <div className="mb-4">
           <i className="fa-solid fa-quote-left text-primary mb-3 fs-2" />

@@ -21,7 +21,7 @@ const OpenSourceSection = ({ t }: { t: any }) => {
         <div className="row g-4">
           {contents.map(({ title, body }, i) => (
             <div className="col-md-6" key={i}>
-              <div className="card bg-light h-100 border-0 shadow-sm">
+              <div className="card bg-light h-100 border-0 corners px-3">
                 <div className="card-body">
                   <h3 className="h5 fw-bold mb-3">{title}</h3>
                   <p className="text-muted mb-0">{body}</p>

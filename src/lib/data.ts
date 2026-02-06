@@ -96,9 +96,8 @@ const renderBlogContent = (blocks: BlogProps["versions"]["en"]["long"]) => {
       const type = block.type;
 
       if (type === "heading") {
-        const level = block.level && block.level >= 2 && block.level <= 4
-          ? block.level
-          : 2;
+        const level =
+          block.level && block.level >= 2 && block.level <= 4 ? block.level : 2;
         const text = escapeHtml(block.text || "");
         return `<h${level}>${text}</h${level}>`;
       }
@@ -148,14 +147,13 @@ export const getBlogPosts = (locale: string): BlogPostView[] => {
     })
     .sort(
       (a, b) =>
-        new Date(b.publishedAt).getTime() -
-        new Date(a.publishedAt).getTime()
+        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
     );
 };
 
 export const getBlogPost = async (
   locale: string,
-  slug: string
+  slug: string,
 ): Promise<BlogPostView | null> => {
   const posts = getBlogPosts(locale);
   const match = posts.find((post) => post.slug === slug);

@@ -33,9 +33,11 @@ const OpenToSection = async ({ t }: { t: Function }) => {
         ))}
       </div>
 
-      <div className="card border-0 bg-primary">
+      <div className="card border-0 bg-primary corners px-4">
         <div className="card-body text-center py-4">
-          <p className="lead mb-0 text-white">{t("OpenTo.Conclusion")}</p>
+          <p className="lead mb-0 text-white fw-bold">
+            {t("OpenTo.Conclusion")}
+          </p>
         </div>
       </div>
     </PageSection>
