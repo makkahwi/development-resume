@@ -43,9 +43,13 @@
   "Blog": {
     "Description": "Articles and insights about web development, architecture and tech entrepreneurship.",
     "Headline": "Blog",
+    "ReadMore": "Read Article",
     "Title": "Blog – Technical Articles & Insights"
   },
   "BlogPost": {
+    "backToBlog": "Back to Blog",
+    "publishedOn": "Published on",
+    "tagsLabel": "Tags",
     "DescriptionSuffix": " – Article by Suhaib Ahmad.",
     "TitlePrefix": "Blog – "
   },
@@ -320,6 +324,44 @@
       "Subtitle": "The significant technical skills I possess",
       "Title": "Skills"
     },
+    "HandsOffHighlights": {
+      "Title": "Hands-off Highlights",
+      "Subtitle": "Leadership, decisions, and advisory beyond writing code",
+      "Cta": "Explore Hands-off Work",
+      "Items": {
+        "Decisions": {
+          "Title": "Product & technical decisions",
+          "Body": "I help define MVP scope, data models, and architectural boundaries that scale beyond version one."
+        },
+        "Advisory": {
+          "Title": "Startup advisory",
+          "Body": "Bridge product, UX, and engineering tradeoffs so teams ship faster with fewer regrets."
+        },
+        "Mentoring": {
+          "Title": "Team mentoring",
+          "Body": "Enable junior and mid-level engineers with reviews, pairing, and clear growth paths."
+        }
+      }
+    },
+    "GiveBackHighlights": {
+      "Title": "Give Back",
+      "Subtitle": "Mentoring, open-source, and free tools for the community",
+      "Cta": "See Give Back Work",
+      "Items": {
+        "Mentoring": {
+          "Title": "Mentoring & training",
+          "Body": "Practical guidance for new developers through project-based learning and honest feedback."
+        },
+        "OpenSource": {
+          "Title": "Open-source support",
+          "Body": "Starter projects and real-world examples to help others build with confidence."
+        },
+        "Tools": {
+          "Title": "Free tools & resources",
+          "Body": "ATS-friendly CV help and learning paths based on real mentoring experience."
+        }
+      }
+    },
     "Subtitle": "Senior Full-Stack Developer & Technical Advisor",
     "Testimonials": {
       "Subtitle": "What others say about me",
@@ -330,6 +372,9 @@
   "Layout": {
     "Footer": {
       "AllRightsReserved": "All Rights Reserved",
+      "Privacy": "Privacy Policy",
+      "Terms": "Terms",
+      "Cookies": "Cookies Policy",
       "Title": "Suhaib Ahmad"
     },
     "Nav": {
@@ -435,5 +480,96 @@
       "Title": "Trainees and mentoring impact"
     },
     "Title": "Give Back – Non-profit Work & Free Products"
+  },
+  "Legal": {
+    "Common": {
+      "Badge": "Legal",
+      "LastUpdated": "Last updated"
+    },
+    "Privacy": {
+      "Title": "Privacy Policy",
+      "Subtitle": "How this site collects, uses, and protects information.",
+      "Updated": "February 6, 2026",
+      "Sections": {
+        "Overview": {
+          "Title": "Overview",
+          "Body": "This site collects limited information to operate, improve content, and respond to inquiries."
+        },
+        "Data": {
+          "Title": "Data we collect",
+          "Body": "Contact details you submit and basic analytics data (when consent is granted)."
+        },
+        "Usage": {
+          "Title": "How we use data",
+          "Body": "To respond to messages, maintain the website, and understand overall usage trends."
+        },
+        "Sharing": {
+          "Title": "Data sharing",
+          "Body": "Data is not sold. Analytics data may be processed by trusted providers when consent is granted."
+        },
+        "Choices": {
+          "Title": "Your choices",
+          "Body": "You can disable analytics cookies and contact me to remove your submitted information."
+        },
+        "Contact": {
+          "Title": "Contact",
+          "Body": "Reach out through the contact form for any privacy questions."
+        }
+      }
+    },
+    "Terms": {
+      "Title": "Terms of Use",
+      "Subtitle": "Rules and expectations for using this website.",
+      "Updated": "February 6, 2026",
+      "Sections": {
+        "Overview": {
+          "Title": "Overview",
+          "Body": "By using this site, you agree to these terms and to use the content responsibly."
+        },
+        "Use": {
+          "Title": "Acceptable use",
+          "Body": "Do not misuse the site, attempt to access restricted systems, or disrupt availability."
+        },
+        "Content": {
+          "Title": "Content ownership",
+          "Body": "Unless stated otherwise, content on this site belongs to Suhaib Ahmad."
+        },
+        "Liability": {
+          "Title": "Limitation of liability",
+          "Body": "This site is provided as-is without warranties; use it at your own risk."
+        },
+        "Changes": {
+          "Title": "Changes",
+          "Body": "Terms may be updated periodically to reflect changes to the site or legal requirements."
+        },
+        "Contact": {
+          "Title": "Contact",
+          "Body": "Use the contact form for questions about these terms."
+        }
+      }
+    },
+    "Cookies": {
+      "Title": "Cookies Policy",
+      "Subtitle": "How cookies are used on this website.",
+      "Updated": "February 6, 2026",
+      "Sections": {
+        "Overview": {
+          "Title": "Overview",
+          "Body": "This site uses cookies to enable core functionality and optional analytics."
+        },
+        "Necessary": {
+          "Title": "Necessary cookies",
+          "Body": "Required for basic site operation, including remembering consent choices."
+        },
+        "Analytics": {
+          "Title": "Analytics cookies",
+          "Body": "Enabled only with consent to understand usage and improve performance."
+        },
+        "Manage": {
+          "Title": "Managing cookies",
+          "Body": "You can update your consent at any time by clearing site cookies or using the consent banner."
+        }
+      }
+    }
   }
 }
