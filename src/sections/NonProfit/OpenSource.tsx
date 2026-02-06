@@ -23,7 +23,7 @@ const OpenSourceSection = ({ t }: { t: any }) => {
         <div className="row g-4">
           {contents.map(({ title, body, icon }, i) => (
             <div className="col-md-6" key={i}>
-              <div className="card bg-light h-100 border-0 corners px-4">
+              <div className="card bg-light h-100 border-0 shadow-sm">
                 <div className="card-body">
                   <div className="d-flex align-items-start gap-3 mb-3">
                     <div
@@ -48,4 +48,3 @@ const OpenSourceSection = ({ t }: { t: any }) => {
 };
 
 export default OpenSourceSection;
-

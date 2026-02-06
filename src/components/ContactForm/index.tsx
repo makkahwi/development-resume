@@ -100,7 +100,7 @@ const ContactForm = () => {
 
             {type === "textarea" ? (
               <textarea
-                className="form-control border-0 px-4 border-0 corners mt-2"
+                className="form-control border-0 px-4 shadow-sm"
                 name={name}
                 value={formData[name as keyof typeof formData]}
                 required={required}
@@ -111,7 +111,7 @@ const ContactForm = () => {
             ) : (
               <input
                 type={type}
-                className="form-control border-0 px-4 border-0 corners mt-2"
+                className="form-control border-0 px-4 shadow-sm"
                 name={name}
                 value={formData[name as keyof typeof formData]}
                 required={required}

@@ -29,7 +29,7 @@ const HandsOffHighlights = ({ t, locale }: { t: Function; locale: string }) => {
       <div className="row g-4">
         {items.map((item) => (
           <div className="col-12 col-md-4" key={item.title}>
-            <div className="card bg-light h-100 border-0 px-3 corners">
+            <div className="card bg-light h-100 border-0 shadow-sm">
               <div className="card-body">
                 <div className="d-flex align-items-start gap-3 mb-3">
                   <div
@@ -65,4 +65,3 @@ const HandsOffHighlights = ({ t, locale }: { t: Function; locale: string }) => {
 };
 
 export default HandsOffHighlights;
-

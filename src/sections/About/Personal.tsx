@@ -31,7 +31,7 @@ const PersonalSection = async ({ t }: { t: Function }) => {
       <div className="row g-4">
         {personalParts.map(({ name, items }, index) => (
           <div key={index} className="col-md-6">
-            <div className="card bg-light h-100 border-0 corners px-4">
+            <div className="card bg-light h-100 border-0 shadow-sm">
               <div className="card-body">
                 <div className="d-flex align-items-center justify-content-between mb-4">
                   <h3 className="h5 fw-bold mb-0">{name}</h3>

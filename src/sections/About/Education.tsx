@@ -16,7 +16,7 @@ const EducationSection = async ({ t }: { t: Function }) => {
             index,
           ) => (
             <div key={index} className="col-md-6">
-              <div className="card h-100 border-0 corners px-3">
+              <div className="card h-100 border-0 shadow-sm">
                 <div className="card-body">
                   <div className="mb-3">
                     <a href={url} target="_blank" rel="noreferrer">

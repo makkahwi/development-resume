@@ -18,7 +18,7 @@ const HighlightsSection = async ({ t }: { t: Function }) => {
       <div className="row g-4">
         {contents.map((content, index) => (
           <div key={index} className="col-md-6 col-lg-4">
-            <div className="card bg-light h-100 border-0 corners px-3">
+            <div className="card bg-light h-100 border-0 shadow-sm">
               <div className="card-body">
                 <div className="d-flex align-items-center justify-content-between mb-3">
                   <span className="badge bg-primary bg-opacity-10 text-primary">
@@ -37,4 +37,3 @@ const HighlightsSection = async ({ t }: { t: Function }) => {
 };
 
 export default HighlightsSection;
-

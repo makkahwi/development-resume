@@ -24,7 +24,7 @@ const HandsOffSnapshots = async ({ t }: { t: any }) => {
       <div className="row g-4">
         {snapshots.map(({ title, body, icon }, i) => (
           <div className="col-md-4" key={i}>
-            <div className="card bg-light h-100 border-0 corners">
+            <div className="card bg-light h-100 shadow-sm border-0">
               <div className="card-body">
                 <div
                   className="bg-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
@@ -44,4 +44,3 @@ const HandsOffSnapshots = async ({ t }: { t: any }) => {
 };
 
 export default HandsOffSnapshots;
-

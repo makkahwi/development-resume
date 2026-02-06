@@ -23,7 +23,7 @@ const HandsOffRoles = async ({ t }: { t: any }) => {
       <div className="row g-4">
         {roles.map(({ title, body, icon }, i) => (
           <div className="col-md-4" key={i}>
-            <div className="card h-100 border-0 corners px-3">
+            <div className="card h-100 border-0 shadow-sm">
               <div className="card-body">
                 <div
                   className="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
@@ -43,4 +43,3 @@ const HandsOffRoles = async ({ t }: { t: any }) => {
 };
 
 export default HandsOffRoles;
-

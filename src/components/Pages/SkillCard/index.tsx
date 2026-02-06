@@ -22,7 +22,7 @@ const SkillCard = ({
 
   if (short) {
     return (
-      <div className="col-sm-6 col-md-4 col-lg-3">
+      <div className="col-sm-6 col-md-4 col-lg-2">
         <div className="card h-100 border-0 shadow-sm">
           <div className="card-body text-center">
             <div className="mb-3">

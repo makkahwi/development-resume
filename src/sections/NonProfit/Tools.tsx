@@ -17,7 +17,7 @@ const ToolsSection = ({ t }: { t: any }) => {
         <div className="row g-4">
           {freeTools.map(({ key, icon }) => (
             <div className="col-md-4" key={key}>
-              <div className="card h-100 border-0 corners bg-white px-3">
+              <div className="card h-100 border-0 shadow-sm bg-white">
                 <div className="card-body">
                   <div className="d-flex align-items-start gap-3 mb-3">
                     <div
@@ -52,4 +52,3 @@ const ToolsSection = ({ t }: { t: any }) => {
 };
 
 export default ToolsSection;
-
