@@ -53,7 +53,9 @@ const AboutHeroSection = async ({
           ))}
         </div>
 
-        <div className="card bg-white border-0 shadow-sm">
+        <div
+          className={`card ${short ? "bg-white" : "bg-light"} border-0 shadow-sm`}
+        >
           <div className="card-body p-4">
             <h3 className="h5 fw-bold mb-4">{t("AtGlanceTitle")}</h3>
             <div className="row g-3">

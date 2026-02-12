@@ -9,7 +9,7 @@ const StatisticCard = async ({
   return (
     <div className="col-6 col-md-4 col-lg-2">
       <div
-        className={`card h-100 border-0 ${short ? "bg-white corners" : "bg-light corners"}`}
+        className={`card h-100 border-0 ${short ? "bg-white corners" : "bg-light"}`}
       >
         <div className={`card-body text-center ${short ? "p-3" : ""}`}>
           <h2

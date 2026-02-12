@@ -18,14 +18,20 @@ const SkillsSection = async ({
       color={short ? "white" : "light"}
     >
       <div className="row g-4">
-        {skillsList.map((skill, index) => (
-          <SkillCard
-            key={index}
-            short={short}
-            categoryLabel={t("Skills.CategoryLabel")}
-            {...skill}
-          />
-        ))}
+        {skillsList
+          .filter((skill) =>
+            short
+              ? !["ElasticSearch", "MicroServices"].includes(skill.label)
+              : true,
+          )
+          .map((skill, index) => (
+            <SkillCard
+              key={index}
+              short={short}
+              categoryLabel={t("Skills.CategoryLabel")}
+              {...skill}
+            />
+          ))}
       </div>
     </PageSection>
   );

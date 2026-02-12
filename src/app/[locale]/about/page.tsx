@@ -1,8 +1,6 @@
 import { brandConfig } from "@/brand/config";
 import EducationSection from "@/sections/About/Education";
 import AboutHeroSection from "@/sections/About/Hero";
-import OpenToSection from "@/sections/About/OpenTo";
-import PersonalSection from "@/sections/About/Personal";
 
 import type { PageProps } from "@/types/base";
 import type { Metadata } from "next";
@@ -41,9 +39,7 @@ const AboutPage = async ({ params }: PageProps) => {
 
       <EducationSection t={t} />
 
-      <PersonalSection t={t} />
-
-      <OpenToSection t={t} />
+      {/* <OpenToSection t={t} /> */}
     </main>
   );
 };

@@ -2049,16 +2049,6 @@
         "url": "https://www.djangoproject.com/"
       },
       {
-        "color": "00A7D0",
-        "groups": [
-          "Backend"
-        ],
-        "icon": "fa-brand fa-golang",
-        "label": "Go / GoLang",
-        "rate": 1,
-        "url": "https://go.dev/"
-      },
-      {
         "color": "21759b",
         "groups": [
           "Frontend"

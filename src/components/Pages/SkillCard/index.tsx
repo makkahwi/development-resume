@@ -22,7 +22,7 @@ const SkillCard = ({
 
   if (short) {
     return (
-      <div className="col-sm-6 col-md-4 col-lg-2">
+      <div className="col-4 col-sm-3 col-xl-1">
         <div className="d-flex align-items-center gap-2">
           <a
             href={url}
@@ -34,7 +34,9 @@ const SkillCard = ({
               className={`${normalizedIcon} fa-lg`}
               style={{ color: `#${color}` }}
             />{" "}
-            <span className="text-dark small">{label}</span>
+            <span className="text-dark" style={{ fontSize: "0.75rem" }}>
+              {label}
+            </span>
           </a>
         </div>
       </div>

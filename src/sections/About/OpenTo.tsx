@@ -13,7 +13,6 @@ const OpenToSection = async ({ t }: { t: Function }) => {
       title={t("OpenTo.Title")}
       subtitle={t("OpenTo.Subtitle")}
       id="openTo"
-      color="light"
     >
       <div className="row g-4 mb-5">
         {openToList.map((item, itemIndex) => (
@@ -45,4 +44,3 @@ const OpenToSection = async ({ t }: { t: Function }) => {
 };
 
 export default OpenToSection;
-
