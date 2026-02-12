@@ -8,6 +8,7 @@ import GiveBackHighlights from "@/sections/Home/GiveBackHighlights";
 import HandsOffHighlights from "@/sections/Home/HandsOffHighlights";
 import HomeHeroSection from "@/sections/Home/Hero";
 import TestimonialsSection from "@/sections/Home/Testimonials";
+
 import type { PageProps } from "@/types/base";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
@@ -43,9 +44,8 @@ const HomeLocalePage = async ({ params }: PageProps) => {
 
   return (
     <main>
-      <HomeHeroSection t={tHome} home locale={locale} tStats={tStats} />
-      <ClientsSection t={tHome} home />
-      <AboutHeroSection t={tAbout} tStats={tStats} short />
+      <HomeHeroSection t={tHome} locale={locale} tStats={tStats} />
+      <ClientsSection t={tHome} />
       <ProjectsSection t={tHome} short />
       <SkillsSection t={tHome} short />
       <HandsOffHighlights t={tHome} locale={locale} />
@@ -63,4 +63,3 @@ const HomeLocalePage = async ({ params }: PageProps) => {
 };
 
 export default HomeLocalePage;
-
