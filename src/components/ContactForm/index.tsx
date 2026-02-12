@@ -53,39 +53,42 @@ const ContactForm = () => {
       id="contact"
       card
     >
-      <div className="row">
+      <div className="bg-white rounded p-4 mb-5">
+        <div className="row align-items-center">
+          <div className="col-md-8 mb-3 mb-md-0">
+            <h3 className="h6 mb-1">
+              <i className="fa-solid fa-calendar-check text-primary me-2" />
+              {t("Discovery.Title")}
+            </h3>
+            <p className="text-muted small mb-0">{t("Discovery.Subtitle")}</p>
+          </div>
+          <div className="col-md-4 text-md-end">
+            <a
+              href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ11WXpxIUv7ZmQSrHHpc5EhskFJ6_ROebTBChnDRYsMHfimOX40-KTTadUm2qH4DtYyO1957aIj"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary px-4 border-0 corners"
+            >
+              {t("Discovery.Cta")}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="row g-3 mb-5">
         {contactsList.map(({ color, icon, label, url, name }, index) => (
           <div className="col-6 col-md-3" key={index}>
-            <a href={url} target="_blank" rel="noreferrer">
-              <button
-                type="button"
-                className="btn w-100 px-4 border-0 corners py-3 mb-4"
-                style={{ backgroundColor: color, color: "#ffffff" }}
-              >
-                <h5>
-                  <i className={normalizeFaIcon(icon)} /> {label}
-                </h5>
-              </button>
+            <a
+              href={url}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-outline-primary w-100 border-0 corners py-3 text-white text-decoration-none"
+              style={{ backgroundColor: color }}
+            >
+              <i className={normalizeFaIcon(icon)} /> {label}
             </a>
           </div>
         ))}
-      </div>
-
-      <div className="card border-0 p-4 mb-4">
-        <div className="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
-          <div>
-            <h3 className="h5 fw-bold mb-1">{t("Discovery.Title")}</h3>
-            <p className="text-muted mb-0">{t("Discovery.Subtitle")}</p>
-          </div>
-          <a
-            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ11WXpxIUv7ZmQSrHHpc5EhskFJ6_ROebTBChnDRYsMHfimOX40-KTTadUm2qH4DtYyO1957aIj"
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn-primary px-4 border-0 corners"
-          >
-            {t("Discovery.Cta")}
-          </a>
-        </div>
       </div>
 
       <form className="row mt-5">

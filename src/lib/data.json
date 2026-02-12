@@ -69,39 +69,11 @@
         "url": "https://wasap.my/962788424973"
       },
       {
-        "color": "#0088CC",
-        "icon": "fa-brand fa-telegram",
-        "label": "Let's Tele-chat",
-        "name": "Telegram",
-        "url": "https://t.me/makkahwi"
-      },
-      {
-        "color": "#001F3F",
-        "icon": "fa-solid fa-phone",
-        "label": "Call IF NECESSARY",
-        "name": "Phone",
-        "url": "tel:+962788424973"
-      },
-      {
         "color": "#006400",
         "icon": "fa-solid fa-envelope",
         "label": "Inbox Awaits You",
         "name": "Email",
         "url": "mailto:SuhaibAhmadAi@hotmail.com"
-      },
-      {
-        "color": "#1877F2",
-        "icon": "fa-brand fa-facebook",
-        "label": "Let's Chat Forever",
-        "name": "Facebook",
-        "url": "https://facebook.com/makkahwi"
-      },
-      {
-        "color": "#E4405F",
-        "icon": "fa-brand fa-instagram",
-        "label": "Capture Life",
-        "name": "Instagram",
-        "url": "https://instagram.com/makkahwi"
       }
     ],
     "education": [
