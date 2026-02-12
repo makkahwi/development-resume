@@ -14,15 +14,12 @@ const TestimonialsSection = async ({
       title={t("Testimonials.Title")}
       subtitle={t("Testimonials.Subtitle")}
       id="testimonials"
-      color={home ? "white" : "light"}
+      color="light"
     >
       <div className="row g-4">
         {testimonialsList.map((testimonial, index) => (
           <div key={index} className="col-12 col-md-6 col-lg-6">
-            <TestimonialCard
-              color={home ? "light" : "white"}
-              {...testimonial}
-            />
+            <TestimonialCard color="white" {...testimonial} />
           </div>
         ))}
       </div>

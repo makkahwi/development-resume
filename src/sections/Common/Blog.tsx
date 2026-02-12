@@ -19,12 +19,7 @@ const BlogSection = async ({
   const visiblePosts = short ? posts.slice(0, 3) : posts;
 
   return (
-    <PageSection
-      title={title}
-      subtitle={subtitle}
-      id="blog"
-      color={short ? "light" : undefined}
-    >
+    <PageSection title={title} subtitle={subtitle} id="blog">
       <div className="row g-4">
         {visiblePosts.map((blogPost) => (
           <BlogPostCard

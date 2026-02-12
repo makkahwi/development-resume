@@ -30,11 +30,11 @@ const GiveBackHighlights = ({ t, locale }: { t: Function; locale: string }) => {
       <div className="row g-4">
         {items.map((item) => (
           <div className="col-12 col-md-4" key={item.title}>
-            <div className="card h-100 border-0 p-3 shadow-sm">
+            <div className="card bg-white h-100 border-0 p-3 shadow-sm">
               <div className="card-body">
                 <div className="d-flex align-items-start gap-3 mb-3">
                   <div
-                    className="bg-white border rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
+                    className="bg-light border rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
                     style={{ width: "44px", height: "44px" }}
                   >
                     <i className={`${item.icon} text-primary fs-5`} />

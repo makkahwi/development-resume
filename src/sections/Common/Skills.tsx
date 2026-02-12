@@ -14,7 +14,8 @@ const SkillsSection = async ({
       title={t("Skills.Title")}
       subtitle={t("Skills.Subtitle")}
       id="skills"
-      color="light"
+      noBg={short}
+      color={short ? "white" : "light"}
     >
       <div className="row g-4">
         {skillsList.map((skill, index) => (

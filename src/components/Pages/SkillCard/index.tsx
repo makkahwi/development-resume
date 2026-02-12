@@ -23,26 +23,19 @@ const SkillCard = ({
   if (short) {
     return (
       <div className="col-sm-6 col-md-4 col-lg-2">
-        <div className="card h-100 border-0 shadow-sm">
-          <div className="card-body text-center">
-            <div className="mb-3">
-              <i
-                className={`${normalizedIcon} fa-2x`}
-                style={{ color: `#${color}` }}
-              />
-            </div>
-
-            <h4 className="h6 fw-bold mb-0">
-              <a
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-decoration-none text-dark"
-              >
-                {label}
-              </a>
-            </h4>
-          </div>
+        <div className="d-flex align-items-center gap-2">
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-decoration-none"
+          >
+            <i
+              className={`${normalizedIcon} fa-lg`}
+              style={{ color: `#${color}` }}
+            />{" "}
+            <span className="text-dark small">{label}</span>
+          </a>
         </div>
       </div>
     );

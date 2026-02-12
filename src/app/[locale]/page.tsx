@@ -48,9 +48,8 @@ const HomeLocalePage = async ({ params }: PageProps) => {
       <ClientsSection t={tHome} />
       <AboutHeroSection t={tAbout} tStats={tStats} short />
       <ProjectsSection t={tHome} short />
-      <SkillsSection t={tHome} short />
       <HandsOffHighlights t={tHome} locale={locale} />
-      <GiveBackHighlights t={tHome} locale={locale} />
+      <SkillsSection t={tHome} short />
       <TestimonialsSection t={tHome} home />
       <BlogSection
         title={tHome("Blog.Title")}

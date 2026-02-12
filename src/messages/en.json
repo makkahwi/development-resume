@@ -9,7 +9,7 @@
       "Sectors": "Worked across EdTech, ERP & SaaS products",
       "Specialization": "Specialized in React, Next.js, NestJS"
     },
-    "AtGlanceTitle": "At a Glance",
+    "AtGlanceTitle": "Me, At a Glance",
     "Description": "Background, education and soft skills of Suhaib.",
     "Education": {
       "Subtitle": "Formal education and certifications",
@@ -388,8 +388,8 @@
     },
     "Skills": {
       "CategoryLabel": "Category",
-      "Subtitle": "The significant technical skills I possess",
-      "Title": "Skills"
+      "Subtitle": "The significant skills I possess",
+      "Title": "Technical Skills"
     },
     "Subtitle": "Build your next app or software — clean, scalable, and fast.",
     "Testimonials": {
