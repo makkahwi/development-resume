@@ -8,6 +8,7 @@ interface props {
   card?: boolean;
   noBg?: boolean;
   bigPadding?: boolean;
+  noPadding?: boolean;
   bg2?: boolean;
   id?: string;
 }
@@ -54,6 +55,7 @@ const PageSection = ({
   card = false,
   noBg = false,
   bigPadding = false,
+  noPadding = false,
   id = "",
   ...rest
 }: props) => {
@@ -90,23 +92,27 @@ const PageSection = ({
     <div
       className={`bg-${color}`}
       style={
-        noBg
+        noPadding
           ? {
-              padding: "7.5vh 0",
+              padding: 0,
             }
-          : bigPadding
+          : noBg
             ? {
-                padding: "17.5vh 0",
+                padding: "7.5vh 0",
               }
-            : {
-                padding: "17.5vh 0",
-                minHeight: "70vh",
-                background: `url('/images/${BgPicker()}.png')`,
-                backgroundPositionY: "102.5%",
-                backgroundPositionX: "7.55%",
-                backgroundSize: "350px auto",
-                backgroundRepeat: "no-repeat",
-              }
+            : bigPadding
+              ? {
+                  padding: "17.5vh 0",
+                }
+              : {
+                  padding: "17.5vh 0",
+                  minHeight: "70vh",
+                  background: `url('/images/${BgPicker()}.png')`,
+                  backgroundPositionY: "102.5%",
+                  backgroundPositionX: "7.55%",
+                  backgroundSize: "350px auto",
+                  backgroundRepeat: "no-repeat",
+                }
       }
       id={id}
       {...rest}

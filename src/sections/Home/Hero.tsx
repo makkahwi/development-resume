@@ -49,81 +49,72 @@ const getStatisticsList = async (
 
 const HomeHeroSection = async ({
   t,
-  home,
   locale,
   tStats,
 }: {
   t: Function;
-  home?: boolean;
   locale: string;
   tStats: (key: string) => string;
 }) => {
   const statistics = await getStatisticsList(tStats);
 
   return (
-    <section className={home ? "py-5 mb-4" : "py-3"} id="hero">
+    <section className="py-5" id="hero">
       <div className="container">
-        <header className={home ? "text-center mb-5" : "mb-4"}>
-          <div className={home ? "mb-4" : "mb-3"}>
+        <div className="row align-items-center g-4">
+          <div className="col-12 col-md-6 text-center">
             <Image
               src={
                 process.env.NEXT_PUBLIC_STORAGE_URL +
-                "profile.jpg" +
+                "profile.png" +
                 "?alt=media"
               }
               alt="Logo"
-              width={home ? 180 : 150}
-              height={home ? 180 : 150}
-              className="rounded-circle shadow"
+              width={250}
+              height={250}
+              className="mb-3"
             />
+            <h1 className="h2 fw-normal mb-0">{t("Title")}</h1>
           </div>
-          <h1 className={home ? "display-4 fw-bold mb-3" : "mb-3"}>
-            {t("Title")}
-          </h1>
-          <p
-            className={home ? "lead fs-4 text-muted mx-auto" : "lead"}
-            style={home ? { maxWidth: "700px" } : {}}
-          >
-            {t("Subtitle")}
-          </p>
-        </header>
 
-        <div className={home ? "mb-5" : "mb-4"}>
-          <p
-            className={home ? "lead text-center mx-auto mb-5" : "lead mb-4"}
-            style={home ? { maxWidth: "800px" } : {}}
-          >
-            {t("Description")}
-          </p>
+          <div className="col-12 col-md-6">
+            <p className="text-muted mb-3" style={{ fontSize: "1rem" }}>
+              {t("Subtitle")}
+            </p>
 
-          <div className="row g-4">
-            {statistics.map((statistic, index) => (
-              <StatisticCard key={index} short {...statistic} />
-            ))}
+            <p className="mb-4" style={{ fontSize: "0.875rem", color: "#999" }}>
+              {t("Description")}
+            </p>
+
+            <div className="row g-3 mb-4">
+              {statistics.map((statistic, index) => (
+                <StatisticCard key={index} short {...statistic} />
+              ))}
+            </div>
+
+            <div>
+              <Link
+                href={`/${locale}#contact`}
+                className="btn btn-primary px-5 border-0 corners shadow-sm"
+              >
+                {t("CTA.Main")}
+              </Link>
+              <a
+                className="btn btn-secondary ms-2 px-4 border-0 corners"
+                href={brandConfig.cvUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {t("CTA.Secondary")}
+              </a>
+              <Link
+                href={`/${locale}/hands-on`}
+                className="btn btn-secondary ms-2 px-4 border-0 corners"
+              >
+                {t("CTA.More")}
+              </Link>
+            </div>
           </div>
-        </div>
-
-        <div className={home ? "text-center" : ""}>
-          <Link
-            href={`/${locale}#contact`}
-            className="btn btn-primary btn-lg px-4 border-0 corners"
-          >
-            {t("CTA.Main")}
-          </Link>
-          <a
-            className="btn btn-secondary btn-lg ms-2 px-4 border-0 corners"
-            href={brandConfig.cvUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {t("CTA.Secondary")}
-          </a>
-          <Link
-            href={`/${locale}/hands-on`}
-            className="btn btn-secondary btn-lg ms-2 px-4 border-0 corners"
-          >
-            {t("CTA.More")}
-          </Link>
         </div>
       </div>
     </section>
