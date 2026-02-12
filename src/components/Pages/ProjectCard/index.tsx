@@ -55,7 +55,7 @@ const ProjectCard = ({
             </div>
           )}
 
-          {url && (
+          {!short && url && (
             <div className="mt-auto pt-3 border-top">
               <a
                 href={url}
