@@ -555,7 +555,7 @@
       {
         "image": "capitalcloud.png",
         "label": "Capital Cloud",
-        "prominent": true,
+        "prominent": false,
         "url": "https://capitalcloud.sa/"
       },
       {
@@ -597,7 +597,7 @@
       {
         "image": "noor.png",
         "label": "Noor Training & Consultancy",
-        "prominent": false,
+        "prominent": true,
         "url": "https://noorkayyali.com/"
       },
       {
@@ -973,7 +973,7 @@
         "details": [
           ""
         ],
-        "featured": true,
+        "featured": false,
         "image": "10.jpg",
         "importanceOrder": 29,
         "location": "Jordan",
@@ -1139,7 +1139,7 @@
           "Worked closely with the client’s media and education teams to deliver an intuitive, responsive platform.",
           "Developed video-based course browsing, lesson tracking, and user authentication systems."
         ],
-        "featured": true,
+        "featured": false,
         "image": "21.jpg",
         "importanceOrder": 26,
         "location": "Jordan",
@@ -1199,7 +1199,7 @@
           "Created QR-scanning features and dashboards to visualize product movement.",
           "Led refactoring of the frontend into modular, reusable components using React.js."
         ],
-        "featured": true,
+        "featured": false,
         "image": "11.jpg",
         "importanceOrder": 24,
         "location": "Malaysia",

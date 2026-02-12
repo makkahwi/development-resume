@@ -1,5 +1,5 @@
 export const brandConfig = {
-  siteName: "Suhaib Ahmad",
+  siteName: "Suhaib",
   siteTagline: "Senior Full-Stack Developer & Technical Advisor",
   siteDescription:
     "Portfolio and resume website of Suhaib Ahmad, a senior full-stack developer, technical advisor, and founder.",

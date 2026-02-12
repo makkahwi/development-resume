@@ -1,4 +1,5 @@
 import StatisticCard from "@/components/Pages/StatisticCard";
+import PageSection from "@/components/PageSection";
 import { buildStatisticsList } from "@/lib/data";
 
 const AboutHeroSection = async ({
@@ -28,12 +29,10 @@ const AboutHeroSection = async ({
   ];
 
   return (
-    <section className="py-5 mb-4" id="hero">
+    <PageSection color={short ? "light" : undefined} noBg id="hero">
       <div className="container">
         {short ? (
-          <div className="text-center">
-            <p className="lead text-muted">{t("About")}</p>
-          </div>
+          ""
         ) : (
           <>
             <div className="text-center mb-5">
@@ -45,41 +44,41 @@ const AboutHeroSection = async ({
                 {t("About")}
               </p>
             </div>
-
-            <div className="row g-4 mb-5">
-              {buildStatisticsList(tStats).map((statistic, index) => (
-                <StatisticCard key={index} {...statistic} />
-              ))}
-            </div>
-
-            <div className="card bg-light border-0 shadow-sm">
-              <div className="card-body p-4">
-                <h3 className="h5 fw-bold mb-4">{t("AtGlanceTitle")}</h3>
-                <div className="row g-3">
-                  {atGlance.map((item, index) => (
-                    <div key={index} className="col-12 col-md-6">
-                      <div className="d-flex align-items-start">
-                        <div
-                          className="bg-white border rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3"
-                          style={{ width: "36px", height: "36px" }}
-                        >
-                          <i
-                            className={`${atGlanceIcons[index % atGlanceIcons.length]} text-primary`}
-                          />
-                        </div>
-                        <div>
-                          <p className="mb-0 fw-semibold">{item}</p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
           </>
         )}
+
+        <div className="row g-4 mb-5">
+          {buildStatisticsList(tStats).map((statistic, index) => (
+            <StatisticCard key={index} short={short} {...statistic} />
+          ))}
+        </div>
+
+        <div className="card bg-white border-0 shadow-sm">
+          <div className="card-body p-4">
+            <h3 className="h5 fw-bold mb-4">{t("AtGlanceTitle")}</h3>
+            <div className="row g-3">
+              {atGlance.map((item, index) => (
+                <div key={index} className="col-12 col-md-6">
+                  <div className="d-flex align-items-start">
+                    <div
+                      className="bg-light border rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3"
+                      style={{ width: "36px", height: "36px" }}
+                    >
+                      <i
+                        className={`${atGlanceIcons[index % atGlanceIcons.length]} text-primary`}
+                      />
+                    </div>
+                    <div>
+                      <p className="mb-0 fw-semibold">{item}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </PageSection>
   );
 };
 

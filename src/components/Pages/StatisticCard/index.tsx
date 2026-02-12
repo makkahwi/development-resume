@@ -9,17 +9,17 @@ const StatisticCard = async ({
   return (
     <div className="col-6 col-md-4 col-lg-2">
       <div
-        className={`card h-100 ${short ? "border-0 bg-transparent" : "bg-light border-0 corners"}`}
+        className={`card h-100 border-0 ${short ? "bg-white corners" : "bg-light corners"}`}
       >
-        <div className={`card-body text-center ${short ? "p-2" : ""}`}>
+        <div className={`card-body text-center ${short ? "p-3" : ""}`}>
           <h2
-            className={`${short ? "h5 mb-0 fw-normal" : "display-6 fw-bold mb-2"} ${short ? "text-muted" : "text-primary"}`}
+            className={`${short ? "h4 mb-1 fw-semibold" : "display-6 fw-bold mb-2"} text-primary`}
           >
             {count}
           </h2>
           <p
-            className={`mb-0 ${short ? "text-secondary" : "small fw-semibold"}`}
-            style={short ? { fontSize: "0.75rem" } : {}}
+            className={`mb-0 ${short ? "text-primary" : "small fw-semibold"}`}
+            style={short ? { fontSize: "0.8rem" } : {}}
           >
             {label}
           </p>

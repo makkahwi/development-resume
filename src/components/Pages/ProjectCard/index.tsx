@@ -43,14 +43,16 @@ const ProjectCard = ({
                 </h6>
               )}
               <div className="d-flex flex-wrap gap-2">
-                {technologies?.map((tech, index) => (
-                  <span
-                    key={index}
-                    className="badge bg-primary bg-opacity-10 text-primary corners px-3 border-0"
-                  >
-                    {tech}
-                  </span>
-                ))}
+                {technologies
+                  ?.filter((_, i) => (short ? i < 4 : true))
+                  .map((tech, index) => (
+                    <span
+                      key={index}
+                      className="badge bg-primary bg-opacity-10 text-primary corners px-3 border-0"
+                    >
+                      {tech}
+                    </span>
+                  ))}
               </div>
             </div>
           )}

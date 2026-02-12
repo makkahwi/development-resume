@@ -3,7 +3,7 @@ import { clientsList } from "@/lib/data";
 
 const ClientsSection = async ({ t }: { t: Function }) => {
   return (
-    <PageSection id="clients" noPadding color="light">
+    <PageSection id="clients" noPadding>
       <div className="row g-1 g-lg-3 g-xl-1 justify-content-center align-items-center">
         {clientsList
           .filter(

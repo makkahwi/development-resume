@@ -50,7 +50,7 @@ const NavbarComp = () => {
         {/* Brand */}
         <Link
           href={`/${locale}`}
-          className="navbar-brand text-decoration-none text-uppercase d-flex align-items-center gap-2"
+          className="navbar-brand text-decoration-none d-flex align-items-center gap-2"
         >
           <img src="/images/LogoC.png" width={50} alt="Logo" />
           <span className="text-primary fw-bold">{t("Title")}</span>

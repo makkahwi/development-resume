@@ -2,7 +2,7 @@
   "About": {
     "About": "I’m a senior full-stack developer with 10+ years in software engineering, specializing in JavaScript/TypeScript ecosystems and scalable web platforms.",
     "AtGlance": {
-      "Environments": "Startup + SME + NGO experience",
+      "Environments": "Startups & SME experience",
       "Experience": "10+ years in software engineering",
       "Languages": "Fluent in English & Arabic",
       "Locations": "Based in Jordan (GMT+3), after a relocation of 10 years in Malaysia.",
@@ -10,7 +10,7 @@
       "Specialization": "Specialized in React, Next.js, NestJS"
     },
     "AtGlanceTitle": "At a Glance",
-    "Description": "Background, education and soft skills of Suhaib Ahmad.",
+    "Description": "Background, education and soft skills of Suhaib.",
     "Education": {
       "Subtitle": "Formal education and certifications",
       "Title": "Education"
@@ -45,7 +45,7 @@
       "Subtitle": "A few personal details about me",
       "Title": "Personal"
     },
-    "Title": "About – Suhaib Ahmad"
+    "Title": "About – Suhaib"
   },
   "Blog": {
     "Description": "Articles and insights about web development, architecture and tech entrepreneurship.",
@@ -54,7 +54,7 @@
     "Title": "Blog – Technical Articles & Insights"
   },
   "BlogPost": {
-    "DescriptionSuffix": " – Article by Suhaib Ahmad.",
+    "DescriptionSuffix": " – Article by Suhaib.",
     "TitlePrefix": "Blog – ",
     "backToBlog": "Back to Blog",
     "publishedOn": "Published on",
@@ -247,7 +247,7 @@
     "Title": "Hands-off Work – Leadership & Technical Direction"
   },
   "HandsOn": {
-    "Description": "Overview of Suhaib Ahmad's hands-on experience, projects and technical skills.",
+    "Description": "Overview of Suhaib's hands-on experience, projects and technical skills.",
     "Experiences": {
       "Subtitle": "Work Experiences",
       "Title": "Experiences",
@@ -324,11 +324,13 @@
   },
   "Home": {
     "About": "I’m a Jordan-based senior software engineer with 10+ years of experience building scalable, maintainable, and product-driven web platforms. I’ve grown from frontend foundations into full-stack execution and technical leadership — balancing clean code, system architecture, and user-centric design. My current focus revolves around JavaScript/TypeScript ecosystems, with hands-on depth in React, Next.js, NestJS, and Node backends. Most of my work has been with fast-moving startups, but I’ve also delivered for SMEs and larger organizations across EdTech, SaaS, and internal tooling domains. Beyond coding, I contribute to architectural planning, mentor developers, collaborate with product teams, and help early companies turn ideas into reliable software. Curiosity, clarity, and collaborative problem-solving drive my approach to engineering.",
+    "Badge": "Top 5 Developers ALWAYS",
     "Blog": {
       "Subtitle": "What I have in my mind",
       "Title": "Blog"
     },
     "CTA": {
+      "LearnMore": "Learn More",
       "Main": "Work With Me",
       "More": "Explore Projects",
       "Secondary": "Download Resume"
@@ -337,7 +339,7 @@
       "Subtitle": "Some of the most well-known clients I worked with",
       "Title": "Prominent Clients"
     },
-    "Description": "Building scalable web platforms, guiding engineering decisions, and turning early-stage products into production-ready software.",
+    "Description": "10+ years shipping production-ready web platforms. End-to-end execution, clean architecture, and fast delivery.",
     "GiveBackHighlights": {
       "Badge": "Community focus",
       "Cta": "See Give Back Work",
@@ -389,12 +391,12 @@
       "Subtitle": "The significant technical skills I possess",
       "Title": "Skills"
     },
-    "Subtitle": "Senior Full-Stack Developer & Technical Advisor",
+    "Subtitle": "Build your next app or software — clean, scalable, and fast.",
     "Testimonials": {
       "Subtitle": "What others say about me",
       "Title": "Testimonials"
     },
-    "Title": "Suhaib Ahmad"
+    "Title": "Home"
   },
   "Layout": {
     "Footer": {
@@ -402,10 +404,10 @@
       "Cookies": "Cookies Policy",
       "Privacy": "Privacy Policy",
       "Terms": "Terms",
-      "Title": "Suhaib Ahmad"
+      "Title": "Suhaib"
     },
     "Nav": {
-      "Title": "Suhaib Ahmad",
+      "Title": "Suhaib",
       "about": "About",
       "blog": "Blog",
       "contact": "Contact",
@@ -485,7 +487,7 @@
           "Title": "Contact"
         },
         "Content": {
-          "Body": "Unless stated otherwise, content on this site belongs to Suhaib Ahmad.",
+          "Body": "Unless stated otherwise, content on this site belongs to Suhaib.",
           "Title": "Content ownership"
         },
         "Liability": {
