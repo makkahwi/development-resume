@@ -4,12 +4,12 @@
     "AtGlance": {
       "Environments": "Startups & SME experience",
       "Experience": "10+ years in software engineering",
-      "Languages": "Fluent in English & Arabic",
+      "Languages": "Building tools to accelerate and structure development",
       "Locations": "Based in Jordan (GMT+3), after a relocation of 10 years in Malaysia.",
       "Sectors": "Worked across EdTech, ERP & SaaS products",
       "Specialization": "Specialized in React, Next.js, NestJS"
     },
-    "AtGlanceTitle": "Me, At a Glance",
+    "AtGlanceTitle": "At a Glance",
     "Description": "Background, education and soft skills of Suhaib.",
     "Education": {
       "Subtitle": "Formal education and certifications",
@@ -311,12 +311,12 @@
         "Years": "2023 - Present"
       },
       "Point5": {
-        "Content": "Full-time focus on multi-tenant SIS platform from 0 → MVP → Production.",
+        "Content": "Full-time focus on multi-tenant SIS platform from Zero → MVP → Production.",
         "Title": "Founder & Lead Engineer — Semesteer (EdTech SaaS)",
         "Years": "2023 - 2025"
       },
       "Point6": {
-        "Content": "Returning to industry roles with experience as founder & lead engineer.",
+        "Content": "Returning to industry roles with experience in business & engineering leadership.",
         "Title": "Senior Full-Stack Engineer",
         "Years": "2025 - Present"
       },

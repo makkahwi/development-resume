@@ -2,13 +2,14 @@ import PageSection from "@/components/PageSection";
 
 const HighlightsSection = async ({ t }: { t: Function }) => {
   const contents = [
-    t("Highlights.Content1"),
-    t("Highlights.Content2"),
-    t("Highlights.Content3"),
-    t("Highlights.Content4"),
-    t("Highlights.Content5"),
-    t("Highlights.Content6"),
+    { label: t("Highlights.Content1"), icon: "fa-solid fa-chart-line" },
+    { label: t("Highlights.Content2"), icon: "fa-solid fa-rocket" },
+    { label: t("Highlights.Content3"), icon: "fa-solid fa-cogs" },
+    { label: t("Highlights.Content4"), icon: "fa-solid fa-building" },
+    { label: t("Highlights.Content5"), icon: "fa-solid fa-rocket" },
+    { label: t("Highlights.Content6"), icon: "fa-solid fa-lightbulb" },
   ];
+
   return (
     <PageSection
       title={t("Highlights.Title")}
@@ -16,7 +17,7 @@ const HighlightsSection = async ({ t }: { t: Function }) => {
       id="highlights"
     >
       <div className="row g-4">
-        {contents.map((content, index) => (
+        {contents.map(({ label, icon }, index) => (
           <div key={index} className="col-md-6 col-lg-4">
             <div className="card bg-light h-100 border-0 shadow-sm">
               <div className="card-body">
@@ -24,9 +25,9 @@ const HighlightsSection = async ({ t }: { t: Function }) => {
                   <span className="badge bg-primary bg-opacity-10 text-primary">
                     {index + 1}
                   </span>
-                  <i className="fa-solid fa-bolt text-primary fs-4" />
+                  <i className={`${icon} text-primary fs-4`} />
                 </div>
-                <p className="mb-0 text-muted">{content}</p>
+                <p className="mb-0 text-muted">{label}</p>
               </div>
             </div>
           </div>

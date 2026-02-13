@@ -48,6 +48,10 @@ const HandsOnPage = async ({ params, searchParams }: HandsOnPageProps) => {
     <main>
       <HandsOnHeroSection t={t} />
 
+      <TimelineSection t={t} />
+
+      <HighlightsSection t={t} />
+
       <ExperiencesSection t={t} />
 
       <ProjectsSection
@@ -58,10 +62,6 @@ const HandsOnPage = async ({ params, searchParams }: HandsOnPageProps) => {
       />
 
       <SkillsSection t={t} />
-
-      <HighlightsSection t={t} />
-
-      <TimelineSection t={t} />
     </main>
   );
 };

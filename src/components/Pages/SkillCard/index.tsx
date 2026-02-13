@@ -46,56 +46,56 @@ const SkillCard = ({
   return (
     <div className="col-sm-6 col-md-4 col-lg-3">
       <div className="card h-100 border-0 p-3 shadow-sm">
-        <div className="card-body">
-          <div className="text-center mb-3">
-            <i
-              className={`${normalizedIcon} fa-2x`}
-              style={{ color: `#${color}` }}
-            />
-          </div>
+        <div className="card-body px-0">
+          <div className="row">
+            <div className="col-6">
+              <h4 className="h6 fw-bold mb-3">
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-decoration-none text-dark"
+                >
+                  <i
+                    className={`${normalizedIcon} fa-2x`}
+                    style={{ color: `#${color}` }}
+                  />{" "}
+                  <span className="align-center">{label}</span>
+                </a>
+              </h4>
 
-          <h4 className="h6 fw-bold text-center mb-3">
-            <a
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-decoration-none text-dark"
-            >
-              {label}
-            </a>
-          </h4>
-
-          <div className="d-flex justify-content-center gap-1 mb-3">
-            {Array(5)
-              .fill("")
-              .map((_, i) => (
-                <i
-                  className={`fa-solid fa-star ${
-                    i < rate ? "text-warning" : "text-muted opacity-25"
-                  }`}
-                  key={i}
-                />
-              ))}
-          </div>
-
-          {groups && groups.length > 0 && (
-            <div className="mb-3">
-              <p className="text-uppercase small fw-semibold text-secondary mb-2">
-                {categoryLabel}
-              </p>
-
-              <div className="d-flex flex-wrap gap-2">
-                {groups.map((group, index) => (
-                  <span
-                    key={index}
-                    className="badge bg-primary bg-opacity-10 text-primary corners px-3"
-                  >
-                    {group}
-                  </span>
-                ))}
+              <div className="d-flex gap-1 mb-3">
+                {Array(5)
+                  .fill("")
+                  .map((_, i) => (
+                    <i
+                      className={`fa-solid fa-star ${
+                        i < rate ? "text-warning" : "text-muted opacity-25"
+                      }`}
+                      style={{ fontSize: "10px" }}
+                      key={i}
+                    />
+                  ))}
               </div>
             </div>
-          )}
+
+            <div className="col-6">
+              {groups && groups.length > 0 && (
+                <div className="mb-3">
+                  <div className="d-flex flex-wrap gap-2 justify-content-end">
+                    {groups.map((group, index) => (
+                      <span
+                        key={index}
+                        className="badge bg-primary bg-opacity-10 text-primary corners px-3"
+                      >
+                        {group}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
 
           {subSkills && subSkills.length > 0 && (
             <div>

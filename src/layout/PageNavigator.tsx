@@ -69,6 +69,16 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
       case normalizedPath === "/hands-on":
         return [
           {
+            id: "timeline",
+            label: t("HandsOn.Timeline"),
+            iconClass: "fa-solid fa-clock-rotate-left",
+          },
+          {
+            id: "highlights",
+            label: t("HandsOn.Highlights"),
+            iconClass: "fa-solid fa-bolt",
+          },
+          {
             id: "experiences",
             label: t("HandsOn.Experiences"),
             iconClass: "fa-solid fa-briefcase",
@@ -82,16 +92,6 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
             id: "skills",
             label: t("Common.Skills"),
             iconClass: "fa-solid fa-star",
-          },
-          {
-            id: "highlights",
-            label: t("HandsOn.Highlights"),
-            iconClass: "fa-solid fa-bolt",
-          },
-          {
-            id: "timeline",
-            label: t("HandsOn.Timeline"),
-            iconClass: "fa-solid fa-clock-rotate-left",
           },
         ];
       case normalizedPath === "/hands-off":

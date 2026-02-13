@@ -12,20 +12,12 @@ const AboutHeroSection = async ({
   short?: boolean;
 }) => {
   const atGlance = [
-    t("AtGlance.Experience"),
-    t("AtGlance.Specialization"),
-    t("AtGlance.Sectors"),
-    t("AtGlance.Environments"),
-    t("AtGlance.Locations"),
-    t("AtGlance.Languages"),
-  ];
-  const atGlanceIcons = [
-    "fa-solid fa-chart-line",
-    "fa-solid fa-microchip",
-    "fa-solid fa-building",
-    "fa-solid fa-diagram-project",
-    "fa-solid fa-location-dot",
-    "fa-solid fa-language",
+    { label: t("AtGlance.Experience"), icon: "fa-solid fa-chart-line" },
+    { label: t("AtGlance.Specialization"), icon: "fa-solid fa-microchip" },
+    { label: t("AtGlance.Sectors"), icon: "fa-solid fa-building" },
+    { label: t("AtGlance.Environments"), icon: "fa-solid fa-diagram-project" },
+    { label: t("AtGlance.Locations"), icon: "fa-solid fa-location-dot" },
+    { label: t("AtGlance.Languages"), icon: "fa-solid fa-code" },
   ];
 
   return (
@@ -59,19 +51,17 @@ const AboutHeroSection = async ({
           <div className="card-body p-4">
             <h3 className="h5 fw-bold mb-4">{t("AtGlanceTitle")}</h3>
             <div className="row g-3">
-              {atGlance.map((item, index) => (
+              {atGlance.map(({ label, icon }, index) => (
                 <div key={index} className="col-12 col-md-6">
                   <div className="d-flex align-items-start">
                     <div
                       className="bg-light border rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3"
                       style={{ width: "36px", height: "36px" }}
                     >
-                      <i
-                        className={`${atGlanceIcons[index % atGlanceIcons.length]} text-primary`}
-                      />
+                      <i className={`${icon} text-primary`} />
                     </div>
                     <div>
-                      <p className="mb-0 fw-semibold">{item}</p>
+                      <p className="mb-0 fw-semibold">{label}</p>
                     </div>
                   </div>
                 </div>

@@ -4652,16 +4652,6 @@
           "Redux",
           "Axios",
           "i18next",
-          "Material-UI",
-          "Chakra-UI",
-          "TailwindCSS",
-          "Ant Design",
-          "PrimeReact",
-          "Styled Components",
-          "React Hook Form",
-          "Formik",
-          "Moment",
-          "Charts.Js",
           "Eslint",
           "prettier"
         ],
@@ -4696,17 +4686,6 @@
       {
         "color": "000000",
         "groups": [
-          "Frontend",
-          "Backend"
-        ],
-        "icon": "fa-solid fa-caret-up",
-        "label": "TurboRepo",
-        "rate": 4,
-        "url": "https://turborepo.dev/"
-      },
-      {
-        "color": "000000",
-        "groups": [
           "Frontend"
         ],
         "icon": "fa-solid fa-r",
@@ -4716,6 +4695,17 @@
           "Same as React.Js"
         ],
         "url": "https://remix.run/"
+      },
+      {
+        "color": "000000",
+        "groups": [
+          "Frontend",
+          "Backend"
+        ],
+        "icon": "fa-solid fa-caret-up",
+        "label": "TurboRepo",
+        "rate": 4,
+        "url": "https://turborepo.dev/"
       },
       {
         "color": "000000",
