@@ -32,7 +32,7 @@ export const generateMetadata = async ({
 };
 
 type HandsOnPageProps = PageProps & {
-  searchParams?: Promise<{ category?: string }> | { category?: string };
+  searchParams?: Promise<{ category?: string }>;
 };
 
 const HandsOnPage = async ({ params, searchParams }: HandsOnPageProps) => {

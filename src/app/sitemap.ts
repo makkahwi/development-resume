@@ -1,7 +1,7 @@
 import { brandConfig } from "@/brand/config";
 import type { MetadataRoute } from "next";
 
-const sitemap = (): MetadataRoute.Sitemap => {
+const sitemap = async (): Promise<MetadataRoute.Sitemap> => {
   const base = brandConfig.appUrl.replace(/\/+$/, "");
 
   const locales = ["en", "ar"] as const;
