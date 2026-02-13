@@ -1,6 +1,6 @@
 import PageSection from "@/components/PageSection";
 
-const HandsOffRealityMap = async ({ t }: { t: any }) => {
+const HandsOffRealityMap = async ({ t }: { t: (key: string) => string }) => {
   const rows = [
     {
       expectation: t("RealityMap.Rows.Scope.Expectation"),

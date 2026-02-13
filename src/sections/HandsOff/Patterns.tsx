@@ -1,6 +1,6 @@
 import PageSection from "@/components/PageSection";
 
-const HandsOffPatterns = async ({ t }: { t: any }) => {
+const HandsOffPatterns = async ({ t }: { t: (key: string) => string }) => {
   const patterns = [
     t("Patterns.Items.MvpMlp"),
     t("Patterns.Items.UserFeedback"),

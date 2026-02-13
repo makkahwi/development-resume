@@ -4,11 +4,8 @@ import Image from "next/image";
 
 const ExperienceCard = ({
   company,
-  description,
   location,
-  monthsCount,
   period,
-  projectsCount,
   title,
   type,
   url,

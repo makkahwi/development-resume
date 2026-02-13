@@ -76,7 +76,7 @@ const ContactForm = () => {
       </div>
 
       <div className="row g-3 mb-5">
-        {contactsList.map(({ color, icon, label, url, name }, index) => (
+        {contactsList.map(({ color, icon, label, url }, index) => (
           <div className="col-6 col-md-3" key={index}>
             <a
               href={url}

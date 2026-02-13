@@ -3,13 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const BlogSidebarPostCard = ({
-  id,
   title,
   slug,
   image,
   publishedAt,
   locale,
-}: Pick<BlogPostView, "id" | "title" | "slug" | "image" | "publishedAt"> & {
+}: Pick<BlogPostView, "title" | "slug" | "image" | "publishedAt"> & {
   locale: string;
 }) => {
   const formattedDate = new Date(publishedAt).toLocaleDateString(

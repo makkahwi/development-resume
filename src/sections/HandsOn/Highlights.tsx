@@ -1,6 +1,6 @@
 import PageSection from "@/components/PageSection";
 
-const HighlightsSection = async ({ t }: { t: Function }) => {
+const HighlightsSection = async ({ t }: { t: (key: string) => string }) => {
   const contents = [
     { label: t("Highlights.Content1"), icon: "fa-solid fa-chart-line" },
     { label: t("Highlights.Content2"), icon: "fa-solid fa-rocket" },

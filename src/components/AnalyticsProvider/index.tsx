@@ -11,8 +11,8 @@ const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID;
 declare global {
   interface Window {
     dataLayer?: Record<string, unknown>[];
-    gtag?: (...args: any[]) => void;
-    clarity?: (...args: any[]) => void;
+    gtag?: (...args: unknown[]) => void;
+    clarity?: (...args: unknown[]) => void;
   }
 }
 
@@ -32,7 +32,9 @@ const AnalyticsProvider = () => {
   useEffect(() => {
     if (!analyticsAllowed || !GA_ID) return;
 
-    const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : "");
+    const url =
+      pathname +
+      (searchParams?.toString() ? `?${searchParams.toString()}` : "");
 
     if (typeof window.gtag === "function") {
       window.gtag("config", GA_ID, {
@@ -91,6 +93,6 @@ const AnalyticsProvider = () => {
       )}
     </>
   );
-}
+};
 
 export default AnalyticsProvider;

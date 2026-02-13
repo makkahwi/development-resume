@@ -1,6 +1,6 @@
 import PageSection from "@/components/PageSection";
 
-const TimelineSection = async ({ t }: { t: Function }) => {
+const TimelineSection = async ({ t }: { t: (key: string) => string }) => {
   const contents = [
     {
       years: t("Timeline.Point6.Years"),

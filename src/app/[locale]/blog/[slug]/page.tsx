@@ -186,7 +186,6 @@ const BlogPostPage = async ({ params }: PageProps) => {
                     {relatedPosts.map((relatedPost) => (
                       <BlogSidebarPostCard
                         key={relatedPost.id}
-                        id={relatedPost.id}
                         title={relatedPost.title}
                         slug={relatedPost.slug}
                         image={relatedPost.image}
@@ -209,7 +208,6 @@ const BlogPostPage = async ({ params }: PageProps) => {
                     {recentPosts.map((recentPost) => (
                       <BlogSidebarPostCard
                         key={recentPost.id}
-                        id={recentPost.id}
                         title={recentPost.title}
                         slug={recentPost.slug}
                         image={recentPost.image}

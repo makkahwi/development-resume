@@ -1,6 +1,6 @@
 import PageCtaSection from "@/components/PageSection/PageCtaSection";
 
-const NonProfitCTA = ({ t }: { t: any }) => {
+const NonProfitCTA = ({ t }: { t: (key: string) => string }) => {
   return (
     <PageCtaSection
       title={t("Cta.Title")}

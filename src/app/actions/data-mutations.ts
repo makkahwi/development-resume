@@ -20,7 +20,7 @@ import {
 // JOBS
 // ============================================
 
-export async function createJob(jobData: any) {
+export async function createJob(jobData: Record<string, unknown>) {
   try {
     await api.post("/developer/jobs", jobData);
     await revalidateJobsPaths(); // Revalidates home + hands-on pages
@@ -31,7 +31,10 @@ export async function createJob(jobData: any) {
   }
 }
 
-export async function updateJob(jobId: string, jobData: any) {
+export async function updateJob(
+  jobId: string,
+  jobData: Record<string, unknown>,
+) {
   try {
     await api.put(`/developer/jobs/${jobId}`, jobData);
     await revalidateJobsPaths();
@@ -57,7 +60,7 @@ export async function deleteJob(jobId: string) {
 // CLIENTS
 // ============================================
 
-export async function createClient(clientData: any) {
+export async function createClient(clientData: Record<string, unknown>) {
   try {
     await api.post("/developer/clients", clientData);
     await revalidateClientsPaths(); // Revalidates home page
@@ -68,7 +71,10 @@ export async function createClient(clientData: any) {
   }
 }
 
-export async function updateClient(clientId: string, clientData: any) {
+export async function updateClient(
+  clientId: string,
+  clientData: Record<string, unknown>,
+) {
   try {
     await api.put(`/developer/clients/${clientId}`, clientData);
     await revalidateClientsPaths();
@@ -94,7 +100,7 @@ export async function deleteClient(clientId: string) {
 // PROJECTS
 // ============================================
 
-export async function createProject(projectData: any) {
+export async function createProject(projectData: Record<string, unknown>) {
   try {
     await api.post("/developer/projects", projectData);
     await revalidateProjectsPaths(); // Revalidates home + hands-off pages
@@ -105,7 +111,10 @@ export async function createProject(projectData: any) {
   }
 }
 
-export async function updateProject(projectId: string, projectData: any) {
+export async function updateProject(
+  projectId: string,
+  projectData: Record<string, unknown>,
+) {
   try {
     await api.put(`/developer/projects/${projectId}`, projectData);
     await revalidateProjectsPaths();
@@ -131,7 +140,7 @@ export async function deleteProject(projectId: string) {
 // TRAINEES
 // ============================================
 
-export async function createTrainee(traineeData: any) {
+export async function createTrainee(traineeData: Record<string, unknown>) {
   try {
     await api.post("/developer/trainees", traineeData);
     await revalidateTraineesPaths(); // Revalidates home + non-profit pages
@@ -142,7 +151,10 @@ export async function createTrainee(traineeData: any) {
   }
 }
 
-export async function updateTrainee(traineeId: string, traineeData: any) {
+export async function updateTrainee(
+  traineeId: string,
+  traineeData: Record<string, unknown>,
+) {
   try {
     await api.put(`/developer/trainees/${traineeId}`, traineeData);
     await revalidateTraineesPaths();
@@ -168,7 +180,7 @@ export async function deleteTrainee(traineeId: string) {
 // SKILLS
 // ============================================
 
-export async function updateSkills(skillsData: any) {
+export async function updateSkills(skillsData: Record<string, unknown>) {
   try {
     await api.put("/developer/skills", skillsData);
     await revalidateSkillsPaths();
@@ -183,7 +195,7 @@ export async function updateSkills(skillsData: any) {
 // BLOG
 // ============================================
 
-export async function createBlogPost(blogData: any) {
+export async function createBlogPost(blogData: Record<string, unknown>) {
   try {
     await api.post("/developer/blog", blogData);
     await revalidateBlogPaths();
@@ -194,7 +206,10 @@ export async function createBlogPost(blogData: any) {
   }
 }
 
-export async function updateBlogPost(slug: string, blogData: any) {
+export async function updateBlogPost(
+  slug: string,
+  blogData: Record<string, unknown>,
+) {
   try {
     await api.put(`/developer/blog/${slug}`, blogData);
     await revalidateBlogPaths();
@@ -220,7 +235,9 @@ export async function deleteBlogPost(slug: string) {
 // TESTIMONIALS
 // ============================================
 
-export async function createTestimonial(testimonialData: any) {
+export async function createTestimonial(
+  testimonialData: Record<string, unknown>,
+) {
   try {
     await api.post("/developer/testimonials", testimonialData);
     await revalidateTestimonialsPaths();
@@ -233,7 +250,7 @@ export async function createTestimonial(testimonialData: any) {
 
 export async function updateTestimonial(
   testimonialId: string,
-  testimonialData: any
+  testimonialData: Record<string, unknown>,
 ) {
   try {
     await api.put(`/developer/testimonials/${testimonialId}`, testimonialData);

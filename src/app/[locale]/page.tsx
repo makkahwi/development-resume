@@ -4,7 +4,6 @@ import BlogSection from "@/sections/Common/Blog";
 import ProjectsSection from "@/sections/Common/Projects";
 import SkillsSection from "@/sections/Common/Skills";
 import ClientsSection from "@/sections/Home/Clients";
-import GiveBackHighlights from "@/sections/Home/GiveBackHighlights";
 import HandsOffHighlights from "@/sections/Home/HandsOffHighlights";
 import HomeHeroSection from "@/sections/Home/Hero";
 import TestimonialsSection from "@/sections/Home/Testimonials";
@@ -45,7 +44,7 @@ const HomeLocalePage = async ({ params }: PageProps) => {
   return (
     <main>
       <HomeHeroSection t={tHome} />
-      <ClientsSection t={tHome} />
+      <ClientsSection />
       <AboutHeroSection t={tAbout} tStats={tStats} short />
       <ProjectsSection t={tHome} short />
       <HandsOffHighlights t={tHome} locale={locale} />

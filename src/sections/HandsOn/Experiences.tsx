@@ -2,7 +2,7 @@ import ExperienceCard from "@/components/Pages/ExperienceCard";
 import PageSection from "@/components/PageSection";
 import { jobsList } from "@/lib/data";
 
-const ExperiencesSection = async ({ t }: { t: Function }) => {
+const ExperiencesSection = async ({ t }: { t: (key: string) => string }) => {
   return (
     <PageSection
       title={t("Experiences.Title")}

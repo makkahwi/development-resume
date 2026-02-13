@@ -2,7 +2,7 @@ import TestimonialCard from "@/components/Pages/TestimonialCard";
 import PageSection from "@/components/PageSection";
 import { testimonialsList } from "@/lib/data";
 
-const TestimonialsSection = async ({ t }: { t: Function }) => {
+const TestimonialsSection = async ({ t }: { t: (key: string) => string }) => {
   return (
     <PageSection
       title={t("Testimonials.Title")}

@@ -1,6 +1,6 @@
 import PageCtaSection from "@/components/PageSection/PageCtaSection";
 
-const HandsOffCta = async ({ t }: { t: any }) => {
+const HandsOffCta = async ({ t }: { t: (key: string) => string }) => {
   return (
     <PageCtaSection
       title={""}

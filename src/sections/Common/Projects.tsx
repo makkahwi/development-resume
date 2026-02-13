@@ -12,7 +12,7 @@ const ProjectsSection = async ({
   activeCategory,
   basePath,
 }: {
-  t: Function;
+  t: (key: string) => string;
   short?: boolean;
   openSourceOnly?: boolean;
   focOnly?: boolean;

@@ -1,6 +1,6 @@
 import PageHeroSection from "@/components/PageSection/PageHeroSection";
 
-const HandsOffHeroSection = async ({ t }: { t: Function }) => {
+const HandsOffHeroSection = async ({ t }: { t: (key: string) => string }) => {
   return (
     <>
       <PageHeroSection

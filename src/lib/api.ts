@@ -28,7 +28,7 @@ service.interceptors.request.use(
 
     return config;
   },
-  (error) => Promise.reject(error)
+  (error) => Promise.reject(error),
 );
 
 service.interceptors.response.use(
@@ -41,7 +41,7 @@ service.interceptors.response.use(
   },
   (err) => {
     return Promise.reject(err);
-  }
+  },
 );
 
 const getAll = async (table = "") => {
@@ -54,8 +54,11 @@ const getAll = async (table = "") => {
 };
 
 const get = async (table = "", id = "") => {
-  return await service.get(`${table}/${id}.json`).then((res: any) => {
-    return { value: res.x };
+  return await service.get(`${table}/${id}.json`).then((res: unknown) => {
+    if (res && typeof res === "object" && "x" in res) {
+      return { value: (res as Record<string, unknown>).x };
+    }
+    return { value: res };
   });
 };
 

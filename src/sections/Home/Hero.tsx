@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const HomeHeroSection = async ({ t }: { t: Function }) => {
+const HomeHeroSection = async ({ t }: { t: (key: string) => string }) => {
   return (
     <section className="py-5 mb-4" id="hero">
       <div className="container">

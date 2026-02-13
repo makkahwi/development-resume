@@ -43,7 +43,7 @@ const Footer = async ({ locale }: { locale: string }) => {
         </div>
 
         <div className="d-flex justify-content-center gap-3 my-3">
-          {contactsList.map(({ color, icon, label, url, name }, i) => (
+          {contactsList.map(({ color, icon, url }, i) => (
             <a
               href={url}
               target="_blank"

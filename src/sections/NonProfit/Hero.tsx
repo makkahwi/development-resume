@@ -1,6 +1,6 @@
 import PageHeroSection from "@/components/PageSection/PageHeroSection";
 
-const NonProfitHeroSection = async ({ t }: { t: Function }) => {
+const NonProfitHeroSection = async ({ t }: { t: (key: string) => string }) => {
   return (
     <PageHeroSection
       badge={t("Intro.Badge")}

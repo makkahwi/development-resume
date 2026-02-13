@@ -1,6 +1,6 @@
 import PageSection from "@/components/PageSection";
 
-const ToolsSection = ({ t }: { t: any }) => {
+const ToolsSection = ({ t }: { t: (key: string) => string }) => {
   const freeTools = [
     { key: "ToolOne", icon: "fa-solid fa-screwdriver-wrench" },
     { key: "ToolTwo", icon: "fa-solid fa-rocket" },

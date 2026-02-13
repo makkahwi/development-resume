@@ -1,6 +1,6 @@
 import PageSection from "@/components/PageSection";
 
-const HandsOffSnapshots = async ({ t }: { t: any }) => {
+const HandsOffSnapshots = async ({ t }: { t: (key: string) => string }) => {
   const snapshots = [
     {
       title: t("Snapshots.Cases.PublicSector.Title"),

@@ -1,6 +1,6 @@
 import PageSection from "@/components/PageSection";
 
-const HelpGroupsSection = async ({ t }: { t: Function }) => {
+const HelpGroupsSection = async ({ t }: { t: (key: string) => string }) => {
   const mentoringGroups = [
     {
       title: t("Mentoring.Groups.Developers.Title"),

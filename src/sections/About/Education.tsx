@@ -2,7 +2,7 @@ import PageSection from "@/components/PageSection";
 import { educationsList } from "@/lib/data";
 import Image from "next/image";
 
-const EducationSection = async ({ t }: { t: Function }) => {
+const EducationSection = async ({ t }: { t: (key: string) => string }) => {
   return (
     <PageSection
       title={t("Education.Title")}
@@ -12,10 +12,7 @@ const EducationSection = async ({ t }: { t: Function }) => {
     >
       <div className="row g-4">
         {educationsList.map(
-          (
-            { cert, description, downloads, logo, label, school, url },
-            index,
-          ) => (
+          ({ cert, description, logo, label, school, url }, index) => (
             <div key={index} className="col-md-6">
               <div className="card h-100 border-0 p-3 shadow-sm">
                 <div className="card-body">

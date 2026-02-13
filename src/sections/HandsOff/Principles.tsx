@@ -1,6 +1,6 @@
 import PageSection from "@/components/PageSection";
 
-const HandsOffPrinciples = async ({ t }: { t: any }) => {
+const HandsOffPrinciples = async ({ t }: { t: (key: string) => string }) => {
   const principles = [
     {
       title: t("Principles.Items.PrepareClarifyExecute.Title"),

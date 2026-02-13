@@ -1,4 +1,4 @@
-import { TestimonialProps, TraineeProps } from "@/types/data";
+import { TraineeProps } from "@/types/data";
 import Image from "next/image";
 
 const TraineeCard = ({ name, image, url }: TraineeProps) => {

@@ -14,7 +14,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  webpack: (config, { dev, isServer }) => {
+  webpack: (config, { dev }) => {
     // Disable source maps in development to avoid malformed source map errors
     if (dev) {
       config.devtool = false;

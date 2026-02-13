@@ -1,7 +1,13 @@
 import PageSection from "@/components/PageSection";
 import Link from "next/link";
 
-const GiveBackHighlights = ({ t, locale }: { t: Function; locale: string }) => {
+const GiveBackHighlights = ({
+  t,
+  locale,
+}: {
+  t: (key: string) => string;
+  locale: string;
+}) => {
   const items = [
     {
       title: t("GiveBackHighlights.Items.Mentoring.Title"),

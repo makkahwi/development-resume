@@ -7,7 +7,7 @@ const AboutHeroSection = async ({
   tStats,
   short,
 }: {
-  t: Function;
+  t: (key: string) => string;
   tStats: (key: string) => string;
   short?: boolean;
 }) => {

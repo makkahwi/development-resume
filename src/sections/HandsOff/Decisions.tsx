@@ -1,6 +1,6 @@
 import PageSection from "@/components/PageSection";
 
-const HandsOffDecisions = async ({ t }: { t: any }) => {
+const HandsOffDecisions = async ({ t }: { t: (key: string) => string }) => {
   const decisions = [
     { text: t("Decisions.Items.FeatureScope"), icon: "fa-solid fa-flag" },
     {

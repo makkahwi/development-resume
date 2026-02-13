@@ -10,7 +10,7 @@ const STYLE_TOKENS = [
 export const normalizeFaIcon = (icon = "") => {
   if (!icon) return "fa-solid fa-circle";
 
-  let value = icon.replace("fa-brand", "fa-brands").trim();
+  const value = icon.replace("fa-brand", "fa-brands").trim();
   let tokens = value.split(/\s+/).filter(Boolean);
 
   tokens = tokens.map((token) => {

@@ -1,6 +1,6 @@
 import PageSection from "@/components/PageSection";
 
-const HandsOffAdvisory = async ({ t }: { t: any }) => {
+const HandsOffAdvisory = async ({ t }: { t: (key: string) => string }) => {
   const modes = [
     {
       title: t("Advisory.Modes.ArchitectureAudit.Title"),

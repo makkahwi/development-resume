@@ -6,7 +6,7 @@ const SkillsSection = async ({
   t,
   short,
 }: {
-  t: Function;
+  t: (key: string) => string;
   short?: boolean;
 }) => {
   return (
@@ -25,12 +25,7 @@ const SkillsSection = async ({
               : true,
           )
           .map((skill, index) => (
-            <SkillCard
-              key={index}
-              short={short}
-              categoryLabel={t("Skills.CategoryLabel")}
-              {...skill}
-            />
+            <SkillCard key={index} short={short} {...skill} />
           ))}
       </div>
     </PageSection>

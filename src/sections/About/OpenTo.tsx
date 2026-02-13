@@ -1,6 +1,6 @@
 import PageSection from "@/components/PageSection";
 
-const OpenToSection = async ({ t }: { t: Function }) => {
+const OpenToSection = async ({ t }: { t: (key: string) => string }) => {
   const openToList = [
     { label: t("OpenTo.Development"), icon: "fa-solid fa-code" },
     { label: t("OpenTo.Advisory"), icon: "fa-solid fa-compass" },

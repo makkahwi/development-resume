@@ -9,8 +9,7 @@ const SkillCard = ({
   subSkills,
   url,
   short = false,
-  categoryLabel,
-}: SkillsProps & { short?: boolean; categoryLabel: string }) => {
+}: SkillsProps & { short?: boolean }) => {
   const normalizedIcon = (() => {
     const value = icon?.replace("fa-brand", "fa-brands") || "";
     const tokens = value.split(" ").filter(Boolean);

@@ -1,6 +1,6 @@
 import PageSection from "@/components/PageSection";
 
-const HandsOffMentoring = async ({ t }: { t: any }) => {
+const HandsOffMentoring = async ({ t }: { t: (key: string) => string }) => {
   const blocks = [
     {
       period: t("Mentoring.Blocks.FounderPhase.Period"),

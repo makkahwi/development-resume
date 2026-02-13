@@ -1,6 +1,6 @@
 import PageSection from "@/components/PageSection";
 
-const HandsOffRoles = async ({ t }: { t: any }) => {
+const HandsOffRoles = async ({ t }: { t: (key: string) => string }) => {
   const roles = [
     {
       title: t("Roles.ProductTranslator.Title"),

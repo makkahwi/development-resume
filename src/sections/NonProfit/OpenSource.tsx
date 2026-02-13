@@ -1,6 +1,6 @@
 import PageSection from "@/components/PageSection";
 
-const OpenSourceSection = ({ t }: { t: any }) => {
+const OpenSourceSection = ({ t }: { t: (key: string) => string }) => {
   const contents = [
     {
       title: t("Community.OpenSource.Title"),

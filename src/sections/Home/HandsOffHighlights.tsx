@@ -1,7 +1,13 @@
 import PageSection from "@/components/PageSection";
 import Link from "next/link";
 
-const HandsOffHighlights = ({ t, locale }: { t: Function; locale: string }) => {
+const HandsOffHighlights = ({
+  t,
+  locale,
+}: {
+  t: (key: string) => string;
+  locale: string;
+}) => {
   const items = [
     {
       title: t("HandsOffHighlights.Items.Decisions.Title"),
