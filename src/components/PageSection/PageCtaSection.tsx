@@ -5,16 +5,20 @@ const PageCtaSection = ({
   subtitle,
   actions,
   id,
+  color,
 }: {
   title: string;
   subtitle: string;
   actions: { url: string; label: string; color?: string }[];
   id?: string;
+  color?: string;
 }) => {
   return (
-    <PageSection color="light" noBg id={id}>
+    <PageSection color={color || "light"} noBg id={id}>
       <div className="container">
-        <div className="card border-0 shadow-sm">
+        <div
+          className={`card bg-${color === "white" ? "light" : color} border-0 shadow-sm`}
+        >
           <div className="card-body text-center py-5">
             <h2 className="h3 fw-bold mb-3">{title}</h2>
             <p className="text-muted mb-4">{subtitle}</p>

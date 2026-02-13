@@ -4,7 +4,7 @@ import Image from "next/image";
 const TraineeCard = ({ name, image, url }: TraineeProps) => {
   return (
     <div className="col-md-6 col-lg-3">
-      <div className="card bg-light h-100 border-0 shadow-sm">
+      <div className="card h-100 border-0 shadow-sm">
         <div className="card-body text-center p-4">
           {url && image && image.length > 0 && (
             <a

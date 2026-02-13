@@ -48,7 +48,7 @@ const NonProfitPage = async ({ params }: PageProps) => {
 
       <ProjectsSection t={t} focOnly />
 
-      <ToolsSection t={t} />
+      {/* <ToolsSection t={t} /> */}
 
       <MentoringSection t={t} />
 

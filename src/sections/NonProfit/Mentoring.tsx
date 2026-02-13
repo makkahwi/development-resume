@@ -8,6 +8,7 @@ const MentoringSection = async ({ t }: { t: Function }) => {
       title={t("Testimonials.Title")}
       subtitle={t("Testimonials.Subtitle")}
       id="trainees"
+      color="light"
     >
       <p className="text-muted text-center mb-5">{t("Testimonials.Intro")}</p>
 
