@@ -2,6 +2,7 @@ import ContactForm from "@/components/ContactForm";
 import { contactsList } from "@/lib/data";
 import { normalizeFaIcon } from "@/lib/icons";
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = async ({ locale }: { locale: string }) => {
@@ -15,7 +16,13 @@ const Footer = async ({ locale }: { locale: string }) => {
       <div className="container text-center">
         <hr className="px-5 mx-5" />
 
-        <img src="/images/LogoC.png" width={200} className="mt-5" alt="Logo" />
+        <Image
+          src="/images/LogoC.png"
+          width={200}
+          height={200}
+          alt="Logo"
+          className="mt-5"
+        />
 
         <h2 className="text-dark my-3 text-uppercase">{t("Title")}</h2>
 

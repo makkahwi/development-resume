@@ -1,5 +1,6 @@
 import PageSection from "@/components/PageSection";
 import { clientsList } from "@/lib/data";
+import Image from "next/image";
 
 const ClientsSection = async ({ t }: { t: Function }) => {
   return (
@@ -18,12 +19,13 @@ const ClientsSection = async ({ t }: { t: Function }) => {
                 className="d-flex align-items-center justify-content-center px-3 client-logo-link"
                 style={{ minHeight: "100px" }}
               >
-                <img
-                  src={
-                    process.env.NEXT_PUBLIC_STORAGE_URL + image + "?alt=media"
-                  }
+                <Image
+                  src={`${process.env.NEXT_PUBLIC_STORAGE_URL}${image}?alt=media`}
                   alt={label}
+                  width={100}
+                  height={100}
                   className="img-fluid client-logo"
+                  style={{ maxHeight: "80px", width: "auto" }}
                 />
               </a>
             </div>

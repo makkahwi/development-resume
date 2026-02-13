@@ -1,5 +1,6 @@
 import PageSection from "@/components/PageSection";
 import { educationsList } from "@/lib/data";
+import Image from "next/image";
 
 const EducationSection = async ({ t }: { t: Function }) => {
   return (
@@ -20,15 +21,13 @@ const EducationSection = async ({ t }: { t: Function }) => {
                 <div className="card-body">
                   <div className="mb-3">
                     <a href={url} target="_blank" rel="noreferrer">
-                      <img
-                        src={
-                          process.env.NEXT_PUBLIC_STORAGE_URL +
-                          logo +
-                          "?alt=media"
-                        }
+                      <Image
+                        src={`${process.env.NEXT_PUBLIC_STORAGE_URL}${logo}?alt=media`}
                         alt={label}
+                        width={160}
+                        height={80}
                         className="img-fluid"
-                        style={{ maxHeight: "80px", objectFit: "contain" }}
+                        style={{ objectFit: "contain" }}
                       />
                     </a>
                   </div>

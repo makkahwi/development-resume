@@ -3,6 +3,7 @@
 import { brandConfig } from "@/brand/config";
 import LanguageSwitch from "@/components/LanguageSwitch";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -52,7 +53,7 @@ const NavbarComp = () => {
           href={`/${locale}`}
           className="navbar-brand text-decoration-none d-flex align-items-center gap-2"
         >
-          <img src="/images/LogoC.png" width={50} alt="Logo" />
+          <Image src="/images/LogoC.png" width={50} height={50} alt="Logo" />
           <span className="text-primary fw-bold">{t("Title")}</span>
         </Link>
 
