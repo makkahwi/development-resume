@@ -453,7 +453,7 @@
       },
       {
         "category": "startups-mvp",
-        "date": "2026-02-13",
+        "date": "2026-02-07",
         "id": "startup-001-after-launch-not-easier",
         "image": "10.jpg",
         "tags": [
@@ -738,7 +738,7 @@
       },
       {
         "category": "startups-mvp",
-        "date": "2026-02-13",
+        "date": "2026-02-03",
         "id": "startup-002-first-100-users-hardest",
         "image": "10.jpg",
         "tags": [
@@ -1050,7 +1050,7 @@
       },
       {
         "category": "startups-mvp",
-        "date": "2026-02-13",
+        "date": "2026-01-31",
         "id": "startup-003-product-not-broken-listen-to-market",
         "tags": [
           "MVP",
@@ -1431,7 +1431,7 @@
       },
       {
         "category": "Startups & Product Management",
-        "date": "2026-02-13",
+        "date": "2026-01-27",
         "image": "10.jpg",
         "id": "post-004-small-decisions",
         "tags": [
@@ -1657,7 +1657,7 @@
       },
       {
         "category": "Startups & Software Engineering",
-        "date": "2026-02-13",
+        "date": "2026-01-24",
         "image": "10.jpg",
         "id": "post-005-technical-debt-from-day-one",
         "tags": [
@@ -1979,7 +1979,7 @@
       },
       {
         "category": "Startups & Product Engineering",
-        "date": "2026-02-13",
+        "date": "2026-01-20",
         "image": "10.jpg",
         "id": "post-006-fast-mvp-what-to-sacrifice",
         "tags": [
@@ -2239,7 +2239,7 @@
       },
       {
         "category": "AI Tools & Product Development",
-        "date": "2026-02-13",
+        "date": "2026-01-17",
         "image": "10.jpg",
         "id": "post-007-ai-app-builders-experiment",
         "tags": [
@@ -2616,7 +2616,7 @@
       },
       {
         "category": "AI Tools & MVP Building",
-        "date": "2026-02-13",
+        "date": "2026-01-13",
         "image": "10.jpg",
         "id": "post-008-why-ai-app-builders-fail-mvp",
         "tags": [
@@ -2947,7 +2947,7 @@
       },
       {
         "category": "MVP & Product Development",
-        "date": "2026-02-13",
+        "date": "2026-01-10",
         "image": "10.jpg",
         "id": "post-009-why-mvps-are-rebuilt",
         "tags": [
@@ -5098,24 +5098,28 @@
     "testimonials": [
       {
         "author": "Noor Kayyali",
+        "featured": true,
         "content": "Suhaib has been an outstanding mentee and technical advisor. He showed strong commitment to every session, was always respectful, and a pleasure to work with. He also developed my website, which continues to receive compliments and has been key in presenting my professional identity. His work is thoughtful, reliable, and impactful—I highly recommend him.",
         "image": "noor.jpeg",
         "url": "https://www.linkedin.com/in/noorkayyali"
       },
       {
         "author": "Mustafa Alhasant",
+        "featured": true,
         "content": "Suhaib mentored me during the past years as he has far more experience than what I have, and he was exceptionally great at it. He was one of the primary reasons I became good in software engineering and entrepreneurship as he provided me with mentorship during my early years on this field (and he still). Suhaib is an excellent leader who knows exactly how to manage teams and encourage them to learn new things, search deeper into the problems to find the best solution, and open their sights to critical things as they work. ",
         "image": "mustafa.jfif",
         "url": "https://www.linkedin.com/in/mustafa-alhasanat"
       },
       {
         "author": "Hanan N.",
+        "featured": true,
         "content": "Suhaib has always been generous with his technical advice, especially in backend development and database design. His input was consistently thoughtful, practical, and rooted in solid experience. I truly appreciated his willingness to support and guide whenever we needed an expert opinion.",
         "image": "hanan.jpeg",
         "url": "https://www.linkedin.com/in/hananni"
       },
       {
         "author": "Mazen Adel",
+        "featured": true,
         "content": "I had the chance to work under Suhaib's command on several creative projects, and I am certain he is among the best and most supportive leaders I've ever had the opportunity to work under. Suhaib organized the tasks, oversaw the workflow, and made sure everything was running according to our goal. I personally hope to be able to continue with him in more projects. I learnt from him a lot in management and clean code.",
         "image": "mazen.jpeg",
         "url": "https://www.linkedin.com/in/mazen-adel-bab"

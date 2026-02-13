@@ -11,11 +11,13 @@ const TestimonialsSection = async ({ t }: { t: (key: string) => string }) => {
       color="light"
     >
       <div className="row g-4">
-        {testimonialsList.map((testimonial, index) => (
-          <div key={index} className="col-12 col-md-6 col-lg-6">
-            <TestimonialCard color="white" {...testimonial} />
-          </div>
-        ))}
+        {testimonialsList
+          .filter(({ featured }) => featured)
+          .map((testimonial, index) => (
+            <div key={index} className="col-12 col-md-6 col-lg-6">
+              <TestimonialCard color="white" {...testimonial} />
+            </div>
+          ))}
       </div>
     </PageSection>
   );

@@ -113,6 +113,7 @@ export interface TestimonialProps {
   content: string;
   image: string;
   url: string;
+  featured?: boolean;
 }
 
 export interface TraineeProps {
