@@ -37,16 +37,15 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
             label: t("Common.Projects"),
             iconClass: "fa-solid fa-grip",
           },
-          { id: "skills", label: t("Common.Skills"), iconClass: "fa-solid fa-star" },
           {
             id: "hands-off",
             label: t("Home.HandsOff"),
             iconClass: "fa-solid fa-compass",
           },
           {
-            id: "give-back",
-            label: t("Home.GiveBack"),
-            iconClass: "fa-solid fa-heart",
+            id: "skills",
+            label: t("Common.Skills"),
+            iconClass: "fa-solid fa-star",
           },
           {
             id: "testimonials",
@@ -66,16 +65,6 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
             label: t("About.Education"),
             iconClass: "fa-solid fa-graduation-cap",
           },
-          {
-            id: "personal",
-            label: t("About.Personal"),
-            iconClass: "fa-solid fa-user",
-          },
-          {
-            id: "openTo",
-            label: t("About.OpenTo"),
-            iconClass: "fa-solid fa-briefcase",
-          },
         ];
       case normalizedPath === "/hands-on":
         return [
@@ -89,7 +78,11 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
             label: t("Common.Projects"),
             iconClass: "fa-solid fa-grip",
           },
-          { id: "skills", label: t("Common.Skills"), iconClass: "fa-solid fa-star" },
+          {
+            id: "skills",
+            label: t("Common.Skills"),
+            iconClass: "fa-solid fa-star",
+          },
           {
             id: "highlights",
             label: t("HandsOn.Highlights"),
@@ -172,19 +165,18 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
             iconClass: "fa-solid fa-screwdriver-wrench",
           },
           {
+            id: "trainees",
+            label: t("NonProfit.Trainees"),
+            iconClass: "fa-solid fa-user-graduate",
+          },
+          {
             id: "giveback-cta",
             label: t("NonProfit.Cta"),
             iconClass: "fa-solid fa-flag",
           },
         ];
       case normalizedPath === "/blog":
-        return [
-          {
-            id: "blog",
-            label: t("Common.Blog"),
-            iconClass: "fa-solid fa-book",
-          },
-        ];
+        return [];
       default:
         return [];
     }
@@ -197,7 +189,11 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
   const allSections = [
     { id: "hero", label: t("Common.Hero"), iconClass: "fa-solid fa-house" },
     ...(sections.length > 0 ? sections : inferredSections),
-    { id: "contact", label: t("Common.Contact"), iconClass: "fa-solid fa-phone" },
+    {
+      id: "contact",
+      label: t("Common.Contact"),
+      iconClass: "fa-solid fa-phone",
+    },
   ];
 
   return (
@@ -222,4 +218,3 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
 };
 
 export default PageNavigator;
-

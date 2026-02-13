@@ -398,6 +398,7 @@
       {
         "category": "",
         "date": "",
+        "image": "",
         "id": "",
         "tags": [
           ""
@@ -447,6 +448,2792 @@
             ],
             "slug": "",
             "title": ""
+          }
+        }
+      },
+      {
+        "category": "startups-mvp",
+        "date": "2026-02-13",
+        "id": "startup-001-after-launch-not-easier",
+        "image": "10.jpg",
+        "tags": [
+          "MVP",
+          "Startup",
+          "Launch",
+          "Product",
+          "GoToMarket",
+          "Team"
+        ],
+        "versions": {
+          "ar": {
+            "title": "الخدعة الأخطر في عالم الشركات الناشئة: «بعد الإطلاق… كل شيء سيصبح أسهل»",
+            "slug": "khodat-baed-al-itlaq-laysa-as-hal",
+            "meta": {
+              "title": "بعد الإطلاق ليس أسهل: حقيقة ضغط السوق على الـ MVP",
+              "description": "لماذا لا يعني الإطلاق نهاية التعب؟ شرح واقعي لضغط المستخدمين بعد إطلاق الـ MVP ولماذا التأجيل لتجنب الضغط قد يقتل المنتج ببطء."
+            },
+            "short": [
+              {
+                "type": "p",
+                "text": "هناك خدعة شائعة في عالم الشركات الناشئة: «بعد الإطلاق… كل شيء سيصبح أسهل». الواقع أن الإطلاق لا يُنهي الضغط، بل يبدأ مرحلة أصعب: مستخدمون حقيقيون، شكاوى، سلوكيات غير متوقعة، ومقارنات مع المنافسين. تأجيل الإطلاق لتجنب الضغط لا يلغيه… بل يؤجل الصدمة ويكبرها."
+              },
+              {
+                "type": "p",
+                "text": "الخلاصة: الضغط بعد الإطلاق ليس علامة فشل—بل أول دليل أنك دخلت السوق الحقيقي."
+              }
+            ],
+            "long": [
+              {
+                "type": "h1",
+                "text": "الخدعة الأخطر في عالم الشركات الناشئة: «بعد الإطلاق… كل شيء سيصبح أسهل»"
+              },
+              {
+                "type": "p",
+                "text": "كثيرون يبنون خطتهم على وهم بسيط: نُطلق المنتج ثم نرتاح. لكن الحقيقة التي تتكرر مع معظم الفرق هي أن الإطلاق ليس نهاية التعب، بل بداية مرحلة جديدة—وغالبًا الأصعب."
+              },
+              {
+                "type": "h2",
+                "text": "قبل الإطلاق: ضغط داخلي… لكنه «تحت السيطرة»"
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "الأخطاء محدودة ضمن سيناريوهات اختبرتموها بأنفسكم.",
+                  "لا يوجد مستخدمون حقيقيون بسلوكيات غير متوقعة.",
+                  "لا توجد شكاوى أو طلبات عاجلة أو دعم فني مستمر.",
+                  "التوقعات ما تزال داخل الفريق، وليست من السوق."
+                ]
+              },
+              {
+                "type": "p",
+                "text": "حتى لو كان الضغط النفسي عاليًا داخل الفريق، فهو غالبًا أقل قسوة من ضغط السوق، لأن كل شيء يحدث ضمن نطاق تعرفونه."
+              },
+              {
+                "type": "h2",
+                "text": "بعد الإطلاق: السوق يضع قواعد جديدة"
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "مستخدمون حقيقيون يتصرفون بطرق لم تتوقعها.",
+                  "شكاوى، انقطاعات، سوء فهم، وتوقعات عالية.",
+                  "طلبات مزايا وتعديلات «مستعجلة».",
+                  "مقارنات مباشرة مع منافسين ومنتجات بديلة.",
+                  "ضغط دعم فني، ورسائل، ومتابعات يومية."
+                ]
+              },
+              {
+                "type": "p",
+                "text": "هنا تتعرض بعض الفرق للصدمة، وتولد الفكرة الخطأ التالية: إذا كان الضغط بعد الإطلاق كبيرًا… فلنؤجل الإطلاق قليلًا."
+              },
+              {
+                "type": "h2",
+                "text": "دوامة التأجيل: تحسينات لا تنتهي بحجة «تخفيف الضغط»"
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "إعادة تصميم واجهات.",
+                  "إضافة مزايا قبل أن يطلبها السوق فعليًا.",
+                  "إعادة كتابة أجزاء من النظام.",
+                  "تأجيل… ثم تأجيل… ثم تأجيل."
+                ]
+              },
+              {
+                "type": "quote",
+                "text": "الحقيقة القاسية: الضغط لا يصنعه المنتج وحده—الضغط يصنعه السوق. تأجيل الإطلاق لا يلغي الضغط، بل يؤجل الصدمة… وغالبًا يضخمها."
+              },
+              {
+                "type": "h2",
+                "text": "المعادلة الصحيحة"
+              },
+              {
+                "type": "p",
+                "text": "نعم، الضغط بعد الإطلاق يزيد. نعم، تظهر المشاكل. نعم، الفريق يتعب. لكن هذه ليست علامة فشل—هذه هي طبيعة أي منتج يحاول أن يعيش في السوق."
+              },
+              {
+                "type": "h2",
+                "text": "كيف تتعامل الفرق الذكية؟"
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "تُطلق مبكرًا مع وعي أن القادم أصعب.",
+                  "تستعد نفسيًا لمرحلة ردود الفعل.",
+                  "تستعد تقنيًا: مراقبة الأخطاء، سجلات، قياس أساسي للأداء.",
+                  "تستعد تشغيليًا: خطة للتعامل مع دعم المستخدمين والتحديثات."
+                ]
+              },
+              {
+                "type": "h2",
+                "text": "الخلاصة"
+              },
+              {
+                "type": "p",
+                "text": "إذا كنت تؤجل الإطلاق اليوم فقط لأنك تخشى ضغط ما بعد الإطلاق… فالمشكلة غالبًا ليست في المنتج، بل في الاستعداد النفسي لمرحلة السوق. الضغط بعد الإطلاق ليس علامة فشل—بل أول دليل أنك دخلت السوق الحقيقي."
+              }
+            ]
+          },
+          "en": {
+            "title": "The Most Dangerous Startup Lie: “After Launch, Everything Gets Easier”",
+            "slug": "dangerous-startup-lie-after-launch-easier",
+            "meta": {
+              "title": "After Launch Isn’t Easier: The Real Pressure of MVP Launch",
+              "description": "Launching an MVP doesn’t end the hard part—it starts it. Learn why delaying launch to avoid pressure usually delays the shock and makes it worse."
+            },
+            "short": [
+              {
+                "type": "p",
+                "text": "One of the biggest startup myths is: “After we launch, things will get easier.” In reality, launch is when real pressure begins—real users, unexpected behavior, support load, comparisons, and criticism. Delaying launch doesn’t remove pressure; it postpones the shock and often amplifies it."
+              },
+              {
+                "type": "p",
+                "text": "Bottom line: post-launch pressure isn’t failure—it’s proof you’ve entered the real market."
+              }
+            ],
+            "long": [
+              {
+                "type": "h1",
+                "text": "The Most Dangerous Startup Lie: “After Launch, Everything Gets Easier”",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "Many teams secretly plan around a comforting idea: launch the product, then relax. But in most real startup journeys, launch isn’t the finish line—it’s the start of the hardest phase.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "Before Launch: High Effort, But Still “Controlled”",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "ul",
+                "text": "",
+                "items": [
+                  "Bugs are limited to scenarios you’ve tested internally.",
+                  "No real users doing unpredictable things.",
+                  "No constant complaints, urgent requests, or support pressure.",
+                  "Expectations live inside the team—not in the market."
+                ],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "Even when internal stress is intense, it’s often lighter than market pressure—because everything is happening within boundaries you understand.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "After Launch: The Market Rewrites the Rules",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "ul",
+                "text": "",
+                "items": [
+                  "Real users behave in ways you didn’t anticipate.",
+                  "Complaints, misunderstandings, and rising expectations.",
+                  "Feature requests that feel “urgent.”",
+                  "Direct comparisons with competitors and alternatives.",
+                  "Support load, DMs, follow-ups, and constant context switching."
+                ],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "This is where many teams panic and fall into a dangerous conclusion: “If post-launch pressure is big… let’s delay the launch.”",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "The Delay Spiral: “Improvements” That Never End",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "ul",
+                "text": "",
+                "items": [
+                  "Endless UI redesigns.",
+                  "Shipping features before the market truly asks for them.",
+                  "Rewriting parts of the system to feel “more ready.”",
+                  "Delay… then more delay… then more delay."
+                ],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "quote",
+                "text": "Hard truth: pressure isn’t caused by the product alone—pressure is caused by the market. Delaying launch doesn’t remove pressure; it postpones the shock and often makes it worse.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "The Right Equation",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "Yes—pressure increases after launch. Yes—issues appear. Yes—the team gets tired. But this isn’t failure. This is the normal path of any product that wants to survive in a real market.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "What Smart Teams Do Instead",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "ul",
+                "text": "",
+                "items": [
+                  "Launch earlier with clear expectations that the next phase is harder.",
+                  "Prepare psychologically for feedback and criticism.",
+                  "Prepare technically: error tracking, logs, basic performance visibility.",
+                  "Prepare operationally: a plan for support and iteration."
+                ],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "Conclusion",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "If you’re delaying launch mainly to avoid post-launch pressure, the problem may not be your product—it may be readiness for the market phase. Post-launch pressure isn’t a sign of failure. It’s the first sign you’ve entered the real market.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              }
+            ]
+          }
+        }
+      },
+      {
+        "category": "startups-mvp",
+        "date": "2026-02-13",
+        "id": "startup-002-first-100-users-hardest",
+        "image": "10.jpg",
+        "tags": [
+          "MVP",
+          "Startup",
+          "Users",
+          "Launch",
+          "Product",
+          "Validation",
+          "GoToMarket"
+        ],
+        "versions": {
+          "ar": {
+            "title": "لماذا أول 100 مستخدم هم أصعب 100 مستخدم لأي منتج؟",
+            "slug": "limatha-awal-100-mustakhdim-asab",
+            "meta": {
+              "title": "لماذا أول 100 مستخدم هم الأصعب؟ حقيقة إطلاق الـ MVP",
+              "description": "تحليل واقعي لسبب صعوبة جذب أول 100 مستخدم بعد إطلاق الـ MVP، ولماذا لا يعني ضعف التفاعل فشل المنتج بل بداية التعلم الحقيقي."
+            },
+            "short": [
+              {
+                "type": "p",
+                "text": "كثير ناس بتتخيل إنه بمجرد إطلاق المنتج، المستخدمين رح ييجوا لحالهم. لكن الحقيقة إن أول 100 مستخدم هم أصعب مرحلة في أي مشروع، لأنك وقتها بلا سمعة، بلا قصص نجاح، وبلا دليل يقنع الناس يغامروا بوقتهم."
+              },
+              {
+                "type": "p",
+                "text": "أول 100 مستخدم مش للربح ولا للمظاهر… هم للتعلّم، لاكتشاف الأخطاء، وفهم السوق الحقيقي. الإطلاق ليس الانتصار… أول مستخدم حقيقي هو الانتصار."
+              }
+            ],
+            "long": [
+              {
+                "type": "h1",
+                "text": "لماذا أول 100 مستخدم هم أصعب 100 مستخدم لأي منتج؟"
+              },
+              {
+                "type": "p",
+                "text": "كثير من روّاد الأعمال يعيشون نفس المشهد: تشتغل أشهر على منتجك، تُطلقه، تنشر عنه، وتنتظر أن تبدأ الاشتراكات والطلبات بالوصول تلقائيًا… ثم تصحو بعد أيام لتجد أرقامًا مخيبة: بضعة مستخدمين فقط، وبعضهم من الأصدقاء أو الفريق."
+              },
+              {
+                "type": "p",
+                "text": "وهنا تبدأ الصدمة. ليس لأن المنتج فاشل، بل لأن هناك وهمًا منتشرًا: أن السوق ينتظر منتجك بشغف."
+              },
+              {
+                "type": "h2",
+                "text": "الوهم الكبير: «أطلق… والباقي سيأتي وحده»"
+              },
+              {
+                "type": "p",
+                "text": "هذا الوهم يقتل الكثير من المشاريع مبكرًا. الواقع أن المستخدم لا يغيّر عادته بسهولة، ولا يمنح ثقته لأي منتج جديد لأنه رأى منشورًا أو إعلانًا."
+              },
+              {
+                "type": "h2",
+                "text": "لماذا أول 100 مستخدم هم الأصعب فعلًا؟"
+              },
+              {
+                "type": "p",
+                "text": "لأنك في هذه المرحلة تبدأ من الصفر تقريبًا. لا يوجد شيء يُطمئن المستخدم أو يقنعه أنك تستحق وقتَه."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "لا سمعة لديك في السوق.",
+                  "لا تقييمات أو مراجعات من مستخدمين.",
+                  "لا قصص نجاح تُثبت أن المنتج فعّال.",
+                  "لا دليل واضح أن المنتج يستحق التجربة.",
+                  "وأحيانًا حتى أنت نفسك لست متأكدًا 100% من اتجاه المنتج."
+                ]
+              },
+              {
+                "type": "p",
+                "text": "المفارقة أن المستخدم في هذه المرحلة لا يدفع مالًا فقط، بل يدفع شيئًا أغلى: الوقت والراحة والتغيير."
+              },
+              {
+                "type": "h2",
+                "text": "الخطأ الذي يقتل معظم المشاريع"
+              },
+              {
+                "type": "p",
+                "text": "كثير فرق تُطلق المنتج، تنتظر المستخدمين، لا يأتي التفاعل، فتبدأ الشكوك، ينخفض الحماس، وبعد شهرين تبدأ الجملة الشهيرة:"
+              },
+              {
+                "type": "quote",
+                "text": "يبدو أن المنتج لا يملك سوقًا."
+              },
+              {
+                "type": "p",
+                "text": "بينما الحقيقة غالبًا مختلفة: المنتج لم يمت لأن السوق رفضه، بل مات لأن صاحبه كان ينتظر السوق أن يأتي وحده."
+              },
+              {
+                "type": "h2",
+                "text": "ماذا تعني أول 100 مستخدم فعليًا؟"
+              },
+              {
+                "type": "p",
+                "text": "أول 100 مستخدم ليسوا مرحلة أرباح ولا مرحلة استعراض. هذه المرحلة لها هدف واحد: التعلم."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "اختبار المشكلة: هل هي حقيقية؟",
+                  "اختبار الحل: هل يحل المشكلة فعلًا؟",
+                  "اكتشاف العيوب التقنية والعملية.",
+                  "فهم تجربة المستخدم وسلوكياته.",
+                  "تصحيح الاتجاه قبل أن يصبح التعديل مكلفًا."
+                ]
+              },
+              {
+                "type": "h2",
+                "text": "لماذا التأخير لا يحل المشكلة؟"
+              },
+              {
+                "type": "p",
+                "text": "بعض الفرق تؤجل الإطلاق بحجة أنها تريد «ضمان النجاح»، لكن التأخير لا يجلب مستخدمين، ولا يقلل المخاطر. هو فقط يؤخر لحظة مواجهة الحقيقة."
+              },
+              {
+                "type": "h2",
+                "text": "الخلاصة"
+              },
+              {
+                "type": "p",
+                "text": "الإطلاق ليس الانتصار. أول مستخدم حقيقي هو الانتصار. وأول 100 مستخدم هم أصعب مرحلة، وأهم مرحلة، وأغلى مرحلة… لأنها المرحلة التي تُحدد إن كنت ستتعلم وتستمر، أم ستبقى في دائرة التوقعات."
+              },
+              {
+                "type": "p",
+                "text": "إذا منتجك لا يزال بلا مستخدمين، فهذا ليس فشلًا. هذه هي بداية المشوار الحقيقي. لكن إن انتظرت الكمال قبل أن تُطلق… فأنت غالبًا لا تُحضّر للنجاح، بل تتجنب الواقع."
+              }
+            ]
+          },
+          "en": {
+            "title": "Why the First 100 Users Are the Hardest 100 Users",
+            "slug": "why-first-100-users-are-hardest",
+            "meta": {
+              "title": "Why the First 100 Users Are the Hardest for Any MVP",
+              "description": "The first 100 users are the hardest part of any startup launch. Learn why early adoption is slow, why waiting for perfection kills momentum, and what this stage is truly for."
+            },
+            "short": [
+              {
+                "type": "p",
+                "text": "Many founders believe launching an MVP means users will naturally start signing up. Reality is the opposite: the first 100 users are the hardest because you have no reputation, no reviews, and no proof your product is worth their time."
+              },
+              {
+                "type": "p",
+                "text": "Those first users aren’t for profit or hype—they’re for learning. Launch isn’t the victory. Your first real user is."
+              }
+            ],
+            "long": [
+              {
+                "type": "h1",
+                "text": "Why the First 100 Users Are the Hardest 100 Users",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "Many founders experience the same painful moment: you build your product for months, launch it, publish a post, and expect signups to flood in. Then you wake up to disappointing numbers—just a few users, often friends or teammates.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "That shock doesn’t necessarily mean the product is bad. It usually means the founder believed one of the biggest startup myths: the market is waiting.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "The Big Myth: “Launch… and everything will follow”",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "This myth kills startups early. Users don’t change habits easily. They don’t trust new products just because they saw a post or an ad.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "So why are the first 100 users truly the hardest?",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "Because at this stage, you have almost nothing that reduces risk for the user. You’re asking them to gamble their time, comfort, and attention.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "ul",
+                "text": "",
+                "items": [
+                  "No reputation in the market.",
+                  "No reviews or testimonials.",
+                  "No proven success stories.",
+                  "No strong evidence the product is worth trying.",
+                  "And sometimes, even the founder is not fully certain yet."
+                ],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "The real cost for early users isn’t money. It’s time and change.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "The mistake that kills most startups",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "Many teams launch, wait for users, see no engagement, then doubt everything. Two months later, the famous conclusion appears:",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "quote",
+                "text": "Looks like there’s no market for this.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "But the truth is often different: the product didn’t die because the market rejected it—it died because the founder expected the market to arrive automatically.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "What are the first 100 users actually for?",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "The first 100 users are not about revenue or hype. Their purpose is learning.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "ul",
+                "text": "",
+                "items": [
+                  "Validate the problem: is it real?",
+                  "Validate the solution: does it truly solve it?",
+                  "Discover technical and UX issues early.",
+                  "Understand user behavior and expectations.",
+                  "Correct direction before changes become expensive."
+                ],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "Why delaying launch doesn’t solve anything",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "Some founders delay launching because they want to “guarantee success.” But delay doesn’t bring users. It doesn’t reduce risk. It only postpones the moment of truth.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "Conclusion",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "Launch is not the victory. Your first real user is the victory. And your first 100 users are the hardest, most valuable phase—because it determines whether you learn and evolve, or stay trapped in assumptions.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "If your product still has no users, that’s not failure—it’s the start of the real journey. But if you wait for perfection before launching, you’re not preparing for success—you’re avoiding reality.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              }
+            ]
+          }
+        }
+      },
+      {
+        "category": "startups-mvp",
+        "date": "2026-02-13",
+        "id": "startup-003-product-not-broken-listen-to-market",
+        "tags": [
+          "MVP",
+          "Startup",
+          "Market",
+          "User Feedback",
+          "Product Launch",
+          "Product-Market Fit",
+          "UX"
+        ],
+        "image": "10.jpg",
+        "versions": {
+          "ar": {
+            "title": "منتجك ليس معطّلًا… أنت فقط لم تستمع للسوق بعد",
+            "slug": "muntajak-laysa-muattalan-istama-lilsouq",
+            "meta": {
+              "title": "منتجك ليس معطّلًا… أنت فقط لم تستمع للسوق بعد",
+              "description": "كثير من المنتجات تفشل بعد إطلاق النسخة الأولى ليس بسبب مشاكل تقنية، بل بسبب ضعف فهم السوق وتجربة المستخدم. تعلّم كيف تستمع للسوق قبل إضافة مزايا جديدة."
+            },
+            "short": [
+              {
+                "type": "p",
+                "text": "بعد إطلاق الـ MVP قد تلاحظ أن عدد المستخدمين قليل أو أن التفاعل ضعيف. كثير من الفرق تعتقد أن المنتج “لا يعمل” أو أن السوق غير مهتم، بينما الحقيقة في أغلب الحالات أن المستخدم لم يفهم القيمة من أول تجربة."
+              },
+              {
+                "type": "p",
+                "text": "قبل أن تبدأ بإضافة مزايا جديدة أو تحسينات تقنية، اسأل نفسك: هل استمعت فعلًا للسوق؟ هل فهمت لماذا خرج المستخدم؟ وهل جعلت المنتج يشرح نفسه خلال أول دقيقة؟"
+              }
+            ],
+            "long": [
+              {
+                "type": "h1",
+                "text": "منتجك ليس معطّلًا… أنت فقط لم تستمع للسوق بعد"
+              },
+              {
+                "type": "p",
+                "text": "كثير من الفرق تصل إلى مرحلة إطلاق أول نسخة من منتجها (MVP)، وتكون التوقعات في أعلى مستوياتها. يتخيل الفريق أن المستخدمين سيبدأون بالتسجيل فورًا، وأن التفاعل سيأتي تلقائيًا بمجرد نشر الإعلان أو مشاركة الرابط."
+              },
+              {
+                "type": "p",
+                "text": "لكن بعد أسابيع من الإطلاق، تبدأ المفاجأة: عدد الزيارات محدود، المستخدمون يجرّبون مرة ثم يختفون، ولا يوجد تفاعل حقيقي أو استخدام مستمر."
+              },
+              {
+                "type": "p",
+                "text": "وهنا يظهر السؤال الصعب: هل المنتج غير جيد؟ هل المنتج “معطّل”؟"
+              },
+              {
+                "type": "h2",
+                "text": "الحقيقة: المنتج غالبًا ليس معطّلًا… لكنه لم يُفهم"
+              },
+              {
+                "type": "p",
+                "text": "في أغلب الحالات، المشكلة ليست تقنية. السيرفر يعمل، الأداء مقبول، والواجهات قد تكون جيدة. لكن السبب الحقيقي أن المستخدم لم يشعر بالقيمة منذ اللحظة الأولى."
+              },
+              {
+                "type": "p",
+                "text": "المستخدم الجديد لا يمنحك وقتًا طويلًا. هو يدخل، ينظر، ثم يقرر بسرعة: هل هذا المنتج يستحق أن يغيّر عادته ويستثمر وقته فيه؟"
+              },
+              {
+                "type": "h2",
+                "text": "أكثر الأسباب شيوعًا وراء ضعف التفاعل"
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "المستخدم لم يفهم الفكرة أو القيمة من أول دقيقة.",
+                  "تجربة الاستخدام غير واضحة أو غير موجهة.",
+                  "المنتج لا يشرح نفسه بسرعة.",
+                  "الفكرة التي في ذهن الفريق ليست هي الرسالة التي وصلت للمستخدم.",
+                  "هناك خطوة ناقصة أو خطوة زائدة جعلت التجربة مربكة."
+                ]
+              },
+              {
+                "type": "p",
+                "text": "وهنا يجب أن نفرّق بين حالتين مختلفتين تمامًا:"
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "المستخدم لم يحب الفكرة.",
+                  "المستخدم لم يفهم المنتج."
+                ]
+              },
+              {
+                "type": "p",
+                "text": "كثير من المنتجات تموت لأنها لم توصل قيمتها بوضوح، وليس لأنها فكرة سيئة."
+              },
+              {
+                "type": "h2",
+                "text": "لماذا الاستماع في مرحلة الـ MVP أهم من أي ميزة جديدة؟"
+              },
+              {
+                "type": "p",
+                "text": "لأن هذه المرحلة ليست مرحلة تطوير مزايا إضافية، بل مرحلة اختبار وفهم."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "هل المشكلة التي تحلها المنتج حقيقية؟",
+                  "هل الحل الذي قدمته مقنع؟",
+                  "هل رحلة المستخدم واضحة؟",
+                  "هل اللغة التي تستخدمها في المنتج مناسبة؟",
+                  "هل المستخدم يصل إلى لحظة “الآن فهمت” بسرعة؟"
+                ]
+              },
+              {
+                "type": "p",
+                "text": "أي تطوير يتم قبل الاستماع الحقيقي للمستخدمين هو مجازفة. وقد يعني أنك تبني مزايا لا يحتاجها أحد، أو تحسّن شيء ليس أصل المشكلة."
+              },
+              {
+                "type": "h2",
+                "text": "أخطر ما يمكن أن يحدث: أن يغادر المستخدم بصمت"
+              },
+              {
+                "type": "p",
+                "text": "المشكلة ليست في المستخدم الذي ينتقدك. المشكلة في المستخدم الذي يخرج بهدوء دون أن يقول شيئًا."
+              },
+              {
+                "type": "p",
+                "text": "عندما يخرج المستخدم بصمت، يبدأ الفريق بتفسير الصمت بشكل خاطئ: “السوق لا يحتاج المنتج”. بينما الحقيقة قد تكون ببساطة: “لم نسأل لماذا خرج المستخدم”."
+              },
+              {
+                "type": "h2",
+                "text": "غيّر نظرتك لأول المستخدمين"
+              },
+              {
+                "type": "p",
+                "text": "أول المستخدمين ليسوا زبائن بالمعنى التقليدي. هم شركاء تعلّم."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "كل ملاحظة منهم تعتبر ذهبًا.",
+                  "كل انسحاب منهم رسالة.",
+                  "كل ارتباك منهم دليل على نقطة تحتاج توضيحًا."
+                ]
+              },
+              {
+                "type": "p",
+                "text": "قد لا يعجبك كل Feedback، لكن كل Feedback يحمل درسًا مهمًا عن السوق."
+              },
+              {
+                "type": "h2",
+                "text": "الخلاصة"
+              },
+              {
+                "type": "p",
+                "text": "ليس كل ضعف في الاستخدام سببه السوق. وليس كل تأخير سببه الجودة. كثيرًا ما يكون السبب أنك بنيت بسرعة… لكنك لم تستمع بسرعة."
+              },
+              {
+                "type": "p",
+                "text": "المنتج ليس معطّلًا دائمًا… أحيانًا أنت فقط لم تسمع السوق بعد."
+              }
+            ]
+          },
+          "en": {
+            "title": "Your Product Isn’t Broken — You Just Haven’t Listened to the Market Yet",
+            "slug": "product-not-broken-listen-to-market",
+            "meta": {
+              "title": "Your Product Isn’t Broken — You Haven’t Listened to the Market Yet",
+              "description": "Many MVPs fail after launch not because of technical issues, but because founders misunderstand user behavior. Learn why listening to the market matters more than building features."
+            },
+            "short": [
+              {
+                "type": "p",
+                "text": "After launching an MVP, low engagement often makes teams assume the product is failing. In reality, the product may work perfectly—but users simply didn’t understand its value in the first minute."
+              },
+              {
+                "type": "p",
+                "text": "Before adding new features or improving performance, focus on the real question: did you truly listen to the market and understand why users leave?"
+              }
+            ],
+            "long": [
+              {
+                "type": "h1",
+                "text": "Your Product Isn’t Broken — You Just Haven’t Listened to the Market Yet",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "Many teams reach the point of launching their first MVP with high expectations. They believe that once the product is live, users will naturally sign up and engagement will follow as soon as they share the link.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "But after a few weeks, reality hits: traffic is limited, users try the product once and disappear, and there’s no real consistent usage.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "That’s when the painful question appears: is the product broken?",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "The truth: the product usually isn’t broken — it just wasn’t understood",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "In most cases, the issue is not technical. The servers are running, performance is acceptable, and the UI may look fine. But the real problem is that the user didn’t feel the value immediately.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "A new user won’t give you much time. They enter, look around, and quickly decide: is this worth changing my habits and investing time into?",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "Common reasons behind weak engagement",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "ul",
+                "text": "",
+                "items": [
+                  "The user didn’t understand the product’s value in the first minute.",
+                  "The user journey is unclear or not guided.",
+                  "The product doesn’t explain itself quickly.",
+                  "The message in the founder’s head is not what reached the user.",
+                  "A missing step or an extra step created friction."
+                ],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "This leads to a critical distinction:",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "ul",
+                "text": "",
+                "items": [
+                  "The user didn’t like the idea.",
+                  "The user didn’t understand the product."
+                ],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "Many products die not because they are bad, but because they fail to communicate their value clearly.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "Why listening matters more than building features in MVP stage",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "At this stage, your job isn’t to expand the product—it’s to understand the market.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "ul",
+                "text": "",
+                "items": [
+                  "Is the problem truly real?",
+                  "Is your solution convincing?",
+                  "Is the onboarding flow clear?",
+                  "Is your messaging and language effective?",
+                  "Does the user reach the “aha moment” quickly?"
+                ],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "Any development done before truly listening to users is a gamble. You may end up building features nobody wants, while ignoring the real problem.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "The most dangerous thing: silent users",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "The problem isn’t the user who complains. The real danger is the user who leaves silently.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "Silence often gets misinterpreted as “the market doesn’t need this.” In reality, it may simply mean: you never asked why they left.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "Change how you see early users",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "Your first users are not customers in the traditional sense. They are learning partners.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "ul",
+                "text": "",
+                "items": [
+                  "Every note they give is valuable.",
+                  "Every drop-off is a message.",
+                  "Every confusion point is a clue."
+                ],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "You may not like every piece of feedback, but every piece teaches you something about the market.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "h2",
+                "text": "Conclusion",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "Not every delay is caused by the market, and not every lack of engagement is caused by product quality. Sometimes the only reason is simple: you built fast… but you didn’t listen fast.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              },
+              {
+                "type": "p",
+                "text": "Your product isn’t broken. You just haven’t listened to the market yet.",
+                "items": [],
+                "level": 0,
+                "style": ""
+              }
+            ]
+          }
+        }
+      },
+      {
+        "category": "Startups & Product Management",
+        "date": "2026-02-13",
+        "image": "10.jpg",
+        "id": "post-004-small-decisions",
+        "tags": [
+          "startups",
+          "product-management",
+          "decision-making",
+          "team-management",
+          "execution",
+          "mvp"
+        ],
+        "versions": {
+          "ar": {
+            "title": "ليش أغلب المشاريع بتتعب من “القرارات الصغيرة”… مش من القرارات الكبيرة؟",
+            "slug": "small-decisions-kill-projects",
+            "meta": {
+              "title": "كيف القرارات الصغيرة بتدمّر المشاريع؟ | إدارة مشاريع وStartups",
+              "description": "مقال يشرح كيف القرارات اليومية الصغيرة والمتكررة قد تكون السبب الحقيقي وراء انهيار المشاريع، أكثر من القرارات المصيرية الكبيرة."
+            },
+            "short": [
+              {
+                "type": "paragraph",
+                "text": "كثير ناس بتفكر إن فشل المشاريع بيجي من قرار مصيري كبير… تمويل غلط، شريك غلط، أو سوق غلط."
+              },
+              {
+                "type": "paragraph",
+                "text": "بس الواقع مختلف: أغلب المشاريع ما بتوقع بضربة وحدة… هي بتتآكل ببطء من قرارات صغيرة جدًا."
+              },
+              {
+                "type": "paragraph",
+                "text": "القرار اللي بتأجله اليوم، والملاحظة اللي بتتركها بدون متابعة، والميزة اللي بتضيفها “بس عشان طلبوها”… كلها بتراكم ضغط وفوضى بدون ما تحس."
+              },
+              {
+                "type": "paragraph",
+                "text": "النجاح مش دايمًا قفزة كبيرة… كثير مرات هو التزام مستمر بقرارات صغيرة، يوم ورا يوم."
+              }
+            ],
+            "long": [
+              {
+                "type": "paragraph",
+                "text": "غالبًا عندما نفكر في فشل أي مشروع، أول ما يخطر ببالنا هو قرار كبير ومصيري: تمويل غير مناسب، شريك غير موفق، أو اختيار سوق خاطئ."
+              },
+              {
+                "type": "paragraph",
+                "text": "لكن الواقع في كثير من المشاريع مختلف تمامًا. المشاريع لا تنهار دائمًا بسبب ضربة واحدة، بل تتآكل ببطء نتيجة قرارات صغيرة ومتكررة لا تبدو خطيرة في لحظتها."
+              },
+              {
+                "type": "heading",
+                "text": "المشكلة ليست في القرار الكبير… بل في القرارات اليومية الصغيرة",
+                "level": 2,
+                "style": ""
+              },
+              {
+                "type": "paragraph",
+                "text": "قرارات مثل:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "تأجيل الرد على عميل بحجة “لاحقًا”.",
+                  "ترك ملاحظة دون متابعة أو توثيق.",
+                  "الموافقة على فكرة وأنت غير مقتنع بها 100%.",
+                  "تأجيل خطوة مهمة لأنها “غير مستعجلة”.",
+                  "تنفيذ تغيير سريع دون فهم تأثيره على باقي أجزاء المشروع."
+                ]
+              },
+              {
+                "type": "paragraph",
+                "text": "كل قرار من هذه القرارات يبدو بسيطًا جدًا لوحده، لكن تراكمها يخلق مشاكل كبيرة: ضغط، تضارب في الأولويات، فوضى في التنفيذ، وفريق يعمل كثيرًا لكنه لا يتقدم بشكل واضح."
+              },
+              {
+                "type": "heading",
+                "text": "غياب نظام اتخاذ القرار هو السبب الحقيقي",
+                "level": 2,
+                "style": ""
+              },
+              {
+                "type": "paragraph",
+                "text": "في كثير من الأحيان، المشكلة ليست في الأدوات ولا في التمويل ولا حتى في الفكرة. المشكلة تكون في غياب نظام واضح لاتخاذ القرارات."
+              },
+              {
+                "type": "paragraph",
+                "text": "هناك فرق كبير بين فريق يعمل “حسب الإحساس” وفريق يعمل “حسب نظام”."
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "الفريق الأول يتعب بسرعة ويضيع في التفاصيل.",
+                  "الفريق الثاني يتعب أيضًا، لكن يتقدم بثبات لأنه يعرف لماذا يتخذ كل قرار."
+                ]
+              },
+              {
+                "type": "heading",
+                "text": "النجاح ليس دائمًا لحظة كبيرة… بل التزام صغير متكرر",
+                "level": 2,
+                "style": ""
+              },
+              {
+                "type": "paragraph",
+                "text": "في النهاية، النجاح لا يكون دائمًا نتيجة قرار ضخم أو قفزة واحدة. غالبًا هو نتيجة سلسلة التزام بقرارات صغيرة، تتكرر يوميًا بدون ضجيج وبدون حماس زائد، لكن بثبات واستمرارية."
+              },
+              {
+                "type": "heading",
+                "text": "الخلاصة",
+                "level": 2,
+                "style": ""
+              },
+              {
+                "type": "paragraph",
+                "text": "ربما المشكلة ليست أننا لا نعرف ماذا نفعل… بل أننا لا نحب الالتزام بالقرارات الصغيرة رغم أنها هي التي تبني القرارات الكبيرة. المشاريع القوية لا تُبنى فقط بالأفكار الكبيرة، بل تُبنى بالانضباط اليومي."
+              }
+            ]
+          },
+          "en": {
+            "title": "Why Most Projects Fail Because of Small Decisions (Not Big Ones)",
+            "slug": "small-decisions-kill-projects",
+            "meta": {
+              "title": "Small Decisions That Kill Projects | Startup Execution & Leadership",
+              "description": "An article explaining how repeated small daily decisions often cause startups and projects to collapse more than major strategic mistakes."
+            },
+            "short": [
+              {
+                "type": "paragraph",
+                "text": "Most people assume projects fail because of one big mistake: wrong funding, wrong partner, or wrong market."
+              },
+              {
+                "type": "paragraph",
+                "text": "But in reality, most projects don’t collapse overnight… they slowly erode due to dozens of small neglected decisions."
+              },
+              {
+                "type": "paragraph",
+                "text": "The delayed client reply, the undocumented change, the feature added “just because”… these small moves build chaos over time."
+              },
+              {
+                "type": "paragraph",
+                "text": "Success isn’t always one big leap. Often, it’s consistent discipline in small decisions repeated every day."
+              }
+            ],
+            "long": [
+              {
+                "type": "paragraph",
+                "text": "When people talk about why projects fail, they usually point to major decisions: the wrong funding strategy, the wrong co-founder, or choosing the wrong market."
+              },
+              {
+                "type": "paragraph",
+                "text": "But in real life, most projects don’t collapse because of one big moment. Instead, they slowly break down due to small decisions that seem harmless individually."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "The real danger is in the daily micro-decisions"
+              },
+              {
+                "type": "paragraph",
+                "text": "Small decisions like:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Delaying a client reply because it’s “not urgent.”",
+                  "Leaving notes without follow-up.",
+                  "Agreeing to a feature even though you’re not fully convinced.",
+                  "Saying “we’ll handle it later.”",
+                  "Making a quick change without understanding its impact."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "paragraph",
+                "text": "Each one of these decisions feels small. But when they accumulate, they create stress, confusion, inconsistent priorities, and teams that are constantly working but not progressing."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "The real problem is often a missing decision-making system"
+              },
+              {
+                "type": "paragraph",
+                "text": "In many cases, the problem isn’t the tools, funding, or even the product idea. The real issue is the absence of a clear decision-making system."
+              },
+              {
+                "type": "paragraph",
+                "text": "There’s a big difference between a team that operates on gut feeling and a team that operates on structured decision-making."
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "The first team burns out and drifts into chaos.",
+                  "The second team also struggles, but it moves forward with stability."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Success is rarely one big leap"
+              },
+              {
+                "type": "paragraph",
+                "text": "Success is not always about making one big strategic move. More often, it’s about committing to small disciplined decisions repeatedly, every day, with consistency."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Conclusion"
+              },
+              {
+                "type": "paragraph",
+                "text": "Maybe the issue is not that we don’t know what to do. Maybe the issue is that we underestimate the power of small daily discipline. Projects are not built by big dreams alone, but by small decisions executed consistently."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "category": "Startups & Software Engineering",
+        "date": "2026-02-13",
+        "image": "10.jpg",
+        "id": "post-005-technical-debt-from-day-one",
+        "tags": [
+          "technical-debt",
+          "software-engineering",
+          "startups",
+          "mvp",
+          "architecture",
+          "scalability"
+        ],
+        "versions": {
+          "ar": {
+            "title": "كيف يبدأ الدَّين التقني من أول يوم دون أن تشعر؟",
+            "slug": "technical-debt-from-day-one",
+            "meta": {
+              "title": "كيف يبدأ الدَّين التقني من أول يوم؟ | Technical Debt في مشاريع الـ MVP",
+              "description": "مقال يشرح كيف يبدأ الدَّين التقني في المشاريع منذ الأيام الأولى عبر قرارات صغيرة، وما هي الاختصارات المقبولة وما هي الاختصارات التي تتحول إلى مشاكل خطيرة لاحقًا."
+            },
+            "short": [
+              {
+                "type": "paragraph",
+                "text": "كثير فرق بتعتقد إن الدَّين التقني (Technical Debt) بيجي بعد سنة أو سنتين… بعد ما يكبر المنتج ويزيد الضغط."
+              },
+              {
+                "type": "paragraph",
+                "text": "بس الحقيقة إنه غالبًا بيبدأ من أول أسبوع، وأحيانًا من أول يوم… بقرارات صغيرة بنعتبرها “مؤقتة”."
+              },
+              {
+                "type": "paragraph",
+                "text": "المشكلة مش إنك تعمل Shortcut… المشكلة إن الـ Shortcut يصير عادة، وما يعود مؤقت فعليًا."
+              },
+              {
+                "type": "paragraph",
+                "text": "مش كل اختصار غلط، بس في اختصارات ممنوعة من أول نسخة: تنظيم البيانات، الصلاحيات، معالجة الأخطاء، والتوثيق الأساسي."
+              }
+            ],
+            "long": [
+              {
+                "type": "paragraph",
+                "text": "كثير فرق بتعتقد إن الدَّين التقني (Technical Debt) شيء يظهر بعد سنة أو سنتين من العمل، بعد ما يكبر المنتج، ويزيد عدد المستخدمين، ويتوسع الفريق."
+              },
+              {
+                "type": "paragraph",
+                "text": "لكن الواقع مختلف تمامًا: الدَّين التقني غالبًا يبدأ في أول أسبوع… وأحيانًا من أول يوم."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "كيف يبدأ الدَّين التقني بهذه السرعة؟"
+              },
+              {
+                "type": "paragraph",
+                "text": "يبدأ من قرارات صغيرة جدًا، تُقال بشكل طبيعي أثناء العمل:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "دعنا نفعلها بهذه الطريقة هذه المرة.",
+                  "سنرتبها لاحقًا.",
+                  "هذا مجرد MVP.",
+                  "لا يوجد وقت لنفعلها بشكل صحيح الآن."
+                ]
+              },
+              {
+                "type": "paragraph",
+                "text": "لا توجد مشكلة في هذه العبارات بحد ذاتها، المشكلة عندما تتكرر… وتتحول إلى أسلوب عمل دائم."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "الدَّين التقني ليس فقط كود سيئ"
+              },
+              {
+                "type": "paragraph",
+                "text": "الدَّين التقني هو أي قرار سريع اليوم يجعل التطوير غدًا أصعب وأبطأ وأكثر خطورة. وهو ليس مقتصرًا على كتابة كود غير مرتب، بل يشمل أيضًا بنية النظام، إدارة البيانات، وغياب التوثيق."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "ليس كل Shortcut خطأ… لكن هناك حدود"
+              },
+              {
+                "type": "paragraph",
+                "text": "هناك اختصارات طبيعية ومقبولة في مرحلة الـ MVP، مثل:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "تصميم واجهات غير نهائي.",
+                  "واجهة مستخدم مؤقتة طالما أنها واضحة.",
+                  "تأجيل بعض التفاصيل الثانوية.",
+                  "تقديم نسخة أولية بميزات أقل."
+                ]
+              },
+              {
+                "type": "paragraph",
+                "text": "هذه أمور يمكن تعديلها بسهولة لاحقًا، وهي جزء طبيعي من بناء أي منتج سريع."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "اختصارات ممنوعة من أول نسخة"
+              },
+              {
+                "type": "paragraph",
+                "text": "في المقابل، هناك اختصارات إذا بدأت بها بشكل خاطئ، سيكون تصحيحها لاحقًا مكلفًا جدًا:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "نموذج البيانات (Data Model) وتخزين المعلومات.",
+                  "نظام تسجيل الدخول والصلاحيات (Authentication & Authorization).",
+                  "معالجة الأخطاء (Error Handling).",
+                  "التسجيل والمراقبة (Logging & Monitoring).",
+                  "فصل المسؤوليات بين أجزاء النظام (Separation of Concerns)."
+                ]
+              },
+              {
+                "type": "paragraph",
+                "text": "هذه الأساسيات ليست رفاهية، بل هي الحد الأدنى لأي نظام يُفترض أن ينمو."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "المشكلة الأخطر: أنك لا تشعر بالدَّين التقني إلا متأخرًا"
+              },
+              {
+                "type": "paragraph",
+                "text": "الدَّين التقني لا يظهر مباشرة. في البداية كل شيء يبدو سريعًا وسهلًا، ثم فجأة بعد أشهر يبدأ الفريق يلاحظ أن:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "أي تعديل بسيط يكسر أجزاء أخرى.",
+                  "إضافة ميزة جديدة أصبحت مرهقة.",
+                  "المنظومة أصبحت حساسة ومخيفة للتغيير.",
+                  "الوقت يضيع في إصلاح مشاكل بدل بناء قيمة."
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "الخلاصة"
+              },
+              {
+                "type": "paragraph",
+                "text": "السرعة مهمة، خصوصًا في مرحلة الـ MVP. لكن السرعة بدون وعي تُنتج دَينًا تقنيًا صامتًا، وعندما يكبر يصبح عبئًا نفسيًا وتقنيًا على الفريق. الفكرة ليست أن تتجنب الاختصارات بالكامل، بل أن تختارها بذكاء، وتعرف أيها يمكن إصلاحه لاحقًا، وأيها يجب أن يكون صحيحًا منذ اليوم الأول."
+              }
+            ]
+          },
+          "en": {
+            "title": "How Technical Debt Starts From Day One (Without You Noticing)",
+            "slug": "technical-debt-from-day-one",
+            "meta": {
+              "title": "How Technical Debt Starts From Day One | MVP & Startup Engineering",
+              "description": "Learn how technical debt often begins during the first week of building an MVP through small shortcuts, and which shortcuts are acceptable versus dangerous long-term."
+            },
+            "short": [
+              {
+                "type": "paragraph",
+                "text": "Many teams believe technical debt appears after a year or two, once the product grows and the pressure increases."
+              },
+              {
+                "type": "paragraph",
+                "text": "But in reality, technical debt often starts in the first week… sometimes on day one, through small “temporary” shortcuts."
+              },
+              {
+                "type": "paragraph",
+                "text": "Shortcuts are not always bad, but when they become habits, they silently turn into expensive future problems."
+              },
+              {
+                "type": "paragraph",
+                "text": "Some shortcuts are acceptable in MVPs, but others should never be compromised early: data design, authentication, error handling, and logging."
+              }
+            ],
+            "long": [
+              {
+                "type": "paragraph",
+                "text": "Many teams believe technical debt only shows up after a year or two, when the product grows, traffic increases, and the engineering team expands."
+              },
+              {
+                "type": "paragraph",
+                "text": "But the reality is very different: technical debt often starts in the very first week—sometimes on day one."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "How does technical debt start so early?"
+              },
+              {
+                "type": "paragraph",
+                "text": "It usually begins with small decisions that feel harmless in the moment:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Let’s do it this way just for now.",
+                  "We’ll clean it up later.",
+                  "It’s only an MVP.",
+                  "There’s no time to do it properly right now."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "paragraph",
+                "text": "None of these statements are wrong on their own. The danger happens when they repeat frequently and become the default approach."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Technical debt is not just messy code"
+              },
+              {
+                "type": "paragraph",
+                "text": "Technical debt is any quick decision made today that makes future development slower, riskier, and more expensive. It’s not only about code quality, but also architecture choices, data handling, and missing foundational practices."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Not every shortcut is bad"
+              },
+              {
+                "type": "paragraph",
+                "text": "Some shortcuts are normal and acceptable in early-stage MVP development, such as:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Non-final UI designs.",
+                  "Temporary layouts as long as they are clear.",
+                  "Skipping minor edge cases.",
+                  "Launching with fewer features to validate the core value."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "paragraph",
+                "text": "These can be improved later without huge cost, and they are part of fast iteration."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Shortcuts you should never take early"
+              },
+              {
+                "type": "paragraph",
+                "text": "However, there are shortcuts that become extremely expensive to fix later, and they should be done correctly from the beginning:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Core data model and database structure.",
+                  "Authentication and user permissions.",
+                  "Error handling and validation.",
+                  "Logging, monitoring, and debugging visibility.",
+                  "Clear separation of responsibilities inside the codebase."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "paragraph",
+                "text": "These are not “nice-to-have” features. They are the minimum foundations for a product that is expected to grow."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "The most dangerous part: you won’t feel it early"
+              },
+              {
+                "type": "paragraph",
+                "text": "Technical debt does not hurt immediately. At first, everything feels fast and productive. Then after a few months, the symptoms appear:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "A small change breaks multiple features.",
+                  "New features take longer than expected.",
+                  "Developers become afraid to touch certain parts of the code.",
+                  "Most effort goes into fixing instead of building."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Conclusion"
+              },
+              {
+                "type": "paragraph",
+                "text": "Speed matters, especially when building an MVP. But speed without awareness creates silent technical debt. The goal is not to avoid shortcuts completely, but to choose them wisely: know what can be fixed later, and what must be correct from day one."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "category": "Startups & Product Engineering",
+        "date": "2026-02-13",
+        "image": "10.jpg",
+        "id": "post-006-fast-mvp-what-to-sacrifice",
+        "tags": [
+          "mvp",
+          "startups",
+          "product-development",
+          "architecture",
+          "authentication",
+          "data-model",
+          "logging",
+          "analytics"
+        ],
+        "versions": {
+          "ar": {
+            "title": "MVP سريع… لكن بأي ثمن؟ أين نُضحّي وأين يجب أن نحافظ؟",
+            "slug": "fast-mvp-what-to-sacrifice",
+            "meta": {
+              "title": "MVP سريع… لكن بأي ثمن؟ | ما الذي يمكن تأجيله وما الذي لا يُمس",
+              "description": "دليل عملي لاتخاذ قرارات ذكية أثناء بناء MVP سريع: ما الذي يمكن تأجيله (UI، ميزات ثانوية) وما الذي يجب الحفاظ عليه من أول نسخة (البيانات، الصلاحيات، السجلات، التحليلات)."
+            },
+            "short": [
+              {
+                "type": "paragraph",
+                "text": "كلنا نريد بناء MVP بسرعة… لكن السؤال الحقيقي: أي جزء من النظام يمكن تأجيله، وأي جزء إذا أهملته ستدفع ثمنه لاحقًا؟"
+              },
+              {
+                "type": "paragraph",
+                "text": "الخطأ الشائع: التضحية بالأساسيات (البيانات، الصلاحيات، تتبّع الأخطاء) بدل التضحية بالتفاصيل الثانوية."
+              },
+              {
+                "type": "paragraph",
+                "text": "في الـ MVP يمكنك أن تُبسّط الواجهة وتؤجل الميزات… لكن لا تُبسّط الأشياء التي تجعل المنتج قابلًا للنمو والفهم والصيانة."
+              },
+              {
+                "type": "paragraph",
+                "text": "الخلاصة: أسرع نسخة لا تعني نسخة “مرتجلة”. تعني نسخة محدودة… لكن محترمة في الأساس."
+              }
+            ],
+            "long": [
+              {
+                "type": "paragraph",
+                "text": "بناء MVP بسرعة هدف منطقي، خصوصًا عندما تريد اختبار فكرة في السوق قبل أن تستهلك وقتًا وميزانية كبيرة. لكن السرعة وحدها ليست إنجازًا إذا كانت نتيجتها منتجًا لا يمكن تطويره لاحقًا."
+              },
+              {
+                "type": "paragraph",
+                "text": "السؤال الذي يحدد نجاح المرحلة ليس: “كيف نُطلق بسرعة؟” بل: “أين نُضحّي لنُطلق بسرعة… وأين يجب أن نحافظ من أول نسخة؟”"
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "ما الذي يمكن التضحية به في الـ MVP (بشكل آمن)؟"
+              },
+              {
+                "type": "paragraph",
+                "text": "هذه أمور يمكن تبسيطها أو تأجيلها غالبًا دون أن تُدمّر مستقبل المنتج:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "تصميم UI غير نهائي، طالما تجربة الاستخدام واضحة.",
+                  "عدد الصفحات والسيناريوهات (Use-cases) — ركّز على رحلة واحدة أساسية.",
+                  "ميزات ثانوية لا تؤثر على القيمة الرئيسية.",
+                  "تحسينات الأداء المتقدمة قبل وجود مستخدمين فعليين.",
+                  "تنوع كبير في الإعدادات والتخصيصات (Customization) من اليوم الأول."
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "ما الذي يجب الحفاظ عليه من أول نسخة؟"
+              },
+              {
+                "type": "paragraph",
+                "text": "هناك أساسيات إذا تم تجاهلها في البداية، يصبح إصلاحها لاحقًا أصعب بكثير — وأحيانًا يفرض إعادة بناء كاملة:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "نموذج البيانات (Data Model): إذا كان مشوشًا، كل شيء فوقه سيصبح مشوشًا.",
+                  "تسجيل الدخول والصلاحيات (Authentication & Authorization): ترقيعها لاحقًا مكلف ومخيف.",
+                  "ثبات الـ API: تغييرات متكررة في الاستجابات تعني كسر التطبيق وإرباك الفريق.",
+                  "معالجة الأخطاء (Error Handling) + رسائل واضحة للمستخدم.",
+                  "التسجيل والمراقبة (Logging + Error Tracking): بدونها أنت “أعمى” أمام مشاكل المستخدم.",
+                  "حد أدنى من التنظيم المعماري (Minimal Architecture): أماكن ثابتة ومسؤوليات واضحة."
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "الخطأ الأكثر شيوعًا في فرق الـ MVP"
+              },
+              {
+                "type": "paragraph",
+                "text": "كثير من الفرق تُضحّي بالأساسيات لأنها غير مرئية للمستخدم، وتُحافظ على أشياء شكلية لأنها مرئية. بينما الصحيح غالبًا هو العكس:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "تبسيط الواجهة؟ نعم.",
+                  "تأجيل ميزات ثانوية؟ نعم.",
+                  "إهمال البيانات والصلاحيات والتسجيل؟ لا."
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "قاعدة عملية تساعدك في القرار"
+              },
+              {
+                "type": "paragraph",
+                "text": "اسأل نفسك عند كل شيء تريد “تأجيله”: هل هذا يؤثر على (فهم النظام + أمان البيانات + قابلية التطوير)؟ إذا نعم، لا تؤجله. إذا لا، غالبًا يمكن تأجيله."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "الخلاصة"
+              },
+              {
+                "type": "paragraph",
+                "text": "الـ MVP السريع لا يعني منتجًا مرتجلًا. يعني منتجًا محدودًا في النطاق… لكنه محترم في الأساس. تضحية ذكية اليوم تُسرّع الإطلاق وتُقلل الألم غدًا، بينما تضحية خاطئة اليوم قد تجبرك على إعادة البناء لاحقًا."
+              }
+            ]
+          },
+          "en": {
+            "title": "A Fast MVP… But at What Cost? What to Sacrifice vs What to Protect",
+            "slug": "fast-mvp-what-to-sacrifice",
+            "meta": {
+              "title": "Fast MVP: What to Sacrifice vs What to Protect | Startup Engineering",
+              "description": "A practical guide to building a fast MVP without destroying the product’s future: what you can safely simplify (UI, scope) and what must be solid from day one (data model, auth, logging, APIs)."
+            },
+            "short": [
+              {
+                "type": "paragraph",
+                "text": "Everyone wants a fast MVP. The real question is: what can you safely simplify, and what will become painfully expensive later if you ignore it?"
+              },
+              {
+                "type": "paragraph",
+                "text": "The common mistake: sacrificing foundations (data, auth, error tracking) instead of sacrificing secondary details."
+              },
+              {
+                "type": "paragraph",
+                "text": "You can simplify UI and delay features—but don’t weaken the parts that make the product maintainable, scalable, and understandable."
+              },
+              {
+                "type": "paragraph",
+                "text": "Bottom line: a fast MVP should be limited in scope, not sloppy in fundamentals."
+              }
+            ],
+            "long": [
+              {
+                "type": "paragraph",
+                "text": "Building an MVP fast is a reasonable goal, especially when you want to validate an idea before spending serious time and budget. But speed alone is not a win if the result is a product that can’t evolve."
+              },
+              {
+                "type": "paragraph",
+                "text": "The question that defines success is not “How do we launch fast?” but “What can we sacrifice to launch fast—and what must be protected from day one?”"
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "What you can safely sacrifice in an MVP"
+              },
+              {
+                "type": "paragraph",
+                "text": "These are areas you can simplify or delay without destroying the product’s future:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Non-final UI design, as long as the user flow is clear.",
+                  "A smaller number of pages and use-cases—focus on one core journey.",
+                  "Secondary features that don’t impact the main value.",
+                  "Advanced performance optimizations before real users exist.",
+                  "Heavy customization and configuration from day one."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "What you must protect from day one"
+              },
+              {
+                "type": "paragraph",
+                "text": "Some foundations become extremely expensive to fix later, and often force a rebuild if done wrong:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Data model: if it’s messy, everything built on top becomes messy.",
+                  "Authentication & authorization: patching security later is risky and costly.",
+                  "API stability: constantly changing responses breaks clients and confuses teams.",
+                  "Error handling and clear user-facing messages.",
+                  "Logging & error tracking: without it, you’re blind in production.",
+                  "Minimal architecture: stable structure and clear responsibilities."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "The most common MVP mistake"
+              },
+              {
+                "type": "paragraph",
+                "text": "Teams often sacrifice foundations because users don’t “see” them, while over-investing in visible surface details. In many cases, the right approach is the opposite:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Simplify UI? Yes.",
+                  "Delay secondary features? Yes.",
+                  "Ignore data, auth, and observability? No."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "A practical decision rule"
+              },
+              {
+                "type": "paragraph",
+                "text": "When you consider delaying something, ask: does it affect (system clarity + data safety + future iteration speed)? If yes, don’t delay it. If no, it’s likely safe to delay."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Conclusion"
+              },
+              {
+                "type": "paragraph",
+                "text": "A fast MVP doesn’t mean a sloppy product. It means a product that is limited in scope—but solid in fundamentals. Smart sacrifices today speed up launch and reduce pain tomorrow, while wrong sacrifices can force an expensive rebuild later."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "category": "AI Tools & Product Development",
+        "date": "2026-02-13",
+        "image": "10.jpg",
+        "id": "post-007-ai-app-builders-experiment",
+        "tags": [
+          "ai",
+          "app-builders",
+          "mvp",
+          "startup-tools",
+          "software-development",
+          "no-code",
+          "low-code",
+          "prompt-engineering",
+          "product-validation"
+        ],
+        "versions": {
+          "ar": {
+            "title": "جرّبت 7 أدوات AI لبناء تطبيق كامل من الصفر… وهذه كانت النتيجة",
+            "slug": "ai-app-builders-experiment",
+            "meta": {
+              "title": "تجربة 7 أدوات AI لبناء تطبيق كامل من الصفر | هل يمكن الاعتماد عليها لبناء MVP؟",
+              "description": "تجربة عملية على أشهر أدوات AI لبناء التطبيقات من الصفر عبر Prompt واحد، مع مقارنة النتائج وتحديد ما يمكن لهذه الأدوات فعله فعليًا وما الذي لا تزال تعجز عنه في بناء MVP قابل للإطلاق."
+            },
+            "short": [
+              {
+                "type": "paragraph",
+                "text": "🔥 جرّبت 7 أدوات AI لبناء تطبيق كامل من الصفر… بنفس الـ Prompt… وبنفس الفكرة."
+              },
+              {
+                "type": "paragraph",
+                "text": "النتيجة كانت واضحة: الأدوات ممتازة لتوليد واجهات وتجارب أولية، لكنها لا تزال بعيدة عن بناء MVP جاهز للسوق بمعايير حقيقية."
+              },
+              {
+                "type": "paragraph",
+                "text": "معظمها تجاهل أجزاء أساسية مثل لوحة الإدارة، الصلاحيات، بنية البيانات القوية، وأدوات تتبع سلوك المستخدم (Analytics)."
+              },
+              {
+                "type": "paragraph",
+                "text": "الخلاصة: هذه الأدوات ممتازة كـ Prototype سريع… لكنها ليست بديلًا كاملًا عن مطوّر يفهم ما يبنيه."
+              }
+            ],
+            "long": [
+              {
+                "type": "paragraph",
+                "text": "خلال الفترة الماضية بدأت ألاحظ انتشار أدوات تعتمد على الذكاء الاصطناعي وتعد المستخدم بأنها تستطيع بناء تطبيق كامل من الصفر بمجرد كتابة Prompt واحد، أو سلسلة بسيطة من التعليمات."
+              },
+              {
+                "type": "paragraph",
+                "text": "الفكرة تبدو مغرية جدًا، خصوصًا لروّاد الأعمال غير التقنيين: \"اكتب وصف التطبيق، وسيقوم الـ AI ببناء النظام كاملًا بدلًا عن المطوّر\"."
+              },
+              {
+                "type": "paragraph",
+                "text": "لكنني أردت اختبار هذا الادعاء بشكل عملي، لذلك قمت بتجربة عدد من أشهر هذه الأدوات، باستخدام نفس الـ Prompt التفصيلي، بهدف تقييم جودة الناتج، ومدى قابلية استخدامه كمنتج حقيقي أو حتى كـ MVP قابل للإطلاق."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "فكرة التطبيق التي تم اختبارها"
+              },
+              {
+                "type": "paragraph",
+                "text": "التطبيق المطلوب هو نظام Web + Mobile لتتبع عادات خسارة الوزن مثل: الطعام، شرب الماء، النوم، الرياضة، الأدوية، مع تسجيل بيانات أسبوعية (خطة غذائية) وقياسات InBody وفحوصات دم سنوية، بالإضافة إلى نظام تسجيل دخول، ملف مستخدم، لوحة تحكم للمشرف، وربط مع أدوات تتبع مثل Google Analytics وMicrosoft Clarity، وإمكانية دمج API للذكاء الاصطناعي لإنتاج تقرير أسبوعي وخطة جديدة."
+              },
+              {
+                "type": "paragraph",
+                "text": "الهدف لم يكن بناء تطبيق بسيط، بل تطبيق واقعي قريب من احتياجات أي منتج فعلي في السوق."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "الأدوات التي تم تجربتها"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Google AI Studio",
+                  "Replit",
+                  "Bolt.new",
+                  "Rocket.new",
+                  "Lovable.dev",
+                  "Natively.dev",
+                  "CodePlatform.com"
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "الملاحظة الأولى: معظم الأدوات تفهم الواجهة… أكثر مما تفهم النظام"
+              },
+              {
+                "type": "paragraph",
+                "text": "أكبر شيء لاحظته أن معظم هذه الأدوات تستطيع توليد واجهات جميلة ومقبولة بسرعة، لكن عندما تنتقل إلى متطلبات أساسية مثل قواعد البيانات، الصلاحيات، لوحة الإدارة، أو تصميم API متماسك… تبدأ النتائج بالتراجع بشكل واضح."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "أهم النتائج المشتركة بين الأدوات"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "ولا أداة قدمت نظام Web + Mobile معًا بشكل كامل كما هو مطلوب.",
+                  "معظم الأدوات تجاهلت أجزاء كبيرة من المتطلبات، حتى مع أن الـ Prompt كان تفصيليًا وواضحًا.",
+                  "لم يتم تجهيز أي نظام حقيقي للربط مع أدوات التحليل مثل Google Analytics أو Microsoft Clarity.",
+                  "فكرة لوحة الإدارة (Admin Panel) كانت شبه غائبة في أغلب النتائج.",
+                  "الكود الناتج غالبًا بسيط ومكرر، مما يجعل قابلية الصيانة والتوسع ضعيفة."
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "لكن هل هناك نقاط إيجابية؟ نعم"
+              },
+              {
+                "type": "paragraph",
+                "text": "رغم ذلك، لا يمكن إنكار أن بعض الأدوات قدمت قيمة واضحة، خصوصًا في مرحلة الـ Prototype:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "واجهات خفيفة ومناسبة لعرض فكرة المنتج بسرعة.",
+                  "بعض الأدوات أضافت أفكارًا مساعدة مثل إدخال بيانات أولية (الطول والوزن) أو تحديد أهداف يومية.",
+                  "بعض المنصات توفر بيئة تعديل مباشر للكود بسهولة."
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "ما الذي تعجز عنه هذه الأدوات حتى الآن؟"
+              },
+              {
+                "type": "paragraph",
+                "text": "عند التفكير في إطلاق MVP حقيقي للسوق، لا يكفي أن تكون هناك واجهات جميلة. ما يصنع MVP قابلًا للحياة هو وجود أساس تقني يسمح بالنمو والتطوير والتحليل. وهذه الأدوات غالبًا لم تنجح في تقديم ذلك."
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "غياب تصميم Data Model قوي وقابل للتوسع.",
+                  "ضعف إدارة الصلاحيات والمستخدمين.",
+                  "عدم وجود بنية واضحة للـ API.",
+                  "عدم وجود Logging أو Error tracking أو أدوات مراقبة.",
+                  "غياب إعدادات التحليل (Analytics / Events)."
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "الخلاصة: كيف يمكن الاستفادة من هذه الأدوات بشكل ذكي؟"
+              },
+              {
+                "type": "paragraph",
+                "text": "الاستفادة الحقيقية من أدوات AI لبناء التطبيقات ليست في استبدال المطوّر بالكامل، بل في اختصار مرحلة معينة من العمل:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "إنشاء Prototype سريع لعرض الفكرة.",
+                  "اختبار فكرة UI أو Flow معين.",
+                  "توليد صفحات أولية لتسريع بداية المشروع.",
+                  "تجربة Validation مبدئي قبل الاستثمار الحقيقي."
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "الخاتمة"
+              },
+              {
+                "type": "paragraph",
+                "text": "هذه التجربة أكدت لي أن الذكاء الاصطناعي قادر على تسريع بعض أجزاء التطوير، لكنه لا يزال بعيدًا عن بناء منتج كامل قابل للإطلاق من الصفر دون تدخل بشري واعٍ."
+              },
+              {
+                "type": "paragraph",
+                "text": "وبالنسبة لأي شخص يريد إطلاق MVP حقيقي، ما زال هناك فارق كبير بين “واجهة جميلة” وبين “منتج قابل للنمو، التحليل، والتطوير”."
+              }
+            ]
+          },
+          "en": {
+            "title": "I Tested 7 AI App Builders to Generate a Full Product from Scratch — Here’s What Happened",
+            "slug": "ai-app-builders-experiment",
+            "meta": {
+              "title": "Testing 7 AI App Builders: Can They Generate a Real MVP from Scratch?",
+              "description": "A real experiment testing 7 AI app builder platforms using the same detailed prompt to generate a full-stack product. Learn what these tools can do today and where they fail for real MVP development."
+            },
+            "short": [
+              {
+                "type": "paragraph",
+                "text": "I tested 7 AI app builders using the exact same detailed prompt to generate a full product from scratch."
+              },
+              {
+                "type": "paragraph",
+                "text": "The results were clear: these tools are great for UI prototypes, but still far from delivering a real-world MVP that’s production-ready."
+              },
+              {
+                "type": "paragraph",
+                "text": "Most of them ignored core fundamentals like admin panels, permissions, scalable data modeling, and real analytics integration."
+              },
+              {
+                "type": "paragraph",
+                "text": "Bottom line: excellent for prototyping and validation, not a replacement for real engineering yet."
+              }
+            ],
+            "long": [
+              {
+                "type": "paragraph",
+                "text": "Over the past months, AI app builder tools have become increasingly popular. Many of them promise something extremely attractive: “Describe your app in one prompt, and the AI will build the full product for you.”"
+              },
+              {
+                "type": "paragraph",
+                "text": "This sounds especially exciting for non-technical founders who want to launch quickly without hiring a full engineering team."
+              },
+              {
+                "type": "paragraph",
+                "text": "But instead of relying on marketing claims, I decided to test this idea through a real experiment: I tried multiple popular AI app builders, using the exact same detailed prompt, and compared the results."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "The app idea I tested"
+              },
+              {
+                "type": "paragraph",
+                "text": "The requested app was a Web + Mobile full-stack product to track weight-loss habits such as nutrition, hydration, sleep, exercise, and medication. It also included weekly planning, InBody readings, annual blood tests, authentication, user profiles, admin panel, analytics integrations (Google Analytics + Microsoft Clarity), and an AI API integration for weekly reports and diet recommendations."
+              },
+              {
+                "type": "paragraph",
+                "text": "In other words, a realistic product idea similar to what real startups build—not just a basic demo."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "The tools I tested"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Google AI Studio",
+                  "Replit",
+                  "Bolt.new",
+                  "Rocket.new",
+                  "Lovable.dev",
+                  "Natively.dev",
+                  "CodePlatform.com"
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Key observation: Most tools understand UI better than systems"
+              },
+              {
+                "type": "paragraph",
+                "text": "The first thing I noticed is that most tools can generate decent UI quickly. However, once the prompt requires real backend fundamentals—database modeling, permissions, admin panel, stable APIs, observability—the output quality drops significantly."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Common results across most platforms"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "None of the tools delivered a complete Web + Mobile solution as requested.",
+                  "Most platforms ignored major parts of the requirements even when the prompt was detailed.",
+                  "No real setup for analytics tracking (Google Analytics / Microsoft Clarity).",
+                  "Admin panel requirements were mostly ignored.",
+                  "Generated code was often repetitive and simplistic, reducing maintainability and scalability."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Were there positives? Absolutely."
+              },
+              {
+                "type": "paragraph",
+                "text": "Despite the limitations, these tools still offer real value, especially during early validation stages:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Fast UI generation to visualize product ideas.",
+                  "Some tools suggested helpful additions like onboarding flows and goal tracking.",
+                  "Certain platforms allow easy in-browser code editing."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Where these tools still fail"
+              },
+              {
+                "type": "paragraph",
+                "text": "A real MVP is not just UI screens. It’s a foundation that can grow. Most tools struggled to generate:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "A scalable data model.",
+                  "Proper authentication and role-based permissions.",
+                  "A stable and consistent API structure.",
+                  "Logging, error tracking, and production observability.",
+                  "Real analytics events and user behavior tracking."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "How to use AI app builders the smart way"
+              },
+              {
+                "type": "paragraph",
+                "text": "The best use of these tools is not replacing engineers, but accelerating specific phases of product building:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Rapid prototyping to pitch an idea.",
+                  "Testing a user flow or UI direction.",
+                  "Generating a starting point for frontend screens.",
+                  "Running early validation experiments before investing heavily."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Conclusion"
+              },
+              {
+                "type": "paragraph",
+                "text": "This experiment confirmed that AI can significantly speed up certain parts of development, but it’s still far from generating a production-ready product from scratch without human engineering judgment."
+              },
+              {
+                "type": "paragraph",
+                "text": "For founders who want to launch a real MVP, there’s still a major difference between “nice screens” and a product that is scalable, observable, and maintainable."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "category": "AI Tools & MVP Building",
+        "date": "2026-02-13",
+        "image": "10.jpg",
+        "id": "post-008-why-ai-app-builders-fail-mvp",
+        "tags": [
+          "ai",
+          "mvp",
+          "startup",
+          "product-development",
+          "scalability",
+          "software-architecture",
+          "app-builders",
+          "analytics",
+          "technical-foundation"
+        ],
+        "versions": {
+          "ar": {
+            "title": "ليش أدوات AI ما بتبني لك MVP حقيقي… حتى لو طلعت لك تطبيق شكله جاهز؟",
+            "slug": "why-ai-app-builders-fail-mvp",
+            "meta": {
+              "title": "لماذا أدوات AI لبناء التطبيقات لا تنتج MVP حقيقي؟ | الفرق بين Prototype وMVP",
+              "description": "شرح عملي لماذا تفشل أدوات AI في بناء MVP قابل للإطلاق رغم أنها تنتج تطبيقات جميلة ظاهريًا، وما العناصر التقنية التي لا يمكن تجاوزها في أي منتج حقيقي."
+            },
+            "short": [
+              {
+                "type": "paragraph",
+                "text": "💡 كثير أدوات AI اليوم بتقدر تطلع لك تطبيق شكله ممتاز خلال دقائق… بس المشكلة؟"
+              },
+              {
+                "type": "paragraph",
+                "text": "التطبيق “شكله” MVP… لكنه فعليًا Prototype."
+              },
+              {
+                "type": "paragraph",
+                "text": "الفرق الحقيقي مش بالصفحات… الفرق بالبنية: الصلاحيات، البيانات، التوسع، الـ logs، وتتبع سلوك المستخدم."
+              },
+              {
+                "type": "paragraph",
+                "text": "إذا ما كان عندك أساس واضح من أول يوم، رح تدفع الثمن بعد أول 100 مستخدم."
+              }
+            ],
+            "long": [
+              {
+                "type": "paragraph",
+                "text": "بعد تجربة أكثر من أداة AI لبناء التطبيقات، وصلت لملاحظة صريحة: معظم الأدوات تستطيع أن تنتج “واجهة” مقنعة بسرعة… لكنها لا تنتج MVP حقيقي جاهز للحياة في السوق."
+              },
+              {
+                "type": "paragraph",
+                "text": "والسبب ليس أن الذكاء الاصطناعي ضعيف، بل لأن مفهوم “MVP” عند كثير من الناس تحوّل إلى مفهوم خاطئ: مجرد صفحات تعمل."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "المشكلة: الناس تحكم على الـ MVP من شكله"
+              },
+              {
+                "type": "paragraph",
+                "text": "أغلب أدوات AI تعطيك صفحات جاهزة: تسجيل دخول، Dashboard، بعض الجداول، وبعض النماذج… وهذا كافٍ ليعطيك إحساس أن التطبيق أصبح جاهزًا."
+              },
+              {
+                "type": "paragraph",
+                "text": "لكن في الحقيقة، الصفحات ليست هي الـ MVP."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "الـ MVP الحقيقي هو نظام قابل للقياس والتطوير"
+              },
+              {
+                "type": "paragraph",
+                "text": "الـ MVP الذي يمكن إطلاقه لا يُقاس بعدد الشاشات، بل بقدرته على أن يجيبك عن أسئلة السوق:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "هل المستخدم فهم الفكرة من أول دقيقة؟",
+                  "أين يضيع داخل النظام؟",
+                  "أي ميزة يستخدمها أكثر؟",
+                  "هل يعود مرة ثانية أم يختفي؟",
+                  "ما الخطوة التي تمنعه من إكمال رحلته؟"
+                ]
+              },
+              {
+                "type": "paragraph",
+                "text": "بدون بيانات، أنت لا تبني منتجًا… أنت تبني تخمينًا."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "ليش أدوات AI غالبًا تفشل في هذا الجزء؟"
+              },
+              {
+                "type": "paragraph",
+                "text": "لأن بناء نظام قابل للتوسع لا يعتمد على توليد كود فقط، بل يعتمد على قرارات هندسية حساسة تحتاج فهمًا للسياق."
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "تصميم قاعدة البيانات (Data Model) بشكل صحيح من البداية.",
+                  "فصل المسؤوليات بين الخدمات والواجهات.",
+                  "بناء صلاحيات واضحة للمستخدمين.",
+                  "تجهيز Error handling حقيقي بدل تطبيق “ينكسر بصمت”.",
+                  "تجهيز Logging وMonitoring.",
+                  "تجهيز Analytics Events لفهم سلوك المستخدم."
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "الفرق بين Prototype وMVP"
+              },
+              {
+                "type": "paragraph",
+                "text": "Prototype هدفه أن يريك شكل الفكرة ويوضح التجربة."
+              },
+              {
+                "type": "paragraph",
+                "text": "أما MVP هدفه أن يدخل السوق، ويجمع بيانات، ويُستخدم فعليًا، ويُبنى عليه."
+              },
+              {
+                "type": "paragraph",
+                "text": "معظم أدوات AI اليوم ممتازة في الـ Prototype… لكنها ما زالت ضعيفة في الـ MVP الحقيقي."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "متى تكون أدوات AI مفيدة فعلًا؟"
+              },
+              {
+                "type": "paragraph",
+                "text": "هذه الأدوات تصبح قوية جدًا إذا استخدمتها بذكاء، مثل:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "اختبار فكرة بسرعة قبل صرف وقت طويل.",
+                  "توليد واجهات أولية لتسريع العمل.",
+                  "تحضير نموذج يعرض التجربة للمستثمر أو العميل.",
+                  "تجربة Validation مبدئي قبل بناء منتج كامل."
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "الخلاصة"
+              },
+              {
+                "type": "paragraph",
+                "text": "إذا طلعت لك أداة AI تطبيق فيه 10 صفحات… هذا لا يعني أنه MVP."
+              },
+              {
+                "type": "paragraph",
+                "text": "الـ MVP الحقيقي هو الذي يستطيع أن يعيش مع المستخدم، يتعلم منه، ويكبر بدون أن ينهار من أول ضغط."
+              },
+              {
+                "type": "paragraph",
+                "text": "والذكاء الاصطناعي سيساعد كثيرًا في بناء المستقبل… لكن حتى الآن، ما زال يحتاج عقلًا هندسيًا يعرف ماذا يبني ولماذا."
+              }
+            ]
+          },
+          "en": {
+            "title": "Why AI App Builders Still Can’t Build a Real MVP (Even If the App Looks Ready)",
+            "slug": "why-ai-app-builders-fail-mvp",
+            "meta": {
+              "title": "Why AI App Builders Can’t Build a Real MVP Yet | Prototype vs MVP Explained",
+              "description": "A practical breakdown of why AI app builders generate good-looking prototypes but still fail to deliver production-ready MVPs, including the missing foundations: analytics, architecture, roles, logs, and scalability."
+            },
+            "short": [
+              {
+                "type": "paragraph",
+                "text": "AI app builders can generate impressive-looking apps in minutes."
+              },
+              {
+                "type": "paragraph",
+                "text": "But most of what they generate is a prototype—not a real MVP."
+              },
+              {
+                "type": "paragraph",
+                "text": "A real MVP is not about screens. It’s about foundations: permissions, scalable data models, logging, monitoring, and analytics."
+              },
+              {
+                "type": "paragraph",
+                "text": "If you skip the foundation, you’ll pay the price after your first real users."
+              }
+            ],
+            "long": [
+              {
+                "type": "paragraph",
+                "text": "After testing multiple AI app builders, one conclusion became very clear: most tools can generate a convincing user interface quickly—but they still struggle to generate a real MVP that can survive in the market."
+              },
+              {
+                "type": "paragraph",
+                "text": "This is not because AI is “weak”, but because many people misunderstand what an MVP truly is."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "The problem: People judge MVPs by how they look"
+              },
+              {
+                "type": "paragraph",
+                "text": "Most AI tools generate login screens, dashboards, tables, and forms. That’s enough to create the illusion of a “ready product.”"
+              },
+              {
+                "type": "paragraph",
+                "text": "But UI screens are not what makes an MVP real."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "A real MVP is measurable and expandable"
+              },
+              {
+                "type": "paragraph",
+                "text": "A real MVP is not defined by the number of features. It’s defined by its ability to answer real market questions:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Did users understand the value within the first minute?",
+                  "Where do they drop off?",
+                  "Which features do they use most?",
+                  "Do they come back or disappear?",
+                  "What blocks them from completing the journey?"
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "paragraph",
+                "text": "Without real usage data, you’re not building a product—you’re building a guess."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Why AI app builders usually fail here"
+              },
+              {
+                "type": "paragraph",
+                "text": "Because building scalable software is not about generating code. It’s about making engineering decisions based on context."
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Designing a scalable data model from day one.",
+                  "Clear separation of responsibilities (frontend vs backend vs services).",
+                  "Proper authentication and role-based access control.",
+                  "Real error handling instead of silent crashes.",
+                  "Logging and monitoring.",
+                  "Analytics events to understand user behavior."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Prototype vs MVP"
+              },
+              {
+                "type": "paragraph",
+                "text": "A prototype exists to visualize the idea and validate the experience."
+              },
+              {
+                "type": "paragraph",
+                "text": "An MVP exists to enter the market, collect real data, and evolve based on real usage."
+              },
+              {
+                "type": "paragraph",
+                "text": "Most AI app builders today are excellent at prototyping, but still weak at generating real MVP foundations."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "When AI app builders are actually useful"
+              },
+              {
+                "type": "paragraph",
+                "text": "These tools can be extremely valuable if used correctly, such as:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Testing an idea quickly before investing heavily.",
+                  "Generating UI screens as a starting point.",
+                  "Building a demo for investors or early customers.",
+                  "Running validation experiments fast."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Final takeaway"
+              },
+              {
+                "type": "paragraph",
+                "text": "If an AI tool generates an app with 10 screens, that does not mean you have an MVP."
+              },
+              {
+                "type": "paragraph",
+                "text": "A real MVP is the one that can survive real users, learn from them, and scale without collapsing."
+              },
+              {
+                "type": "paragraph",
+                "text": "AI will absolutely shape the future of development—but today, real MVPs still require engineering judgment and product thinking."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "category": "MVP & Product Development",
+        "date": "2026-02-13",
+        "image": "10.jpg",
+        "id": "post-009-why-mvps-are-rebuilt",
+        "tags": [
+          "mvp",
+          "startup",
+          "product",
+          "rebuild",
+          "software-architecture",
+          "technical-debt",
+          "scalability",
+          "iteration"
+        ],
+        "versions": {
+          "ar": {
+            "title": "لماذا تُعاد بناء كثير من مشاريع الـ MVP بعد فترة؟ (وليس دائمًا هذا فشلًا)",
+            "slug": "why-mvps-are-rebuilt",
+            "meta": {
+              "title": "لماذا تُعاد بناء مشاريع MVP بعد الإطلاق؟ | متى يكون إعادة البناء قرارًا صحيحًا؟",
+              "description": "شرح عملي لأسباب إعادة بناء كثير من مشاريع MVP بعد الإطلاق، ومتى يكون القرار خطوة ذكية قائمة على البيانات، ومتى يكون مجرد هروب من الواقع."
+            },
+            "short": [
+              {
+                "type": "paragraph",
+                "text": "كثير من مشاريع الـ MVP تُعاد بناؤها بعد فترة… وهذا ليس دائمًا فشلًا."
+              },
+              {
+                "type": "paragraph",
+                "text": "أول نسخة غالبًا تُبنى على افتراضات، وتوقعات، وفهم غير مكتمل للمستخدم الحقيقي."
+              },
+              {
+                "type": "paragraph",
+                "text": "وعندما يبدأ المنتج بجذب مستخدمين حقيقيين، تتغير الأولويات: ميزات كانت “أساسية” تصبح ثانوية، وأخرى بسيطة تصبح قلب المنتج."
+              },
+              {
+                "type": "paragraph",
+                "text": "إعادة البناء قرار ذكي إذا كان مبنيًا على بيانات حقيقية، وعلى فهم واضح لما يجب تحسينه، وليس لمجرد تغيير التقنية أو إعادة كتابة الكود."
+              }
+            ],
+            "long": [
+              {
+                "type": "paragraph",
+                "text": "عند إطلاق أي منتج برمجي بنسخته الأولى (MVP)، يعتقد كثير من الفرق أن هذه النسخة يجب أن تستمر لسنوات دون تغيير جذري. لكن الواقع مختلف: كثير من مشاريع الـ MVP تُعاد بناؤها بعد فترة قصيرة، وأحيانًا بعد أول سنة."
+              },
+              {
+                "type": "paragraph",
+                "text": "المهم هنا هو فهم نقطة أساسية: إعادة بناء المنتج ليست دائمًا علامة فشل. في كثير من الحالات، قد تكون أول قرار ناضج تتخذه الشركة بعد الاحتكاك الحقيقي بالسوق."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "لماذا يحدث ذلك؟"
+              },
+              {
+                "type": "paragraph",
+                "text": "لأن النسخة الأولى من المنتج غالبًا تُبنى بناءً على افتراضات أكثر من كونها مبنية على بيانات."
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "افتراضات حول ما يحتاجه المستخدم فعليًا.",
+                  "توقعات حول ما ستكون عليه رحلة الاستخدام.",
+                  "تخمينات حول الميزة التي ستصنع الفرق في السوق."
+                ]
+              },
+              {
+                "type": "paragraph",
+                "text": "حتى لو كان الفريق قويًا والكود نظيفًا، فإن الواقع دائمًا يحمل مفاجآت لا يمكن توقعها بالكامل قبل الإطلاق."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "أسباب شائعة تؤدي لإعادة بناء الـ MVP"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "تغيّر طريقة استخدام المنتج: ما كان يبدو ميزة أساسية أصبح غير مهم، وما كان بسيطًا أصبح جوهر المنتج.",
+                  "النمو غير المتوقع: نسخة بُنيت لـ 10 مستخدمين أصبحت تُستخدم من 1000 مستخدم.",
+                  "تراكم الدين التقني (Technical Debt): اختصارات كانت منطقية في البداية لكنها استمرت دون توقف.",
+                  "نجاح المنتج: أحيانًا المنتج ينجح لدرجة أنه يستحق بناء أقوى وأكثر تنظيمًا."
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "متى تكون إعادة البناء قرارًا صحيحًا؟"
+              },
+              {
+                "type": "paragraph",
+                "text": "إعادة البناء تكون قرارًا ذكيًا عندما تكون مبنية على حقائق واضحة، مثل:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "وجود بيانات استخدام حقيقية وليست مجرد آراء.",
+                  "وضوح رؤية المنتج بعد تجربة السوق.",
+                  "تحديد ما يجب الحفاظ عليه وما يجب تغييره.",
+                  "أن يكون الهدف حل مشكلة جوهرية تعيق التطوير."
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "ومتى تكون إعادة البناء هروبًا؟"
+              },
+              {
+                "type": "paragraph",
+                "text": "إعادة البناء تصبح خطيرة عندما تكون مجرد محاولة للهروب من الواقع، مثل:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "إعادة كتابة النظام كل فترة دون سبب واضح.",
+                  "القيام بذلك لأن الكود “لا يعجب الفريق” فقط.",
+                  "عدم وجود مستخدمين أصلاً أو عدم وجود تعلم حقيقي.",
+                  "اختيار تقنية جديدة لمجرد الحماس، لا للحاجة."
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "الخلاصة"
+              },
+              {
+                "type": "paragraph",
+                "text": "الـ MVP ليس مشروعًا يجب أن يعيش للأبد. لكنه يجب أن يعيش فترة كافية ليتعلم من السوق."
+              },
+              {
+                "type": "paragraph",
+                "text": "وإذا وصلت إلى مرحلة أصبح فيها لديك فهم واضح لما يجب أن يكون عليه المنتج، فإن إعادة البناء قد تكون خطوة للأمام، وليست خطوة للخلف."
+              },
+              {
+                "type": "paragraph",
+                "text": "لا تخف من إعادة البناء… لكن خف من أن تعيد البناء دون سبب واضح أو دون بيانات حقيقية."
+              }
+            ]
+          },
+          "en": {
+            "title": "Why Many MVPs Get Rebuilt After a While (And Why That’s Not Always Bad)",
+            "slug": "why-mvps-are-rebuilt",
+            "meta": {
+              "title": "Why MVPs Get Rebuilt After Launch | When Rebuilding Is the Right Decision",
+              "description": "A practical explanation of why many MVPs get rebuilt after launch, when rebuilding is a smart data-driven decision, and when it becomes a dangerous form of avoidance."
+            },
+            "short": [
+              {
+                "type": "paragraph",
+                "text": "Many MVPs get rebuilt after a while—and that’s not always a failure."
+              },
+              {
+                "type": "paragraph",
+                "text": "The first version is usually built on assumptions, expectations, and an incomplete understanding of real users."
+              },
+              {
+                "type": "paragraph",
+                "text": "Once real users start using the product, priorities shift: what seemed essential becomes secondary, and what seemed minor becomes the core feature."
+              },
+              {
+                "type": "paragraph",
+                "text": "Rebuilding is smart when it’s driven by real usage data—not just a desire to rewrite code or switch frameworks."
+              }
+            ],
+            "long": [
+              {
+                "type": "paragraph",
+                "text": "When launching a product’s first version (an MVP), many teams assume that this version should survive for years without major structural changes. However, reality is very different: many MVPs get rebuilt after a short period, sometimes within the first year."
+              },
+              {
+                "type": "paragraph",
+                "text": "The key is to understand one important fact: rebuilding an MVP is not always a sign of failure. In many cases, it is the first truly mature decision a team makes after real market exposure."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Why does it happen?"
+              },
+              {
+                "type": "paragraph",
+                "text": "Because the first version is often built on assumptions more than on real data."
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Assumptions about what users actually need.",
+                  "Expectations about the user journey.",
+                  "Guesses about which feature will create market value."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "paragraph",
+                "text": "Even with clean code and a strong team, the market will always reveal unexpected truths after launch."
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Common reasons MVPs get rebuilt"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "User behavior changes: the “core feature” becomes irrelevant, while a minor feature becomes the product’s heart.",
+                  "Unexpected growth: an MVP built for 10 users ends up serving 1,000.",
+                  "Silent technical debt accumulation: shortcuts made sense early, but never got fixed.",
+                  "Product validation: sometimes the MVP succeeds, and it deserves a stronger foundation."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "When rebuilding is the right decision"
+              },
+              {
+                "type": "paragraph",
+                "text": "Rebuilding becomes a smart move when it’s based on real insights, such as:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Having real usage data, not just opinions.",
+                  "A clearer product vision after real market testing.",
+                  "Knowing exactly what to keep and what to remove.",
+                  "Solving structural limitations that block growth."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "When rebuilding becomes an escape"
+              },
+              {
+                "type": "paragraph",
+                "text": "Rebuilding becomes dangerous when it is used as avoidance, such as:"
+              },
+              {
+                "type": "list",
+                "style": "unordered",
+                "items": [
+                  "Constant rewrites without clear reasoning.",
+                  "Rebuilding only because “the code isn’t pretty.”",
+                  "Having no users or learning at all.",
+                  "Switching frameworks out of excitement, not necessity."
+                ],
+                "level": 0,
+                "text": ""
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "style": "",
+                "text": "Final takeaway"
+              },
+              {
+                "type": "paragraph",
+                "text": "An MVP is not meant to live forever. But it must live long enough to teach you about the market."
+              },
+              {
+                "type": "paragraph",
+                "text": "Once you reach a point where you truly understand what your product should become, rebuilding can be a step forward—not backward."
+              },
+              {
+                "type": "paragraph",
+                "text": "Don’t fear rebuilding. Fear rebuilding without a clear reason and without real data."
+              }
+            ]
           }
         }
       }
@@ -2346,25 +5133,25 @@
     ],
     "trainees": [
       {
-        "highlight": true,
+        "featured": true,
         "image": "suhaib.jpg",
         "name": "Suhaib Mourshid",
         "url": "https://www.linkedin.com/in/suhib-mourshid"
       },
       {
-        "highlight": true,
+        "featured": true,
         "image": "mazen.jpeg",
         "name": "Mazen Adel",
         "url": "https://www.linkedin.com/in/mazen-adel-bab141258"
       },
       {
-        "highlight": true,
+        "featured": true,
         "image": "bakhadher.jpg",
         "name": "Mohammed BaKhadher",
         "url": "https://www.linkedin.com/in/mohammed-abdullah-omar-ba-khadher"
       },
       {
-        "highlight": true,
+        "featured": true,
         "image": "kharfan.jpeg",
         "name": "Ahmad Alkharfan",
         "url": "https://www.linkedin.com/in/ahmad-alkharfan"
@@ -2432,6 +5219,7 @@
         "category": "startup-product",
         "date": "2026-01-13",
         "id": "speed-without-structure-delayed-collapse",
+        "image": "10.jpg",
         "tags": [
           "startup",
           "mvp",
@@ -2612,6 +5400,7 @@
         "category": "startup-product",
         "date": "2026-01-20",
         "id": "technical-debt-from-day-one",
+        "image": "10.jpg",
         "tags": [
           "startup",
           "mvp",
@@ -2869,6 +5658,7 @@
         "category": "startup-product-decisions",
         "date": "2026-01-27",
         "id": "why-many-mvps-are-rebuilt-after-year-one",
+        "image": "10.jpg",
         "tags": [
           "MVP",
           "Product Strategy",
@@ -3059,19 +5849,19 @@
     ],
     "trainees": [
       {
-        "highlight": true,
+        "featured": true,
         "image": "",
         "name": "Mustafa Hasanat",
         "url": "QR Menu"
       },
       {
-        "highlight": true,
+        "featured": true,
         "image": "",
         "name": "Yazan Zaid",
         "url": "Lyyyf"
       },
       {
-        "highlight": true,
+        "featured": true,
         "image": "",
         "name": "Rahaf",
         "url": "Qam7a"

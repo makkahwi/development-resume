@@ -45,7 +45,7 @@
       "Subtitle": "A few personal details about me",
       "Title": "Personal"
     },
-    "Title": "About – Suhaib"
+    "Title": "About"
   },
   "Blog": {
     "Description": "Articles and insights about web development, architecture and tech entrepreneurship.",
@@ -645,7 +645,8 @@
       "Community": "Community",
       "Cta": "CTA",
       "Mentoring": "Mentoring",
-      "Tools": "Tools"
+      "Tools": "Tools",
+      "Trainees": "Trainees"
     }
   },
   "Stats": {

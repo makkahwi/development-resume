@@ -7,13 +7,13 @@ const MentoringSection = async ({ t }: { t: Function }) => {
     <PageSection
       title={t("Testimonials.Title")}
       subtitle={t("Testimonials.Subtitle")}
-      id="mentoring"
+      id="trainees"
     >
       <p className="text-muted text-center mb-5">{t("Testimonials.Intro")}</p>
 
       <div className="row g-4">
         {traineesList
-          .filter(({ highlight }) => highlight)
+          .filter(({ featured }) => featured)
           .map((trainee, index) => (
             <TraineeCard key={index} {...trainee} />
           ))}

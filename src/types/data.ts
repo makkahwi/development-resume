@@ -119,5 +119,5 @@ export interface TraineeProps {
   image: string;
   url: string;
   name: string;
-  highlight?: boolean;
+  featured?: boolean;
 }
