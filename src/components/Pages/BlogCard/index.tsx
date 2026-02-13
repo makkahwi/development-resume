@@ -21,9 +21,9 @@ const BlogPostCard = ({
           month: "long",
           day: "numeric",
         })
-      : new Date(publishedAt).toLocaleDateString("en-US", {
+      : new Date(publishedAt).toLocaleDateString("en-GB", {
           year: "numeric",
-          month: "long",
+          month: "short",
           day: "numeric",
         });
 
