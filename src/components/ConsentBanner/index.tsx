@@ -59,14 +59,14 @@ const ConsentBanner = () => {
         <div className="d-flex gap-2">
           <button
             type="button"
-            className="btn btn-light btn-sm px-4 border-0 corners"
+            className="btn btn-primary btn-sm px-4 border-0 corners"
             onClick={necessaryOnly}
           >
             Necessary only
           </button>
           <button
             type="button"
-            className="btn btn-primary btn-sm px-4 border-0 corners"
+            className="btn btn-light btn-sm px-4 border-0 corners"
             onClick={acceptAll}
           >
             Allow all
