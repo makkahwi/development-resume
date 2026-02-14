@@ -6,8 +6,8 @@
         "description": [
           "Work as managment board member to run the organization"
         ],
-        "monthsCount": 12,
-        "period": "Feb 2014 - Jan 2015",
+        "start": "2014-02-01",
+        "end": "2015-01-31",
         "title": "Board Member",
         "type": "Part-time"
       },
@@ -16,8 +16,8 @@
         "description": [
           "Job about documenting all foundation paper works."
         ],
-        "monthsCount": 12,
-        "period": "Feb 2013 - Jan 2014",
+        "start": "2013-02-01",
+        "end": "2014-01-31",
         "title": "Secretariat",
         "type": "Part-time"
       },
@@ -26,8 +26,8 @@
         "description": [
           "Job about documenting all foundation paper works, and included graphic design tasks."
         ],
-        "monthsCount": 12,
-        "period": "Feb 2013 - Jan 2014",
+        "start": "2013-02-01",
+        "end": "2014-01-31",
         "projectsCount": 8,
         "title": "Secretariat",
         "type": "Part-time"
@@ -37,8 +37,8 @@
         "description": [
           "Job about documenting all foundation paper works."
         ],
-        "monthsCount": 30,
-        "period": "Dec 2008 - May 2011",
+        "start": "2008-12-01",
+        "end": "2011-05-31",
         "projectsCount": 15,
         "title": "Secretariat & Financial Managment",
         "type": "Part-time"
@@ -123,8 +123,8 @@
         "description": [
           "Work about designing and preparing for a social-media promotional campaign."
         ],
-        "monthsCount": 2,
-        "period": "Jan 2017 - Feb 2017",
+        "start": "2017-01-01",
+        "end": "2017-02-28",
         "projectsCount": 5,
         "title": "Graphic Designer",
         "type": "Part-time",
@@ -136,8 +136,20 @@
         "description": [
           "To design serveral booklets & brochures."
         ],
-        "monthsCount": 6,
-        "period": "Jun - Aug 2016, May & July 2017, Jun 2018",
+        "periods": [
+          {
+            "start": "2016-06-01",
+            "end": "2016-08-31"
+          },
+          {
+            "start": "2017-05-01",
+            "end": "2017-07-31"
+          },
+          {
+            "start": "2018-06-01",
+            "end": "2018-06-30"
+          }
+        ],
         "projectsCount": 8,
         "title": "Graphic Designer",
         "type": "Part-time",
@@ -149,8 +161,8 @@
         "description": [
           "Work included gaphic designing & events management."
         ],
-        "monthsCount": 7,
-        "period": "Dec 2015 - Jun 2016",
+        "start": "2015-12-01",
+        "end": "2016-06-30",
         "projectsCount": 8,
         "title": "PR Executive",
         "type": "Part-time",
@@ -161,7 +173,8 @@
         "description": [
           "One experience to edit & produce videos for an event."
         ],
-        "period": "Oct 2019 - Nov 2019",
+        "start": "2019-10-01",
+        "end": "2019-11-30",
         "title": "Video Editor",
         "type": "Freelance"
       },
@@ -170,7 +183,8 @@
         "description": [
           "Executed enormous number of graphic designs for both print-out & digital uses."
         ],
-        "period": "Feb 2015 - Apr 2019",
+        "start": "2015-02-01",
+        "end": "2019-04-30",
         "title": "Graphic Designer",
         "type": "Freelance"
       }
@@ -181,9 +195,8 @@
         "description": "Logo Design",
         "image": "logo2.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "Finger Speak",
-        "url": "https: //silent-speakers.github.io/silent-speakers/#overview"
+        "url": "https://silent-speakers.github.io/silent-speakers/#overview"
       },
       {
         "category": "Others",
@@ -191,7 +204,6 @@
         "featured": false,
         "image": "bc1.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "AIS School",
         "url": "bc1.jpg"
       },
@@ -200,7 +212,6 @@
         "description": "Logo Design",
         "image": "logo.png",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "Al-Aqsa Staff Portal",
         "url": "http: //staff.aqsa.edu.my/"
       },
@@ -210,7 +221,6 @@
         "featured": false,
         "image": "booklet5.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "PSAD Southeast Asia",
         "url": "booklet5.jpg"
       },
@@ -219,7 +229,6 @@
         "description": "Logo Design",
         "image": "logo5.png",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "Dr. Ahmad Abu Mahfouth Clinic",
         "url": "https://drahmadabumahfouth.com"
       },
@@ -228,7 +237,6 @@
         "description": "Booklet Design",
         "image": "booklet2.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "Mercy Mission World",
         "url": "booklet2.jpg"
       },
@@ -238,7 +246,6 @@
         "featured": false,
         "image": "banner2.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "Several University Clubs",
         "url": "banner2.jpg"
       },
@@ -248,7 +255,6 @@
         "featured": false,
         "image": "logo4.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "Univeristy Club",
         "url": "logo4.jpg"
       },
@@ -257,7 +263,6 @@
         "description": "Banner Design",
         "image": "poster1.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "SpeedWheels",
         "url": "poster1.jpg"
       },
@@ -267,7 +272,6 @@
         "featured": false,
         "image": "logo1.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "QFM Malaysia",
         "url": "http: //qfmalaysia.org/"
       },
@@ -277,7 +281,6 @@
         "featured": false,
         "image": "booklet1.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "QFM Malaysia",
         "url": "booklet1.jpg"
       },
@@ -287,7 +290,6 @@
         "featured": false,
         "image": "booklet3.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "QFM Malaysia",
         "url": "booklet3.jpg"
       },
@@ -297,7 +299,6 @@
         "featured": false,
         "image": "booklet4.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "QFM Malaysia",
         "url": "booklet4.jpg"
       },
@@ -306,7 +307,6 @@
         "description": "Poster Design",
         "image": "poster3.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "FYP Project",
         "url": "poster3.jpg"
       },
@@ -315,7 +315,6 @@
         "description": "CV Design",
         "image": "cv.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "An Engineering Graduate",
         "url": "cv.jpg"
       },
@@ -325,7 +324,6 @@
         "featured": false,
         "image": "logo6.png",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "xEdu",
         "url": "logo6.png"
       },
@@ -334,7 +332,6 @@
         "description": "Brochure Design",
         "image": "poster1.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "Makan Sini Resturant",
         "url": "poster1.jpg"
       },
@@ -343,7 +340,6 @@
         "description": "Business Card Design",
         "image": "bc2.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "Global Mediator",
         "url": "bc2.jpg"
       },
@@ -352,7 +348,6 @@
         "description": "Booklet Design",
         "image": "booklet6.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "IIUM",
         "url": "booklet6.jpg"
       },
@@ -361,7 +356,6 @@
         "description": "Brochure Design",
         "image": "poster2.jpg",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "IIUM",
         "url": "poster2.jpg"
       },
@@ -370,7 +364,6 @@
         "description": "Video Producing",
         "image": "video1.png",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "ICPC Asia Regional Contest",
         "url": "https://www.youtube.com/watch?v=nwjGLer53sQ"
       },
@@ -379,7 +372,6 @@
         "description": "Video Producing",
         "image": "video2.png",
         "importanceOrder": 1,
-        "timeOrder": 1,
         "title": "ICPC Asia Regional Contest",
         "url": "https://www.youtube.com/watch?v=D1uIlE_YB3U"
       }
@@ -3418,6 +3410,30 @@
         "label": "SpeedWheels Malaysia",
         "prominent": false,
         "url": "https://speedwheelstrade.online"
+      },
+      {
+        "image": "daleel.png",
+        "label": "Daleel",
+        "prominent": false,
+        "url": "https://www.daleel180.com/"
+      },
+      {
+        "image": "qam7a.png",
+        "label": "Qam7a",
+        "prominent": false,
+        "url": "https://www.qam7a.com/"
+      },
+      {
+        "image": "curans.png",
+        "label": "Curans",
+        "prominent": false,
+        "url": "https://www.curans.org/"
+      },
+      {
+        "image": "tamarras.png",
+        "label": "Ttamarras",
+        "prominent": false,
+        "url": "https://tamarrs.com/"
       }
     ],
     "jobs": [
@@ -3428,8 +3444,8 @@
           "Leading effort to revamp, refactor and upgrade the dashboard technologies."
         ],
         "location": "Jordan",
-        "monthsCount": 1,
-        "period": "Oct 2025 - Current",
+        "start": "2025-10-01",
+        "end": "current",
         "projectsCount": 2,
         "title": "Frontend Developer",
         "type": "Full-Time",
@@ -3445,8 +3461,8 @@
           "It's only remote freelance job, with occasional (on-need) evening working hours."
         ],
         "location": "Jordan",
-        "monthsCount": 1,
-        "period": "Oct 2025 - Current",
+        "start": "2025-10-01",
+        "end": "current",
         "projectsCount": 2,
         "title": "Technical Advisor",
         "type": "Freelancer",
@@ -3460,8 +3476,8 @@
           "It's only remote freelance job, with evening working hours."
         ],
         "location": "Jordan",
-        "monthsCount": 2,
-        "period": "Sep 2025 - Current",
+        "start": "2025-09-01",
+        "end": "current",
         "projectsCount": 1,
         "title": "Senior Full-Stack Developer",
         "type": "Freelancer",
@@ -3476,8 +3492,8 @@
           "Led implementation of frontend and backend features, focusing on performance, usability, and maintainability."
         ],
         "location": "Jordan",
-        "monthsCount": 5,
-        "period": "May - Sep 2025",
+        "start": "2025-05-01",
+        "end": "2025-09-30",
         "projectsCount": 2,
         "title": "Senior Full-Stack Developer",
         "type": "Freelancer",
@@ -3491,8 +3507,8 @@
           "It's only remote freelance job, with occasional (on-need) evening working hours."
         ],
         "location": "Jordan",
-        "monthsCount": 27,
-        "period": "Aug 2023 - Current",
+        "start": "2023-08-01",
+        "end": "current",
         "projectsCount": 2,
         "title": "Technical Advisor",
         "type": "Freelancer",
@@ -3508,8 +3524,8 @@
           "Left due to the total shutdown of the startup firm."
         ],
         "location": "Jordan",
-        "monthsCount": 17,
-        "period": "Jul 2023 - Apr 2025",
+        "start": "2023-07-01",
+        "end": "2025-04-30",
         "projectsCount": 1,
         "title": "Senior Full-Stack Developer",
         "type": "Full-Time",
@@ -3522,8 +3538,8 @@
           "Implemented modular, testable components and enhanced the UI performance across key modules."
         ],
         "location": "Jordan",
-        "monthsCount": 5,
-        "period": "Aug - Dec 2023",
+        "start": "2023-08-01",
+        "end": "2023-12-31",
         "projectsCount": 2,
         "title": "Senior Frontend Developer",
         "type": "Freelancer",
@@ -3538,8 +3554,8 @@
           "Departed due to a required overseas semi-relocation that was not feasible to meet."
         ],
         "location": "Jordan",
-        "monthsCount": 10,
-        "period": "Aug 2022 - Jul 2023",
+        "start": "2022-08-01",
+        "end": "2023-07-31",
         "projectsCount": 2,
         "title": "Senior Full-Stack Developer",
         "type": "Full-Time",
@@ -3554,8 +3570,8 @@
           "Transitioned after two months to a new opportunity that better matched my long-term goals in terms of position, compensation, and stack."
         ],
         "location": "Jordan",
-        "monthsCount": 2,
-        "period": "Jun - Aug 2022",
+        "start": "2022-06-01",
+        "end": "2022-08-31",
         "projectsCount": 1,
         "title": "Frontend Developer",
         "type": "Full-Time",
@@ -3569,8 +3585,8 @@
           "Implemented modular, testable components and enhanced the UI performance across key modules."
         ],
         "location": "Malaysia",
-        "monthsCount": 12,
-        "period": "Nov 2020 - Oct 2021",
+        "start": "2020-11-01",
+        "end": "2021-10-31",
         "projectsCount": 1,
         "title": "Frontend Developer",
         "type": "Full-Time",
@@ -3584,8 +3600,8 @@
           "Delivered a robust product with minimal technical debt by emphasizing clean code and modular design."
         ],
         "location": "Malaysia",
-        "monthsCount": 12,
-        "period": "Sep 2019 - Aug 2020",
+        "start": "2019-09-01",
+        "end": "2020-08-31",
         "projectsCount": 1,
         "title": "Full-Stack Developer",
         "type": "Part-Time",
@@ -3599,7 +3615,8 @@
           "Delivered robust results with minimal technical debt by emphasizing clean codes and modular designs."
         ],
         "location": "Malaysia & Jordan",
-        "period": "Sep 2019 - Present",
+        "start": "2019-09-01",
+        "end": "present",
         "title": "Full-Stack Developer",
         "type": "Freelance"
       },
@@ -3611,17 +3628,139 @@
           "Delivered robust results with minimal technical debt by emphasizing clean codes and modular designs."
         ],
         "location": "Malaysia",
-        "period": "Oct 2015 - Aug 2019",
+        "start": "2015-10-01",
+        "end": "2019-08-31",
         "title": "Frontend Developer",
         "type": "Freelance"
       }
     ],
     "projects": [
       {
+        "category": "Mobile App",
+        "company": "Tamarras",
+        "start": "2023-07-01",
+        "end": "2024-12-31",
+        "description": "Educational audio-based mobile app. Provided technical consultation on technology stack, architecture decisions, and best practices for startups.",
+        "details": [
+          "Consulted on optimal technology selection and architecture patterns for mobile-first education platform.",
+          "Guided on technical approach for handling real-time content delivery and user progress tracking.",
+          "Advised on scalability considerations and infrastructure decisions for early-stage startup.",
+          "Recommended best practices for MVP scope, data modeling, and deployment strategies."
+        ],
+        "featured": false,
+        "consultation": true,
+        "image": "38.jpg",
+        "importanceOrder": 29,
+        "location": "Jordan",
+        "role": "Technical Consultant",
+        "shortTitle": "tamarras",
+        "technologies": [
+          "Mobile Development",
+          "Architecture",
+          "Startup Strategy"
+        ],
+        "title": "Tamarras",
+        "type": "EdTech",
+        "url": "https://tamarrs.com/"
+      },
+      {
+        "category": "Web App",
+        "company": "Curans",
+        "start": "2023-07-01",
+        "end": "2024-12-31",
+        "description": "Healthcare communication platform for patient-provider interaction. Provided strategic technical consultation on architecture, technology choices, and startup best practices.",
+        "details": [
+          "Consulted on technology stack selection and architectural patterns for healthcare platform.",
+          "Guided on HIPAA compliance considerations and secure data handling approaches.",
+          "Advised on performance optimization and real-time communication infrastructure.",
+          "Recommended MVP scope definition and phased deployment strategy for medical platform.",
+          "Provided insights on scaling challenges specific to healthcare SaaS startups."
+        ],
+        "featured": false,
+        "consultation": true,
+        "image": "37.png",
+        "importanceOrder": 29,
+        "location": "Jordan",
+        "role": "Technical Consultant",
+        "shortTitle": "curans",
+        "technologies": [
+          "Healthcare Tech",
+          "Architecture",
+          "Compliance",
+          "Startup Strategy"
+        ],
+        "title": "Curans",
+        "type": "EdTech",
+        "url": "https://curans.org/"
+      },
+      {
+        "category": "Web App",
+        "company": "MobiMenu",
+        "start": "2025-01-01",
+        "end": "current",
+        "description": "Digital menu and ordering platform for restaurants. Led technical architecture decisions and provided business consultation on user-centric design and fast-shipping methodology.",
+        "details": [
+          "Architected technical infrastructure for scalable, customer-facing ordering platform.",
+          "Consulted on user-oriented design principles and fast shipping before launch approach.",
+          "Guided product team on MVP scope and feature prioritization for restaurant adoption.",
+          "Advised on metrics that matter for restaurant businesses and customer retention.",
+          "Helped define lean startup strategy focusing on quick iterations and market validation.",
+          "Provided insights on mobile-first approach and offline capabilities for restaurant environments."
+        ],
+        "featured": false,
+        "consultation": true,
+        "image": "10.jpg",
+        "importanceOrder": 29,
+        "location": "Jordan",
+        "role": "Technical & Business Consultant",
+        "shortTitle": "mobi",
+        "technologies": [
+          "Product Strategy",
+          "UX-Driven Development",
+          "Lean Startup",
+          "Mobile"
+        ],
+        "title": "MobiMenu",
+        "type": "SaaS",
+        "url": "https://mobimenu.app/"
+      },
+      {
+        "category": "Web App",
+        "company": "Qam7a",
+        "start": "2026-01-01",
+        "end": "current",
+        "description": "Educational collaboration platform for Arabic learners. Providing technical architecture guidance and business consultation on user-centric product development and rapid launch strategies.",
+        "details": [
+          "Architecting platform infrastructure for collaborative learning and real-time features.",
+          "Consulting on user-oriented design focusing on learner retention and engagement.",
+          "Guiding on fast-shipping methodology to validate market fit quickly.",
+          "Advising on metrics and analytics for understanding learner behavior.",
+          "Defining MVP scope and feature priorities based on user research.",
+          "Providing business strategy input on go-to-market approach for education platform."
+        ],
+        "featured": false,
+        "consultation": true,
+        "image": "36.png",
+        "importanceOrder": 29,
+        "location": "Jordan",
+        "role": "Technical & Business Consultant",
+        "shortTitle": "qam7a",
+        "technologies": [
+          "Product Strategy",
+          "User-Centric Design",
+          "EdTech",
+          "Growth"
+        ],
+        "title": "Qam7a",
+        "type": "EdTech",
+        "url": "https://qam7a.com/"
+      },
+      {
         "category": "Web App",
         "comingSoon": true,
         "company": "AgileTz",
-        "date": 2022,
+        "start": "2022-12-01",
+        "end": "2023-05-31",
         "description": "Sanad is Jordan’s national gateway to digital government services. Built the frontend from scratch and maintained it as the only frontend developer.",
         "details": [
           "Delivered a responsive, modular frontend interface supporting various ministries and services.",
@@ -3646,14 +3785,14 @@
           "REST API",
           "Docker"
         ],
-        "timeOrder": 15,
         "title": "Sanad",
         "type": "Public / Governmental"
       },
       {
         "category": "Web App",
         "company": "AgileTz",
-        "date": 2021,
+        "start": "2022-06-01",
+        "end": "2022-11-30",
         "description": "Led the frontend development of DLS web platform, digitizing public land services for the Jordanian governmental Department of Lands and Survey",
         "details": [
           "Built complex, dynamic forms and search interfaces for real estate, land registry, and title services.",
@@ -3677,7 +3816,6 @@
           "REST API",
           "Docker"
         ],
-        "timeOrder": 14,
         "title": "DLS",
         "type": "Public / Governmental",
         "url": "https://portal.dls.gov.jo/"
@@ -3687,7 +3825,8 @@
         "comingSoon": true,
         "company": "AlembicSoft",
         "consulted": true,
-        "date": 2024,
+        "start": "2023-01-01",
+        "end": "2025-05-31",
         "description": "A full-featured School Information System (SIS) SaaS platform. Superheaded the project from concept to deployment — including client interviews, UX/UI design, architecture, development, and production delivery.",
         "designed": true,
         "details": [
@@ -3718,7 +3857,6 @@
           "Firebase",
           "AWS"
         ],
-        "timeOrder": 18,
         "title": "Semesteer",
         "type": "Education",
         "url": "https://semesteer-landing.vercel.app/"
@@ -3727,16 +3865,22 @@
         "category": "Web App",
         "comingSoon": true,
         "company": "Several Brands",
-        "date": 2025,
-        "description": "",
+        "start": "2025-12-01",
+        "end": "current",
+        "description": "High-end professional SaaS solution for brand analytics and performance tracking. Led frontend development from scratch, building a polished, performant interface for enterprise clients.",
         "details": [
-          ""
+          "Architected and built responsive, high-performance frontend from ground up.",
+          "Implemented complex data visualization and reporting interfaces for analytics dashboard.",
+          "Designed professional UI/UX patterns suitable for enterprise SaaS product.",
+          "Integrated with backend APIs to deliver real-time analytics and insights.",
+          "Focused on performance optimization, accessibility, and professional user experience.",
+          "Established component library and design system for maintainability and consistency."
         ],
         "featured": false,
         "image": "10.jpg",
         "importanceOrder": 29,
         "location": "Jordan",
-        "role": "Frontend Web Dev",
+        "role": "Lead Frontend Developer",
         "shortTitle": "Snd",
         "technologies": [
           "Vue.Js",
@@ -3750,7 +3894,6 @@
           "ViTest",
           "Pinia"
         ],
-        "timeOrder": 33,
         "title": "Trackulla",
         "type": "SaaS"
       },
@@ -3759,7 +3902,8 @@
         "comingSoon": false,
         "company": "Shai",
         "consulted": true,
-        "date": 2025,
+        "start": "2025-05-08",
+        "end": "current",
         "description": "A government-backed unified platform enabling non-profit organizations in Saudi Arabia to coordinate, streamline operations, and manage beneficiaries. Led the project end-to-end as full-stack developer and tech lead.",
         "details": [
           "Designed and built the platform architecture from scratch using NestJS (backend) and ReactJS (frontend).",
@@ -3785,7 +3929,6 @@
           "JSON",
           "REST API"
         ],
-        "timeOrder": 29,
         "title": "Mustaheq",
         "type": "Public / Governmental",
         "url": "http://demo.mustaheq.org/"
@@ -3793,8 +3936,9 @@
       {
         "category": "Web App",
         "company": "Several Brands",
-        "date": 2025,
-        "description": "A specialized huge internal system for the company to manage its 10s of millions worth of online sales in the United States.",
+        "start": "2025-10-01",
+        "end": "current",
+        "description": "A specialized huge internal system for the company to manage its tens of millions worth of online sales in the United States.",
         "details": [
           "Work is to build the ongoing marketing & sales team needs of features within the portal.",
           "It's also required to contribute into revamp and refactor the redundant codes of functions & views.",
@@ -3816,7 +3960,6 @@
           "JSON",
           "REST API"
         ],
-        "timeOrder": 32,
         "title": "Several Brands",
         "type": "ERP",
         "url": "http://admin.trafficbox.com"
@@ -3824,7 +3967,8 @@
       {
         "category": "Web App",
         "company": "Tafakkur",
-        "date": 2025,
+        "start": "2025-09-01",
+        "end": "current",
         "description": "Led the frontend development of DLS web platform, digitizing public land services for the Jordanian governmental Department of Lands and Survey",
         "details": [
           "Built complex, dynamic forms and search interfaces for real estate, land registry, and title services.",
@@ -3847,7 +3991,6 @@
           "REST API",
           "Docker"
         ],
-        "timeOrder": 31,
         "title": "Tafakkur",
         "type": "Landing Page With Admin Panel",
         "url": "https://tafakkur.com"
@@ -3856,7 +3999,8 @@
         "category": "Web App",
         "company": "Shai",
         "consulted": true,
-        "date": 2025,
+        "start": "2025-05-08",
+        "end": "current",
         "description": "A specialized under-construction Arabic search engine to help individuals find relevant Saudi charities & societies, especially those using the Mustaheq portal.",
         "details": [
           "It was sort of my own idea to come up with, approved by owner.",
@@ -3882,7 +4026,6 @@
           "JSON",
           "REST API"
         ],
-        "timeOrder": 30,
         "title": "Mustaheq Search-Engine",
         "type": "Public / Governmental",
         "url": "http://mustaheq.org/"
@@ -3891,7 +4034,8 @@
         "category": "Web App",
         "comingSoon": false,
         "company": "Logatta",
-        "date": 2023,
+        "start": "2023-08-01",
+        "end": "2023-12-31",
         "description": "A professional e-learning portal focused on entrepreneurship, led by the prominent figure Dr. Maen Al Qatamin.",
         "details": [
           "I was the Lead Frontend Developer, owning the design and implementation of the UI using React and Bootstrap.",
@@ -3913,7 +4057,6 @@
           "JSON",
           "REST API"
         ],
-        "timeOrder": 16,
         "title": "Entreviable",
         "type": "Education",
         "url": "https://entreviable.com"
@@ -3921,7 +4064,8 @@
       {
         "category": "Web App",
         "company": "ArabWork",
-        "date": 2022,
+        "start": "2022-05-01",
+        "end": "2022-06-30",
         "description": "A logistics marketplace for commercial and personal shipments via trucks. Was the lead frontend developer working under a senior full-stack developer.",
         "details": [
           "Developed interactive UIs for both shippers and drivers, including map and order tracking components.",
@@ -3942,15 +4086,15 @@
           "JSON",
           "REST API"
         ],
-        "timeOrder": 11,
         "title": "Trellah",
         "type": "Ride-Hailing",
-        "url": "https://app.trellah.com"
+        "url": "https://www.linkedin.com/company/trellahplatform/"
       },
       {
         "category": "Web App",
         "company": "Luxtag",
-        "date": 2020,
+        "start": "2020-11-01",
+        "end": "2021-10-31",
         "description": "A blockchain-based product verification platform. Spent 6 months in full-stack development before transitioning to lead frontend responsibilities.",
         "details": [
           "Integrated NEM blockchain APIs for tracking and verifying unique product tags.",
@@ -3977,7 +4121,6 @@
           "Blockchain",
           "Docker"
         ],
-        "timeOrder": 9,
         "title": "BrandTag",
         "type": "Anti-Theft Protection",
         "url": "https://app.brandtag.io/"
@@ -3985,7 +4128,8 @@
       {
         "category": "Web App",
         "company": "Freelance",
-        "date": 2024,
+        "start": "2024-06-01",
+        "end": "current",
         "description": "Own product idea, executed from ideation, development to deployment.",
         "designed": true,
         "featured": false,
@@ -4005,7 +4149,6 @@
           "REST API",
           "Firebase"
         ],
-        "timeOrder": 24,
         "title": "Healthy Eating and Lifestyle Tracker",
         "type": "Healthcare",
         "url": "https://heal-tracker.vercel.app/"
@@ -4014,7 +4157,8 @@
         "category": "Web App",
         "comingSoon": true,
         "company": "Freelance",
-        "date": 2023,
+        "start": "2023-12-01",
+        "end": "current",
         "description": "Own product idea, execution is in-progress by supervised junior developers.",
         "designed": true,
         "featured": false,
@@ -4033,7 +4177,6 @@
           "REST API",
           "Firebase"
         ],
-        "timeOrder": 19,
         "title": "AppNest",
         "type": "Productivity Management"
       },
@@ -4041,7 +4184,8 @@
         "category": "Web App",
         "company": "AIS",
         "consulted": true,
-        "date": 2019,
+        "start": "2019-09-01",
+        "end": "2020-08-31",
         "description": "A student information system (SIS), built during my part-time engagement with AIS School.",
         "designed": true,
         "details": [
@@ -4065,14 +4209,14 @@
           "REST API",
           "MySQL"
         ],
-        "timeOrder": 7,
         "title": "AIS Students Portal",
-        "type": "Productivity Management"
+        "type": "EdTech"
       },
       {
         "category": "Web App",
         "company": "AIS",
-        "date": 2020,
+        "start": "2020-09-01",
+        "end": "2021-04-30",
         "description": "A separate system for staff management and productivity tracking, developed for the same client of AIS.",
         "designed": true,
         "details": [
@@ -4098,7 +4242,6 @@
           "REST API",
           "MySQL"
         ],
-        "timeOrder": 5,
         "title": "AIS Staff Portal",
         "type": "Productivity Management"
       },
@@ -4106,7 +4249,8 @@
         "category": "Web App",
         "comingSoon": true,
         "company": "Logatta",
-        "date": 2023,
+        "start": "2023-11-01",
+        "end": "2023-12-31",
         "description": "A geographic data visualization tool built for a UK-based client.",
         "details": [
           "Aggregated heatmap data of fire incidents across the UK to identify high-risk areas.",
@@ -4128,7 +4272,6 @@
           "JSON",
           "REST API"
         ],
-        "timeOrder": 17,
         "title": "Crosure",
         "type": "Search-Engine",
         "url": "https://commsure.com/"
@@ -4137,7 +4280,8 @@
         "category": "Web App",
         "comingSoon": true,
         "company": "Freelance",
-        "date": 2024,
+        "start": "2024-03-01",
+        "end": "2024-03-31",
         "description": "A solely developed frontend app, totally new / from scratch.",
         "featured": false,
         "image": "26.jpg",
@@ -4155,7 +4299,6 @@
           "JSON",
           "REST API"
         ],
-        "timeOrder": 21,
         "title": "Shwra",
         "type": "Marketplace",
         "url": "https://www.shwra.sa/"
@@ -4163,7 +4306,8 @@
       {
         "category": "Web App",
         "company": "Freelance",
-        "date": 2022,
+        "start": "2022-04-01",
+        "end": "2022-05-31",
         "description": "A system for school / university students' internship progress tracking & management.",
         "designed": true,
         "featured": false,
@@ -4186,7 +4330,6 @@
           "REST API",
           "PostgreSQL"
         ],
-        "timeOrder": 10,
         "title": "Tadreebi",
         "type": "Productivity Management",
         "url": "https://tadreebi.netlify.app/"
@@ -4195,7 +4338,8 @@
         "category": "Web App",
         "comingSoon": true,
         "company": "Freelancer",
-        "date": 2021,
+        "start": "2021-05-01",
+        "end": "2021-07-31",
         "description": "Education content & teacher-student communication system.",
         "featured": false,
         "image": "9.jpg",
@@ -4212,14 +4356,14 @@
           "JSON",
           "REST API"
         ],
-        "timeOrder": 9,
         "title": "xEdu App",
         "type": "Education"
       },
       {
         "category": "Web App",
         "company": "Freelance",
-        "date": 2025,
+        "start": "2025-01-01",
+        "end": "2025-12-31",
         "description": "Own product idea, execution is in-progress.",
         "designed": true,
         "featured": false,
@@ -4238,7 +4382,6 @@
           "REST API",
           "Firebase"
         ],
-        "timeOrder": 28,
         "title": "PRICE",
         "type": "Encyclopedia",
         "url": "https://price-admin.vercel.app/"
@@ -4247,7 +4390,8 @@
         "category": "Web App",
         "comingSoon": true,
         "company": "Freelance",
-        "date": 2022,
+        "start": "2022-06-01",
+        "end": "2022-08-31",
         "description": "Own product idea, executed from ideation, development to deployment.",
         "designed": true,
         "featured": false,
@@ -4268,44 +4412,17 @@
           "REST API",
           "Firebase"
         ],
-        "timeOrder": 26,
         "title": "Currencies Archiving & Sharing Hub",
         "type": "Showroom",
         "url": "https://cash-hub.vercel.app/"
       },
       {
         "category": "Web App",
-        "company": "Freelance",
-        "date": 2025,
-        "description": "Own product idea, execution is in-progress by supervised junior developers.",
-        "designed": true,
-        "featured": false,
-        "image": "10.jpg",
-        "importanceOrder": 13,
-        "location": "Jordan",
-        "openSource": true,
-        "role": "End-to-End Build",
-        "shortTitle": "FF",
-        "technologies": [
-          "React.Js",
-          "CSS",
-          "Bootstrap",
-          "Node.Js",
-          "TypeScript",
-          "JSON",
-          "REST API",
-          "Firebase"
-        ],
-        "timeOrder": 25,
-        "title": "Family Finance",
-        "type": "FinTech"
-      },
-      {
-        "category": "Web App",
         "comingSoon": true,
         "company": "Freelance",
         "consulted": true,
-        "date": 2023,
+        "start": "2023-10-01",
+        "end": "2024-06-30",
         "description": "Rasmi & Kiwan is Jordan-based regional engineering consulting firm. Needed an internal platform to manage HR & project-management matters.",
         "designed": true,
         "details": [
@@ -4331,7 +4448,6 @@
           "SQLite",
           "Docker"
         ],
-        "timeOrder": 13,
         "title": "Rasmi & Kiwan",
         "type": "Productivity Management"
       },
@@ -4340,7 +4456,8 @@
         "comingSoon": false,
         "company": "Noor Training & Consultancy",
         "consulted": true,
-        "date": 2024,
+        "start": "2024-01-01",
+        "end": "2024-06-30",
         "description": "Simple individual's professional website.",
         "designed": true,
         "featured": true,
@@ -4360,7 +4477,6 @@
           "REST API",
           "Firebase"
         ],
-        "timeOrder": 23,
         "title": "Coach Noor Kayyali",
         "type": "Profile",
         "url": "https://www.noorkayyali.com/"
@@ -4370,7 +4486,8 @@
         "comingSoon": false,
         "company": "Freelancer",
         "consulted": true,
-        "date": 2025,
+        "start": "2025-01-01",
+        "end": "2025-02-28",
         "description": "Simple individual's professional website.",
         "designed": true,
         "featured": false,
@@ -4390,7 +4507,6 @@
           "REST API",
           "Firebase"
         ],
-        "timeOrder": 27,
         "title": "Nutritionist Fatima Mohammad",
         "type": "Profile",
         "url": "https://nutriFatima.com/"
@@ -4400,7 +4516,8 @@
         "comingSoon": false,
         "company": "Freelance",
         "consulted": true,
-        "date": 2025,
+        "start": "2025-03-01",
+        "end": "2025-05-31",
         "description": "Simple clients data management portal.",
         "designed": true,
         "featured": false,
@@ -4419,7 +4536,6 @@
           "REST API",
           "Firebase"
         ],
-        "timeOrder": 27,
         "title": "Nutritionist Clients Portal",
         "type": "Clients Management",
         "url": "https://portal.nutriFatima.com/"
@@ -4428,7 +4544,8 @@
         "category": "Landing Page",
         "comingSoon": true,
         "company": "Freelance",
-        "date": 2024,
+        "start": "2024-03-01",
+        "end": "2024-03-31",
         "description": "Simple company's professional website.",
         "featured": false,
         "image": "27.jpg",
@@ -4446,7 +4563,6 @@
           "JSON",
           "REST API"
         ],
-        "timeOrder": 22,
         "title": "E3 Ventures",
         "type": "Profile",
         "url": "https://e3.ventures/"
@@ -4456,7 +4572,8 @@
         "comingSoon": false,
         "company": "Freelance",
         "consulted": true,
-        "date": 2022,
+        "start": "2022-02-01",
+        "end": "2022-02-28",
         "description": "Simple individual's professional website.",
         "featured": false,
         "foc": true,
@@ -4474,7 +4591,6 @@
           "JSON",
           "REST API"
         ],
-        "timeOrder": 20,
         "title": "Dr. Ahmad Abu Mahfouth",
         "type": "Profile",
         "url": "https://drahmadabumahfouth.com"
@@ -4483,7 +4599,8 @@
         "category": "Landing Page",
         "comingSoon": false,
         "company": "Freelancer",
-        "date": 2023,
+        "start": "2023-08-01",
+        "end": "2023-09-30",
         "description": "Simple company's professional website.",
         "featured": false,
         "foc": true,
@@ -4501,7 +4618,6 @@
           "JSON",
           "REST API"
         ],
-        "timeOrder": 12,
         "title": "Rasmi & Kiwan",
         "type": "Profile",
         "url": "https://rasmiandkiwan.com/"
@@ -4510,7 +4626,8 @@
         "category": "Landing Page",
         "comingSoon": true,
         "company": "Freelance",
-        "date": 2020,
+        "start": "2020-01-01",
+        "end": "2020-02-29",
         "description": "Simple company's professional website.",
         "featured": false,
         "foc": true,
@@ -4526,7 +4643,6 @@
           "Node.Js",
           "JavaScript"
         ],
-        "timeOrder": 6,
         "title": "Zaytouna Club",
         "type": "Profile",
         "url": "https://zaytouna-tau.vercel.app/"
@@ -4534,7 +4650,8 @@
       {
         "category": "Landing Page",
         "company": "Freelancer",
-        "date": 2019,
+        "start": "2019-01-01",
+        "end": "2019-03-31",
         "description": "Simple company's professional website.",
         "featured": false,
         "foc": true,
@@ -4547,7 +4664,6 @@
           "Wordpress",
           "CSS"
         ],
-        "timeOrder": 4,
         "title": "OneShot Future",
         "type": "Profile",
         "url": "https://oneshotfuture.com/"
@@ -4556,7 +4672,8 @@
         "category": "Landing Page",
         "company": "Freelancer",
         "consulted": true,
-        "date": 2020,
+        "start": "2020-06-01",
+        "end": "2020-08-31",
         "description": "Simple company's professional website.",
         "featured": false,
         "foc": true,
@@ -4568,7 +4685,6 @@
           "Wordpress",
           "CSS"
         ],
-        "timeOrder": 3,
         "title": "PPAM",
         "type": "Profile",
         "url": "https://ppam.org.my/"
@@ -4576,7 +4692,8 @@
       {
         "category": "Landing Page",
         "company": "AIS",
-        "date": 2018,
+        "start": "2018-07-01",
+        "end": "2018-09-30",
         "description": "Simple company's professional website.",
         "featured": false,
         "image": "2.jpg",
@@ -4593,7 +4710,6 @@
           "JSON",
           "REST API"
         ],
-        "timeOrder": 2,
         "title": "AIS Landing",
         "type": "Profile",
         "url": "https://aqsa.edu.my/"
@@ -4601,7 +4717,8 @@
       {
         "category": "Landing Page",
         "company": "Freelancer",
-        "date": 2018,
+        "start": "2018-01-01",
+        "end": "2018-02-28",
         "description": "Simple company's professional website.",
         "featured": false,
         "image": "4.jpg",
@@ -4613,7 +4730,6 @@
           "Wordpress",
           "CSS"
         ],
-        "timeOrder": 1,
         "title": "Speed Wheels",
         "type": "Profile",
         "url": "https://speedwheelstrade.online/"
@@ -4621,7 +4737,8 @@
       {
         "category": "Landing Page",
         "company": "Freelancer",
-        "date": 2017,
+        "start": "2017-10-01",
+        "end": "2017-12-31",
         "description": "Simple company's professional website.",
         "featured": false,
         "image": "3.jpg",
@@ -4633,7 +4750,6 @@
           "Wordpress",
           "CSS"
         ],
-        "timeOrder": 0,
         "title": "Team Foundation",
         "type": "Profile",
         "url": "https://teamtr.media/"
@@ -4703,7 +4819,7 @@
           "Backend"
         ],
         "icon": "fa-solid fa-caret-up",
-        "label": "TurboRepo",
+        "label": "Turbo",
         "rate": 4,
         "url": "https://turborepo.dev/"
       },

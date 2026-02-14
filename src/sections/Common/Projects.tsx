@@ -25,6 +25,7 @@ const ProjectsSection = async ({
     ? [
         { label: t("Projects.Filters.All"), value: "All" },
         { label: t("Projects.Filters.WebApp"), value: "Web App" },
+        { label: t("Projects.Filters.MobileApp"), value: "Mobile App" },
         { label: t("Projects.Filters.LandingPage"), value: "Landing Page" },
       ]
     : [];

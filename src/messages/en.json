@@ -78,6 +78,12 @@
     "Subtitle": "Liked what you saw? Let's communicate!",
     "Title": "Contact Me"
   },
+  "Date": {
+    "Months": "month",
+    "MonthsPlural": "months",
+    "Ongoing": "ongoing",
+    "Present": "Present"
+  },
   "HandsOff": {
     "Advisory": {
       "CtaPrimary": "Work with me",
@@ -277,9 +283,10 @@
         "All": "All",
         "Consulting": "Consulting",
         "LandingPage": "Landing Pages",
+        "MobileApp": "Mobile Apps",
         "WebApp": "Web Apps"
       },
-      "Subtitle": "Highlighted Projects",
+      "Subtitle": "All Projects",
       "TechnologiesLabel": "Technologies",
       "Title": "Projects",
       "ViewProject": "View Project"
@@ -384,7 +391,7 @@
       "Title": "Hands-off Highlights"
     },
     "Projects": {
-      "Subtitle": "The highlighted technical projects I have worked on",
+      "Subtitle": "The highlights of software I did deliver",
       "TechnologiesLabel": "Technologies",
       "Title": "Projects",
       "ViewProject": "View Project"

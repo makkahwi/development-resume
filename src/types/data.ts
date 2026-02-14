@@ -61,8 +61,8 @@ export interface JobProps {
   company: string;
   description: string[];
   location?: string;
-  monthsCount?: number;
-  period: string;
+  start: string;
+  end: string;
   projectsCount?: number;
   title: string;
   type: string;
@@ -73,9 +73,11 @@ export interface ProjectProps {
   category: string | "Web App" | "Consulting" | "Graphic Design";
   comingSoon?: boolean;
   company?: string;
-  date?: number;
+  start?: string;
+  end?: string;
   description: string;
   details?: string[];
+  consultation?: boolean;
   image: string;
   importanceOrder: number;
   url?: string;
@@ -87,7 +89,6 @@ export interface ProjectProps {
   technologies?: string[];
   openSource?: boolean;
   foc?: boolean;
-  timeOrder: number;
   title: string;
   type?: string;
 }

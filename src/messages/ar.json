@@ -78,6 +78,12 @@
     "Subtitle": "مهتم؟",
     "Title": "تواصل معي"
   },
+  "Date": {
+    "Months": "شهر",
+    "MonthsPlural": "أشهر",
+    "Ongoing": "مستمر",
+    "Present": "الحالي"
+  },
   "HandsOff": {
     "Advisory": {
       "CtaPrimary": "لنعمل معًا",
@@ -277,6 +283,7 @@
         "All": "الكل",
         "Consulting": "استشارات",
         "LandingPage": "صفحات هبوط",
+        "MobileApp": "تطبيقات موبايل",
         "WebApp": "تطبيقات ويب"
       },
       "Subtitle": "المشاريع البارزة",

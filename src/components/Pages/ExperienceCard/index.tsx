@@ -1,16 +1,20 @@
 import { clientsList } from "@/lib/data";
+import { formatPeriod } from "@/lib/dateUtils";
 import { JobProps } from "@/types/data";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const ExperienceCard = ({
   company,
   location,
-  period,
+  start,
+  end,
   title,
   type,
   url,
   viewEmployerLabel,
 }: JobProps & { viewEmployerLabel: string }) => {
+  const t = useTranslations();
   const companyLogo = clientsList.find(
     (client) => client.label === company,
   )?.image;
@@ -50,7 +54,9 @@ const ExperienceCard = ({
             </div>
           </div>
 
-          <p className="text-muted small mb-3">{period}</p>
+          <p className="text-muted small mb-3">
+            {formatPeriod(start, end, t("Date.Present"))}
+          </p>
 
           {/* <p className="text-muted mb-3">{description}</p> */}
 

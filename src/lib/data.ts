@@ -12,6 +12,7 @@ import {
 } from "@/types/data";
 
 import json from "./data.json";
+import { periodCalculator } from "./dateUtils";
 
 export const clientsList: ClientProps[] = json.developer.clients;
 export const blogPosts: BlogProps[] = json.developer.blog;
@@ -40,12 +41,17 @@ export const buildStatisticsList = (
 
   return [
     {
-      count: jobs.reduce((total, job) => total + (job.monthsCount || 0), 0),
+      count: jobs
+        .filter(({ type }) => type === "Freelance")
+        .reduce(
+          (total, { start, end }) => total + periodCalculator(start, end),
+          0,
+        ),
       label: t("MonthsInWebDev.Label"),
       description: t("MonthsInWebDev.Description"),
     },
     {
-      count: projects.filter(({ category }) => category === "Web App")?.length,
+      count: projects.filter(({ consultation }) => !consultation)?.length,
       label: t("SoftwareBuilt.Label"),
       description: t("SoftwareBuilt.Description"),
     },
@@ -60,14 +66,14 @@ export const buildStatisticsList = (
       description: t("IndividualsTrained.Description"),
     },
     {
-      count: projects.filter(({ category }) => category === "Consulting")?.length,
-      label: t("ProjectsConsulted.Label"),
-      description: t("ProjectsConsulted.Description"),
-    },
-    {
       count: projects.filter(({ designed }) => designed)?.length,
       label: t("SolutionsArchitected.Label"),
       description: t("SolutionsArchitected.Description"),
+    },
+    {
+      count: projects.filter(({ consultation }) => consultation)?.length,
+      label: t("ProjectsConsulted.Label"),
+      description: t("ProjectsConsulted.Description"),
     },
   ];
 };
@@ -166,4 +172,3 @@ export const getBlogPost = async (
   const match = posts.find((post) => post.slug === slug);
   return match || null;
 };
-
