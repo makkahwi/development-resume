@@ -10,6 +10,34 @@ type Message = {
   createdAt: string;
 };
 
+const DEVICE_ID_STORAGE_KEY = "assistant_device_id";
+const CHAT_MESSAGES_STORAGE_KEY = "assistant_messages_v1";
+const MAX_STORED_MESSAGES = 60;
+
+const createDeviceId = () => {
+  if (
+    typeof crypto !== "undefined" &&
+    typeof crypto.randomUUID === "function"
+  ) {
+    return crypto.randomUUID();
+  }
+  return `device-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
+};
+
+const isMessage = (value: unknown): value is Message => {
+  if (!value || typeof value !== "object") {
+    return false;
+  }
+
+  const item = value as Partial<Message>;
+  return (
+    typeof item.id === "string" &&
+    (item.role === "user" || item.role === "assistant") &&
+    typeof item.content === "string" &&
+    typeof item.createdAt === "string"
+  );
+};
+
 const escapeHtml = (text = "") =>
   text
     .replace(/&/g, "&amp;")
@@ -59,12 +87,12 @@ const AssistantWidget = () => {
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  const defaultSuggestions = {
-    en: [t("Suggestions.Impact"), t("Suggestions.Technologies")],
-    ar: [t("Suggestions.Impact"), t("Suggestions.Technologies")],
-  };
+  const defaultSuggestions = [
+    t("Suggestions.Impact"),
+    t("Suggestions.Technologies"),
+  ];
 
-  const suggestedQuestions = useMemo(() => defaultSuggestions[lang], [lang]);
+  const suggestedQuestions = useMemo(() => defaultSuggestions, [lang]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -76,6 +104,47 @@ const AssistantWidget = () => {
       document.documentElement.classList.remove("chat-docked-open");
     };
   }, [open]);
+
+  useEffect(() => {
+    try {
+      const existing = localStorage.getItem(DEVICE_ID_STORAGE_KEY);
+      if (existing) {
+        setChatId(existing);
+      } else {
+        const created = createDeviceId();
+        localStorage.setItem(DEVICE_ID_STORAGE_KEY, created);
+        setChatId(created);
+      }
+
+      const storedMessages = localStorage.getItem(CHAT_MESSAGES_STORAGE_KEY);
+      if (!storedMessages) {
+        return;
+      }
+
+      const parsed = JSON.parse(storedMessages) as unknown;
+      if (!Array.isArray(parsed)) {
+        return;
+      }
+
+      const validMessages = parsed.filter(isMessage);
+      if (validMessages.length > 0) {
+        setMessages(validMessages.slice(-MAX_STORED_MESSAGES));
+      }
+    } catch {
+      setChatId(createDeviceId());
+    }
+  }, []);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(
+        CHAT_MESSAGES_STORAGE_KEY,
+        JSON.stringify(messages.slice(-MAX_STORED_MESSAGES)),
+      );
+    } catch {
+      // Ignore storage quota and privacy-mode errors.
+    }
+  }, [messages]);
 
   const sendMessage = async (content: string) => {
     if (!content.trim() || loading) {
@@ -110,7 +179,9 @@ const AssistantWidget = () => {
         assistantMessage: Message;
       };
 
-      setChatId(data.chatId);
+      if (!chatId && data.chatId) {
+        setChatId(data.chatId);
+      }
       setMessages((prev) => [...prev, data.assistantMessage]);
     } catch {
       setMessages((prev) => [
@@ -118,7 +189,7 @@ const AssistantWidget = () => {
         {
           id: crypto.randomUUID(),
           role: "assistant",
-          content: "That information isn't in Suhaib's CV data yet.",
+          content: "I couldn't get a response from the AI service right now.",
           createdAt: new Date().toISOString(),
         },
       ]);
