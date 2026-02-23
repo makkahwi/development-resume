@@ -87,12 +87,16 @@ const AssistantWidget = () => {
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  const defaultSuggestions = [
-    t("Suggestions.Impact"),
-    t("Suggestions.Technologies"),
-  ];
-
-  const suggestedQuestions = useMemo(() => defaultSuggestions, [lang]);
+  const allSuggestions = useMemo(
+    () =>
+      Array.from({ length: 11 }, (_, index) =>
+        t(`Suggestions.Q${index + 1}`),
+      ).filter(Boolean),
+    [lang, t],
+  );
+  const [suggestedQuestions, setSuggestedQuestions] = useState<string[]>(() =>
+    allSuggestions.slice(0, 3),
+  );
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -104,6 +108,23 @@ const AssistantWidget = () => {
       document.documentElement.classList.remove("chat-docked-open");
     };
   }, [open]);
+
+  useEffect(() => {
+    if (allSuggestions.length <= 3) {
+      setSuggestedQuestions(allSuggestions);
+      return;
+    }
+
+    const copy = [...allSuggestions];
+    for (let index = copy.length - 1; index > 0; index -= 1) {
+      const randomIndex = Math.floor(Math.random() * (index + 1));
+      const current = copy[index];
+      copy[index] = copy[randomIndex];
+      copy[randomIndex] = current;
+    }
+
+    setSuggestedQuestions(copy.slice(0, 3));
+  }, [allSuggestions, lang]);
 
   useEffect(() => {
     try {
@@ -253,9 +274,11 @@ const AssistantWidget = () => {
               {t("Header.Description")}
             </p>
           </div>
-          <span className="badge text-bg-light border">
-            {t("Header.Badge")}
-          </span>
+          <div className="text-end">
+            <small className="badge text-bg-light border text-xs">
+              {t("Header.Badge")}
+            </small>
+          </div>
         </div>
 
         <div className="chat-messages">
@@ -275,6 +298,16 @@ const AssistantWidget = () => {
             </div>
           ))}
 
+          {loading ? (
+            <div className="chat-message-row chat-message-assistant">
+              <p className="chat-message-role">{t("Role.Assistant")}</p>
+              <div className="chat-message-bubble chat-message-loading">
+                <span className="chat-loading-dot" />
+                {t("Status.Loading")}
+              </div>
+            </div>
+          ) : null}
+
           <div ref={messagesEndRef} />
         </div>
 
@@ -284,6 +317,7 @@ const AssistantWidget = () => {
               key={question}
               className="chat-suggestion-btn"
               onClick={() => void sendMessage(question)}
+              disabled={loading}
               type="button"
             >
               {question}

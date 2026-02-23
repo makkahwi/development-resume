@@ -163,7 +163,9 @@ html.chat-docked-open .chat-aware-navbar {
   opacity: 0;
   pointer-events: none;
   transform: translateX(100%);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
   overflow: hidden;
 }
 
@@ -209,10 +211,6 @@ html[dir="rtl"] .chat-close-btn {
 .chat-panel-header {
   padding: 1rem;
   border-bottom: 1px solid rgba(28, 57, 103, 0.15);
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 0.75rem;
 }
 
 .chat-messages {
@@ -262,6 +260,20 @@ html[dir="rtl"] .chat-close-btn {
   color: #0f2032;
 }
 
+.chat-message-loading {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.chat-loading-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: #1c3967;
+  animation: chat-pulse 1s ease-in-out infinite;
+}
+
 .chat-suggestions {
   border-top: 1px solid rgba(28, 57, 103, 0.15);
   padding: 0.8rem 1rem;
@@ -281,6 +293,11 @@ html[dir="rtl"] .chat-close-btn {
 
 .chat-suggestion-btn:hover {
   background: rgba(28, 57, 103, 0.06);
+}
+
+.chat-suggestion-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .chat-input-wrap {
@@ -336,5 +353,17 @@ html[dir="rtl"] .chat-close-btn {
 
   html[dir="rtl"] .chat-close-btn {
     inset-inline-start: auto;
+  }
+}
+
+@keyframes chat-pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
   }
 }
