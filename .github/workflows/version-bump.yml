@@ -1,0 +1,133 @@
+name: Version Bump and Tag Creation
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - ".github/workflows/**"
+      - "**.md"
+      - "Documentation/**"
+
+jobs:
+  bump-version:
+    name: App Versioning Auto Bump
+    runs-on: ubuntu-latest
+    environment: production
+    permissions:
+      contents: write
+      pull-requests: read
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Bump version based on last PR title
+        id: bump
+        run: |
+          CURRENT_VERSION=$(jq -r '.version' package.json)
+          PATCH=$(echo "$CURRENT_VERSION" | cut -d. -f3)
+          MAJOR=$(echo "$CURRENT_VERSION" | cut -d. -f1)
+          MINOR=$(echo "$CURRENT_VERSION" | cut -d. -f2)
+
+          echo "Current Version: $CURRENT_VERSION"
+
+          PR_TITLE=$(gh pr list \
+            --state merged \
+            --base main \
+            --limit 10 \
+            --json title,createdAt \
+            | jq -r 'sort_by(.createdAt) | last.title')
+          echo "Last PR Title: $PR_TITLE"
+
+          if [[ "$PR_TITLE" =~ ^(Fix|Enhance): ]]; then
+            PATCH=$((PATCH + 1))
+            NEW_VERSION="$MAJOR.$MINOR.$PATCH"
+          elif [[ "$PR_TITLE" =~ ^Build: ]]; then
+            MINOR=$((MINOR + 1))
+            NEW_VERSION="$MAJOR.$MINOR.0"
+          elif [[ "$PR_TITLE" =~ ^Upgrade: ]]; then
+            MAJOR=$((MAJOR + 1))
+            NEW_VERSION="$MAJOR.0.0"
+          else
+            echo "No bump. Title doesn't match Fix:, Enhance:, Build:, or Upgrade:"
+            exit 0
+          fi
+
+          jq ".version = \"$NEW_VERSION\"" package.json > package.json.tmp && mv package.json.tmp package.json
+          echo "Bumped version to $NEW_VERSION"
+          echo "new_version=$NEW_VERSION" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate changelog from recent commits
+        id: changelog
+        if: steps.bump.outputs.new_version != ''
+        run: |
+          LAST_BUMP_COMMIT=$(git log --grep="chore(code): bump version to" --format="%H" -n 1 || echo "")
+
+          if [ -z "$LAST_BUMP_COMMIT" ]; then
+            LOG=$(git log -n 50 --pretty=format:"- %s" --no-merges | grep -Eiv "ci skip|bump version|merge pull request|merge branch" || echo "- Initial release")
+          else
+            LOG=$(git log "$LAST_BUMP_COMMIT"..HEAD --pretty=format:"- %s" --no-merges | grep -Eiv "ci skip|bump version|merge pull request|merge branch" || echo "- Minor updates")
+          fi
+
+          if [ -z "$(echo "$LOG" | tr -d '[:space:]')" ]; then
+            LOG="- Minor updates and improvements"
+          fi
+
+          echo "log<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$LOG" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+      - name: Update CHANGELOG.md
+        if: steps.bump.outputs.new_version != ''
+        run: |
+          VERSION=${{ steps.bump.outputs.new_version }}
+          DATE=$(date +"%Y-%m-%d")
+          REPO="${{ github.repository }}"
+
+          mkdir -p Documentation/technical
+          TEMP_FILE=$(mktemp)
+
+          {
+            echo "## v$VERSION - $DATE"
+            echo ""
+            echo "${{ steps.changelog.outputs.log }}"
+            echo ""
+            echo "[Release Notes](https://github.com/$REPO/releases/tag/v$VERSION)"
+            echo ""
+            echo "---"
+            echo ""
+          } > "$TEMP_FILE"
+
+          if [ -f Documentation/technical/CHANGELOG.md ]; then
+            cat Documentation/technical/CHANGELOG.md >> "$TEMP_FILE"
+          fi
+
+          mv "$TEMP_FILE" Documentation/technical/CHANGELOG.md
+
+      - name: Commit and push version bump
+        if: steps.bump.outputs.new_version != ''
+        run: |
+          git config user.name "Version Bot"
+          git config user.email "version-bot@users.noreply.github.com"
+          git add package.json Documentation/technical/CHANGELOG.md
+          git commit -m "chore(code): bump version to ${{ steps.bump.outputs.new_version }} [ci skip]" || echo "Nothing to commit"
+          git push origin main
+
+      - name: Create GitHub Release
+        if: steps.bump.outputs.new_version != ''
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ steps.bump.outputs.new_version }}
+          name: Release v${{ steps.bump.outputs.new_version }}
+          body: |
+            Release v${{ steps.bump.outputs.new_version }}
+
+            ## What's Changed
+
+            ${{ steps.changelog.outputs.log }}
+
+            **Full Changelog**: https://github.com/${{ github.repository }}/commits/v${{ steps.bump.outputs.new_version }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

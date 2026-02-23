@@ -4,6 +4,7 @@ import { normalizeFaIcon } from "@/lib/icons";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
+import packageJson from "../../package.json";
 
 const Footer = async ({ locale }: { locale: string }) => {
   const t = await getTranslations({ locale, namespace: "Layout.Footer" });
@@ -29,6 +30,7 @@ const Footer = async ({ locale }: { locale: string }) => {
         <p className="text-muted mt-4 mb-2">
           {t("AllRightsReserved")} © 2018 - {year}
         </p>
+        <p className="text-muted small mb-2">V.{packageJson.version}</p>
 
         <div className="d-flex justify-content-center gap-3 my-3">
           <Link href={`/${locale}/privacy`} className="text-muted small">
