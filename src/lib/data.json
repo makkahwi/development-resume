@@ -113,7 +113,12 @@
         "school": "International Islamic University Malaysia",
         "url": "https://www.iium.edu.my/"
       }
-    ]
+    ],
+    "baseInfo": {
+      "location": "Jordan",
+      "willingToRelocate": "Welling to relocate overseas only if substantial payment is offered, as I already get high payment locally. Prefer remote working instead.",
+      "paymentExpectations": "Payment Expectation Depends on the role, available team to work with, business type and stability, organization environment. But generally, I am looking for a competitive salary that reflects my skills and experience."
+    }
   },
   "designer": {
     "jobs": [
@@ -3449,7 +3454,8 @@
         "projectsCount": 2,
         "title": "Frontend Developer",
         "type": "Full-Time",
-        "url": "https://www.severalbrands.com"
+        "url": "https://www.severalbrands.com",
+        "noticePeriod": "1 month"
       },
       {
         "company": "Shai",

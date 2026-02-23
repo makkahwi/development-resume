@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { ReactNode, useEffect, useMemo, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 
 type Message = {
@@ -75,6 +75,103 @@ const renderTranscriptHtml = (messages: Message[]) => {
   `;
 };
 
+const renderInlineMarkdown = (text: string, keyPrefix: string): ReactNode[] => {
+  const tokens = text.split(/(\*\*[^*]+\*\*)/g);
+  return tokens
+    .filter((token) => token.length > 0)
+    .map((token, index) => {
+      const key = `${keyPrefix}-${index}`;
+      if (token.startsWith("**") && token.endsWith("**") && token.length > 4) {
+        return <strong key={key}>{token.slice(2, -2)}</strong>;
+      }
+      return <span key={key}>{token}</span>;
+    });
+};
+
+const renderAssistantMarkdown = (content: string): ReactNode[] => {
+  const lines = content.split(/\r?\n/);
+  const nodes: ReactNode[] = [];
+  let index = 0;
+
+  while (index < lines.length) {
+    const rawLine = lines[index] ?? "";
+    const line = rawLine.trim();
+
+    if (!line) {
+      index += 1;
+      continue;
+    }
+
+    if (/^-{3,}$/.test(line)) {
+      nodes.push(<hr key={`hr-${index}`} className="chat-md-divider" />);
+      index += 1;
+      continue;
+    }
+
+    const headingMatch = line.match(/^(#{1,6})\s+(.+)$/);
+    if (headingMatch) {
+      const level = Math.min(headingMatch[1].length, 6);
+      nodes.push(
+        <p key={`h-${index}`} className={`chat-md-heading chat-md-h${level}`}>
+          {renderInlineMarkdown(headingMatch[2], `h-${index}`)}
+        </p>,
+      );
+      index += 1;
+      continue;
+    }
+
+    if (/^>\s?/.test(line)) {
+      const quoteLines: string[] = [];
+      while (index < lines.length && /^>\s?/.test((lines[index] ?? "").trim())) {
+        quoteLines.push((lines[index] ?? "").trim().replace(/^>\s?/, ""));
+        index += 1;
+      }
+
+      nodes.push(
+        <blockquote key={`q-${index}`} className="chat-md-quote">
+          {quoteLines.map((quoteLine, quoteIndex) => (
+            <p key={`q-line-${quoteIndex}`} className="chat-md-paragraph">
+              {renderInlineMarkdown(quoteLine, `q-${index}-${quoteIndex}`)}
+            </p>
+          ))}
+        </blockquote>,
+      );
+      continue;
+    }
+
+    if (/^([-*]|\d+[.)])\s+/.test(line)) {
+      const items: string[] = [];
+      while (
+        index < lines.length &&
+        /^([-*]|\d+[.)])\s+/.test((lines[index] ?? "").trim())
+      ) {
+        items.push((lines[index] ?? "").trim().replace(/^([-*]|\d+[.)])\s+/, ""));
+        index += 1;
+      }
+
+      nodes.push(
+        <ul key={`ul-${index}`} className="chat-md-list">
+          {items.map((item, itemIndex) => (
+            <li key={`li-${itemIndex}`}>
+              {renderInlineMarkdown(item, `li-${index}-${itemIndex}`)}
+            </li>
+          ))}
+        </ul>,
+      );
+      continue;
+    }
+
+    nodes.push(
+      <p key={`p-${index}`} className="chat-md-paragraph">
+        {renderInlineMarkdown(line, `p-${index}`)}
+      </p>,
+    );
+    index += 1;
+  }
+
+  return nodes;
+};
+
 const AssistantWidget = () => {
   const locale = useLocale();
   const lang = locale === "ar" ? "ar" : "en";
@@ -89,7 +186,7 @@ const AssistantWidget = () => {
 
   const allSuggestions = useMemo(
     () =>
-      Array.from({ length: 11 }, (_, index) =>
+      Array.from({ length: 12 }, (_, index) =>
         t(`Suggestions.Q${index + 1}`),
       ).filter(Boolean),
     [lang, t],
@@ -294,7 +391,11 @@ const AssistantWidget = () => {
               <p className="chat-message-role">
                 {item.role === "user" ? t("Role.User") : t("Role.Assistant")}
               </p>
-              <div className="chat-message-bubble">{item.content}</div>
+              <div className="chat-message-bubble">
+                {item.role === "assistant"
+                  ? renderAssistantMarkdown(item.content)
+                  : item.content}
+              </div>
             </div>
           ))}
 

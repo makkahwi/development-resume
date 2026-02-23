@@ -260,6 +260,51 @@ html[dir="rtl"] .chat-close-btn {
   color: #0f2032;
 }
 
+.chat-md-heading {
+  margin: 0 0 0.45rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.chat-md-h1,
+.chat-md-h2 {
+  font-size: 1rem;
+}
+
+.chat-md-h3,
+.chat-md-h4,
+.chat-md-h5,
+.chat-md-h6 {
+  font-size: 0.92rem;
+}
+
+.chat-md-paragraph {
+  margin: 0 0 0.5rem;
+}
+
+.chat-md-list {
+  margin: 0 0 0.55rem;
+  padding-inline-start: 1.1rem;
+}
+
+.chat-md-list li {
+  margin: 0.15rem 0;
+}
+
+.chat-md-quote {
+  margin: 0 0 0.55rem;
+  padding: 0.45rem 0.6rem;
+  border-inline-start: 3px solid rgba(28, 57, 103, 0.45);
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 6px;
+}
+
+.chat-md-divider {
+  margin: 0.55rem 0 0.65rem;
+  border: 0;
+  border-top: 1px solid rgba(15, 32, 50, 0.2);
+}
+
 .chat-message-loading {
   display: inline-flex;
   align-items: center;
