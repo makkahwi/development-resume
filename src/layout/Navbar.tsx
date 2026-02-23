@@ -46,7 +46,7 @@ const NavbarComp = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg py-0 px-3 px-md-5 mt-3 fixed-top bg-light px-4 border-0 corners mx-4">
+    <nav className="chat-aware-navbar navbar navbar-expand-lg py-0 px-3 px-md-5 mt-3 fixed-top bg-light px-4 border-0 corners mx-4">
       <div className="container-fluid">
         {/* Brand */}
         <Link

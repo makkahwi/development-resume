@@ -17,6 +17,6 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
       <ConsentBanner />
     </>
   );
-}
+};
 
 export default Providers;
