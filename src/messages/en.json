@@ -63,6 +63,30 @@
     "publishedOn": "Published on",
     "tagsLabel": "Tags"
   },
+  "Chat": {
+    "DownloadTranscript": "Download transcript (HTML)",
+    "Header": {
+      "Badge": "Grounded answers only",
+      "Description": "Grounded interview-style chat, built by AI, trained on Suhaib CV data.",
+      "Title": "Suhaib AI Chatbot"
+    },
+    "Input": {
+      "Placeholder": "Ask about projects, experience, impact...",
+      "Send": "Send",
+      "Sending": "Sending..."
+    },
+    "Prompt": {
+      "Start": "Start by asking about experience, projects, or skills."
+    },
+    "Role": {
+      "Assistant": "Assistant",
+      "User": "User"
+    },
+    "Suggestions": {
+      "Impact": "What backend projects best represent Suhaib's impact?",
+      "Technologies": "What are the strongest technologies in this CV?"
+    }
+  },
   "ContactForm": {
     "Discovery": {
       "Cta": "Book a Meeting",

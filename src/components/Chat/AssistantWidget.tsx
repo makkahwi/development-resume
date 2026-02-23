@@ -1,24 +1,13 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 type Message = {
   id: string;
   role: "user" | "assistant";
   content: string;
   createdAt: string;
-};
-
-const defaultSuggestions = {
-  en: [
-    "What backend projects best represent Suhaib's impact?",
-    "What are the strongest technologies in this CV?",
-  ],
-  ar: [
-    "ما هي أقوى المشاريع الخلفية في السيرة؟",
-    "ما هي أبرز التقنيات في هذه السيرة؟",
-  ],
 };
 
 const escapeHtml = (text = "") =>
@@ -61,6 +50,7 @@ const renderTranscriptHtml = (messages: Message[]) => {
 const AssistantWidget = () => {
   const locale = useLocale();
   const lang = locale === "ar" ? "ar" : "en";
+  const t = useTranslations("Chat");
 
   const [open, setOpen] = useState(false);
   const [message, setMessage] = useState("");
@@ -68,6 +58,11 @@ const AssistantWidget = () => {
   const [chatId, setChatId] = useState<string>();
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  const defaultSuggestions = {
+    en: [t("Suggestions.Impact"), t("Suggestions.Technologies")],
+    ar: [t("Suggestions.Impact"), t("Suggestions.Technologies")],
+  };
 
   const suggestedQuestions = useMemo(() => defaultSuggestions[lang], [lang]);
 
@@ -182,29 +177,19 @@ const AssistantWidget = () => {
       >
         <div className="chat-panel-header">
           <div>
-            <h5 className="mb-1">Suhaib AI Chatbot</h5>
+            <h5 className="mb-1">{t("Header.Title")}</h5>
             <p className="mb-0 small text-secondary">
-              Grounded interview-style chat, built by{" "}
-              <a
-                href="https://openai.com/codex/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                AI
-              </a>
-              , trained on Suhaib CV data.
+              {t("Header.Description")}
             </p>
           </div>
           <span className="badge text-bg-light border">
-            Grounded answers only
+            {t("Header.Badge")}
           </span>
         </div>
 
         <div className="chat-messages">
           {messages.length === 0 ? (
-            <p className="small text-secondary mb-0">
-              Start by asking about experience, projects, or skills.
-            </p>
+            <p className="small text-secondary mb-0">{t("Prompt.Start")}</p>
           ) : null}
 
           {messages.map((item) => (
@@ -212,7 +197,9 @@ const AssistantWidget = () => {
               key={item.id}
               className={`chat-message-row ${item.role === "user" ? "chat-message-user" : "chat-message-assistant"}`}
             >
-              <p className="chat-message-role">{item.role}</p>
+              <p className="chat-message-role">
+                {item.role === "user" ? t("Role.User") : t("Role.Assistant")}
+              </p>
               <div className="chat-message-bubble">{item.content}</div>
             </div>
           ))}
@@ -243,7 +230,7 @@ const AssistantWidget = () => {
           >
             <input
               className="form-control"
-              placeholder="Ask about projects, experience, impact..."
+              placeholder={t("Input.Placeholder")}
               value={message}
               onChange={(event) => setMessage(event.target.value)}
             />
@@ -252,7 +239,7 @@ const AssistantWidget = () => {
               disabled={loading}
               type="submit"
             >
-              {loading ? "Sending..." : "Send"}
+              {loading ? t("Input.Sending") : t("Input.Send")}
             </button>
           </form>
 
@@ -262,7 +249,7 @@ const AssistantWidget = () => {
             type="button"
           >
             <i className="fa-solid fa-file-arrow-down me-2" />
-            Download transcript (HTML)
+            {t("DownloadTranscript")}
           </button>
         </div>
       </div>
