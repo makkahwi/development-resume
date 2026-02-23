@@ -1,7 +1,7 @@
 "use client";
 
 import { brandConfig } from "@/brand/config";
-import LanguageSwitch from "@/components/LanguageSwitch";
+// import LanguageSwitch from "@/components/LanguageSwitch";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -94,9 +94,9 @@ const NavbarComp = () => {
               </li>
             ))}
 
-            <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
+            {/* <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
               <LanguageSwitch locale={locale} />
-            </li>
+            </li> */}
 
             {/* CV button */}
             <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
