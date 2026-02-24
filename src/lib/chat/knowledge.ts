@@ -1,4 +1,12 @@
-import { clientsList, educationsList, jobsList, projectsList, skillsList, testimonialsList, traineesList } from "@/lib/data";
+import {
+  getClientsList,
+  getEducationsList,
+  getJobsList,
+  getProjectsList,
+  getSkillsList,
+  getTestimonialsList,
+  getTraineesList,
+} from "@/lib/data";
 
 export type KnowledgeChunk = {
   id: string;
@@ -49,7 +57,25 @@ export const retrieveRelevantChunks = (
     .map((entry) => entry.chunk);
 };
 
-export const buildKnowledgeChunks = (): KnowledgeChunk[] => {
+export const buildKnowledgeChunks = async (): Promise<KnowledgeChunk[]> => {
+  const [
+    jobsList,
+    projectsList,
+    skillsList,
+    educationsList,
+    clientsList,
+    testimonialsList,
+    traineesList,
+  ] = await Promise.all([
+    getJobsList(),
+    getProjectsList(),
+    getSkillsList(),
+    getEducationsList(),
+    getClientsList(),
+    getTestimonialsList(),
+    getTraineesList(),
+  ]);
+
   const chunks: KnowledgeChunk[] = [];
 
   jobsList.forEach((job, index) => {

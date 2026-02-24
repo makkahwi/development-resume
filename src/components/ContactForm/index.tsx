@@ -3,10 +3,10 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import PageSection from "../PageSection";
-import { contactsList } from "@/lib/data";
 import { normalizeFaIcon } from "@/lib/icons";
+import { ContactProps } from "@/types/data";
 
-const ContactForm = () => {
+const ContactForm = ({ contactsList }: { contactsList: ContactProps[] }) => {
   const t = useTranslations("ContactForm");
 
   const [formData, setFormData] = useState({

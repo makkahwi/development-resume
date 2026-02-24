@@ -1,8 +1,10 @@
 import TraineeCard from "@/components/Pages/TraineeCard";
 import PageSection from "@/components/PageSection";
-import { traineesList } from "@/lib/data";
+import { getTraineesList } from "@/lib/data";
 
 const MentoringSection = async ({ t }: { t: (key: string) => string }) => {
+  const traineesList = await getTraineesList();
+
   return (
     <PageSection
       title={t("Testimonials.Title")}

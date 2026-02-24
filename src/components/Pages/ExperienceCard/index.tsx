@@ -1,4 +1,3 @@
-import { clientsList } from "@/lib/data";
 import { formatPeriod } from "@/lib/dateUtils";
 import { JobProps } from "@/types/data";
 import Image from "next/image";
@@ -12,12 +11,10 @@ const ExperienceCard = ({
   title,
   type,
   url,
+  companyLogo,
   viewEmployerLabel,
-}: JobProps & { viewEmployerLabel: string }) => {
+}: JobProps & { viewEmployerLabel: string; companyLogo?: string }) => {
   const t = useTranslations();
-  const companyLogo = clientsList.find(
-    (client) => client.label === company,
-  )?.image;
 
   return (
     <div className="col-lg-4">

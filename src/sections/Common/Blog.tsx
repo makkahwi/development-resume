@@ -15,7 +15,7 @@ const BlogSection = async ({
   short?: boolean;
   ctaLabel: string;
 }) => {
-  const posts = getBlogPosts(locale);
+  const posts = await getBlogPosts(locale);
   const visiblePosts = short ? posts.slice(0, 3) : posts;
 
   return (

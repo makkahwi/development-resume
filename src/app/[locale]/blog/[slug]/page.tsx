@@ -56,7 +56,7 @@ const BlogPostPage = async ({ params }: PageProps) => {
   const t = await getTranslations({ locale, namespace: "BlogPost" });
 
   // Get all posts for related and recent
-  const allPosts = getBlogPosts(locale);
+  const allPosts = await getBlogPosts(locale);
 
   // Get recent posts (excluding current post)
   const recentPosts = allPosts.filter((p) => p.slug !== slug).slice(0, 2);

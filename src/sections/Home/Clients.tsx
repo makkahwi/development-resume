@@ -1,8 +1,10 @@
 import PageSection from "@/components/PageSection";
-import { clientsList } from "@/lib/data";
+import { getClientsList } from "@/lib/data";
 import Image from "next/image";
 
 const ClientsSection = async (): Promise<React.ReactNode> => {
+  const clientsList = await getClientsList();
+
   return (
     <PageSection id="clients" noPadding>
       <div className="row g-1 g-lg-3 g-xl-1 justify-content-center align-items-center">

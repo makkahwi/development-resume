@@ -1,8 +1,10 @@
 import PageSection from "@/components/PageSection";
-import { educationsList } from "@/lib/data";
+import { getEducationsList } from "@/lib/data";
 import Image from "next/image";
 
 const EducationSection = async ({ t }: { t: (key: string) => string }) => {
+  const educationsList = await getEducationsList();
+
   return (
     <PageSection
       title={t("Education.Title")}

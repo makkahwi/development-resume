@@ -1,6 +1,6 @@
 import SkillCard from "@/components/Pages/SkillCard";
 import PageSection from "@/components/PageSection";
-import { skillsList } from "@/lib/data";
+import { getSkillsList } from "@/lib/data";
 
 const SkillsSection = async ({
   t,
@@ -9,6 +9,8 @@ const SkillsSection = async ({
   t: (key: string) => string;
   short?: boolean;
 }) => {
+  const skillsList = await getSkillsList();
+
   return (
     <PageSection
       title={t("Skills.Title")}

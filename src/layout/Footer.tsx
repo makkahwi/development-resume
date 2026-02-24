@@ -1,5 +1,5 @@
 import ContactForm from "@/components/ContactForm";
-import { contactsList } from "@/lib/data";
+import { getContactsList } from "@/lib/data";
 import { normalizeFaIcon } from "@/lib/icons";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
@@ -8,11 +8,12 @@ import packageJson from "../../package.json";
 
 const Footer = async ({ locale }: { locale: string }) => {
   const t = await getTranslations({ locale, namespace: "Layout.Footer" });
+  const contactsList = await getContactsList();
   const year = new Date().getFullYear();
 
   return (
     <footer className="mt-5 pt-4 border-top bg-transparent">
-      <ContactForm />
+      <ContactForm contactsList={contactsList} />
 
       <div className="container text-center">
         <hr className="px-5 mx-5" />

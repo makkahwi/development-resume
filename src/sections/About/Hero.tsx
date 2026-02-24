@@ -1,6 +1,12 @@
 import StatisticCard from "@/components/Pages/StatisticCard";
 import PageSection from "@/components/PageSection";
-import { buildStatisticsList } from "@/lib/data";
+import {
+  buildStatisticsList,
+  getClientsList,
+  getJobsList,
+  getProjectsList,
+  getTraineesList,
+} from "@/lib/data";
 
 const AboutHeroSection = async ({
   t,
@@ -11,6 +17,13 @@ const AboutHeroSection = async ({
   tStats: (key: string) => string;
   short?: boolean;
 }) => {
+  const [jobs, clients, projects, trainees] = await Promise.all([
+    getJobsList(),
+    getClientsList(),
+    getProjectsList(),
+    getTraineesList(),
+  ]);
+
   const atGlance = [
     { label: t("AtGlance.Experience"), icon: "fa-solid fa-chart-line" },
     { label: t("AtGlance.Specialization"), icon: "fa-solid fa-microchip" },
@@ -40,7 +53,12 @@ const AboutHeroSection = async ({
         )}
 
         <div className="row g-4 mb-5">
-          {buildStatisticsList(tStats).map((statistic, index) => (
+          {buildStatisticsList(tStats, {
+            jobs,
+            clients,
+            projects,
+            trainees,
+          }).map((statistic, index) => (
             <StatisticCard key={index} short={short} {...statistic} />
           ))}
         </div>

@@ -1,6 +1,6 @@
 import ProjectCard from "@/components/Pages/ProjectCard";
 import PageSection from "@/components/PageSection";
-import { projectsList } from "@/lib/data";
+import { getProjectsList } from "@/lib/data";
 
 const ProjectsSection = async ({
   t,
@@ -21,6 +21,8 @@ const ProjectsSection = async ({
   activeCategory?: string;
   basePath?: string;
 }) => {
+  const projectsList = await getProjectsList();
+
   const filterOptions = showFilters
     ? [
         { label: t("Projects.Filters.All"), value: "All" },

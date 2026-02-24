@@ -10,20 +10,114 @@ import {
   TestimonialProps,
   TraineeProps,
 } from "@/types/data";
-
-import json from "./data.json";
+import service from "./api";
 import { periodCalculator } from "./dateUtils";
 
-export const clientsList: ClientProps[] = json.developer.clients;
-export const blogPosts: BlogProps[] = json.developer.blog;
-export const jobsList: JobProps[] = json.developer.jobs;
-export const traineesList: TraineeProps[] = json.developer.trainees;
-export const projectsList: ProjectProps[] = json.developer.projects;
-export const skillsList: SkillsProps[] = json.developer.skills;
-export const testimonialsList: TestimonialProps[] = json.developer.testimonials;
+type ResumeData = {
+  developer: {
+    clients: ClientProps[];
+    blog: BlogProps[];
+    jobs: JobProps[];
+    trainees: TraineeProps[];
+    projects: ProjectProps[];
+    skills: SkillsProps[];
+    testimonials: TestimonialProps[];
+  };
+  common: {
+    contacts: ContactProps[];
+    education: EducationProps[];
+  };
+};
 
-export const contactsList: ContactProps[] = json.common.contacts;
-export const educationsList: EducationProps[] = json.common.education;
+const EMPTY_RESUME_DATA: ResumeData = {
+  developer: {
+    clients: [],
+    blog: [],
+    jobs: [],
+    trainees: [],
+    projects: [],
+    skills: [],
+    testimonials: [],
+  },
+  common: {
+    contacts: [],
+    education: [],
+  },
+};
+
+const asArray = <T>(value: unknown): T[] => {
+  return Array.isArray(value) ? (value as T[]) : [];
+};
+
+const normalizeResumeData = (value: unknown): ResumeData => {
+  if (!value || typeof value !== "object") {
+    return EMPTY_RESUME_DATA;
+  }
+
+  const root = value as Record<string, unknown>;
+  const developer = (root.developer as Record<string, unknown>) || {};
+  const common = (root.common as Record<string, unknown>) || {};
+
+  return {
+    developer: {
+      clients: asArray<ClientProps>(developer.clients),
+      blog: asArray<BlogProps>(developer.blog),
+      jobs: asArray<JobProps>(developer.jobs),
+      trainees: asArray<TraineeProps>(developer.trainees),
+      projects: asArray<ProjectProps>(developer.projects),
+      skills: asArray<SkillsProps>(developer.skills),
+      testimonials: asArray<TestimonialProps>(developer.testimonials),
+    },
+    common: {
+      contacts: asArray<ContactProps>(common.contacts),
+      education: asArray<EducationProps>(common.education),
+    },
+  };
+};
+
+let cachedResumeData: ResumeData | null = null;
+
+export const getResumeData = async (): Promise<ResumeData> => {
+  if (cachedResumeData) {
+    return cachedResumeData;
+  }
+
+  try {
+    const data = await service.get(".json");
+    cachedResumeData = normalizeResumeData(data);
+  } catch {
+    cachedResumeData = EMPTY_RESUME_DATA;
+  }
+
+  return cachedResumeData;
+};
+
+export const getClientsList = async (): Promise<ClientProps[]> =>
+  (await getResumeData()).developer.clients;
+
+export const getBlogEntries = async (): Promise<BlogProps[]> =>
+  (await getResumeData()).developer.blog;
+
+export const getJobsList = async (): Promise<JobProps[]> =>
+  (await getResumeData()).developer.jobs;
+
+export const getTraineesList = async (): Promise<TraineeProps[]> =>
+  (await getResumeData()).developer.trainees;
+
+export const getProjectsList = async (): Promise<ProjectProps[]> =>
+  (await getResumeData()).developer.projects;
+
+export const getSkillsList = async (): Promise<SkillsProps[]> =>
+  (await getResumeData()).developer.skills;
+
+export const getTestimonialsList = async (): Promise<TestimonialProps[]> =>
+  (await getResumeData()).developer.testimonials;
+
+export const getContactsList = async (): Promise<ContactProps[]> =>
+  (await getResumeData()).common.contacts;
+
+export const getEducationsList = async (): Promise<EducationProps[]> =>
+  (await getResumeData()).common.education;
 
 export const buildStatisticsList = (
   t: (key: string) => string,
@@ -34,10 +128,10 @@ export const buildStatisticsList = (
     trainees?: TraineeProps[];
   },
 ): StatisticProps[] => {
-  const jobs = data?.jobs || jobsList;
-  const clients = data?.clients || clientsList;
-  const projects = data?.projects || projectsList;
-  const trainees = data?.trainees || traineesList;
+  const jobs = data?.jobs || [];
+  const clients = data?.clients || [];
+  const projects = data?.projects || [];
+  const trainees = data?.trainees || [];
 
   return [
     {
@@ -139,8 +233,9 @@ const buildExcerpt = (blocks: BlogProps["versions"]["en"]["short"]) => {
   return text;
 };
 
-export const getBlogPosts = (locale: string): BlogPostView[] => {
+export const getBlogPosts = async (locale: string): Promise<BlogPostView[]> => {
   const lang = normalizeLocale(locale);
+  const blogPosts = await getBlogEntries();
 
   return blogPosts
     .filter((post) => post?.versions?.[lang]?.slug)
@@ -168,7 +263,7 @@ export const getBlogPost = async (
   locale: string,
   slug: string,
 ): Promise<BlogPostView | null> => {
-  const posts = getBlogPosts(locale);
+  const posts = await getBlogPosts(locale);
   const match = posts.find((post) => post.slug === slug);
   return match || null;
 };
