@@ -63,7 +63,7 @@ const renderTranscriptHtml = (messages: Message[]) => {
     <html>
       <head>
         <meta charset="utf-8" />
-        <title>Chat Transcript</title>
+        <title>Suhaib AI Chat Transcript</title>
       </head>
       <body style="font-family: Arial, sans-serif; padding: 24px; color: #0f2032;">
         <h2 style="margin-top: 0;">Chat Transcript</h2>
@@ -122,7 +122,10 @@ const renderAssistantMarkdown = (content: string): ReactNode[] => {
 
     if (/^>\s?/.test(line)) {
       const quoteLines: string[] = [];
-      while (index < lines.length && /^>\s?/.test((lines[index] ?? "").trim())) {
+      while (
+        index < lines.length &&
+        /^>\s?/.test((lines[index] ?? "").trim())
+      ) {
         quoteLines.push((lines[index] ?? "").trim().replace(/^>\s?/, ""));
         index += 1;
       }
@@ -145,7 +148,9 @@ const renderAssistantMarkdown = (content: string): ReactNode[] => {
         index < lines.length &&
         /^([-*]|\d+[.)])\s+/.test((lines[index] ?? "").trim())
       ) {
-        items.push((lines[index] ?? "").trim().replace(/^([-*]|\d+[.)])\s+/, ""));
+        items.push(
+          (lines[index] ?? "").trim().replace(/^([-*]|\d+[.)])\s+/, ""),
+        );
         index += 1;
       }
 
@@ -364,26 +369,32 @@ const AssistantWidget = () => {
         className={`chat-panel ${open ? "chat-panel-open" : ""}`}
         aria-hidden={!open}
       >
-        <div className="chat-panel-header">
-          <div>
-            <h5 className="mb-1">{t("Header.Title")}</h5>
-            <p className="mb-0 small text-secondary">
-              {t("Header.Description")}
-            </p>
+        <div
+          style={{
+            borderBottom: "1px solid rgba(28, 57, 103, 0.15)",
+            padding: "1rem",
+          }}
+        >
+          <div className="chat-panel-header">
+            <div>
+              <h5 className="mb-1">{t("Header.Title")}</h5>
+            </div>
+            <div className="text-end d-flex align-items-start gap-2">
+              <button
+                aria-label="Close chat assistant"
+                className="chat-panel-mobile-close"
+                onClick={() => setOpen(false)}
+                type="button"
+              >
+                <i className="fa-solid fa-xmark" />
+              </button>
+              <small className="badge text-bg-light border text-xs">
+                {t("Header.Badge")}
+              </small>
+            </div>
           </div>
-          <div className="text-end d-flex align-items-start gap-2">
-            <button
-              aria-label="Close chat assistant"
-              className="chat-panel-mobile-close"
-              onClick={() => setOpen(false)}
-              type="button"
-            >
-              <i className="fa-solid fa-xmark" />
-            </button>
-            <small className="badge text-bg-light border text-xs">
-              {t("Header.Badge")}
-            </small>
-          </div>
+
+          <p className="mb-0 small text-secondary">{t("Header.Description")}</p>
         </div>
 
         <div className="chat-messages">

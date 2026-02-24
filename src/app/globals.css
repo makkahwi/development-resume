@@ -212,8 +212,6 @@ html[dir="rtl"] .chat-close-btn {
 }
 
 .chat-panel-header {
-  padding: 1rem;
-  border-bottom: 1px solid rgba(28, 57, 103, 0.15);
   display: flex;
   align-items: flex-start;
   justify-content: space-between;

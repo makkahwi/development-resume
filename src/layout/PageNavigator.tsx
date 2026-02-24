@@ -198,7 +198,7 @@ const PageNavigator = ({ sections = [] }: PageNavigatorProps) => {
 
   return (
     <div
-      className="position-fixed top-50 start-0 translate-middle-y d-flex flex-column"
+      className="position-fixed top-50 start-0 translate-middle-y d-none d-md-flex flex-column"
       style={{ zIndex: 1040 }}
     >
       {allSections.map(({ id, label, iconClass }, index) => (
