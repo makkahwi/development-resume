@@ -371,7 +371,15 @@ const AssistantWidget = () => {
               {t("Header.Description")}
             </p>
           </div>
-          <div className="text-end">
+          <div className="text-end d-flex align-items-start gap-2">
+            <button
+              aria-label="Close chat assistant"
+              className="chat-panel-mobile-close"
+              onClick={() => setOpen(false)}
+              type="button"
+            >
+              <i className="fa-solid fa-xmark" />
+            </button>
             <small className="badge text-bg-light border text-xs">
               {t("Header.Badge")}
             </small>
