@@ -6,7 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import Providers from "../providers";
 
-const locales = ["en", "ar"] as const;
+const locales = ["en"] as const;
 type Locale = (typeof locales)[number];
 
 type Props = {
@@ -14,7 +14,7 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
-const LocaleLayout = async({ children, params }: Props) => {
+const LocaleLayout = async ({ children, params }: Props) => {
   const { locale } = await params;
 
   if (!locales.includes(locale as Locale)) {
@@ -49,6 +49,6 @@ const LocaleLayout = async({ children, params }: Props) => {
       </body>
     </html>
   );
-}
+};
 
-export default LocaleLayout
+export default LocaleLayout;
