@@ -3,7 +3,8 @@ import { callLLM } from "@/lib/chat/llm";
 
 const fallbackAnswer = "I couldn't get a response from the AI service right now.";
 export const runtime = "nodejs";
-export const maxDuration = 30;
+export const maxDuration = 60;
+export const preferredRegion = "iad1";
 
 export async function POST(request: NextRequest) {
   try {

@@ -1,7 +1,7 @@
 const youApiKey = process.env.YOU_API_KEY ?? "";
 const youAgentId = process.env.YOU_AGENT_ID ?? "";
 const youApiBaseUrl = process.env.YOU_API_BASE_URL ?? "https://api.you.com/v1";
-const YOU_REQUEST_TIMEOUT_MS = Number(process.env.YOU_REQUEST_TIMEOUT_MS ?? 8000);
+const YOU_REQUEST_TIMEOUT_MS = Number(process.env.YOU_REQUEST_TIMEOUT_MS ?? 20000);
 
 type YouRunOutput = {
   type?: string;
