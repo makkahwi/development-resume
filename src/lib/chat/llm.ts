@@ -1,13 +1,16 @@
-const youApiKey = process.env.YOU_API_KEY ?? "";
-const youAgentId = process.env.YOU_AGENT_ID ?? "";
-const youApiBaseUrl = process.env.YOU_API_BASE_URL ?? "https://api.you.com/v1";
+const youApiKey = process.env.NEXT_PUBLIC_YOU_API_KEY ?? "";
+const youAgentId = process.env.NEXT_PUBLIC_YOU_AGENT_ID ?? "";
+const youApiBaseUrl =
+  process.env.NEXT_PUBLIC_YOU_API_BASE_URL ?? "https://api.you.com/v1";
 
 type YouRunOutput = {
   type?: string;
   text?: string;
 };
 
-const extractYouAnswerText = (output: YouRunOutput[] | undefined): string | null => {
+const extractYouAnswerText = (
+  output: YouRunOutput[] | undefined,
+): string | null => {
   if (!Array.isArray(output) || output.length === 0) {
     return null;
   }
@@ -27,9 +30,12 @@ const extractYouAnswerText = (output: YouRunOutput[] | undefined): string | null
   return null;
 };
 
-export const callLLM = async (input: string, chatId?: string): Promise<string> => {
+export const callLLM = async (
+  input: string,
+  chatId?: string,
+): Promise<string> => {
   if (!youApiKey || !youAgentId) {
-    return "Chat service is not configured. Add YOU_API_KEY and YOU_AGENT_ID.";
+    return "Chat service is not configured. Add NEXT_PUBLIC_YOU_API_KEY and NEXT_PUBLIC_YOU_AGENT_ID.";
   }
 
   try {
