@@ -1,7 +1,10 @@
+const aiBackendBaseUrl = process.env.AI_BACKEND_BASE_URL ?? "";
+const aiBackendTimeoutMs = Number(process.env.AI_BACKEND_TIMEOUT_MS ?? 30000);
+
 const youApiKey = process.env.YOU_API_KEY ?? "";
 const youAgentId = process.env.YOU_AGENT_ID ?? "";
 const youApiBaseUrl = process.env.YOU_API_BASE_URL ?? "https://api.you.com/v1";
-const YOU_REQUEST_TIMEOUT_MS = Number(process.env.YOU_REQUEST_TIMEOUT_MS ?? 20000);
+const youRequestTimeoutMs = Number(process.env.YOU_REQUEST_TIMEOUT_MS ?? 20000);
 
 type YouRunOutput = {
   type?: string;
@@ -28,13 +31,62 @@ const extractYouAnswerText = (output: YouRunOutput[] | undefined): string | null
   return null;
 };
 
-export const callLLM = async (input: string, chatId?: string): Promise<string> => {
-  if (!youApiKey || !youAgentId) {
-    return "Chat service is not configured. Add YOU_API_KEY and YOU_AGENT_ID.";
+const callAiBackend = async (input: string, chatId?: string): Promise<string> => {
+  if (!aiBackendBaseUrl) {
+    return "AI backend is not configured. Add AI_BACKEND_BASE_URL.";
   }
 
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), YOU_REQUEST_TIMEOUT_MS);
+  const timeoutId = setTimeout(() => controller.abort(), aiBackendTimeoutMs);
+
+  try {
+    const res = await fetch(`${aiBackendBaseUrl.replace(/\/$/, "")}/v1/chat`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: input, chat_id: chatId }),
+      cache: "no-store",
+      signal: controller.signal,
+    });
+
+    const bodyText = await res.text().catch(() => "");
+    if (!res.ok) {
+      console.error("AI backend request failed", {
+        status: res.status,
+        body: bodyText.slice(0, 500),
+      });
+      return "I couldn't get a response from the AI backend. Please try again.";
+    }
+
+    let parsed: { answer?: string } | null = null;
+    try {
+      parsed = bodyText ? (JSON.parse(bodyText) as { answer?: string }) : null;
+    } catch {
+      console.error("AI backend response parse failed", {
+        body: bodyText.slice(0, 500),
+      });
+      return "I received an invalid response from the AI backend.";
+    }
+
+    return parsed?.answer?.trim() || "No answer was returned.";
+  } catch (error) {
+    if (error instanceof Error && error.name === "AbortError") {
+      return "The AI backend took too long to respond. Please try again.";
+    }
+
+    console.error("AI backend call threw an error", error);
+    return "I couldn't connect to the AI backend. Please try again.";
+  } finally {
+    clearTimeout(timeoutId);
+  }
+};
+
+const callYouAgent = async (input: string, chatId?: string): Promise<string> => {
+  if (!youApiKey || !youAgentId) {
+    return "Chat service is not configured. Add AI_BACKEND_BASE_URL or YOU_API_KEY and YOU_AGENT_ID.";
+  }
+
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), youRequestTimeoutMs);
 
   try {
     const res = await fetch(`${youApiBaseUrl}/agents/runs`, {
@@ -69,9 +121,7 @@ export const callLLM = async (input: string, chatId?: string): Promise<string> =
 
     let parsed: { output?: YouRunOutput[] } | null = null;
     try {
-      parsed = bodyText
-        ? (JSON.parse(bodyText) as { output?: YouRunOutput[] })
-        : null;
+      parsed = bodyText ? (JSON.parse(bodyText) as { output?: YouRunOutput[] }) : null;
     } catch {
       console.error("You.com API response parse failed", {
         body: bodyText.slice(0, 500),
@@ -90,4 +140,12 @@ export const callLLM = async (input: string, chatId?: string): Promise<string> =
   } finally {
     clearTimeout(timeoutId);
   }
+};
+
+export const callLLM = async (input: string, chatId?: string): Promise<string> => {
+  if (aiBackendBaseUrl) {
+    return callAiBackend(input, chatId);
+  }
+
+  return callYouAgent(input, chatId);
 };
