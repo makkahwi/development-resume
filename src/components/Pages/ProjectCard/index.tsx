@@ -7,6 +7,7 @@ const ProjectCard = ({
   details,
   role,
   url,
+  description,
   image,
   short = false,
   viewProjectLabel,
@@ -31,7 +32,7 @@ const ProjectCard = ({
           {!short && <small className="fw-light text-xs mb-1">{role} @</small>}
           <h3 className="h5 fw-bold mb-3">{title}</h3>
 
-          {!short && details && (
+          {!short && details ? (
             <ul className="mb-3 mh-10">
               {details.map((detail, index) => (
                 <li key={index} className="">
@@ -39,6 +40,10 @@ const ProjectCard = ({
                 </li>
               ))}
             </ul>
+          ) : description ? (
+            <p className="text-muted mb-3 flex-grow-1">{description}</p>
+          ) : (
+            ""
           )}
 
           {technologies?.length && technologies?.length > 0 && (
