@@ -1,4 +1,4 @@
-import AssistantWidget from "@/components/Chat";
+// import AssistantWidget from "@/components/Chat";
 import Footer from "@/layout/Footer";
 import NavbarComp from "@/layout/Navbar";
 import PageNavigator from "@/layout/PageNavigator";
