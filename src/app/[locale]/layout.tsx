@@ -1,4 +1,4 @@
-import AssistantWidget from "@/components/Chat";
+// import AssistantWidget from "@/components/Chat";
 import Footer from "@/layout/Footer";
 import NavbarComp from "@/layout/Navbar";
 import PageNavigator from "@/layout/PageNavigator";
@@ -43,7 +43,7 @@ const LocaleLayout = async ({ children, params }: Props) => {
               {/* CTA & footer could be here later when we port CtaSection */}
               <Footer locale={locale} />
             </div>
-            <AssistantWidget />
+            {/* <AssistantWidget /> */}
           </main>
         </NextIntlClientProvider>
       </body>
