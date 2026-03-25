@@ -4,15 +4,14 @@ import Image from "next/image";
 const ProjectCard = ({
   technologies,
   title,
-  description,
+  details,
+  role,
   url,
   image,
   short = false,
-  technologiesLabel,
   viewProjectLabel,
 }: ProjectProps & {
   short?: boolean;
-  technologiesLabel: string;
   viewProjectLabel: string;
 }) => {
   return (
@@ -29,31 +28,32 @@ const ProjectCard = ({
           />
         )}
         <div className="card-body d-flex flex-column">
+          {!short && <small className="fw-light text-xs mb-1">{role} @</small>}
           <h3 className="h5 fw-bold mb-3">{title}</h3>
 
-          {!short && description && (
-            <p className="text-muted mb-3 flex-grow-1">{description}</p>
+          {!short && details && (
+            <ul className="mb-3 mh-10">
+              {details.map((detail, index) => (
+                <li key={index} className="">
+                  {detail}
+                </li>
+              ))}
+            </ul>
           )}
 
           {technologies?.length && technologies?.length > 0 && (
-            <div className="mb-3">
-              {!short && (
-                <h6 className="text-uppercase small fw-semibold text-secondary mb-2">
-                  {technologiesLabel}
-                </h6>
-              )}
-              <div className="d-flex flex-wrap gap-2">
-                {technologies
-                  ?.filter((_, i) => (short ? i < 4 : true))
-                  .map((tech, index) => (
-                    <span
-                      key={index}
-                      className="badge bg-primary bg-opacity-10 text-primary corners px-3 border-0"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-              </div>
+            <div className="d-flex flex-wrap gap-2 mb-2">
+              {technologies
+                ?.filter((_, i) => (short ? i < 4 : true))
+                .map((tech, index) => (
+                  <small
+                    key={index}
+                    className="badge bg-primary bg-opacity-10 text-primary corners px-3 border-0 small"
+                    style={{ fontSize: "0.6rem" }}
+                  >
+                    {tech}
+                  </small>
+                ))}
             </div>
           )}
 
