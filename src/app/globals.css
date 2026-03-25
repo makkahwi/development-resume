@@ -1,5 +1,5 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 :root {
   --bs-primary: #1c3967;
@@ -196,6 +196,11 @@ html[dir="rtl"] .chat-panel {
   font-weight: 600;
   box-shadow: 0 8px 20px rgba(28, 57, 103, 0.25);
   z-index: 1202;
+}
+
+.mh-10 {
+  max-height: 11vh;
+  overflow-y: auto;
 }
 
 .chat-open-btn {

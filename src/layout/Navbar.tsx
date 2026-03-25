@@ -2,6 +2,7 @@
 
 import { brandConfig } from "@/brand/config";
 // import LanguageSwitch from "@/components/LanguageSwitch";
+import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,6 +30,7 @@ const NavbarComp = () => {
   const locale = useLocale();
   const t = useTranslations("Layout.Nav");
   const pathname = usePathname();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const buildHref = (item: NavLinkItem): string => {
     if (item.scroll) {
@@ -61,10 +63,9 @@ const NavbarComp = () => {
         <button
           className="navbar-toggler border-0"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNavbar"
+          onClick={() => setIsMobileMenuOpen((prev) => !prev)}
           aria-controls="mainNavbar"
-          aria-expanded="false"
+          aria-expanded={isMobileMenuOpen}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon" />
@@ -72,7 +73,9 @@ const NavbarComp = () => {
 
         {/* Links */}
         <div
-          className="collapse navbar-collapse justify-content-end"
+          className={`navbar-collapse justify-content-end collapse ${
+            isMobileMenuOpen ? "show" : ""
+          }`}
           id="mainNavbar"
         >
           <ul className="navbar-nav align-items-lg-center">
@@ -80,6 +83,7 @@ const NavbarComp = () => {
               <li className="nav-item" key={key}>
                 <Link
                   href={buildHref({ key, href, scroll, iconClass })}
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className={`nav-link d-flex align-items-center gap-1 ${
                     isActive({ key, href, scroll, iconClass })
                       ? "text-primary fw-semibold"
@@ -103,6 +107,7 @@ const NavbarComp = () => {
               <a
                 className="btn btn-primary text-light px-4 border-0 corners"
                 href={brandConfig.cvUrl}
+                onClick={() => setIsMobileMenuOpen(false)}
                 target="_blank"
                 rel="noreferrer"
               >

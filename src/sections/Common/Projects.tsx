@@ -91,7 +91,6 @@ const ProjectsSection = async ({
             <ProjectCard
               key={index}
               short={short}
-              technologiesLabel={t("Projects.TechnologiesLabel")}
               viewProjectLabel={t("Projects.ViewProject")}
               {...project}
             />
