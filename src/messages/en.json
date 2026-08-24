@@ -87,14 +87,6 @@
     },
     "Suggestions": {
       "Q1": "Tell me about yourself.",
-      "Q2": "What kind of roles are you currently targeting?",
-      "Q3": "Are you open to relocation or remote work?",
-      "Q4": "What is your notice period?",
-      "Q5": "What differentiates you from other senior full-stack developers?",
-      "Q6": "What kind of products have you built end-to-end?",
-      "Q7": "What industries have you worked in?",
-      "Q8": "What is your strongest technical area?",
-      "Q9": "Do you lean more toward backend or frontend?",
       "Q10": "Have you led projects or teams?",
       "Q11": "What is your experience with NestJS?",
       "Q12": "How do you design scalable backend architecture?",
@@ -105,6 +97,7 @@
       "Q17": "How do you handle database design and migrations?",
       "Q18": "What is your experience with AWS services?",
       "Q19": "How do you handle authentication and authorization?",
+      "Q2": "What kind of roles are you currently targeting?",
       "Q20": "How do you approach performance optimization?",
       "Q21": "What role do you play beyond coding?",
       "Q22": "How do you prioritize features in an MVP?",
@@ -115,6 +108,7 @@
       "Q27": "How do you make architectural decisions?",
       "Q28": "Have you mentored other developers?",
       "Q29": "How do you handle disagreements in technical direction?",
+      "Q3": "Are you open to relocation or remote work?",
       "Q30": "How do you communicate complex ideas to non-technical stakeholders?",
       "Q31": "How do you estimate tasks and timelines?",
       "Q32": "Have you worked in cross-functional teams?",
@@ -125,9 +119,15 @@
       "Q37": "What are your growth goals?",
       "Q38": "Why did you start building your own SaaS products?",
       "Q39": "What have you learned from launching your own products?",
+      "Q4": "What is your notice period?",
       "Q40": "How does building your own products improve your performance as an employee?",
       "Q41": "Are you planning to stay long-term in a company role?",
-      "Q42": "How do you manage time between side projects and full-time work?"
+      "Q42": "How do you manage time between side projects and full-time work?",
+      "Q5": "What differentiates you from other senior full-stack developers?",
+      "Q6": "What kind of products have you built end-to-end?",
+      "Q7": "What industries have you worked in?",
+      "Q8": "What is your strongest technical area?",
+      "Q9": "Do you lean more toward backend or frontend?"
     }
   },
   "ContactForm": {
@@ -457,6 +457,7 @@
       "Subtitle": "Leadership, decisions, and advisory beyond writing code",
       "Title": "Hands-off Highlights"
     },
+    "Note": "This is a professional portfolio. For personal non-professional info, you may click here to visit personal website.",
     "Projects": {
       "Subtitle": "The highlights of software I did deliver",
       "TechnologiesLabel": "Technologies",

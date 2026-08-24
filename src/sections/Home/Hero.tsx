@@ -40,6 +40,17 @@ const HomeHeroSection = async ({ t }: { t: (key: string) => string }) => {
               {t("Description")}
             </h5>
 
+            <div className="mb-3">
+              <a
+                href="https://personal.suhaib.dev"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "#ff0000", fontSize: "0.75rem" }}
+              >
+                {t("Note")}
+              </a>
+            </div>
+
             <div>
               <Link
                 href={`#clients`}
