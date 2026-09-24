@@ -1,0 +1,11 @@
+{
+  "documents": 116,
+  "chunks": 121,
+  "source": "res.json",
+  "notes": [
+    "Markdown files are the human-maintainable source for the AI knowledge base.",
+    "chunks.jsonl is ingestion-ready: create an embedding for each content field and store metadata alongside it.",
+    "Arabic and English blog articles are separate documents with language metadata.",
+    "WhatsApp/phone contact and trainee personal data were intentionally excluded from the AI knowledge base."
+  ]
+}

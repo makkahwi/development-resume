@@ -1,0 +1,21 @@
+{
+  "activeDocuments": 10,
+  "optionalDocuments": 1,
+  "domain": "personal",
+  "source": "personalProfile.ts",
+  "activeFiles": [
+    "background.md",
+    "places-lived.md",
+    "education-journey.md",
+    "travel.md",
+    "hobbies.md",
+    "books.md",
+    "movies-series.md",
+    "documentaries-podcasts-programs.md",
+    "social-media.md",
+    "personal-site.md"
+  ],
+  "optionalFiles": [
+    "_optional/lifestyle.md"
+  ]
+}
