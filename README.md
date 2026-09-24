@@ -45,6 +45,8 @@ knowledge-base/          reviewed Markdown and prepared JSONL chunks
 
 Requires Node.js 20.9 or newer (Node 22 recommended). Run `npm install`, then `npm run dev`. Visit `http://localhost:3000`. Run `npm run typecheck`, `npm run lint`, and `npm run build` before a release. The Phase 1 landing page does not require service credentials.
 
+The development checks follow the repository's `8.x` branch: `.nvmrc` selects Node 22, Husky runs lint-staged on commit, commitlint checks conventional commit messages, and a pre-push hook runs TypeScript typechecking. `npm install` runs the `prepare` script to set up hooks. The lint-staged rule runs ESLint with fixes on staged JavaScript and TypeScript files. Run `npm run lint` for a full-project check.
+
 Copy `.env.example` to `.env.local` when implementing external services. Do not commit `.env.local` or service account credentials.
 
 ## Planned environment variables
