@@ -18,7 +18,8 @@ function client(config: AiConfig) { return new GoogleGenAI({ apiKey: config.apiK
 
 export class GeminiEmbeddingProvider implements EmbeddingProvider {
   private readonly ai: GoogleGenAI;
-  constructor(private readonly config: AiConfig) { this.ai = client(config); }
+  private readonly config: AiConfig;
+  constructor(config: AiConfig) { this.config = config; this.ai = client(config); }
   async embed(text: string): Promise<number[]> { return (await this.embedMany([text]))[0]; }
   async embedMany(texts: string[]): Promise<number[][]> {
     if (!texts.length || texts.length > 16) throw new Error('Invalid embedding batch');
@@ -40,7 +41,8 @@ export class GeminiEmbeddingProvider implements EmbeddingProvider {
 
 export class GeminiLlmProvider implements LlmProvider {
   private readonly ai: GoogleGenAI;
-  constructor(private readonly config: AiConfig) { this.ai = client(config); }
+  private readonly config: AiConfig;
+  constructor(config: AiConfig) { this.config = config; this.ai = client(config); }
   async generate(input: GenerationInput): Promise<Draft> {
     const evidence = input.context.map(c => ({ id: c.id, title: c.title, section: c.section, content: c.content }));
     try {

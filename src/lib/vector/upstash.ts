@@ -2,9 +2,13 @@ import type { StoredChunk } from '../ai/core.ts';
 
 export type Existing = { id: string; hash?: string };
 const namespace = () => encodeURIComponent(process.env.UPSTASH_VECTOR_NAMESPACE || 'makkahwi-ai-v1');
-const base = () => {
+export function assertUpstashConfig(): void {
   if (!process.env.UPSTASH_VECTOR_REST_URL || !process.env.UPSTASH_VECTOR_REST_TOKEN) throw new Error('Upstash Vector credentials are missing');
-  return process.env.UPSTASH_VECTOR_REST_URL.replace(/\/$/, '');
+  try { const url = new URL(process.env.UPSTASH_VECTOR_REST_URL); if (url.protocol !== 'https:') throw new Error(); } catch { throw new Error('UPSTASH_VECTOR_REST_URL must be HTTPS'); }
+}
+const base = () => {
+  assertUpstashConfig();
+  return process.env.UPSTASH_VECTOR_REST_URL!.replace(/\/$/, '');
 };
 async function call<T>(operation: string, body: unknown): Promise<T> {
   const response = await fetch(`${base()}/${operation}/${namespace()}`, {

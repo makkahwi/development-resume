@@ -3,7 +3,7 @@ import { answerQuestion } from '@/lib/ai/core';
 import { GeminiEmbeddingProvider, GeminiLlmProvider, ProviderBusyError, ProviderTimeoutError } from '@/lib/ai/gemini';
 import { getAiConfig } from '@/lib/ai/config';
 import { allowRequest } from '@/lib/ai/rate-limit';
-import { query } from '@/lib/vector/upstash';
+import { assertUpstashConfig, query } from '@/lib/vector/upstash';
 
 export const runtime = 'nodejs';
 export async function POST(request: Request) {
@@ -12,6 +12,7 @@ export async function POST(request: Request) {
   try { body = await request.json(); } catch { return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 }); }
   let config;
   try { config = getAiConfig(); } catch (error) { console.error('AI configuration error:', error instanceof Error ? error.message : error); return NextResponse.json({ error: 'AI is not configured' }, { status: 503 }); }
+  try { assertUpstashConfig(); } catch { return NextResponse.json({ error: 'Vector search is not configured' }, { status: 503 }); }
   const client = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'local';
   if (!allowRequest(client, config.rateLimitRequests, config.rateLimitWindowSeconds)) return NextResponse.json({ error: 'Makkahwi AI is temporarily busy. Please try again shortly.' }, { status: 429 });
   const question = body && typeof body === 'object' && 'question' in body ? body.question : undefined;

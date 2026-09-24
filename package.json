@@ -9,8 +9,9 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "prepare": "husky",
-    "ai:ingest": "node --experimental-strip-types --env-file-if-exists=.env.local scripts/ingest-knowledge.ts",
-    "test:ai": "node --experimental-strip-types --test tests/*.test.ts"
+    "ai:ingest": "node --experimental-strip-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/ingest-knowledge.ts",
+    "test:ai": "node --experimental-strip-types --test tests/*.test.ts",
+    "ai:check-grounding": "node --experimental-strip-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/check-grounding.ts"
   },
   "dependencies": {
     "@google/genai": "^2.24.0",
