@@ -20,6 +20,7 @@ export default function Home() {
       <header className="header">
         <span className="brand">
           Makkahwi<span className="brandAccent"> AI</span>
+          <span className="betaTag">BETA</span>
         </span>
 
         <span className="eyebrow">
