@@ -8,9 +8,12 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "prepare": "husky"
+    "prepare": "husky",
+    "ai:ingest": "node --experimental-strip-types --env-file-if-exists=.env.local scripts/ingest-knowledge.ts",
+    "test:ai": "node --experimental-strip-types --test tests/*.test.ts"
   },
   "dependencies": {
+    "@google/genai": "^2.24.0",
     "firebase-admin": "^13.0.0",
     "next": "^16.3.6",
     "react": "^19.2.0",
