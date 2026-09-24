@@ -57,6 +57,10 @@ Copy `.env.example` to `.env.local` when implementing external services. Do not 
 
 Phase 2 will add `npm run ai:ingest` to validate the JSONL, hash chunks, embed changed records, upsert vectors, and remove stale records. Ingestion will be a deliberate developer action, separate from application startup. The Markdown files are the human-maintained source; update prepared chunks consistently. Production hosting for `ai.suhaib.dev` has not been selected. Use a Next.js-compatible Node runtime with server-only environment variables, Firebase RTDB, and Upstash Vector.
 
+## Search visibility
+
+The landing page includes a visible, server-rendered public profile so visitors and crawlers can understand the site before chat is available. Keep its claims aligned with the reviewed files in `knowledge-base/knowledge/`. The App Router supplies canonical and social metadata, an Open Graph image, an icon, `robots.txt`, `sitemap.xml`, and WebSite/WebPage/Person structured data. The sitemap lists only routes that currently exist. Future anonymous chat routes must set `noindex` on the response itself; robots rules alone do not guarantee exclusion from search results. After deployment, verify the production URLs and submit the sitemap through the search engine's webmaster tools.
+
 ## Security and cost controls to implement
 
 Validate message shape and length, cap active conversation context and model output, rate limit by trusted deployment IP information rather than device ID, constrain retrieval, keep secrets server-only, time out provider calls, and log timings without full conversation text. Retrieved documents are data, never instructions. Firebase Admin access bypasses RTDB rules, so all server routes must validate paths and authorization assumptions. No user accounts or private knowledge are part of V1.
