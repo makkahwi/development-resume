@@ -1,1 +1,558 @@
-:root{color-scheme:light;--ink:#1d2927;--muted:#61716c;--paper:#f8f7f2;--green:#214f43}*{box-sizing:border-box}html,body{margin:0;min-height:100%}body{background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}.shell{min-height:100vh;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:30px clamp(22px,5vw,78px)}.header,.footer{display:flex;align-items:center;justify-content:space-between;gap:20px;position:relative;z-index:2}.brand{font-size:20px;font-weight:800;letter-spacing:-.05em}.brandAccent{color:var(--green)}.eyebrow,.footer,.kicker,.phaseNote{font-size:12px;color:var(--muted)}.eyebrow{letter-spacing:.04em}.backdrop{position:absolute;inset:90px -50px 80px;display:flex;align-items:center;justify-content:space-between;gap:4vw;transform:rotate(-7deg) scale(1.08);filter:blur(3px);opacity:.25;pointer-events:none}.backdropCard{width:30%;min-height:245px;padding:30px;border:1px solid #8ca298;background:#e6ebe1;border-radius:8px;box-shadow:0 25px 70px #61716c2c}.backdropCard:nth-child(2){transform:translateY(-140px)}.backdropCard:nth-child(3){transform:translateY(110px)}.backdropCard span,.backdropCard p{font-size:12px;text-transform:uppercase;letter-spacing:.14em}.backdropCard strong{display:block;margin-top:36px;font-family:Georgia,serif;font-size:clamp(26px,3vw,52px);font-weight:400}.hero{width:min(100%,760px);margin:auto;position:relative;z-index:1;text-align:center;padding:70px 0}.kicker{font-weight:700;letter-spacing:.22em;color:var(--green)}h1{font-family:Georgia,Times,serif;font-weight:400;font-size:clamp(50px,7vw,92px);line-height:1.04;letter-spacing:-.06em;margin:24px 0}h1 em{color:var(--green);font-weight:400}.lead{max-width:520px;margin:0 auto 38px;color:#4e5d58;line-height:1.65;font-size:16px}.promptPreview{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:11px 12px 11px 22px;text-align:left;background:#fff;border:1px solid #cbd5ce;border-radius:14px;box-shadow:0 18px 48px #1d29271c;color:#75827b;font-size:15px}.arrow{display:grid;place-items:center;flex:none;width:42px;height:42px;border-radius:10px;background:var(--green);color:white;font-size:22px}.phaseNote{margin:16px auto 0;line-height:1.5}.footer{margin-top:auto;border-top:1px solid #dce3dc;padding-top:22px}@media(max-width:700px){.eyebrow{display:none}.backdrop{inset:100px -200px 50px;gap:15px;opacity:.16}.backdropCard{width:220px;flex:none}.backdropCard:nth-child(3){display:none}.hero{padding:90px 0}.lead{font-size:15px}.footer span:first-child{display:none}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+:root {
+  color-scheme: light;
+  --ink: #0f2032;
+  --muted: #52627a;
+  --paper: #f7f8fb;
+  --primary: #1c3967;
+  --secondary: #e2e2e2;
+  --primary-subtle: #e2e7f1;
+  --primary-border: #c6d0e3;
+  --surface: #fff;
+  --wash: #f7f8fbd9;
+  --lead: #40516a;
+  --prompt-muted: #64738a;
+  --button: #1c3967;
+  --button-text: #fff;
+  --collage-opacity: 0.5;
+  --collage-opacity-medium: 0.35;
+  --collage-opacity-small: 0.22;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #edf2fa;
+  --muted: #b3c0d2;
+  --paper: #0f2032;
+  --primary: #a9c8f6;
+  --secondary: #29415f;
+  --primary-subtle: #1c3967;
+  --primary-border: #426083;
+  --surface: #172e4a;
+  --wash: #0f2032e8;
+  --lead: #c4d0e0;
+  --prompt-muted: #c0cee0;
+  --button: #416da5;
+  --button-text: #fff;
+  --collage-opacity: 0.33;
+  --collage-opacity-medium: 0.25;
+  --collage-opacity-small: 0.16;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+.shell {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 30px clamp(22px, 5vw, 78px);
+}
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  z-index: 3;
+}
+.brand {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+.brandAccent {
+  color: var(--primary);
+}
+.eyebrow,
+.footer,
+.kicker,
+.phaseNote {
+  font-size: 12px;
+  color: var(--muted);
+}
+.eyebrow {
+  letter-spacing: 0.04em;
+}
+.eyebrow a {
+  color: var(--primary);
+  text-decoration-color: var(--primary-border);
+  text-underline-offset: 3px;
+}
+.eyebrow a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+.themeToggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 88px;
+  min-height: 38px;
+  border: 1px solid var(--primary-border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.themeToggle:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.themeToggle:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+.themeToggle span:first-child {
+  font-size: 19px;
+  line-height: 1;
+}
+
+/* The nested groups exist for content organization; each tile is placed independently. */
+.collage {
+  position: absolute;
+  inset: 70px 0 55px;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  filter: blur(2.2px);
+  opacity: var(--collage-opacity);
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    #000 8%,
+    #000 90%,
+    transparent
+  );
+}
+.collageColumn,
+.logoGroup,
+.techGroup,
+.photoRow,
+.movieStack {
+  display: contents;
+}
+.collage
+  :is(.experienceTile, .brandTile, .photoTile, .projectTile, .movieTile) {
+  position: absolute;
+  border: 1px solid var(--primary-border);
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0 13px 35px #1c396724;
+}
+.experienceTile {
+  left: 4%;
+  top: 8%;
+  width: clamp(220px, 23vw, 370px);
+  min-height: 190px;
+  transform: rotate(-8deg);
+  background: var(--primary-subtle);
+  color: var(--primary);
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+}
+.tileLabel,
+.experienceTile > span:last-child,
+.projectTop,
+.photoTile span,
+.movieTile span {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+.experienceTile strong {
+  font-family: inherit;
+  font-size: clamp(80px, 8vw, 130px);
+  line-height: 0.9;
+  margin: 8px 0 5px;
+  font-weight: 400;
+  letter-spacing: -0.09em;
+}
+.brandTile {
+  background: var(--surface);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  color: var(--ink);
+  font-size: 23px;
+  font-weight: 800;
+}
+.logoGroup .brandTile {
+  background-color: #fff;
+}
+.deloitteLogo {
+  background-image: url("/images/deloitte.png");
+  background-size: cover;
+  color: transparent;
+  right: 4%;
+  top: 5%;
+  width: clamp(190px, 23vw, 340px);
+  height: 100px;
+  transform: rotate(7deg);
+  font-size: 0;
+}
+.sbLogo {
+  background-image: url("/images/several-brands.png");
+  background-size: cover;
+  color: transparent;
+  left: 34%;
+  top: 4%;
+  width: 150px;
+  transform: rotate(11deg);
+  font-size: 0;
+}
+.modeeLogo {
+  background-image: url("/images/modee.png");
+  background-size: contain;
+  color: transparent;
+  right: 25%;
+  top: 27%;
+  width: 155px;
+  transform: rotate(-9deg);
+  font-size: 0;
+  height: 120px;
+}
+.techGroup .brandTile {
+  min-height: 92px;
+  flex-direction: column;
+  font-size: 12px;
+  gap: 4px;
+}
+.reactLogo {
+  left: 26%;
+  top: 32%;
+  width: 105px;
+  transform: rotate(12deg);
+}
+.nextLogo {
+  right: 31%;
+  top: 8%;
+  width: 98px;
+  transform: rotate(-12deg);
+}
+.nestLogo {
+  right: 33%;
+  bottom: 13%;
+  width: 104px;
+  transform: rotate(8deg);
+}
+.reactMark {
+  color: #4faac1;
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 1;
+}
+.nextMark {
+  border-radius: 50%;
+  background: #222;
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  font-family: Georgia, serif;
+  font-size: 30px;
+}
+.nestMark {
+  font-size: 42px;
+  color: #d35b5b;
+  line-height: 1;
+}
+.photoTile {
+  background-image: url("/images/hobbies-triptych.png");
+  background-size: 300% 100%;
+  background-repeat: no-repeat;
+  min-height: 120px;
+}
+.photoTile:after,
+.movieTile:after {
+  content: "";
+  position: absolute;
+  inset: 35% 0 0;
+  background: linear-gradient(transparent, #0b1517a8);
+}
+.photoTile span,
+.movieTile span {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  color: #fff;
+  z-index: 1;
+}
+.hobbyChess {
+  left: 2%;
+  top: 49%;
+  width: 190px;
+  height: 165px;
+  transform: rotate(8deg);
+  background-position: left center;
+}
+.hobbyCooking {
+  right: 3%;
+  bottom: 2%;
+  width: 175px;
+  height: 145px;
+  transform: rotate(-8deg);
+  background-position: center;
+}
+.hobbyMotorcycle {
+  left: 25%;
+  bottom: 1%;
+  width: 155px;
+  height: 120px;
+  transform: rotate(-11deg);
+  background-position: right;
+}
+.movieTile {
+  height: 160px;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary);
+}
+.knivesOut {
+  left: 41%;
+  bottom: 5%;
+  width: 105px;
+  transform: rotate(10deg);
+  background-image: url("https://www.posterhub.com.sg/images/detailed/147/01_1A_1B_kiu0-pb.jpg");
+}
+.shawshank {
+  right: 22%;
+  bottom: 1%;
+  width: 105px;
+  transform: rotate(-8deg);
+  background-image: url("https://static.wikia.nocookie.net/warner-bros-entertainment/images/b/b2/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc%40._V1_FMjpg_UX1000_.jpg/revision/latest?cb=20250701103342");
+}
+.projectTile {
+  padding: 9px;
+  background: var(--surface);
+}
+.sanadTile {
+  right: 4%;
+  top: 26%;
+  width: clamp(260px, 27vw, 410px);
+  transform: rotate(8deg);
+}
+.mustaheqTile {
+  left: 2%;
+  bottom: 0;
+  width: clamp(260px, 25vw, 390px);
+  transform: rotate(-5deg);
+}
+.projectTop {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 5px 10px;
+  color: var(--muted);
+}
+.projectScreen {
+  height: 220px;
+  border-radius: 7px;
+  background-size: cover;
+  background-position: center;
+}
+.sanadScreen {
+  background-image: url("/images/sanad.jpg");
+}
+.mustaheqScreen {
+  background-image: url("/images/mustaheq.jpg");
+}
+.hero {
+  width: min(100%, 760px);
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 70px 0;
+}
+.hero:before {
+  content: "";
+  position: absolute;
+  inset: -22px -55px;
+  background: var(--wash);
+  filter: blur(37px);
+  z-index: -1;
+  border-radius: 50%;
+}
+.kicker {
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: var(--primary);
+}
+h1 {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: clamp(50px, 7vw, 92px);
+  line-height: 1.04;
+  letter-spacing: -0.06em;
+  margin: 24px 0;
+}
+h1 em {
+  color: var(--primary);
+  font-weight: 400;
+}
+.lead {
+  max-width: 520px;
+  margin: 0 auto 38px;
+  color: var(--lead);
+  line-height: 1.65;
+  font-size: 16px;
+}
+.promptPreview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 11px 12px 11px 22px;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--primary-border);
+  border-radius: 14px;
+  box-shadow: 0 18px 48px #0f20321c;
+  color: var(--prompt-muted);
+  font-size: 15px;
+}
+.arrow {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--button);
+  color: var(--button-text);
+  font-size: 22px;
+}
+.phaseNote {
+  margin: 16px auto 0;
+  line-height: 1.5;
+}
+.footer {
+  margin-top: auto;
+  border-top: 1px solid var(--secondary);
+  padding-top: 22px;
+}
+@media (max-width: 900px) {
+  .collage {
+    opacity: var(--collage-opacity-medium);
+  }
+  .modeeLogo {
+    right: 27%;
+    top: 17%;
+  }
+  .sanadTile {
+    right: -6%;
+    top: 31%;
+  }
+  .mustaheqTile {
+    left: -8%;
+  }
+  .hobbyChess {
+    left: -3%;
+  }
+  .hero:before {
+    inset: -20px -10px;
+  }
+}
+@media (max-width: 700px) {
+  .eyebrow {
+    display: none;
+  }
+  .collage {
+    inset: 75px -65px 45px;
+    opacity: var(--collage-opacity-small);
+    filter: blur(3px);
+  }
+  .experienceTile {
+    left: -5%;
+    top: 4%;
+    width: 200px;
+    min-height: 150px;
+  }
+  .experienceTile strong {
+    font-size: 78px;
+  }
+  .deloitteLogo {
+    right: -5%;
+    top: 7%;
+    width: 185px;
+    height: 75px;
+    font-size: 35px;
+  }
+  .sbLogo,
+  .modeeLogo,
+  .nextLogo,
+  .nestLogo,
+  .knivesOut,
+  .shawshank {
+    display: none !important;
+  }
+  .reactLogo {
+    left: 20%;
+    top: 27%;
+  }
+  .sanadTile {
+    right: -18%;
+    top: 36%;
+    width: 245px;
+  }
+  .mustaheqTile {
+    left: -20%;
+    bottom: 1%;
+    width: 240px;
+  }
+  .hobbyChess {
+    left: -13%;
+    top: 43%;
+    width: 140px;
+  }
+  .hobbyCooking {
+    right: -8%;
+    bottom: 5%;
+    width: 140px;
+  }
+  .hobbyMotorcycle {
+    display: none !important;
+  }
+  .hero {
+    padding: 90px 0;
+  }
+  .lead {
+    font-size: 15px;
+  }
+  .footer span:first-child {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *:before,
+  *:after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
