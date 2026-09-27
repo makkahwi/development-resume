@@ -167,24 +167,20 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="hero" aria-labelledby="hero-title">
-          <p className="kicker">The person behind the projects.</p>
-
-          <h1 id="hero-title">
-            Meet <em>Suhaib</em>
-          </h1>
-
-          <p className="lead">
-            Explore Suhaib’s work, experience, and
-            ideas through a grounded conversation.
-          </p>
-
-          <AskBox />
-
-          <p className="phaseNote">
-            Preview chat answers from Suhaib&apos;s public knowledge base. Chat history is not saved yet.
-          </p>
-        </section>
+        <AskBox
+          intro={
+            <>
+              <p className="kicker">The person behind the projects.</p>
+              <h1 id="hero-title">
+                Meet <em></em>
+              </h1>
+              <p className="lead">
+                Explore Suhaib’s work, experience, and ideas through a grounded
+                conversation.
+              </p>
+            </>
+          }
+        />
 
         <footer className="footer">
           <span>Built around real work and cited knowledge.</span>

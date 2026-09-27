@@ -1,9 +1,21 @@
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { chunkHash, embeddingText, parseChunks, type StoredChunk } from '../src/lib/ai/core.ts';
-import { GeminiEmbeddingProvider } from '../src/lib/ai/gemini.ts';
+import { GeminiEmbeddingProvider, ProviderBusyError } from '../src/lib/ai/gemini.ts';
 import { getAiConfig } from '../src/lib/ai/config.ts';
 import { listExisting, remove, upsert } from '../src/lib/vector/upstash.ts';
+
+async function embedWithRetry(provider: GeminiEmbeddingProvider, texts: string[]): Promise<number[][]> {
+  for (let attempt = 0; ; attempt++) {
+    try { return await provider.embedMany(texts); }
+    catch (error) {
+      if (!(error instanceof ProviderBusyError) || attempt >= 3) throw error;
+      const delayMs = [10000, 20000, 40000][attempt];
+      console.log(`Gemini embedding quota reached; retrying in ${delayMs / 1000}s.`);
+      await new Promise(resolve => setTimeout(resolve, delayMs));
+    }
+  }
+}
 
 async function main() {
   if (!process.argv.includes('--execute')) {
@@ -25,7 +37,7 @@ async function main() {
   console.log(`Validated ${chunks.length} chunks; ${changed.length} changed, ${chunks.length - changed.length} unchanged, ${stale.length} stale.`);
   for (let i = 0; i < changed.length; i += 16) {
     const batch = changed.slice(i, i + 16);
-    const vectors = await embeddings.embedMany(batch.map(embeddingText));
+    const vectors = await embedWithRetry(embeddings, batch.map(embeddingText));
     await upsert(batch.map((chunk, j) => ({ chunk, vector: vectors[j] })));
     console.log(`Upserted ${Math.min(i + batch.length, changed.length)}/${changed.length}`);
   }
