@@ -47,6 +47,17 @@ const HomeHeroSection = async ({ t }: { t: (key: string) => string }) => {
               >
                 {t("CTA.LearnMore")}
               </Link>
+
+              <a
+                href="https://ai.suhaib.dev"
+                target="_blank"
+                rel="noreferrer"
+                className="ms-3"
+              >
+                <button className="btn btn-primary px-5 border-0 corners shadow-sm">
+                  {t("CTA.TryAi")}
+                </button>
+              </a>
             </div>
           </div>
         </div>
