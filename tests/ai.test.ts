@@ -46,3 +46,11 @@ test('server rate limit rejects excess requests and resets after window', async 
   assert.equal(allowRequest('ai-test-client', 2, 60, 1002), false);
   assert.equal(allowRequest('ai-test-client', 2, 60, 61000), true);
 });
+
+test('development preview retrieval finds relevant project evidence', async () => {
+  const { rankLocalChunks } = await import('../src/lib/ai/local-retrieval.ts');
+  const chunks = parseChunks(readFileSync('knowledge-base/chunks.jsonl', 'utf8'));
+  const results = rankLocalChunks('What did Suhaib build for Sanad?', chunks, 5);
+  assert.equal(results[0].title, 'Sanad');
+  assert.ok(results.length <= 5);
+});

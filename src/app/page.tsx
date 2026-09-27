@@ -1,3 +1,4 @@
+import { AskBox } from "@/components/ask-box";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { getDeveloperExperienceMonths } from "@/lib/experience-months";
 
@@ -174,20 +175,14 @@ export default function Home() {
           </h1>
 
           <p className="lead">
-            Makkahwi AI will let you explore Suhaib’s work, experience, and
+            Explore Suhaib’s work, experience, and
             ideas through a grounded conversation.
           </p>
 
-          <div className="promptPreview">
-            <span>Ask about my work, projects, experience...</span>
-            <span className="arrow" aria-hidden="true">
-              ↗
-            </span>
-          </div>
+          <AskBox />
 
           <p className="phaseNote">
-            The conversation experience is being built. The public knowledge
-            base is ready for the next phase.
+            Preview chat answers from Suhaib&apos;s public knowledge base. Chat history is not saved yet.
           </p>
         </section>
 

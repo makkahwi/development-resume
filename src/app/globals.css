@@ -445,6 +445,31 @@ h1 em {
   color: var(--prompt-muted);
   font-size: 15px;
 }
+
+.promptPreview input {
+  min-width: 0;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+}
+.promptPreview input::placeholder { color: var(--prompt-muted); opacity: 1; }
+.promptPreview:focus-within { outline: 2px solid var(--primary); outline-offset: 2px; }
+.promptPreview button { border: 0; cursor: pointer; }
+.promptPreview button:disabled { opacity: .5; cursor: not-allowed; }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.conversation { max-height: 340px; overflow-y: auto; display: grid; gap: 12px; margin: 0 0 16px; text-align: left; }
+.message { max-width: 92%; padding: 14px 16px; border: 1px solid var(--primary-border); border-radius: 14px; background: var(--surface); box-shadow: 0 8px 22px #0f203214; }
+.message-user { justify-self: end; background: var(--primary-subtle); }
+.message-assistant { justify-self: start; }
+.messageLabel { color: var(--primary); font-size: 12px; font-weight: 700; }
+.message p { margin: 7px 0 0; line-height: 1.5; white-space: pre-wrap; }
+.messageSources { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 11px; color: var(--muted); font-size: 12px; }
+.messageSources a, .messageSources span { color: var(--primary); text-decoration: underline; }
+.answerError { margin: 12px 0 0; color: #b34343; font-size: 14px; }
+.answerPending { color: var(--muted); margin: 8px; }
 .arrow {
   display: grid;
   place-items: center;

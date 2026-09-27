@@ -1,6 +1,6 @@
 # Makkahwi AI
 
-A standalone, AI-first personal site for public information about Suhaib Ahmad. The site contains the Phase 1 foundation and a Phase 2 server-side RAG pipeline. Ingestion is explicit and the answer route is development-only. Chat persistence and the full chat UI are still pending.
+A standalone, AI-first personal site for public information about Suhaib Ahmad. The site contains the Phase 1 foundation, a Phase 2 server-side RAG pipeline, and an interactive landing-page chat preview. Ingestion is explicit and the answer route is development-only. Chat persistence and the full production chat UI are still pending.
 
 ## Architecture and RAG plan
 
@@ -18,7 +18,7 @@ The 121 supplied records in `knowledge-base/chunks.jsonl` cover profile, experie
 
 Create a 1,536-dimensional Upstash Vector index using cosine similarity and caller-provided vectors. Set `GEMINI_API_KEY`, `UPSTASH_VECTOR_REST_URL`, and `UPSTASH_VECTOR_REST_TOKEN` in `.env.local`. The command reads only `knowledge-base/chunks.jsonl`, validates every chunk, compares SHA-256 hashes in its dedicated namespace, embeds changed chunks, upserts them, then removes stale vectors after successful upserts. Run it deliberately with `npm run ai:ingest -- --execute`. Re-run it after changing the corpus. Ingestion does not run on application startup.
 
-Start `npm run dev`, then send a direct development request: `curl -sS -X POST http://localhost:3000/api/dev/answer -H "Content-Type: application/json" -d '{"question":"What did Suhaib build for Sanad?"}'`. The route is unavailable outside development. Answers carry only sources whose IDs were retrieved; unsupported output falls back to an explicit insufficient-evidence answer. Run `npm run test:ai` for corpus and pipeline tests.
+Start `npm run dev`, then send a direct development request: `curl -sS -X POST http://localhost:3000/api/dev/answer -H "Content-Type: application/json" -d '{"question":"What did Suhaib build for Sanad?"}'`. The route is unavailable outside development. Until Upstash is configured, the development route uses keyword retrieval over the checked-in public chunks so the landing input can be exercised. This is a preview fallback, not a substitute for validating Upstash retrieval. Answers carry only sources whose IDs were retrieved; unsupported output falls back to an explicit insufficient-evidence answer. Run `npm run test:ai` for corpus and pipeline tests.
 
 ## Decisions for Phase 2
 
