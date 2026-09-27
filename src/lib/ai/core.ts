@@ -65,7 +65,7 @@ export type ConversationTurn = { role: 'user' | 'assistant'; content: string };
 export type GenerationInput = { question: string; context: StoredChunk[]; conversation: ConversationTurn[] };
 export interface EmbeddingProvider { embed(text: string): Promise<number[]>; }
 export interface LlmProvider { generate(input: GenerationInput): Promise<Draft>; }
-export interface RetrievalService { query(vector: number[], topK: number): Promise<StoredChunk[]>; }
+export interface RetrievalService { query(vector: number[], topK: number, filter?: string): Promise<StoredChunk[]>; }
 export type RagDeps = { embeddingProvider: EmbeddingProvider; retrievalService: RetrievalService; llmProvider: LlmProvider };
 export function boundConversation(value: unknown, maxCharacters: number): ConversationTurn[] {
   if (!Array.isArray(value) || maxCharacters <= 0) return [];
@@ -80,11 +80,22 @@ export function boundConversation(value: unknown, maxCharacters: number): Conver
   }
   return turns;
 }
+export function currentEmploymentIntent(question: string): boolean {
+  const current = /\b(now|currently|current|today|these days|present)\b|الآن|الان|حالي[ًاا]?|الوقت الحالي/u.test(question.toLowerCase());
+  const employment = /\b(work\w*|employ\w*|job|role|company|companies)\b|يعمل|شغل|وظيف[ةه]|شركة/u.test(question.toLowerCase());
+  return current && employment;
+}
 export async function answerQuestion(question: unknown, deps: RagDeps, topK = 5, maxLength = 1200, conversation: unknown = [], maxConversationCharacters = 2400) {
   if (!validQuestion(question, maxLength)) throw new Error('Invalid question');
-  const vector = await deps.embeddingProvider.embed(embeddingQuery(question.trim()));
+  const bounded = boundConversation(conversation, maxConversationCharacters);
+  const previousQuestions = bounded.filter(turn => turn.role === 'user').slice(-2).map(turn => turn.content).join('\n');
+  const retrievalQuestion = previousQuestions ? `Previous questions: ${previousQuestions}\nCurrent question: ${question.trim()}` : question.trim();
+  const employmentQuestion = currentEmploymentIntent(question);
+  const vector = await deps.embeddingProvider.embed(embeddingQuery(employmentQuestion ? `Suhaib's current employer, full-time job, and role. ${retrievalQuestion}` : retrievalQuestion));
   if (!vector?.length) throw new Error('Embedding provider returned no vector');
-  const matches = await deps.retrievalService.query(vector, topK);
+  const currentRolesFilter = "documentType = 'experience' AND (end = 'current' OR end = 'present')";
+  const focused = employmentQuestion ? await deps.retrievalService.query(vector, topK, currentRolesFilter) : [];
+  const matches = focused.length ? focused : await deps.retrievalService.query(vector, topK);
   const context: StoredChunk[] = [];
   let characters = 0;
   for (const chunk of matches) {
@@ -93,6 +104,6 @@ export async function answerQuestion(question: unknown, deps: RagDeps, topK = 5,
     characters += chunk.content.length;
   }
   if (!context.length) return { answer: FALLBACK, sources: [] };
-  const input = { question: question.trim(), context, conversation: boundConversation(conversation, maxConversationCharacters) };
+  const input = { question: question.trim(), context, conversation: bounded };
   return validateSources(await deps.llmProvider.generate(input), context);
 }

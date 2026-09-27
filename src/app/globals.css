@@ -726,3 +726,15 @@ h1 em {
 .answerError p { margin: 0 0 8px; }
 .retryAnswer { padding: 8px 12px; border: 1px solid var(--primary-border); border-radius: 8px; color: var(--primary); background: var(--surface); font: inherit; cursor: pointer; }
 .retryAnswer:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+
+.chatStarted .chatIntro { max-height: 100%; overflow-y: auto; }
+.chatHistory { display: grid; gap: 10px; margin-top: 24px; text-align: left; }
+.chatHistoryList { display: grid; gap: 6px; }
+.chatHistory button { font: inherit; font-size: 12px; text-align: left; padding: 10px 12px; color: var(--muted); background: transparent; border: 1px solid currentColor; border-radius: 10px; cursor: pointer; overflow-wrap: anywhere; }
+.chatHistory button[aria-current="page"] { color: var(--ink); background: var(--surface); font-weight: 700; }
+.chatHistory button:disabled { opacity: .5; cursor: wait; }
+@media (max-width: 700px) {
+  .chatHistory { margin-top: 10px; display: flex; overflow-x: auto; max-width: 100%; }
+  .chatHistoryList { display: flex; gap: 6px; }
+  .chatHistory button { flex: 0 0 auto; max-width: 180px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+}

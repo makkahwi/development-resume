@@ -54,3 +54,33 @@ test('development preview retrieval finds relevant project evidence', async () =
   assert.equal(results[0].title, 'Sanad');
   assert.ok(results.length <= 5);
 });
+
+test('follow-up retrieval uses bounded prior questions', async () => {
+  await answerQuestion('Which technologies?', {
+    embeddingProvider: { embed: async text => { assert.match(text, /Sanad/); assert.match(text, /Which technologies/); assert.doesNotMatch(text, /device-secret/); return [1]; } },
+    retrievalService: { query: async () => [sample] },
+    llmProvider: { generate: async input => { assert.equal(input.conversation.length, 1); return { answer: 'Grounded answer', sourceIds: [sample.id] }; } },
+  }, 5, 1200, [{ role: 'user', content: 'Tell me about Sanad', deviceId: 'device-secret' }]);
+});
+
+test('current employer questions retrieve only current employment evidence', async () => {
+  const chunks = parseChunks(readFileSync('knowledge-base/chunks.jsonl', 'utf8'));
+  const currentJobs = chunks.filter(chunk => chunk.documentType === 'experience' && (chunk.metadata.end === 'current' || chunk.metadata.end === 'present'));
+  assert.ok(currentJobs.some(chunk => chunk.metadata.company === 'Several Brands'));
+  let queried = 0;
+  const result = await answerQuestion('This is Mustafa, where do suhaib work now?', {
+    embeddingProvider: { embed: async text => { assert.match(text, /current employer/); return [1]; } },
+    retrievalService: { query: async (_vector, _topK, filter) => {
+      queried++;
+      assert.match(filter || '', /documentType = 'experience'/);
+      return currentJobs.map(chunk => ({ ...chunk, hash: 'test' }));
+    } },
+    llmProvider: { generate: async input => {
+      assert.ok(input.context.some(chunk => chunk.metadata.company === 'Several Brands'));
+      const employer = input.context.find(chunk => chunk.metadata.company === 'Several Brands')!;
+      return { answer: 'Suhaib currently works at Several Brands.', sourceIds: [employer.id] };
+    } },
+  });
+  assert.equal(queried, 1);
+  assert.equal(result.sources[0].title, 'Frontend Developer at Several Brands');
+});

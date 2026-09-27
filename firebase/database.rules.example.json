@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "makkahwiAi": {
+      ".read": false,
+      ".write": false,
+      "summaries": {
+        "$deviceId": { ".indexOn": ["updatedAt"] }
+      }
+    }
+  }
+}

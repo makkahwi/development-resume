@@ -172,7 +172,7 @@ export default function Home() {
             <>
               <p className="kicker">The person behind the projects.</p>
               <h1 id="hero-title">
-                Meet <em></em>
+                Meet <em>Suhaib</em>
               </h1>
               <p className="lead">
                 Explore Suhaib’s work, experience, and ideas through a grounded

@@ -78,3 +78,31 @@ The chosen [Flash Lite model](https://ai.google.dev/gemini-api/docs/models) and 
 ## Assumptions to confirm
 
 The supplied corpus may be used publicly as reviewed; the Firebase project and Upstash index are not yet provisioned; hosting and exact rate-limit backing store remain undecided. The existing `knowledge-base/README.md` says its content was generated from `res.json`, which is not present in this repository. Phase 2 should inspect content quality and establish a repeatable Markdown-to-JSONL update path before ingestion.
+
+## Anonymous chat history
+
+The browser creates a cryptographically random UUID in localStorage (`makkahwi_device_id`). Next.js uses that ID to save conversations through Firebase Admin under `makkahwiAi/chats/{deviceId}/{chatId}`. Lightweight summaries live under `makkahwiAi/summaries/{deviceId}/{chatId}`. The selected chat ID is also remembered locally. Returning visitors load their conversation list and reopen their selected recent conversation in the full-height layout. New visitors retain the centered welcome layout until sending a message.
+
+- `GET /api/chats` lists 20 conversations with a cursor for older chats.
+- `GET /api/chats/{chatId}` loads messages belonging to this browser ID.
+- `POST /api/chats/{chatId}/messages` accepts `{question, requestId}`. Every route requires the UUID in `x-device-id`; responses are private/no-store.
+- User messages are persisted before generation. Transactional leases prevent concurrent answers; request IDs make retries idempotent. Expired or failed requests are retryable. Each chat is bounded to 100 turns.
+- Continuations use server-loaded completed turns, bounded before embedding and generation. Neither device IDs nor Firebase identifiers are sent to Gemini.
+- The ID is an anonymous bearer credential, not a signed-in account. Anyone with it can access its chats. Clearing browser storage loses access; different browsers have separate histories. No cross-device sync is implemented.
+- Rate limiting currently runs per server process; distributed enforcement is needed when scaling across instances.
+
+Configure Firebase **Admin service-account credentials**, not a Firebase web API key: `FIREBASE_PRIVATE_KEY` must contain the complete PEM `private_key` from the same service-account JSON as `FIREBASE_CLIENT_EMAIL`. Escaped `\n` newlines are supported. Keep these values server-only.
+
+Merge the `makkahwiAi` subtree from `firebase/database.rules.example.json` into existing Realtime Database rules and add the `updatedAt` index. Check that ancestor rules do not grant public reads/writes, since child rules cannot revoke ancestor grants. Admin SDK access bypasses client rules. Do not replace unrelated application rules.
+
+### History-based starter suggestions
+
+`GET /api/chat-suggestions` returns exactly three safe public questions for the empty-chat welcome screen. The server groups completed, grounded questions from saved Firebase history into supported public topics (projects, employers, skills, experience, education, movies, hobbies, and contact), including common English/Arabic wording. It ranks these topics by question count and supplies canonical question text. This is deterministic topic matching, not an additional Gemini request; unmatched questions are excluded. Retries reuse the same saved turn and therefore do not add votes.
+
+Visitors' raw questions, names, identifiers, and transcripts are never returned by this endpoint. Missing slots use default starter questions. Firebase failures also fall back to defaults without blocking suggestions. Rankings refresh on demand every five minutes per server process, with concurrent requests sharing one refresh. This initial portfolio-scale implementation scans saved chats server-side, including older history; replace that scan with maintained aggregates if traffic/history grows substantially.
+
+### Realtime Database setup
+
+Create a **Firebase Realtime Database** instance in the same Firebase project as the service account. Copy the exact database URL from the Realtime Database **Data** tab into `FIREBASE_DATABASE_URL`; use the service-account JSON's `project_id`, `client_email`, and complete `private_key` for the other `FIREBASE_*` variables. The app creates `makkahwiAi/chats` and `makkahwiAi/summaries` on its first successful message; do not manually add those nodes. An empty database is normal before the first chat.
+
+Merge the rules in `firebase/database.rules.example.json` with any existing rules and publish them. The chat subtree should deny direct browser reads/writes; the Admin SDK accesses it through the server. The `updatedAt` index supports history ordering. These rules do not grant Admin SDK access, which comes from the service account. Restart `pnpm dev` after editing `.env`.

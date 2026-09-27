@@ -47,8 +47,8 @@ export async function remove(ids: string[]): Promise<void> {
   const deleted = await call<{ deleted: number }>('delete', { ids });
   if (deleted.deleted !== ids.length) throw new Error(`Upstash deleted ${deleted.deleted} of ${ids.length} stale vectors`);
 }
-export async function query(vector: number[], topK: number): Promise<StoredChunk[]> {
-  const rows = await call<Array<{ id: string; score: number; data?: string; metadata?: Record<string, unknown> }>>('query', { vector, topK, includeData: true, includeMetadata: true });
+export async function query(vector: number[], topK: number, filter?: string): Promise<StoredChunk[]> {
+  const rows = await call<Array<{ id: string; score: number; data?: string; metadata?: Record<string, unknown> }>>('query', { vector, topK, includeData: true, includeMetadata: true, ...(filter ? { filter } : {}) });
   if (!Array.isArray(rows)) throw new Error('Invalid Upstash query response');
   return rows.flatMap(row => {
     const m = row.metadata;
