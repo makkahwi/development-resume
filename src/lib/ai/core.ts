@@ -21,9 +21,9 @@ export type Source = {
 };
 export type Draft = { answer: string; sourceIds: string[] };
 export const FALLBACK =
-  "Sorry, I can't confirm that from the information I have about Suhaib. You can ask about his experience, projects, or skills, or reach him directly at SuhaibAhmadAi@hotmail.com, on LinkedIn (https://linkedin.com/in/SuhaibAhmadAi/), or through his site (https://suhaib.dev/).";
+  "Sorry, I can't confirm that from the information I have about Suhaib. You can ask about his experience, projects, or skills, or reach him directly at +962-788-424-973, on LinkedIn (https://linkedin.com/in/SuhaibAhmadAi/), or through his site (https://suhaib.dev/).";
 const ARABIC_FALLBACK =
-  "آسف، ما عندي معلومات كافية لأؤكد ذلك عن صهيب. يمكنك سؤالي عن خبراته أو مشاريعه أو مهاراته، أو التواصل معه عبر SuhaibAhmadAi@hotmail.com أو LinkedIn (https://linkedin.com/in/SuhaibAhmadAi/) أو موقعه (https://suhaib.dev/).";
+  "آسف، ما عندي معلومات كافية لأؤكد ذلك عن صهيب. يمكنك سؤالي عن خبراته أو مشاريعه أو مهاراته، أو التواصل معه عبر +962-788-424-973 أو LinkedIn (https://linkedin.com/in/SuhaibAhmadAi/) أو موقعه (https://suhaib.dev/).";
 const fallbackFor = (question: string) =>
   /[\u0600-\u06ff]/u.test(question) ? ARABIC_FALLBACK : FALLBACK;
 
