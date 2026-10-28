@@ -21,7 +21,11 @@ export type Source = {
 };
 export type Draft = { answer: string; sourceIds: string[] };
 export const FALLBACK =
-  "I don't have enough information in Suhaib's public knowledge base to answer that reliably.";
+  "Sorry, I can't confirm that from the information I have about Suhaib. You can ask about his experience, projects, or skills, or reach him directly at SuhaibAhmadAi@hotmail.com, on LinkedIn (https://linkedin.com/in/SuhaibAhmadAi/), or through his site (https://suhaib.dev/).";
+const ARABIC_FALLBACK =
+  "آسف، ما عندي معلومات كافية لأؤكد ذلك عن صهيب. يمكنك سؤالي عن خبراته أو مشاريعه أو مهاراته، أو التواصل معه عبر SuhaibAhmadAi@hotmail.com أو LinkedIn (https://linkedin.com/in/SuhaibAhmadAi/) أو موقعه (https://suhaib.dev/).";
+const fallbackFor = (question: string) =>
+  /[\u0600-\u06ff]/u.test(question) ? ARABIC_FALLBACK : FALLBACK;
 
 const object = (value: unknown): value is Record<string, unknown> =>
   !!value && typeof value === "object" && !Array.isArray(value);
@@ -93,6 +97,7 @@ export function validQuestion(
 export function validateSources(
   draft: Draft,
   retrieved: StoredChunk[],
+  fallback = FALLBACK,
 ): { answer: string; sources: Source[] } {
   const byId = new Map(retrieved.map((chunk) => [chunk.id, chunk]));
   const seen = new Set<string>();
@@ -122,7 +127,7 @@ export function validateSources(
     });
   }
   if (!draft.answer.trim() || !sources.length)
-    return { answer: FALLBACK, sources: [] };
+    return { answer: fallback, sources: [] };
   return { answer: draft.answer.trim(), sources };
 }
 export type ConversationTurn = { role: "user" | "assistant"; content: string };
@@ -236,6 +241,45 @@ function smallTalkAnswer(question: string): string | undefined {
   }
   return undefined;
 }
+function assistantQuestion(question: string): boolean {
+  const message = question.toLowerCase();
+  const aboutChat =
+    /\b(this|the|your)\s+(chat|app|assistant|bot|website|site)\b|\b(you|yourself|your)\b|المحادثة|الدردشة|التطبيق|المساعد|أنت|انت/u.test(
+      message,
+    );
+  const asksScope =
+    /\b(what|who|why|where|how|can|could|are|do|does|tell|explain|help|purpose|scope|limit|limits|source|sources|know|answer|answers|ask|use|work|about)\b|ماذا|ما |من |كيف|ليش|لماذا|تستطيع|يمكن|تعرف|مصدر|حدود|اسأل/u.test(
+      message,
+    );
+  const asksSuhaibFact =
+    /\b(suhaib|his|him|he|resume|cv|career|experience|projects|skills)\b|صهيب|سيرته|خبراته|مشاريعه|مهاراته/u.test(
+      message,
+    );
+  return aboutChat && asksScope && !asksSuhaibFact;
+}
+function assistantAnswer(question: string): string {
+  const message = question.toLowerCase();
+  const arabic = /[\u0600-\u06ff]/u.test(message);
+  if (
+    /\b(limit|limits|private|can't|cannot|don't know|source|sources|information|data|know)\b|حدود|مصدر|معلومات|تعرف/u.test(
+      message,
+    )
+  )
+    return arabic
+      ? "أعتمد على معلومات صهيب المهنية المنشورة، ويمكنني شرحها أو تلخيصها. لا أستطيع تأكيد تفاصيل خاصة أو أمور لم تُنشر، ولا أتحدث باسم صهيب. إذا احتجت تأكيداً منه، يمكنك التواصل عبر https://suhaib.dev/."
+      : "I work from Suhaib's public professional information. I can explain and summarize what's documented, but I can't verify private or unpublished details or speak for him. If you need confirmation from Suhaib, you can reach him through +962-788-424-973, or find more contacts @ https://suhaib.dev/.";
+  if (
+    /\b(how|use|ask|help|start|questions|question)\b|كيف|استخدم|اسأل|سؤال/u.test(
+      message,
+    )
+  )
+    return arabic
+      ? "اسألني بطريقتك عن خبرات صهيب أو مشاريعه أو مهاراته، ويمكنك طرح أسئلة متابعة. مثلاً: «ما المشاريع التي عمل عليها؟» أو «لخّص خبرته المهنية»."
+      : "Ask me naturally about Suhaib's experience, projects, or skills, then follow up on anything interesting. For example: ‘What did he build?’ or ‘Summarize his career.’";
+  return arabic
+    ? "هذه محادثة تساعدك تتعرّف على سيرة صهيب أحمد المهنية ومشاريعه ومهاراته من معلوماته المنشورة. اسألني عمّا يهمك، وسأوضح ما هو موثق لدي."
+    : "This chat helps you explore Suhaib Ahmad's public resume, projects, experience, and skills. Ask what interests you, and I'll explain what's documented.";
+}
 export async function answerQuestion(
   question: unknown,
   deps: RagDeps,
@@ -247,6 +291,8 @@ export async function answerQuestion(
   if (!validQuestion(question, maxLength)) throw new Error("Invalid question");
   const smallTalk = smallTalkAnswer(question);
   if (smallTalk) return { answer: smallTalk, sources: [] };
+  if (assistantQuestion(question))
+    return { answer: assistantAnswer(question), sources: [] };
   const bounded = boundConversation(conversation, maxConversationCharacters);
   const previousQuestions = bounded
     .filter((turn) => turn.role === "user")
@@ -298,7 +344,11 @@ export async function answerQuestion(
     context.push(chunk);
     characters += chunk.content.length;
   }
-  if (!context.length) return { answer: FALLBACK, sources: [] };
+  if (!context.length) return { answer: fallbackFor(question), sources: [] };
   const input = { question: question.trim(), context, conversation: bounded };
-  return validateSources(await deps.llmProvider.generate(input), context);
+  return validateSources(
+    await deps.llmProvider.generate(input),
+    context,
+    fallbackFor(question),
+  );
 }
